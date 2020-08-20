@@ -44,4 +44,4 @@ print "Text: " . (string)$ocr_engine->getText().PHP_EOL;
 Download **Setting the OcrEngine to Ignore Non-Textual Blocks (Aspose.OCR)** from any of the below mentioned social coding sites:
 
 - [GitHub](https://github.com/aspose-ocr/Aspose.OCR-for-Java/blob/master/Plugins/Aspose_OCR_Java_for_PHP/src/aspose/ocr/WorkingWithOCR/IgnoreNonTextualBlocks.php)
-- [CodePlex](hhttps://archive.codeplex.com/?p=asposeocrjavaphp)
+- [CodePlex](https://archive.codeplex.com/?p=asposeocrjavaphp)

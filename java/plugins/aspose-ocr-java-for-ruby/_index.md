@@ -120,7 +120,7 @@ You can get the latest source code from one of the following locations:
 **This section includes the following topics:**
 
 - [Download and Configure Aspose.OCR in Ruby](/ocr/java/download-and-configure-aspose-ocr-in-ruby/)
-- [Ruby Programmers Guide](/ocr/java/ruby-programmers-guide-/)
+- [Ruby Programmers Guide](/ocr/java/ruby-programmers-guide/)
   - [Working with OCR in Ruby](/ocr/java/working-with-ocr-in-ruby/)
     - [Applying Correction Filters in Ruby](/ocr/java/applying-correction-filters-in-ruby/)
     - [Extracting Text from Part of an Image in Ruby](/ocr/java/extracting-text-from-part-of-an-image-in-ruby/)
@@ -140,4 +140,4 @@ You can get the latest source code from one of the following locations:
     - [Extracting OMR Data from an Image in Ruby](/ocr/java/extracting-omr-data-from-an-image-in-ruby/)
     - [Setting Mark Threshold in Ruby](/ocr/java/setting-mark-threshold-in-ruby/)
     - [Setting the Resolution for OMR Image in Ruby](/ocr/java/setting-the-resolution-for-omr-image-in-ruby/)
-- [Support, Extend and Contribute to Aspose.OCR in Ruby](/ocr/java/support-2c-extend-and-contribute-to-aspose-ocr-in-ruby/)
+- [Support, Extend and Contribute to Aspose.OCR in Ruby](/ocr/java/support-extend-and-contribute-to-aspose-ocr-in-ruby/)
