@@ -6,8 +6,11 @@ url: /java/installation/
 ---
 
 ## **Installing Aspose.OCR for Java from Maven Repository**
+
 Aspose hosts all Java APIs on the [Maven repository](https://repository.aspose.com/webapp/#/artifacts/browse/tree/General/repo/com/aspose). You can easily use [Aspose.OCR for Java](https://repository.aspose.com/webapp/#/artifacts/browse/tree/General/repo/com/aspose/aspose-ocr) API directly in your Maven Projects with simple configurations.
+
 ### **Specify Maven Repository Configuration**
+
 First, you need to specify Aspose Maven Repository configuration/location in your Maven **pom.xml** as follows:
 
 {{< highlight java >}}
@@ -27,7 +30,9 @@ First, you need to specify Aspose Maven Repository configuration/location in you
 </repositories>
 
 {{< /highlight >}}
+
 ### **Define Aspose.OCR for Java API Dependency**
+
 Then define Aspose.OCR for Java API dependency in your **pom.xml** as follows:
 
 {{< highlight java >}}
@@ -40,7 +45,7 @@ Then define Aspose.OCR for Java API dependency in your **pom.xml** as follows:
 
         <artifactId>aspose-ocr</artifactId>
 
-        <version>17.11</version>
+        <version>20.7</version>
 
     </dependency>
 
@@ -49,12 +54,14 @@ Then define Aspose.OCR for Java API dependency in your **pom.xml** as follows:
 {{< /highlight >}}
 
 After performing the above steps, Aspose.OCR for Java dependency will finally be defined in your Maven Project.
+
 ## **Technical Support**
+
 Aspose provides unlimited free technical support for all its products. The support is available to all users, including evaluation.
 
 If you need help with Aspose.OCR, consider the following:
 
-- The main avenue for support is the [Aspose.Forums](https://www.aspose.com/community/forums/default.aspx). Post your question in the [Aspose.OCR Support Forum](https://www.aspose.com/community/forums/aspose.ocr-product-family/493/showforum.aspx) and it will be answered within a few hours.
+- The main avenue for support is the [Aspose.Forums](https://forum.aspose.com/). Post your question in the [Aspose.OCR Support Forum](https://forum.aspose.com/c/ocr) and it will be answered within a few hours.
 - Please note, Aspose does not provide technical support over the phone. Phone support is only available for sales and purchase questions.
 - When expecting a reply in the forums, please allow for time zone differences.
 

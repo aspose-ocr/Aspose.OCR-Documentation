@@ -6,13 +6,14 @@ url: /java/read-the-part-information-of-recognized-text-in-php/
 ---
 
 ## **Aspose.OCR - Read the Part Information of Recognized Text**
+
 To Read the Part Information of Recognized Text using **Aspose.OCR Java for PHP**, simply invoke **ReadPartInformationOfText** module. Here you can see example code.
 
 **PHP Code**
 
 {{< highlight php >}}
 
- # Initialize an instance of OcrEngine
+## Initialize an instance of OcrEngine
 
 $ocr_engine = new OcrEngine();
 
@@ -61,8 +62,10 @@ $i += 1;
 }
 
 {{< /highlight >}}
+
 ## **Download Running Code**
+
 Download **Read the Part Information of Recognized Text (Aspose.OCR)** from any of the below mentioned social coding sites:
 
 - [GitHub](https://github.com/aspose-ocr/Aspose.OCR-for-Java/blob/master/Plugins/Aspose_OCR_Java_for_PHP/src/aspose/ocr/WorkingWithOCR/ReadPartInformationOfText.php)
-- [CodePlex](https://asposeocrjavaphp.codeplex.com/SourceControl/latest#src/aspose/ocr/WorkingWithOCR/ReadPartInformationOfText.php)
+- [CodePlex](https://archive.codeplex.com/?p=asposeocrjavaphp)

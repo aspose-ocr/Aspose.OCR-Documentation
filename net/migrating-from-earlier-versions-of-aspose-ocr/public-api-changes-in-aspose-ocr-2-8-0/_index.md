@@ -5,14 +5,17 @@ weight: 70
 url: /net/public-api-changes-in-aspose-ocr-2-8-0/
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
-This document describes changes to the Aspose.OCR API from version 2.7.0 to 2.8.0, that may be of interest to module and application developers. It includes not only new and updated public methods, [added classes etc.](/ocr/net/public-api-changes-in-aspose-ocr-2-8-0-html/) but also a description of any changes in the behavior behind the scenes in Aspose.OCR.
+This document describes changes to the Aspose.OCR API from version 2.7.0 to 2.8.0, that may be of interest to module and application developers. It includes not only new and updated public methods, [added classes etc.](/ocr/net/public-api-changes-in-aspose-ocr-2-8-0/) but also a description of any changes in the behavior behind the scenes in Aspose.OCR.
 
-{{% /alert %}} 
+{{% /alert %}}
+
 ## **Added Classes, Methods**
+
 ### **Exception Handling for OmrEngine**
-The Aspose.OMR.OmrException class allows to catch exceptions that are related to the OmrEngine. Along with the aforesaid class, this release has also exposed the Aspose.OMR.OmrException.#ctor(System.Exception) & Aspose.OMR.OmrException.#ctor(System.String,System.Exception) methods. 
+
+The Aspose.OMR.OmrException class allows to catch exceptions that are related to the OmrEngine. Along with the aforesaid class, this release has also exposed the Aspose.OMR.OmrException.#ctor(System.Exception) & Aspose.OMR.OmrException.#ctor(System.String,System.Exception) methods.
 
 Usage scenario of Aspose.OMR.OmrException class is as follow.
 
@@ -65,7 +68,9 @@ Catch e As OmrException
 End Try
 
 {{< /highlight >}}
+
 ### **Property AutoDetectResolution Added**
+
 The Aspose.OMR.OmrImage.AutoDetectResolution property can be used to detect the resolution of the image passed on to the OmrImage class by setting it to true. If AutoDetectResolution property is set to true, the OmrEngine attempts to determine resolution of the image automatically. However, if the resolutions of the OmrTemplate and the scanned image are different, an exception will be thrown.
 
 Usage scenario of Aspose.OMR.OmrImage.AutoDetectResolution property is as follow.

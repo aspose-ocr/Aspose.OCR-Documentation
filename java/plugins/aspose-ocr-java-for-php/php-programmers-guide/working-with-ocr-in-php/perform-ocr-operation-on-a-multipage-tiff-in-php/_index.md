@@ -6,13 +6,14 @@ url: /java/perform-ocr-operation-on-a-multipage-tiff-in-php/
 ---
 
 ## **Aspose.OCR - Perform OCR Operation on a Multipage TIFF**
+
 To Perform OCR Operation on a Multipage TIFF using **Aspose.OCR Java for PHP**, simply invoke **MultipageTiff** module. Here you can see example code.
 
 **PHP Code**
 
 {{< highlight php >}}
 
- # Initialize an instance of OcrEngine
+## Initialize an instance of OcrEngine
 
 $ocr_engine = new OcrEngine();
 
@@ -43,8 +44,10 @@ print "Text: " . (string)$page->getPageText().PHP_EOL;
 }
 
 {{< /highlight >}}
+
 ## **Download Running Code**
+
 Download **Perform OCR Operation on a Multipage TIFF (Aspose.OCR)** from any of the below mentioned social coding sites:
 
 - [GitHub](https://github.com/aspose-ocr/Aspose.OCR-for-Java/blob/master/Plugins/Aspose_OCR_Java_for_PHP/src/aspose/ocr/WorkingWithOCR/MultipageTiff.php)
-- [CodePlex](https://asposeocrjavaphp.codeplex.com/SourceControl/latest#src/aspose/ocr/WorkingWithOCR/MultipageTiff.php)
+- [CodePlex](https://archive.codeplex.com/?p=asposeocrjavaphp)

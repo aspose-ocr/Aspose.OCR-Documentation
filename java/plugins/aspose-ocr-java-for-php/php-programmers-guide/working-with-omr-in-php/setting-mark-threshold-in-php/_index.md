@@ -6,6 +6,7 @@ url: /java/setting-mark-threshold-in-php/
 ---
 
 ## **Aspose.OCR - Setting Global Threshold**
+
 To Set Global Threshold using **Aspose.OCR Java for PHP**, call **set_global_threshold** method of **SetMarkThreshold** module. Here you can see example code.
 
 **PHP Code**
@@ -59,7 +60,9 @@ print "Set global threshold.".PHP_EOL;
 }
 
 {{< /highlight >}}
+
 ## **Aspose.OCR - Setting Page Level Threshold**
+
 To Set Page Level Threshold using **Aspose.OCR Java for PHP**, call **set_page_level_threshold** method of **SetMarkThreshold** module. Here you can see example code.
 
 **PHP Code**
@@ -115,8 +118,10 @@ print "Set page level threshold.".PHP_EOL;
 }
 
 {{< /highlight >}}
+
 ## **Download Running Code**
+
 Download **Setting Mark Threshold (Aspose.OCR)** from any of the below mentioned social coding sites:
 
 - [GitHub](https://github.com/aspose-ocr/Aspose.OCR-for-Java/blob/master/Plugins/Aspose_OCR_Java_for_PHP/src/aspose/ocr/WorkingWithOMR/SetMarkThreshold.php)
-- [CodePlex](https://asposeocrjavaphp.codeplex.com/SourceControl/latest#src/aspose/ocr/WorkingWithOMR/SetMarkThreshold.php)
+- [CodePlex](https://archive.codeplex.com/?p=asposeocrjavaphp)

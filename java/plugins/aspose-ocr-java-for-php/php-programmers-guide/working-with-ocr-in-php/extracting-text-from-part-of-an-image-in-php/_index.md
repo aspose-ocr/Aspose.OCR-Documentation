@@ -6,13 +6,14 @@ url: /java/extracting-text-from-part-of-an-image-in-php/
 ---
 
 ## **Aspose.OCR - Extracting Text from Part of an Image**
+
 To Extract Text from Part of an Image using **Aspose.OCR Java for PHP**, simply invoke **ExtractTextFromPartOfImage** module. Here you can see example code.
 
 **PHP Code**
 
 {{< highlight php >}}
 
- # Initialize an instance of OcrEngine
+## Initialize an instance of OcrEngine
 
 $ocr_engine = new OcrEngine();
 
@@ -69,8 +70,10 @@ $i+= 1;
 }
 
 {{< /highlight >}}
+
 ## **Download Running Code**
+
 Download **Extracting Text from Part of an Image (Aspose.OCR)** from any of the below mentioned social coding sites:
 
 - [GitHub](https://github.com/aspose-ocr/Aspose.OCR-for-Java/blob/master/Plugins/Aspose_OCR_Java_for_PHP/src/aspose/ocr/WorkingWithOCR/ExtractTextFromPartOfImage.php)
-- [CodePlex](https://asposeocrjavaphp.codeplex.com/SourceControl/latest#src/aspose/ocr/WorkingWithOCR/ExtractTextFromPartOfImage.php)
+- [CodePlex](https://archive.codeplex.com/?p=asposeocrjavaphp)

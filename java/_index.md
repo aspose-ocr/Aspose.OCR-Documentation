@@ -27,7 +27,7 @@ Following are the links to some useful resources you may need to accomplish your
 - [Aspose.OCR for Java Release Notes](/ocr/java/release-notes/)
 - [Aspose.OCR for Java Product Page](https://products.aspose.com/ocr/java)
 - [Install Aspose.OCR for Java from Maven Repository](/ocr/java/installation/)
-- [Aspose.OCR for Java API Reference Guide](https://apireference.aspose.com/java/ocr)
+- [Aspose.OCR for Java API Reference Guide](https://apireference.aspose.com/ocr/java)
 - [Download Aspose.OCR for Java from GitHub Repository](https://github.com/aspose-ocr/Aspose.OCR-for-Java)
 - [Aspose.OCR for Java Free Support Forum](https://forum.aspose.com/c/ocr)
 - [Aspose.OCR for Java Paid Support Helpdesk](https://helpdesk.aspose.com/)

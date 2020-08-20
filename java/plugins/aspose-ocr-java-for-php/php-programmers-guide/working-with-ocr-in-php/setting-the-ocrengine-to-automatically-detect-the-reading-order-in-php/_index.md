@@ -6,13 +6,14 @@ url: /java/setting-the-ocrengine-to-automatically-detect-the-reading-order-in-ph
 ---
 
 ## **Aspose.OCR - Setting the OcrEngine to Automatically Detect the Reading Order**
+
 To Set the OcrEngine to Automatically Detect the Reading Order using **Aspose.OCR Java for PHP**, simply invoke **DetectReading** module. Here you can see example code.
 
 **PHP Code**
 
 {{< highlight php >}}
 
- # Initialize an instance of OcrEngine
+## Initialize an instance of OcrEngine
 
 $ocr_engine = new OcrEngine();
 
@@ -37,8 +38,10 @@ print "Text: " . (string)$ocr_engine->getText().PHP_EOL;
 }
 
 {{< /highlight >}}
+
 ## **Download Running Code**
+
 Download **Setting the OcrEngine to Automatically Detect the Reading Order (Aspose.OCR)** from any of the below mentioned social coding sites:
 
 - [GitHub](https://github.com/aspose-ocr/Aspose.OCR-for-Java/blob/master/Plugins/Aspose_OCR_Java_for_PHP/src/aspose/ocr/WorkingWithOCR/DetectReading.php)
-- [CodePlex](https://asposeocrjavaphp.codeplex.com/SourceControl/latest#src/aspose/ocr/WorkingWithOCR/DetectReading.php)
+- [CodePlex](https://archive.codeplex.com/?p=asposeocrjavaphp)

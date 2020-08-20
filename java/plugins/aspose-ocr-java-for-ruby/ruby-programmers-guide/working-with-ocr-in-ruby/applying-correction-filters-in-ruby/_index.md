@@ -6,6 +6,7 @@ url: /java/applying-correction-filters-in-ruby/
 ---
 
 ## **Aspose.OCR - Applying Correction Filters**
+
 To Apply Correction Filters using **Aspose.OCR Java for Ruby**, simply invoke **ApplyCorrectionFilters** module. Here you can see example code.
 
 **Ruby Code**
@@ -13,8 +14,6 @@ To Apply Correction Filters using **Aspose.OCR Java for Ruby**, simply invoke **
 {{< highlight ruby >}}
 
  data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
-
-
 
 \# Initialize an instance of OcrEngine
 
@@ -59,7 +58,9 @@ ocr_engine.process()
 puts "Whole result is: "+ ocr_engine.getText().to_string
 
 {{< /highlight >}}
+
 ## **Download Running Code**
+
 Download **Applying Correction Filters (Aspose.OCR)** from any of the below mentioned social coding sites:
 
-- [GitHub](https://github.com/aspose-ocr/Aspose.OCR-for-Java/blob/master/Plugins/Aspose_OCR_Java_for_Ruby/lib/aspose-ocrjava/OCR/applycorrectionfilters.rb)
+- [GitHub](https://github.com/aspose-ocr/Aspose.OCR-for-Java/blob/master/Plugins/Aspose_OCR_Java_for_Ruby/lib/asposeocrjava/OCR/applycorrectionfilters.rb)

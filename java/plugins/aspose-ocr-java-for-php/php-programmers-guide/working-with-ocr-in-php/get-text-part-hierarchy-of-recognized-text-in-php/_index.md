@@ -6,13 +6,14 @@ url: /java/get-text-part-hierarchy-of-recognized-text-in-php/
 ---
 
 ## **Aspose.OCR - Get Text Part Hierarchy of Recognized Text**
+
 To Get Text Part Hierarchy of Recognized Text using **Aspose.OCR Java for PHP**, simply invoke **GetTextPartHierarchyOfText** module. Here you can see example code.
 
 **PHP Code**
 
 {{< highlight php >}}
 
- # Initialize an instance of OcrEngine
+## Initialize an instance of OcrEngine
 
 $ocr_engine = new OcrEngine();
 
@@ -61,8 +62,10 @@ print $first_character->getLevel().PHP_EOL;
 }
 
 {{< /highlight >}}
+
 ## **Download Running Code**
+
 Download **Get Text Part Hierarchy of Recognized Text (Aspose.OCR)** from any of the below mentioned social coding sites:
 
 - [GitHub](https://github.com/aspose-ocr/Aspose.OCR-for-Java/blob/master/Plugins/Aspose_OCR_Java_for_PHP/src/aspose/ocr/WorkingWithOCR/GetTextPartHierarchyOfText.php)
-- [CodePlex](https://asposeocrjavaphp.codeplex.com/SourceControl/latest#src/aspose/ocr/WorkingWithOCR/GetTextPartHierarchyOfText.php)
+- [CodePlex](https://archive.codeplex.com/?p=asposeocrjavaphp)

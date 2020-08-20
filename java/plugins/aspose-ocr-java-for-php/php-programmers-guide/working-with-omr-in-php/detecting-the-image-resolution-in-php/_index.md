@@ -6,13 +6,14 @@ url: /java/detecting-the-image-resolution-in-php/
 ---
 
 ## **Aspose.OCR - Detecting the Image Resolution**
+
 To Detect the Image Resolution using **Aspose.OCR Java for PHP**, simply invoke **DetectImageResolution** module. Here you can see example code.
 
 **PHP Code**
 
 {{< highlight php >}}
 
- # Initialize a string with template file location
+## Initialize a string with template file location
 
 $template_file=$dataDir."template.amr";
 
@@ -81,8 +82,10 @@ print "value: ".(string)$value.PHP_EOL;
 }
 
 {{< /highlight >}}
+
 ## **Download Running Code**
+
 Download **Detecting the Image Resolution (Aspose.OCR)** from any of the below mentioned social coding sites:
 
 - [GitHub](https://github.com/aspose-ocr/Aspose.OCR-for-Java/blob/master/Plugins/Aspose_OCR_Java_for_PHP/src/aspose/ocr/WorkingWithOMR/DetectImageResolution.php)
-- [CodePlex](https://asposeocrjavaphp.codeplex.com/SourceControl/latest#src/aspose/ocr/WorkingWithOMR/DetectImageResolution.php)
+- [CodePlex](https://archive.codeplex.com/?p=asposeocrjavaphp)

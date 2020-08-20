@@ -5,13 +5,16 @@ weight: 30
 url: /net/public-api-changes-in-aspose-ocr-2-2-0/
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
-This document describes changes to the Aspose.OCR API from version 2.1.0 to 2.2.0, that may be of interest to module and application developers. It includes not only new and updated public methods, [added classes etc.](/ocr/net/public-api-changes-in-aspose-ocr-2-2-0-html/) and [removed classes etc.](/ocr/net/public-api-changes-in-aspose-ocr-2-2-0-html/), but also a description of any changes in the behavior behind the scenes in Aspose.OCR.
+This document describes changes to the Aspose.OCR API from version 2.1.0 to 2.2.0, that may be of interest to module and application developers. It includes not only new and updated public methods, [added classes etc.](/ocr/net/public-api-changes-in-aspose-ocr-2-2-0/) and [removed classes etc.](/ocr/net/public-api-changes-in-aspose-ocr-2-2-0/), but also a description of any changes in the behavior behind the scenes in Aspose.OCR.
 
-{{% /alert %}} 
+{{% /alert %}}
+
 ## **Added Classes, Enumerations and Methods**
+
 ### **Class PreprocessedImages Added**
+
 The new Aspose.OCR.PreprocessedImages class to allow the users to see how original input image changes during OCR preprocessing. PreprocessedImages can be helpful in analyzing how different configuration parameters influence the OCR performance.
 
 **C#**
@@ -41,7 +44,9 @@ ocr.Process()
 Dim binImg As System.Drawing.Bitmap = ocr.PreprocessedImages.BinarizedImage
 
 {{< /highlight >}}
+
 ### **Class LanguageFactory Added**
+
 The new Aspose.OCR.LanguageFactory class has replaced the obsolete Language class in order to provide the support for loading languages from resource files.
 
 **C#**
@@ -83,7 +88,9 @@ ocr.LanguageContainer.AddLanguage(LanguageFactory.Load(langStream))
 langStream.Close()
 
 {{< /highlight >}}
+
 ### **Method LanguageContainer.AddLanguages Added**
+
 In order to provide the support for adding multiple languages the Aspose.OCR.LanguageContainer class has exposed the AddLanguages method.
 
 **C#**
@@ -117,7 +124,9 @@ arr(1) = LanguageFactory.Load("anotherresourcefile.zip")
 ocr.LanguageContainer.AddLanguages(arr)
 
 {{< /highlight >}}
+
 ### **Method LanguageContainer.RemoveLanguage Added**
+
 The Aspose.OCR.LanguageContainer class has exposed the RemoveLanguage method that accepts a parameter of type ILanguage and removes it from the LanguageContainer.
 
 **C#**
@@ -143,7 +152,9 @@ Dim eng As ILanguage = ocr.LanguageContainer.Languages(0)
 ocr.LanguageContainer.RemoveLanguage(eng)
 
 {{< /highlight >}}
+
 ### **Method LanguageContainer.RemoveLanguages Added**
+
 The Aspose.OCR.LanguageContainer class has exposed the RemoveLanguages method that accepts an array of type ILanguage and removes all the specified languages from the LanguageContainer.
 
 **C#**
@@ -173,7 +184,9 @@ arr(0) = ocr.LanguageContainer.Languages(0)
 ocr.LanguageContainer.RemoveLanguages(arr)
 
 {{< /highlight >}}
+
 ### **Method LanguageContainer.ResetToDefaults Added**
+
 The ResetToDefaults method removes all added languages from Aspose.OCR.LanguageContainer instance and loads the default language (English) to it.
 
 **C#**
@@ -195,7 +208,9 @@ ocr.LanguageContainer.ResetToDefaults();
 ocr.LanguageContainer.ResetToDefaults()
 
 {{< /highlight >}}
+
 ### **Method LanguageContainer.Clear Added**
+
 The Aspose.OCR.LanguageContainer class has now exposed the Clear method with the release of Aspose.OCR for .NET 2.2.0 to clear the collection of languages from LanguageContainer.
 
 **C#**
@@ -221,9 +236,13 @@ ocr.LanguageContainer.Clear()
 Console.WriteLine(ocr.LanguageContainer.Languages.Length) ' will be zero
 
 {{< /highlight >}}
+
 ### **Method LanguageContainer.Dispose Added**
+
 The class Aspose.OCR.LanguageContainer has exposed Dispose method to dispose off the LanguageContainer object.
+
 ### **Method LanguageFactory.Load Added**
+
 The Aspose.OCR.LanguageFactory class has exposed two variations of the Load method that helps in loading the resource archives from an object of Stream or file path location.
 
 **LanguageFactory.Load(System.IO.Stream)**
@@ -285,9 +304,13 @@ ocr.LanguageContainer.AddLanguage(LanguageFactory.Load(@"engresources.zip"));
 ocr.LanguageContainer.AddLanguage(LanguageFactory.Load("engresources.zip"))
 
 {{< /highlight >}}
+
 ### **Method OcrEngine.Dispose Added**
+
 The class Aspose.OCR.OcrEngine has exposed Dispose method to dispose off the OcrEngine object.
+
 ### **Property OcrEngine.LanguageContainer Added**
+
 The new Aspose.OCR.OcrEngine class has exposed the LanguageContainer property in order to contain all languages loaded for recognition.
 
 **C#**
@@ -309,7 +332,9 @@ ILanguage lang = ocr.LanguageContainer.Languages[0];
 Dim lang As ILanguage = ocr.LanguageContainer.Languages(0)
 
 {{< /highlight >}}
+
 ### **Property ILanguage.Name Added**
+
 The Aspose.OCR.ILanguage class has now exposed the Name property that has replaced the ILanguage.Language property with the release of Aspose.OCR for .NET 2.2.0. Now only ILanguage.Name property can be used to fetch the name of any loaded language. 
 
 **C#**
@@ -335,8 +360,10 @@ Dim lang As ILanguage = ocr.LanguageContainer.Languages(0)
 Console.WriteLine(lang.Name)
 
 {{< /highlight >}}
+
 ### **Property LanguageContainer.Languages Added**
-The Aspose.OCR.LanguageContainer class has exposed the Languages property that has replaced the OcrEngine.Languages property with the release of Aspose.OCR for .NET 2.2.0. The LanguageContainer.Languages property contains all the languages loaded to LanguageContainer. 
+
+The Aspose.OCR.LanguageContainer class has exposed the Languages property that has replaced the OcrEngine.Languages property with the release of Aspose.OCR for .NET 2.2.0. The LanguageContainer.Languages property contains all the languages loaded to LanguageContainer.
 
 **C#**
 
@@ -357,7 +384,9 @@ ILanguage[] langs = ocr.LanguageContainer.Languages;
 Dim langs() As ILanguage = ocr.LanguageContainer.Languages
 
 {{< /highlight >}}
+
 ### **Property License.IsLicensed Added**
+
 The Aspose.OCR.License & Aspose.OMR.License classes have exposed the IsLicensed property that will return true if license has been properly set. 
 
 **C#**
@@ -415,7 +444,9 @@ If omrlicense.IsLicensed Then
 End If
 
 {{< /highlight >}}
+
 ### **Property OCRConfig.Whitelist Added**
+
 The Aspose.OCR.OCRConfig class have exposed the Whitelist property that can be used to get/set a white list of characters. If Whitelist property is not null and not empty, OcrEngine will recognize only the white-listed characters.
 
 **C#**
@@ -445,14 +476,23 @@ ocr.Image = ImageStream.FromFile("image.png")
 ocr.Process()
 
 {{< /highlight >}}
+
 ## **Removed Classes, Properties**
+
 ### **Class Language Removed**
+
 The Aspose.OCR.Language class has been replaced by the Aspose.OCR.LanguageFactory class.
+
 ### **Method Language.Load Removed**
+
 The Aspose.OCR.Language.Load method has been replaced by the Aspose.OCR.LanguageFactory.Load method.
+
 ### **Method LanguageContainer.GetEnumerator Removed**
+
 The Aspose.OCR.LanguageContainer.GetEnumerato method has been replaced by the Aspose.OCR.LanguageContainer.Languages property.
+
 ### **Property OcrEngine.Resource Removed**
+
 Resource file with default language (English) is now embedded into Aspose.OCR assembly, and English language is loaded into OcrEngine.LanguageContainer by default.
 
 **C#**
@@ -478,7 +518,11 @@ ocr.Image = ImageStream.FromFile("image.png")
 ocr.Process()
 
 {{< /highlight >}}
+
 ### **Property OcrEngine.Languages Removed**
+
 The Aspose.OCR.OcrEngine.Languages property has been moved to Aspose.OCR.LanguageContainer class for better understanding.
+
 ### **Property LanguageContainer.Item Removed**
+
 Since v2.2.0 of Aspose.OCR for .NET, all loaded languages can only be accessed via Aspose.OCR.LanguageContainer.Languages property.

@@ -6,13 +6,14 @@ url: /java/setting-ocrengine-to-recognize-only-white-listed-characters-in-php/
 ---
 
 ## **Aspose.OCR - Setting OcrEngine to Recognize Only White Listed Characters**
+
 To Set OcrEngine to Recognize Only White Listed Characters using **Aspose.OCR Java for PHP**, simply invoke **RecognizeWhiteListedCharacters** module. Here you can see example code.
 
 **PHP Code**
 
 {{< highlight php >}}
 
- # Initialize an instance of OcrEngine
+## Initialize an instance of OcrEngine
 
 $ocr_engine = new OcrEngine();
 
@@ -63,8 +64,10 @@ print "Found value: ". (string)$matcher.PHP_EOL;//->group(0);
 }
 
 {{< /highlight >}}
+
 ## **Download Running Code**
+
 Download **Setting OcrEngine to Recognize Only White Listed Characters (Aspose.OCR)** from any of the below mentioned social coding sites:
 
 - [GitHub](https://github.com/aspose-ocr/Aspose.OCR-for-Java/blob/master/Plugins/Aspose_OCR_Java_for_PHP/src/aspose/ocr/WorkingWithOCR/RecognizeWhiteListedCharacters.php)
-- [CodePlex](https://asposeocrjavaphp.codeplex.com/SourceControl/latest#src/aspose/ocr/WorkingWithOCR/RecognizeWhiteListedCharacters.php)
+- [CodePlex](https://archive.codeplex.com/?p=asposeocrjavaphp)

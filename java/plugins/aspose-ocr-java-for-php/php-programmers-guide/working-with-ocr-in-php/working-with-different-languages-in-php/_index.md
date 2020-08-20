@@ -6,13 +6,14 @@ url: /java/working-with-different-languages-in-php/
 ---
 
 ## **Aspose.OCR - Working with Different Languages**
+
 To work with Different Languages using **Aspose.OCR Java for PHP**, simply invoke **WorkWithDifferentLanguages** module. Here you can see example code.
 
 **PHP Code**
 
 {{< highlight php >}}
 
- # Initialize an instance of OcrEngine
+## Initialize an instance of OcrEngine
 
 $ocr_engine = new OcrEngine();
 
@@ -43,8 +44,10 @@ print "Text: " . (string)$ocr_engine->getText().PHP_EOL;
 }
 
 {{< /highlight >}}
+
 ## **Download Running Code**
+
 Download **Working with Different Languages (Aspose.OCR)** from any of the below mentioned social coding sites:
 
 - [GitHub](https://github.com/aspose-ocr/Aspose.OCR-for-Java/blob/master/Plugins/Aspose_OCR_Java_for_PHP/src/aspose/ocr/WorkingWithOCR/WorkWithDifferentLanguages.php)
-- [CodePlex](https://asposeocrjavaphp.codeplex.com/SourceControl/latest#src/aspose/ocr/WorkingWithOCR/WorkWithDifferentLanguages.php)
+- [CodePlex](https://archive.codeplex.com/?p=asposeocrjavaphp)

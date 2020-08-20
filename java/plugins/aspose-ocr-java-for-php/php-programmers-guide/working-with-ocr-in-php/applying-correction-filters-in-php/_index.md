@@ -6,13 +6,15 @@ url: /java/applying-correction-filters-in-php/
 ---
 
 ## **Aspose.OCR - Applying Correction Filters**
+
 To Apply Correction Filters using **Aspose.OCR Java for PHP**, simply invoke **ApplyCorrectionFilters** module. Here you can see example code.
 
 **PHP Code**
 
 {{< highlight php >}}
 
- # Initialize an instance of OcrEngine
+ 
+ ## Initialize an instance of OcrEngine
 
 $ocr_engine = new OcrEngine();
 
@@ -57,8 +59,10 @@ $ocr_engine->process();
 print "Whole result is: " . (string)$ocr_engine->getText().PHP_EOL;
 
 {{< /highlight >}}
+
 ## **Download Running Code**
+
 Download **Applying Correction Filters (Aspose.OCR)** from any of the below mentioned social coding sites:
 
 - [GitHub](https://github.com/aspose-ocr/Aspose.OCR-for-Java/blob/master/Plugins/Aspose_OCR_Java_for_PHP/src/aspose/ocr/WorkingWithOCR/ApplyCorrectionFilters.php)
-- [CodePlex](https://asposeocrjavaphp.codeplex.com/SourceControl/latest#src/aspose/ocr/WorkingWithOCR/ApplyCorrectionFilters.php)
+- [CodePlex](https://archive.codeplex.com/?p=asposeocrjavaphp)
