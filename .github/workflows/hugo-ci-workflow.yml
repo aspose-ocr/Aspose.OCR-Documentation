@@ -13,9 +13,9 @@ jobs:
         run: |
           cd aspose-ocr-docs
           git clone https://github.com/aspose-ocr/Aspose.OCR-Documentation.git || (cd Aspose.OCR-Documentation && git pull)
-          git clone --single-branch --branch master https://git.dev.dynabic.com/containerize-hugo/lutsk-aspose-prototype.git || (cd lutsk-aspose-prototype && git stash && git pull)
+          git clone --single-branch --branch master https://git.dev.dynabic.com/containerize-hugo/lutsk-aspose-prototype.git || (cd lutsk-aspose-prototype && git pull)
           cd lutsk-aspose-prototype
-          git clone --single-branch --branch master https://git.dev.dynabic.com/containerize-hugo/lutsk-aspose-theme.git themes/lutsk-aspose-theme || (cd themes/lutsk-aspose-theme && git stash && git pull)
+          git clone --single-branch --branch master https://git.dev.dynabic.com/containerize-hugo/lutsk-aspose-theme.git themes/lutsk-aspose-theme || (cd themes/lutsk-aspose-theme && git pull)
           sudo npm install -D --save autoprefixer
           sudo npm install -D --save postcss-cli
           rsync --recursive --delete --force --progress ${{ secrets.PROJECTPATH }} content/
