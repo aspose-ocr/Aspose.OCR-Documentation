@@ -9,7 +9,7 @@ url: /
 
 ![Aspose.OCR for .NET Product Logo](home_1.png)
 
-**Welcome to Aspose.OCR for .NET** 
+**Welcome to Aspose.OCR for .NET.**
 
 Aspose.OCR for .NET is a character and optical mark recognition component that allows developers to add OCR functionality to their .NET applications using a simple set of classes.
 
@@ -30,11 +30,11 @@ Following are the links to some useful resources you may need to accomplish your
 - [Aspose.OCR for .NET Free Support Forum](https://forum.aspose.com/c/ocr)
 - [Aspose.OCR for .NET Paid Support Helpdesk](https://helpdesk.aspose.com/)
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 ![Aspose.OCR for Java Product Logo](home_2.png)
 
-**Welcome to the Aspose.OCR for Java** 
+**Welcome to the Aspose.OCR for Java**
 
 Aspose.OCR for Java is an optical character API that allows developers to add OCR functionality to their Java applications without requiring any additional tool or API. Aspose.OCR for Java allows extracting text from images having different fonts and styles - saving the time and effort involved in developing an OCR solution from scratch.
 
