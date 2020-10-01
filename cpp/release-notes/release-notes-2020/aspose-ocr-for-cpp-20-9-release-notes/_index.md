@@ -36,6 +36,8 @@ This page contains release notes for Aspose.OCR for C++ 20.9.
 
 No Changes
 
+## Example (C++17 since filesystem)
+
 {{< highlight cpp >}}
 
 #include <iostream>
