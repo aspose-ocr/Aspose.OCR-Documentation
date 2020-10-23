@@ -15,6 +15,8 @@ Aspose.OCR provides the [**get_skew**](https://apireference.aspose.com/ocr/cpp/
 
 ## Set Custom Angle for Skew Correction
 
-Aspose.OCR for C++ provides to option to specify custom angle for skew correction. For this, the API provides the [**RecognitionSettings.skew**](https://apireference.aspose.com/ocr/cpp/struct/recognition_settings#accf812434a7002e70b10b0edc701a450) property. The following code snippet demonstrates the use of the [**RecognitionSettings.skew**](https://apireference.aspose.com/ocr/cpp/struct/recognition_settings#accf812434a7002e70b10b0edc701a450) property to set custom skew correction angle.
+Aspose.OCR for C++ provides to option to specify custom angle for skew correction. For this, the API provides the [**RecognitionSettings.skew**](https://apireference.aspose.com/ocr/cpp/struct/recognition_settings#accf812434a7002e70b10b0edc701a450) property.You can pass the instance of the [**RecognitionSettings**](https://apireference.aspose.com/ocr/cpp/struct/recognition_settings) class to the [**page_settings**](https://apireference.aspose.com/ocr/cpp/groupAspose#ga028cce64d935cf8fc8d5eab3d3713ebf) method of the [**OCR**](https://apireference.aspose.com/ocr/cpp/namespace/aspose.ocr) class.
+
+The following code snippet demonstrates the use of the [**RecognitionSettings.skew**](https://apireference.aspose.com/ocr/cpp/struct/recognition_settings#accf812434a7002e70b10b0edc701a450) property to set custom skew correction angle.
 
 {{< gist "aspose-com-gists" "0a96b16b37da1f556e7081063782ec02" "Aspose.OCR-for-C-main-OCROperationWithLanguageSelection.cpp" >}}

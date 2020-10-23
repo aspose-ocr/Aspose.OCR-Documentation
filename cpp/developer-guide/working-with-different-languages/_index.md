@@ -17,7 +17,7 @@ There is no difference in performing OCR operation on images containing text in 
 
 ## Select Language for OCR Operation
 
-Aspose.OCR for C++ provides the option to specify the language to increase the efficiency of the OCR operation. For this, the API provides the [**RecognitionSettings.language_alphabet**](https://apireference.aspose.com/ocr/cpp/struct/recognition_settings#ae656be81807ebf1f6f1fa17694d458b9) property. The [**RecognitionSettings.language_alphabet**](https://apireference.aspose.com/ocr/cpp/struct/recognition_settings#ae656be81807ebf1f6f1fa17694d458b9) property accepts the language enum as value. The language enum has the following members.
+Aspose.OCR for C++ provides the option to specify the language to increase the efficiency of the OCR operation. For this, the API provides the [**RecognitionSettings.language_alphabet**](https://apireference.aspose.com/ocr/cpp/struct/recognition_settings#ae656be81807ebf1f6f1fa17694d458b9) property. You can pass the instance of the [**RecognitionSettings**](https://apireference.aspose.com/ocr/cpp/struct/recognition_settings) class to the [**page_settings**](https://apireference.aspose.com/ocr/cpp/groupAspose#ga028cce64d935cf8fc8d5eab3d3713ebf) method of the [**OCR**](https://apireference.aspose.com/ocr/cpp/namespace/aspose.ocr) class. The [**RecognitionSettings.language_alphabet**](https://apireference.aspose.com/ocr/cpp/struct/recognition_settings#ae656be81807ebf1f6f1fa17694d458b9) property accepts the language enum as value. The language enum has the following members.
 
 |Member|Language|
 | :- | :- |
