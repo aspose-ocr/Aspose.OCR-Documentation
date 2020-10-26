@@ -20,13 +20,8 @@ The component is implemented using Managed C# and can be used with any .NET lang
 ## **Aspose.OCR Features**
 
 - Read characters from images.
-- Support for JPG, JPEG, PNG, GIF, BMP and TIFF image file formats for OCR.
-- Support for English, French, Spanish and Portuguese.
-- Read popular fonts including Arial, Times New Roman, Courier New, Verdana, Tahoma and Calibri.
-- Support for regular, bold and italic font styles.
-- Scan the whole image or any part of the image.
-- Scan rotated images.
-- Can apply different noise removal filters before image recognition.
+- Support for JPEG, PNG, GIF etc. For the complete list supported file formats, please visit the [Supported File Formats](/ocr/net/supported-file-formats/) page.
+- Support for many characters including numbers and alphabets. For the complete list of supported characters, please visit the [Supported Characters](/ocr/net/supported-characters/) page.
 
 ## **Technical Support**
 
