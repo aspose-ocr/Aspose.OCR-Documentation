@@ -20,6 +20,8 @@ The component is implemented using Managed C# and can be used with any .NET lang
 ## **Aspose.OCR Features**
 
 - Read characters from images.
+- Scan the whole image or any part of the image.
+- Skew correction for OCR Operation.
 - Support for JPEG, PNG, GIF etc. For the complete list supported file formats, please visit the [Supported File Formats](/ocr/net/supported-file-formats/) page.
 - Support for many characters including numbers and alphabets. For the complete list of supported characters, please visit the [Supported Characters](/ocr/net/supported-characters/) page.
 
