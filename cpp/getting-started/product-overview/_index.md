@@ -5,7 +5,7 @@ weight: 10
 url: /cpp/product-overview/
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 **Welcome to Aspose.OCR for C++**
 
