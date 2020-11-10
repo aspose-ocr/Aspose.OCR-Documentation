@@ -13,11 +13,15 @@ Aspose.OCR for C++ is a native C++ library that allows developers to add OCR fu
 
 {{% /alert %}}
 
-## **Product Description**
+## Product Description
 
 Aspose OCR for C++ uses deep learning networks under the hood which means the solution is more reliable to differentiate noises on the image as compared to the classic cv approaches. The SDK itself works offline which is also important for some business applications. One of the main features of the library is the text fragment detection which enables it to recognize paragraphs and headers even if some pictures or tables are present on the page (unlike modern OCR engines based on classic cv approaches).
 
-## **Technical Support**
+## Platform Independence
+
+Aspose.OCR for C++ can be used to build 64-bit C++ applications.
+
+## Technical Support
 
 Aspose provides unlimited free technical support for all its products. The support is available to all users, including evaluation. If you need help with Aspose.OCR, consider the following:
 
