@@ -12,15 +12,15 @@ This page contains release notes for Aspose.OCR for C++ 20.4.
 {{% /alert %}} 
 
 Aspose.OCR for C++ is a cross-platform C++ library for optical character recognition and document scanning. It allows you to scan documents and recognize characters. Recognized text in English charset.
-#### **Prerequisite**
+## **Prerequisite**
 Aspose OCR library required onnxruntime.dll in the system path.
-#### **Recognize charset**
+## **Recognize charset**
 "EN"
-#### **Input formats**
+## **Input formats**
 - bmp
 - jpg
 - png
-#### **Aspose OCR API**
+## **Aspose OCR API**
 Note: all function in the 'aspose::ocr' namespace.
 
 |**Method**|**Description**|
@@ -30,7 +30,7 @@ Note: all function in the 'aspose::ocr' namespace.
 |const wchar_t* recognize_page(const char* image_path)|Support jpg, bmp, and png format files.|
 |const wchar_t* recognize_line(const char* image_path)|Support jpg, bmp, and png format files.|
 |double get_skew(const char* image_path)|Calculate the skew angle.|
-#### **Supported Characters**
+## **Supported Characters**
 
 |space|!|"|#|$|%|&|'|(|)|
 | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- |
@@ -48,7 +48,7 @@ Note: all function in the 'aspose::ocr' namespace.
 |ß|à|á|â|ã|ä|æ|ç|è|é |
 |ê|ë|ì|í|î|ï|ñ|ò|ó|ô |
 |õ|ö|ù|ú|û|ü|ÿ|Œ|œ|Ÿ |
-#### **Example (C++17 since filesystem)**
+## **Example (C++17 since filesystem)**
 {{< highlight cpp >}}
 
  #include <iostream>
