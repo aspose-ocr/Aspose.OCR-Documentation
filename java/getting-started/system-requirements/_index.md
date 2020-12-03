@@ -38,4 +38,4 @@ To use CUDA on your system, you will need the following installed:
  - A supported version of Microsoft Visual Studio
  - the NVIDIA CUDA Toolkit (available at http://developer.nvidia.com/cuda-downloads) 10.1 version
  
-Installation guide for CUDA you can find by link [CUDA install] (https://docs.nvidia.com/cuda/cuda-installation-guide-microsoft-windows/index.html)
+Installation guide for CUDA you can find by link [CUDA install](https://docs.nvidia.com/cuda/cuda-installation-guide-microsoft-windows/index.html)

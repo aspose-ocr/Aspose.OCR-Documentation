@@ -11,7 +11,7 @@ Aspose hosts all Java APIs on the [Maven repository](https://repository.aspose.
 
 ### **Installing Aspose.OCR for Java from Maven Repository**
  
-First, [download Maven] (https://maven.apache.org/download.cgi) and follow the [installation instructions] (https://maven.apache.org/install.html).
+First, [download Maven](https://maven.apache.org/download.cgi) and follow the [installation instructions](https://maven.apache.org/install.html).
 
 Then run command to create project
 
@@ -19,7 +19,7 @@ Then run command to create project
 `-DarchetypeVersion=1.4 -DinteractiveMode=false`
 
 Notice: If you want to use **GPU version** you have to make sure does your GPU supports **CUDA** and install CUDA 10.1
-Installation guide for CUDA you can find by link [CUDA install] (https://docs.nvidia.com/cuda/cuda-installation-guide-microsoft-windows/index.html)
+Installation guide for CUDA you can find by link [CUDA install](https://docs.nvidia.com/cuda/cuda-installation-guide-microsoft-windows/index.html)
 
 ### **Specify Maven Repository Configuration**
 
@@ -27,7 +27,7 @@ First, you need to specify Aspose Maven Repository configuration/location in you
 
 Copy 
 
-{{< highlight java >}}
+```java
 <repositories>
     <repository>
         <id>AsposeJavaAPI</id>
@@ -35,14 +35,14 @@ Copy
         <url>http://repository.aspose.com/repo/</url>
     </repository>
 </repositories>
-{{< /highlight >}}
+```
 
 Define Aspose.OCR for Java API Dependency
 Then define Aspose.OCR for Java API dependency in your **pom.xml** as follows:
 
 Copy 
 
-{{< highlight java >}}
+```java
 <dependencies>
     <dependency>
         <groupId>com.aspose</groupId>
@@ -50,7 +50,7 @@ Copy
         <version>20.11</version>
     </dependency>
 </dependencies>
-{{< /highlight >}}
+```
 
 After performing the above steps, Aspose.OCR for Java dependency will finally be defined in your Maven Project.
 
@@ -61,7 +61,7 @@ After performing the above steps, Aspose.OCR for Java dependency will finally be
 
  - create aspose-ocr-[version].pom file with next content (aspose-ocr--gpu-[version].pom)
 
-{{< highlight java >}}
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
@@ -103,7 +103,7 @@ After performing the above steps, Aspose.OCR for Java dependency will finally be
  <description>Aspose.OCR for Java
 </description>
 </project>
-{{< /highlight >}}
+```
 
 put jar files and pom file into `C:/Users/[Name]/.m2/repository/com/aspose/aspose-ocr/20.11` (specify version)
 or `C:/Users/[Name]/.m2/repository/com/aspose/aspose-ocr-gpu/20.11` (specify version)

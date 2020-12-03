@@ -21,10 +21,11 @@ You can use Aspose.Ocr for C++ to develop applications in any development enviro
 Notice: if you install a package from Nuget, you don't need to install any additionals. If you simply want to use Aspose.Ocr.dll,
 you will need to:
 
-    1. add a reference on Aspose.Ocr.dll	
-    2. install from Nuget Microsoft.ML.OnnxRuntime Version="1.3.0" 
+ - add a reference on Aspose.Ocr.dll	
+ 
+ - install from Nuget Microsoft.ML.OnnxRuntime Version="1.3.0" 
 	
-## **Dependencies GPU version
+### **Dependencies GPU version**
 
  - Microsoft.ML.OnnxRuntime.Gpu.1.4.0
 
@@ -38,4 +39,4 @@ To use CUDA on your system, you will need the following installed:
  - A supported version of Microsoft Visual Studio
  - the NVIDIA CUDA Toolkit (available at http://developer.nvidia.com/cuda-downloads) 10.1 version
  
-Installation guide for CUDA you can find by link https://docs.nvidia.com/cuda/cuda-installation-guide-microsoft-windows/index.html
+Installation guide for CUDA you can find by link [CUDA install] (https://docs.nvidia.com/cuda/cuda-installation-guide-microsoft-windows/index.html)
