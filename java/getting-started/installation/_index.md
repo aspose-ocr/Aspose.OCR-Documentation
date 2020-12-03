@@ -73,35 +73,34 @@ After performing the above steps, Aspose.OCR for Java dependency will finally be
  <version>[version]</version>
  <name>ocr</name>
  <properties>
-  <project.displayName>Aspose.OCR for Java</project.displayName>
+    <project.displayName>Aspose.OCR for Java</project.displayName>
                 // <project.displayName>Aspose.OCR.GPU for Java</project.displayName>
-  <maven.compiler.source>1.8</maven.compiler.source>
-  <maven.compiler.target>1.8</maven.compiler.target>
-  <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
  </properties>
  <dependencies>
-  <dependency>
+    <dependency>
                   // for cpu version
-    <groupId>org.bytedeco</groupId>
-    <artifactId>onnxruntime-platform</artifactId>
-    <version>1.2.0-1.5.3</version> 
+        <groupId>org.bytedeco</groupId>
+        <artifactId>onnxruntime-platform</artifactId>
+        <version>1.2.0-1.5.3</version> 
                   // for gpu version
                   // <groupId>com.microsoft.onnxruntime</groupId>
-    // <artifactId>onnxruntime_gpu</artifactId>
-    // <version>1.3.1</version>
-                </dependency>
-  <dependency>
-   <groupId>com.google.code.gson</groupId>
-   <artifactId>gson</artifactId>
-   <version>2.8.5</version>
-  </dependency>
+        // <artifactId>onnxruntime_gpu</artifactId>
+        // <version>1.3.1</version>
+    </dependency>
+    <dependency>
+        <groupId>com.google.code.gson</groupId>
+        <artifactId>gson</artifactId>
+        <version>2.8.5</version>
+    </dependency>
  </dependencies>
  <organization>
-  <name>Aspose</name>
-  <url>https://products.aspose.com/ocr/java</url>
+    <name>Aspose</name>
+    <url>https://products.aspose.com/ocr/java</url>
  </organization>
- <description>Aspose.OCR for Java
-</description>
+ <description>Aspose.OCR for Java</description>
 </project>
 ```
 
@@ -109,55 +108,6 @@ put jar files and pom file into `C:/Users/[Name]/.m2/repository/com/aspose/aspos
 or `C:/Users/[Name]/.m2/repository/com/aspose/aspose-ocr-gpu/20.11` (specify version)
 
 don't specify Maven Repository in your project pom file, write only <dependencies>
-
-
-
-
-
-
-
-
-{{< highlight java >}}
-
- <repositories>
-
-    <repository>
-
-        <id>AsposeJavaAPI</id>
-
-        <name>Aspose Java API</name>
-
-        <url>http://repository.aspose.com/repo/</url>
-
-    </repository>
-
-</repositories>
-
-{{< /highlight >}}
-
-### **Define Aspose.OCR for Java API Dependency**
-
-Then define Aspose.OCR for Java API dependency in your **pom.xml** as follows:
-
-{{< highlight java >}}
-
- <dependencies>
-
-    <dependency>
-
-        <groupId>com.aspose</groupId>
-
-        <artifactId>aspose-ocr</artifactId>
-
-        <version>20.7</version>
-
-    </dependency>
-
-</dependencies>
-
-{{< /highlight >}}
-
-After performing the above steps, Aspose.OCR for Java dependency will finally be defined in your Maven Project.
 
 ## **Technical Support**
 
