@@ -4,11 +4,13 @@ type: docs
 weight: 80
 url: /net/installation/
 ---
+## **Windows**
 
 ## **Installing Aspose.OCR for .NET through NuGet**
 
 NuGet is the easiest way to download and install Aspose .NET APIs. **Open** Microsoft Visual Studio. Select **TOOLS** menu, goto **NuGet Package Manager** and select **Manage NuGet packages for solution**. Search 'aspose.ocr' keyword. This will find the desired Aspose API. Click on "Install" button, the selected API will be downloaded and referenced in your project.
 
+For .NET you can choose Aspose.OCR and Aspose.OCR-GPU versions. Notice that GPU version requires CUDA in your system
 ![todo:image_alt_text](ex1.bmp)
 
 ## **Install or Update Aspose.OCR using the Package Manager Console**
@@ -28,18 +30,19 @@ You should now find that Aspose.OCR has successfully been added and referenced i
 
 ![todo:image_alt_text](installation_4.jpg)
 
-In the package manager console, you can use the command **Update-Package Aspose.OCR.NET** and press enter to check for any updates to the Aspose.OCR package and install them if present. You can also add the "-prerelease" suffix to update latest release.
+In the package manager console, you can use the command **Update-Package Aspose.OCR** and press enter to check for any updates to the Aspose.OCR package and install them if present. You can also add the "-prerelease" suffix to update latest release.
 
 ## **Referencing the Component**
 
 To use any component in your application, you must add a reference to it. The following steps assume that you use Visual Studio .NET.
 
 1. In Solution Explorer, expand the project node you want to add a reference to.
-1. Right-click the project's References node and select **Add Reference** from the menu.
-1. In the **Add Reference** dialog, select the **.NET** tab (selected by default).
-1. If you have used an MSI installer to install Aspose.OCR, Aspose.OCR is listed in the top pane. Select Aspose.OCR and then click **Select**.
-1. If you have downloaded and unpacked the DLL only, locate the Aspose.OCR.dll file using the **Browse** button. Now that you have referenced Aspose.OCR and it should appear in the Selected Components pane of the dialog box.
-1. Click **OK**.
+2. Right-click the project’s References node and select Add COM Reference (for .core project)  or Add Reference (for .framework project) from the menu.
+3. In the Add Reference dialog, select the .NET tab (selected by default).
+4. If you have used an MSI installer to install Aspose.OCR or if you have downloaded and unpacked the DLL only, locate the Aspose.OCR.dll file using the Browse button. Now that you have referenced Aspose.OCR and it should appear in the Selected Components pane of the dialog box.
+5. Additionally, you have to install dependencies packages from nuget (for example for Aspose.OCR 20.11.0 version you have to install Microsoft.ML.OnnxRuntime.MKLML 1.4.0 and System.Drawing.Common 4.7.0.
+6. Notice that GPU version requires CUDA in your system.
+7. Click OK.
 
 The Aspose.OCR reference appears under the project's References node.
 

@@ -18,11 +18,37 @@ url: /net/system-requirements/
 - Linux
 
 ## **Supported Frameworks**
-- **.NET Standard 2.0**
+
+**- .NET Standard 2.0** ( supports https://docs.microsoft.com/en-us/dotnet/standard/net-standard)
+
+## **Dependencies CPU version**
+ - Microsoft.ML.OnnxRuntime.MKLML   Version="1.4.0"
+ - System.Drawing.Common  Version="4.7.0"
+
+Notice: if you install a package from Nuget, you don't need to install any additionals (as for .core as for .framework). If you install Aspose.Ocr from MSI installer or simply want to use Aspose.Ocr.dll,
+you will need to:
+    1. add a reference on Aspose.Ocr.dll
+    2. install from Nuget Microsoft.ML.OnnxRuntime.MKLML   Version="1.4.0" and System.Drawing.Common  Version="4.7.0"
+
+## **Dependencies GPU version**
+ - Microsoft.ML.OnnxRuntime.Gpu  Version="1.4.0"
+ - System.Drawing.Common  Version="4.7.0"
 
 ## **Development Environments**
+
 You can use Aspose.OCR for .NET to develop applications in any development environment that targets the .NET platform, but the following environments are explicitly supported:
 
-- Microsoft Visual Studio 2017 from version 15.3
-- Microsoft Visual Studio 2019
-- Microsoft Visual Studio for Mac from version 7.1
+ - Microsoft Visual Studio 2017 from version 15.3
+ - Microsoft Visual Studio 2019
+ - Microsoft Visual Studio for Mac from version 7.1
+
+## **GPU version**
+If you want to use Aspose.OCR-GPU you have to make sure does your GPU supports CUDA.  You can do this by link https://developer.nvidia.com/cuda-gpus. 
+To use CUDA on your system, you will need the following installed:
+
+ - A CUDA-capable GPU
+ - A supported version of Microsoft Windows
+ - A supported version of Microsoft Visual Studio
+ - the NVIDIA CUDA Toolkit (available at http://developer.nvidia.com/cuda-downloads)
+ 
+Installation guide for CUDA you can find by link https://docs.nvidia.com/cuda/cuda-installation-guide-microsoft-windows/index.html
