@@ -21,7 +21,7 @@ Select **TOOLS** -> **NuGet Package Manager** -> **Package Manager Console** fro
 
 ![todo:image_alt_text](installation_2.png)
 
-Type the command “Install-Package Aspose.OCR -Version x.x.0” and press enter to install latest full release into your application. Alternatively, you can add the "-prerelease" suffix to the command in order to specify that the latest release including hot fixes is to be installed as well.
+Type the command `“Install-Package Aspose.OCR -Version x.x.0”` and press enter to install latest full release into your application. Alternatively, you can add the "-prerelease" suffix to the command in order to specify that the latest release including hot fixes is to be installed as well.
 
 ![todo:image_alt_text](installation_3.jpg)
 
@@ -30,7 +30,7 @@ You should now find that Aspose.OCR has successfully been added and referenced i
 
 ![todo:image_alt_text](installation_4.jpg)
 
-In the package manager console, you can use the command **Update-Package Aspose.OCR** and press enter to check for any updates to the Aspose.OCR package and install them if present. You can also add the "-prerelease" suffix to update latest release.
+In the package manager console, you can use the command `Update-Package Aspose.OCR` and press enter to check for any updates to the Aspose.OCR package and install them if present. You can also add the "-prerelease" suffix to update latest release.
 
 ## **Referencing the Component**
 
