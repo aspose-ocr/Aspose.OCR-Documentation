@@ -8,7 +8,7 @@ url: /cpp/installation/
 
 ## **Installing Aspose.OCR for C++**
 
-**Installing Aspose.Ocr.Cpp through NuGet**
+##**Installing Aspose.Ocr.Cpp through NuGet**##
 
 NuGet is the easiest way to download and install Aspose APIs. Open **Microsoft Visual Studio**. Select **TOOLS** menu, goto **NuGet Package Manager** and select Manage NuGet Packages for solution. Search **‘aspose.ocr.cpp’** keyword. 
 This will find the desired Aspose API. Click on “Install” button, the selected API will be downloaded and referenced in your project.
@@ -17,7 +17,7 @@ You can choose Aspose.Ocr.Cpp and Aspose.Ocr.Cpp-GPU versions. Notice that GPU v
 
 ![todo:image_alt_text](ex2.bmp)
 
-**Install or Update Aspose.Ocr.Cpp using the Package Manager Console**
+##**Install or Update Aspose.Ocr.Cpp using the Package Manager Console**##
 
 You can follow the steps below to install or upgrade the Aspose.OCR API using the **package manager console**: 
 Open your solution/project in Visual Studio. Select **TOOLS -> NuGet Package Manager -> Package Manager Console** from the top menu. This will open the package manager console.
@@ -32,7 +32,7 @@ If you are not familiar with the Aspose EULA https://company.aspose.com/legal/eu
 
 In the package manager console, you can use the command Update-Package Aspose.Ocr.Cpp and press enter to check for any updates to the Aspose.Ocr.Cpp package and install them if present. 
 
-**Referencing the Component**
+##**Referencing the Component**##
 
 To use any component in your application, you must add a reference to it. The following steps assume that you use Visual Studio 2019 C++ project.
 
