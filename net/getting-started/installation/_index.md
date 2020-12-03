@@ -9,7 +9,7 @@ url: /net/installation/
 
 NuGet is the easiest way to download and install Aspose .NET APIs. **Open** Microsoft Visual Studio. Select **TOOLS** menu, goto **NuGet Package Manager** and select **Manage NuGet packages for solution**. Search 'aspose.ocr' keyword. This will find the desired Aspose API. Click on "Install" button, the selected API will be downloaded and referenced in your project.
 
-![todo:image_alt_text](installation_1.jpg)
+![todo:image_alt_text](ex1.bmp)
 
 ## **Install or Update Aspose.OCR using the Package Manager Console**
 
