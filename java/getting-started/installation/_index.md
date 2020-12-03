@@ -51,6 +51,17 @@ Copy
     </dependency>
 </dependencies>
 ```
+or 
+
+```java
+<dependencies>
+    <dependency>
+        <groupId>com.aspose</groupId>
+        <artifactId>aspose-ocr-gpu</artifactId>
+        <version>20.11</version>
+    </dependency>
+</dependencies>
+```
 
 After performing the above steps, Aspose.OCR for Java dependency will finally be defined in your Maven Project.
 
@@ -107,7 +118,7 @@ After performing the above steps, Aspose.OCR for Java dependency will finally be
 put jar files and pom file into `C:/Users/[Name]/.m2/repository/com/aspose/aspose-ocr/20.11` (specify version)
 or `C:/Users/[Name]/.m2/repository/com/aspose/aspose-ocr-gpu/20.11` (specify version)
 
-don't specify Maven Repository in your project pom file, write only <dependencies>
+don't specify Maven Repository in your project pom file, write only `<dependencies>`
 
 ## **Technical Support**
 
