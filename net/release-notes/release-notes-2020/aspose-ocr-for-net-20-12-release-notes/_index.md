@@ -21,12 +21,14 @@ This page contains release notes information for Aspose.OCR for .NET 20.12
 
 |Key|Summary|Category|
 |---|---|---|
-|OCRNET-290|Implement the possibility to get result in .doc, .docx, .odt and .txt formats |Enhancement|
+|OCRNET-280|Implement the possibility to get result in .doc, .docx, .odt and .txt formats |Enhancement|
+|OCRNET-290|Increase performance by reducing image loading time |Enhancement|
 
 
 ## Enhancements
 
 - added ability to save the recognition result in the plain text, Microsoft Word, Office Open XML or ODF Text Document format
+- improving overall API performance by reducing image loading times
 
 ## Public API and Backwards Incompatible Changes
 
