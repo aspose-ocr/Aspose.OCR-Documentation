@@ -60,6 +60,7 @@ import com.aspose.ocr.AsposeOCR;
 import com.aspose.ocr.License;
 import com.aspose.ocr.RecognitionResult;
 import com.aspose.ocr.RecognitionSettings;
+import com.aspose.ocr.SaveFormat.Format;
 
 ////  for gpu version
 
