@@ -82,6 +82,8 @@ namespace ProgramOCR
 
             // Save result
 
+			Console.WriteLine(result.RecognitionText);
+			
             result.Save("D://test.pdf", SaveFormat.Pdf);
             result.Save("D://test.md", SaveFormat.Md);
         }
