@@ -29,7 +29,7 @@ This page contains release notes information for Aspose.OCR for .NET 21.1
 ## Enhancements
 
 - added ability to save the recognition result in the Markdown and Searchable PDF Document format
-- added custom image quality correction with parameter TresholdValue
+- added custom image quality correction with parameter ThresholdValue
 - improved performance and reduced memory costs
 
 
@@ -77,7 +77,7 @@ namespace ProgramOCR
             // Recognize image           
             RecognitionResult result = api.RecognizeImage(image, new RecognitionSettings
                        {
-                                 TresholdValue = 160
+                                 ThresholdValue = 160
                        });
 
             // Save result
