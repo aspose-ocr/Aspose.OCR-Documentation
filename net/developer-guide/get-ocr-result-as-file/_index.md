@@ -12,7 +12,32 @@ The following code snippet demonstrates the use of the [**Save**](https://apiref
 
 ## Sample Code
 
-{{< gist "aspose-com-gists" "694b8338d9e4cb52c451784b33dc2fc9" "Examples-CSharp-PerformingandManagingOCR-PerformOCROnImageSave.cs" >}}
+{{< highlight csharp >}}
+...
+
+	// For complete examples and data files, please go to https://github.com/aspose-ocr/Aspose.OCR-for-.NET
+	// The path to the documents directory.
+	string dataDir = RunExamples.GetDataDir_OCR();
+
+	// Get image for recognize
+	string uri = "https://qph.fs.quoracdn.net/main-qimg-0ff82d0dc3543dcd3b06028f5476c2e4";
+
+	// Initialize an instance of AsposeOcr
+	AsposeOcr api = new AsposeOcr();
+
+	// Recognize image           
+	RecognitionResult result = api.RecognizeImageFromUri(uri, new RecognitionSettings
+	{
+	});
+
+	// Save the result in your preferred format
+	   result.Save("D://test.docx", SaveFormat.Docx);
+	   result.Save("D://test.doc", SaveFormat.Doc);
+	   result.Save("D://test.odt", SaveFormat.Odt);
+	   result.Save("D://test.txt", SaveFormat.Text);
+	   result.Save("D://test.md", SaveFormat.Md);
+	   result.Save("D://test.pdf", SaveFormat.Pdf);
+{{< /highlight >}}
 
 ## Select file format for result
 Aspose.OCR for .NET provides the option to specify the Document format for result saving. For this, the API provides the [**SaveFormat**](https://apireference.aspose.com/ocr/net/aspose.ocr/saveformat)  enumeration. The [**SaveFormat**](https://apireference.aspose.com/ocr/net/aspose.ocr/saveformat) enum has the following members.
