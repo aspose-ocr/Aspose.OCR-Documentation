@@ -21,13 +21,13 @@ Aspose.OCR for .NET provides the option to specify the language to increase the 
 
 |Member|Language|
 | :- | :- |
-|**none**|Multi-language support|
-|**en**|English (en)|
-|**de**|German (de)|
-|**pt**|Portuguese (pt)|
-|**es**|Spanish (es)|
-|**fr**|French (fr)|
-|**it**|Italian (it)|
+|**None**|Multi-language support|
+|**En**|English (en)|
+|**De**|German (de)|
+|**Pt**|Portuguese (pt)|
+|**Es**|Spanish (es)|
+|**Fr**|French (fr)|
+|**It**|Italian (it)|
 
 The following code snippet demonstrates selecting language for OCR operation.
 

@@ -29,5 +29,6 @@ In case you know the characters that aren't present in the image, you can pass t
 			
 	// Display the recognized text
 	Console.WriteLine(result.RecognitionText);
+	
 {{< /highlight >}}
 

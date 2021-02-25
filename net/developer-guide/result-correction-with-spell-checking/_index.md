@@ -28,11 +28,11 @@ The following code snippet demonstrates the use of the [**RecognitionResult.GetS
 	Console.WriteLine(result.RecognitionText);
 
 	// Get corrected result
-	string correctedResult = result.GetSpellCheckCorrectedText(SpellCheckLanguage.en);
+	string correctedResult = result.GetSpellCheckCorrectedText(SpellCheckLanguage.En);
 	Console.WriteLine(correctedResult);
 
 	//Get list of misspelled words with suggestions
-	List<SpellCheckError> errorsList = result.GetSpellCheckErrorList(SpellCheckLanguage.en);
+	List<SpellCheckError> errorsList = result.GetSpellCheckErrorList(SpellCheckLanguage.En);
 	foreach (var word in errorsList)
 	{
 		Console.Write(word.Word);
@@ -45,6 +45,8 @@ The following code snippet demonstrates the use of the [**RecognitionResult.GetS
 		}
 		Console.WriteLine();
 	}
+	
+	Console.WriteLine(api.CorrectSpelling("recogniition"));
 {{< /highlight >}}
 
 

@@ -40,7 +40,11 @@ This page contains release notes information for Aspose.OCR for .NET 21.2
 -  added method: string GetSpellCheckCorrectedText (SpellCheckLanguage language) to the RecognitionResult class
 -  added method: string List<SpellCheckError> GetSpellCheckErrorList(SpellCheckLanguage language) to the RecognitionResult class
 -  added new API method:  public string RecognizeImageFromUri(string uri)
+-  added new API method: public string CorrectSpelling(string text, SpellCheckLanguage language = SpellCheckLanguage.En)
 -  modified property: Skew->SkewAngle  in the RecognitionSettings class
+-  modified method: public void Save(string fullFileName, 
+			SaveFormat saveFormat, bool applySpellingCorrection = false, 
+			SpellCheckLanguage language = SpellCheckLanguage.En)  in the RecognitionSettings class
 
 ### Removed APIs
 
@@ -51,7 +55,7 @@ This page contains release notes information for Aspose.OCR for .NET 21.2
 
 -
 
-## Usage Example
+## Usage Example for spell-checking
 
 {{< highlight csharp >}}
 
@@ -83,11 +87,11 @@ namespace ProgramOCR
             Console.WriteLine(result.RecognitionText);
 
             // Get corrected result
-            string correctedResult = result.GetSpellCheckCorrectedText(SpellCheckLanguage.en);
+            string correctedResult = result.GetSpellCheckCorrectedText(SpellCheckLanguage.En);
             Console.WriteLine(correctedResult);
 
             //Get list of misspelled words with suggestions
-            List<SpellCheckError> errorsList = result.GetSpellCheckErrorList(SpellCheckLanguage.en);
+            List<SpellCheckError> errorsList = result.GetSpellCheckErrorList(SpellCheckLanguage.En);
             foreach (var word in errorsList)
             {
                 Console.Write(word.Word);
@@ -104,4 +108,40 @@ namespace ProgramOCR
     }
 }
 
+{{< /highlight >}}
+
+## Usage Example for ignored characters
+
+{{< highlight csharp >}}
+...
+
+	// Initialize an instance of AsposeOcr
+	AsposeOcr api = new AsposeOcr();
+
+	// Recognize image
+	RecognitionResult result = api.RecognizeImage(image, new RecognitionSettings
+	{
+		IgnoredCharacters  = "ab1"
+	});
+			
+	// Display the recognized text
+	Console.WriteLine(result.RecognitionText);
+	
+{{< /highlight >}}
+
+
+## Usage Example for correct spelling
+
+{{< highlight csharp >}}
+...
+
+	// Initialize an instance of AsposeOcr
+	AsposeOcr api = new AsposeOcr();
+
+	// correct
+	string result = api.CorrectSpelling("recoognition");
+			
+	// Display the corrected text
+	Console.WriteLine(result);
+	
 {{< /highlight >}}
