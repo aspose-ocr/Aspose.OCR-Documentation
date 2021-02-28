@@ -38,11 +38,14 @@ The next opportunities:
 
 ### New API
 
-- added method: void setIgnoredCharacters(String characters) to the RecognitionSettings class
-- added methods: List<SpellCheckError> getSpellCheckErrorList(SpellCheckLanguage language) and List<SpellCheckError> getSpellCheckErrorList() to the RecognitionResult class
+
+
 - added methods: String getSpellCheckCorrectedText(SpellCheckLanguage language) and String getSpellCheckCorrectedText() to the RecognitionResult class
+- added methods: List<SpellCheckError> getSpellCheckErrorList(SpellCheckLanguage language) and List<SpellCheckError> getSpellCheckErrorList() to the RecognitionResult class
 - added methods: void saveSpellCheckCorrectedText(String fullFileName, Format format, SpellCheckLanguage language)
 and public void saveSpellCheckCorrectedText(String fullFileName, Format format) to the RecognitionResult class
+
+- added method: void setIgnoredCharacters(String characters) to the RecognitionSettings class
 
 - added new API method: public string CorrectSpelling(string text, SpellCheckLanguage language = SpellCheckLanguage.En)
 
@@ -118,20 +121,6 @@ public class App {
 			
 		System.out.println(api.CorrectSpelling("satisfa ction", SpellCheckLanguage.fr));
     }
-
-
-
-static void save(AsposeOCR api, String file) throws Exception {
-        try {
-            RecognitionSettings set =  new RecognitionSettings();
-            RecognitionResult result = api.RecognizePage(file, set);
-            result.save("D://test.doc", Format.Doc);
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
 }
 
 {{< /highlight >}}
