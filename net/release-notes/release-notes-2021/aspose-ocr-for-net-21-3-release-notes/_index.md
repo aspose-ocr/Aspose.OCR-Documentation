@@ -36,7 +36,7 @@ This page contains release notes information for Aspose.OCR for .NET 21.3
 ### New API
 
 -  added members to Language enum: Cze(Czech), Dan(Danish), Dum(Dutch), Est(Estonian), Fin(Finnish), Lav(Latvian), Lit(Lithuanian), Nor(Norwegian), Pol(Polish), Rum(Romanian), Srp_hrv(Serbo-Croatian), Slk(Slovak), Slv(Slovene), Swe(Swedish)
- -  added members to SpellCheckLanguage enum: Cze(Czech), Dan(Danish), Dum(Dutch), Est(Estonian), Fin(Finnish), Lav(Latvian), Lit(Lithuanian), Nor(Norwegian), Pol(Polish), Rum(Romanian), Srp_hrv(Serbo-Croatian), Slk(Slovak), Slv(Slovene), Swe(Swedish)
+ -  added members to SpellCheckLanguage enum: Cze(Czech), Dan(Danish), Dum(Dutch), Est(Estonian), Fin(Finnish), Lav(Latvian), Lit(Lithuanian), Pol(Polish), Rum(Romanian), Slk(Slovak), Slv(Slovene), Swe(Swedish)
 -  modified method: public void Save(string fullFileName, bool applySpellingCorrection = false, 
 			SpellCheckLanguage language = SpellCheckLanguage.En)  in the RecognitionSettings class
 
