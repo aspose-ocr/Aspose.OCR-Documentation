@@ -21,8 +21,7 @@ This page contains release notes information for Aspose.OCR for Java 21.3
 
 |Key|Summary|Category|
 |---|---|---|
-|OCRJAVA-105|Expand dictionaries|Enhancement|
-|OCRJAVA-109|New models - investigate and implement one|Enhancement|
+|OCRJAVA-110|Release 21.03 with new model|Enhancement|
 
 
 ## Enhancements
