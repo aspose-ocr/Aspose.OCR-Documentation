@@ -32,11 +32,7 @@ The following code snippet demonstrates the use of the [**Save**](https://apiref
 
 	// Save the result in your preferred format
 	   result.Save("D://test.docx", SaveFormat.Docx);
-	   result.Save("D://test.doc", SaveFormat.Doc);
-	   result.Save("D://test.odt", SaveFormat.Odt);
 	   result.Save("D://test.txt", SaveFormat.Text);
-	   result.Save("D://test.md", SaveFormat.Md);
-	   result.Save("D://test.pdf", SaveFormat.Pdf);
 {{< /highlight >}}
 
 ## Select file format for result
@@ -45,8 +41,4 @@ Aspose.OCR for .NET provides the option to specify the Document format for resul
 |Member|Description|
 | :- | :- |
 |**Text**|Saves the document in the plain text format.|
-|**Doc**|Saves the document in the Microsoft Word 97 - 2007 Document format.|
 |**Docx**|Saves the document as an Office Open XML WordprocessingML Document (macro-free).|
-|**Odt**|Saves the document as an ODF Text Document.|
-|**Md**|Markdown format|
-|**Pdf**|Searchable PDF Document|
