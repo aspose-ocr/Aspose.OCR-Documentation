@@ -12,7 +12,7 @@ is_root: true
 
 **Welcome to Aspose.OCR for .NET.**
 
-Aspose.OCR for .NET is a character and optical mark recognition component that allows developers to add OCR functionality to their .NET applications using a simple set of classes.
+Aspose.OCR for .NET is a character recognition component that allows developers to add OCR functionality to their .NET applications using a simple set of classes.
 
 The component is implemented using Managed C# and can be used with any .NET language. Aspose.OCR for .NET comes with detailed demos and working examples written in C#. The demos help developers learn about the component's features and get up and running quickly.
 
