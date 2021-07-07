@@ -23,6 +23,8 @@ This page contains release notes information for Aspose.OCR for .NET 21.6
 |---|---|---|
 |OCRNET-359| Import new models (DSR, Chinese OCR) |Enhancement|
 |OCRNET-360| Add method CalcSkewImage(uri) |Enhancement|
+|OCRNET-41 | Support for Chinese Language - Aspose.OCR for .NET |Enhancement|
+|OCRNET-39 | Support for Chinese Language |Enhancement|
 
 
 ## Enhancements
