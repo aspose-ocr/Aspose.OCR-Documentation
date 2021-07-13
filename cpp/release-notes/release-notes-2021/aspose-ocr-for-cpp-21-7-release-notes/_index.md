@@ -21,8 +21,8 @@ This page contains release notes for Aspose.OCR for C++ 21.7.
 
 |Key|Summary|Category|
 |---|---|---|
-|OCRCPP-177| Add .pdf format to save the recognition result|Enhancement|
-|OCRCPP-178| Add new ML model|Enhancement|
+|OCRCPP-182| Import new models (DSR, Chinese OCR)|Enhancement|
+|OCRCPP-183| Add method CalcSkewImage(uri)|Enhancement|
 
 ## Enhancements
 
