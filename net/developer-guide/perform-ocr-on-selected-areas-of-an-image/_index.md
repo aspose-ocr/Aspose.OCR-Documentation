@@ -6,10 +6,30 @@ url: /net/perform-ocr-on-selected-areas-of-an-image/
 ---
 
 ## **Perform OCR on selected areas of an image**
-Aspose.OCR for .NET provides the option to specify the areas for recognizing text in pixels. For this, the API provides the overloaded version of the [RecognizePage](https://apireference.aspose.com/ocr/net/aspose.ocr.asposeocr/recognizeimage/methods/6) method that takes the image path and the array of [Rectangle](https://docs.microsoft.com/en-gb/dotnet/api/system.drawing.rectangle?view=netcore-3.1) as parameters. The following code snippet demonstrates recognizing text in specified rectangles.
+Aspose.OCR for .NET provides the option to specify the areas for recognizing text in pixels. For this, the API provides the overloaded version of the [RecognizePage](https://apireference.aspose.com/ocr/net/aspose.ocr.asposeocr/recognizeimage/methods/5) method that takes the image path and the RecognitionSettings object with array of [Rectangle](https://docs.microsoft.com/en-gb/dotnet/api/system.drawing.rectangle?view=netcore-3.1) as parameters. The following code snippet demonstrates recognizing text in specified rectangles.
 
-{{< gist "aspose-com-gists" "dad6b4a35169ed7893fd376e819d7626" "Examples-CSharp-PerformingandManagingOCR-PrepareRectangles-1.cs" >}}
+
 ## **Perform OCR on a specific rectangle**
 The following code snippet demonstrates how to perform OCR operation on a specific rectangle area of the image.
 
-{{< gist "aspose-com-gists" "dad6b4a35169ed7893fd376e819d7626" "Examples-CSharp-PerformingandManagingOCR-RecognizeTextFromSpecificRectangle-1.cs" >}}
+{{< highlight csharp >}}
+...
+
+	// For complete examples and data files, please go to https://github.com/aspose-ocr/Aspose.OCR-for-.NET
+	// The path to the documents directory.
+	string dataDir = RunExamples.GetDataDir_OCR();
+
+	// Initialize an instance of AsposeOcr
+	AsposeOcr api = new AsposeOcr();
+
+	// Recognize image
+	RecognitionResult result = api.RecognizeImage(image, new RecognitionSettings
+		RecognitionAreas = new List<Rectangle>()
+		{
+			new Rectangle(1,3,400,70),
+			new Rectangle(1,72,400,70)
+		});
+			
+	// Display the recognized text
+	Console.WriteLine(result.RecognitionText);
+{{< /highlight >}}
