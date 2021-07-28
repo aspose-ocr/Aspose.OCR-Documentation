@@ -84,7 +84,7 @@ namespace ProgramOCR
             MemoryStream ms = new MemoryStream();
             using (FileStream file = new FileStream(imgPath, FileMode.Open, FileAccess.Read))
                 file.CopyTo(ms);
-            List<Rectangle> result = api.GetRectangles(ms, Provider.AreasType.LINES, true);
+            List<Rectangle> result = api.GetRectangles(ms, AreasType.LINES, true);
 
             // Get a list of possible character variants            
             RecognitionResult result = api.RecognizeImage(imgPath, new RecognitionSettings());
