@@ -29,8 +29,8 @@ This page contains release notes information for Aspose.OCR for .NET 21.7
 
 ## Enhancements
 
-- added new parameters in the method GetRectangles:  AreasType areasType and bool idDetectAreas
-- added new property in the RecognitionSettings class that indicates the table exists on the image
+- added new parameters in the method GetRectangles:  AreasType areasType and bool isDetectAreas
+- added new property in the RecognitionSettings class that indicates the table exists on the image: LinesFiltration
 - added new property in the RecognitionResult class: RecognitionCharactersList
 - made Aspose.OCR works with x64, AnyCPU, x86 architectures
 - used compressed OCR ML model and reducing the packet size
@@ -40,11 +40,11 @@ This page contains release notes information for Aspose.OCR for .NET 21.7
 
 ### New API
 
--  added method: List<Rectangle> GetRectangles(MemoryStream image, AreasType areasType = AreasType.PARAGRAPHS, bool idDetectAreas = true)
--  added method: List<Rectangle> GetRectangles(string fullPath, AreasType areasType = AreasType.PARAGRAPHS, bool idDetectAreas = true)
+-  added method: List<Rectangle> GetRectangles(MemoryStream image, AreasType areasType = AreasType.PARAGRAPHS, bool isDetectAreas = true)
+-  added method: List<Rectangle> GetRectangles(string fullPath, AreasType areasType = AreasType.PARAGRAPHS, bool isDetectAreas = true)
 -  added enum AreasType
 -  added property: List<char[]> RecognitionCharactersList { get; internal set; } to the RecognitionResult class
--  added property: bool DetectTable { internal get; set; } = false to the RecognitionSettings class
+-  added property: bool LinesFiltration { internal get; set; } = false to the RecognitionSettings class
 
 ### Removed APIs
 
