@@ -21,8 +21,9 @@ This page contains release notes for Aspose.OCR for C++ 21.8.
 
 |Key|Summary|Category|
 |---|---|---|
-|OCRCPP-182| Import new models (DSR, Chinese OCR)|Enhancement|
-|OCRCPP-183| Add method CalcSkewImage(uri)|Enhancement|
+|OCRCPP-192| Confidence rating of potential match|Enhancement|
+|OCRCPP-190| Add a method that returns a list of rectangles of all lines in the text|Enhancement|
+|OCRCPP-189| Add new method (or parameter) that indicates the table exists on the image|Enhancement|
 
 ## Enhancements
 
