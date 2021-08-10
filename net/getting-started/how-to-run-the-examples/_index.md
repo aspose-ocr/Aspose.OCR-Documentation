@@ -26,7 +26,7 @@ All examples of Aspose.OCR for .NET are hosted on [GitHub](https://github.com/as
 - **Data** folder at the root folder of **Examples** contains input files used in the examples. It is mandatory that you download the **Data** folder along with the examples project.
 - Open RunExamples.cs file, all the examples are called from here.
 - Uncomment the examples you want to run from within the project.
-- Build the project in x64 mode.
+- Build the project in x64, x86 or AnyCPU mode.
 
 Please feel free to reach out using our Forums if you have any issues setting up or running the examples.
 

@@ -13,7 +13,7 @@ url: /net/system-requirements/
 - Microsoft Windows Vista ( x64 )
 - Microsoft Windows 7 ( x64 )
 - Microsoft Windows 8, 8.1 ( x64 )
-- Microsoft Windows 10 ( x64 )
+- Microsoft Windows 10 ( x64, x86, AnyCPU )
 - Mac OS X
 - Linux
 
@@ -22,7 +22,7 @@ url: /net/system-requirements/
 ** - .NET Standard 2.0** ( supports https://docs.microsoft.com/en-us/dotnet/standard/net-standard)
 
 ## **Dependencies CPU version**
- - Microsoft.ML.OnnxRuntime.MKLML   Version="1.4.0"
+ - Microsoft.ML.OnnxRuntime   Version="1.7.0"
  - System.Drawing.Common  Version="4.7.0"
 
 Notice: if you install a package from Nuget, you don't need to install any additionals (as for .core as for .framework). If you install Aspose.Ocr from MSI installer or simply want to use Aspose.Ocr.dll,
@@ -30,10 +30,10 @@ you will need to:
 
     1. add a reference on Aspose.Ocr.dll
 	
-    2. install from Nuget Microsoft.ML.OnnxRuntime.MKLML   Version="1.4.0" and System.Drawing.Common  Version="4.7.0"
+    2. install from Nuget Microsoft.ML.OnnxRuntime   Version="1.7.0" and System.Drawing.Common  Version="4.7.0"
 
 ## **Dependencies GPU version**
- - Microsoft.ML.OnnxRuntime.Gpu  Version="1.4.0"
+ - Microsoft.ML.OnnxRuntime.Gpu  Version="1.7.1"
  - System.Drawing.Common  Version="4.7.0"
 
 ## **Development Environments**

@@ -40,7 +40,7 @@ To use any component in your application, you must add a reference to it. The fo
 2. Right-click the project’s References node and select Add COM Reference (for .core project)  or Add Reference (for .framework project) from the menu.
 3. In the Add Reference dialog, select the .NET tab (selected by default).
 4. If you have used an MSI installer to install Aspose.OCR or if you have downloaded and unpacked the DLL only, locate the Aspose.OCR.dll file using the Browse button. Now that you have referenced Aspose.OCR and it should appear in the Selected Components pane of the dialog box.
-5. Additionally, you have to install dependencies packages from nuget (for example for Aspose.OCR 20.11.0 version you have to install Microsoft.ML.OnnxRuntime.MKLML 1.4.0 and System.Drawing.Common 4.7.0.
+5. Additionally, you have to install dependencies packages from nuget (for example for Aspose.OCR 21.8.0 version you have to install Microsoft.ML.OnnxRuntime 1.7.0 and System.Drawing.Common 4.7.0.
 6. Notice that GPU version requires CUDA in your system.
 7. Click OK.
 
