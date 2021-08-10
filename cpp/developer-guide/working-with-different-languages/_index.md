@@ -21,13 +21,28 @@ Aspose.OCR for C++ provides the option to specify the language to increase the e
 
 |Member|Language|
 | :- | :- |
-|none|Multi-language support|
-|en|English (en)|
-|de|German (de)|
-|pt|Portuguese (pt)|
-|es|Spanish (es)|
-|fr|French (fr)|
-|it|Italian (it)|
+|**None**|Multi-language support|
+|**Eng** |English|
+|**Deu** |German|
+|**Por** |Portuguese|
+|**Spa** |Spanish|
+|**Fra** |French|
+|**Ita** |Italian|
+|**Cze** |Czech|
+|**Dan** |Danish|
+|**Dum** |Dutch|
+|**Est** |Estonian|
+|**Fin** |Finnish|
+|**Lav** |Latvian|
+|**Lit** |Lithuanian|
+|**Nor** |Norwegian|
+|**Pol** |Polish|
+|**Rum** |Romanian|
+|**Srp_hrv**|Serbo-Croatian|
+|**Slk** |Slovak|
+|**Slv** |Slovene|
+|**Swe** |Swedish|
+|**Chi** |Chinese|
 
 The following code snippet demonstrates selecting language for OCR operation.
 
