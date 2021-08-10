@@ -4,17 +4,16 @@ type: docs
 weight: 75
 url: /net/folders-and-archives/
 ---
+
 ## **Recognize archive**
 
 Aspose.OCR for .NET provides the method [**RecognizeMultipleImages**](https://apireference.aspose.com/ocr/net/aspose.ocr/asposeocr/methods/recognizemultipleimages) that allows to recognize a multi images with one call. The result you will get is array of the [**RecognitionResult**](https://apireference.aspose.com/ocr/net/aspose.ocr/recognitionresult) class.
 
 The following code snippet demonstrates the use of the [**RecognizeMultipleImages**](https://apireference.aspose.com/ocr/net/aspose.ocr/asposeocr/methods/recognizemultipleimages) method.
 
-## Sample Code 
+# Sample Code 
 
-{{< highlight csharp >}}
-...
-
+```csharp
 	// For complete examples and data files, please go to https://github.com/aspose-ocr/Aspose.OCR-for-.NET
 	// The path to the documents directory.
 	string dataDir = RunExamples.GetDataDir_OCR();
@@ -33,14 +32,13 @@ The following code snippet demonstrates the use of the [**RecognizeMultipleImage
 	{
 		 Console.WriteLine($"Image: {i}\n Result:\n {result[i].RecognitionText}");
 	}
-{{< /highlight >}}
+```
 
 ## **Recognize folder**
 
-## Sample Code 
+# Sample Code 
 
-{{< highlight csharp >}}
-...
+```csharp
 
 	// For complete examples and data files, please go to https://github.com/aspose-ocr/Aspose.OCR-for-.NET
 	// The path to the documents directory.
@@ -60,4 +58,4 @@ The following code snippet demonstrates the use of the [**RecognizeMultipleImage
 	{
 		 Console.WriteLine($"Image: {i}\n Result:\n {result[i].RecognitionText}");
 	}
-{{< /highlight >}}
+```
