@@ -70,6 +70,7 @@ asposeocr_set_license(license.string().c_str());
 /* asposeocr_set_license */
 bool lic_result = asposeocr_get_state();
 
+
 //Recognize image and get the 5 variants of letters for each recognnized characters
 std::filesystem::path image = path.string() + "/img.png";
 // Prepare buffer for result (in symbols, len_byte = len * sizeof(wchar_t))
@@ -84,19 +85,19 @@ size_t result_len = asposeocr_page_characters_choices(image.c_str(), buffer, len
 
 for (size_t i = 0; i < result_len; i++)
 {
-	wcout << "letter: " << buffer[i][0] << " : ";
+	std::wcout << "letter: " << buffer[i][0] << " : ";
 	for (size_t j = 1; j < choices - 1; j++)
 	{
-		wcout << buffer[i][j] << " : ";
+		std::wcout << buffer[i][j] << " : ";
 	}
-	wcout << endl;
+	std::wcout << endl;
 }
 
  /* get rectangles*/
  
 // Calculate the rectangles amount to allocate memory
 size_t number = asposeocr_get_rectangles_number(image.c_str(), areas_type::paragraphs, true);
-cout << " rectangles: " << number << '\n';
+std::wcout << " rectangles: " << number << '\n';
 
 // allocate memory and get the result
 rect* rectangles = new rect[number];
@@ -104,22 +105,17 @@ number = asposeocr_get_rectangles(filePath.c_str(), areas_type::paragraphs, true
 
 for (size_t i = 0; i < number; i++)
 {
-	cout <<"x:"<< rectangles[i].x << " y:" << rectangles[i].y << " height:" << rectangles[i].width << " width:" << rectangles[i].height << endl;
+	std::wcout <<"x:"<< rectangles[i].x << " y:" << rectangles[i].y << " height:" << rectangles[i].width << " width:" << rectangles[i].height << endl;
 }
 
  /* set lines filtration for images with tables*/
 
 wchar_t buffer_[len] = { 0 };
 
-RecognitionSettings settings;
 settings.all_image = true; // if false  - the table will detect automatically
 settings.lines_filtration = true; // use false in case you set all_image = true
 size_t size = asposeocr_page_settings(image.c_str(), buffer_, len, settings);
-#ifdef _WIN32
-    setmode(_fileno(stdout), 0x00020000);
-#else
-    setlocale(LC_CTYPE, "");
-#endif
+
     std::wcout << buffer_;
 }
 
