@@ -3,6 +3,8 @@ title: Perform OCR on selected areas of an image
 type: docs
 weight: 40
 url: /java/perform-ocr-on-selected-areas-of-an-image/
+aliases:
+    - /display/OCRJAVA/Extracting+Text+from+Part+of+an+Image
 ---
 
 ## **Perform OCR on selected areas of an image**
