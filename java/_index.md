@@ -2,9 +2,9 @@
 title: Aspose.OCR for Java
 type: docs
 weight: 20
-url: /java/
 is_root: true
 aliases: 
+    - /java/ 
     - /display/OCRJAVA/
 ---
 
