@@ -4,9 +4,8 @@ type: docs
 weight: 20
 url: /java/
 is_root: true
-aliases: ../display/OCRJAVA/
-aliases: ../../display/OCRJAVA/
-aliases: /display/OCRJAVA/
+aliases: 
+    - /display/OCRJAVA/
 ---
 
 {{% alert color="primary" %}}
