@@ -13,7 +13,7 @@ This page contains release notes information for Aspose.OCR for .NET 21.8
 
 {{% alert color="primary" %}}
 
-**GPU version: 21.8.0**
+**GPU version: 21.6.0**
 
 {{% /alert %}}
 
@@ -75,7 +75,7 @@ namespace ProgramOCR
 
             // Recognize images from PDF           
 			DocumentRecognitionSettings set = new DocumentRecognitionSettings();
-            set.DetectAreas = false;
+				set.DetectAreas = false;
 			List<RecognitionResult> result = api.RecognizePdf(imgPath, set);
 
 			// Print result
