@@ -9,8 +9,8 @@ aliases:
 
 ## Recognize scanned PDF
 
-Aspose.OCR provides the [**RecognizePdf**](https://apireference.aspose.com/ocr/net/aspose.ocr.asposeocr/calculateskew/methods/1) method that can recognize text on the images extracted from scanned PDF files. The [**RecognizePdf**](https://apireference.aspose.com/ocr/net/aspose.ocr.asposeocr/calculateskew/methods/1) method takes the image path as a parameter and returns the skew angle. 
-The following code snippet demonstrates the use of the [**RecognizePdf**](https://apireference.aspose.com/ocr/net/aspose.ocr.asposeocr/calculateskew/methods/1) method to recognize images from scanned multipage PDF file.
+Aspose.OCR provides the [**RecognizePdf**](https://apireference.aspose.com/ocr/net/aspose.ocr/asposeocr/methods/recognizepdf) method that can recognize text on the images extracted from scanned PDF files. The [**RecognizePdf**](https://apireference.aspose.com/ocr/net/aspose.ocr/asposeocr/methods/recognizepdf) method takes the image path as a parameter and returns the skew angle. 
+The following code snippet demonstrates the use of the [**RecognizePdf**](https://apireference.aspose.com/ocr/net/aspose.ocr/asposeocr/methods/recognizepdf) method to recognize images from scanned multipage PDF file.
 
 # Sample Code 
 
