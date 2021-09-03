@@ -24,7 +24,7 @@ The following code snippet demonstrates the use of the [**RecognizePdf**](https
 	// The image path
 	String imagePath = dataDir + "p3.pdf";
 
-	// Initialize an instance of AsposeOcr
+	// Initialize an instance of AsposeOcrPdf
 	 AsposeOCRPdf api = new AsposeOCRPdf();
 
         // Set license 
