@@ -1,7 +1,7 @@
 ---
 title: Recognize multi images
 type: docs
-weight: 75
+weight: 70
 url: /net/folders-archives-list/
 ---
 

@@ -1,10 +1,12 @@
 ---
 title: Result get split lines with coordinates and with text
 type: docs
-weight: 75
+weight: 65
 url: /net/result-get-lines/
 ---
+
 ## **Result get split lines with coordinates and with text**
+
 Aspose.OCR for .NET provides the option to get the result as split lines [**RecognitionResult.LinesResult**](https://apireference.aspose.com/ocr/net/aspose.ocr.recognitionresult/linesresult). 
 For this, the API provides the property[**RecognitionResult.RecognitionLinesResult**](https://apireference.aspose.com/ocr/net/aspose.ocr/recognitionresult/properties/recognitionlinesresult).
 
