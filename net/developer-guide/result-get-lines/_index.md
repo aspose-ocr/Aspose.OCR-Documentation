@@ -12,10 +12,9 @@ For this, the API provides the property[**RecognitionResult.RecognitionLinesResu
 
 The following code snippet demonstrates the use of the [**RecognitionResult.RecognitionLinesResult**](https://apireference.aspose.com/ocr/net/aspose.ocr/recognitionresult/properties/recognitionlinesresult).
 
-## Sample Code
+# Sample Code 
 
-{{< highlight csharp >}}
-...
+```csharp
 
 	// For complete examples and data files, please go to https://github.com/aspose-ocr/Aspose.OCR-for-.NET
 	// The path to the documents directory.
@@ -49,6 +48,6 @@ The following code snippet demonstrates the use of the [**RecognitionResult.Reco
 	}
 	
 	Console.WriteLine(api.CorrectSpelling("recogniition"));
-{{< /highlight >}}
+```
 
 
