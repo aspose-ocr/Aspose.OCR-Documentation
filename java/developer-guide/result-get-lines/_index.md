@@ -1,5 +1,5 @@
 ---
-title: RecognitionResult: get split lines with coordinates and with text
+title: Result get split lines with coordinates and with text
 type: docs
 weight: 30
 url: /java/result-get-lines/
