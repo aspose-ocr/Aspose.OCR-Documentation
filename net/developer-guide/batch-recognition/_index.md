@@ -2,7 +2,7 @@
 title: Recognize multi images
 type: docs
 weight: 70
-url: /net/folders-archives-list/
+url: /net/batch-recognition/
 ---
 
 ## **Recognize archive**
