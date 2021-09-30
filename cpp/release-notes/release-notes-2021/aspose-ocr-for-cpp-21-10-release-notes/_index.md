@@ -148,7 +148,7 @@ custom_preprocessing_filters filters_;
 	
 /* List of images processing. C -compatible API */ 
  
-   aspose::ocr::page("folder\folder\image1.png;folder1\folder2\image2.png", buffer, len);
+   aspose::ocr::page("folder\\folder\\image1.png;folder1\\folder2\\image2.png", buffer, len);
 	
 #ifdef _WIN32
     setmode(_fileno(stdout), 0x00020000);

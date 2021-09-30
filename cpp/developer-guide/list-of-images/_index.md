@@ -1,0 +1,42 @@
+---
+title: Recognize multi images
+type: docs
+weight: 32
+url: /cpp/list-of-images/
+---
+
+## **Recognize vector (C++ compatible)**
+
+Aspose.OCR C++ provides the method [**aspose::ocr::pages_multi_vector()**](https://apireference.aspose.com/ocr/cpp/groupAspose#gaf08d9093df5705f826c27ff9ea708ea0)
+that allows to recognize a multi images with one call. The result you will get is array of the wchar_t.
+
+The following code snippet demonstrates the use of the pages_multi_vector() method.
+
+
+[Recognize multi images](/ocr/cpp/vector-of-images/)
+
+# Sample Code 
+
+```cpp
+	// For complete examples and data files, please go to https://github.com/aspose-ocr/Aspose.OCR-for-C
+		std::vector<std::string> files;
+		files.push_back("image1.png");
+		files.push_back("image2.png");
+		aspose::ocr::pages_multi_vector(files, buffer, len, settings);
+		std::wcout << buffer;
+```
+
+
+## **Recognize list (C compatible)**
+
+Aspose.OCR C++ allows you to recognize multiple images with a single call by sending a list of images through a semicolon.
+
+The following code snippet demonstrates the use of this feature:
+
+# Sample Code 
+
+```cpp
+	// For complete examples and data files, please go to https://github.com/aspose-ocr/Aspose.OCR-for-C
+		aspose::ocr::page("folder\\folder1\\image1.png;folder\\folder2\\image2.png", buffer, len);
+		std::wcout << buffer;
+```
