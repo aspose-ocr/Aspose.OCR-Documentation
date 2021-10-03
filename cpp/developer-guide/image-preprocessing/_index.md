@@ -47,16 +47,16 @@ The following code snippet demonstrates the use of the preprocess_page_and_save(
 # Sample Code 
 
 ```cpp
-	std::vector<filter_operation> filters;
-    filters.push_back(OCR_IMG_Resize(1000,1000));
-    filters.push_back(OCR_IMG_Scale(0.3));
-    filters.push_back(OCR_IMG_Invert());
-    filters.push_back(OCR_IMG_Threshold(20));
-    filters.push_back(OCR_IMG_Rotate(10));
-	filters.push_back(OCR_IMG_Grayscale());
-	filters.push_back(OCR_IMG_Dilate());
+	filter_operation filters[2];
+	filters[0] = OCR_IMG_Resize(1000, 1000);
+	filters[1] = OCR_IMG_Scale(0.9);
+	//filters[2] = OCR_IMG_Threshold(100);
+	//filters[3] = OCR_IMG_Dilate();
+	//filters[4] = OCR_IMG_Invert();
+	//filters[5] = OCR_IMG_Rotate(10);
+	//filters[6] = OCR_IMG_Grayscale();
 
-    aspose::ocr::preprocess_page_and_save(image.c_str(), "output_img_name.png", filters);
+	aspose::ocr::preprocess_page_and_save(image.c_str(), "../output_img_name.png", filters, 2);
 ```
 
 ## **Preprocess and recognize image in one step**

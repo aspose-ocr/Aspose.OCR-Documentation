@@ -2,7 +2,7 @@
 title: System Requirements
 type: docs
 weight: 70
-url: /net/system-requirements/
+url: /cpp/system-requirements/
 ---
 
 ## **Supported Operating Systems**

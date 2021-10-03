@@ -19,10 +19,11 @@ The following code snippet demonstrates the use of the pages_multi_vector() meth
 
 ```cpp
 	// For complete examples and data files, please go to https://github.com/aspose-ocr/Aspose.OCR-for-C
-		std::vector<std::string> files;
-		files.push_back("image1.png");
-		files.push_back("image2.png");
-		aspose::ocr::pages_multi_vector(files, buffer, len, settings);
+		 const int files_number = 2;
+		const char** files = new const char* [files_number];
+		files[0] = "../Data/Source/sample.png";
+		files[1] = "../Data/Source/sample_line.jpg";
+		aspose::ocr::pages_multi_array(files, files_number,  buffer, len, settings);
 		std::wcout << buffer;
 ```
 

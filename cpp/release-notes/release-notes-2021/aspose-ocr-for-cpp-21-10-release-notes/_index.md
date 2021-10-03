@@ -53,15 +53,16 @@ This page contains release notes for Aspose.OCR for C++ 21.10.
 		- custom_preprocessing_filters filters;
 
 - added new API methods:
-        -  size_t pages_multi_vector(
-            std::vector<std::string> files,
+        -  size_t pages_multi_array(
+            const char ** files,
+            size_t files_number,
             wchar_t* buffer,
             size_t buffer_size,
             RecognitionSettings settings);
         -  void preprocess_page_and_save(
             const char* image_path,
             const char* save_image_path,
-            std::vector<filter_operation> filters);
+            filter_operation * filters, size_t filters_number);
 		-  void asposeocr_preprocess_page_and_save(
 			const char* image_path,
 			const char* save_image_path,
@@ -96,16 +97,16 @@ bool lic_result = asposeocr_get_state();
 std::filesystem::path image = path.string() + "/img.png";
 
 /* Preprocess and save output image. C++ -compatible API */
-std::vector<filter_operation> filters;
-    filters.push_back(OCR_IMG_Resize(1000,1000));
-    filters.push_back(OCR_IMG_Scale(0.3));
-    filters.push_back(OCR_IMG_Invert());
-    filters.push_back(OCR_IMG_Threshold(20));
-    filters.push_back(OCR_IMG_Rotate(10));
-	filters.push_back(OCR_IMG_Grayscale());
-	filters.push_back(OCR_IMG_Dilate());
+filter_operation filters[2];
+	filters[0] = OCR_IMG_Resize(1000, 1000);
+	filters[1] = OCR_IMG_Scale(0.9);
+	//filters[2] = OCR_IMG_Threshold(100);
+	//filters[3] = OCR_IMG_Dilate();
+	//filters[4] = OCR_IMG_Invert();
+	//filters[5] = OCR_IMG_Rotate(10);
+	//filters[6] = OCR_IMG_Grayscale();
 
-    aspose::ocr::preprocess_page_and_save(image.c_str(), "output_img_name.png", filters);
+	aspose::ocr::preprocess_page_and_save(image.c_str(), "../output_img_name.png", filters, 2);
 	
 /* Preprocess and save output image. C -compatible API */
 custom_preprocessing_filters filters_;
@@ -139,14 +140,15 @@ custom_preprocessing_filters filters_;
 	size_t res = asposeocr_page_settings(image.c_str(), buffer, len, settings);
 	
 
-/* List of images processing. C++ -compatible API */ 
+/* List of images processing. */ 
  
-   std::vector<std::string> files;
-    files.push_back("image1.png");
-    files.push_back("image2.png");
-    aspose::ocr::pages_multi_vector(files, buffer, len, settings);
+    const int files_number = 2;
+	const char\*\* files = new const char\* \[files_number\];
+	files[0] = "../Data/Source/sample.png";
+	files[1] = "../Data/Source/sample_line.jpg";
+	aspose::ocr::pages_multi_array(files, files_number,  buffer, len, settings);
 	
-/* List of images processing. C -compatible API */ 
+/* List of images processing. */ 
  
    aspose::ocr::page("folder\\folder\\image1.png;folder1\\folder2\\image2.png", buffer, len);
 	
