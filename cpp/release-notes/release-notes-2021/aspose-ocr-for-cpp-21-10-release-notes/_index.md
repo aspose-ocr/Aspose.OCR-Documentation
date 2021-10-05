@@ -97,7 +97,7 @@ bool lic_result = asposeocr_get_state();
 std::filesystem::path image = path.string() + "/img.png";
 
 /* Preprocess and save output image. C++ -compatible API */
-filter_operation filters[2];
+	filter_operation filters[2];
 	filters[0] = OCR_IMG_Resize(1000, 1000);
 	filters[1] = OCR_IMG_Scale(0.9);
 	//filters[2] = OCR_IMG_Threshold(100);
@@ -109,30 +109,30 @@ filter_operation filters[2];
 	aspose::ocr::preprocess_page_and_save(image.c_str(), "../output_img_name.png", filters, 2);
 	
 /* Preprocess and save output image. C -compatible API */
-custom_preprocessing_filters filters_;
-    filters_.filter_1 = OCR_IMG_PREPROCESS_INVERT;
-    filters_.filter_2 = OCR_IMG_PREPROCESS_THRESHOLD(20);
+	custom_preprocessing_filters filters_;
+	filters_.filter_1 = OCR_IMG_PREPROCESS_INVERT;
+	filters_.filter_2 = OCR_IMG_PREPROCESS_THRESHOLD(20);
 	filters_.filter_3 = OCR_IMG_PREPROCESS_BINARIZE;
-    filters_.filter_4 = OCR_IMG_PREPROCESS_RESIZE(1000, 1000);
-    filters_.filter_5 = OCR_IMG_PREPROCESS_SCALE(0.3);
-    filters_.filter_6 = OCR_IMG_PREPROCESS_DILATE;
-    filters_.filter_7 = OCR_IMG_PREPROCESS_ROTATE(-20);
-    filters_.filter_8 = OCR_IMG_PREPROCESS_GRAYSCALE;
-    asposeocr_preprocess_page_and_save(image.c_str(), "output_img_name.png", filters_);
+	filters_.filter_4 = OCR_IMG_PREPROCESS_RESIZE(1000, 1000);
+	filters_.filter_5 = OCR_IMG_PREPROCESS_SCALE(0.3);
+	filters_.filter_6 = OCR_IMG_PREPROCESS_DILATE;
+	filters_.filter_7 = OCR_IMG_PREPROCESS_ROTATE(-20);
+	filters_.filter_8 = OCR_IMG_PREPROCESS_GRAYSCALE;
+	asposeocr_preprocess_page_and_save(image.c_str(), "output_img_name.png", filters_);
 	
 	
 /* Preprocess and recognize preprocessed image. C -compatible API */
 
 // Prepare buffer for result 
 	const size_t len = 4096;
-    wchar_t buffer[len] = { 0 };
+	wchar_t buffer[len] = { 0 };
 // Set filters
 	custom_preprocessing_filters filters__;
-    filters__.filter_1 = OCR_IMG_PREPROCESS_INVERT;
-    filters__.filter_2 = OCR_IMG_PREPROCESS_THRESHOLD(20);
+	filters__.filter_1 = OCR_IMG_PREPROCESS_INVERT;
+	filters__.filter_2 = OCR_IMG_PREPROCESS_THRESHOLD(20);
 	filters__.filter_3 = OCR_IMG_PREPROCESS_GRAYSCALE;
-    filters__.filter_4 = OCR_IMG_PREPROCESS_RESIZE(1000, 1000);
-    filters__.filter_5 = OCR_IMG_PREPROCESS_SCALE(0.3);
+	filters__.filter_4 = OCR_IMG_PREPROCESS_RESIZE(1000, 1000);
+	filters__.filter_5 = OCR_IMG_PREPROCESS_SCALE(0.3);
 
 	RecognitionSettings settings;
 	settings.filters = filters__;
@@ -142,8 +142,8 @@ custom_preprocessing_filters filters_;
 
 /* List of images processing. */ 
  
-    const int files_number = 2;
-	const char\*\* files = new const char\* \[files_number\];
+	const int files_number = 2;
+	const char** files = new const char* [files_number];
 	files[0] = "../Data/Source/sample.png";
 	files[1] = "../Data/Source/sample_line.jpg";
 	aspose::ocr::pages_multi_array(files, files_number,  buffer, len, settings);
