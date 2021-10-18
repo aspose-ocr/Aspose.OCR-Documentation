@@ -7,23 +7,23 @@ url: /cpp/system-requirements/
 
 ## **Supported Operating Systems**
 
-Aspose.Ocr for C++ is a native library. Aspose.Ocr for C++ supports 64-bit operating systems
+Aspose.OCR for C++ is a native library. Aspose.OCR for C++ supports 64-bit operating systems
 
 ## **Development Environments**
-You can use Aspose.Ocr for C++ to develop applications in any development environment that supports C++
+You can use Aspose.OCR for C++ to develop applications in any development environment that supports C++
 
 ## **WINDOWS**
 
 ### **Dependencies CPU version**
 
- - Microsoft.ML.OnnxRuntime.1.3.0
+ - Microsoft.ML.OnnxRuntime.1.7.0
  
 Notice: if you install a package from Nuget, you don't need to install any additionals. If you simply want to use Aspose.Ocr.dll,
 you will need to:
 
  - add a reference on Aspose.Ocr.dll	
  
- - install from Nuget Microsoft.ML.OnnxRuntime Version="1.3.0" 
+ - install from Nuget Microsoft.ML.OnnxRuntime Version="1.7.0" 
 	
 ### **Dependencies GPU version**
 

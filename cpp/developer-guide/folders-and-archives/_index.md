@@ -1,5 +1,5 @@
 ---
-title: Recognize multi images
+title: Recognize Folders And Archives
 type: docs
 weight: 30
 url: /cpp/folders-and-archives/
@@ -7,12 +7,12 @@ url: /cpp/folders-and-archives/
 
 ## **Recognize archive**
 
-Aspose.OCR C++ provides the method [**pages_multi()**](https://apireference.aspose.com/ocr/cpp/) that allows to recognize a multi images with one call. The result you will get is array of the wchar_t.
+Aspose.OCR C++ provides the method [**pages_multi()**](https://apireference.aspose.com/ocr/cpp/) that allows to recognize a multiple images with one call. The result you will get is array of the wchar_t.
 
 The following code snippet demonstrates the use of the pages_multi() method.
 
 
-[Recognize multi images](/ocr/cpp/folders-and-archives/)
+[Recognize Folders And Archives](/ocr/cpp/folders-and-archives/)
 
 # Sample Code 
 
@@ -34,7 +34,7 @@ The following code snippet demonstrates the use of the pages_multi() method.
 
 ## **Recognize folder**
 
-Aspose.OCR C++ provides the method [**RecognizeMultipleImages**](https://apireference.aspose.com/ocr/net/aspose.ocr/asposeocr/methods/recognizemultipleimages) that allows to recognize a multi images with one call. The result you will get is array of the [**RecognitionResult**](https://apireference.aspose.com/ocr/net/aspose.ocr/recognitionresult) class.
+Aspose.OCR C++ provides the method [**RecognizeMultipleImages**](https://apireference.aspose.com/ocr/net/aspose.ocr/asposeocr/methods/recognizemultipleimages) that allows to recognize a multiple images with one call. The result you will get is array of the [**RecognitionResult**](https://apireference.aspose.com/ocr/net/aspose.ocr/recognitionresult) class.
 
 The following code snippet demonstrates the use of the [**RecognizeMultipleImages**](https://apireference.aspose.com/ocr/net/aspose.ocr/asposeocr/methods/recognizemultipleimages) method.
 

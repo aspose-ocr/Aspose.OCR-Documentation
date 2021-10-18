@@ -36,7 +36,7 @@ In the package manager console, you can use the command Update-Package Aspose.Oc
 
 To use any component in your application, you must add a reference to it. The following steps assume that you use Visual Studio 2019 C++ project.
 
- - Download package from [Aspose.Ocr for C++ download page] https://downloads.aspose.com/ocr/cpp. Unzip archive. Put lib and include folders into your project.
+ - Download package from [Aspose.OCR for C++ download page] https://downloads.aspose.com/ocr/cpp. Unzip archive. Put lib and include folders into your project.
 
  - Right-click the project’s **Properties** node and select **Linker/Input**. In the field **Additional dependencies** write *Aspose.Ocr.Cpp.lib*
 

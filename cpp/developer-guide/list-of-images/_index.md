@@ -1,19 +1,19 @@
 ---
-title: Recognize multi images
+title: Recognize Array Of Images
 type: docs
 weight: 32
-url: /cpp/list-of-images/
+url: /cpp/array-of-images/
 ---
 
 ## **Recognize array**
 
 Aspose.OCR C++ provides the method [**aspose::ocr::pages_multi_array()**](https://apireference.aspose.com/ocr/cpp/groupAspose#gaf08d9093df5705f826c27ff9ea708ea0)
-that allows to recognize a multi images with one call. The result you will get is array of the wchar_t.
+that allows to recognize a multiple images with one call. The result you will get is array of the wchar_t.
 
 The following code snippet demonstrates the use of the pages_multi_array() method.
 
 
-[Recognize multi images](/ocr/cpp/array-of-images/)
+[Recognize Array Of Images](/ocr/cpp/array-of-images/)
 
 # Sample Code 
 
