@@ -39,7 +39,7 @@ This page contains release notes information for Aspose.OCR for .NET 21.10
 
 ### New API
 
-- added new filters in the PreprocessingFilters: Median, AdaptiveMedianThreshold
+- added new filters in the PreprocessingFilters: Median, ContrastCorrectionFilter
 - added new property in the RecognitionSettings class:
         -  AutoContrast
         -  AllowedCharacters
@@ -82,7 +82,7 @@ namespace ProgramOCR
             PreprocessingFilter filters = new PreprocessingFilter
             {
                  PreprocessingFilter.Median(),
-				 PreprocessingFilter.AdaptiveMedianThreshold()
+				 PreprocessingFilter.ContrastCorrectionFilter()
             };
 			
             // use filters as settings in recognition process
