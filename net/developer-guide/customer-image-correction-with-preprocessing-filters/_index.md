@@ -37,6 +37,8 @@ You can customize preprocessing operations directly in method [**RecognizeImage*
                  PreprocessingFilter.Resize(3000,3000, Aspose.OCR.Filters.InterpolationFilterType.Box),
                  PreprocessingFilter.Scale(0.5f),
                  PreprocessingFilter.Dilate(),
+				 PreprocessingFilter.Median(),
+				 PreprocessingFilter.ContrastCorrectionFilter()
             };
 
     // case 1
