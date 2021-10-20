@@ -38,7 +38,7 @@ The next opportunities:
 
 ### New API
 
-- added new filters in the PreprocessingFilters: Median, ContrastCorrectionFilter
+- added new filters in the PreprocessingFilters: Median, ContrastCorrection
 - added new methods in the RecognitionSettings class:
         -  setAutoContrast(boolean autoContrast)
         -  setAllowedCharacters(CharactersAllowedType allowedCharacters)
