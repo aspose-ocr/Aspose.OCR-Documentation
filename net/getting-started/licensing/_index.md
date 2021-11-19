@@ -90,3 +90,33 @@ license.SetLicense("Aspose.OCR.lic");
 {{< /highlight >}}
 ### **Setting a License in the Source Code**
 The license needs to be applied only once per application or process. For desktop applications, we recommend that you set the license in the Initialize() method of the main form. For web applications, set it in the global.asax file’s Session_Start() method.
+
+
+### **Apply Metered License**
+Aspose.Ocr allows developers to apply a metered key. This is a new licensing mechanism.
+
+The new licensing mechanism will be used along with the existing licensing method. Those customers who want to be billed based on the use of API features can use the Metered Licensing.
+
+After completing all the necessary steps to obtain this type of license, you will receive the keys, not the license file. This metered key can be applied using the Metered class specially introduced for this purpose.
+
+The following code example shows how to set metered public and private keys:
+
+For complete examples and data files, please go to https://github.com/aspose-ocr/Aspose.OCR-for-.NET
+
+```csharp
+String publicKey = "";
+String privateKey = "";
+
+Metered m = new Metered();
+m.setMeteredKey(publicKey, privateKey);
+
+// Get API
+AsposeOcr api = new AsposeOcr();
+// Use api methods 
+RecognitionResult res = api.RecognizeImage("img.png", new RecognitionSettings());
+```
+> Please note that you must have a stable Internet connection for the correct use of the Metered license, 
+>
+>since the Metered mechanism requires the constant interaction with our services for correct calculations.
+>
+> For more details, refer to the [**Metered Licensing FAQ” section**](https://purchase.aspose.com/faqs/licensing/metered).

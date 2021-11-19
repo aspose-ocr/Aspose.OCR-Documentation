@@ -124,3 +124,34 @@ public static void SpellCheck()
     Console.WriteLine(correctedText);
 }
 ```
+
+## Upload own dictionary
+
+It is also possible to upload frequency dictionary as shown in the following snippet.
+
+Dictionary file format:
+- Plain text file in UTF-8 encoding.
+- Word and Word Frequency are separated by space or tab.Per default, the word is expected in the first column and the frequency in the second column.
+- Every word-frequency-pair in a separate line.A line is defined as a sequence of characters followed by a line feed ("\n"), a carriage return ("\r"), 
+or a carriage return immediately followed by a line feed("\r\n").
+- Every word is expected to be in lower case.
+
+```csharp
+public static void SpellCheck()
+{
+   // Path to the image to recognize
+    string imagePath = "MyImage.jpg";
+
+    // Create OCR API
+    AsposeOcr api = new AsposeOcr();
+
+    // Recognize image           
+    RecognitionResult res = api.RecognizeImage("img.png", new RecognitionSettings());
+	
+	// Path to the dictionary
+	string dictionaryPath = $"dictionary.txt";
+	// Run Spell Check to correct errors
+	string corrected = res.GetSpellCheckCorrectedText(SpellCheckLanguage.Eng, dictionaryPath)
+	Console.WriteLine(corrected);
+}
+```
