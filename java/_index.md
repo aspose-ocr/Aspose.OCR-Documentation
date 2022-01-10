@@ -1,5 +1,6 @@
 ---
 title: Aspose.OCR for Java
+description: Aspose.OCR for Java is an optical character recognition(OCR) API that allows java developers to add text scanner or ocr scanner to their Java applications without requiring any additional tool or API.
 type: docs
 weight: 20
 is_root: true
