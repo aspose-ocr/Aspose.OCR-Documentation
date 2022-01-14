@@ -1,5 +1,6 @@
 ---
 title: Aspose.OCR for .NET
+Description: Aspose.OCR for .NET is an optical character recognition(OCR) component that allows developers to add text scanner or ocr scanner to their .NET applications using a simple set of classes.
 type: docs
 weight: 10
 url: /net/

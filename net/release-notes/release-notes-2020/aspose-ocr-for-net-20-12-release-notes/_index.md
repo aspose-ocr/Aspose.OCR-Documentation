@@ -1,7 +1,7 @@
 ---
 title: Aspose.OCR for .NET 20.12 - Release Notes
 type: docs
-weight: 4
+weight: 10
 url: /net/aspose-ocr-for-net-20-12-release-notes/
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: Aspose.OCR for C++
+description: Aspose.OCR for C++ is a native C++ library that allows developers to add optical character recognition(OCR) functionality to their applications without requiring any additional tool or API.
 type: docs
 weight: 30
 url: /cpp/

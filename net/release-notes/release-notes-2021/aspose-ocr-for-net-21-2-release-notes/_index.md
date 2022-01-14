@@ -1,7 +1,7 @@
 ---
 title: Aspose.OCR for .NET 21.2 - Release Notes
 type: docs
-weight: 4
+weight: 110
 url: /net/aspose-ocr-for-net-21-2-release-notes/
 ---
 
