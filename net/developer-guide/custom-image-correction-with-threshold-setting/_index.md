@@ -1,8 +1,8 @@
 ---
-title: Customer Image Correction Using Threshold Setting
+title: Custom Image Correction Using Threshold Setting
 type: docs
 weight: 75
-url: /net/customer-image-correction-with-threshold-setting/
+url: /net/custom-image-correction-with-threshold-setting/
 ---
 ## **Customer Image Correction Using Threshold Setting**
 Aspose.OCR for .NET provides to option to specify custom threshold value for image quality correction. For this, the API provides the [**RecognitionSettings.ThresholdValue**](https://apireference.aspose.com/ocr/net/aspose.ocr/recognitionsettings/properties/tresholdvalue) property. You can pass the instance of the [**RecognitionSettings**](https://apireference.aspose.com/ocr/net/aspose.ocr/recognitionsettings) class to the [**RecognizeImage**](https://apireference.aspose.com/ocr/net/aspose.ocr/asposeocr/methods/recognizeimage/index) method of the [**AsposeOcr**](https://apireference.aspose.com/ocr/net/aspose.ocr/asposeocr) class.

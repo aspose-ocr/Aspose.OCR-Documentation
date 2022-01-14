@@ -1,11 +1,11 @@
 ---
-title: Customer Image Correction Using Preprocessing Filters
+title: Custom Image Correction Using Preprocessing Filters
 type: docs
 weight: 30
-url: /java/customer-image-correction-with-preprocessing-filters/
+url: /java/custom-image-correction-with-preprocessing-filters/
 ---
 
-## **Customer Image Correction Preprocessing Filters**
+## **Custom Image Correction Preprocessing Filters**
 
 Aspose.OCR for Java provides to option to specify custom preprocessing operations for image quality correction. 
 For this, the API provides the [**RecognitionSettings.setPreprocessingFilters**](https://apireference.aspose.com/ocr/java/com.aspose.ocr/RecognitionSettings#setPreprocessingFilters-com.aspose.ocr.PreprocessingFilter-) method. 
