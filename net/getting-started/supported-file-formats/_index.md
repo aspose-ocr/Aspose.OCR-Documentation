@@ -14,4 +14,4 @@ url: /net/supported-file-formats/
 |[TIFF](https://docs.fileformat.com/image/tiff/)|Tiff Tagged Image File Format|{{< emoticons/tick >}}| |
 |[TXT](https://docs.fileformat.com/word-processing/txt/)|Text File Format| |{{< emoticons/tick >}}|
 |[DOCX](https://docs.fileformat.com/word-processing/docx/)|Office Open XML WordprocessingML Document (macro-free)| |{{< emoticons/tick >}}|
-|[PDF](https://docs.fileformat.com/pdf/)|Portable Document Format | |{{< emoticons/tick >}}|
+|[PDF](https://docs.fileformat.com/pdf/)|Portable Document Format | {{< emoticons/tick >}} |{{< emoticons/tick >}}|
