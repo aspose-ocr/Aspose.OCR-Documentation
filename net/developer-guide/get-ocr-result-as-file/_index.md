@@ -44,3 +44,5 @@ Aspose.OCR for .NET provides the option to specify the Document format for resul
 |**Text**|Saves the document in the plain text format.|
 |**Docx**|Saves the document as an Office Open XML WordprocessingML Document (macro-free).|
 |**Pdf** |Saves the document as an PDF (Adobe Portable Document) format.|
+|**Xlsx** |Saves the result as an Excel ( 2007 and later) workbook Document.|
+
