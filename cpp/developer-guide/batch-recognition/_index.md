@@ -1,8 +1,8 @@
 ---
-title: Recognize Folders And Archives
+title: Recognize multi images
 type: docs
 weight: 30
-url: /cpp/folders-and-archives/
+url: /cpp/batch-recognition/
 ---
 
 ## **Recognize archive**

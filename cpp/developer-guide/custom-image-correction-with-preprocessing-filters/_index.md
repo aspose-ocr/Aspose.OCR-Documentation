@@ -1,8 +1,8 @@
 ---
-title: Image preprocessing
+title: Custom Image Correction Using Preprocessing Filters
 type: docs
 weight: 31
-url: /cpp/image-preprocessing/
+url: /cpp/custom-image-correction-with-preprocessing-filters/
 ---
 
 ## **Preprocess image C-compatible API**
