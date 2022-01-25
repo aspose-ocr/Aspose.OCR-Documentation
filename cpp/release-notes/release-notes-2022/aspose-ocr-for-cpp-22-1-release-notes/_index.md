@@ -32,49 +32,51 @@ This page contains release notes for Aspose.OCR for C++ 22.1.
 
 ### New API
 
-|Structure|Description|
+|Method|Description|
 |---|---|
 |size_t asposeocr_page_tiff(
 	const char* image_path,
 	wchar_t* result,
 	size_t buffer_size,
 	RecognitionSettings settings)|
-	<div><p>settings - Settings for the image recognition.&nbsp;Contains elements that allow customizing the recognition process.&nbsp;</p>
-	<p>Fields:</p>
-	<p>- all_image (true/false) - turning on means recognizing the image as a single area
-	<br>- correct_skew - detects orientation and auto-rotate image if needed
-	<br>- alphabet - set of allowed characters in the alphabet (symbols for recognition).&nbsp;L"" by default (all alphabet allowed)
-	<br>- format - export_format. Allowed options - text or JSON. In JSON format for rectangles, you will get the extended result with areas coordinates and text in these areas
-	<br>- rectangles - an array of rect structure to set areas for recognition<br>- rectangles_size - the size of rectangles array
-	<br>- skew - rotate image on specified angle. Doesn't work if rectangles are specified
-	<br>- language_alphabet - language used for OCR. Supported languages: English (en), German (de), Portuguese (pt), Spanish (es), French (fr), Italian (it). Multi-language by default. </p><div class="wikimodel-emptyline"></div>
-	<p>new field:<br>&nbsp;- ignoredCharacters - sets blacklist for recognition symbols.&nbsp;L"" by default (all alphabet allowed)</p>
-	</div>
-	<div><p>image_path - full path to the image in tiff(tif) format.&nbsp;</p></div>
-	<div><p>result - buffer to save result.&nbsp;</p></div>
-	<div><p>buffer_size - size of the fuffer.&nbsp;</p></div>
-	<div><p>returns size of the recognized text.&nbsp;</p></div>
+	<div><p>settings - Settings for the image recognition.&nbsp;Contains elements that allow customizing the recognition process.&nbsp;
+	Fields:
+	- all_image (true/false) - turning on means recognizing the image as a single area
+	- correct_skew - detects orientation and auto-rotate image if needed
+	- alphabet - set of allowed characters in the alphabet (symbols for recognition).&nbsp;L"" by default (all alphabet allowed)
+	- format - export_format. Allowed options - text or JSON. In JSON format for rectangles, you will get the extended result with areas coordinates and text in these areas
+	- rectangles - an array of rect structure to set areas for recognition
+	- rectangles_size - the size of rectangles array
+	- skew - rotate image on specified angle. Doesn't work if rectangles are specified
+	- language_alphabet - language used for OCR. Supported languages: English (en), German (de), Portuguese (pt), Spanish (es), French (fr), Italian (it). Multi-language by default. 
+	- ignoredCharacters - sets blacklist for recognition symbols.&nbsp;L"" by default (all alphabet allowed)</p>
+	<p>
+	- image_path - full path to the image in tiff(tif) format.&nbsp;
+	- result - buffer to save result.&nbsp;
+	- buffer_size - size of the fuffer.&nbsp;</p>
+	<p>returns size of the recognized text.&nbsp;</p></div>
 	|
 |size_t aspose::ocr::page_tiff(
 	const char* image_path,
 	wchar_t* result,
 	size_t buffer_size,
 RecognitionSettings settings)|
-	<div><p>settings - Settings for the image recognition.&nbsp;Contains elements that allow customizing the recognition process.&nbsp;</p>
-	<p>Fields:</p>
-	<p>- all_image (true/false) - turning on means recognizing the image as a single area
-	<br>- correct_skew - detects orientation and auto-rotate image if needed
-	<br>- alphabet - set of allowed characters in the alphabet (symbols for recognition).&nbsp;L"" by default (all alphabet allowed)
-	<br>- format - export_format. Allowed options - text or JSON. In JSON format for rectangles, you will get the extended result with areas coordinates and text in these areas
-	<br>- rectangles - an array of rect structure to set areas for recognition<br>- rectangles_size - the size of rectangles array
-	<br>- skew - rotate image on specified angle. Doesn't work if rectangles are specified
-	<br>- language_alphabet - language used for OCR. Supported languages: English (en), German (de), Portuguese (pt), Spanish (es), French (fr), Italian (it). Multi-language by default. </p><div class="wikimodel-emptyline"></div>
-	<p>new field:<br>&nbsp;- ignoredCharacters - sets blacklist for recognition symbols.&nbsp;L"" by default (all alphabet allowed)</p>
-	</div>
-	<div><p>image_path - full path to the image in tiff(tif) format.&nbsp;</p></div>
-	<div><p>result - buffer to save result.&nbsp;</p></div>
-	<div><p>buffer_size - size of the fuffer.&nbsp;</p></div>
-	<div><p>returns size of the recognized text.&nbsp;</p></div>
+	<div><p>settings - Settings for the image recognition.&nbsp;Contains elements that allow customizing the recognition process.&nbsp;
+	Fields:
+	- all_image (true/false) - turning on means recognizing the image as a single area
+	- correct_skew - detects orientation and auto-rotate image if needed
+	- alphabet - set of allowed characters in the alphabet (symbols for recognition).&nbsp;L"" by default (all alphabet allowed)
+	- format - export_format. Allowed options - text or JSON. In JSON format for rectangles, you will get the extended result with areas coordinates and text in these areas
+	- rectangles - an array of rect structure to set areas for recognition
+	- rectangles_size - the size of rectangles array
+	- skew - rotate image on specified angle. Doesn't work if rectangles are specified
+	- language_alphabet - language used for OCR. Supported languages: English (en), German (de), Portuguese (pt), Spanish (es), French (fr), Italian (it). Multi-language by default. 
+	- ignoredCharacters - sets blacklist for recognition symbols.&nbsp;L"" by default (all alphabet allowed)</p>
+	<p>
+	- image_path - full path to the image in tiff(tif) format.&nbsp;
+	- result - buffer to save result.&nbsp;
+	- buffer_size - size of the fuffer.&nbsp;</p>
+	<p>returns size of the recognized text.&nbsp;</p></div>
 	|
 ### Removed APIs
 
