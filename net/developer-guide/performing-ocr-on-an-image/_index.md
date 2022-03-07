@@ -1,5 +1,6 @@
 ---
 title: Performing OCR on an Image - Convert Image to Text using C#
+linktitle: Performing OCR on an Image
 type: docs
 weight: 10
 url: /net/performing-ocr-on-an-image/
