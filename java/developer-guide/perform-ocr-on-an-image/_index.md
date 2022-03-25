@@ -1,7 +1,9 @@
 ---
-title: Perform OCR on an image
+title: Convert Image to Text using Java
+linktitle: Perform OCR on an image
 type: docs
 weight: 10
+keywords: convert image to text java, image to text converter java
 url: /java/perform-ocr-on-an-image/
 aliases:
     - /java/performing-ocr-on-an-image/
