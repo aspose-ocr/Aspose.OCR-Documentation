@@ -57,3 +57,28 @@ public static void GetRectangles()
 	lines.ForEach(a => Console.WriteLine($"x:{a.X} y:{a.Y} width:{a.Width} height:{a.Height}"));
 }
 ```
+
+## **Get Rectangles Words**
+
+The following code snippet demonstrates the use of the [**GetRectangles**](https://apireference.aspose.com/ocr/net/aspose.ocr/asposeocr/methods/getrectangles) method to get the bounding boxes coordinates of words.
+
+## Sample Code
+
+
+```csharp
+public static void GetRectangles()
+{
+    // Path to the image to recognize
+    string imagePath = "MyImage.jpg";
+
+    // Create OCR API
+    AsposeOcr api = new AsposeOcr();
+    
+    // Calculate rectangles   
+	List<Rectangle> lines = api.GetRectangles(fullPath, AreasType.WORDS, false);
+
+	// Print result           
+	Console.WriteLine("Areas coordinates:");
+	lines.ForEach(a => Console.WriteLine($"x:{a.X} y:{a.Y} width:{a.Width} height:{a.Height}"));
+}
+```

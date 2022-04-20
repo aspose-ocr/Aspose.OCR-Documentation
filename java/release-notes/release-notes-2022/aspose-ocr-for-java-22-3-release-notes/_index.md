@@ -30,12 +30,14 @@ The next opportunities:
 
 - improve the text area detection combine mode
 - add the ability to get words coordinates using the method getText Areas
+- added the ability to set the License through the InputStream
 
 ## Public API and Backwards Incompatible Changes
 
 ### New API
 
 - added a new field to the enum AreasType: WORDS
+- added method setLicense(InputStream stream) to the License class
 
 
 ### Removed APIs

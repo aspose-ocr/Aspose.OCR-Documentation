@@ -15,6 +15,8 @@ The following code snippet demonstrates the use of the [**RecognizePdf**](https
 
 # Sample Code 
 
+## Recognize scanned PDF from file
+
 ```csharp
 	// For complete examples and data files, please go to https://github.com/aspose-ocr/Aspose.OCR-for-.NET
 	// The path to the PDF file
@@ -34,5 +36,34 @@ The following code snippet demonstrates the use of the [**RecognizePdf**](https
     {                
         System.Console.WriteLine($"Page: {pageNumber++} text: {page.RecognitionText}");
     }
+```
+
+## Recognize scanned PDF from stream
+
+```csharp
+	// For complete examples and data files, please go to https://github.com/aspose-ocr/Aspose.OCR-for-.NET
+	// The path to the PDF file
+	string dataDir = RunExamples.GetDataDir_OCR();
+
+	// Archive Path
+	string fullPath = dataDir + "OCR.pdf";
+
+  	// Recognize pdf from stream           
+	using (MemoryStream ms = new MemoryStream())
+	{
+		using (FileStream file = new FileStream(fullPath, FileMode.Open, FileAccess.Read))
+		{
+			file.CopyTo(ms);
+	 
+			DocumentRecognitionSettings set = new DocumentRecognitionSettings();
+			List<RecognitionResult> results = api.RecognizePdf(ms, set);     
+
+            // Print result
+			foreach (var result in results)
+			{
+				Console.WriteLine(result.RecognitionText);
+			}
+		}
+	}
 ```
 

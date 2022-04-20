@@ -12,6 +12,7 @@ url: /net/supported-file-formats/
 |[GIF](https://docs.fileformat.com/image/gif/)|Graphical Interchange Format|{{< emoticons/tick >}}| |
 |[BMP](https://docs.fileformat.com/image/bmp/)|Bitmap Image Format|{{< emoticons/tick >}}| |
 |[TIFF](https://docs.fileformat.com/image/tiff/)|Tiff Tagged Image File Format|{{< emoticons/tick >}}| |
+|[DJVU](https://docs.fileformat.com/image/djvu/)|Djvu |{{< emoticons/tick >}}| |
 |[TXT](https://docs.fileformat.com/word-processing/txt/)|Text File Format| |{{< emoticons/tick >}}|
 |[DOCX](https://docs.fileformat.com/word-processing/docx/)|Office Open XML WordprocessingML Document (macro-free)| |{{< emoticons/tick >}}|
 |[XLSX](https://docs.fileformat.com/spreadsheet/xlsx/)|Microsoft Excel documents 2007| |{{< emoticons/tick >}}|
