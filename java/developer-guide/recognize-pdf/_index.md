@@ -45,6 +45,16 @@ The following code snippet demonstrates the use of the [**RecognizePdf**](https
 			System.out.print("PAGE: ");
 			printResult(page);
 		}
+		
+		// Recognize PDF from stream 
+		InputStream inputStream = new FileInputStream(imgPath);
+		ArrayList<RecognitionResult> result_2 =  api.RecognizePdf(inputStream, set);
+		
+		// result
+		for(RecognitionResult page : result_2) {
+			System.out.print("PAGE: ");
+			printResult(page);
+		}
     }
     
     static void printResult(RecognitionResult result) {
