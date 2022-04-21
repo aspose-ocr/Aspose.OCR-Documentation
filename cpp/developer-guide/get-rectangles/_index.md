@@ -68,3 +68,63 @@ void GetRectanglesLines() {
 	delete [] rectangles;
 }
 ```
+
+## **Get Words Rectangles**
+
+The following code snippet demonstrates the use of the [**get_rectangles()**](https://apireference.aspose.com/ocr/cpp) method to get the bounding boxes coordinates of recognized words. Available from v22.4.
+
+## Sample Code
+
+[Supported Characters](/ocr/cpp/get-rectangles/)
+
+```cpp
+void GetRectanglesLines() {
+	std::string image_path = "../Data/Source/sample.png";	
+
+	// first calculate words number
+	size_t res_len = aspose::ocr::get_rectangles_number(image_path.c_str(), areas_type::words, false);
+	std::wcout << "words number: " << res_len << std::endl;
+
+	// allocate memory for rectangles
+	rect* rectangles = new rect[res_len];
+	// be careful and set the same settings for get_rectangles_number and get_rectangles
+	res_len = aspose::ocr::get_rectangles(image_path.c_str(), areas_type::words, false, rectangles, res_len); 
+
+	std::wcout << "words: " << std::endl;
+	for (size_t i = 0; i < res_len; i++)
+	{
+		std::wcout << " x: " << rectangles[i].x << " y: " << rectangles[i].y << " width: " << rectangles[i].width << " height: " << rectangles[i].height << std::endl;
+	}
+	delete [] rectangles;
+}
+```
+
+## **Get Words Rectangles From URI**
+
+The following code snippet demonstrates the use of the [**get_rectangles_from_uri()**](https://apireference.aspose.com/ocr/cpp/groupAspose#ga270c57b8595cd911c7cf2e68fcc624af) method to get the bounding boxes coordinates of recognized words. Available from v22.4.
+
+## Sample Code
+
+[Supported Characters](/ocr/cpp/get-rectangles-from-uri/)
+
+```cpp
+void GetRectanglesLines() {
+	const char* uri = "https://assets.htmlacademy.ru/content/blog/94/text-bottom-1@1x.png";
+
+	// first calculate words number
+	size_t res_len = aspose::ocr::get_rectangles_number_from_uri(uri, areas_type::words, false);
+	std::wcout << "words number: " << res_len << std::endl;
+
+	// allocate memory for rectangles
+	rect* rectangles = new rect[res_len];
+	// be careful and set the same settings for get_rectangles_number and get_rectangles
+	res_len = aspose::ocr::get_rectangles_from_uri(uri, areas_type::words, false, rectangles, res_len); 
+
+	std::wcout << "words: " << std::endl;
+	for (size_t i = 0; i < res_len; i++)
+	{
+		std::wcout << " x: " << rectangles[i].x << " y: " << rectangles[i].y << " width: " << rectangles[i].width << " height: " << rectangles[i].height << std::endl;
+	}
+	delete [] rectangles;
+}
+```
