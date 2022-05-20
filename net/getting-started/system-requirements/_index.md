@@ -11,7 +11,6 @@ url: /net/system-requirements/
 - Microsoft Windows 2008 R2 SP1, 2008 SP2 Server ( x64 )
 - Microsoft Windows 2012, 2012 R2 Server ( x64 )
 - Microsoft Windows Vista ( x64 )
-- Microsoft Windows 7 ( x64 )
 - Microsoft Windows 8, 8.1 ( x64 )
 - Microsoft Windows 10 ( x64, x86, AnyCPU )
 - Mac OS X

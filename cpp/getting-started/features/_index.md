@@ -47,3 +47,9 @@ Aspose.OCR for C++ API provides the following features.
 - Slovene
 - Swedish
 - Chinese
+- Belorussian
+- Bulgarian
+- Ukrainian
+- Kazakh
+- Russian
+- Serbian
