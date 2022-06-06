@@ -38,7 +38,8 @@ The following table contains the latin characters supported by the Aspose.OCR AP
 |   ú   |   û   |   ü   |   ū   |   ŭ   |   ů   |   ű   |   ų   |   ư   |   ŵ   |
 |   ý   |   ŷ   |   ÿ   |   ź   |   ż   |   ž   |   c   |
 
-The following table contains the latin characters supported by the Aspose.OCR API.
+The following table contains the cyrillic characters supported by the Aspose.OCR API.
+
 |       |       |       |       |       |       |       |       |       |       |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | space |	!	|	\	|	"	|	#	|	$	|	%	|	&	|	'	|	(	|

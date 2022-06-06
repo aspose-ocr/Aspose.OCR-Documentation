@@ -33,3 +33,15 @@ public static void RecognizeAndGetChoices()
 	resultWithChoices.ForEach(a => Console.WriteLine($"character: {a[0]} . Choices: {a[1]} {a[2]} {a[3]} {a[4]}"));
 }
 ```
+
+<style>
+p { text-align: center; padding: 10px; }
+label { display: inline-block; padding: 4px 6px; border: 1px solid #333; background-color: rgba(32, 32, 32, 0.9); border-radius: 6px; font-size: 80%; font-weight: bold; color: #fff; }
+label:hover, label:active, input:hover+label, input:active+label {
+    background:grey;
+}
+</style>
+
+<a href="https://downgit.github.io/#/home?url=https://github.com/aspose-ocr/Aspose.OCR-for-.NET/blob/master/README.md" ><label for="overlay">Download example</label></a>
+
+

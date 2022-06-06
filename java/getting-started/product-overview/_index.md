@@ -19,13 +19,21 @@ Aspose.OCR for Java comes with fully featured demos and working examples written
 ## **Product Description**
 Aspose.OCR for Java comes with fully featured demos and working examples written in Java. The demos help developers learn about the component's features and get up and running quickly.
 ## **Aspose.OCR Features**
-- Read characters from images.
-- Support for JPG, PNG, GIF, BMP and TIFF image file formats for OCR.
-- Support for English, French, Spanish and Portuguese.
-- Read popular fonts including Arial, Times New Roman, Courier New, Verdana, Tahoma and Calibri.
-- Support for regular, bold and italic font styles.
+- Programmatically detect, identify and read characters from images.
 - Scan the whole image or any part of the image.
-- Scan rotated images.
-- Can apply different noise removal filters before image recognition.
-- Extract optical marked elements from Scanned images.
-- Support for various optical marked elements such as Check Box, Choice Box, Grid, Barcode & OCR.
+- Skew correction for OCR Operation. Scan rotated images.
+- Preprocess image with filters.
+- Support for JPEG, PNG, GIF, PDF, TIFF etc. For the complete list supported file formats, please visit the [Supported File Formats](/ocr/java/supported-file-formats/) page.
+- Support for many characters including numbers and alphabets. For the complete list of supported characters, please visit the [Supported Characters](/ocr/java/supported-characters/) page.
+- Currently, it supports 26 European languages and Chinese.
+- Detect and read popular font faces such as Arial, Times New Roman, Courier New, Tahoma, Calibri & Verdana.
+- Supports regular, bold and italic font styles. 
+- Application of various noise removal filters to assist image recognition.
+- Calculate the bounding boxes of words, lines or paragraphs.
+- Get possible choices for each recognized character.
+- Pass URI and recognize the image from it.
+- Recognize multiple images in a folder, zip archive.
+- Recognize multiple images in a collection.
+- Get result in JSON or XML format.
+- Save results in text, DOCX, PDF, XLSX, JSON, XML formats
+- Spell-check for the result.

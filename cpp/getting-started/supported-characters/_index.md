@@ -38,6 +38,7 @@ The following table contains the latin characters supported by the Aspose.OCR AP
 |   ý   |   ŷ   |   ÿ   |   ź   |   ż   |   ž   |   c   |
 
 The following table contains the latin characters supported by the Aspose.OCR API.
+
 |       |       |       |       |       |       |       |       |       |       |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | space |	!	|	\	|	"	|	#	|	$	|	%	|	&	|	'	|	(	|

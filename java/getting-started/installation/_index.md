@@ -47,7 +47,7 @@ Copy
     <dependency>
         <groupId>com.aspose</groupId>
         <artifactId>aspose-ocr</artifactId>
-        <version>20.11</version>
+        <version>22.5</version>
     </dependency>
 </dependencies>
 ```
@@ -95,17 +95,12 @@ After performing the above steps, Aspose.OCR for Java dependency will finally be
                   // for cpu version
         <groupId>org.bytedeco</groupId>
         <artifactId>onnxruntime-platform</artifactId>
-        <version>1.2.0-1.5.3</version> 
+        <version>1.11.0</version> 
                   // for gpu version
                   // <groupId>com.microsoft.onnxruntime</groupId>
         // <artifactId>onnxruntime_gpu</artifactId>
         // <version>1.3.1</version>
-    </dependency>
-    <dependency>
-        <groupId>com.google.code.gson</groupId>
-        <artifactId>gson</artifactId>
-        <version>2.8.5</version>
-    </dependency>
+    </dependency>  
  </dependencies>
  <organization>
     <name>Aspose</name>
