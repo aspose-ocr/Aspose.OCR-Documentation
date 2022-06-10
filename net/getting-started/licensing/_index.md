@@ -22,7 +22,10 @@ Aspose.OCR for .NET is a commercially licensed product that can be used in trial
 
 You can start using Aspose.OCR for .NET right after the [installation](/ocr/net/installation/). In trial mode (without providing a license) you can recognize texts in any supported [languages](/ocr/net/recognition-languages/) and save recognition results in any of the supported [formats](/ocr/net/supported-file-formats/).
 
-However, the maximum number of characters that can be recognized in an image is limited to **300**.
+However, the following restrictions apply:
+
+- If the number of characters in a recognized image exceeds 300, only the first **300** characters are recognized.
+- If the number of characters in a recognized image is less than 300, the first **60%** of characters are recognized.
 
 Apply a license to remove the restriction.
 
