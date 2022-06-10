@@ -1,37 +1,44 @@
 ---
-title: How to Run the Examples
+weight: 40
+date: "2022-06-09"
+author: "Vladimir Lapin"
 type: docs
-weight: 90
 url: /net/how-to-run-the-examples/
+title: How to run examples
+description: Explore our sample applications to learn about the features and capabilities of Aspose.OCR for .NET.
+keywords:
+- examples
+- git
+- repository
+- samples
+- evaluate
 ---
 
-## **Software Requirements**
+Our sample applications are the fastest and easiest way to get familiar with Aspose.OCR for .NET and to explore its features and capabilities.
 
-Please make sure you meet the following requirements before downloading and running the examples.
+## System requirements
 
-1. Visual Studio 2010 or higher
-1. NuGet Package Manager installed in Visual Studio. Make sure that the latest NuGet API version is installed in Visual Studio. For details on how to install NuGet package manager please check <https://docs.microsoft.com/en-gb/nuget/install-nuget-client-tools>
-1. Go to Tools->Options->NuGet Package Manager->Package Sources and make sure that the option **nuget.org** is checked
-1. The example project uses NuGet Automatic Package Restore feature, therefore, you should have an active internet connection. If you do not have an active internet connection on the machine where examples are to be executed please check [Installation](/ocr/net/installation/) and manually add a reference to Aspose.OCR.dll in the example project.
+Your system must meet the following requirements to run the examples:
 
-## **Download from GitHub**
+- Microsoft Visual Studio 2010 SP1 or later.
+- [NuGet package manager](https://docs.microsoft.com/en-gb/nuget/install-nuget-client-tools) with _nuget.org_ package source enabled.
+- Active internet connection for obtaining Aspose.OCR package through NuGet Automatic Package Restore.  
+  Alternatively, you can [download](https://downloads.aspose.com/ocr/net) Aspose.OMR for .NET package from our web site and [reference](/ocr/net/installation/#downloadable) it in the example project.
 
-All examples of Aspose.OCR for .NET are hosted on [GitHub](https://github.com/aspose-ocr/Aspose.OCR-for-.NET).
+## Downloading the examples
 
-- You can either clone the repository using your favorite GitHub client or download the ZIP file from [here](https://github.com/aspose-ocr/Aspose.OCR-for-.NET/archive/master.zip).
-- Extract the contents of the ZIP file to any folder on your computer. All the examples are located in the **Examples** folder.
-- The projects are created in Visual Studio 2013, but the solution files are compatible with Visual Studio 2010 SP1 and higher.
-- Open the solution file in Visual Studio and build the project.
-- On the first run, the dependencies will automatically be downloaded via NuGet.
-- **Data** folder at the root folder of **Examples** contains input files used in the examples. It is mandatory that you download the **Data** folder along with the examples project.
-- Open RunExamples.cs file, all the examples are called from here.
-- Uncomment the examples you want to run from within the project.
-- Build the project in x64, x86 or AnyCPU mode.
+All Aspose.OCR for .NET examples are hosted on [GitHub](https://github.com/aspose-ocr/Aspose.OCR-for-.NET). You can either clone the repository using your favorite GitHub client or [download](https://github.com/aspose-ocr/Aspose.OCR-for-.NET/archive/master.zip) it as a ZIP archive.
 
-Please feel free to reach out using our Forums if you have any issues setting up or running the examples.
+1. Extract the contents of the downloaded ZIP archive to the local machine (if necessary).
+2. _Data_ subfolder of the _Examples_ folder contains all the source files required to run examples.
+3. Open _Aspose.OCR.Examples.CSharp.sln_ solution file from _Examples_ folder with Microsoft Visual Studio.
+4. Open _RunExamples.cs_ file and uncomment the examples you want to run.
+5. Build the project in x64, x86 or AnyCPU mode. On the first run, all required dependencies will be automatically downloaded via NuGet.
 
-## **Contribute**
+Feel free to contact us through our [Free Support Forum] (https://forum.aspose.com/c/ocr/16) if you have any problems running the examples.
 
-If you like to add or improve an example, we encourage you to contribute to the project. All examples and showcase projects in this repository are open source and can be freely used in your own applications.
+## Contributing
 
-To contribute, you can fork the repository, edit the source code and create a pull request. We will review the changes and include them in the repository if found helpful.
+All examples in the repository are open source and are free to use in your own applications.
+
+If you would like to add or improve the example, do not hesitate to contribute to the project. Fork the [repository](https://github.com/aspose-ocr/Aspose.OCR-for-.NET), edit the source code and create a pull request. We will review proposed changes and include them in the master branch.

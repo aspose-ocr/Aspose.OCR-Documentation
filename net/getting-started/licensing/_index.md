@@ -1,122 +1,137 @@
 ---
-title: Licensing
+weight: 30
+date: "2022-06-08"
+author: "Vladimir Lapin"
 type: docs
-weight: 40
 url: /net/licensing/
+aliases:
+- /net/evaluate-aspose-ocr/
+title: Licensing
+description: Learn how to obtain and apply Aspose.OCR for .NET license and discover limitations of the trial version.
+keywords:
+- license
+- evaluation
+- trial
+- free
+- purchase
 ---
 
-## **Applying a License**
-You can easily download an evaluation version of Aspose.OCR for .NET from the [download page](https://downloads.aspose.com/ocr/net). The evaluation version provides the same features as the licensed version with some limitations. When you purchase a license, all you have to do is to apply the license by adding a couple of source code lines to your application.
-### **Evaluation Version Limitation**
-The evaluation version of Aspose.OCR for .NET limits the number of characters extracted from an image to 300.
-### **Applying a License to Aspose.OCR for .NET**
-Here are some details about Aspose licenses:
+Aspose.OCR for .NET is a commercially licensed product that can be used in trial (evaluation) mode.
 
-- The license is a plain-text XML file that contains details such as the product name, the number of developers it is licensed for, the subscription expiry date and so on. The file is digitally signed, so don't modify it. Even adding an extra line break will invalidate the license.
-- You need to apply a license before starting the character recognition process, whereas the license is applied once per application life cycle (or process).
-- The license can be loaded from a file, stream or an embedded resource.
+## Free trial
 
-Aspose.OCR for .NET tries to find the license in the following locations:
+You can start using Aspose.OCR for .NET right after the [installation](/ocr/net/installation/). In trial mode (without providing a license) you can recognize texts in any supported [languages](/ocr/net/recognition-languages/) and save recognition results in any of the supported [formats](/ocr/net/supported-file-formats/).
 
-- Explicit path: The folder that contains Aspose.OCR.dll 
-- The folder that contains the assembly that called Aspose.OCR.dll
-- The folder that contains the entry assembly (your .exe)
-- An embedded resource in the assembly that called Aspose.OCR.dll
-### **Applying a License Using a File or a Stream**
-The easiest way to set a license is to put the license file in the same folder as that of Aspose.OCR.dll and specify the file name, not the path.
+However, the maximum number of characters that can be recognized in an image is limited to **300**.
 
-**C#**
+Apply a license to remove the restriction.
 
-{{< highlight csharp >}}
+## Getting a temporary license
 
- // Instantiate an instance of license and set the license file through its path
+A temporary license removes a limitation of the trial version for **30 days**. Use it to start building a fully functional OCR application and make the final decision to [purchase](https://purchase.aspose.com/pricing/ocr/net) Aspose.OCR for .NET later.
 
-Aspose.OCR.License license = new Aspose.OCR.License();
+To request a temporary license, visit ["Get a Temporary License"](https://purchase.aspose.com/temporary-license) page.
 
-license.SetLicense("Aspose.OCR.lic");
+## Purchasing a license
 
+Aspose.OCR for .NET is licensed either by the number of developers and locations (sites) where the products will be used (_Developer_ and _Site_ licenses) or by pay-per-use (_Metered_ licenses).
 
+Read [License Types](https://purchase.aspose.com/policies/license-types) for details and [purchase a license](https://purchase.aspose.com/pricing/ocr/net) that best suits your needs.
 
-{{< /highlight >}}
+## Applying a developer or site license
 
+After purchasing a license or obtaining a temporary license, you will receive a file with _.lic_ extension. If needed, you can rename this file and change its extension.
 
+{{% alert color="primary" %}} 
+Do not modify the contents of the license file. Even an extra line break or space will invalidate the license.
+{{% /alert %}} 
 
-When you call the SetLicense method, the license name should be same as that of your license file name. For example, you may change the license file name to "Aspose.OCR.lic.xml". Then in your code, you should use the modified license name (that is Aspose.OCR.lic.xml) for the SetLicense method.It is also possible to load a license from a stream.
+The license must be applied once per application or process lifecycle before recognition starts. For _desktop applications_, it is recommended to load the license in the `Initialize` method of the main form. For _web applications_, load it in the `Session_Start()` method of **global.asax** file.
 
-**C#**
+### Loading a license from file
 
-{{< highlight csharp >}}
-
- //Instantiate an instance of license and set the license through a stream
-
-Aspose.OCR.License license = new Aspose.OCR.License();
-
-license.SetLicense(myStream);
-
-{{< /highlight >}}
-
-
-#### **Applying a License Using an Embedded Resource**
-Another neat way of packaging the license with your application and making sure it will not be lost, is to include it as an embedded resource into one of the assemblies that calls Aspose.OCR. To include the license file as an embedded resource:
-
-In Visual Studio .NET, include the license file (.lic) in the project using the **File** | **Add Existing Item...** menu option. 
-
-![todo:image_alt_text](licensing_1.png)
-
-
-
-Select the file in the Solution Explorer and set **Build Action** to **Embedded Resource** in the **Properties** window 
-
-![todo:image_alt_text](licensing_2.png)
-
-To access the license embedded in the assembly (as an embedded resource), it is not necessary to call the GetExecutingAssembly and GetManifestResourceStream methods of the System.Reflection.Assembly class of the Microsoft .NET Framework. Instead, just add the license file as an embedded resource to your project and pass the name of the license file into the SetLicense method. The License class will automatically find the license file in the embedded resources.The example below illustrates how to embed a license in your applications.
-
-
-
-**C#**
-
-{{< highlight csharp >}}
-
- // Instantiate the License class
-
-Aspose.OCR.License license = new Aspose.OCR.License();
-
-//Pass only the name of the embedded license file
-
-license.SetLicense("Aspose.OCR.lic");
-
-
-
-{{< /highlight >}}
-### **Setting a License in the Source Code**
-The license needs to be applied only once per application or process. For desktop applications, we recommend that you set the license in the Initialize() method of the main form. For web applications, set it in the global.asax file’s Session_Start() method.
-
-
-### **Apply Metered License**
-Aspose.Ocr allows developers to apply a metered key. This is a new licensing mechanism.
-
-The new licensing mechanism will be used along with the existing licensing method. Those customers who want to be billed based on the use of API features can use the Metered Licensing.
-
-After completing all the necessary steps to obtain this type of license, you will receive the keys, not the license file. This metered key can be applied using the Metered class specially introduced for this purpose.
-
-The following code example shows how to set metered public and private keys:
-
-For complete examples and data files, please go to https://github.com/aspose-ocr/Aspose.OCR-for-.NET
+Put the license file to a folder on your computer and insert the following code in your startup method:
 
 ```csharp
-String publicKey = "";
-String privateKey = "";
+// Initialize the licensing object
+Aspose.OCR.License license = new Aspose.OCR.License();
 
-Metered m = new Metered();
-m.setMeteredKey(publicKey, privateKey);
-
-// Get API
-AsposeOcr api = new AsposeOcr();
-// Use api methods 
-RecognitionResult res = api.RecognizeImage("img.png", new RecognitionSettings());
+// Load the license from file
+license.SetLicense("Aspose_OCR_License_File.lic");
 ```
-> Please note that you must have a stable Internet connection for the correct use of the Metered license, 
->
->since the Metered mechanism requires the constant interaction with our services for correct calculations.
->
-> For more details, refer to the [**Metered Licensing FAQ” section**](https://purchase.aspose.com/faqs/licensing/metered).
+If only the name of the license file (without path) is specified, `SetLicense` method will look for the license file in the following locations:
+
+- the folder that contains Aspose.OCR for .NET component (_Aspose.OCR.dll_);
+- the folder that contains the calling assembly;
+- the folder that contains the entry (startup) assembly.
+
+Alternatively, you can store the license file in any folder on your computer and specify an absolute or relative path. If you prefer to load the license from the explicit path, provide the full path in `SetLicense` method.
+
+### Loading a license from stream
+
+Insert the following code in your startup method:
+
+```csharp
+// Initialize the licensing object
+Aspose.OCR.License license = new Aspose.OCR.License();
+
+// Read the license from file
+System.IO.FileStream lisenseStream = new System.IO.FileStream(@"C:\Aspose_OCR_License_File.lic", System.IO.FileMode.Open, System.IO.FileAccess.Read);
+
+// Load the license
+license.SetLicense(licenseStream);
+```
+
+### Including a license file as an embedded resource
+
+You can include the license file as an embedded resource into one of the assemblies that call Aspose.OCR for .NET. This ensures that the file is not accidentally lost.
+
+- In Microsoft Visual Studio, right-click the project in **Solution Explorer** and select **Add | Existing Item...** from the context menu.
+- Select the license (_.lic_) file and click **Add** button.
+- Select the license file in **Solution Explorer** and set its **Build Action** property to _Embedded resource_.
+
+Then insert the following code in your startup method:
+
+```c#
+// Initialize the licensing object
+Aspose.OCR.License license = new Aspose.OCR.License();
+
+// Load the license from file
+license.SetLicense("Aspose_OCR_License_File.lic");
+```
+
+You do not need to call `GetExecutingAssembly` and `GetManifestResourceStream` methods of the `System.Reflection.Assembly` class to access the embedded license. `Aspose.OCR.License` class will automatically find the license file in the embedded resources.
+
+## Applying a metered license
+
+When you purchase a metered license, you will receive a Public/Private Key pair instead of a license file. Use the following code in your startup method to apply the license keys:
+
+```csharp
+// License key pair
+string publicKey = "PUBLIC-LICENSE-KEY";
+string privateKey = "PRIVATE-LICENSE-KEY";
+
+// Initialize the metered license
+Aspose.OCR.Metered meteredLicense = new Aspose.OCR.Metered();
+meteredLicense.SetMeteredKey(publicKey, privateKey);
+```
+
+Your usage will be recorded locally and regularly reported back to Aspose servers. You will be billed monthly for what you use. This licensing mechanism requires that the computer running the OCR application has a stable Internet connection and that the application is not blocked by a firewall.
+
+Read [Metered Licensing FAQ](https://purchase.aspose.com/faqs/licensing/metered) for in-depth technical and business details.
+
+## Licensing multiple Aspose products
+
+Even if you have a single license for all Aspose products (such as [Aspose.Total for .NET](https://products.aspose.com/total/net/)), you still need to apply the license separately to **each** Aspose product you are using in your application.
+
+Every Aspose product has a `License` class in its namespace. Use the fully qualified `License` class name when applying licenses to each product to avoid ambiguity. For example:  
+  
+  ```c#
+  // Aspose.OCR
+  Aspose.OCR.License OCRLicense = new Aspose.OCR.License();
+  OCRLicense.SetLicense("Aspose_OCR_License_File.lic");
+
+  // Aspose.BarCode
+  Aspose.BarCode.License barcodeLicense = new Aspose.BarCode.License();
+  barcodeLicense.SetLicense("Aspose_BarCode_License_File.lic");
+  ```

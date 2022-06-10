@@ -1,8 +1,12 @@
 ---
-title: Release Notes
+weight: 40
+date: "2022-06-09"
+author: "Vladimir Lapin"
 type: docs
-weight: 30
 url: /net/release-notes/
+title: Release Notes
+description: Changes, enhancements and bug fixes introduced in Aspose.OCR releases.
+keywords:
+- release
+- changelog
 ---
-
-

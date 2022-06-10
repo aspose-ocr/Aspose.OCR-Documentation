@@ -1,79 +1,94 @@
 ---
-title: Aspose.OCR Product Family
-description: Aspose.OCR is an optical character recognition(OCR) component that allows developers to add text scanner or ocr scanner to their .NET, Java or C++ applications using a simple set of classes.
-type: docs
 weight: 10
+date: "2022-06-09"
+author: "Vladimir Lapin"
+type: docs
 url: /
+is_root: true
+title: Aspose.OCR Product Family
+description: Aspose.OCR for .NET is a powerful and easy-to-use optical character recognition (OCR) API for converting scanned images and photographs to text.
+keywords:
+- API
+- component
+- library
+- software
+- OCR
+- recognition
 ---
 
+## Aspose.OCR for .NET
+
 {{% alert color="primary" %}}
 
-![Aspose.OCR for .NET Product Logo](home_1.png)
+[![Aspose.OCR for .NET](aspose-ocr-net.png)](/ocr/net/)
 
-**Welcome to Aspose.OCR for .NET**
+[**Aspose.OCR for .NET**](/ocr/net/) allows you to add optical character recognition (OCR) functionality to your .NET desktop or web application in less than 10 lines of code without worrying about complex formulas, neural networks and other technical details.
 
-Aspose.OCR for .NET is a character recognition component that allows developers to add OCR functionality to their .NET applications using a simple set of classes.
+Support of all popular image formats and various pre-processing filters allow you to recognize rotated, skewed and noisy images from almost any source - from high-quality scans to smartphone photos.
 
-The component is implemented using Managed C# and can be used with any .NET language. Aspose.OCR for .NET comes with detailed demos and working examples written in C#. The demos help developers learn about the component's features and get up and running quickly.
+Implemented using Managed C#, Aspose.OCR for .NET can be used with any .NET framework. The library comes with a number of examples written in C# that allow you to quickly familiarize yourself with its functions and capabilities and give you an idea of creating solutions for your business needs.
 
 {{% /alert %}}
 
-## Aspose.OCR for .NET Resources
+### Resources
 
-Following are the links to some useful resources you may need to accomplish your tasks.
+Find more information, download Aspose.OCR for .NET packages and get professional help:
 
-- [Aspose.OCR for .NET Online Documentation](/ocr/net/)
-- [Aspose.OCR for .NET Features](/ocr/net/product-overview/)
+- [Aspose.OCR for .NET online documentation](/ocr/net/)
 - [Aspose.OCR for .NET Release Notes](/ocr/net/release-notes/)
-- [Aspose.OCR for .NET Product Page](https://products.aspose.com/ocr/net)
-- [Install Aspose.OCR for .NET NuGet Package](https://www.nuget.org/packages/Aspose.OCR/)
-- [Aspose.OCR for .NET API Reference Guide](https://apireference.aspose.com/ocr/net)
-- [Aspose.OCR for .NET Free Support Forum](https://forum.aspose.com/c/ocr)
-- [Aspose.OCR for .NET Paid Support Helpdesk](https://helpdesk.aspose.com/)
+- [Aspose.OCR for .NET NuGet packages and downloads](https://downloads.aspose.com/ocr/net)
+- [Aspose.OCR for .NET API reference](https://reference.aspose.com/ocr/net/)
+- [Examples](https://github.com/aspose-ocr/Aspose.OCR-for-.NET)
+- [Blog](https://blog.aspose.com/category/ocr/)
+- [Free Support Forum](https://forum.aspose.com/c/ocr/16)
+- [Paid Support Helpdesk](https://helpdesk.aspose.com/)
+
+## Aspose.OCR for Java
 
 {{% alert color="primary" %}}
 
-![Aspose.OCR for Java Product Logo](home_2.png)
+[![Aspose.OCR for Java](aspose-ocr-java.png)](/ocr/java/)
 
-**Welcome to the Aspose.OCR for Java**
+[**Aspose.OCR for Java**](/ocr/java/) is an optical character recognition (OCR) library that allows you to add OCR functionality to your Java applications. Extremely complex mathematical and software algorithms are encapsulated in an easy-to-use API, saving you the time and effort required to develop an OCR solution from scratch.
 
-Aspose.OCR for Java is an optical character API that allows developers to add OCR functionality to their Java applications without requiring any additional tool or API. Aspose.OCR for Java allows extracting text from images having different fonts and styles - saving the time and effort involved in developing an OCR solution from scratch.
+The library supports 26 languages based on Latin and Cyrillic scrips as well as Chinese. You can leave the language detection to Aspose.OCR for Java or set it yourself to increase the recognition performance and reliability. All popular typefaces such as Arial, Times New Roman, Courier New, Tahoma, Calibri and more in regular, bold and italic styles are detected and recognized.
 
-Aspose.OCR for Java comes with fully featured demos and working examples written in Java. The demos help developers learn about the component's features and get up and running quickly. Using Aspose.OCR for Java, developers can extract text and related information such as font, style & location of the text from specific parts of an image. This feature allows to perform the OCR operation quickly on document scans that follow the similar structure.
+Aspose.OCR for Java comes with a number of plugins that allow you to use it in Ruby and PHP, and create Maven projects with IntelliJ IDEA.
 
 {{% /alert %}}
 
-## Aspose.OCR for Java Resources
+### Resources
 
-Following are the links to some useful resources you may need to accomplish your tasks.
+Find more information, download Aspose.OCR for Java packages and get professional help:
 
-- [Aspose.OCR for Java Online Documentation](/ocr/java/)
-- [Aspose.OCR for Java Features](/ocr/java/product-overview/)
+- [Aspose.OCR for Java online documentation](/ocr/java/)
 - [Aspose.OCR for Java Release Notes](/ocr/java/release-notes/)
-- [Aspose.OCR for Java Product Page](https://products.aspose.com/ocr/java)
-- [Install Aspose.OCR for Java from Maven Repository](/ocr/java/installation/)
-- [Aspose.OCR for Java API Reference Guide](https://apireference.aspose.com/ocr/java)
-- [Download Aspose.OCR for Java from GitHub Repository](https://github.com/aspose-ocr/Aspose.OCR-for-Java)
-- [Aspose.OCR for Java Free Support Forum](https://forum.aspose.com/c/ocr)
-- [Aspose.OCR for Java Paid Support Helpdesk](https://helpdesk.aspose.com/)
+- [Install Aspose.OCR for Java from Maven Repository](https://downloads.aspose.com/ocr/java)
+- [Aspose.OCR for Java API reference](https://reference.aspose.com/ocr/java/)
+- [Examples](https://github.com/aspose-ocr/Aspose.OCR-for-Java)
+- [Blog](https://blog.aspose.com/category/ocr/)
+- [Free Support Forum](https://forum.aspose.com/c/ocr/16)
+- [Paid Support Helpdesk](https://helpdesk.aspose.com/)
+
+## Aspose.OCR for C++
 
 {{% alert color="primary" %}}
 
-**![Aspose.OCR for C++ Product Logo](home_3.png)**
+[![Aspose.OCR for C++](aspose-ocr-cpp.png)](/ocr/cpp/)
 
-**Welcome to the Aspose.OCR for C++**
+[**Aspose.OCR for C++**](/ocr/cpp/) is a native C++ library that adds image-to-text conversion functionality to your applications. The library is extremely easy to use - complex OCR tasks are done in a few lines of code. This allows you to focus on high-level tasks rather than programming algorithms and low-level coding.
 
-Aspose.OCR for C++ is a native C++ library that allows developers to add OCR functionality to their applications without requiring any additional tool or API. Aspose.OCR for C++ allows extracting text from images having different fonts and styles - saving the time and effort involved in developing an OCR solution from scratch.
+We provide comprehensive documentation to get you up to speed on OCR technology and start building powerful business applications in a couple of days.
 
 {{% /alert %}}
 
-## Aspose.OCR for C++ Resources
+### Resources
 
-The following are the links to some useful resources you may need to accomplish your tasks.
+Find more information, download Aspose.OCR for C++ packages and get professional help:
 
-- [Aspose.OCR for C++ Online Documentation](/ocr/cpp/)
-- [Aspose.OCR for C++ Features](/ocr/cpp/features/)
-- [Aspose.OCR for C++ Release Notes](/ocr/cpp/release-notes/)
-- [Aspose.OCR for C++ Product Page](https://products.aspose.com/ocr/cpp)
-- [Aspose.OCR for C++ Free Support Forum](https://forum.aspose.com/c/ocr)
-- [Aspose.OCR for C++ Paid Support Helpdesk](https://helpdesk.aspose.com/)
+- [Aspose.OCR for Java online documentation](/ocr/cpp/)
+- [Aspose.OCR for Java Release Notes](/ocr/cpp/release-notes/)
+- [Developer's guide](/ocr/cpp/developer-guide/)
+- [Blog](https://blog.aspose.com/category/ocr/)
+- [Free Support Forum](https://forum.aspose.com/c/ocr/16)
+- [Paid Support Helpdesk](https://helpdesk.aspose.com/)
