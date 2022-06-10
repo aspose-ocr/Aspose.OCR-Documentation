@@ -20,27 +20,28 @@ Both x86 (where applicable) and x64 versions of the following operating systems 
 
 ### Desktop
 
-- Windows 11: Home, Pro, Pro Education, Pro for Workstations, Enterprise, and Education
-- Windows 10 version 1703: Home, Professional, Education, and Enterprise
-- Windows 8: Core, Professional, and Enterprise
-- Windows 7: Home Premium, Professional, Enterprise, Ultimate
-- Windows Vista
+- Microsoft Windows 11: Home, Pro, Pro Education, Pro for Workstations, Enterprise, and Education
+- Microsoft Windows 10 version 1703: Home, Professional, Education, and Enterprise
+- Microsoft Windows 8: Core, Professional, and Enterprise
+- Microsoft Windows 7: Home Premium, Professional, Enterprise, Ultimate
+- Microsoft Windows Vista
 - macOS
 - Linux
 
 ### Server
 
-- Windows Server 2022
-- Windows Server 2019
-- Windows Server 2016
-- Windows Server 2012
-- Windows Server 2008 R2 SP1
+- Microsoft Windows Server 2022
+- Microsoft Windows Server 2019
+- Microsoft Windows Server 2016
+- Microsoft Windows Server 2012
+- Microsoft Windows Server 2008 R2 SP1
 
 ## Development environments
 
 You can use Aspose.OCR for .NET with any development environment targeting the .NET platform. The library has been specifically tested with the following integrated development environments (IDEs) from Microsoft:
 
-- Microsoft Visual Studio 2017 version 15.3 or later
+- Microsoft Visual Studio 2015 (update NuGet Package Manager to the latest version)
+- Microsoft Visual Studio 2017
 - Microsoft Visual Studio 2019
 - Microsoft Visual Studio 2022
 - Microsoft Visual Studio for Mac version 7.1 or later

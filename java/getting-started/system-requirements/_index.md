@@ -1,41 +1,56 @@
 ---
-title: System Requirements
-type: docs
 weight: 30
+date: "2022-06-10"
+author: "Vladimir Lapin"
+type: docs
 url: /java/system-requirements/
+title: System requirements
+description: Minimum requirements and prerequisites for developing applications with Aspose.OCR for Java.
+keywords:
+- prerequisites
+- requirements
+- environment
+- Java
 ---
 
-## **Supported Operating Systems**
-Aspose.OCR for Java supports any operating system that runs the Java runtime including, but not limited:
-### **Windows**
-- Microsoft Windows 2003 Server
-- Microsoft Windows 2008 Server
-- Microsoft Windows 2012 Server
-- Microsoft Windows XP 
-- Microsoft Windows Vista
-- Microsoft Windows 7
-- Microsoft Windows 8, 8.1
-- Microsoft Windows 10
-### **Linux**
-- Linux (Ubuntu, openSUSE, CentOS and others)
-### **Mac**
-- Mac OS X etc.
-## **Supported Java Versions**
-Aspose.OCR for Java supports the following Java versions:
+## Supported operating systems
 
-- J2SE 6.0 (1.6)
-- J2SE 7.0 (1.7)
-- J2SE 8.0 (1.8)
-- or above
+Aspose.OCR for Java supports x86 (where applicable) and x64 versions of all operating systems that can run Java Runtime Environment, including:
 
-## **GPU version**
+### Microsoft Windows
 
-If you want to use aspose-ocr-gpu you have to make sure does your GPU supports CUDA.  You can do this by link https://developer.nvidia.com/cuda-gpus. 
-To use CUDA on your system, you will need the following installed:
+- Windows 11: Home, Pro, Pro Education, Pro for Workstations, Enterprise, and Education
+- Windows 10 version 1703: Home, Professional, Education, and Enterprise
+- Windows 8: Core, Professional, and Enterprise
+- Windows 7: Home Premium, Professional, Enterprise, Ultimate
+- Windows Vista
+- Windows XP
 
- - A CUDA-capable GPU
- - A supported version of Microsoft Windows
- - A supported version of Microsoft Visual Studio
- - the NVIDIA CUDA Toolkit (available at http://developer.nvidia.com/cuda-downloads) 10.1 version
- 
-Installation guide for CUDA you can find by link [CUDA install](https://docs.nvidia.com/cuda/cuda-installation-guide-microsoft-windows/index.html)
+### Microsoft Windows Server
+
+- Windows Server 2022
+- Windows Server 2019
+- Windows Server 2016
+- Windows Server 2012
+- Windows Server 2008
+- Windows Server 2003
+
+### Linux
+
+- Ubuntu
+- openSUSE
+- CentOS
+
+### Mac
+
+- macOS
+
+## Supported Java platforms
+
+Java 2 Platform, Standard Edition (J2SE) 6.0 (1.6) or later.
+
+## GPU support
+
+To use GPU-accelerated version of Aspose.OCR for Java (**aspose-ocr-gpu**) you will need a [CUDA capable GPU](https://developer.nvidia.com/cuda-gpus) and [NVIDIA CUDA Toolkit](https://developer.nvidia.com/cuda-downloads).
+
+Read [Installation Guides](https://docs.nvidia.com/cuda/index.html#installation-guides) to learn how to install and check for correct operation of the **CUDA Development Tools** on your system.

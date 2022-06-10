@@ -20,7 +20,7 @@ Our sample applications are the fastest and easiest way to get familiar with Asp
 
 Your system must meet the following requirements to run the examples:
 
-- Microsoft Visual Studio 2010 SP1 or later.
+- Microsoft Visual Studio 2015 or later.
 - [NuGet package manager](https://docs.microsoft.com/en-gb/nuget/install-nuget-client-tools) with _nuget.org_ package source enabled.
 - Active internet connection for obtaining Aspose.OCR package through NuGet Automatic Package Restore.  
   Alternatively, you can [download](https://downloads.aspose.com/ocr/net) Aspose.OMR for .NET package from our web site and [reference](/ocr/net/installation/#downloadable) it in the example project.
