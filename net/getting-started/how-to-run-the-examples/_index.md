@@ -1,6 +1,6 @@
 ---
 weight: 40
-date: "2022-06-09"
+date: "2022-06-22"
 author: "Vladimir Lapin"
 type: docs
 url: /net/how-to-run-the-examples/
@@ -23,7 +23,7 @@ Your system must meet the following requirements to run the examples:
 - Microsoft Visual Studio 2015 or later.
 - [NuGet package manager](https://docs.microsoft.com/en-gb/nuget/install-nuget-client-tools) with _nuget.org_ package source enabled.
 - Active internet connection for obtaining Aspose.OCR package through NuGet Automatic Package Restore.  
-  Alternatively, you can [download](https://downloads.aspose.com/ocr/net) Aspose.OMR for .NET package from our web site and [reference](/ocr/net/installation/#downloadable) it in the example project.
+  Alternatively, you can [download](https://downloads.aspose.com/ocr/net) Aspose.OCR for .NET package from our web site and [reference](/ocr/net/installation/#downloadable) it in the example project.
 
 ## Downloading the examples
 

@@ -1,6 +1,6 @@
 ---
 weight: 20
-date: "2022-06-09"
+date: "2022-06-22"
 author: "Vladimir Lapin"
 type: docs
 url: /net/getting-started/
@@ -20,7 +20,7 @@ keywords:
 - ZIP
 ---
 
-Get started with Aspose.OMR for .NET in a few steps:
+Get started with Aspose.OCR for .NET in a few steps:
 
 - [System requirements](/ocr/net/system-requirements/)  
   Check out the minimum requirements to get started with Aspose.OCR for .NET.

@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2022-06-08"
+date: "2022-06-22"
 author: "Vladimir Lapin"
 type: docs
 url: /net/product-overview/
@@ -21,7 +21,7 @@ Aspose.OCR for .NET can help you get the best results with the least cost and ef
 
 Aspose.OCR can be combined with other Aspose products, such as [Aspose.OMR for .NET](https://products.aspose.com/omr/) to create end-to-end optical recognition solutions.
 
-## Why Aspose.OMR?
+## Why Aspose.OCR?
 
 - State-of-art optical character recognition engine with superior recognition speed and accuracy designed by Aspose engineering team.
 - Can be used to build both desktop and web .NET applications for a number of platforms.
