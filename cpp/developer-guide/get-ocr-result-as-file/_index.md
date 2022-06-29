@@ -41,4 +41,5 @@ enumeration. The [**save_format**](https://apireference.aspose.com/ocr/cpp/struc
 |**file_format::docx**|Saves the document as an Office Open XML WordprocessingML Document (macro-free).|
 |**file_format::pdf** |Saves the document as an PDF (Adobe Portable Document) format.|
 |**file_format::xlsx** |Saves the result as an Excel ( 2007 and later) workbook Document.|
+|**file_format::json** |Saves the result as an JSON serialized file.|
 
