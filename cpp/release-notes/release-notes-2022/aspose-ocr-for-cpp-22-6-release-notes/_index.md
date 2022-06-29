@@ -21,8 +21,10 @@ This page contains release notes for Aspose.OCR for C++ 22.6.
 
 |Key|Summary|Category|
 |---|---|---|
-|OCRCPP-267| Integrate the Cyrillic model |Enhancement|
-|OCRCPP-266| Fast recognition method |Enhancement|
+|OCRCPP-278| Integrate code for the XML and JSON serialization |Enhancement|
+|OCRCPP-277| Integrate pre and post processing algorithms for Binarization neural network |Enhancement|
+|OCRCPP-275| Integrate Binarization neural network + tests |Enhancement|
+|OCRCPP-274| Table recognition |Enhancement|
 
 ## Enhancements
 
