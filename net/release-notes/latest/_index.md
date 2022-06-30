@@ -1,68 +1,71 @@
 ---
 weight: 1
-date: "2022-06-09"
+date: "2022-06-30"
 author: "Vladimir Lapin"
 type: docs
 url: /net/release-notes/latest/
-title: Latest release (May 2022)
-description: A summary of recent changes, enhancements and bug fixes in Aspose.OCR for .NET 22.5 (May 2022) release.
+title: Latest release (June 2022)
+description: A summary of recent changes, enhancements and bug fixes in Aspose.OCR for .NET 22.6 (June 2022) release.
 keywords:
-- 2022
-- May
+- latest
+- new
 - release
 - changelog
 ---
 
 {{% alert color="primary" %}}
 
-This page contains release notes information for Aspose.OCR for .NET 22.5
+This article contains a summary of recent changes, enhancements and bug fixes in [**Aspose.OCR for .NET 22.6 (June 2022)**](https://www.nuget.org/packages/Aspose.OCR/22.6.0) release.
+
+GPU version: **21.6.0**
 
 {{% /alert %}}
+
+## What was changed
+
+Key | Summary | Category
+--- | ------- | --------
+OCRNET-465 | Replaced **System.Drawing** with **Aspose.Drawing** to improve performance and cross-platform support. | Enhancement
+OCRNET-513 | Added a new [detection mode](/ocr/net/detect-areas-mode/) for better identification and recognition of tabular structures. | Enhancement
+OCRNET-517<br />OCRNET-535 | Added a new machine learning model for [image denoising](/ocr/net/denoising-correction/):<ul><li>Integrated Binarized Neural Network (BNN) and related tests.</li><li>Implemented pre- and post-processing algorithms for Binarized Neural Network.</li></ul> | New feature
+
+## Public API changes and backwards compatibility
+
+This section lists all public API changes introduced in **Aspose.OCR for .NET 22.6** that may affect the code of existing applications.
+
+### Added public APIs:
+
+The following public APIs have been introduced in this release:
+
+#### RecognitionSettings.AutoDenoising
+
+A new [recognition setting](/ocr/net/aspose.ocr/recognitionsettings/) for enabling or disabling automatic noise removal from recognized images.
 
 {{% alert color="primary" %}}
 
-**GPU version: 21.6.0**
+When enabled, images are pre-processed by a specialized neural network to remove dirt, spots, scratches, glare, unwanted gradients, and other noise. It consumes additional resources and is disabled by default.
 
 {{% /alert %}}
 
-## All Features
+#### DetectAreasMode.TABLE
 
-|Key|Summary|Category|
-|---|---|---|
-|OCRNET-506|Extend the languages enum |Enhancement|
-|OCRNET-504|Integrate the Cyrillic model |Enhancement|
-|OCRNET-508|Extend fields for Json ouput format |Enhancement|
-|OCRNET-503|Add xml output format |Enhancement|
-|OCRNET-499|Fast recognition method |Enhancement|
+A new [DetectAreasMode](https://reference.aspose.com/ocr/net/aspose.ocr/detectareasmode/) value that allows to choose a neural network for the automatic detection of table cells.
 
-## Enhancements
+### Updated public APIs:
 
-- added support for cyrillic alphabet and belorussian, bulgarian, ukrainian, kazakh, russian, serbian languages
-- added ability to get result in XML or JSON file format
-- added fast recognition method
+_No changes._
 
+### Removed public APIs:
 
-## Public API and Backwards Incompatible Changes
+_No changes._
 
-### New API
+## Usage examples
 
-- added method string RecognizeImageFast(string fullPath) to the AsposeOcr class
-- added method string GetJson(bool isReadable = false) to the RecognitionResult class
-- added method string GetXml() to the RecognitionResult class
+The examples below illustrates the changes introduced in this release:
 
-### Removed APIs
-
-All methods of the previous release are supported.
-
-### Will be deprecated
-
--
-
-## Usage Example
+### Recognize image with automatic noise removal
 
 {{< highlight csharp >}}
-
-
 using Aspose.OCR;
 
 namespace ProgramOCR
@@ -71,25 +74,45 @@ namespace ProgramOCR
     {
         static void Main(string[] args)
         {
-            // Get API
+            // Create instance of OCR API
             AsposeOcr api = new AsposeOcr();
-
-            // Create license
+            // Set license
             License lic = new License();
-
-            // Set license 
             lic.SetLicense("Aspose.Total.lic");
-
-            // Get image for recognize
-            string image = "img.jpg";
-
-            // Recognize image without skew correction and areas detection. Uses Latin alphabet. The fastest mode.  
-            string result = api.RecognizeImageFast(image);			
-			
-			// Print result
-			Console.WriteLine(result);
+            // Image path
+            string image = "noisy.jpg";
+            // Recognize
+            RecognitioResult result = api.RecognizeImage(image, new RecognitionSettings {AutoDenoising = false});
+            //Print recognition results
+            Console.WriteLine(result.RecognitionText);
         }
     }
 }
+{{< /highlight >}}
 
+### Recognize image with tabular content
+
+{{< highlight csharp >}}
+using Aspose.OCR;
+
+namespace ProgramOCR
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // Create instance of OCR API
+            AsposeOcr api = new AsposeOcr();
+            // Set license
+            License lic = new License();
+            lic.SetLicense("Aspose.Total.lic");
+            // Image path
+            string image = "table.jpg";
+            // Recognize
+            RecognitioResult resultTable = api.RecognizeImage(image, new RecognitionSettings {DetectAreasMode = DetectAreasMode.TABLE});
+            //Print recognition results
+            Console.WriteLine(resultTable.RecognitionText);
+        }
+    }
+}
 {{< /highlight >}}
