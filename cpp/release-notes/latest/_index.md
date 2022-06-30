@@ -1,14 +1,14 @@
 ---
-weight: 83
+weight: 1
 date: "2022-06-29"
 author: "Vladimir Lapin"
 type: docs
-url: /cpp/aspose-ocr-for-cpp-22.6-release-notes/
-title: Aspose.OCR for C++ 22.6 Release Notes (June 2022)
-description: A summary of recent changes, enhancements and bug fixes in Aspose.OCR for C++ 22.6 (June 2022) release.
+url: /cpp/release-notes/latest/
+title: Latest release (June 2022)
+description: A summary of recent changes, enhancements and bug fixes in the latest release of Aspose.OCR for C++.
 keywords:
-- 2022
-- June
+- latest
+- new
 - release
 - changelog
 ---
