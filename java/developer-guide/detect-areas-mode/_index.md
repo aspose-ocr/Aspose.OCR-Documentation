@@ -5,100 +5,97 @@ weight: 80
 url: /java/detect-areas-mode/
 ---
 
-## **Detect Areas Mode**
+Aspose.OCR for Java allows you to explicitly specify the region recognition method. This can improve recognition results if you know the type of content in the image.
 
-Aspose.OCR for Java provides to option to specify the area recognition method. 
-For this, the API provides the [**DetectAreasMode **](https://apireference.aspose.com/ocr/java/com.aspose.ocr/DetectAreasMode) enum. 
-You can set the property of DetectAreasMode in the method [**setDetectAreasMode**](https://apireference.aspose.com/ocr/java/com.aspose.ocr/RecognitionSettings#setDetectAreasMode) in the [**RecognitionSettings**](https://apireference.aspose.com/ocr/java/com.aspose.ocr/RecognitionSettings) and pass the instanse of it 
-to the [**RecognizePage**](https://apireference.aspose.com/ocr/java/com.aspose.ocr/AsposeOCR#RecognizePage) 
-method of the [**AsposeOCR**](https://apireference.aspose.com/ocr/java/com.aspose.ocr/AsposeOCR) class.
+OCR API provides [`DetectAreasMode`](https://apireference.aspose.com/ocr/java/com.aspose.ocr/DetectAreasMode) enumerator with the following constants:
 
-The following code snippet demonstrates the use of the DetectAreasMode  method. 
-You can disable regions detection and use DetectAreasMode.NONE, or you can choose the best region detection method according to placing text on your image. 
-So in some cases, using [**DetectAreasMode **](https://apireference.aspose.com/ocr/java/com.aspose.ocr/DetectAreasMode) you can get a better recognition result.
+- `NONE` - disable regions detection;
+- `DOCUMENT` - detect paragraphs with a machine learning model trained on documents;
+- `PHOTO` - detect paragraphs with a machine learning model trained on photos;
+- `TABLE` - detect table cells;
+- `COMBINE` - detect paragraphs with text and then detect regions inside paragraphs.
 
-# Sample Code 
+To choose the preferred region detection method, create an instance of [`RecognitionSettings`](https://apireference.aspose.com/ocr/java/com.aspose.ocr/RecognitionSettings) class and pass one of the above-mentioned values in its [`setDetectAreasMode`](https://reference.aspose.com/ocr/java/com.aspose.ocr/RecognitionSettings#setDetectAreasMode-com.aspose.ocr.DetectAreasMode-) method. Then pass the instance of `RecognitionSettings` class to [`RecognizePage`](https://apireference.aspose.com/ocr/java/com.aspose.ocr/AsposeOCR#RecognizePage) method.
+
+## Example
+
+The following code snippet demonstrates how to specify the region recognition method. Visit https://github.com/aspose-ocr/Aspose.OCR-for-Java for the full project and sample data files.
 
 ```csharp
-	// For complete examples and data files, please go to https://github.com/aspose-ocr/Aspose.OCR-for-Java
-	// The path to the documents directory.
-		// The path to the documents directory.
-		String dataDir = "";
+// The path to the documents directory
+String dataDir = "";
 
-		// The image path
-		String file = dataDir + "Receipt.jpg";
+// The image path
+String file = dataDir + "Receipt.jpg";
 
-		//Create api instance
-		AsposeOCR api = new AsposeOCR();
+// Create instance of OCR API
+AsposeOCR api = new AsposeOCR();
 
-		// set recognition options
-		RecognitionSettings settings = new RecognitionSettings();
-		settings.setDetectAreasMode(DetectAreasMode.PHOTO); // NONE, DOCUMENT, COMBINE, TABLE
+// Set region recognition method
+RecognitionSettings settings = new RecognitionSettings();
+settings.setDetectAreasMode(DetectAreasMode.PHOTO);
 
-		// get result object
-		RecognitionResult result = null;
-		try {
-			result = api.RecognizePage(file, settings);
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+// Get result object
+RecognitionResult result = null;
+try {
+	result = api.RecognizePage(file, settings);
+} catch (IOException e) {
+	e.printStackTrace();
+}
 
-		// print result
-		printResult(result);
-		// ExEnd:1
+// Print result
+printResult(result);
 
-		System.out.println("OCROperationWithDetectAreasMode: execution complete");
-	
-	
-	static void printResult(RecognitionResult result) {
-		//TEXT
-		System.out.println("TEXT:\n" + result.recognitionText);
-		
-		//SKEW
-		System.out.print("SKEW: ");
-		System.out.println(result.skew);
-		
-		//PARAGRAPHS
-		System.out.println("\nPARAGRAPHS:");    	
-		for (String paragraph : result.recognitionAreasText){
-			System.out.println(paragraph);
-		}
-		
-		//PARAGRAPHS COORDS
-		System.out.println("PARAGRAPHS COORDS:");
-		for (Rectangle rectangle : result.recognitionAreasRectangles){
-			System.out.println("X: " + rectangle.x + "Y: " + rectangle.y + "Width: " + rectangle.width + "Height: " + rectangle.height);
-		}
-		
-		//LINES
-		System.out.println("LINES:");
-		for (LinesResult line : result.recognitionLinesResult){
-			if(line.line != null) {
-			System.out.print("X: " + line.line.x + "Y: " + line.line.y + "Width: " + line.line.width + "Height: " + line.line.height);
-			System.out.println(" " + line.textInLine);
-			}
-		}
-		
-		//POSSIBLE CHOICES FOR CHARACTERS
-		System.out.println("POSSIBLE CHOICES FOR CHARACTERS:");
-		for (char[] choices : result.recognitionCharactersList){
-			if(choices != null) {
-			System.out.println("character: " + choices[0] + " " + choices[1] + " " + choices[2] + " " + choices[3] + " " + choices[4]);
-			}
-		}    	
-		
-		//WARNINGS
-		System.out.println("WARNINGS:");
-		for (String warning : result.warnings){
-			System.out.print(warning);
-		}
-		
-		//JSON
-		System.out.println("JSON:");
-		System.out.print(result.GetJson());
-		
-		//SPELL-CHECK CORRECTED TEXT
-		System.out.println("SPELL-CHECK CORRECTED TEXT:");
-		System.out.print(result.getSpellCheckCorrectedText());
+// Output result helper method
+static void printResult(RecognitionResult result) {
+	//TEXT
+	System.out.println("TEXT:\n" + result.recognitionText);
+
+	//SKEW
+	System.out.print("SKEW: ");
+	System.out.println(result.skew);
+
+	//PARAGRAPHS
+	System.out.println("PARAGRAPHS:");    	
+	for (String paragraph : result.recognitionAreasText){
+		System.out.println(paragraph);
 	}
+
+	//PARAGRAPHS COORDS
+	System.out.println("PARAGRAPHS COORDS:");
+	for (Rectangle rectangle : result.recognitionAreasRectangles){
+		System.out.println("X: " + rectangle.x + "Y: " + rectangle.y + "Width: " + rectangle.width + "Height: " + rectangle.height);
+	}
+
+	//LINES
+	System.out.println("LINES:");
+	for (LinesResult line : result.recognitionLinesResult){
+		if(line.line != null) {
+		System.out.print("X: " + line.line.x + "Y: " + line.line.y + "Width: " + line.line.width + "Height: " + line.line.height);
+		System.out.println(" " + line.textInLine);
+		}
+	}
+
+	//POSSIBLE CHOICES FOR CHARACTERS
+	System.out.println("POSSIBLE CHOICES FOR CHARACTERS:");
+	for (char[] choices : result.recognitionCharactersList){
+		if(choices != null) {
+		System.out.println("character: " + choices[0] + " " + choices[1] + " " + choices[2] + " " + choices[3] + " " + choices[4]);
+		}
+	}    	
+
+	//WARNINGS
+	System.out.println("WARNINGS:");
+	for (String warning : result.warnings){
+		System.out.print(warning);
+	}
+
+	//JSON
+	System.out.println("JSON:");
+	System.out.print(result.GetJson());
+
+	//SPELL-CHECK CORRECTED TEXT
+	System.out.println("SPELL-CHECK CORRECTED TEXT:");
+	System.out.print(result.getSpellCheckCorrectedText());
+}
 ```

@@ -5,7 +5,7 @@ weight: 77
 url: /net/denoising-correction/
 ---
 
-Dirt, spots, scratches, glare, unwanted gradients, and other image defects can interfere with recognition and significantly reduce OCR accuracy. Aspose.OCR for C++ provides a powerful Binarized Neural Network (BNN) that can clean up an image and reduce or completely remove noise.
+Dirt, spots, scratches, glare, unwanted gradients, and other image defects can interfere with recognition and significantly reduce OCR accuracy. Aspose.OCR for .NET provides a powerful Binarized Neural Network (BNN) that can clean up an image and reduce or completely remove noise.
 
 While Aspose.OCR for NET automatically pre-processes images before recognition, automatic noise removal is resource and time intensive and can reduce recognition speed on entry-level computers. Therefore, it is **disabled** by default.
 

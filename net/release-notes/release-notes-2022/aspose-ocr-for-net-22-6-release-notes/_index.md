@@ -35,7 +35,7 @@ This section lists all public API changes introduced in **Aspose.OCR for .NET 22
 
 ### Added public APIs:
 
-The following public APIs have been introduced in this release:
+The following public APIs have been introduced in this release.
 
 #### RecognitionSettings.AutoDenoising
 

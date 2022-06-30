@@ -1,14 +1,14 @@
 ---
-weight: 7
+weight: 1
 date: "2022-06-30"
 author: "Vladimir Lapin"
 type: docs
-url: /java/aspose-ocr-for-java-22-6-release-notes/
-title: Aspose.OCR for Java 22.6 - Release Notes
+url: /java/release-notes/latest/
+title: Latest release (June 2022)
 description: A summary of recent changes, enhancements and bug fixes in Aspose.OCR for Java 22.6 (June 2022) release.
 keywords:
-- 2022
-- June
+- latest
+- new
 - release
 - changelog
 ---
