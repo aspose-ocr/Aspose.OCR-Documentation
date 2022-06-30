@@ -33,7 +33,7 @@ So in some cases, using [**DetectAreasMode **](https://apireference.aspose.com/o
 
 		// set recognition options
 		RecognitionSettings settings = new RecognitionSettings();
-		settings.setDetectAreasMode(DetectAreasMode.PHOTO);
+		settings.setDetectAreasMode(DetectAreasMode.PHOTO); // NONE, DOCUMENT, COMBINE, TABLE
 
 		// get result object
 		RecognitionResult result = null;
