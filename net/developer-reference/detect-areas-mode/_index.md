@@ -37,6 +37,7 @@ So in some cases, using [**RecognitionSettings.DetectAreasMode **](https://apire
 		// DetectAreasMode.DOCUMENT - best for the multicolumn text, text with small images. Slowest one.
 		// DetectAreasMode.PHOTO - best for the images with small text regions, some tables, receipts, invoices
 		// DetectAreasMode.COMBINE - uses the union of DOCUMENT and PHOTO modes
+		// DetectAreasMode.TABLE - preferable mode for images with table structure.
 	});
 
 	// Display the recognized text
