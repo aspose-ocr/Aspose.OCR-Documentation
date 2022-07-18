@@ -7,9 +7,9 @@ url: /java/Performing OCR on an Image from URL/
 
 ## **Performing OCR on an Image from URL**
 
-Aspose.OCR for Java provides the [**AsposeOCR**](https://apireference.aspose.com/ocr/java/com.aspose.ocr/AsposeOCR) class to perform OCR operation on images. The API also provides the feature to perform OCR operation on images from URL. For this, the API provides the [**RecognizePageFromUri**](https://apireference.aspose.com/ocr/java/com.aspose.ocr/AsposeOCR#RecognizePageFromUri-java.lang.String-com.aspose.ocr.RecognitionSettings-) method of the [**AsposeOCR**](https://apireference.aspose.com/ocr/java/com.aspose.ocr/AsposeOCR) class.
+Aspose.OCR for Java provides the [**AsposeOCR**](https://reference.aspose.com/ocr/java/com.aspose.ocr/AsposeOCR) class to perform OCR operation on images. The API also provides the feature to perform OCR operation on images from URL. For this, the API provides the [**RecognizePageFromUri**](https://reference.aspose.com/ocr/java/com.aspose.ocr/AsposeOCR#RecognizePageFromUri-java.lang.String-com.aspose.ocr.RecognitionSettings-) method of the [**AsposeOCR**](https://reference.aspose.com/ocr/java/com.aspose.ocr/AsposeOCR) class.
 
-The following code snippet demonstrates the use of the [**RecognizePageFromUri**](https://apireference.aspose.com/ocr/java/com.aspose.ocr/AsposeOCR#RecognizePageFromUri-java.lang.String-com.aspose.ocr.RecognitionSettings-) method to perform OCR operation on the image from URL.
+The following code snippet demonstrates the use of the [**RecognizePageFromUri**](https://reference.aspose.com/ocr/java/com.aspose.ocr/AsposeOCR#RecognizePageFromUri-java.lang.String-com.aspose.ocr.RecognitionSettings-) method to perform OCR operation on the image from URL.
 
 ## Sample Code
 

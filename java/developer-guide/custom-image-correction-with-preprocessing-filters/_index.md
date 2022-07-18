@@ -8,12 +8,12 @@ url: /java/custom-image-correction-with-preprocessing-filters/
 ## **Custom Image Correction Preprocessing Filters**
 
 Aspose.OCR for Java provides to option to specify custom preprocessing operations for image quality correction. 
-For this, the API provides the [**RecognitionSettings.setPreprocessingFilters**](https://apireference.aspose.com/ocr/java/com.aspose.ocr/RecognitionSettings#setPreprocessingFilters-com.aspose.ocr.PreprocessingFilter-) method. 
-You can pass the instance of the [**RecognitionSettings**](https://apireference.aspose.com/ocr/java/com.aspose.ocr/RecognitionSettings) class to the [**RecognizePage**](https://apireference.aspose.com/ocr/java/com.aspose.ocr/AsposeOCR#RecognizePage) method of the [**AsposeOCR**](https://apireference.aspose.com/ocr/java/com.aspose.ocr/AsposeOCR) class.
+For this, the API provides the [**RecognitionSettings.setPreprocessingFilters**](https://reference.aspose.com/ocr/java/com.aspose.ocr/RecognitionSettings#setPreprocessingFilters-com.aspose.ocr.PreprocessingFilter-) method. 
+You can pass the instance of the [**RecognitionSettings**](https://reference.aspose.com/ocr/java/com.aspose.ocr/RecognitionSettings) class to the [**RecognizePage**](https://reference.aspose.com/ocr/java/com.aspose.ocr/AsposeOCR#RecognizePage) method of the [**AsposeOCR**](https://reference.aspose.com/ocr/java/com.aspose.ocr/AsposeOCR) class.
 
-The following code snippet demonstrates the use of the [**PreprocessingFilters**](https://apireference.aspose.com/ocr/java/com.aspose.ocr/PreprocessingFilter) provides custom image quality correction. 
-Usually, preprocessing operations done automatically, but in some cases, using [**PreprocessingFilters**](https://apireference.aspose.com/ocr/java/com.aspose.ocr/PreprocessingFilter) you can get a better recognition result.
-You can customize preprocessing operations directly in method [**RecognizePage**](https://apireference.aspose.com/ocr/java/com.aspose.ocr/AsposeOCR#RecognizePage)  or before recognitionprocess using [**PreprocessImage**](https://apireference.aspose.com/ocr/java/com.aspose.ocr/AsposeOCR#PreprocessImage-java.lang.String-com.aspose.ocr.PreprocessingFilter-) method.
+The following code snippet demonstrates the use of the [**PreprocessingFilters**](https://reference.aspose.com/ocr/java/com.aspose.ocr/PreprocessingFilter) provides custom image quality correction. 
+Usually, preprocessing operations done automatically, but in some cases, using [**PreprocessingFilters**](https://reference.aspose.com/ocr/java/com.aspose.ocr/PreprocessingFilter) you can get a better recognition result.
+You can customize preprocessing operations directly in method [**RecognizePage**](https://reference.aspose.com/ocr/java/com.aspose.ocr/AsposeOCR#RecognizePage)  or before recognitionprocess using [**PreprocessImage**](https://reference.aspose.com/ocr/java/com.aspose.ocr/AsposeOCR#PreprocessImage-java.lang.String-com.aspose.ocr.PreprocessingFilter-) method.
 
 ## Sample Code
 

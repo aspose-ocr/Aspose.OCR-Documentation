@@ -6,8 +6,8 @@ url: /java/get-words-coordinates/
 ---
 
 ## **Get words coordinates**
-Aspose.OCR for Java provides the method to get the result as coordinates of the paragraphs, lines, words [**getTextAreas**](https://apireference.aspose.com/ocr/java/com.aspose.ocr/AsposeOCR#getTextAreas ). 
-For this, the API provides the enum[**AreasType**](https://apireference.aspose.com/ocr/java/com.aspose.ocr/AreasType ).
+Aspose.OCR for Java provides the method to get the result as coordinates of the paragraphs, lines, words [**getTextAreas**](https://reference.aspose.com/ocr/java/com.aspose.ocr/AsposeOCR#getTextAreas ). 
+For this, the API provides the enum[**AreasType**](https://reference.aspose.com/ocr/java/com.aspose.ocr/AreasType ).
 
 ## Sample Code
 

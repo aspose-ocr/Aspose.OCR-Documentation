@@ -5,9 +5,9 @@ weight: 75
 url: /net/result-correction-with-spell-checking/
 ---
 ## **Result correction with spell-checking**
-Aspose.OCR for .NET provides the option to use spell-checking for result correction. For this, the API provides the [**RecognitionResult.GetSpellCheckCorrectedText**](https://apireference.aspose.com/ocr/net/aspose.ocr/recognitionresult/methods/getspellcheckcorrectedtext)  and [**RecognitionResult.GetSpellCheckErrorList**](https://apireference.aspose.com/ocr/net/aspose.ocr/recognitionresult/methods/getspellcheckerrorlist) methods.
+Aspose.OCR for .NET provides the option to use spell-checking for result correction. For this, the API provides the [**RecognitionResult.GetSpellCheckCorrectedText**](https://reference.aspose.com/ocr/net/aspose.ocr/recognitionresult/methods/getspellcheckcorrectedtext)  and [**RecognitionResult.GetSpellCheckErrorList**](https://reference.aspose.com/ocr/net/aspose.ocr/recognitionresult/methods/getspellcheckerrorlist) methods.
 
-The following code snippet demonstrates the use of the [**RecognitionResult.GetSpellCheckCorrectedText**](https://apireference.aspose.com/ocr/net/aspose.ocr/recognitionresult/methods/getspellcheckcorrectedtext)  method provides recognition result correction and [**RecognitionResult.GetSpellCheckErrorList**](https://apireference.aspose.com/ocr/net/aspose.ocr/recognitionresult/methods/getspellcheckerrorlist) method gets a list with misspelled words and suggestions for correction
+The following code snippet demonstrates the use of the [**RecognitionResult.GetSpellCheckCorrectedText**](https://reference.aspose.com/ocr/net/aspose.ocr/recognitionresult/methods/getspellcheckcorrectedtext)  method provides recognition result correction and [**RecognitionResult.GetSpellCheckErrorList**](https://reference.aspose.com/ocr/net/aspose.ocr/recognitionresult/methods/getspellcheckerrorlist) method gets a list with misspelled words and suggestions for correction
 
 ## Sample Code
 

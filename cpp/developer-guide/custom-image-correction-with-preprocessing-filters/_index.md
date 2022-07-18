@@ -7,7 +7,7 @@ url: /cpp/custom-image-correction-with-preprocessing-filters/
 
 ## **Preprocess image C-compatible API**
 
-Aspose.OCR C++ provides the method [**asposeocr_preprocess_page_and_save()**](https://apireference.aspose.com/ocr/cpp/groupAspose#ga69cc8aa64a4cd77628f3b273c3d41645) 
+Aspose.OCR C++ provides the method [**asposeocr_preprocess_page_and_save()**](https://reference.aspose.com/ocr/cpp/groupAspose#ga69cc8aa64a4cd77628f3b273c3d41645) 
 that allows to preprocess image with different filters. The result you will get as new image in your filesystem.
 
 The following code snippet demonstrates the use of the preprocess_page_and_save() method.
@@ -36,7 +36,7 @@ The following code snippet demonstrates the use of the preprocess_page_and_save(
 
 ## **Preprocess image C++ -compatible API**
 
-Aspose.OCR C++ provides the method [**preprocess_page_and_save()**](https://apireference.aspose.com/ocr/cpp/groupAspose#ga056fd7bc1e4fc540bb14b3f83994b5d6) 
+Aspose.OCR C++ provides the method [**preprocess_page_and_save()**](https://reference.aspose.com/ocr/cpp/groupAspose#ga056fd7bc1e4fc540bb14b3f83994b5d6) 
 that allows to preprocess image with different filters. The result you will get as new image in your filesystem.
 
 The following code snippet demonstrates the use of the preprocess_page_and_save() method.
@@ -61,7 +61,7 @@ The following code snippet demonstrates the use of the preprocess_page_and_save(
 
 ## **Preprocess and recognize image in one step**
 
-Aspose.OCR C++ provides the field in  [**RecognitionSettings**](https://apireference.aspose.com/ocr/cpp/struct/recognition_settings#a357319e06844393ae68e9af538835755) 
+Aspose.OCR C++ provides the field in  [**RecognitionSettings**](https://reference.aspose.com/ocr/cpp/struct/recognition_settings#a357319e06844393ae68e9af538835755) 
 that allows to preprocess image with different filters before text recognition. The preprocessed image will be sent for recognition.
 
 The following code snippet demonstrates the use of the custom_preprocessing_filters RecognitionSettings::filters fileld:

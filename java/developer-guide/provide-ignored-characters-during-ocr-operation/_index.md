@@ -7,7 +7,7 @@ url: /java/provide-ignored-characters-during-ocr-operation/
 
 ## **Provide ignored characters during OCR operation**
 In case you know the characters that aren't present in the image, you can pass those characters as a value for property 
-[**RecognitionSettings.setIgnoredCharacters **](https://apireference.aspose.com/ocr/java/com.aspose.ocr/RecognitionSettings#setIgnoredCharacters-java.lang.String-). 
+[**RecognitionSettings.setIgnoredCharacters **](https://reference.aspose.com/ocr/java/com.aspose.ocr/RecognitionSettings#setIgnoredCharacters-java.lang.String-). 
 Doing this will ensure that the provided characters aren't matched in the OCR process. The following code snippet demonstrates setting the ignored characters for the OCR process.
 
 ## Sample Code

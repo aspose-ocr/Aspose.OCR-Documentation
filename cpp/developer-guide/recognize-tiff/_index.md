@@ -9,10 +9,10 @@ aliases:
 
 ## Recognize multipage TIFF
 
-Aspose.OCR provides the [**aspose::ocr::page_tiff()**](https://apireference.aspose.com/ocr/cpp/groupAspose#ga674b2d618113a5a244f4289acfd8f48e) method that can recognize text on the images extracted from TIFF files. 
-The [**aspose::ocr::page_tiff()**](https://apireference.aspose.com/ocr/cpp/groupAspose#ga674b2d618113a5a244f4289acfd8f48e) method 
+Aspose.OCR provides the [**aspose::ocr::page_tiff()**](https://reference.aspose.com/ocr/cpp/groupAspose#ga674b2d618113a5a244f4289acfd8f48e) method that can recognize text on the images extracted from TIFF files. 
+The [**aspose::ocr::page_tiff()**](https://reference.aspose.com/ocr/cpp/groupAspose#ga674b2d618113a5a244f4289acfd8f48e) method 
 takes the TIFF path as a parameter and RecognitionSettings object. 
-The following code snippet demonstrates the use of the [**aspose::ocr::page_tiff()**](https://apireference.aspose.com/ocr/cpp/groupAspose#ga674b2d618113a5a244f4289acfd8f48e) method 
+The following code snippet demonstrates the use of the [**aspose::ocr::page_tiff()**](https://reference.aspose.com/ocr/cpp/groupAspose#ga674b2d618113a5a244f4289acfd8f48e) method 
 to recognize images from multipage TIFF(TIF) file.
 
 # Sample Code 

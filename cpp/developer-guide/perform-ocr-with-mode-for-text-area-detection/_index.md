@@ -7,7 +7,7 @@ url: /cpp/perform-ocr-with-mode-for-text-area-detectionn/
 
 
 In case you want to perform OCR operation with better mode for automatic text area detection, Aspose.OCR for C++ provides you the following field in 
-RecognitionSetting structure: [**detect_areas_mode**](https://apireference.aspose.com/ocr/cpp/struct/recognition_settings#a23c6ab81de6f8ef6a4e7e84abc79cddd )
+RecognitionSetting structure: [**detect_areas_mode**](https://reference.aspose.com/ocr/cpp/struct/recognition_settings#a23c6ab81de6f8ef6a4e7e84abc79cddd )
 
 detect_areas_mode_enum::NONE : Perform OCR operation on an image without automatically detecting the text area.
 detect_areas_mode_enum::DOCUMENT : Detects paragraphs uses NN model for documents. Better for multicolumn document, document with pictures or with other not text objects.
@@ -15,7 +15,7 @@ detect_areas_mode_enum::PHOTO : Detects paragraphs uses NN model for photos. Bet
 detect_areas_mode_enum::COMBINE : Detects paragraphs with text and then uses other NN model to detect areas inside of paragraphs. Better for images with complex structure.
 
 
-The following code snippets demonstrate the use of [**detect_areas_mode**](https://apireference.aspose.com/ocr/cpp/struct/recognition_settings#a23c6ab81de6f8ef6a4e7e84abc79cddd ) field
+The following code snippets demonstrate the use of [**detect_areas_mode**](https://reference.aspose.com/ocr/cpp/struct/recognition_settings#a23c6ab81de6f8ef6a4e7e84abc79cddd ) field
 
 ## **Perform OCR with different mode for automatic text area detection**
 

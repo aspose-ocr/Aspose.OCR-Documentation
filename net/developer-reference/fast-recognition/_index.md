@@ -7,10 +7,10 @@ url: /net/fast-recognition/
 
 ## **Recognize without skew correction and areas detection**
 
-Aspose.OCR for .NET provides the method [**RecognizeImageFast**](https://apireference.aspose.com/ocr/net/aspose.ocr/asposeocr/methods/recognizemultipleimages) 
+Aspose.OCR for .NET provides the method [**RecognizeImageFast**](https://reference.aspose.com/ocr/net/aspose.ocr/asposeocr/methods/recognizemultipleimages) 
  that allows to recognize images in fastest mode. 
 
-The following code snippet demonstrates the use of the [**RecognizeImageFast**](https://apireference.aspose.com/ocr/net/aspose.ocr/asposeocr/methods/recognizemultipleimages) method.
+The following code snippet demonstrates the use of the [**RecognizeImageFast**](https://reference.aspose.com/ocr/net/aspose.ocr/asposeocr/methods/recognizemultipleimages) method.
 
 # Sample Code 
 

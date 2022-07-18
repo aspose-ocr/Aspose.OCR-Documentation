@@ -9,10 +9,10 @@ aliases:
 
 ## Recognize multipage DJVU
 
-Aspose.OCR provides the [**RecognizeDjvu**](https://apireference.aspose.com/ocr/net/aspose.ocr/asposeocr/methods/recognizedjvu/ ) method that can recognize text on the images extracted from DJVU files. 
-The [**RecognizeDjvu**](https://apireference.aspose.com/ocr/net/aspose.ocr/asposeocr/methods/recognizedjvu/ ) method 
+Aspose.OCR provides the [**RecognizeDjvu**](https://reference.aspose.com/ocr/net/aspose.ocr/asposeocr/methods/recognizedjvu/ ) method that can recognize text on the images extracted from DJVU files. 
+The [**RecognizeDjvu**](https://reference.aspose.com/ocr/net/aspose.ocr/asposeocr/methods/recognizedjvu/ ) method 
 takes the DJVU path as a parameter and DocumentRecognitionSettings object. 
-The following code snippet demonstrates the use of the [**RecognizeDjvu**](https://apireference.aspose.com/ocr/net/aspose.ocr/asposeocr/methods/recognizedjvu/ ) method to recognize images from 
+The following code snippet demonstrates the use of the [**RecognizeDjvu**](https://reference.aspose.com/ocr/net/aspose.ocr/asposeocr/methods/recognizedjvu/ ) method to recognize images from 
 multipage DJVU file.
 
 # Sample Code 

@@ -9,7 +9,7 @@ Dirt, spots, scratches, glare, unwanted gradients, and other image defects can i
 
 While Aspose.OCR for Java automatically pre-processes images before recognition, automatic noise removal is resource and time intensive and can reduce recognition speed on entry-level computers. Therefore, it is **disabled** by default.
 
-To enable automatic noise removal, call [`setAutoDenoising(true)`](https://reference.aspose.com/ocr/java/com.aspose.ocr/RecognitionSettings#setAutoDenoising-boolean-) method of [`RecognitionSettings`](https://apireference.aspose.com/ocr/java/com.aspose.ocr/RecognitionSettings) class instance and pass this instance to the [`RecognizePage`](https://apireference.aspose.com/ocr/java/com.aspose.ocr/AsposeOCR#RecognizePage) method.
+To enable automatic noise removal, call [`setAutoDenoising(true)`](https://reference.aspose.com/ocr/java/com.aspose.ocr/RecognitionSettings#setAutoDenoising-boolean-) method of [`RecognitionSettings`](https://reference.aspose.com/ocr/java/com.aspose.ocr/RecognitionSettings) class instance and pass this instance to the [`RecognizePage`](https://reference.aspose.com/ocr/java/com.aspose.ocr/AsposeOCR#RecognizePage) method.
 
 ## Example
 

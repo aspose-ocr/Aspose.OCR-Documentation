@@ -6,11 +6,11 @@ url: /net/multithreading-support-in-recognition/
 ---
 ## **Multithreading support in recognition**
 Aspose.OCR for .NET provides to option to specify threads count value to increase performance. 
-For this, the API provides the [**RecognitionSettings.ThreadsCount**](https://apireference.aspose.com/ocr/net/aspose.ocr/recognitionsettings/properties/threadscount) property. 
-You can pass the instance of the [**RecognitionSettings**](https://apireference.aspose.com/ocr/net/aspose.ocr/recognitionsettings) class to the [**RecognizeImage**](https://apireference.aspose.com/ocr/net/aspose.ocr/asposeocr/methods/recognizeimage/index) method of the [**AsposeOcr**](https://apireference.aspose.com/ocr/net/aspose.ocr/asposeocr) class.
+For this, the API provides the [**RecognitionSettings.ThreadsCount**](https://reference.aspose.com/ocr/net/aspose.ocr/recognitionsettings/properties/threadscount) property. 
+You can pass the instance of the [**RecognitionSettings**](https://reference.aspose.com/ocr/net/aspose.ocr/recognitionsettings) class to the [**RecognizeImage**](https://reference.aspose.com/ocr/net/aspose.ocr/asposeocr/methods/recognizeimage/index) method of the [**AsposeOcr**](https://reference.aspose.com/ocr/net/aspose.ocr/asposeocr) class.
 
-The following code snippet demonstrates the use of the [**ThreadsCount**](https://apireference.aspose.com/ocr/net/aspose.ocr/recognitionsettings/properties/threadscount) property provides custom number of threads. 
-ThreadsCount by default equals customer processors number, but using [**ThreadsCount**](https://apireference.aspose.com/ocr/net/aspose.ocr/recognitionsettings/properties/threadscount) property can get better perfomance. You can customize it from 0. If you set  the [**ThreadsCount**](https://apireference.aspose.com/ocr/net/aspose.ocr/recognitionsettings/properties/thresholdvalue) as 0 (zero), this value will be calculated automatically and equal to the number of cores of your processor..
+The following code snippet demonstrates the use of the [**ThreadsCount**](https://reference.aspose.com/ocr/net/aspose.ocr/recognitionsettings/properties/threadscount) property provides custom number of threads. 
+ThreadsCount by default equals customer processors number, but using [**ThreadsCount**](https://reference.aspose.com/ocr/net/aspose.ocr/recognitionsettings/properties/threadscount) property can get better perfomance. You can customize it from 0. If you set  the [**ThreadsCount**](https://reference.aspose.com/ocr/net/aspose.ocr/recognitionsettings/properties/thresholdvalue) as 0 (zero), this value will be calculated automatically and equal to the number of cores of your processor..
 
 
 ## Sample Code

@@ -7,10 +7,10 @@ url: /java/batch-recognition/
 
 ## **Recognize archive**
 
-Aspose.OCR for Java provides the method [**RecognizeMultiplePages**](https://apireference.aspose.com/ocr/java/com.aspose.ocr/AsposeOCR#RecognizeMultiplePages-java.lang.String-com.aspose.ocr.RecognitionSettings-) that allows to recognize a multi images with one call. 
-The result you will get is ArrayList of the [**RecognitionResult**](https://apireference.aspose.com/ocr/java/com.aspose.ocr/RecognitionResult) class.
+Aspose.OCR for Java provides the method [**RecognizeMultiplePages**](https://reference.aspose.com/ocr/java/com.aspose.ocr/AsposeOCR#RecognizeMultiplePages-java.lang.String-com.aspose.ocr.RecognitionSettings-) that allows to recognize a multi images with one call. 
+The result you will get is ArrayList of the [**RecognitionResult**](https://reference.aspose.com/ocr/java/com.aspose.ocr/RecognitionResult) class.
 
-The following code snippet demonstrates the use of the [**RecognizeMultiplePages**](https://apireference.aspose.com/ocr/java/com.aspose.ocr/AsposeOCR#RecognizeMultiplePages-java.lang.String-com.aspose.ocr.RecognitionSettings-) method.
+The following code snippet demonstrates the use of the [**RecognizeMultiplePages**](https://reference.aspose.com/ocr/java/com.aspose.ocr/AsposeOCR#RecognizeMultiplePages-java.lang.String-com.aspose.ocr.RecognitionSettings-) method.
 
 # Sample Code 
 

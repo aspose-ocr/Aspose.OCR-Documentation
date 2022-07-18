@@ -9,7 +9,7 @@ Aspose.OCR for C++ automatically pre-processes images before recognition. Howeve
 
 ## Automatic contrast correction
 
-This operation automatically improves the image contrast to the optimum level for recognition. To enable this preprocessing, create an instance of [RecognitionSettings](https://apireference.aspose.com/ocr/cpp/struct/recognition_settings) structure with `auto_contrast` property set to `true` and pass this instance to the [`page_settings`](https://apireference.aspose.com/ocr/cpp/groupAspose#ga028cce64d935cf8fc8d5eab3d3713ebf) method.
+This operation automatically improves the image contrast to the optimum level for recognition. To enable this preprocessing, create an instance of [RecognitionSettings](https://reference.aspose.com/ocr/cpp/struct/recognition_settings) structure with `auto_contrast` property set to `true` and pass this instance to the [`page_settings`](https://reference.aspose.com/ocr/cpp/groupAspose#ga028cce64d935cf8fc8d5eab3d3713ebf) method.
 
 ### Example
 
@@ -40,7 +40,7 @@ size_t result = asposeocr_page_settings(image.c_str(), buffer, len, settings);
 
 Dirt, spots, scratches, glare, unwanted gradients, and other image defects can interfere with recognition and significantly reduce OCR accuracy. Aspose.OCR for C++ provides a powerful Binarized Neural Network (BNN) that can clean up an image and reduce or completely remove noise.
 
-To enable denoising, create an instance of [RecognitionSettings](https://apireference.aspose.com/ocr/cpp/struct/recognition_settings) structure with `auto_denoising` property set to `true` and pass this instance to the [`page_settings`](https://apireference.aspose.com/ocr/cpp/groupAspose#ga028cce64d935cf8fc8d5eab3d3713ebf) method.
+To enable denoising, create an instance of [RecognitionSettings](https://reference.aspose.com/ocr/cpp/struct/recognition_settings) structure with `auto_denoising` property set to `true` and pass this instance to the [`page_settings`](https://reference.aspose.com/ocr/cpp/groupAspose#ga028cce64d935cf8fc8d5eab3d3713ebf) method.
 
 {{% alert color="primary" %}}
 

@@ -5,7 +5,7 @@ weight: 61
 url: /cpp/perform-ocr-for-tables/
 ---
 
-Aspose.OCR for C++ supports identification and recognition of tabular structures. To enable automatic detection of table cells, set [`detect_areas_mode`](https://apireference.aspose.com/ocr/cpp/struct/recognition_settings#a23c6ab81de6f8ef6a4e7e84abc79cddd) recognition setting to `detect_areas_mode_enum::TABLE`.
+Aspose.OCR for C++ supports identification and recognition of tabular structures. To enable automatic detection of table cells, set [`detect_areas_mode`](https://reference.aspose.com/ocr/cpp/struct/recognition_settings#a23c6ab81de6f8ef6a4e7e84abc79cddd) recognition setting to `detect_areas_mode_enum::TABLE`.
 
 ## Example
 

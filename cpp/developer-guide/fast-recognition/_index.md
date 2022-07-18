@@ -7,7 +7,7 @@ url: /cpp/fast-recognition/
 
 ## **Recognize without skew correction and areas detection**
 
-Aspose.OCR C++ provides the method [**page_fast()**](https://apireference.aspose.com/ocr/cpp/) 
+Aspose.OCR C++ provides the method [**page_fast()**](https://reference.aspose.com/ocr/cpp/) 
 that allows to recognize an images with fastest mode. It works without skew correction and areas detection
 and only for latin alphabet. 
 The result you will get is an array of the wchar_t.

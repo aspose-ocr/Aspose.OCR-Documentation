@@ -8,6 +8,6 @@ aliases:
 ---
 
 ## **Perform OCR on selected areas of an image**
-Aspose.OCR for Java provides the option to specify the areas for recognizing text in pixels. For this, the API provides the overloaded version of the [RecognizePage](https://apireference.aspose.com/ocr/java/com.aspose.ocr/AsposeOCR#RecognizePage-java.awt.image.BufferedImage-java.util.ArrayList-) method that takes the image path and the array of [Rectangle](https://docs.oracle.com/javase/8/docs/api/java/awt/Rectangle.html?is-external=true) as parameters. The following code snippet demonstrates recognizing text in specified rectangles.
+Aspose.OCR for Java provides the option to specify the areas for recognizing text in pixels. For this, the API provides the overloaded version of the [RecognizePage](https://reference.aspose.com/ocr/java/com.aspose.ocr/AsposeOCR#RecognizePage-java.awt.image.BufferedImage-java.util.ArrayList-) method that takes the image path and the array of [Rectangle](https://docs.oracle.com/javase/8/docs/api/java/awt/Rectangle.html?is-external=true) as parameters. The following code snippet demonstrates recognizing text in specified rectangles.
 
 {{< gist "aspose-com-gists" "3830491066e58e54903b3025d04e5b0c" "Examples-src-main-java-com-aspose-ocr-examples-OcrFeatures-PrepareRectangles-1.java" >}}

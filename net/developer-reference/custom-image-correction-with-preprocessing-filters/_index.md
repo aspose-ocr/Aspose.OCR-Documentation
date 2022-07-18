@@ -6,12 +6,12 @@ url: /net/custom-image-correction-with-preprocessing-filters/
 ---
 ## **Custom Image Correction Preprocessing Filters**
 Aspose.OCR for .NET provides to option to specify custom preprocessing operations for image quality correction. 
-For this, the API provides the [**RecognitionSettings.PreprocessingFilters**](https://apireference.aspose.com/ocr/net/aspose.ocr/recognitionsettings/properties/preprocessingfilters) property. 
-You can pass the instance of the [**RecognitionSettings**](https://apireference.aspose.com/ocr/net/aspose.ocr/recognitionsettings) class to the [**RecognizeImage**](https://apireference.aspose.com/ocr/net/aspose.ocr/asposeocr/methods/recognizeimage/index) method of the [**AsposeOcr**](https://apireference.aspose.com/ocr/net/aspose.ocr/asposeocr) class.
+For this, the API provides the [**RecognitionSettings.PreprocessingFilters**](https://reference.aspose.com/ocr/net/aspose.ocr/recognitionsettings/properties/preprocessingfilters) property. 
+You can pass the instance of the [**RecognitionSettings**](https://reference.aspose.com/ocr/net/aspose.ocr/recognitionsettings) class to the [**RecognizeImage**](https://reference.aspose.com/ocr/net/aspose.ocr/asposeocr/methods/recognizeimage/index) method of the [**AsposeOcr**](https://reference.aspose.com/ocr/net/aspose.ocr/asposeocr) class.
 
-The following code snippet demonstrates the use of the [**PreprocessingFilters**](https://apireference.aspose.com/ocr/net/aspose.ocr.models.preprocessingfilters/preprocessingfilter) provides custom image quality correction. 
-Usually, preprocessing operations done automatically, but in some cases, using [**PreprocessingFilters**](https://apireference.aspose.com/ocr/net/aspose.ocr.models.preprocessingfilters/preprocessingfilter) you can get a better recognition result.
-You can customize preprocessing operations directly in method [**RecognizeImage**](https://apireference.aspose.com/ocr/net/aspose.ocr.asposeocr/recognizeimage/methods/5) or before recognitionprocess using [**PreprocessImage**](https://apireference.aspose.com/ocr/net/aspose.ocr.asposeocr/preprocessimage/methods/1) method.
+The following code snippet demonstrates the use of the [**PreprocessingFilters**](https://reference.aspose.com/ocr/net/aspose.ocr.models.preprocessingfilters/preprocessingfilter) provides custom image quality correction. 
+Usually, preprocessing operations done automatically, but in some cases, using [**PreprocessingFilters**](https://reference.aspose.com/ocr/net/aspose.ocr.models.preprocessingfilters/preprocessingfilter) you can get a better recognition result.
+You can customize preprocessing operations directly in method [**RecognizeImage**](https://reference.aspose.com/ocr/net/aspose.ocr.asposeocr/recognizeimage/methods/5) or before recognitionprocess using [**PreprocessImage**](https://reference.aspose.com/ocr/net/aspose.ocr.asposeocr/preprocessimage/methods/1) method.
 
 
 ## Sample Code
