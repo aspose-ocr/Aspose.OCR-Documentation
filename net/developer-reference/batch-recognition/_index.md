@@ -7,9 +7,9 @@ url: /net/batch-recognition/
 
 ## **Recognize archive**
 
-Aspose.OCR for .NET provides the method [**RecognizeMultipleImages**](https://apireference.aspose.com/ocr/net/aspose.ocr/asposeocr/methods/recognizemultipleimages) that allows to recognize a multi images with one call. The result you will get is array of the [**RecognitionResult**](https://apireference.aspose.com/ocr/net/aspose.ocr/recognitionresult) class.
+Aspose.OCR for .NET provides the method [**RecognizeMultipleImages**](https://reference.aspose.com/ocr/net/aspose.ocr/asposeocr/methods/recognizemultipleimages) that allows to recognize a multi images with one call. The result you will get is array of the [**RecognitionResult**](https://reference.aspose.com/ocr/net/aspose.ocr/recognitionresult) class.
 
-The following code snippet demonstrates the use of the [**RecognizeMultipleImages**](https://apireference.aspose.com/ocr/net/aspose.ocr/asposeocr/methods/recognizemultipleimages) method.
+The following code snippet demonstrates the use of the [**RecognizeMultipleImages**](https://reference.aspose.com/ocr/net/aspose.ocr/asposeocr/methods/recognizemultipleimages) method.
 
 # Sample Code 
 

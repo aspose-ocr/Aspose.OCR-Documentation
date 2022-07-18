@@ -7,7 +7,7 @@ url: /java/detect-areas-mode/
 
 Aspose.OCR for Java allows you to explicitly specify the region recognition method. This can improve recognition results if you know the type of content in the image.
 
-OCR API provides [`DetectAreasMode`](https://apireference.aspose.com/ocr/java/com.aspose.ocr/DetectAreasMode) enumerator with the following constants:
+OCR API provides [`DetectAreasMode`](https://reference.aspose.com/ocr/java/com.aspose.ocr/DetectAreasMode) enumerator with the following constants:
 
 - `NONE` - disable regions detection;
 - `DOCUMENT` - detect paragraphs with a machine learning model trained on documents;
@@ -15,7 +15,7 @@ OCR API provides [`DetectAreasMode`](https://apireference.aspose.com/ocr/java/co
 - `TABLE` - detect table cells;
 - `COMBINE` - detect paragraphs with text and then detect regions inside paragraphs.
 
-To choose the preferred region detection method, create an instance of [`RecognitionSettings`](https://apireference.aspose.com/ocr/java/com.aspose.ocr/RecognitionSettings) class and pass one of the above-mentioned values in its [`setDetectAreasMode`](https://reference.aspose.com/ocr/java/com.aspose.ocr/RecognitionSettings#setDetectAreasMode-com.aspose.ocr.DetectAreasMode-) method. Then pass the instance of `RecognitionSettings` class to [`RecognizePage`](https://apireference.aspose.com/ocr/java/com.aspose.ocr/AsposeOCR#RecognizePage) method.
+To choose the preferred region detection method, create an instance of [`RecognitionSettings`](https://reference.aspose.com/ocr/java/com.aspose.ocr/RecognitionSettings) class and pass one of the above-mentioned values in its [`setDetectAreasMode`](https://reference.aspose.com/ocr/java/com.aspose.ocr/RecognitionSettings#setDetectAreasMode-com.aspose.ocr.DetectAreasMode-) method. Then pass the instance of `RecognitionSettings` class to [`RecognizePage`](https://reference.aspose.com/ocr/java/com.aspose.ocr/AsposeOCR#RecognizePage) method.
 
 ## Example
 

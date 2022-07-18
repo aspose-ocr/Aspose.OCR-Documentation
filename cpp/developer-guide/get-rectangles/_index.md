@@ -7,7 +7,7 @@ url: /cpp/get-rectangles/
 
 ## **Get Rectangles Paragraphs**
 
-The following code snippet demonstrates the use of the [**get_rectangles()**](https://apireference.aspose.com/ocr/cpp) method to get the bounding boxes coordinates of recognized paragraphs.
+The following code snippet demonstrates the use of the [**get_rectangles()**](https://reference.aspose.com/ocr/cpp) method to get the bounding boxes coordinates of recognized paragraphs.
 
 ## Sample Code
 
@@ -38,7 +38,7 @@ void GetRectanglesParagraphs() {
 
 ## **Get Rectangles Lines**
 
-The following code snippet demonstrates the use of the [**get_rectangles()**](https://apireference.aspose.com/ocr/cpp) method to get the bounding boxes coordinates of recognized lines.
+The following code snippet demonstrates the use of the [**get_rectangles()**](https://reference.aspose.com/ocr/cpp) method to get the bounding boxes coordinates of recognized lines.
 
 ## Sample Code
 
@@ -71,7 +71,7 @@ void GetRectanglesLines() {
 
 ## **Get Words Rectangles**
 
-The following code snippet demonstrates the use of the [**get_rectangles()**](https://apireference.aspose.com/ocr/cpp) method to get the bounding boxes coordinates of recognized words. Available from v22.4.
+The following code snippet demonstrates the use of the [**get_rectangles()**](https://reference.aspose.com/ocr/cpp) method to get the bounding boxes coordinates of recognized words. Available from v22.4.
 
 ## Sample Code
 
@@ -101,7 +101,7 @@ void GetRectanglesLines() {
 
 ## **Get Words Rectangles From URI**
 
-The following code snippet demonstrates the use of the [**get_rectangles_from_uri()**](https://apireference.aspose.com/ocr/cpp/groupAspose#ga270c57b8595cd911c7cf2e68fcc624af) method to get the bounding boxes coordinates of recognized words. Available from v22.4.
+The following code snippet demonstrates the use of the [**get_rectangles_from_uri()**](https://reference.aspose.com/ocr/cpp/groupAspose#ga270c57b8595cd911c7cf2e68fcc624af) method to get the bounding boxes coordinates of recognized words. Available from v22.4.
 
 ## Sample Code
 

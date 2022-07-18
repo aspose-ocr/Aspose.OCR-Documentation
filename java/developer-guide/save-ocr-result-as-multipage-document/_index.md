@@ -8,11 +8,11 @@ url: /java/save-ocr-result-as-multipage-document/
 ## **Recognize scanned PDF and save Searchable PDF (or DOCX)**
 ## **Recognize list of images and save Searchable PDF (or DOCX)**
 
-Aspose.OCR provides the [**SaveMultipageDocument**](https://apireference.aspose.com/ocr/java/com.aspose.ocr/AsposeOCR#SaveMultipageDocument-java.lang.String-com.aspose.ocr.Format-java.util.ArrayList-) 
+Aspose.OCR provides the [**SaveMultipageDocument**](https://reference.aspose.com/ocr/java/com.aspose.ocr/AsposeOCR#SaveMultipageDocument-java.lang.String-com.aspose.ocr.Format-java.util.ArrayList-) 
 method that can save ArrayList<RecognitionResult> into Rearchable PDF or DOCX file.
-The [**SaveMultipageDocument**](https://apireference.aspose.com/ocr/java/com.aspose.ocr/AsposeOCR#SaveMultipageDocument-java.lang.String-com.aspose.ocr.Format-java.util.ArrayList-) method 
+The [**SaveMultipageDocument**](https://reference.aspose.com/ocr/java/com.aspose.ocr/AsposeOCR#SaveMultipageDocument-java.lang.String-com.aspose.ocr.Format-java.util.ArrayList-) method 
 takes the output path as a parameter, file format and ArrayList<RecognitionResult> objects. 
-The following code snippet demonstrates the use of the [**SaveMultipageDocument**](https://apireference.aspose.com/ocr/java/com.aspose.ocr/AsposeOCR#SaveMultipageDocument-java.lang.String-com.aspose.ocr.Format-java.util.ArrayList-) method.
+The following code snippet demonstrates the use of the [**SaveMultipageDocument**](https://reference.aspose.com/ocr/java/com.aspose.ocr/AsposeOCR#SaveMultipageDocument-java.lang.String-com.aspose.ocr.Format-java.util.ArrayList-) method.
 
 ## Sample Code
 

@@ -9,10 +9,10 @@ aliases:
 
 ## Recognize multipage TIFF
 
-Aspose.OCR provides the [**RecognizeTiff**](https://apireference.aspose.com/ocr/net/aspose.ocr/asposeocr/methods/recognizetiff) method that can recognize text on the images extracted from TIFF files. 
-The [**RecognizeTiff**](https://apireference.aspose.com/ocr/net/aspose.ocr/asposeocr/methods/recognizetiff) method 
+Aspose.OCR provides the [**RecognizeTiff**](https://reference.aspose.com/ocr/net/aspose.ocr/asposeocr/methods/recognizetiff) method that can recognize text on the images extracted from TIFF files. 
+The [**RecognizeTiff**](https://reference.aspose.com/ocr/net/aspose.ocr/asposeocr/methods/recognizetiff) method 
 takes the TIFF path as a parameter and DocumentRecognitionSettings object. 
-The following code snippet demonstrates the use of the [**RecognizeTIFF**](https://apireference.aspose.com/ocr/net/aspose.ocr/asposeocr/methods/recognizetiff) method to recognize images from 
+The following code snippet demonstrates the use of the [**RecognizeTIFF**](https://reference.aspose.com/ocr/net/aspose.ocr/asposeocr/methods/recognizetiff) method to recognize images from 
 multipage TIFF(TIF) file.
 
 # Sample Code 

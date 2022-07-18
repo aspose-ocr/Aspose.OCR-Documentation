@@ -7,7 +7,7 @@ url: /net/get-rectangles/
 
 ## **Get Rectangles Paragraphs**
 
-The following code snippet demonstrates the use of the [**GetRectangles**](https://apireference.aspose.com/ocr/net/aspose.ocr/asposeocr/methods/getrectangles) method to get the bounding boxes coordinates of recognized paragraphs.
+The following code snippet demonstrates the use of the [**GetRectangles**](https://reference.aspose.com/ocr/net/aspose.ocr/asposeocr/methods/getrectangles) method to get the bounding boxes coordinates of recognized paragraphs.
 
 ## Sample Code
 
@@ -33,7 +33,7 @@ public static void GetRectangles()
 
 ## **Get Rectangles Lines**
 
-The following code snippet demonstrates the use of the [**GetRectangles**](https://apireference.aspose.com/ocr/net/aspose.ocr/asposeocr/methods/getrectangles) method to get the bounding boxes coordinates of splitted lines.
+The following code snippet demonstrates the use of the [**GetRectangles**](https://reference.aspose.com/ocr/net/aspose.ocr/asposeocr/methods/getrectangles) method to get the bounding boxes coordinates of splitted lines.
 
 ## Sample Code
 
@@ -60,7 +60,7 @@ public static void GetRectangles()
 
 ## **Get Rectangles Words**
 
-The following code snippet demonstrates the use of the [**GetRectangles**](https://apireference.aspose.com/ocr/net/aspose.ocr/asposeocr/methods/getrectangles) method to get the bounding boxes coordinates of words.
+The following code snippet demonstrates the use of the [**GetRectangles**](https://reference.aspose.com/ocr/net/aspose.ocr/asposeocr/methods/getrectangles) method to get the bounding boxes coordinates of words.
 
 ## Sample Code
 

@@ -5,10 +5,10 @@ weight: 75
 url: /java/result-correction-with-spell-checking/
 ---
 ## **Result correction with spell-checking**
-Aspose.OCR for Java provides the option to use spell-checking for result correction. For this, the API provides the [**RecognitionResult.getSpellCheckCorrectedText**](https://apireference.aspose.com/ocr/java/com.aspose.ocr/RecognitionResult#getSpellCheckCorrectedText--)  
-and [**RecognitionResult.getSpellCheckErrorList**](https://apireference.aspose.com/ocr/java/com.aspose.ocr/RecognitionResult#getSpellCheckErrorList--) methods.
+Aspose.OCR for Java provides the option to use spell-checking for result correction. For this, the API provides the [**RecognitionResult.getSpellCheckCorrectedText**](https://reference.aspose.com/ocr/java/com.aspose.ocr/RecognitionResult#getSpellCheckCorrectedText--)  
+and [**RecognitionResult.getSpellCheckErrorList**](https://reference.aspose.com/ocr/java/com.aspose.ocr/RecognitionResult#getSpellCheckErrorList--) methods.
 
-The following code snippet demonstrates the use of the [**RecognitionResult.getSpellCheckCorrectedText**](https://apireference.aspose.com/ocr/java/com.aspose.ocr/RecognitionResult#getSpellCheckCorrectedText--)   method provides recognition result correction and [**RecognitionResult.getSpellCheckErrorList**](https://apireference.aspose.com/ocr/java/com.aspose.ocr/RecognitionResult#getSpellCheckErrorList--) method 
+The following code snippet demonstrates the use of the [**RecognitionResult.getSpellCheckCorrectedText**](https://reference.aspose.com/ocr/java/com.aspose.ocr/RecognitionResult#getSpellCheckCorrectedText--)   method provides recognition result correction and [**RecognitionResult.getSpellCheckErrorList**](https://reference.aspose.com/ocr/java/com.aspose.ocr/RecognitionResult#getSpellCheckErrorList--) method 
 gets a list with misspelled words and suggestions for correction (List<SpellCheckError>).
 
 ## Sample Code

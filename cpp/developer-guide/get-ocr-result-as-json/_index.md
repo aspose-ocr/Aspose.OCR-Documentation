@@ -9,7 +9,7 @@ url: /cpp/get-ocr-result-as-json/
 
 Aspose.OCR for C++ can return recognition results in JSON format - the most popular popular open standard format for describing nested data structures.
 
-To get recognition results in JSON format, set the [`format`](https://apireference.aspose.com/ocr/cpp/struct/recognition_settings#aab0df293b6cdbb8289677e42747697ee) property of [`RecognitionSettings`](https://apireference.aspose.com/ocr/cpp/struct/recognition_settings) to `export_format::json` and pass it as a parameter to the `page_from_uri` method.
+To get recognition results in JSON format, set the [`format`](https://reference.aspose.com/ocr/cpp/struct/recognition_settings#aab0df293b6cdbb8289677e42747697ee) property of [`RecognitionSettings`](https://reference.aspose.com/ocr/cpp/struct/recognition_settings) to `export_format::json` and pass it as a parameter to the `page_from_uri` method.
 
 ## Example
 

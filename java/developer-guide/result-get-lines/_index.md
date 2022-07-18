@@ -6,8 +6,8 @@ url: /java/result-get-lines/
 ---
 
 ## **RecognitionResult: get split lines with coordinates and with text**
-Aspose.OCR for Java provides the option to get the result as split lines [**RecognitionResult.LinesResult**](https://apireference.aspose.com/ocr/net/aspose.ocr.recognitionresult/linesresult). 
-For this, the API provides the property[**RecognitionResult.RecognitionLinesResult**](https://apireference.aspose.com/ocr/net/aspose.ocr/recognitionresult/properties/recognitionlinesresult).
+Aspose.OCR for Java provides the option to get the result as split lines [**RecognitionResult.LinesResult**](https://reference.aspose.com/ocr/net/aspose.ocr.recognitionresult/linesresult). 
+For this, the API provides the property[**RecognitionResult.RecognitionLinesResult**](https://reference.aspose.com/ocr/net/aspose.ocr/recognitionresult/properties/recognitionlinesresult).
 
 ## Sample Code
 

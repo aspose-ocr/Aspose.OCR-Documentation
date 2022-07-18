@@ -7,7 +7,7 @@ url: /cpp/provide-ignored-characters-during-ocr-operation/
 
 ## **Provide ignored characters during OCR operation**
 In case you know the characters that aren't present in the image, you can pass those characters as a value for property 
-[**RecognitionSettings.ignoredCharacters **](https://apireference.aspose.com/ocr/cpp/struct/recognition_settings#a7208bc782b0310a20c2671749c61fbc9). 
+[**RecognitionSettings.ignoredCharacters **](https://reference.aspose.com/ocr/cpp/struct/recognition_settings#a7208bc782b0310a20c2671749c61fbc9). 
 Doing this will ensure that the provided characters aren't matched in the OCR process. The following code snippet demonstrates setting the ignored characters for the OCR process.
 
 ## Sample Code

@@ -7,10 +7,10 @@ url: /java/recognize-scanned-pdf/
 
 Recognize scanned PDF
 
-Aspose.OCR for Java provides the [**RecognizePdf**](https://apireference.aspose.com/ocr/java/com.aspose.ocr.pdf/AsposeOCRPdf) method that can recognize text on the images extracted from scanned PDF files. 
-The [**RecognizePdf**](https://apireference.aspose.com/ocr/java/com.aspose.ocr.pdf/AsposeOCRPdf) method takes the PDF path as a parameter and DocomentRecognitionSettings object.
-You have to set the number of pages for recognition in the [**DocomentRecognitionSettings**](https://apireference.aspose.com/ocr/java/com.aspose.ocr/DocumentRecognitionSettings) constructor or using setter. 0 means all pages will recognize. 
-The following code snippet demonstrates the use of the [**RecognizePdf**](https://apireference.aspose.com/ocr/java/com.aspose.ocr.pdf/AsposeOCRPdf) method to recognize images from scanned multipage PDF file.
+Aspose.OCR for Java provides the [**RecognizePdf**](https://reference.aspose.com/ocr/java/com.aspose.ocr.pdf/AsposeOCRPdf) method that can recognize text on the images extracted from scanned PDF files. 
+The [**RecognizePdf**](https://reference.aspose.com/ocr/java/com.aspose.ocr.pdf/AsposeOCRPdf) method takes the PDF path as a parameter and DocomentRecognitionSettings object.
+You have to set the number of pages for recognition in the [**DocomentRecognitionSettings**](https://reference.aspose.com/ocr/java/com.aspose.ocr/DocumentRecognitionSettings) constructor or using setter. 0 means all pages will recognize. 
+The following code snippet demonstrates the use of the [**RecognizePdf**](https://reference.aspose.com/ocr/java/com.aspose.ocr.pdf/AsposeOCRPdf) method to recognize images from scanned multipage PDF file.
 
 ## Sample Code
 

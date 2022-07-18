@@ -7,10 +7,10 @@ url: /java/fast-recognition/
 
 ## **Recognize without skew correction and areas detection**
 
-Aspose.OCR for Java provides the method [**RecognizePageFast**](https://apireference.aspose.com/ocr/java/com.aspose.ocr/AsposeOCR#RecognizeMultiplePages-java.lang.String-com.aspose.ocr.RecognitionSettings-) that allows to recognize images in fastest mode. 
+Aspose.OCR for Java provides the method [**RecognizePageFast**](https://reference.aspose.com/ocr/java/com.aspose.ocr/AsposeOCR#RecognizeMultiplePages-java.lang.String-com.aspose.ocr.RecognitionSettings-) that allows to recognize images in fastest mode. 
 The result you will get is String.
 
-The following code snippet demonstrates the use of the [**RecognizePageFast**](https://apireference.aspose.com/ocr/java/com.aspose.ocr/AsposeOCR#RecognizeMultiplePages-java.lang.String-com.aspose.ocr.RecognitionSettings-) method.
+The following code snippet demonstrates the use of the [**RecognizePageFast**](https://reference.aspose.com/ocr/java/com.aspose.ocr/AsposeOCR#RecognizeMultiplePages-java.lang.String-com.aspose.ocr.RecognitionSettings-) method.
 
 # Sample Code 
 

@@ -9,7 +9,7 @@ url: /cpp/save-ocr-result-as-multipage-document/
 
 Aspose.OCR for C++ can recognize a list of images. 
 
-The [**page_save()**](https://apireference.aspose.com/ocr/cpp/groupAspose#ga248e71b77ac6dbaf0c80630b2181cf29) method 
+The [**page_save()**](https://reference.aspose.com/ocr/cpp/groupAspose#ga248e71b77ac6dbaf0c80630b2181cf29) method 
 takes the input paths, output path as a parameter, file format(file_format) in RecognitionSettings structure. 
 
 # Sample Code 

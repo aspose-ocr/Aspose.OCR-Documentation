@@ -9,10 +9,10 @@ aliases:
 
 ## Recognize scanned PDF and save Searchable PDF (or DOCX)
 
-Aspose.OCR provides the [**SaveMultipageDocument**](https://apireference.aspose.com/ocr/net/aspose.ocr/asposeocr/methods/savemultipagedocument) method that can save List<RecognitionResult> into Rearchable PDF or DOCX file.
-The [**SaveMultipageDocument**](https://apireference.aspose.com/ocr/net/aspose.ocr/asposeocr/methods/savemultipagedocument) method 
+Aspose.OCR provides the [**SaveMultipageDocument**](https://reference.aspose.com/ocr/net/aspose.ocr/asposeocr/methods/savemultipagedocument) method that can save List<RecognitionResult> into Rearchable PDF or DOCX file.
+The [**SaveMultipageDocument**](https://reference.aspose.com/ocr/net/aspose.ocr/asposeocr/methods/savemultipagedocument) method 
 takes the output path as a parameter, file format and List<RecognitionResult> objects. 
-The following code snippet demonstrates the use of the [**SaveMultipageDocument**](https://apireference.aspose.com/ocr/net/aspose.ocr/asposeocr/methods/savemultipagedocument) method.
+The following code snippet demonstrates the use of the [**SaveMultipageDocument**](https://reference.aspose.com/ocr/net/aspose.ocr/asposeocr/methods/savemultipagedocument) method.
 
 # Sample Code 
 

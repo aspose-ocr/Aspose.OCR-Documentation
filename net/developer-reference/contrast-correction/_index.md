@@ -6,11 +6,11 @@ url: /net/contrast-correction/
 ---
 ## **Contrast Correction Preprocessing Filters**
 Aspose.OCR for .NET provides to option to specify contrast correction operation for image before recognition. 
-For this, the API provides the [**RecognitionSettings.AutoContrast**](https://apireference.aspose.com/ocr/net/aspose.ocr/recognitionsettings/properties/autocontrast) property. 
-You can pass the instance of the [**RecognitionSettings**](https://apireference.aspose.com/ocr/net/aspose.ocr/recognitionsettings) class to the [**RecognizeImage**](https://apireference.aspose.com/ocr/net/aspose.ocr/asposeocr/methods/recognizeimage/index) method of the [**AsposeOcr**](https://apireference.aspose.com/ocr/net/aspose.ocr/asposeocr) class.
+For this, the API provides the [**RecognitionSettings.AutoContrast**](https://reference.aspose.com/ocr/net/aspose.ocr/recognitionsettings/properties/autocontrast) property. 
+You can pass the instance of the [**RecognitionSettings**](https://reference.aspose.com/ocr/net/aspose.ocr/recognitionsettings) class to the [**RecognizeImage**](https://reference.aspose.com/ocr/net/aspose.ocr/asposeocr/methods/recognizeimage/index) method of the [**AsposeOcr**](https://reference.aspose.com/ocr/net/aspose.ocr/asposeocr) class.
 
 The following code snippet demonstrates the use of the AutoContrast property. 
-Usually, preprocessing operations done automatically, but contrast correction is enabled. So in some cases, using [**RecognitionSettings.AutoContrast**](https://apireference.aspose.com/ocr/net/aspose.ocr/recognitionsettings/properties/autocontrast) you can get a better recognition result.
+Usually, preprocessing operations done automatically, but contrast correction is enabled. So in some cases, using [**RecognitionSettings.AutoContrast**](https://reference.aspose.com/ocr/net/aspose.ocr/recognitionsettings/properties/autocontrast) you can get a better recognition result.
 
 
 ## Sample Code

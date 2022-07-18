@@ -7,10 +7,10 @@ url: /net/perform-ocr-with-mode-for-text-area-detectionn/
 
 ## **Perform OCR with different mode for automatic text area detection**
 
-Aspose.OCR for .NET provides the enum [**DetectAreasMode**](https://apireference.aspose.com/ocr/net/aspose.ocr/detectareasmode ) that allows to set mode for text regions detection.
-The [**RecognitionSettings**](https://apireference.aspose.com/ocr/net/aspose.ocr/recognitionsettings ) class contains property that allows to set [**DetectAreasMode**](https://apireference.aspose.com/ocr/net/aspose.ocr/recognitionsettings/properties/detectareasmode )
+Aspose.OCR for .NET provides the enum [**DetectAreasMode**](https://reference.aspose.com/ocr/net/aspose.ocr/detectareasmode ) that allows to set mode for text regions detection.
+The [**RecognitionSettings**](https://reference.aspose.com/ocr/net/aspose.ocr/recognitionsettings ) class contains property that allows to set [**DetectAreasMode**](https://reference.aspose.com/ocr/net/aspose.ocr/recognitionsettings/properties/detectareasmode )
 
-The following code snippet demonstrates the use of the [**DetectAreasMode**](https://apireference.aspose.com/ocr/net/aspose.ocr/detectareasmode ) enum.
+The following code snippet demonstrates the use of the [**DetectAreasMode**](https://reference.aspose.com/ocr/net/aspose.ocr/detectareasmode ) enum.
 
 # Sample Code 
 
