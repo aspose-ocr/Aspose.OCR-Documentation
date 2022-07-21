@@ -92,3 +92,12 @@ Find more information, download Aspose.OCR for C++ packages and get professional
 - [Blog](https://blog.aspose.com/category/ocr/)
 - [Free Support Forum](https://forum.aspose.com/c/ocr/16)
 - [Paid Support Helpdesk](https://helpdesk.aspose.com/)
+
+## Applications
+
+Discover full capabilities of Aspose.OCR without writing a single line of code.
+
+- [Free online applications](/ocr/apps/web/)  
+  Instantly extract a text from an image, scanned PDF, photo, screenshot, or receipt, and create searchable PDFs from anywhere using only a web browser. No additional software is required on your computer.
+- [Free mobile app](/ocr/apps/mobile/)  
+  Take a photo of the text and recognize it with your smartphone.

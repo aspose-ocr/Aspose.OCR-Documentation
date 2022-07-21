@@ -1,13 +1,13 @@
 ---
-weight: 1
+weight: 71
 date: "2022-07-21"
 author: "Vladimir Lapin"
 type: docs
-url: /net/release-notes/latest/
-title: Latest release (July 2022)
+url: /net/aspose-ocr-for-net-22-7-release-notes/
+title: Aspose.OCR for .NET 22.7 - Release Notes
 description: A summary of recent changes, enhancements and bug fixes in Aspose.OCR for .NET 22.7 (July 2022) release.
 keywords:
-- latest
+- 2022
 - new
 - release
 - changelog
