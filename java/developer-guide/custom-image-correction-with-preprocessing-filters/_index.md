@@ -47,6 +47,8 @@ You can customize preprocessing operations directly in method [**RecognizePage**
 		filters.add(PreprocessingFilter.BinarizeAndDilate());
 		filters.add(PreprocessingFilter.ContrastCorrection());
 		filters.add(PreprocessingFilter.Median());
+		filters.add(PreprocessingFilter.AutoDenoising());
+		filters.add(PreprocessingFilter.AutoSkew());
 		
 		// Case 1. Preprocess image
 		BufferedImage imageRes = api.PreprocessImage(imagePath, filters);
