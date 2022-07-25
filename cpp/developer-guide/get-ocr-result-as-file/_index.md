@@ -44,3 +44,7 @@ Member | Description
 **file_format::pdf** | Save recognition results a PDF document.
 **file_format::xlsx** | Save recognition results a Microsoft Excel 2007+ workbook (XLSX).
 **file_format::json** | Save recognition results as a file in JSON format.
+
+{{% alert color="primary" %}}
+When saving recognition results in PDF format (`file_format::pdf`), the recognized image is placed on the background of the resulting document. The recognized text is added as an invisible overlay on top of the background image and can be searched and copied to the clipboard.
+{{% /alert %}}
