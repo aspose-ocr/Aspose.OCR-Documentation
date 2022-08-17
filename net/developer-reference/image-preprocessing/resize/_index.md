@@ -28,9 +28,9 @@ To scale images up or down proportionally, use the [`Scale`](https://reference.a
 
 Scaling ratio | Result | Example
 ------------- | ------ | -------
-0 to 1        | Shrink the image proportionally to the specified percentage. | `Scale(0.3F)` - proportionally reduce the width and height of the image down to 30%.
-1             | Keep the original image size. | 
-Above 1       | Upscale the image proportionally to the specified percentage. | `Scale(2)` - proportionally increase the width and height of the image to twice its original size.
+`0` to `1`    | Shrink the image proportionally to the specified percentage. | `Scale(0.3F)` - proportionally reduce the width and height of the image down to 30%.
+`1`           | Keep the original image size. | 
+Above `1`     | Upscale the image proportionally to the specified percentage. | `Scale(2)` - proportionally increase the width and height of the image to twice its original size.
 
 `Scale` filter also allows you to select an [interpolation algorithm](https://reference.aspose.com/ocr/net/aspose.ocr.filters/interpolationfiltertype/) as an optional parameter.
 
