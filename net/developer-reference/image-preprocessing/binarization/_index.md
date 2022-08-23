@@ -129,7 +129,7 @@ In some rare cases, you may need to override the automatic binarization settings
 - Photos with glares and gradients taken in low-light conditions.
 - Multicolored texts.
 
-If you notice that part of the text disappears from the recognition results, try manually specifying **threshold** criteria for assigning either _white_ if the gray value is equal or greater than the threshold or _black_, if smaller, to all pixels in an image. In other words, the higher the threshold value, the more content will be sent for recognition, including words printed in very light colors. If the threshold set to `0`, the black and white are assigned automatically based on the content of the image.
+If you notice that part of the text disappears from the recognition results, try manually specifying the **threshold** criteria that determine whether a pixel is considered black or white. If a pixel is lighter than the threshold, it is considered a white pixel, otherwise it is considered a black pixel. In other words, the higher the threshold value, the more content will be sent for recognition, including words printed in very light colors. If the threshold set to `0`, the black and white are assigned automatically based on the content of the image.
 
 To specify binarization threshold, provide it in [`Threshold`](https://reference.aspose.com/ocr/net/aspose.ocr.models.preprocessingfilters/preprocessingfilter/threshold/) preprocessing filter or set [`ThresholdValue`](https://reference.aspose.com/ocr/net/aspose.ocr/recognitionsettings/thresholdvalue/) property in recognition settings. To rely on automatic processing, do not add a filter and do not set the `ThresholdValue`.
 
@@ -275,3 +275,7 @@ superimposed on an image.
 </code></pre></div>
 
 </div>
+
+## Usage scenarios
+
+Binarization is always used for text detection and automatic image corrections.

@@ -83,3 +83,10 @@ recognitionSettings.PreprocessingFilters = filters;
 Aspose.OCR.RecognitionResult result = recognitionEngine.RecognizeImage("source.png", recognitionSettings);
 Console.WriteLine(result.RecognitionText);
 ```
+
+## Usage scenarios 
+
+- Medication guides.
+- Food labels.
+- Full-sized (raw) photos from high-resolution cameras and modern smartphones.
+- Scanned images at very high (300+) DPI.

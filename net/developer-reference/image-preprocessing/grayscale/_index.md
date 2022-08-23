@@ -105,8 +105,9 @@ Console.WriteLine(result.RecognitionText);
 
 Grayscale conversion is recommended for the following images:
 
-- Colored texts.
-- Text with color photo or picture as background.
+- Photos.
+- Scanned ID cards and other personal documents.
+- Full-color scans.
 
 {{% alert color="primary" %}}
 Improvements in recognition accuracy and preprocessing enhancements will be highly dependent on the original image and should be empirically tested.

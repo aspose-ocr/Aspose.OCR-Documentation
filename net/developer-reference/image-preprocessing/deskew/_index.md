@@ -6,6 +6,7 @@ type: docs
 url: /net/deskew/
 aliases:
 - /net/working-with-the-skew-angle-of-the-image/
+- /net/enable-or-disable-text-area-detection-and-skew-correction/
 title: Skew correction
 description: How to straighten a rotated image to improve recognition accuracy.
 keywords:
@@ -229,3 +230,10 @@ Console.WriteLine(result.RecognitionText);
 ```
 {{< /tab >}}
 {{< /tabs >}}
+
+## Usage scenarios
+
+- Automatic skew correction is recommended in almost all cases, except for perfectly straight scans.
+- Manual rotation is recommended for:
+    - photos of low quality;
+    - images with a significant angle of inclination.

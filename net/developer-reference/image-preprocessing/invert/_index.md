@@ -4,7 +4,7 @@ date: "2022-08-15"
 author: "Vladimir Lapin"
 type: docs
 url: /net/invert/
-title: Invert colors
+title: Color inversion
 description: How to swap colors in an image to improve recognition accuracy.
 keywords:
 - invert
@@ -52,7 +52,7 @@ When working with white (or light) text on a black (or other dark) background, r
 
 Aspose.OCR provides the automated preprocessing filter that inverts colors in the image before proceeding to recognition.
 
-## Color inversion
+## Inverting image colors
 
 To automatically invert colors in an image before recognition, run the image through [`Invert`](https://reference.aspose.com/ocr/net/aspose.ocr.models.preprocessingfilters/preprocessingfilter/invert/) preprocessing filter.
 
