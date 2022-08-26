@@ -53,6 +53,10 @@ Low contrast and blurring are the most typical distortions when text is photogra
 
 Aspose.OCR can automatically increase the contrast of images before proceeding to recognition.
 
+{{% alert color="primary" %}} 
+Contrast correction automatically converts the image to [black and white](/ocr/net/binarization/#automatically-converting-the-image-to-black-and-white).
+{{% /alert %}}
+
 ## Automatic contrast adjustments
 
 To automatically increase the image contrast before recognition, run the image through [`ContrastCorrectionFilter`](https://reference.aspose.com/ocr/net/aspose.ocr.models.preprocessingfilters/preprocessingfilter/contrastcorrectionfilter/) preprocessing filter or enable [`AutoContrast`](https://reference.aspose.com/ocr/net/aspose.ocr/recognitionsettings/autocontrast/) property in recognition settings.

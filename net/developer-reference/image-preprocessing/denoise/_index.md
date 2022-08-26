@@ -53,6 +53,10 @@ Dirt, spots, scratches, glare, unwanted gradients, and other noise are a common 
 
 Aspose.OCR provides automated processing algorithms that remove noise from images before proceeding to recognition.
 
+{{% alert color="primary" %}} 
+Noise removal automatically converts the image to [black and white](/ocr/net/binarization/#automatically-converting-the-image-to-black-and-white).
+{{% /alert %}}
+
 ## Automatic noise removal
 
 To automatically remove the noise from the image before recognition, run the image through [`AutoDenoising`](https://reference.aspose.com/ocr/net/aspose.ocr.models.preprocessingfilters/preprocessingfilter/autodenoising/) preprocessing filter or enable [`AutoDenoising`](https://reference.aspose.com/ocr/net/aspose.ocr/recognitionsettings/autodenoising/) property in recognition settings.

@@ -3,7 +3,7 @@ weight: 40
 date: "2022-08-19"
 author: "Vladimir Lapin"
 type: docs
-url: /areas-detection/
+url: /net/areas-detection/
 aliases:
 - /net/detect-areas-mode/
 - /net/perform-ocr-with-mode-for-text-area-detectionn/

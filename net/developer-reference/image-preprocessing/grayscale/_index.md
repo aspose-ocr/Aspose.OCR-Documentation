@@ -51,6 +51,10 @@ In most cases, color is not needed for recognition and can even mislead OCR algo
 
 Aspose.OCR provides a method for converting an image to grayscale before proceeding with preprocessing or OCR.
 
+{{% alert color="primary" %}}
+Grayscale conversion is automatically performed when applying the [median filter](/ocr/net/median/).
+{{% /alert %}}
+
 ## Grayscale conversion
 
 To convert the image to grayscale, run the image through [`ToGrayscale`](https://reference.aspose.com/ocr/net/aspose.ocr.models.preprocessingfilters/preprocessingfilter/tograyscale/) preprocessing filter.

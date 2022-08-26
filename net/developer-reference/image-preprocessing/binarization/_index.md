@@ -100,6 +100,14 @@ While you can extract text from color or grayscale scans or photographs, Aspose.
 
 By default, Aspose.OCR automatically calculates the optimal binarization parameters. To convert the image to black and white before performing the recognition, apply [`Binarize`](https://reference.aspose.com/ocr/net/aspose.ocr.models.preprocessingfilters/preprocessingfilter/binarize/) preprocessing filter:
 
+{{% alert color="primary" %}}
+The image is automatically converted to black and white when applying the following filters:
+
+- [Noise removal](/ocr/net/denoise/)
+- [Contrast correction](/ocr/net/contrast/)
+- [Dilation](/ocr/net/dilate/)
+{{% /alert %}}
+
 ```csharp
 Aspose.OCR.AsposeOcr recognitionEngine = new Aspose.OCR.AsposeOcr();
 // Use automatic binarization

@@ -3,7 +3,7 @@ weight: 20
 date: "2022-08-19"
 author: "Vladimir Lapin"
 type: docs
-url: /areas-detection/photo/
+url: /net/areas-detection/photo/
 title:  DetectAreasMode.PHOTO
 description: How Aspose.OCR determines the structure of a document using the DetectAreasMode.PHOTO algorithm.
 keywords:

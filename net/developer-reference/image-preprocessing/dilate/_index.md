@@ -50,6 +50,10 @@ Some images, such as store receipts, have very thin characters that may be damag
 
 Aspose.OCR provides a special preprocessing filter called _dilation_ that can increase the thickness of characters in an image by adding pixels to the edges of high-contrast objects, such as letters.
 
+{{% alert color="primary" %}} 
+Dilation automatically converts the image to [black and white](/ocr/net/binarization/#automatically-converting-the-image-to-black-and-white).
+{{% /alert %}}
+
 ## Dilation
 
 To increase the thickness of characters in an image, run the image through [`Dilate`](https://reference.aspose.com/ocr/net/aspose.ocr.models.preprocessingfilters/preprocessingfilter/dilate/) preprocessing filter.

@@ -3,7 +3,7 @@ weight: 10
 date: "2022-08-19"
 author: "Vladimir Lapin"
 type: docs
-url: /areas-detection/document/
+url: /net/areas-detection/document/
 title: DetectAreasMode.DOCUMENT
 description: How Aspose.OCR determines the structure of a document using the DetectAreasMode.DOCUMENT algorithm.
 keywords:
@@ -20,7 +20,7 @@ This algorithm works best with large amounts of structured text such as scanned 
 
 ![DetectAreasMode.DOCUMENT algorithm](dsr.png)
 
-_* The example article is Copyright &copy; 2016 CLINICS, distributed under the terms of the Creative Commons license._
+_\*The example article is Copyright &copy; 2016 CLINICS, distributed under the terms of the Creative Commons license._
 
 However, it may not be suitable for analyzing photographs and small amounts of irregular text - try [**DetectAreasMode.PHOTO**](/ocr/areas-detection/photo/) instead.
 

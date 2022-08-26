@@ -48,6 +48,10 @@ Photos taken in low light conditions can have a lot of digital noise. Noise can 
 
 Aspose.OCR provides an alternative method for [removing noise](/ocr/net/denoise/) from an image at the cost of some detail, called the _median filter_. This makes the image a little blurry while preserving the edges of high-contrast objects such as letters. The results can be further improved with the [auto-contrast](/ocr/net/contrast/) or [binarization](/ocr/net/binarization/) preprocessing filters.
 
+{{% alert color="primary" %}} 
+The median filter automatically converts the image to [grayscale](/ocr/net/grayscale/).
+{{% /alert %}}
+
 ## Applying the median filter
 
 To smooth out noise in an image, run the image through [`Median`](https://reference.aspose.com/ocr/net/aspose.ocr.models.preprocessingfilters/preprocessingfilter/median/) preprocessing filter.
