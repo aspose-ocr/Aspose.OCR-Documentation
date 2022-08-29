@@ -1,6 +1,6 @@
 ---
 weight: 30
-date: "2022-08-25"
+date: "2022-08-26"
 author: "Vladimir Lapin"
 type: docs
 url: /net/image-preprocessing/
@@ -123,6 +123,43 @@ Note that each filter requires additional time and resources on the computer run
 </span></span></code></pre></div>
 
 **Approximate increase of processing time: <span id="impact-time">0</span>%**
+
+## Image regions preprocessing
+
+Most preprocessing filters can be applied to specific regions of an image. For example, you can invert a newspaper headline written in white on black, leaving the rest of the article unchanged.
+
+Multiple preprocessing filters can be applied to different regions of the same image. If the regions intersect each other, filters are applied to the intersection in their [chaining](#chaining-preprocessing-filters) order in [`PreprocessingFilter`](https://reference.aspose.com/ocr/net/aspose.ocr.models.preprocessingfilters/preprocessingfilter/) object.
+
+![Applying preprocessing to intersecting regions](filter-region.png)
+
+To apply a filter to an area, specify its top left corner along with width and height as [`Aspose.Drawing.Rectangle`](https://reference.aspose.com/drawing/net/system.drawing/rectangle/) object. If the region is omitted, the filter is applied to the entire image.
+
+```csharp
+Aspose.Drawing.Rectangle blackRectangle = new Aspose.Drawing.Rectangle(5, 161, 340, 113);
+Aspose.OCR.Models.PreprocessingFilters.PreprocessingFilter filters = new Aspose.OCR.Models.PreprocessingFilters.PreprocessingFilter();
+// (1) Invert black region
+filters.Add(Aspose.OCR.Models.PreprocessingFilters.PreprocessingFilter.Invert(blackRectangle));
+// (2) Denoise entire image
+filters.Add(Aspose.OCR.Models.PreprocessingFilters.PreprocessingFilter.AutoDenoising());
+// Save preprocessed image to file
+using(MemoryStream ms = recognitionEngine.PreprocessImage("source.png", filters))
+{
+	using(FileStream fs = new FileStream($"result.png", FileMode.Create, FileAccess.Write))
+	{
+		ms.WriteTo(fs);
+	}
+}
+```
+
+The following filters can be applied to regions:
+
+- [Skew correction](/ocr/net/deskew/#image-regions-preprocessing)
+- [Noise removal](/ocr/net/denoise/#image-regions-preprocessing)
+- [Contrast correction](/ocr/net/contrast/#image-regions-preprocessing)
+- [Binarization](/ocr/net/binarization/#image-regions-preprocessing)
+- [Color inversion](/ocr/net/invert/#image-regions-preprocessing)
+- [Dilation](/ocr/net/dilate/#image-regions-preprocessing)
+- [Median filter](/ocr/net/median/#image-regions-preprocessing)
 
 ## Viewing preprocessed images
 

@@ -1,6 +1,6 @@
 ---
 weight: 20
-date: "2022-08-10"
+date: "2022-08-26"
 author: "Vladimir Lapin"
 type: docs
 url: /net/denoise/
@@ -121,6 +121,18 @@ Console.WriteLine(result.RecognitionText);
 		}
 	}
 </script>
+
+## Image regions preprocessing
+
+You can automatically remove noise from certain areas of the image. For example, remove compression artifacts from the text of an article, leaving the headings unchanged.
+
+To apply a filter to an area, specify its top left corner along with width and height as [`Aspose.Drawing.Rectangle`](https://reference.aspose.com/drawing/net/system.drawing/rectangle/) object. If the region is omitted, the filter is applied to the entire image.
+
+```csharp
+Aspose.Drawing.Rectangle rectangle = new Aspose.Drawing.Rectangle(5, 161, 340, 113);
+Aspose.OCR.Models.PreprocessingFilters.PreprocessingFilter filters = new Aspose.OCR.Models.PreprocessingFilters.PreprocessingFilter();
+filters.Add(Aspose.OCR.Models.PreprocessingFilters.PreprocessingFilter.AutoDenoising(rectangle));
+```
 
 ## Usage scenarios
 

@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2022-08-09"
+date: "2022-08-26"
 author: "Vladimir Lapin"
 type: docs
 url: /net/deskew/
@@ -230,6 +230,24 @@ Console.WriteLine(result.RecognitionText);
 ```
 {{< /tab >}}
 {{< /tabs >}}
+
+## Image regions preprocessing
+
+Automatic skew correction and manual rotation filters can be applied to specific regions of an image. For example, you can straighten an illustration on a page while leaving the rest of the content unchanged.
+
+{{% alert color="primary" %}} 
+The original size of an image does not change when its area is rotated. Parts of the rotated area that do not match the original size of the area are cropped.
+
+It is recommended to apply the automatic deskew and manual rotation filters only to square areas.
+{{% /alert %}}
+
+To apply a filter to an area, specify its top left corner along with width and height as [`Aspose.Drawing.Rectangle`](https://reference.aspose.com/drawing/net/system.drawing/rectangle/) object. If the region is omitted, the filter is applied to the entire image.
+
+```csharp
+Aspose.Drawing.Rectangle rectangle = new Aspose.Drawing.Rectangle(5, 161, 340, 340);
+Aspose.OCR.Models.PreprocessingFilters.PreprocessingFilter filters = new Aspose.OCR.Models.PreprocessingFilters.PreprocessingFilter();
+filters.Add(Aspose.OCR.Models.PreprocessingFilters.PreprocessingFilter.Rotate(90, rectangle));
+```
 
 ## Usage scenarios
 

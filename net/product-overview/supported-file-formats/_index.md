@@ -1,6 +1,6 @@
 ---
 weight: 20
-date: "2022-06-08"
+date: "2022-08-26"
 author: "Vladimir Lapin"
 type: docs
 url: /net/supported-file-formats/
@@ -24,7 +24,7 @@ Extension             | Details
 --------------------- | -------
 **.PDF**              | Portable Document Format
 **.JPG**              | JPEG, the most popular format for smartphone photos
-**.PNG**              | Portable Network Graphics
+**.PNG**              | Portable Network Graphics, 24-bit with transparency
 **.TIFF** or **.TIF** | Tag Image File Format, commonly used for high quality scanning
 **.GIF**              | Graphics Interchange Format, limited to 256 colors
 **.BMP**              | Bitmap image file

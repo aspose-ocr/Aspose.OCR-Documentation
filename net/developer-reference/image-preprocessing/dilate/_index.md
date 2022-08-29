@@ -1,6 +1,6 @@
 ---
 weight: 80
-date: "2022-08-16"
+date: "2022-08-26"
 author: "Vladimir Lapin"
 type: docs
 url: /net/dilate/
@@ -36,8 +36,8 @@ keywords:
 
 	.duo {
 		position: relative;
-		width: 500px;
-		height: 322px;
+		width: 600px;
+		height: 300px;
 		margin-bottom: 20px;
 	}
 
@@ -79,12 +79,11 @@ Aspose.OCR.RecognitionResult result = recognitionEngine.RecognizeImage("source.p
 Console.WriteLine(result.RecognitionText);
 ```
 
-<!--
 <div class="duo">
-	<img src="origin.png" alt="Color image" />
-	<img src="result.png" alt="Grayscale image" style="display: none;" />
+	<img src="origin.png" alt="Ultra-light font" />
+	<img src="result.png" alt="Strong font" style="display: none;" />
 </div>
-<button onclick="triggerSkew(this)">Convert to grayscale</button>
+<button onclick="triggerSkew(this)">Make text thicker</button>
 <script>
 	function triggerSkew(obj)
 	{
@@ -100,11 +99,22 @@ Console.WriteLine(result.RecognitionText);
 		{
 			images.eq(0).show(200);
 			images.eq(1).hide(200);
-			$(obj).text("Convert to grayscale");
+			$(obj).text("Make text thicker");
 		}
 	}
 </script>
--->
+
+## Image regions preprocessing
+
+`Dilate` filter can be applied to specific regions of an image. For example, you can make the article body text thicker while leaving the headers unchanged.
+
+To apply a filter to an area, specify its top left corner along with width and height as [`Aspose.Drawing.Rectangle`](https://reference.aspose.com/drawing/net/system.drawing/rectangle/) object. If the region is omitted, the filter is applied to the entire image.
+
+```csharp
+Aspose.Drawing.Rectangle rectangle = new Aspose.Drawing.Rectangle(5, 161, 340, 113);
+Aspose.OCR.Models.PreprocessingFilters.PreprocessingFilter filters = new Aspose.OCR.Models.PreprocessingFilters.PreprocessingFilter();
+filters.Add(Aspose.OCR.Models.PreprocessingFilters.PreprocessingFilter.Dilate(rectangle));
+```
 
 ## Usage scenarios
 
