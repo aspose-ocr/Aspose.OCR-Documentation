@@ -6,6 +6,7 @@ type: docs
 url: /net/binarization/
 aliases:
 - /net/custom-image-correction-with-threshold-setting/
+- /net/binarization-threshold/
 title: Binarization
 description: How to convert an image to black and white either automatically or by manually specifying a threshold.
 keywords:
