@@ -22,7 +22,7 @@ This algorithm works best with large amounts of structured text such as scanned 
 
 _\*The example article is Copyright &copy; 2016 CLINICS, distributed under the terms of the Creative Commons license._
 
-However, it may not be suitable for analyzing photographs and small amounts of irregular text - try [**DetectAreasMode.PHOTO**](/ocr/areas-detection/photo/) instead.
+However, it may not be suitable for analyzing photographs and small amounts of irregular text - try [**DetectAreasMode.PHOTO**](/ocr/net/areas-detection/photo/) instead.
 
 ## Example
 

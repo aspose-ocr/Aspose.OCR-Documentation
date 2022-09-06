@@ -15,9 +15,9 @@ keywords:
 - universal
 ---
 
-The combination of [**DetectAreasMode.DOCUMENT**](/ocr/areas-detection/document/) and [**DetectAreasMode.PHOTO**](/ocr/areas-detection/photo/), which can extract as much text from an image as possible. The OCR engine detects large blocks of text, while the remaining content is analyzed by **DetectAreasMode.PHOTO** algorithm.
+The combination of [**DetectAreasMode.DOCUMENT**](/ocr/net/areas-detection/document/) and [**DetectAreasMode.PHOTO**](/ocr/net/areas-detection/photo/), which can extract as much text from an image as possible. The OCR engine detects large blocks of text (such as paragraphs and columns), while the remaining content is analyzed by **DetectAreasMode.PHOTO** algorithm.
 
-This allows you to handle even the most complex cases like posters, billboards, or random photos. However, it can take a little longer and may be less efficient than the specialized algorithms. Try one of the [dedicated area detection methods](/ocr/areas-detection/#area-detection-modes) if you are sure of the content type.
+This allows you to handle even the most complex cases like posters, billboards, or random photos. However, it can take a little longer and may be less efficient than the specialized algorithms. Try one of the [dedicated area detection methods](/ocr/net/areas-detection/#area-detection-modes) if you are sure of the content type.
 
 ## Example
 

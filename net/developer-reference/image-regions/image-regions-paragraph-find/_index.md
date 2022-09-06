@@ -18,7 +18,7 @@ keywords:
 
 Aspose.OCR allows you to automatically find the coordinates of image rectangles containing text paragraphs. This can be useful for highlighting detected areas when previewing an image or [extracting](/ocr/net/image-regions-extract/) individual blocks of text.
 
-To get bounding boxes of all paragraphs of the image, use [`GetRectangles`](https://reference.aspose.com/ocr/net/aspose.ocr/asposeocr/getrectangles/) method of [`Aspose.OCR.AsposeOcr`](https://reference.aspose.com/ocr/net/aspose.ocr/asposeocr/) class. Specify `Aspose.OCR.AreasType.PARAGRAPHS` as the **areaType** parameter of the method.
+To get bounding boxes of all paragraphs of the image, use [`GetRectangles`](https://reference.aspose.com/ocr/net/aspose.ocr/asposeocr/getrectangles/) method of [`Aspose.OCR.AsposeOcr`](https://reference.aspose.com/ocr/net/aspose.ocr/asposeocr/) class. Specify `Aspose.OCR.AreasType.PARAGRAPHS` as the **areaType** parameter of the method. `detectAreas` parameter of the method is ignored.
 
 {{% alert color="primary" %}}
 This method works for images in the following formats: GIF, PNG, JPEG, BMP, TIFF.

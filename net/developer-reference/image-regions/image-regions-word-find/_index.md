@@ -18,7 +18,7 @@ keywords:
 
 Aspose.OCR allows you to automatically find the coordinates of image rectangles containing individual words in text. This can be useful for highlighting detected words when previewing an image.
 
-To get bounding boxes of all words of the image, use [`GetRectangles`](https://reference.aspose.com/ocr/net/aspose.ocr/asposeocr/getrectangles/) method of [`Aspose.OCR.AsposeOcr`](https://reference.aspose.com/ocr/net/aspose.ocr/asposeocr/) class. Specify `Aspose.OCR.AreasType.WORDS` as the **areaType** parameter of the method.
+To get bounding boxes of all words of the image, use [`GetRectangles`](https://reference.aspose.com/ocr/net/aspose.ocr/asposeocr/getrectangles/) method of [`Aspose.OCR.AsposeOcr`](https://reference.aspose.com/ocr/net/aspose.ocr/asposeocr/) class. Specify `Aspose.OCR.AreasType.WORDS` as the **areaType** parameter of the method. `detectAreas` parameter of the method is ignored.
 
 {{% alert color="primary" %}}
 This method works for images in the following formats: GIF, PNG, JPEG, BMP, TIFF.
