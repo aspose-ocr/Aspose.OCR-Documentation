@@ -25,7 +25,7 @@ Line detection works differently depending on the `detectAreas` parameter of the
 detectAreas | Behavior
 ----------- | --------
 `true`      | The OCR engine tries to [break the content](/ocr/net/areas-detection/) into paragraphs and then extracts lines from the found paragraphs. Best suited for multi-column texts - adjacent lines in different columns will be treated as separate lines rather than a single line.
-`false`     | The OCR engine ignores the columns and combines adjacent lines in different columns into a single line.
+`false`     | The OCR engine ignores the columns and combines adjacent lines from different columns into a single line. This can be useful when concatenating text from table rows.
 
 {{% alert color="primary" %}}
 This method works for images in the following formats: GIF, PNG, JPEG, BMP, TIFF.

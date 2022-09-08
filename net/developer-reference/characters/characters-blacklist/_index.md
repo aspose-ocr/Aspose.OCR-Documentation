@@ -18,7 +18,7 @@ keywords:
 
 Image defects such as dirt and scratches may cause recognition errors. For example, dots or other print defects next to letters can be incorrectly recognized as punctuation or diacritical marks.
 
-To ignore certain characters ducting recognition, provide them in [`IgnoredCharacters`](https://reference.aspose.com/ocr/net/aspose.ocr/recognitionsettings/ignoredcharacters/) property of [recognition settings](https://reference.aspose.com/ocr/net/aspose.ocr/recognitionsettings/) as a case-sensitive string:
+To ignore certain characters during recognition, provide them in [`IgnoredCharacters`](https://reference.aspose.com/ocr/net/aspose.ocr/recognitionsettings/ignoredcharacters/) property of [recognition settings](https://reference.aspose.com/ocr/net/aspose.ocr/recognitionsettings/) as a case-sensitive string:
 
 ```csharp
 Aspose.OCR.AsposeOcr recognitionEngine = new Aspose.OCR.AsposeOcr();

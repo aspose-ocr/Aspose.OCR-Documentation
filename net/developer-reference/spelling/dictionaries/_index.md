@@ -12,9 +12,19 @@ keywords:
 - glossary
 ---
 
-The recognized text may contain specialized terminology, abbreviations, and other words which are not present in common spelling dictionaries. To overcome these situations, you can provide your own word lists in addition to Aspose.OCR's built-in dictionaries.
+The recognized text may contain specialized terminology, abbreviations, and other words which are not present in common spelling dictionaries. This may cause these words to be considered errors and incorrectly replaced by the spelling corrector. To overcome these situations, you can provide your own word lists in addition to Aspose.OCR's built-in dictionaries. The words present in the dictionary will be considered correct.
 
-The user dictionary is provided as a UTF-8 encoded plain text file with Windows or Unix line endings. Each word is provided in lowercase on a separate line, followed by its frequency separated from the word by a single space or tab.
+For example, if the text contains the phrase _"Helloo, world!"_, it will be automatically corrected to _"Hello, world!"_. However, if you add the word _"helloo"_ to the dictionary, the phrase will remain unchanged.
+
+## Dictionary file format
+
+The user dictionary is provided as a UTF-8 encoded text file with Windows or Unix line endings. Each word is provided in lowercase on a separate line, followed by its frequency separated from the word by a single space or tab:
+
+```
+helloo 20000
+heloo 22000
+helooo 19998
+```
 
 The path to the custom dictionary file can be provided in all [spell checking](/ocr/net/spelling/) methods.
 
