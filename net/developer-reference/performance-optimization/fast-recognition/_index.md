@@ -1,11 +1,11 @@
 ---
-weight: 60
-date: "2022-08-25"
+weight: 10
+date: "2022-09-08"
 author: "Vladimir Lapin"
 type: docs
 url: /net/fast-recognition/
 title: Fast recognition
-description: Automatic or manual actions for formatting an image before sending it for recognition.
+description: Extract text from high-quality scans using as few resources as possible.
 keywords:
 - recognize
 - fast
@@ -40,4 +40,10 @@ using(MemoryStream ms = new MemoryStream())
 {{< /tab >}}
 {{< /tabs >}}
 
-This mode is approximately twice as fast as regular recognition and is recommended for public web applications and mobile devices.
+## Performance impact
+
+This method is about **twice as fast** as regular recognition and is recommended for public web applications and mobile devices.
+
+## Drawbacks
+
+This recognition mode does not work with skewed images and does not support [recognition settings](/ocr/net/recognition-settings/). However, you can [preprocess](/ocr/net/image-preprocessing/) an image before sending it to the OCR engine.

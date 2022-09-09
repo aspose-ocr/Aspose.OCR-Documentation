@@ -27,9 +27,9 @@ Setting | Type | Default value | Description
 `LinesFiltration` | boolean | `false` | Set to `true` to recognize text in tables.<br />Set to `false` to improve performance by ignoring table structures and treating tables as plain text.
 `PreprocessingFilters` | [Aspose.OCR.Models.PreprocessingFilters.PreprocessingFilter](https://reference.aspose.com/ocr/net/aspose.ocr.models.preprocessingfilters/preprocessingfilter/) | _none_ | Apply [image processing filters](/ocr/net/image-preprocessing/) that enhance an image before it is sent to the OCR engine.
 `RecognitionAreas` | [List\<Aspose.Drawing.Rectangle\>](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle/) | _entire image_ | List of [areas of the image](/ocr/net/image-regions-extract/) from which to extract text.
-`RecognizeSingleLine` | boolean | `false` | Recognize the image as a single line. Disables automatic document region detection.<br />Improves the recognition performance of simple images.
+`RecognizeSingleLine` | boolean | `false` | Recognize the image as a [single line](/ocr/net/recognize-single-line/). Disables automatic document region detection.<br />Improves the recognition performance of simple images.
 `SkewAngle` | float | `0` | Manually [rotate](/ocr/net/deskew/#manual-skew-correction) the image by the specified degree.
-`ThreadsCount` | integer | _auto_ | The number of CPU threads used for recognition.
+`ThreadsCount` | integer | _auto_ | The number of [CPU threads](/ocr/net/multithreading/) used for recognition.
 `ThresholdValue` | integer | _auto_ | [Override](/ocr/net/binarization/#using-binarization-threshold) the automatic binarization settings.
 
 ## Example
