@@ -1,6 +1,6 @@
 ---
-weight: 10
-date: "2022-08-26"
+weight: 70
+date: "2022-09-09"
 author: "Vladimir Lapin"
 type: docs
 url: /net/recognition/pixel/

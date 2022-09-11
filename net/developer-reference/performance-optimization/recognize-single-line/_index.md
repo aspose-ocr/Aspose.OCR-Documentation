@@ -5,7 +5,7 @@ author: "Vladimir Lapin"
 type: docs
 url: /net/recognize-single-line/
 title: Recognize single line
-description: Extract text from images containing a single line of text.
+description: How to read text from images containing a single line of text.
 keywords:
 - line
 - simple

@@ -5,7 +5,7 @@ author: "Vladimir Lapin"
 type: docs
 url: /net/fast-recognition/
 title: Fast recognition
-description: Extract text from high-quality scans using as few resources as possible.
+description: How to read text from high-quality scans using as few resources as possible.
 keywords:
 - recognize
 - fast

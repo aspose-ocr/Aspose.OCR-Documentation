@@ -1,5 +1,5 @@
 ---
-weight: 50
+weight: 30
 date: "2022-08-22"
 author: "Vladimir Lapin"
 type: docs

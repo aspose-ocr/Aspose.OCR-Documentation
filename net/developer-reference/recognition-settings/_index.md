@@ -1,48 +1,23 @@
 ---
-weight: 110
-date: "2022-09-07"
+weight: 40
+date: "2022-09-06"
 author: "Vladimir Lapin"
 type: docs
-url: /net/recognition-settings/
+url: /net/settings/
 title: Recognition settings
-description: Configuring Aspose.OCR for .NET recognition engine.
+description: How to improve recognition accuracy and tune up Aspose.OCR engine.
 keywords:
-- setting
-- config
-- parameter
+- configure
+- settings
+- options
+- parameters
 ---
 
-Aspose.OCR for .NET allows for very flexible customization of recognition accuracy, performance, and other settings by configuring the properties of the [`RecognitionSettings`](https://reference.aspose.com/ocr/net/aspose.ocr/recognitionsettings/) object.
+Aspose.OCR for .NET provides good recognition accuracy and performance by default. However, there will inevitably be cases where the default settings cannot provide reliable recognition results.
 
-Setting | Type | Default value | Description
-------- | ---- | ------------- | -----------
-`AllowedCharacters` | [Aspose.OCR.CharactersAllowedType](https://reference.aspose.com/ocr/net/aspose.ocr/charactersallowedtype/) | `Aspose.OCR.CharactersAllowedType.ALL` | The [predefined whitelist](/ocr/net/characters-whitelist/#predefined-character-sets) of characters Aspose.OCR engine will look for.
-`AutoContrast` | boolean | `false` | Automatically [increase the contrast](/ocr/net/contrast/) of images before proceeding to recognition.
-`AutoDenoising` | boolean | `false` | Automatically [remove noise](/ocr/net/denoise/) from images before proceeding to recognition.
-`AutoSkew` | boolean | `true` | Automatically [correct image tilt (deskew)](/ocr/net/deskew/) before proceeding to recognition.
-`DetectAreas` | boolean | `true` | Automatically select the optimal [areas detection algorithm](/ocr/net/areas-detection/) that suits the most common use cases.
-`DetectAreasMode` | [Aspose.OCR.DetectAreasMode](https://reference.aspose.com/ocr/net/aspose.ocr/detectareasmode/) | _auto_ | Manually override the default [document areas detection method](/ocr/net/areas-detection/#area-detection-modes).
-`IgnoredCharacters` | string | _none_ | A [blacklist](/ocr/net/characters-blacklist/) of characters that are ignored during recognition.
-`Language` | [Aspose.OCR.Language](https://reference.aspose.com/ocr/net/aspose.ocr/language/) | `Aspose.OCR.Language.None` | Specify a [language](/ocr/net/languages/) for recognition.
-`LinesFiltration` | boolean | `false` | Set to `true` to recognize text in tables.<br />Set to `false` to improve performance by ignoring table structures and treating tables as plain text.
-`PreprocessingFilters` | [Aspose.OCR.Models.PreprocessingFilters.PreprocessingFilter](https://reference.aspose.com/ocr/net/aspose.ocr.models.preprocessingfilters/preprocessingfilter/) | _none_ | Apply [image processing filters](/ocr/net/image-preprocessing/) that enhance an image before it is sent to the OCR engine.
-`RecognitionAreas` | [List\<Aspose.Drawing.Rectangle\>](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle/) | _entire image_ | List of [areas of the image](/ocr/net/image-regions-extract/) from which to extract text.
-`RecognizeSingleLine` | boolean | `false` | Recognize the image as a [single line](/ocr/net/recognize-single-line/). Disables automatic document region detection.<br />Improves the recognition performance of simple images.
-`SkewAngle` | float | `0` | Manually [rotate](/ocr/net/deskew/#manual-skew-correction) the image by the specified degree.
-`ThreadsCount` | integer | _auto_ | The number of [CPU threads](/ocr/net/multithreading/) used for recognition.
-`ThresholdValue` | integer | _auto_ | [Override](/ocr/net/binarization/#using-binarization-threshold) the automatic binarization settings.
+To configure Aspose.OCR recognition settings, specify an optional parameter for the recognition method. The parameter type depends on the recognition method.
 
-## Example
-
-The following code example shows how to fine-tune recognition:
-
-```csharp
-Aspose.OCR.AsposeOcr recognitionEngine = new Aspose.OCR.AsposeOcr();
-Aspose.OCR.RecognitionSettings recognitionSettings = new Aspose.OCR.RecognitionSettings();
-recognitionSettings.AllowedCharacters = Aspose.OCR.CharactersAllowedType.LATIN_ALPHABET;
-recognitionSettings.AutoDenoising = true;
-recognitionSettings.DetectAreasMode = Aspose.OCR.DetectAreasMode.TABLE;
-recognitionSettings.SkewAngle = 90;
-Aspose.OCR.RecognitionResult result = recognitionEngine.RecognizeImage("source.png", recognitionSettings);
-Console.WriteLine(result.RecognitionText);
-```
+Parameter type | Applicable to
+-------------- | -------------
+[`RecognitionSettings`](/ocr/net/recognition-settings-image/) | <ul><li>[Extracting text from a raster image](/ocr/net/recognition/image/)</li><li>[Extracting text from pixel array](/ocr/net/recognition/pixel/)</li><li>[Extracting text from URL](/ocr/net/recognition/url/)</li></ul>
+[`DocumentRecognitionSettings`](/ocr/net/recognition-settings-document/) | <ul><li>[Extracting text from PDF document](/ocr/net/recognition/pdf/)</li><li>[Extracting text from multi-page TIFF](/ocr/net/recognition/tiff/)</li><li>[Extracting text from multi-page DjVu](/ocr/net/recognition/djvu/)</li></ul>
