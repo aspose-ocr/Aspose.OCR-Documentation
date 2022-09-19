@@ -1,36 +1,86 @@
 ---
-title: Aspose.OCR for Java
-description: Aspose.OCR for Java is an optical character recognition(OCR) API that allows java developers to add text scanner or ocr scanner to their Java applications without requiring any additional tool or API.
-type: docs
 weight: 20
+date: "2022-09-16"
+author: "Vladimir Lapin"
+type: docs
+url: /java/
 is_root: true
 aliases: 
-    - /java/ 
-    - /display/OCRJAVA/
+- /display/OCRJAVA/
+title: Aspose.OCR for Java
+description: Aspose.OCR for Java is an easy-to-use Java API for converting scanned images and photographs to text.
+keywords:
+- Java
+- package
+- software
+- OCR
+- recognition
+- read
+- extract
 ---
 
-{{% alert color="primary" %}}
+## Welcome to Aspose.OCR for Java
 
-![Aspose.OCR for Java Product Logo](home_1.png)
+![Aspose.OCR for Java](aspose-ocr-java.png)
 
-**Welcome to the Aspose.OCR for Java**
+**Aspose.OCR for Java** is a powerful yet easy-to-use and cost-effective API for converting images to text. It allows you to add optical character recognition (OCR) functionality to your cross-platform Java applications in less than 10 lines of code without worrying about machine learning, complex calculations, and other low-level technical details. Recognition speed, accuracy and performance can be further improved by distributing computation across multiple CPU cores and offloading resource-intensive tasks to the GPU.
 
-Aspose.OCR for Java is an optical character API that allows developers to add OCR functionality to their Java applications without requiring any additional tool or API. Aspose.OCR for Java allows extracting text from images having different fonts and styles - saving the time and effort involved in developing an OCR solution from scratch.
+Aspose experience with machine learning technologies and years of development resulted in an OCR engine with superior speed and accuracy that supports [26 languages](/ocr/java/recognition-languages/) based on Latin and Cyrillic scrips as well as Chinese, including texts with mixed languages.
 
-Aspose.OCR for Java comes with fully featured demos and working examples written in Java. The demos help developers learn about the component's features and get up and running quickly. Using Aspose.OCR for Java, developers can extract text and related information such as font, style & location of the text from specific parts of an image. This feature allows to perform the OCR operation quickly on document scans that follow the similar structure.
+OCR API processes scanned images, smartphone photos, screenshots, areas of an image, and scanned PDFs and returns results in the most popular [document formats](/ocr/java/supported-file-formats/). Various preprocessing filters allow you to recognize rotated, skewed and noisy images. To further improve the result, built-in spell corrector automatically replaces misspelled words and saves you the trouble of manually proofreading recognition results.
 
-{{% /alert %}}
+The package comes with a number of examples that allow you to quickly familiarize yourself with its functions and capabilities and give you an idea of creating solutions for your business needs.
 
-## Aspose.OCR for Java Resources
+## Product overview
 
-Following are the links to some useful resources you may need to accomplish your tasks.
+Learn more about OCR technology and discover the features and benefits of Aspose.OCR for Java.
 
-- [Aspose.OCR for Java Online Documentation](/ocr/java/)
-- [Aspose.OCR for Java Features](/ocr/java/product-overview/)
-- [Aspose.OCR for Java Release Notes](/ocr/java/release-notes/)
-- [Aspose.OCR for Java Product Page](https://products.aspose.com/ocr/java)
-- [Install Aspose.OCR for Java from Maven Repository](/ocr/java/installation/)
-- [Aspose.OCR for Java API Reference Guide](https://reference.aspose.com/ocr/java)
-- [Download Aspose.OCR for Java from GitHub Repository](https://github.com/aspose-ocr/Aspose.OCR-for-Java)
-- [Aspose.OCR for Java Free Support Forum](https://forum.aspose.com/c/ocr)
-- [Aspose.OCR for Java Paid Support Helpdesk](https://helpdesk.aspose.com/)
+- [Introduction](/ocr/java/product-overview/)
+- [Supported file formats](/ocr/java/supported-file-formats/)
+- [Recognition languages](/ocr/java/recognition-languages/)
+
+## Getting started
+
+Get familiar with Aspose.OCR for Java library in a few simple steps.
+
+- [System requirements](/ocr/java/system-requirements/)
+- [Installation](/ocr/java/installation/)
+- [Licensing](/ocr/java/licensing/)
+- [How to run examples](/ocr/java/how-to-run-the-examples/)
+
+## Developer's reference
+
+[Dive deep](/ocr/java/developer-reference/) into Aspose OCR technology and applications development with Aspose.OCR for Java.
+
+## Aspose.OCR online apps
+
+Explore free online apps build with Aspose.OCR for Java. Get ideas for your own products and look at full capabilities of the library without writing a single line of code.
+
+- [Convert image to text online](https://products.aspose.app/ocr/scan-image)
+- [Convert image to searchable PDF online](https://products.aspose.app/ocr/ocr-to-pdf)
+- [Extract text from a screenshot](https://products.aspose.app/ocr/screenshot-ocr)
+
+## Release Notes
+
+Read a summary of recent changes, enhancements and bug fixes in Aspose.OCR for Java releases.
+
+- [Latest release](/ocr/java/release-notes/latest/)
+- [2022 releases](/ocr/java/release-notes-2022/)
+- [2021 releases](/ocr/java/release-notes-2021/)
+- [2020 releases](/ocr/java/release-notes-2020/)
+- [2017 releases](/ocr/java/release-notes-2017/)
+- [2016 releases](/ocr/java/release-notes-2016/)
+- [2015 releases](/ocr/java/release-notes-2015/)
+
+## Resources
+
+Find more information, download Aspose.OCR for Java packages and get professional help.
+
+- [Maven repository](https://repository.aspose.com/webapp/#/artifacts/browse/tree/General/repo/com/aspose)
+- [Local package](https://downloads.aspose.com/ocr/java)
+- [GitHub repository](https://github.com/aspose-ocr/Aspose.OCR-for-Java)
+- [Aspose.OCR for Java API reference](https://reference.aspose.com/ocr/java)
+- [Examples](https://github.com/aspose-ocr/Aspose.OCR-for-Java/tree/master/Examples)
+- [Blog](https://blog.aspose.com/category/ocr/)
+- [Free Support Forum](https://forum.aspose.com/c/ocr/16)
+- [Paid Support Helpdesk](https://helpdesk.aspose.com/)

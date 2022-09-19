@@ -1,11 +1,9 @@
 ---
-weight: 30
-date: "2022-06-10"
+weight: 10
+date: "2022-09-16"
 author: "Vladimir Lapin"
 type: docs
 url: /java/recognition-languages/
-aliases:
-- /java/supported-characters/
 title: Recognition languages
 description: A list of languages and characters recognized by Aspose.OCR for Java.
 keywords:
@@ -14,7 +12,6 @@ keywords:
 - languages
 - characters
 - symbols
-- Java
 ---
 
 Aspose.OCR for Java can recognize a large number of languages and all popular writing scripts, including texts with mixed languages.
