@@ -190,7 +190,7 @@ Console.WriteLine(result.RecognitionText);
 
 In rare cases, automatic skew correction may incorrectly determine the angle of the image. This can happen to poor quality photos with significant perspective distortions.
 
-To deal with such situations, you can rotate the image by the specified degree using [Rotate](https://reference.aspose.com/ocr/net/aspose.ocr.models.preprocessingfilters/preprocessingfilter/rotate/) preprocessing filter or manually define the skew angle for such images using the [`SkewAngle`](https://reference.aspose.com/ocr/net/aspose.ocr/recognitionsettings/skewangle/) property of recognition settings. The rotation angle is passed in degrees:
+To deal with such situations, you can rotate the image by the specified degree using [`Rotate`](https://reference.aspose.com/ocr/net/aspose.ocr.models.preprocessingfilters/preprocessingfilter/rotate/) preprocessing filter or manually define the skew angle for such images using the [`SkewAngle`](https://reference.aspose.com/ocr/net/aspose.ocr/recognitionsettings/skewangle/) property of recognition settings. The rotation angle is passed in degrees:
 
 - `-360` to `0`: rotate counterclockwise;
 - `0` to `360`: rotate clockwise.

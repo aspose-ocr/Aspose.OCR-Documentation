@@ -1,6 +1,6 @@
 ---
 weight: 60
-date: "2022-09-09"
+date: "2022-09-23"
 author: "Vladimir Lapin"
 type: docs
 url: /net/batch-recognition/
@@ -25,7 +25,7 @@ Subfolders and nested archives are not supported.
 
 This method allows you to optionally customize recognition accuracy, performance, and other [settings](/ocr/net/recognition-settings-image/).
 
-The method returns an array of [`RecognitionResult`](https://reference.aspose.com/ocr/net/aspose.ocr/recognitionresult/) objects, corresponding to each recognized image.
+The method returns a list of [`RecognitionResult`](https://reference.aspose.com/ocr/net/aspose.ocr/recognitionresult/) objects, corresponding to each recognized image.
 
 {{< tabs tabID="1" tabTotal="3" tabName1="Read multiple images" tabName2="Read images from ZIP achive" tabName3="Read images from folder" >}}
 {{< tab tabNum="1" >}}
@@ -40,11 +40,9 @@ List<string> images = new List<string>() {
 Aspose.OCR.RecognitionSettings recognitionSettings = new Aspose.OCR.RecognitionSettings();
 recognitionSettings.Language = Aspose.OCR.Language.Ukr;
 // Extract text from images
-Aspose.OCR.RecognitionResult[] results = recognitionEngine.RecognizeMultipleImages(images, recognitionSettings);
-foreach(var result in results)
-{
-	Console.WriteLine(result.RecognitionText);
-}
+List<Aspose.OCR.RecognitionResult> results = recognitionEngine.RecognizeMultipleImages(images, recognitionSettings);
+// Save all pages as PDF
+Aspose.OCR.AsposeOcr.SaveMultipageDocument("result.pdf", Aspose.OCR.SaveFormat.Pdf, results);
 ```
 {{< /tab >}}
 {{< tab tabNum="2" >}}
@@ -52,11 +50,9 @@ foreach(var result in results)
 Aspose.OCR.AsposeOcr recognitionEngine = new Aspose.OCR.AsposeOcr();
 Aspose.OCR.RecognitionSettings recognitionSettings = new Aspose.OCR.RecognitionSettings();
 recognitionSettings.Language = Aspose.OCR.Language.Ukr;
-Aspose.OCR.RecognitionResult[] results = recognitionEngine.RecognizeMultipleImages("images.zip", recognitionSettings);
-foreach(var result in results)
-{
-	Console.WriteLine(result.RecognitionText);
-}
+List<Aspose.OCR.RecognitionResult> results = recognitionEngine.RecognizeMultipleImages("images.zip", recognitionSettings);
+// Save all pages as PDF
+Aspose.OCR.AsposeOcr.SaveMultipageDocument("result.pdf", Aspose.OCR.SaveFormat.Pdf, results);
 ```
 {{< /tab >}}
 {{< tab tabNum="3" >}}
@@ -64,11 +60,9 @@ foreach(var result in results)
 Aspose.OCR.AsposeOcr recognitionEngine = new Aspose.OCR.AsposeOcr();
 Aspose.OCR.RecognitionSettings recognitionSettings = new Aspose.OCR.RecognitionSettings();
 recognitionSettings.Language = Aspose.OCR.Language.Ukr;
-Aspose.OCR.RecognitionResult[] results = recognitionEngine.RecognizeMultipleImages("C:/images/", recognitionSettings);
-foreach(var result in results)
-{
-	Console.WriteLine(result.RecognitionText);
-}
+List<Aspose.OCR.RecognitionResult> results = recognitionEngine.RecognizeMultipleImages("C:/images/", recognitionSettings);
+// Save all pages as PDF
+Aspose.OCR.AsposeOcr.SaveMultipageDocument("result.pdf", Aspose.OCR.SaveFormat.Pdf, results);
 ```
 {{< /tab >}}
 {{< /tabs >}}

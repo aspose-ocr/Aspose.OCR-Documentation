@@ -1,6 +1,6 @@
 ---
 weight: 20
-date: "2022-09-02"
+date: "2022-09-23"
 author: "Vladimir Lapin"
 type: docs
 url: /net/languages/
@@ -22,6 +22,8 @@ To specify a language for recognition, provide one of the following values in [`
 Value | Language
 ----- | --------
 `Aspose.OCR.Language.None` | [Extended Latin](/ocr/net/recognition-languages/#supported-characters) characters, including diacritics
+`Aspose.OCR.Language.Latin` | [Extended Latin](/ocr/net/recognition-languages/#supported-characters) characters, including diacritics
+`Aspose.OCR.Language.Cyrillic` | [Cyrillic](/ocr/net/recognition-languages/#supported-characters-1) characters
 `Aspose.OCR.Language.Bel` | Belorussian
 `Aspose.OCR.Language.Bul` | Bulgarian
 `Aspose.OCR.Language.Chi` | Chinese (more than 6,000 characters)

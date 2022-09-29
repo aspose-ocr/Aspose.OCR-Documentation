@@ -1,6 +1,6 @@
 ---
 weight: 20
-date: "2022-09-07"
+date: "2022-09-23"
 author: "Vladimir Lapin"
 type: docs
 url: /net/recognition-settings-document/
@@ -33,7 +33,6 @@ Setting | Type | Default value | Description
 `LinesFiltration` | boolean | `false` | Set to `true` to recognize text in tables.<br />Set to `false` to improve performance by ignoring table structures and treating tables as plain text.
 `PagesNumber` | integer | `1` | The number of pages to be recognized in a multi-page file.
 `PreprocessingFilters` | [Aspose.OCR.Models.PreprocessingFilters.PreprocessingFilter](https://reference.aspose.com/ocr/net/aspose.ocr.models.preprocessingfilters/preprocessingfilter/) | _none_ | Apply [image processing filters](/ocr/net/image-preprocessing/) that enhance pages before they are sent to the OCR engine.
-`RecognizeSingleLine` | boolean | `false` | Recognize a [single line](/ocr/net/recognize-single-line/) image. Disables automatic document region detection.<br />Improves the recognition performance of simple images.
 `SkewAngle` | float | `0` | Manually [rotate](/ocr/net/deskew/#manual-skew-correction) the image by the specified degree.
 `StartPage` | integer | `0` | The page number from which to start recognition of the multi-page file. First page number is `0`.
 `ThreadsCount` | integer | _auto_ | The number of [CPU threads](/ocr/net/multithreading/) used for recognition.

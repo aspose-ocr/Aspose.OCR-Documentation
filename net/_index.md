@@ -21,7 +21,7 @@ keywords:
 
 **Aspose.OCR for .NET** is a powerful yet easy-to-use and cost-effective API for converting images to text. It allows you to add optical character recognition (OCR) functionality to your .NET desktop or web application in less than 10 lines of code without worrying about complex formulas, neural networks and other technical details.
 
-Years of development resulted in a state-of-art optical character recognition engine with superior speed and accuracy that supports 26 [languages](/ocr/net/recognition-languages/) based on Latin and Cyrillic scrips as well as Chinese. You can leave the language detection to the library or set it yourself to increase the recognition performance and reliability.
+Years of development resulted in a state-of-art optical character recognition engine with superior speed and accuracy that supports 26 [languages](/ocr/net/recognition-languages/) based on Latin and Cyrillic scrips as well as Chinese.
 
 Aspose.OCR can recognize scanned images or even smartphone photos in the most popular [formats](/ocr/net/supported-file-formats/): PDF, JPG, TIFF, PNG, BMP, GIF, or DjVu. Various pre-processing filters allow you to recognize rotated, skewed and noisy images. Recognition results are returned in the most popular document and data exchange formats: plain text, PDF, Word, Excel, JSON, XML; and can be further analyzed and spell-checked.
 
@@ -60,7 +60,7 @@ Explore free online apps build with Aspose.OCR for .NET. Get ideas for your own 
 
 Read a summary of recent changes, enhancements and bug fixes in Aspose.OCR for .NET releases.
 
-- [Latest release (May 2022)](/ocr/net/release-notes/latest/)
+- [Latest release](/ocr/net/release-notes/latest/)
 - [2022 releases](/ocr/net/release-notes-2022/)
 - [2021 releases](/ocr/net/release-notes-2021/)
 - [2020 releases](/ocr/net/release-notes-2020/)

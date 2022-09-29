@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2022-09-07"
+date: "2022-09-23"
 author: "Vladimir Lapin"
 type: docs
 url: /net/recognition-settings-image/
@@ -38,6 +38,7 @@ Setting | Type | Default value | Description
 `SkewAngle` | float | `0` | Manually [rotate](/ocr/net/deskew/#manual-skew-correction) the image by the specified degree.
 `ThreadsCount` | integer | _auto_ | The number of [CPU threads](/ocr/net/multithreading/) used for recognition.
 `ThresholdValue` | integer | _auto_ | [Override](/ocr/net/binarization/#using-binarization-threshold) the automatic binarization settings.
+`UpscaleSmallFont` | boolean | `false` | Improve small font recognition and detection of dense lines.
 
 ## Applicable to
 

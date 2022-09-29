@@ -43,4 +43,9 @@ Aspose.OCR for .NET handles all aspects of recognition - from preprocessing the 
     - [Working with image regions](/ocr/net/image-regions/)
     - [Automatic spelling corrections](/ocr/net/spelling/)
 
-5. [**Saving recognition results**](/ocr/net/save/)
+5. **Saving recognition results**:
+
+    - [Saving recognition results as a file](/ocr/net/save-file/)
+    - [Getting recognition results as text](/ocr/net/save-text/)
+    - [Getting recognition results as JSON](/ocr/net/save-json/)
+    - [Getting recognition results as XML](/ocr/net/save-xml/)

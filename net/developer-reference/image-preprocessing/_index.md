@@ -218,6 +218,10 @@ function applyFilter()
 			if(status) $("#denoise-code").removeClass("hidden");
 			else $("#denoise-code").addClass("hidden");
 			break;
+		case "contrast":
+			if(status) $("#contrast-code").removeClass("hidden");
+			else $("#contrast-code").addClass("hidden");
+			break;
 		case "scale":
 			if(status) $("#scale-code").removeClass("hidden");
 			else $("#scale-code").addClass("hidden");

@@ -1,6 +1,6 @@
 ---
 weight: 60
-date: "2022-08-26"
+date: "2022-09-23"
 author: "Vladimir Lapin"
 type: docs
 url: /net/recognition/
@@ -27,6 +27,8 @@ Aspose.OCR for .NET can extract text from a wide variety of file formats and med
   Reading images in fastest recognition mode that consumes minimum possible resources.
 - [Recognizing single line](/ocr/net/recognize-single-line/)  
   Reading text from images containing a single line of text.
+- [Extracting text from receipts](/ocr/net/recognition/receipt/)  
+  Digitizing scanned receipts without manual retyping.
 
 ## Extracting text from documents
 

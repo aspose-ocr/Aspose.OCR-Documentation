@@ -1,7 +1,7 @@
 ---
 title: Aspose.OCR for Java 22.5 - Release Notes
 type: docs
-weight: 8
+weight: 80
 url: /java/aspose-ocr-for-java-22-5-release-notes/
 ---
 

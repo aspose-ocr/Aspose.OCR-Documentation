@@ -60,7 +60,7 @@ Aspose.OCR.RecognitionResult result = recognitionEngine.RecognizeImage("source.p
 Console.WriteLine(result.RecognitionText);
 ```
 
-Aspose.OCR Cloud supports the following [document structure analysis](/ocr/structure-analysis/) methods provided in [`DetectAreasMode`] enumeration:
+Aspose.OCR for .NET supports the following [document structure analysis](/ocr/structure-analysis/) methods provided in [`DetectAreasMode`] enumeration:
 
 Name              | Value | Description | Use cases
 ----------------- | :---: | ----------- | ---------
