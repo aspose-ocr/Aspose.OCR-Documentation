@@ -17,7 +17,7 @@ keywords:
 - picture
 ---
 
-Aspose.OCE for .NET can recognize images hosted on websites without downloading them to your computer. The only thing you need is the URL. Use [`RecognizeImageFromUri`](https://reference.aspose.com/ocr/net/aspose.ocr/asposeocr/recognizeimagefromuri/) method of [`Aspose.OCR.AsposeOcr`](https://reference.aspose.com/ocr/net/aspose.ocr/asposeocr/) class. This method supports JPEG, PNG, BMP, GIF, and single-page TIFF images.
+Aspose.OCR for .NET can recognize images hosted on websites without downloading them to your computer. The only thing you need is the URL. Use [`RecognizeImageFromUri`](https://reference.aspose.com/ocr/net/aspose.ocr/asposeocr/recognizeimagefromuri/) method of [`Aspose.OCR.AsposeOcr`](https://reference.aspose.com/ocr/net/aspose.ocr/asposeocr/) class. This method supports JPEG, PNG, BMP, GIF, and single-page TIFF images.
 
 {{% alert color="primary" %}}
 This method does not support authentication and can only work with public links.
