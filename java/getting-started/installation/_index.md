@@ -36,7 +36,7 @@ To use GPU version, make sure your GPU [supports](https://developer.nvidia.com/c
     <repository>
         <id>AsposeJavaAPI</id>
         <name>Aspose Java API</name>
-        <url>http://repository.aspose.com/repo/</url>
+        <url>https://releases.aspose.com/java/repo/</url>
     </repository>
 </repositories>
 ```
