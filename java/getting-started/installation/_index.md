@@ -26,7 +26,7 @@ mvn archetype:generate -DgroupId=com.mycompany.app -DartifactId=my-app -Darchety
 ```
 
 {{% alert color="primary" %}} 
-To use GPU version, make sure your GPU [supports](https://developer.nvidia.com/cuda-gpus) CUDA and install [NVIDIA CUDA Toolkit](https://developer.nvidia.com/cuda-downloads).
+To use GPU-accelerated version, make sure your GPU [supports](/ocr/java/installation/gpu/) CUDA and has NVIDIA CUDA Toolkit.
 {{% /alert %}} 
 
 3. Specify Aspose Maven Repository location in your Maven **pom.xml**:

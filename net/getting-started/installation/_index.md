@@ -23,13 +23,13 @@ keywords:
 Aspose offers two options for **Aspose.OCR for .NET** NuGet package:
 
 - [**Aspose.OCR**](https://www.nuget.org/packages/Aspose.OCR/) - CPU-based OCR;
-- [**Aspose.OCR-GPU**](https://www.nuget.org/packages/Aspose.OCR-GPU/) - GPU-accelerated OCR (requires a [CUDA capable GPU](https://developer.nvidia.com/cuda-gpus) and [NVIDIA CUDA Toolkit](https://developer.nvidia.com/cuda-downloads)).
+- [**Aspose.OCR-GPU**](https://www.nuget.org/packages/Aspose.OCR-GPU/) - GPU-accelerated OCR ([requires](/ocr/net/installation/gpu/) a CUDA capable GPU and NVIDIA CUDA Toolkit).
 
 There is no need to download and install any software - the package can be added to your project directly from Microsoft Visual Studio. Both packages are installed and updated in the same way, so they will later be referred as _"Aspose.OCR for .NET"_.
 
 {{% alert color="primary" %}} 
 The instructions below describe how to install or update Aspose.OCR for .NET in **Microsoft Visual Studio Community 2019**. The installation process for [other versions](/ocr/net/system-requirements/) of Visual Studio should be quite similar; refer to [documentation](https://docs.microsoft.com/en-us/previous-versions/visualstudio/) for specific details.
-{{% /alert %}} 
+{{% /alert %}}
 
 ### Using NuGet Package Manager UI
 

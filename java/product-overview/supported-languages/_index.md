@@ -1,11 +1,11 @@
 ---
 weight: 10
-date: "2022-09-16"
+date: "2022-10-20"
 author: "Vladimir Lapin"
 type: docs
-url: /java/recognition-languages/
+url: /cpp/recognition-languages/
 title: Recognition languages
-description: A list of languages and characters recognized by Aspose.OCR for Java.
+description: A list of languages and characters recognized by Aspose.OCR for C++.
 keywords:
 - recognition
 - OCR
@@ -14,7 +14,7 @@ keywords:
 - symbols
 ---
 
-Aspose.OCR for Java can recognize a large number of languages and all popular writing scripts, including texts with mixed languages.
+Aspose.OCR for C++ can recognize a large number of languages and all popular writing scripts, including texts with mixed languages.
 
 ## Extended Latin alphabet
 

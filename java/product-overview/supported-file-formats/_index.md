@@ -1,11 +1,11 @@
 ---
 weight: 20
-date: "2022-09-16"
+date: "2022-10-20"
 author: "Vladimir Lapin"
 type: docs
-url: /java/supported-file-formats/
+url: /cpp/supported-file-formats/
 title: Supported file formats
-description: File formats for images and recognition results supported by Aspose.OCR for Java.
+description: File formats for images and recognition results supported by Aspose.OCR for C++.
 keywords:
 - format
 - image
@@ -18,7 +18,7 @@ keywords:
 
 ## Recognized image formats
 
-Aspose.OCR for Java can recognize any file you get from a scanner or camera:
+Aspose.OCR for C++ can recognize any file you get from a scanner or camera:
 
 Extension             | Details
 --------------------- | -------
@@ -26,9 +26,7 @@ Extension             | Details
 **.JPG**              | JPEG, the most popular format for smartphone photos
 **.PNG**              | Portable Network Graphics, 24-bit with transparency
 **.TIFF** or **.TIF** | Single-page and multi-page images, commonly used for high quality scanning
-**.GIF**              | Graphics Interchange Format, limited to 256 colors
 **.BMP**              | Bitmap image file
-**.WBMP**             | A monochrome graphics file optimized for mobile devices
 
 {{% alert color="primary" %}}
 The API can also read the above-mentioned files from ZIP archives.

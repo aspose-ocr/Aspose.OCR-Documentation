@@ -25,7 +25,7 @@ Aspose.OCR can be combined with other Aspose products, such as [Aspose.PDF for J
 
 - State-of-art optical character recognition engine with superior recognition speed and accuracy designed by Aspose engineering team.
 - Can be used to build cross-platform applications for desktop, mobile and web.
-- Supports [26 languages](/ocr/javsa/recognition-languages/) based on Latin and Cyrillic scrips as well as Chinese.
+- Supports [26 languages](/ocr/java/recognition-languages/) based on Latin and Cyrillic scrips as well as Chinese.
 - Detects and recognizes all popular typefaces such as Arial, Times New Roman, Courier New, Tahoma, Calibri and more in regular, bold and italic styles.
 - Process rotated, skewed and noisy images. Various built-in filters for image pre-processing.
 - Supports all [image formats](/ocr/java/supported-file-formats/) you can get from a scanner or camera as well as web links.
