@@ -4,6 +4,8 @@ date: "2022-09-16"
 author: "Vladimir Lapin"
 type: docs
 url: /java/installation/
+aliases:
+- /java/installing-and-using-aspose-ocr-for-intellij-idea-maven/
 title: Installation
 description: Adding Aspose.OCR for Java package to your project.
 keywords:
@@ -36,7 +38,7 @@ To use GPU-accelerated version, make sure your GPU [supports](/ocr/java/installa
     <repository>
         <id>AsposeJavaAPI</id>
         <name>Aspose Java API</name>
-        <url>https://releases.aspose.com/java/repo/</url>
+        <url>http://repository.aspose.com/repo/</url>
     </repository>
 </repositories>
 ```

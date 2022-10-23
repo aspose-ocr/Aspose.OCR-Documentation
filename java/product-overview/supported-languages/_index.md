@@ -3,7 +3,9 @@ weight: 10
 date: "2022-10-20"
 author: "Vladimir Lapin"
 type: docs
-url: /cpp/recognition-languages/
+url: /java/recognition-languages/
+aliases:
+- /java/supported-characters/
 title: Recognition languages
 description: A list of languages and characters recognized by Aspose.OCR for C++.
 keywords:

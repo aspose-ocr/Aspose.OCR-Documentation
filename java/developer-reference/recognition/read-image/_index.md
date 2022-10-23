@@ -6,6 +6,7 @@ type: docs
 url: /java/recognition/image/
 aliases:
 - /java/perform-ocr-on-an-image/
+- /java/performing-ocr-on-an-image-in-ruby/
 title: Extracting text from an image
 description: How to read text from raster images in JPEG, PNG, TIFF, BMP, and GIF formats.
 keywords:

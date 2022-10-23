@@ -6,6 +6,7 @@ type: docs
 url: /java/recognition/tiff/
 aliases:
 - /java/recognize-tiff/
+- /ocr/java/perform-ocr-operation-on-a-multipage-tiff-in-ruby/
 title: Extracting text from multi-page TIFF
 description: How to read text from multi-page TIFF images.
 keywords:

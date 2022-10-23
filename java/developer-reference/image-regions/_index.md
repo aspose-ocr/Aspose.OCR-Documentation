@@ -6,6 +6,8 @@ type: docs
 url: /java/image-regions/
 aliases:
 - /java/get-text-areas-on-the-page/
+- /java/extracting-text-from-part-of-an-image-in-php/
+- /ocr/java/read-the-part-information-of-recognized-text-in-ruby/
 title: Working with image regions
 description: Automatic detection of text bounding boxes and extraction of text inside image rectangles.
 keywords:
