@@ -3,7 +3,7 @@ weight: 51
 date: "2022-09-23"
 author: "Vladimir Lapin"
 type: docs
-url: /net/aspose-ocr-for-net-22-8-release-notes/
+url: /net/aspose-ocr-for-net-22-9-release-notes/
 title: Aspose.OCR for .NET 22.9 - Release Notes
 description: A summary of recent changes, enhancements and bug fixes in Aspose.OCR for .NET 22.9 (September 2022) release.
 keywords:
@@ -16,7 +16,7 @@ keywords:
 
 {{% alert color="primary" %}}
 
-This article contains a summary of recent changes, enhancements and bug fixes in [**Aspose.OCR for .NET 22.9 (September 2022)**](https://www.nuget.org/packages/Aspose.OCR/22.8.0) release.
+This article contains a summary of recent changes, enhancements and bug fixes in [**Aspose.OCR for .NET 22.9 (September 2022)**](https://www.nuget.org/packages/Aspose.OCR/22.9.0) release.
 
 GPU version: **21.6.0**
 

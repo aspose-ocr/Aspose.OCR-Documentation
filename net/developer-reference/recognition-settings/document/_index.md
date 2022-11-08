@@ -1,6 +1,6 @@
 ---
 weight: 20
-date: "2022-09-23"
+date: "2022-11-07"
 author: "Vladimir Lapin"
 type: docs
 url: /net/recognition-settings-document/
@@ -26,7 +26,6 @@ Setting | Type | Default value | Description
 `AutoContrast` | boolean | `false` | Automatically [increase the contrast](/ocr/net/contrast/) of pages before proceeding to recognition.
 `AutoDenoising` | boolean | `false` | Automatically [remove noise](/ocr/net/denoise/) from pages before proceeding to recognition.
 `AutoSkew` | boolean | `true` | Automatically [correct page tilt (deskew)](/ocr/net/deskew/) before proceeding to recognition.
-`DetectAreas` | boolean | `true` | Automatically select the optimal [areas detection algorithm](/ocr/net/areas-detection/) that suits the most common use cases.
 `DetectAreasMode` | [Aspose.OCR.DetectAreasMode](https://reference.aspose.com/ocr/net/aspose.ocr/detectareasmode/) | _auto_ | Manually override the default [document areas detection method](/ocr/net/areas-detection/#area-detection-modes).
 `IgnoredCharacters` | string | _none_ | A [blacklist](/ocr/net/characters-blacklist/) of characters that are ignored during recognition.
 `Language` | [Aspose.OCR.Language](https://reference.aspose.com/ocr/net/aspose.ocr/language/) | `Aspose.OCR.Language.None` | Specify a [language](/ocr/net/languages/) for recognition.
