@@ -1,6 +1,6 @@
 ---
 weight: 80
-date: "2022-09-29"
+date: "2022-11-08"
 author: "Vladimir Lapin"
 type: docs
 url: /java/recognition/receipt/
@@ -26,6 +26,8 @@ This method allows you to customize recognition accuracy, performance, and other
 
 The method returns a [`RecognitionResult`](https://reference.aspose.com/ocr/java/com.aspose.ocr/RecognitionResult) object containing the receipt data.
 
+{{< tabs tabID="1" tabTotal="2" tabName1="Read TIFF from path" tabName2="Read TIFF from memory" >}}
+{{< tab tabNum="1" >}}
 ```java
 AsposeOCR api = new AsposeOCR();
 // Customize recognition
@@ -36,3 +38,18 @@ RecognitionResult result = api.RecognizeReceipt("receipt.png", recognitionSettin
 // Get recognition results as JSON
 String resultJson = result.GetJson();
 ```
+{{< /tab >}}
+{{< tab tabNum="2" >}}
+```java
+AsposeOCR api = new AsposeOCR();
+BufferedImage source = ImageIO.read(new File("receipt.png"));
+// Customize recognition
+ReceiptRecognitionSettings recognitionSettings = new ReceiptRecognitionSettings();
+recognitionSettings.setLanguage(Language.Ukr);
+// Extract text from receipt
+RecognitionResult result = api.RecognizeReceipt(source, recognitionSettings);
+// Get recognition results as JSON
+String resultJson = result.GetJson();
+```
+{{< /tab >}}
+{{< /tabs >}}

@@ -1,29 +1,80 @@
 ---
-title: Aspose.OCR for C++
-description: Aspose.OCR for C++ is a native C++ library that allows developers to add optical character recognition(OCR) functionality to their applications without requiring any additional tool or API.
-type: docs
 weight: 30
+date: "2022-10-20"
+author: "Vladimir Lapin"
+type: docs
 url: /cpp/
 is_root: true
+title: Aspose.OCR for C++
+description: Aspose.OCR for C++ is an easy-to-use C and C++ API for converting scanned images and photographs to text.
+keywords:
+- CPP
+- package
+- software
+- OCR
+- recognition
+- read
+- extract
 ---
 
-{{% alert color="primary" %}}
+## Welcome to Aspose.OCR for C++
 
-**![Aspose.OCR for C++ Product Logo](home_1.png)**
+![Aspose.OCR for C++](aspose-ocr-cpp.png)
 
-**Welcome to the Aspose.OCR for C++**
+**Aspose.OCR for C++** is a powerful cross-platform API for converting images to text. It allows you to add optical character recognition (OCR) functionality to your C and C++ applications in less than 10 lines of code without diving deep into machine learning, complex calculations, and other low-level technical details. Recognition speed, accuracy and performance can be further improved by distributing computation across multiple CPU cores and offloading resource-intensive tasks to the GPU.
 
-Aspose.OCR for C++ is a native C++ library that allows developers to add OCR functionality to their applications without requiring any additional tool or API. Aspose.OCR for C++ allows extracting text from images having different fonts and styles - saving the time and effort involved in developing an OCR solution from scratch.
+Aspose experience with machine learning technologies and years of development resulted in an OCR engine with superior speed and accuracy that supports [26 languages](/ocr/cpp/recognition-languages/) based on Latin and Cyrillic scrips as well as Chinese, including texts with mixed languages.
 
-{{% /alert %}}
+OCR API processes scanned images, smartphone photos, screenshots, areas of an image, and scanned PDFs and returns results in the most popular [document formats](/ocr/cpp/supported-file-formats/). Various preprocessing filters allow you to recognize rotated, skewed and noisy images. To further improve the result, built-in spell corrector automatically replaces misspelled words and saves you the trouble of manually proofreading recognition results.
 
-## Aspose.OCR for C++ Resources
+The package comes with a number of examples that allow you to quickly familiarize yourself with its functions and capabilities and give you an idea of creating solutions for your business needs.
 
-The following are the links to some useful resources you may need to accomplish your tasks.
+## Product overview
 
-- [Aspose.OCR for C++ Online Documentation](/ocr/cpp/)
-- [Aspose.OCR for C++ Features](/ocr/cpp/features/)
-- [Aspose.OCR for C++ Release Notes](/ocr/cpp/release-notes/)
-- [Aspose.OCR for C++ Product Page](https://products.aspose.com/ocr/cpp)
-- [Aspose.OCR for C++ Free Support Forum](https://forum.aspose.com/c/ocr)
-- [Aspose.OCR for C++ Paid Support Helpdesk](https://helpdesk.aspose.com/)
+Learn more about OCR technology and discover the features and benefits of Aspose.OCR for C++.
+
+- [Introduction](/ocr/cpp/product-overview/)
+- [Supported file formats](/ocr/cpp/supported-file-formats/)
+- [Recognition languages](/ocr/cpp/recognition-languages/)
+
+## Getting started
+
+Get familiar with Aspose.OCR for C++ library in a few simple steps.
+
+- [System requirements](/ocr/cpp/system-requirements/)
+- [Installation](/ocr/cpp/installation/)
+- [Licensing](/ocr/cpp/licensing/)
+- [How to run examples](/ocr/cpp/how-to-run-the-examples/)
+
+## Developer's reference
+
+[Dive deep](/ocr/cpp/developer-reference/) into Aspose OCR technology and applications development with Aspose.OCR for C++.
+
+## Aspose.OCR online apps
+
+Explore free online apps build with Aspose.OCR for C++. Get ideas for your own products and look at full capabilities of the library without writing a single line of code.
+
+- [Convert image to text online](https://products.aspose.app/ocr/scan-image)
+- [Convert image to searchable PDF online](https://products.aspose.app/ocr/ocr-to-pdf)
+- [Extract text from a screenshot](https://products.aspose.app/ocr/screenshot-ocr)
+
+## Release Notes
+
+Read a summary of recent changes, enhancements and bug fixes in Aspose.OCR for C++ releases.
+
+- [Latest release](/ocr/cpp/release-notes/latest/)
+- [2022 releases](/ocr/cpp/release-notes-2022/)
+- [2021 releases](/ocr/cpp/release-notes-2021/)
+- [2020 releases](/ocr/cpp/release-notes-2020/)
+
+## Resources
+
+Find more information, download Aspose.OCR for С++ packages and get professional help.
+
+- [Local installation packages](https://releases.aspose.com/ocr/cpp/)
+- [GitHub repository](https://github.com/aspose-ocr/Aspose.OCR-for-C)
+- [Aspose.OCR for C++ API Reference Documentation](https://reference.aspose.com/ocr/cpp/index)
+- [Examples](https://github.com/aspose-ocr/Aspose.OCR-for-C/tree/master/Aspose.OCR-for-C)
+- [Blog](https://blog.aspose.com/category/ocr/)
+- [Free Support Forum](https://forum.aspose.com/c/ocr/16)
+- [Paid Support Helpdesk](https://helpdesk.aspose.com/)

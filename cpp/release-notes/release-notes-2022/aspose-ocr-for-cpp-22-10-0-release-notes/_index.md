@@ -1,6 +1,6 @@
 ---
 weight: 43
-date: "2022-10-13"
+date: "2022-11-08"
 author: "Vladimir Lapin"
 type: docs
 url: /cpp/aspose-ocr-for-cpp-22-10-0-release-notes/
@@ -42,3 +42,8 @@ _No changes._
 ### Removed public APIs:
 
 _No changes._
+
+## Important considerations for Linux release
+
+- Aspose.OCR for C++ package for Linux requires [The GNU C Library (glibc)](https://www.gnu.org/software/libc/) version 2.29 or later.
+- The package does not support processing of images provided as web links (URIs).
