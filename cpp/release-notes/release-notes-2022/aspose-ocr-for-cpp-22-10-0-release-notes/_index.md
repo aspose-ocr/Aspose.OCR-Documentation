@@ -15,7 +15,7 @@ keywords:
 ---
 
 {{% alert color="primary" %}}
-This article contains a summary of recent changes, enhancements and bug fixes in [**Aspose.OCR for C++ 22.10.0 (October 2022)**](https://www.nuget.org/packages/Aspose.OCR.Cpp/22.10.0) release..
+This article contains a summary of recent changes, enhancements and bug fixes in [**Aspose.OCR for C++ 22.10.0 (October 2022)**](https://www.nuget.org/packages/Aspose.OCR.Cpp/22.10.0) release.
 
 GPU-accelerated version of Aspose.OCR for C++: **22.10.0**
 {{% /alert %}}
