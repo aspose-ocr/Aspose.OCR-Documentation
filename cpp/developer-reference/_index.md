@@ -41,7 +41,6 @@ Aspose.OCR for C++ handles all aspects of recognition - from preprocessing the i
 4. **Post-processing**:
 
     - [Working with image regions](/ocr/cpp/image-regions/)
-    - [Automatic spelling corrections](/ocr/cpp/spelling/)
 
 5. **Saving recognition results**:
 
