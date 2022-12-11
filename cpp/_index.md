@@ -25,7 +25,7 @@ keywords:
 
 Aspose experience with machine learning technologies and years of development resulted in an OCR engine with superior speed and accuracy that supports [26 languages](/ocr/cpp/recognition-languages/) based on Latin and Cyrillic scrips as well as Chinese, including texts with mixed languages.
 
-OCR API processes scanned images, smartphone photos, screenshots, areas of an image, and scanned PDFs and returns results in the most popular [document formats](/ocr/cpp/supported-file-formats/). Various preprocessing filters allow you to recognize rotated, skewed and noisy images. To further improve the result, built-in spell corrector automatically replaces misspelled words and saves you the trouble of manually proofreading recognition results.
+OCR API processes scanned images, smartphone photos, screenshots, areas of an image, and scanned PDFs and returns results in the most popular [document formats](/ocr/cpp/supported-file-formats/). Various preprocessing filters allow you to recognize rotated, skewed and noisy images.
 
 The package comes with a number of examples that allow you to quickly familiarize yourself with its functions and capabilities and give you an idea of creating solutions for your business needs.
 

@@ -22,7 +22,6 @@ Aspose.OCR for C++ can recognize any file you get from a scanner or camera:
 
 Extension             | Details
 --------------------- | -------
-**.PDF**              | Portable Document Format, a versatile standardized format for multi-page documents
 **.JPG**              | JPEG, the most popular format for smartphone photos
 **.PNG**              | Portable Network Graphics, 24-bit with transparency
 **.TIFF** or **.TIF** | Single-page and multi-page images, commonly used for high quality scanning
