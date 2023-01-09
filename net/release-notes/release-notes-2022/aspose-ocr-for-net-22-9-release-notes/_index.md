@@ -15,11 +15,9 @@ keywords:
 ---
 
 {{% alert color="primary" %}}
-
 This article contains a summary of recent changes, enhancements and bug fixes in [**Aspose.OCR for .NET 22.9 (September 2022)**](https://www.nuget.org/packages/Aspose.OCR/22.9.0) release.
 
 GPU version: **21.6.0**
-
 {{% /alert %}}
 
 ## What was changed
