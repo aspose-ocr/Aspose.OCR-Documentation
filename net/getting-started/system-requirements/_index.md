@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2022-06-08"
+date: "2023-01-12"
 author: "Vladimir Lapin"
 type: docs
 url: /net/system-requirements/
@@ -66,7 +66,7 @@ Microsoft Visual Studio 2022 [does not support](https://docs.microsoft.com/en-us
 
 ## External dependencies
 
-- [Microsoft.ML.OnnxRuntime](https://www.nuget.org/packages/Microsoft.ML.OnnxRuntime/) version 1.11.0 or later (for **Aspose.OCR** package only)
+- [Microsoft.ML.OnnxRuntime](https://www.nuget.org/packages/Microsoft.ML.OnnxRuntime/) version 1.13.1 or later (for **Aspose.OCR** package only)
 - [Microsoft.ML.OnnxRuntime.Gpu](https://www.nuget.org/packages/Microsoft.ML.OnnxRuntime.Gpu/) version 1.7.1 or later (for **Aspose.OCR-GPU** only)
 - [System.Drawing.Common](https://www.nuget.org/packages/System.Drawing.Common/) version 4.7.0 or later
 

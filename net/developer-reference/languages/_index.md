@@ -1,6 +1,6 @@
 ---
 weight: 20
-date: "2022-09-23"
+date: "2023-01-12"
 author: "Vladimir Lapin"
 type: docs
 url: /net/languages/
@@ -35,6 +35,7 @@ Value | Language
 `Aspose.OCR.Language.Est` | Estonian
 `Aspose.OCR.Language.Fin` | Finnish
 `Aspose.OCR.Language.Fra` | French
+`Aspose.OCR.Language.Hin` | Hindi
 `Aspose.OCR.Language.Ita` | Italian
 `Aspose.OCR.Language.Kaz` | Kazakh
 `Aspose.OCR.Language.Lav` | Latvian

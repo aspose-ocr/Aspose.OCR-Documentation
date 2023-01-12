@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2022-06-08"
+date: "2023-01-12"
 author: "Vladimir Lapin"
 type: docs
 url: /net/recognition-languages/
@@ -105,3 +105,4 @@ Aspose.OCR can recognize a large number of languages and all popular writing scr
 ## Asian languages
 
 - Chinese (more than 6,000 characters)
+- Hindi

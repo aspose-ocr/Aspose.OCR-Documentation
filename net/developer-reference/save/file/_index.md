@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2022-09-06"
+date: "2023-01-12"
 author: "Vladimir Lapin"
 type: docs
 url: /net/save-file/
@@ -37,6 +37,9 @@ Format | Description
 `Aspose.OCR.SaveFormat.Xlsx` | Microsoft Excel spreadsheet (version 2007 or later).
 `Aspose.OCR.SaveFormat.Json` | JSON is a popular format widely used in software development and data exchange. The de facto standard for websites and REST APIs.
 `Aspose.OCR.SaveFormat.Xml` | Extensible Markup Language (XML), a universal data exchange and storage format for most systems.
+`Aspose.OCR.SaveFormat.HTML` | HTML web page.
+`Aspose.OCR.SaveFormat.EPUB` | ePub, a popular e-book file format.
+`Aspose.OCR.SaveFormat.RTF` | RTF, a universal format for exchanging text documents between different word processing programs.
 
 You can optionally enable [automatic spelling corrections](/ocr/net/automatic-spelling-correction/) for recognition results and provide a [custom dictionary](/ocr/net/dictionaries/).
 

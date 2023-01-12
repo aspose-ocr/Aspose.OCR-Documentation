@@ -1,6 +1,6 @@
 ---
 weight: 20
-date: "2022-08-26"
+date: "2023-01-12"
 author: "Vladimir Lapin"
 type: docs
 url: /net/supported-file-formats/
@@ -44,8 +44,11 @@ Recognition results are returned in the most popular document and data exchange 
 Format    | Details
 --------- | -------
 **.TXT**  | Plain text
+**.HTML** | Web page
+**.RTF**  | A universal format for exchanging rich text documents between different word processing programs
 **.DOCX** | Microsoft Word document
 **.XLSX** | Microsoft Excel spreadsheet
 **.PDF**  | Portable Document Format
-**JSON**  | A popular open-standard format, widely used in software development and data exchange.
-**XML**   | Extensible Markup Language, a universal format for most systems.
+**.EPUB** | Popular e-book file format
+**JSON**  | A popular open-standard format, widely used in software development and data exchange
+**XML**   | Extensible Markup Language, a universal format for most systems
