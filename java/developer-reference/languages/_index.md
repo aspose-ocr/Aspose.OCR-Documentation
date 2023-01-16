@@ -1,6 +1,6 @@
 ---
 weight: 20
-date: "2022-09-23"
+date: "2023-01-16"
 author: "Vladimir Lapin"
 type: docs
 url: /java/languages/
@@ -35,6 +35,7 @@ Value | Language
 `Language.Est` | Estonian
 `Language.Fin` | Finnish
 `Language.Fra` | French
+`Language.Hin` | Hindi
 `Language.Ita` | Italian
 `Language.Kaz` | Kazakh
 `Language.Lav` | Latvian

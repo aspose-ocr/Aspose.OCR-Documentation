@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2022-10-03"
+date: "2023-01-16"
 author: "Vladimir Lapin"
 type: docs
 url: /java/save-file/
@@ -36,6 +36,9 @@ Format | Description
 `Format.Xlsx` | Microsoft Excel spreadsheet (version 2007 or later).
 `Format.Json` | JSON is a popular format widely used in software development and data exchange. The de facto standard for websites and REST APIs.
 `Format.Xml` | Extensible Markup Language (XML), a universal data exchange and storage format for most systems.
+`Format.Html` | HTML web page.
+`Format.Epub` | ePub, a popular e-book file format.
+`Format.Rtf` | RTF, a universal format for exchanging text documents between different word processing programs.
 
 ```java
 AsposeOCR api = new AsposeOCR();

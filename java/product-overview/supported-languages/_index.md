@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2022-11-08"
+date: "2023-01-16"
 author: "Vladimir Lapin"
 type: docs
 url: /java/recognition-languages/
@@ -105,3 +105,4 @@ Aspose.OCR for Java can recognize a large number of languages and all popular wr
 ## Asian languages
 
 - Chinese (more than 6,000 characters)
+- Hindi
