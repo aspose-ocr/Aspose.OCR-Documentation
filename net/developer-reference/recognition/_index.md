@@ -29,6 +29,14 @@ Aspose.OCR for .NET can extract text from a wide variety of file formats and med
   Reading text from images containing a single line of text.
 - [Extracting text from receipts](/ocr/net/recognition/receipt/)  
   Digitizing scanned receipts without manual retyping.
+- [Extracting text from ID cards](/ocr/net/recognition/id-card/)  
+  Automatically read text from scanned or photographed ID cards.
+- [Extracting text from passports](/ocr/net/recognition/passport/)  
+  Digitize scans or photos of passports.
+- [Extracting text from vehicle license plates](/ocr/net/recognition/car-plate/)  
+  Reading vehicle license plates without manual retyping.
+- [Extracting text from invoices](/ocr/net/recognition/invoice/)  
+  Digitizing scanned invoices without manual retyping.
 
 ## Extracting text from documents
 
