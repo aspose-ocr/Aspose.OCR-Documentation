@@ -1,6 +1,6 @@
 ---
 weight: 60
-date: "2022-09-23"
+date: "2023-01-23"
 author: "Vladimir Lapin"
 type: docs
 url: /net/recognition/
@@ -54,17 +54,3 @@ Aspose.OCR for .NET can extract text from a wide variety of file formats and med
   Reading text from a list of raster images, folder, or ZIP archive.
 - [Extracting text from URL](/ocr/net/recognition/url/)  
   Reading text from raster images hosted on web sites.
-
-## Identifying recognition problems
-
-Non-fatal recognition errors are stored as a list of strings in the `Warnings` property of the [recognition result](https://reference.aspose.com/ocr/net/aspose.ocr/recognitionresult/).
-
-```csharp
-Aspose.OCR.AsposeOcr recognitionEngine = new Aspose.OCR.AsposeOcr();
-Aspose.OCR.RecognitionSettings recognitionSettings = new Aspose.OCR.RecognitionSettings();
-Aspose.OCR.RecognitionResult result = recognitionEngine.RecognizeImage("source.png",recognitionSettings);
-foreach(string warning in result.Warnings)
-{
-	Console.WriteLine(warning);
-}
-```
