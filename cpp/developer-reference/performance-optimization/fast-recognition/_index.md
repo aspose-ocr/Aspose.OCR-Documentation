@@ -4,6 +4,7 @@ date: "2022-12-10"
 author: "Vladimir Lapin"
 type: docs
 url: /cpp/fast-recognition/
+feedback: OCRCPP
 title: Fast recognition
 description: How to read text from high-quality scans using as few resources as possible.
 keywords:

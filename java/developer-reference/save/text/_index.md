@@ -4,6 +4,7 @@ date: "2022-10-03"
 author: "Vladimir Lapin"
 type: docs
 url: /java/save-text/
+feedback: OCRJAVA
 title: Getting recognition results as text
 description: Returning Aspose.OCR for Java recognition results as formatted text.
 keywords:

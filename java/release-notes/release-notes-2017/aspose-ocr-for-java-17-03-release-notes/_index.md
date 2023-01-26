@@ -3,6 +3,7 @@ title: Aspose.OCR for Java 17.03 - Release Notes
 type: docs
 weight: 30
 url: /java/aspose-ocr-for-java-17-03-release-notes/
+feedback: OCRJAVA
 ---
 
 Aspose.OCR for Java has been updated to version 17.03 and we are pleased to announce it.

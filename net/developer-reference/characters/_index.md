@@ -4,6 +4,7 @@ date: "2022-08-22"
 author: "Vladimir Lapin"
 type: docs
 url: /net/characters/
+feedback: OCRNET
 title: Defining recognized characters
 description: Defining allow- and denylist of characters that Aspose.OCR looks for.
 keywords:

@@ -4,6 +4,7 @@ date: "2023-01-12"
 author: "Vladimir Lapin"
 type: docs
 url: /net/product-overview/
+feedback: OCRNET
 title: Product overview
 description: An introduction to OCR technology and how Aspose.OCR for .NET can help you use it for your day-to-day business needs.
 keywords:

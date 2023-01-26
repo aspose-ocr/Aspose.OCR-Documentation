@@ -4,6 +4,7 @@ date: "2022-12-07"
 author: "Vladimir Lapin"
 type: docs
 url: /cpp/how-to-run-the-examples/
+feedback: OCRCPP
 title: How to run examples
 description: Explore our sample applications to learn about the features and capabilities of Aspose.OCR for C++.
 keywords:

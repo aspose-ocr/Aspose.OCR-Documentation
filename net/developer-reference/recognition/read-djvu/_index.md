@@ -4,6 +4,7 @@ date: "2022-11-07"
 author: "Vladimir Lapin"
 type: docs
 url: /net/recognition/djvu/
+feedback: OCRNET
 aliases:
 - /net/recognize-multipage-djvu/
 title: Extracting text from DjVu file

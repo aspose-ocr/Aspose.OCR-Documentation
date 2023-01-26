@@ -4,6 +4,7 @@ date: "2023-01-12"
 author: "Vladimir Lapin"
 type: docs
 url: /net/recognition-languages/
+feedback: OCRNET
 aliases:
 - /net/supported-characters/
 title: Recognition languages

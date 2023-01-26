@@ -4,6 +4,7 @@ date: "2022-12-10"
 author: "Vladimir Lapin"
 type: docs
 url: /cpp/image-regions-extract/
+feedback: OCRCPP
 aliases:
 - /cpp/perform-ocr-on-the-selected-area-of-an-image/
 title: Extracting text inside a rectangle

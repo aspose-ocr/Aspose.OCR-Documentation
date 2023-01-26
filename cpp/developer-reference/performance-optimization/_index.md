@@ -4,6 +4,7 @@ date: "2022-12-10"
 author: "Vladimir Lapin"
 type: docs
 url: /cpp/performance-optimization/
+feedback: OCRCPP
 title: Performance optimization
 description: Increase recognition speed and optimize resource usage.
 keywords:

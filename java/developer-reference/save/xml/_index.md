@@ -4,6 +4,7 @@ date: "2022-10-03"
 author: "Vladimir Lapin"
 type: docs
 url: /java/save-xml/
+feedback: OCRJAVA
 title: Getting recognition results as XML
 description: Returning Aspose.OCR for Java recognition results in XML format.
 keywords:

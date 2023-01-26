@@ -4,6 +4,7 @@ date: "2022-12-06"
 author: "Vladimir Lapin"
 type: docs
 url: /cpp/grayscale/
+feedback: OCRCPP
 title: Conversion to grayscale
 description: How to convert source images to grayscale before recognition.
 keywords:

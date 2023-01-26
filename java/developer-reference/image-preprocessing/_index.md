@@ -4,6 +4,7 @@ date: "2022-09-24"
 author: "Vladimir Lapin"
 type: docs
 url: /java/image-preprocessing/
+feedback: OCRJAVA
 title: Image preprocessing
 description: Automatic or manual actions for formatting an image before sending it for recognition.
 aliases:

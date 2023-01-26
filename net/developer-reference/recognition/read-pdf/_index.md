@@ -4,6 +4,7 @@ date: "2022-09-09"
 author: "Vladimir Lapin"
 type: docs
 url: /net/recognition/pdf/
+feedback: OCRNET
 aliases:
 - /net/recognize-scanned-pdf/
 title: Extracting text from PDF document

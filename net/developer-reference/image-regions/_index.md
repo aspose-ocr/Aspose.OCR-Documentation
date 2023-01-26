@@ -4,6 +4,7 @@ date: "2022-08-31"
 author: "Vladimir Lapin"
 type: docs
 url: /net/image-regions/
+feedback: OCRNET
 aliases:
 - /net/get-rectangles/
 title: Working with image regions

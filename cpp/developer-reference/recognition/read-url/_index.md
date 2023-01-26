@@ -4,6 +4,7 @@ date: "2022-12-07"
 author: "Vladimir Lapin"
 type: docs
 url: /cpp/recognition/url/
+feedback: OCRCPP
 aliases:
 - /cpp/performing-ocr-on-an-image-from-url/
 title: Extracting text from URL

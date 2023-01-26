@@ -4,6 +4,7 @@ date: "2022-12-07"
 author: "Vladimir Lapin"
 type: docs
 url: /cpp/developer-reference/
+feedback: OCRCPP
 aliases:
 - /cpp/developer-guide/
 title: Developer's reference

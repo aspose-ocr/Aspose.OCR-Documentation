@@ -4,6 +4,7 @@ date: "2022-08-15"
 author: "Vladimir Lapin"
 type: docs
 url: /net/grayscale/
+feedback: OCRNET
 title: Conversion to grayscale
 description: How to convert source images to grayscale before recognition.
 keywords:

@@ -4,6 +4,7 @@ date: "2022-09-29"
 author: "Vladimir Lapin"
 type: docs
 url: /java/recognition/
+feedback: OCRJAVA
 title: Recognition
 description: Extracting text from images, web links, and PDF documents.
 keywords:

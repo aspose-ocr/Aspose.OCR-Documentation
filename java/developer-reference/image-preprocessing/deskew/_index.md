@@ -4,6 +4,7 @@ date: "2022-09-24"
 author: "Vladimir Lapin"
 type: docs
 url: /java/deskew/
+feedback: OCRJAVA
 aliases:
 - /java/working-with-the-skew-angle-of-the-image/
 title: Skew correction

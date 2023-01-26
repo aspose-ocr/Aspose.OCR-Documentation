@@ -4,6 +4,7 @@ date: "2022-08-22"
 author: "Vladimir Lapin"
 type: docs
 url: /net/characters-blacklist/
+feedback: OCRNET
 aliases:
 - /net/provide-ignored-characters-during-ocr-operation/
 title: Defining the blacklist of characters

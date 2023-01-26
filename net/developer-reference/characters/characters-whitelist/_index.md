@@ -4,6 +4,7 @@ date: "2022-08-22"
 author: "Vladimir Lapin"
 type: docs
 url: /net/characters-whitelist/
+feedback: OCRNET
 aliases:
 - /net/provide-allowed-characters-during-ocr-operation/
 title: Defining the whitelist of characters

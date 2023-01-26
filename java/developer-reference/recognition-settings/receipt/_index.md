@@ -4,6 +4,7 @@ date: "2022-09-27"
 author: "Vladimir Lapin"
 type: docs
 url: /java/recognition-settings-receipt/
+feedback: OCRJAVA
 title: Receipt recognition settings
 description: Configuring Aspose.OCR for Java recognition engine for extracting text from scanned receipts.
 keywords:

@@ -4,6 +4,7 @@ date: "2022-10-04"
 author: "Vladimir Lapin"
 type: docs
 url: /java/recognize-single-line/
+feedback: OCRJAVA
 title: Recognize single line
 description: How to read text from images containing a single line of text.
 keywords:

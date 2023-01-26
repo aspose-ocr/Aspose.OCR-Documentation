@@ -4,6 +4,7 @@ date: "2023-01-17"
 author: "Vladimir Lapin"
 type: docs
 url: /net/recognition-settings-invoice/
+feedback: OCRNET
 title: Invoice recognition settings
 description: Configuring Aspose.OCR for .NET recognition engine for extracting text from invoice images.
 keywords:

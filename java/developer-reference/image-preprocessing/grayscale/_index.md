@@ -4,6 +4,7 @@ date: "2022-09-24"
 author: "Vladimir Lapin"
 type: docs
 url: /java/grayscale/
+feedback: OCRJAVA
 title: Conversion to grayscale
 description: How to convert source images to grayscale before recognition.
 keywords:

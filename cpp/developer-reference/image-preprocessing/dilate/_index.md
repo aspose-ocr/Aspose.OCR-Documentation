@@ -4,6 +4,7 @@ date: "2022-12-06"
 author: "Vladimir Lapin"
 type: docs
 url: /cpp/dilate/
+feedback: OCRCPP
 title: Dilation
 description: How to make characters in an image thicker to improve recognition accuracy.
 keywords:

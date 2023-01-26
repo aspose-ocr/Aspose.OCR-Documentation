@@ -4,6 +4,7 @@ date: "2022-09-30"
 author: "Vladimir Lapin"
 type: docs
 url: /java/misspelled-words-list/
+feedback: OCRJAVA
 title: Getting the list of misspelled words
 description: How to get the list of misspelled words and replacement suggestions.
 keywords:

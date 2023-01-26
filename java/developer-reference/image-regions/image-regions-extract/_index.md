@@ -4,6 +4,7 @@ date: "2022-09-30"
 author: "Vladimir Lapin"
 type: docs
 url: /java/image-regions-extract/
+feedback: OCRJAVA
 aliases:
 - /java/perform-ocr-on-selected-areas-of-an-image/
 title: Extracting text inside a rectangle

@@ -4,6 +4,7 @@ date: "2022-11-07"
 author: "Vladimir Lapin"
 type: docs
 url: /net/recognition-settings-image/
+feedback: OCRNET
 aliases:
 - /net/recognition-settings/
 title: Image recognition settings

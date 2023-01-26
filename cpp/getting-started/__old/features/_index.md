@@ -3,6 +3,7 @@ title: Features
 type: docs
 weight: 20
 url: /cpp/features/
+feedback: OCRCPP
 ---
 
 ## **Features**

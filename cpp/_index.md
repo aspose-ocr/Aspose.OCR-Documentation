@@ -4,6 +4,7 @@ date: "2022-10-20"
 author: "Vladimir Lapin"
 type: docs
 url: /cpp/
+feedback: OCRCPP
 is_root: true
 title: Aspose.OCR for C++
 description: Aspose.OCR for C++ is an easy-to-use C and C++ API for converting scanned images and photographs to text.

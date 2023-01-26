@@ -4,6 +4,7 @@ date: "2023-01-20"
 author: "Vladimir Lapin"
 type: docs
 url: /net/find-text/
+feedback: OCRNET
 title: Finding text in an image
 description: How to determine if an image contains provided text.
 keywords:

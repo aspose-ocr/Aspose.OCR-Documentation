@@ -4,6 +4,7 @@ date: "2022-12-06"
 author: "Vladimir Lapin"
 type: docs
 url: /cpp/invert/
+feedback: OCRCPP
 title: Color inversion
 description: How to swap colors in an image to improve recognition accuracy.
 keywords:

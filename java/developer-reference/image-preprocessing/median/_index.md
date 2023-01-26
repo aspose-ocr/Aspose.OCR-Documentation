@@ -4,6 +4,7 @@ date: "2022-09-24"
 author: "Vladimir Lapin"
 type: docs
 url: /java/median/
+feedback: OCRJAVA
 title: Median filter
 description: How to smooth out noise in an image before applying other preprocessing filters or performing OCR.
 keywords:

@@ -4,6 +4,7 @@ date: "2023-01-17"
 author: "Vladimir Lapin"
 type: docs
 url: /net/recognition/passport/
+feedback: OCRNET
 title: Extracting text from passport images
 description: How to digitize scanned or photographed passports by automatically extracting text from them.
 keywords:

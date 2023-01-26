@@ -4,6 +4,7 @@ date: "2022-12-10"
 author: "Vladimir Lapin"
 type: docs
 url: /cpp/save-text/
+feedback: OCRCPP
 title: Getting recognition results as text
 description: Returning Aspose.OCR for C++ recognition results as formatted text.
 keywords:

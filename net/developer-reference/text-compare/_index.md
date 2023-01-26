@@ -4,6 +4,7 @@ date: "2023-01-20"
 author: "Vladimir Lapin"
 type: docs
 url: /net/image-text-compare/
+feedback: OCRNET
 title: Comparing text in images
 description: How to compare texts on two images.
 keywords:

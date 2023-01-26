@@ -4,6 +4,7 @@ date: "2022-08-31"
 author: "Vladimir Lapin"
 type: docs
 url: /net/image-regions-paragraph-find/
+feedback: OCRNET
 title: Finding paragraph bounding boxes
 description: Automatic detection of paragraph bounding boxes inside an image.
 keywords:

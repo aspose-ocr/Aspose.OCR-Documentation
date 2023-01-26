@@ -4,6 +4,7 @@ date: "2022-11-08"
 author: "Vladimir Lapin"
 type: docs
 url: /java/recognition/receipt/
+feedback: OCRJAVA
 title: Extracting text from receipt
 description: How to digitize scanned receipts by automatically extracting text from them.
 keywords:

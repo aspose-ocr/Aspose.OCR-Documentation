@@ -4,6 +4,7 @@ date: "2022-10-21"
 author: "Vladimir Lapin"
 type: docs
 url: /cpp/installation/gpu/
+feedback: OCRCPP
 title: Installing GPU-accelearated package
 description: Adding GPU-accelerated package of Aspose.OCR for .NET to your project.
 keywords:

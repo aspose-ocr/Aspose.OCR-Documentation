@@ -4,6 +4,7 @@ date: "2022-08-26"
 author: "Vladimir Lapin"
 type: docs
 url: /net/deskew/
+feedback: OCRNET
 aliases:
 - /net/working-with-the-skew-angle-of-the-image/
 - /net/enable-or-disable-text-area-detection-and-skew-correction/

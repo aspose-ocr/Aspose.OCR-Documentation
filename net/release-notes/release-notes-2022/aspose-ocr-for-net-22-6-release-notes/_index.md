@@ -4,6 +4,7 @@ date: "2022-06-30"
 author: "Vladimir Lapin"
 type: docs
 url: /net/aspose-ocr-for-net-22-6-release-notes/
+feedback: OCRNET
 title: Aspose.OCR for .NET 22.6 - Release Notes
 description: A summary of recent changes, enhancements and bug fixes in Aspose.OCR for .NET 22.6 (June 2022) release.
 keywords:

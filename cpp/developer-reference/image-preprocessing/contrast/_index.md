@@ -4,6 +4,7 @@ date: "2022-12-06"
 author: "Vladimir Lapin"
 type: docs
 url: /cpp/contrast/
+feedback: OCRCPP
 title: Contrast correction
 description: How to automatically increase image contrast to improve recognition accuracy.
 keywords:

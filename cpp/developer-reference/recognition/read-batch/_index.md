@@ -4,8 +4,10 @@ date: "2022-12-09"
 author: "Vladimir Lapin"
 type: docs
 url: /cpp/batch-recognition/
+feedback: OCRCPP
 aliases:
 - /cpp/array-of-images/
+- /cpp/folders-and-archives/
 title: Batch recognition
 description: How to read text from a multiple raster images, folder, or ZIP archive.
 keywords:

@@ -4,6 +4,7 @@ date: "2022-09-16"
 author: "Vladimir Lapin"
 type: docs
 url: /java/system-requirements/
+feedback: OCRJAVA
 title: System requirements
 description: Minimum requirements and prerequisites for developing applications with Aspose.OCR for Java.
 keywords:

@@ -3,6 +3,7 @@ title: Aspose.OCR for .NET 17.11 - Release Notes
 type: docs
 weight: 10
 url: /net/aspose-ocr-for-net-17-11-release-notes/
+feedback: OCRNET
 ---
 
 {{% alert color="primary" %}} 

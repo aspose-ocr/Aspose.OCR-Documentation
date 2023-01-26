@@ -4,6 +4,7 @@ date: "2022-12-07"
 author: "Vladimir Lapin"
 type: docs
 url: /cpp/hello-world/
+feedback: OCRCPP
 title: Hello, world!
 description: Get started with Aspose.OCR for C++ by creating and running a bare minimum example.
 keywords:

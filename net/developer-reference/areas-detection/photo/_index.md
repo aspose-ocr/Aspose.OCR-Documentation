@@ -4,6 +4,7 @@ date: "2022-08-19"
 author: "Vladimir Lapin"
 type: docs
 url: /net/areas-detection/photo/
+feedback: OCRNET
 title:  DetectAreasMode.PHOTO
 description: How Aspose.OCR determines the structure of a document using the DetectAreasMode.PHOTO algorithm.
 keywords:

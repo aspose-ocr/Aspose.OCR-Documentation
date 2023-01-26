@@ -4,6 +4,7 @@ date: "2022-09-09"
 author: "Vladimir Lapin"
 type: docs
 url: /net/recognition/url/
+feedback: OCRNET
 aliases:
 - /net/performing-ocr-on-an-image-from-url/
 title: Extracting text from URL

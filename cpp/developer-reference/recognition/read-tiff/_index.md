@@ -4,6 +4,7 @@ date: "2022-12-07"
 author: "Vladimir Lapin"
 type: docs
 url: /cpp/recognition/tiff/
+feedback: OCRCPP
 aliases:
 - /cpp/recognize-multipage-tiff/
 title: Extracting text from TIFF image

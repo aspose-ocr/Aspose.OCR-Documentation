@@ -4,6 +4,7 @@ date: "2022-09-23"
 author: "Vladimir Lapin"
 type: docs
 url: /net/recognition-settings-receipt/
+feedback: OCRNET
 title: Receipt recognition settings
 description: Configuring Aspose.OCR for .NET recognition engine for extracting text from scanned receipts.
 keywords:

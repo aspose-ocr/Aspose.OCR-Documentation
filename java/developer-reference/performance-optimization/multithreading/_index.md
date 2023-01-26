@@ -4,6 +4,7 @@ date: "2022-10-04"
 author: "Vladimir Lapin"
 type: docs
 url: /java/multithreading/
+feedback: OCRJAVA
 aliases:
 - /java/multithreading-support-in-recognition/
 title: Multithreading support

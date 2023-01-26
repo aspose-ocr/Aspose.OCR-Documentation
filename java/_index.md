@@ -4,9 +4,12 @@ date: "2023-01-16"
 author: "Vladimir Lapin"
 type: docs
 url: /java/
+feedback: OCRJAVA
 is_root: true
 aliases: 
 - /display/OCRJAVA/
+- /java/setting-mark-threshold-in-ruby/
+- /java/setting-the-ocrengine-to-automatically-detect-the-text-blocks-in-ruby/
 title: Aspose.OCR for Java
 description: Aspose.OCR for Java is an easy-to-use Java API for converting scanned images and photographs to text.
 keywords:

@@ -4,6 +4,7 @@ date: "2022-09-06"
 author: "Vladimir Lapin"
 type: docs
 url: /net/save-xml/
+feedback: OCRNET
 title: Getting recognition results as XML
 description: Returning Aspose.OCR for .NET recognition results in XML format.
 keywords:

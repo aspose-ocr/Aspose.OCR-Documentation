@@ -4,6 +4,7 @@ date: "2023-01-16"
 author: "Vladimir Lapin"
 type: docs
 url: /java/recognition-languages/
+feedback: OCRJAVA
 aliases:
 - /java/supported-characters/
 title: Recognition languages

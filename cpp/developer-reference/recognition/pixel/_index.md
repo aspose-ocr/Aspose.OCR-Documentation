@@ -4,6 +4,7 @@ date: "2022-12-09"
 author: "Vladimir Lapin"
 type: docs
 url: /cpp/recognition/pixel/
+feedback: OCRCPP
 title: Extracting text from pixel array
 description: Extracting text from an image, provided as an array of pixels.
 keywords:

@@ -4,6 +4,7 @@ date: "2022-09-09"
 author: "Vladimir Lapin"
 type: docs
 url: /net/recognition/pixel/
+feedback: OCRNET
 title: Extracting text from pixel array
 description: Extracting text from an image, provided as an array of bytes or an array of Aspose.Drawing.Color objects.
 keywords:

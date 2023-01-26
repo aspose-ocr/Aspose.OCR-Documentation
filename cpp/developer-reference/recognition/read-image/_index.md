@@ -4,6 +4,7 @@ date: "2022-12-09"
 author: "Vladimir Lapin"
 type: docs
 url: /cpp/recognition/image/
+feedback: OCRCPP
 aliases:
 - /cpp/perform-ocr-on-an-image/
 title: Extracting text from an image

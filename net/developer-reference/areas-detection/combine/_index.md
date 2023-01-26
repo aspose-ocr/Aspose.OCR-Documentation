@@ -4,6 +4,7 @@ date: "2022-08-19"
 author: "Vladimir Lapin"
 type: docs
 url: /net/areas-detection/combine/
+feedback: OCRNET
 title:  DetectAreasMode.COMBINE
 description: How Aspose.OCR determines the structure of a document using the DetectAreasMode.COMBINE algorithm.
 keywords:

@@ -3,6 +3,7 @@ title: How to Run the Examples
 type: docs
 weight: 60
 url: /cpp/how-to-run-the-examples/
+feedback: OCRCPP
 ---
 
 ## **Download from GitHub**

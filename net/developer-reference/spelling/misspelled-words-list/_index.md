@@ -4,6 +4,7 @@ date: "2022-09-02"
 author: "Vladimir Lapin"
 type: docs
 url: /net/misspelled-words-list/
+feedback: OCRNET
 title: Getting the list of misspelled words
 description: How to get the list of misspelled words and replacement suggestions.
 keywords:

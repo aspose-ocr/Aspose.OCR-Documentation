@@ -4,6 +4,7 @@ date: "2022-08-26"
 author: "Vladimir Lapin"
 type: docs
 url: /net/image-preprocessing/
+feedback: OCRNET
 title: Image preprocessing
 description: Automatic or manual actions for formatting an image before sending it for recognition.
 aliases:

@@ -4,6 +4,7 @@ date: "2022-11-07"
 author: "Vladimir Lapin"
 type: docs
 url: /net/recognition-settings-document/
+feedback: OCRNET
 title: Multi-page document recognition settings
 description: Configuring Aspose.OCR for .NET recognition engine for extracting text from multi-page images and PDF documents.
 keywords:

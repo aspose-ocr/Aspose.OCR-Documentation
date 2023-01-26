@@ -4,6 +4,7 @@ date: "2022-08-23"
 author: "Vladimir Lapin"
 type: docs
 url: /net/hello-world/
+feedback: OCRNET
 title: Hello, world!
 description: Get started with Aspose.OCR for .NET by creating and running a bare minimum example.
 keywords:

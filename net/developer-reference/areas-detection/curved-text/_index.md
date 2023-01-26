@@ -4,6 +4,7 @@ date: "2022-11-15"
 author: "Vladimir Lapin"
 type: docs
 url: /net/areas-detection/curved_text/
+feedback: OCRNET
 title:  DetectAreasMode.CURVED_TEXT
 description: How Aspose.OCR determines the structure of a document using the DetectAreasMode.CURVED_TEXT algorithm.
 keywords:

@@ -4,6 +4,7 @@ date: "2022-09-28"
 author: "Vladimir Lapin"
 type: docs
 url: /java/areas-detection/
+feedback: OCRJAVA
 aliases:
 - /java/detect-areas-mode/
 title:  Document areas detection

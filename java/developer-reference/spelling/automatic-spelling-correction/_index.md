@@ -4,6 +4,7 @@ date: "2022-09-30"
 author: "Vladimir Lapin"
 type: docs
 url: /java/automatic-spelling-correction/
+feedback: OCRJAVA
 aliases:
 - /java/spelling-correction/
 - /java/result-correction-with-spell-checking/

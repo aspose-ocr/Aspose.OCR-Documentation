@@ -4,6 +4,7 @@ date: "2022-09-29"
 author: "Vladimir Lapin"
 type: docs
 url: /java/batch-recognition/
+feedback: OCRJAVA
 title: Batch recognition
 description: How to read text from a multiple raster images, folder, or ZIP archive.
 keywords:

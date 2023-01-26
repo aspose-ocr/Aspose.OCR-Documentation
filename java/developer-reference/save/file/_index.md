@@ -4,6 +4,7 @@ date: "2023-01-16"
 author: "Vladimir Lapin"
 type: docs
 url: /java/save-file/
+feedback: OCRJAVA
 aliases:
 - /java/get-ocr-result-as-file/
 - /java/save-ocr-result-as-multipage-document/

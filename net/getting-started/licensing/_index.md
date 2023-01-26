@@ -4,6 +4,7 @@ date: "2022-06-08"
 author: "Vladimir Lapin"
 type: docs
 url: /net/licensing/
+feedback: OCRNET
 aliases:
 - /net/evaluate-aspose-ocr/
 title: Licensing

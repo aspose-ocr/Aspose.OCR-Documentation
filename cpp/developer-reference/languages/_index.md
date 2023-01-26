@@ -4,6 +4,7 @@ date: "2022-12-08"
 author: "Vladimir Lapin"
 type: docs
 url: /cpp/languages/
+feedback: OCRCPP
 aliases:
 - /cpp/working-with-different-languages/
 title: Recognition languages

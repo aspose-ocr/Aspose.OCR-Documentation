@@ -4,6 +4,7 @@ date: "2023-01-23"
 author: "Vladimir Lapin"
 type: docs
 url: /net/monitor/
+feedback: OCRNET
 title: Monitoring
 description: How to monitor recognition progress, check for possible problems, and identify recognition errors.
 keywords:

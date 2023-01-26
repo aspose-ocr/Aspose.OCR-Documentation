@@ -4,6 +4,7 @@ date: "2022-12-06"
 author: "Vladimir Lapin"
 type: docs
 url: /cpp/binarization/
+feedback: OCRCPP
 aliases:
 - /cpp/custom-image-correction-with-threshold-setting/
 title: Binarization

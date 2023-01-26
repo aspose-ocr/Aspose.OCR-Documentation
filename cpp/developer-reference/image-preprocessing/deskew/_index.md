@@ -4,6 +4,7 @@ date: "2022-12-06"
 author: "Vladimir Lapin"
 type: docs
 url: /cpp/deskew/
+feedback: OCRCPP
 aliases:
 - /cpp/working-with-the-skew-angle-of-the-image/
 title: Skew correction

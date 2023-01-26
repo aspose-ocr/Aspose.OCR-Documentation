@@ -4,6 +4,7 @@ date: "2022-08-26"
 author: "Vladimir Lapin"
 type: docs
 url: /java/aspose-ocr-for-java-22-8-release-notes/
+feedback: OCRJAVA
 title: Aspose.OCR for Java 22.8 - Release Notes
 description: A summary of recent changes, enhancements and bug fixes in Aspose.OCR for Java 22.8 (August 2022) release.
 keywords:

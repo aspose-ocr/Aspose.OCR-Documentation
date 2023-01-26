@@ -4,6 +4,7 @@ date: "2023-01-12"
 author: "Vladimir Lapin"
 type: docs
 url: /net/system-requirements/
+feedback: OCRNET
 title: System requirements
 description: Minimum requirements and prerequisites for developing applications with Aspose.OCR for .NET.
 keywords:

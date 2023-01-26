@@ -4,6 +4,7 @@ date: "2023-01-16"
 author: "Vladimir Lapin"
 type: docs
 url: /java/product-overview/
+feedback: OCRJAVA
 title: Product overview
 description: An introduction to OCR technology and how Aspose.OCR for Java can help you use it for your day-to-day business needs.
 keywords:

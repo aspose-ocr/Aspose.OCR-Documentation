@@ -4,6 +4,7 @@ date: "2022-09-30"
 author: "Vladimir Lapin"
 type: docs
 url: /java/image-regions/
+feedback: OCRJAVA
 aliases:
 - /java/get-text-areas-on-the-page/
 - /java/extracting-text-from-part-of-an-image-in-php/

@@ -4,6 +4,7 @@ date: "2022-09-30"
 author: "Vladimir Lapin"
 type: docs
 url: /java/image-line-extract/
+feedback: OCRJAVA
 title: Extracting lines with coordinates
 description: Automatic detection of line bounding boxes during recognition.
 keywords:

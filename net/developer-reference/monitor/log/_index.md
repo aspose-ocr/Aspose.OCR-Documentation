@@ -4,6 +4,7 @@ date: "2023-01-23"
 author: "Vladimir Lapin"
 type: docs
 url: /net/logging/
+feedback: OCRNET
 title: Logging recognition events
 description: How to output recognition events to the console or write them to a file.
 keywords:

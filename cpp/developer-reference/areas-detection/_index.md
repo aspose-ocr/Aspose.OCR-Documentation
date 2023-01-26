@@ -4,6 +4,7 @@ date: "2022-12-09"
 author: "Vladimir Lapin"
 type: docs
 url: /cpp/areas-detection/
+feedback: OCRCPP
 aliases:
 - /cpp/perform-ocr-without-automatic-text-area-detection/
 - /cpp/perform-ocr-with-mode-for-text-area-detectionn/

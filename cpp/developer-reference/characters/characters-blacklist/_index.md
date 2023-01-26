@@ -4,6 +4,7 @@ date: "2022-12-08"
 author: "Vladimir Lapin"
 type: docs
 url: /cpp/characters-blacklist/
+feedback: OCRCPP
 aliases:
 - /cpp/provide-ignored-characters-during-ocr-operation/
 title: Defining the blacklist of characters

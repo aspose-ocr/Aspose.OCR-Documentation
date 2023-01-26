@@ -4,6 +4,7 @@ date: "2023-01-23"
 author: "Vladimir Lapin"
 type: docs
 url: /net/recognition/
+feedback: OCRNET
 title: Recognition
 description: Extracting text from images, web links, PDF documents, and DjVu files.
 keywords:

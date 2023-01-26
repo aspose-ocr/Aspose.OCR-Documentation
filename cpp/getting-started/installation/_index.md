@@ -4,6 +4,7 @@ date: "2022-12-07"
 author: "Vladimir Lapin"
 type: docs
 url: /cpp/installation/
+feedback: OCRCPP
 title: Installation
 description: Adding or updating Aspose.OCR for C++ package in your project.
 keywords:

@@ -4,6 +4,7 @@ date: "2022-09-29"
 author: "Vladimir Lapin"
 type: docs
 url: /java/recognition/pixel/
+feedback: OCRJAVA
 title: Extracting text from pixel array
 description: Extracting text from an image, provided as an array of bytes or an array of Aspose.Drawing.Color objects.
 keywords:

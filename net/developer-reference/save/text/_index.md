@@ -4,6 +4,7 @@ date: "2022-09-06"
 author: "Vladimir Lapin"
 type: docs
 url: /net/save-text/
+feedback: OCRNET
 title: Getting recognition results as text
 description: Returning Aspose.OCR for .NET recognition results as formatted text.
 keywords:

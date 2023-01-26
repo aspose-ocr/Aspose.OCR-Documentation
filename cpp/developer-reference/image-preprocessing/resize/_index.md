@@ -4,6 +4,7 @@ date: "2022-12-06"
 author: "Vladimir Lapin"
 type: docs
 url: /cpp/resize/
+feedback: OCRCPP
 title: Resizing 
 description: How to resize an image to improve recognition accuracy.
 keywords:

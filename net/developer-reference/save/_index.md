@@ -4,6 +4,7 @@ date: "2022-09-06"
 author: "Vladimir Lapin"
 type: docs
 url: /net/save/
+feedback: OCRNET
 title: Saving recognition results
 description: Aspose.OCR for .NET can save OCR results to a text file or return them as text, XML, or JSON.
 keywords:

@@ -4,6 +4,7 @@ date: "2022-10-03"
 author: "Vladimir Lapin"
 type: docs
 url: /java/save-json/
+feedback: OCRJAVA
 aliases:
 - /java/get-ocr-result-as-json/
 title: Getting recognition results as JSON

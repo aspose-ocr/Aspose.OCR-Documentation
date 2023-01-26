@@ -4,6 +4,7 @@ date: "2022-09-23"
 author: "Vladimir Lapin"
 type: docs
 url: /net/batch-recognition/
+feedback: OCRNET
 title: Batch recognition
 description: How to read text from a multiple raster images, folder, or ZIP archive.
 keywords:

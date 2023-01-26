@@ -4,6 +4,7 @@ date: "2023-01-12"
 author: "Vladimir Lapin"
 type: docs
 url: /net/aspose-ocr-for-net-23-1-0-release-notes/
+feedback: OCRNET
 title: Aspose.OCR for .NET 23.1.0 - Release Notes
 description: A summary of recent changes, enhancements and bug fixes in Aspose.OCR for .NET 23.1.0 (January 2023) release.
 keywords:

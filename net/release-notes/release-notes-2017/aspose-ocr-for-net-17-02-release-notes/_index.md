@@ -3,6 +3,7 @@ title: Aspose.OCR for .NET 17.02 - Release Notes
 type: docs
 weight: 40
 url: /net/aspose-ocr-for-net-17-02-release-notes/
+feedback: OCRNET
 ---
 
 Aspose.OCR for .Net has been updated to version 17.02.0 and we are pleased to announce it.

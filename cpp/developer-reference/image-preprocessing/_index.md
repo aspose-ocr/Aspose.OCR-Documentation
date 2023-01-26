@@ -4,6 +4,7 @@ date: "2022-12-06"
 author: "Vladimir Lapin"
 type: docs
 url: /cpp/image-preprocessing/
+feedback: OCRCPP
 title: Image preprocessing
 description: Automatic or manual actions for formatting an image before sending it for recognition.
 aliases:

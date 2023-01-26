@@ -4,6 +4,7 @@ date: "2022-08-31"
 author: "Vladimir Lapin"
 type: docs
 url: /net/image-regions-word-find/
+feedback: OCRNET
 title: Finding word bounding boxes
 description: Automatic detection of word bounding boxes inside an image.
 keywords:

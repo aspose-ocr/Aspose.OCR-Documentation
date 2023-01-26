@@ -4,6 +4,7 @@ date: "2022-08-26"
 author: "Vladimir Lapin"
 type: docs
 url: /net/median/
+feedback: OCRNET
 title: Median filter
 description: How to smooth out noise in an image before applying other preprocessing filters or performing OCR.
 keywords:

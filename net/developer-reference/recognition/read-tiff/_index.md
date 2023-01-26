@@ -4,6 +4,7 @@ date: "2022-11-07"
 author: "Vladimir Lapin"
 type: docs
 url: /net/recognition/tiff/
+feedback: OCRNET
 aliases:
 - /net/recognize-multipage-tiff/
 title: Extracting text from multi-page TIFF

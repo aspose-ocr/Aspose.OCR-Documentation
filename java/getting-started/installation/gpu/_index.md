@@ -4,6 +4,7 @@ date: "2022-10-21"
 author: "Vladimir Lapin"
 type: docs
 url: /java/installation/gpu/
+feedback: OCRJAVA
 title: Installing GPU-accelearated package
 description: Adding GPU-accelerated package of Aspose.OCR for Java to your project.
 keywords:

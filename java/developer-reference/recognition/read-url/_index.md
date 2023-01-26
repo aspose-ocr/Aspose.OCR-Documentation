@@ -4,6 +4,7 @@ date: "2022-09-29"
 author: "Vladimir Lapin"
 type: docs
 url: /java/recognition/url/
+feedback: OCRJAVA
 aliases:
 - /java/performing-ocr-on-an-image-from-url/
 title: Extracting text from URL

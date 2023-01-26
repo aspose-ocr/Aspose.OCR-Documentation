@@ -4,6 +4,7 @@ date: "2022-12-10"
 author: "Vladimir Lapin"
 type: docs
 url: /cpp/image-regions-word-find/
+feedback: OCRCPP
 title: Finding word bounding boxes
 description: Automatic detection of word bounding boxes inside an image.
 keywords:

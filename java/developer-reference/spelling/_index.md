@@ -4,6 +4,7 @@ date: "2022-09-30"
 author: "Vladimir Lapin"
 type: docs
 url: /java/spelling/
+feedback: OCRJAVA
 title: Spell checker
 description: How to improve recognition accuracy by automatically finding and correcting spelling errors.
 keywords:

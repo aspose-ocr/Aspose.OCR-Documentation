@@ -4,6 +4,7 @@ date: "2022-09-24"
 author: "Vladimir Lapin"
 type: docs
 url: /java/denoise/
+feedback: OCRJAVA
 aliases:
 - /java/denoising-ai/
 title: Noise removal

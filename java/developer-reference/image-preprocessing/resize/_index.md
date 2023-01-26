@@ -4,6 +4,7 @@ date: "2022-09-24"
 author: "Vladimir Lapin"
 type: docs
 url: /java/resize/
+feedback: OCRJAVA
 title: Resizing 
 description: How to resize an image to improve recognition accuracy.
 keywords:

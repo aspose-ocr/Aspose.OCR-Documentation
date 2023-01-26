@@ -4,6 +4,7 @@ date: "2022-09-29"
 author: "Vladimir Lapin"
 type: docs
 url: /java/recognition/image/
+feedback: OCRJAVA
 aliases:
 - /java/perform-ocr-on-an-image/
 - /java/performing-ocr-on-an-image-in-ruby/

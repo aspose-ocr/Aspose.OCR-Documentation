@@ -4,6 +4,7 @@ date: "2022-09-24"
 author: "Vladimir Lapin"
 type: docs
 url: /java/binarization/
+feedback: OCRJAVA
 title: Binarization
 description: How to convert an image to black and white either automatically or by manually specifying a threshold.
 keywords:

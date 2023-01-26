@@ -4,6 +4,7 @@ date: "2023-01-19"
 author: "Vladimir Lapin"
 type: docs
 url: /net/recognition/base64/
+feedback: OCRNET
 title: Extracting text from Base64 encoded image
 description: How to read text from JPEG, PNG, TIFF, BMP, and GIF images provided as Base64 encoded string.
 keywords:

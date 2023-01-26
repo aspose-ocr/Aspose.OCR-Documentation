@@ -4,6 +4,7 @@ date: "2022-12-09"
 author: "Vladimir Lapin"
 type: docs
 url: /cpp/areas-detection/table/
+feedback: OCRCPP
 title:  detect_areas_mode_enum::TABLE
 description: How Aspose.OCR determines the structure of a document using the detect_areas_mode_enum::TABLE algorithm.
 keywords:

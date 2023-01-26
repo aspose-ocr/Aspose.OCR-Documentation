@@ -4,6 +4,7 @@ date: "2022-11-15"
 author: "Vladimir Lapin"
 type: docs
 url: /java/areas-detection/table/
+feedback: OCRJAVA
 title:  DetectAreasMode.TABLE
 description: How Aspose.OCR determines the structure of a document using the DetectAreasMode.TABLE algorithm.
 keywords:

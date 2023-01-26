@@ -3,6 +3,7 @@ title: Aspose.OCR for .NET 22.2 - Release Notes
 type: docs
 weight: 125
 url: /net/aspose-ocr-for-net-22-2-release-notes/
+feedback: OCRNET
 ---
 
 {{% alert color="primary" %}}

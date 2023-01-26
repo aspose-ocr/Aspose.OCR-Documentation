@@ -4,6 +4,7 @@ date: "2022-12-06"
 author: "Vladimir Lapin"
 type: docs
 url: /cpp/median/
+feedback: OCRCPP
 title: Median filter
 description: How to smooth out noise in an image before applying other preprocessing filters or performing OCR.
 keywords:

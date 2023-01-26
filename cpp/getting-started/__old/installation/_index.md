@@ -3,6 +3,7 @@ title: Installation
 type: docs
 weight: 70
 url: /cpp/installation/
+feedback: OCRCPP
 ---
 ## **WINDOWS**
 

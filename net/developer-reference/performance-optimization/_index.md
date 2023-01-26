@@ -4,6 +4,7 @@ date: "2022-09-08"
 author: "Vladimir Lapin"
 type: docs
 url: /net/performance-optimization/
+feedback: OCRNET
 title: Performance optimization
 description: Increase recognition speed and optimize resource usage.
 keywords:

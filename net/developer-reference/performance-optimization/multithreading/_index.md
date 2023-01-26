@@ -4,6 +4,7 @@ date: "2022-09-08"
 author: "Vladimir Lapin"
 type: docs
 url: /net/multithreading/
+feedback: OCRNET
 aliases:
 - /net/multithreading-support-in-recognition/
 title: Multithreading support

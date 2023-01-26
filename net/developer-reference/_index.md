@@ -4,6 +4,7 @@ date: "2022-06-09"
 author: "Vladimir Lapin"
 type: docs
 url: /net/developer-reference/
+feedback: OCRNET
 aliases:
 - /net/developer-guide/
 title: Developer's reference

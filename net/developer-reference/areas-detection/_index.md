@@ -4,6 +4,7 @@ date: "2022-11-15"
 author: "Vladimir Lapin"
 type: docs
 url: /net/areas-detection/
+feedback: OCRNET
 aliases:
 - /net/detect-areas-mode/
 - /net/perform-ocr-with-mode-for-text-area-detectionn/

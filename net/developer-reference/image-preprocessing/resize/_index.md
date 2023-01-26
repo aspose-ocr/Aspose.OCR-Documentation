@@ -4,6 +4,7 @@ date: "2022-08-11"
 author: "Vladimir Lapin"
 type: docs
 url: /net/resize/
+feedback: OCRNET
 title: Resizing 
 description: How to resize an image to improve recognition accuracy.
 keywords:

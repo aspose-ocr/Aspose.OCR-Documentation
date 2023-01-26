@@ -4,6 +4,7 @@ date: "2022-12-10"
 author: "Vladimir Lapin"
 type: docs
 url: /cpp/save-xml/
+feedback: OCRCPP
 title: Getting recognition results as XML
 description: Returning Aspose.OCR for C++ recognition results in XML format.
 keywords:

@@ -4,6 +4,7 @@ date: "2022-11-08"
 author: "Vladimir Lapin"
 type: docs
 url: /java/recognition/tiff/
+feedback: OCRJAVA
 aliases:
 - /java/recognize-tiff/
 - /ocr/java/perform-ocr-operation-on-a-multipage-tiff-in-ruby/

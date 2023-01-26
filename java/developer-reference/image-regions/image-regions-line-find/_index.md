@@ -4,6 +4,7 @@ date: "2022-09-30"
 author: "Vladimir Lapin"
 type: docs
 url: /java/image-regions-line-find/
+feedback: OCRJAVA
 aliases:
 - /java/result-get-lines/
 title: Finding line bounding boxes

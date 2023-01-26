@@ -4,6 +4,7 @@ date: "2022-06-09"
 author: "Vladimir Lapin"
 type: docs
 url: /net/
+feedback: OCRNET
 is_root: true
 title: Aspose.OCR for .NET
 description: Aspose.OCR for .NET is an easy-to-use .NET library for converting scanned images and photographs to text.

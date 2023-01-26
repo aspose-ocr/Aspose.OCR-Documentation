@@ -4,6 +4,7 @@ date: "2022-12-01"
 author: "Vladimir Lapin"
 type: docs
 url: /cpp/release-notes/latest/
+feedback: OCRCPP
 title: Latest release (December 2022)
 description: A summary of recent changes, enhancements and bug fixes in the latest release of Aspose.OCR for C++.
 keywords:

@@ -4,6 +4,7 @@ date: "2022-09-23"
 author: "Vladimir Lapin"
 type: docs
 url: /java/characters/
+feedback: OCRJAVA
 title: Defining recognized characters
 description: Defining allow- and denylist of characters that Aspose.OCR looks for.
 keywords:

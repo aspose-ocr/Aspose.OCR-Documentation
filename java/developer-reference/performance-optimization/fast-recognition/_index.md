@@ -4,6 +4,7 @@ date: "2022-10-04"
 author: "Vladimir Lapin"
 type: docs
 url: /java/fast-recognition/
+feedback: OCRJAVA
 title: Fast recognition
 description: How to read text from high-quality scans using as few resources as possible.
 keywords:

@@ -4,6 +4,7 @@ date: "2022-12-07"
 author: "Vladimir Lapin"
 type: docs
 url: /cpp/getting-started/
+feedback: OCRCPP
 title: Getting started
 description: Learn how to install and license Aspose.OCR for C++ and how to write simple OCR applications.
 keywords:

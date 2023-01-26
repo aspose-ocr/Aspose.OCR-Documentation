@@ -4,6 +4,7 @@ date: "2022-09-06"
 author: "Vladimir Lapin"
 type: docs
 url: /net/save-json/
+feedback: OCRNET
 aliases:
 - /net/get-ocr-result-as-json/
 title: Getting recognition results as JSON

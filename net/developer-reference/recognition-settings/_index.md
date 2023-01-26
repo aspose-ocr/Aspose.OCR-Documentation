@@ -4,6 +4,7 @@ date: "2023-01-17"
 author: "Vladimir Lapin"
 type: docs
 url: /net/settings/
+feedback: OCRNET
 title: Recognition settings
 description: How to improve recognition accuracy and tune up Aspose.OCR engine.
 keywords:

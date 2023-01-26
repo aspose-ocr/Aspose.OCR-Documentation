@@ -4,6 +4,7 @@ date: "2022-09-30"
 author: "Vladimir Lapin"
 type: docs
 url: /java/dictionaries/
+feedback: OCRJAVA
 title: Working with custom dictionaries
 description: How to create and apply custom dictionaries for Aspose.OCR spell checker.
 keywords:

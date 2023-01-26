@@ -4,6 +4,7 @@ date: "2023-01-12"
 author: "Vladimir Lapin"
 type: docs
 url: /net/save-file/
+feedback: OCRNET
 aliases:
 - /net/save-ocr-result-as-multipage-document/
 - /net/get-ocr-result-as-file/

@@ -4,6 +4,7 @@ date: "2023-01-16"
 author: "Vladimir Lapin"
 type: docs
 url: /java/supported-file-formats/
+feedback: OCRJAVA
 title: Supported file formats
 description: File formats for images and recognition results supported by Aspose.OCR for Java.
 keywords:

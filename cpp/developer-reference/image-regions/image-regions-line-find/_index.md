@@ -4,6 +4,7 @@ date: "2022-12-09"
 author: "Vladimir Lapin"
 type: docs
 url: /cpp/image-regions-line-find/
+feedback: OCRCPP
 title: Finding line bounding boxes
 description: Automatic detection of line bounding boxes inside an image.
 keywords:

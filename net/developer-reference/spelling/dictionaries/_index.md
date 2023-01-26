@@ -4,6 +4,7 @@ date: "2022-09-02"
 author: "Vladimir Lapin"
 type: docs
 url: /net/dictionaries/
+feedback: OCRNET
 title: Working with custom dictionaries
 description: How to create and apply custom dictionaries for Aspose.OCR spell checker.
 keywords:

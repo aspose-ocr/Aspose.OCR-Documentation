@@ -4,6 +4,7 @@ date: "2022-12-08"
 author: "Vladimir Lapin"
 type: docs
 url: /cpp/characters-identify/
+feedback: OCRCPP
 aliases:
 - /cpp/get-choices-for-recognized-characters/
 - /cpp/advanced-operations/

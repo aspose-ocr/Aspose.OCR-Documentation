@@ -4,6 +4,7 @@ date: "2022-11-23"
 author: "Vladimir Lapin"
 type: docs
 url: /cpp/aspose-ocr-for-cpp-22-11-0-release-notes/
+feedback: OCRCPP
 title: Aspose.OCR for C++ 22.11.0 - Release Notes
 description: A summary of recent changes, enhancements and bug fixes in the latest release of Aspose.OCR for C++.
 keywords:

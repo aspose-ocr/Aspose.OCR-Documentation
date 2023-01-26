@@ -4,6 +4,7 @@ date: "2023-01-23"
 author: "Vladimir Lapin"
 type: docs
 url: /net/track-progress/
+feedback: OCRNET
 title: Tracking recognition progress
 description: How to track the process of batch recognition and text extraction from multipage documents.
 keywords:

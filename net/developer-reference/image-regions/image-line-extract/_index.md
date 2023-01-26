@@ -4,6 +4,7 @@ date: "2022-09-01"
 author: "Vladimir Lapin"
 type: docs
 url: /net/image-line-extract/
+feedback: OCRNET
 aliases:
 - /net/result-get-lines/
 title: Extracting lines with coordinates

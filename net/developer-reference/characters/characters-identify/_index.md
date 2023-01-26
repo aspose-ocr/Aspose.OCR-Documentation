@@ -4,6 +4,7 @@ date: "2022-08-22"
 author: "Vladimir Lapin"
 type: docs
 url: /net/characters-identify/
+feedback: OCRNET
 aliases:
 - /net/get-choices-for-recognized-characters/
 title: Identifying the characters

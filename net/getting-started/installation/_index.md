@@ -4,6 +4,7 @@ date: "2022-06-09"
 author: "Vladimir Lapin"
 type: docs
 url: /net/installation/
+feedback: OCRNET
 title: Installation
 description: Adding or updating Aspose.OCR for .NET package in your project.
 keywords:

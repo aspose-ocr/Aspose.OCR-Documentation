@@ -4,6 +4,7 @@ date: "2022-12-09"
 author: "Vladimir Lapin"
 type: docs
 url: /cpp/recognition/receipt/
+feedback: OCRCPP
 title: Extracting text from receipt
 description: How to digitize scanned receipts by automatically extracting text from them.
 keywords:

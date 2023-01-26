@@ -4,6 +4,7 @@ date: "2022-09-28"
 author: "Vladimir Lapin"
 type: docs
 url: /java/areas-detection/document/
+feedback: OCRJAVA
 title: DetectAreasMode.DOCUMENT
 description: How Aspose.OCR determines the structure of a document using the DetectAreasMode.DOCUMENT algorithm.
 keywords:

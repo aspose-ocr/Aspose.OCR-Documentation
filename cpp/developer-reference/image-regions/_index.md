@@ -4,6 +4,7 @@ date: "2022-12-09"
 author: "Vladimir Lapin"
 type: docs
 url: /cpp/image-regions/
+feedback: OCRCPP
 aliases:
 - /cpp/get-rectangles/
 title: Working with image regions

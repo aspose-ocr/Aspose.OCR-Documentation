@@ -3,6 +3,7 @@ title: Aspose.OCR for .NET 16.12 - Release Notes
 type: docs
 weight: 10
 url: /net/aspose-ocr-for-net-16-12-release-notes/
+feedback: OCRNET
 ---
 
 Aspose.OCR for .Net has been updated to version 16.12 and we are pleased to announce it. The following is a list of changes in this version of Aspose.OCR.

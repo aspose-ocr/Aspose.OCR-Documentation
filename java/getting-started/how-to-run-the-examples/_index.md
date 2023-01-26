@@ -4,6 +4,7 @@ date: "2022-09-16"
 author: "Vladimir Lapin"
 type: docs
 url: /java/how-to-run-the-examples/
+feedback: OCRJAVA
 aliases:
 - /java/how-to-use-the-examples/
 title: How to run examples

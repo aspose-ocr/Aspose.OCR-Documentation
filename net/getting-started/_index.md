@@ -4,6 +4,7 @@ date: "2022-06-22"
 author: "Vladimir Lapin"
 type: docs
 url: /net/getting-started/
+feedback: OCRNET
 title: Getting started
 description: Learn how to install and license Aspose.OCR for .NET and how to write simple OCR applications.
 keywords:

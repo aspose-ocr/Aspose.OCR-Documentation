@@ -4,6 +4,7 @@ date: "2022-12-10"
 author: "Vladimir Lapin"
 type: docs
 url: /cpp/save-json/
+feedback: OCRCPP
 aliases:
 - /cpp/get-ocr-result-as-json/
 title: Getting recognition results as JSON

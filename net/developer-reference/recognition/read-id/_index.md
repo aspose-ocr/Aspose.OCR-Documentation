@@ -4,6 +4,7 @@ date: "2023-01-17"
 author: "Vladimir Lapin"
 type: docs
 url: /net/recognition/id-card/
+feedback: OCRNET
 title: Extracting text from ID cards
 description: How to digitize scanned or photographed ID cards by automatically extracting text from them.
 keywords:

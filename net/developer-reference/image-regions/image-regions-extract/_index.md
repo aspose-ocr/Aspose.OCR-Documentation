@@ -4,6 +4,7 @@ date: "2022-08-31"
 author: "Vladimir Lapin"
 type: docs
 url: /net/image-regions-extract/
+feedback: OCRNET
 aliases:
 - /net/perform-ocr-on-selected-areas-of-an-image/
 title: Extracting text inside a rectangle

@@ -4,6 +4,7 @@ date: "2022-09-16"
 author: "Vladimir Lapin"
 type: docs
 url: /java/installation/
+feedback: OCRJAVA
 aliases:
 - /java/installing-and-using-aspose-ocr-for-intellij-idea-maven/
 title: Installation

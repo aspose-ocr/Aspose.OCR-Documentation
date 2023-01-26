@@ -4,6 +4,7 @@ date: "2023-01-16"
 author: "Vladimir Lapin"
 type: docs
 url: /java/aspose-ocr-for-net-23-1-0-release-notes/
+feedback: OCRJAVA
 title: Aspose.OCR for Java 23.1.0 - Release Notes
 description: A summary of recent changes, enhancements and bug fixes in Aspose.OCR for Java 23.1.0 (January 2023) release.
 keywords:

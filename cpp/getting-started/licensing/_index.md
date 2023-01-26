@@ -4,6 +4,7 @@ date: "2022-12-07"
 author: "Vladimir Lapin"
 type: docs
 url: /cpp/licensing/
+feedback: OCRCPP
 title: Licensing
 description: Learn how to obtain and apply Aspose.OCR for C++ license and discover limitations of the trial version.
 keywords:

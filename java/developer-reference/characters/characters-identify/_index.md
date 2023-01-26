@@ -4,6 +4,7 @@ date: "2022-09-23"
 author: "Vladimir Lapin"
 type: docs
 url: /java/characters-identify/
+feedback: OCRJAVA
 aliases:
 - /java/get-choices-for-recognized-characters/
 title: Identifying the characters

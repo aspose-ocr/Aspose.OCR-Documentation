@@ -4,6 +4,7 @@ date: "2022-12-07"
 author: "Vladimir Lapin"
 type: docs
 url: /cpp/system-requirements/
+feedback: OCRCPP
 title: System requirements
 description: Minimum requirements and prerequisites for developing applications with Aspose.OCR for C++.
 keywords:

@@ -4,6 +4,7 @@ date: "2022-06-09"
 author: "Vladimir Lapin"
 type: docs
 url: /java/developer-reference/
+feedback: OCRJAVA
 aliases:
 - /java/developer-guide/
 title: Developer's reference

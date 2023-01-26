@@ -4,6 +4,7 @@ date: "2022-09-23"
 author: "Vladimir Lapin"
 type: docs
 url: /net/recognition/receipt/
+feedback: OCRNET
 title: Extracting text from receipt
 description: How to digitize scanned receipts by automatically extracting text from them.
 keywords:

@@ -3,6 +3,7 @@ title: System Requirements
 type: docs
 weight: 70
 url: /cpp/system-requirements/
+feedback: OCRCPP
 ---
 
 ## **Supported Operating Systems**

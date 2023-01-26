@@ -4,6 +4,7 @@ date: "2022-09-02"
 author: "Vladimir Lapin"
 type: docs
 url: /net/automatic-spelling-correction/
+feedback: OCRNET
 aliases:
 - /net/spelling-correction/
 - /net/result-correction-with-spell-checking/

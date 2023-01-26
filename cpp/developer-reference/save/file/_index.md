@@ -4,6 +4,7 @@ date: "2022-12-10"
 author: "Vladimir Lapin"
 type: docs
 url: /cpp/save-file/
+feedback: OCRCPP
 aliases:
 - /cpp/save-ocr-result-as-multipage-document/
 - /cpp/get-ocr-result-as-file/

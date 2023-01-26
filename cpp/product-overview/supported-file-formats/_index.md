@@ -4,6 +4,7 @@ date: "2022-11-08"
 author: "Vladimir Lapin"
 type: docs
 url: /cpp/supported-file-formats/
+feedback: OCRCPP
 title: Supported file formats
 description: File formats for images and recognition results supported by Aspose.OCR for C++.
 keywords:

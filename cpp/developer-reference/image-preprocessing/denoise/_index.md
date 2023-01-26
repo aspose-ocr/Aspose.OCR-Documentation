@@ -4,6 +4,7 @@ date: "2022-12-06"
 author: "Vladimir Lapin"
 type: docs
 url: /cpp/denoise/
+feedback: OCRCPP
 title: Noise removal
 description: How to remove dirt, spots, scratches, glare, and other image defects to improve recognition accuracy.
 aliases:

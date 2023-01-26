@@ -4,6 +4,7 @@ date: "2022-08-26"
 author: "Vladimir Lapin"
 type: docs
 url: /net/denoise/
+feedback: OCRNET
 title: Noise removal
 description: How to remove dirt, spots, scratches, glare, and other image defects to improve recognition accuracy.
 aliases:

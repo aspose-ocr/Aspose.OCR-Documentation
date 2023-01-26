@@ -4,9 +4,11 @@ date: "2022-09-27"
 author: "Vladimir Lapin"
 type: docs
 url: /java/settings/
+feedback: OCRJAVA
 aliases:
-- /ocr/java/setting-the-ocrengine-to-automatically-detect-the-text-blocks-in-php
-- /ocr/java/setting-the-ocrengine-to-automatically-detect-the-reading-order-in-ruby
+- /java/recognition-settings/
+- /java/setting-the-ocrengine-to-automatically-detect-the-text-blocks-in-php
+- /java/setting-the-ocrengine-to-automatically-detect-the-reading-order-in-ruby
 title: Recognition settings
 description: How to improve recognition accuracy and tune up Aspose.OCR engine.
 keywords:

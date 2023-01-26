@@ -4,6 +4,7 @@ date: "2022-12-10"
 author: "Vladimir Lapin"
 type: docs
 url: /cpp/save/
+feedback: OCRCPP
 title: Saving recognition results
 description: Aspose.OCR for C++ can save OCR results to a text file or return them as text, XML, or JSON.
 keywords:

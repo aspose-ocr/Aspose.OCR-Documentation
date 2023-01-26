@@ -4,6 +4,7 @@ date: "2022-10-20"
 author: "Vladimir Lapin"
 type: docs
 url: /cpp/product-overview/
+feedback: OCRCPP
 title: Product overview
 description: An introduction to OCR technology and how Aspose.OCR for C++ can help you use it for your day-to-day business needs.
 keywords:

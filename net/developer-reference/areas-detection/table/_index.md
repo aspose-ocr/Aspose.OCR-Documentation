@@ -4,6 +4,7 @@ date: "2022-11-15"
 author: "Vladimir Lapin"
 type: docs
 url: /net/areas-detection/table/
+feedback: OCRNET
 title:  DetectAreasMode.TABLE
 description: How Aspose.OCR determines the structure of a document using the DetectAreasMode.TABLE algorithm.
 keywords:

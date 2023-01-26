@@ -4,6 +4,7 @@ date: "2022-09-30"
 author: "Vladimir Lapin"
 type: docs
 url: /java/image-regions-paragraph-find/
+feedback: OCRJAVA
 title: Finding paragraph bounding boxes
 description: Automatic detection of paragraph bounding boxes inside an image.
 keywords:

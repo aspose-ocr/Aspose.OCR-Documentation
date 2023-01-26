@@ -3,6 +3,7 @@ title: Aspose.OCR for Java 17.11 - Release Notes
 type: docs
 weight: 10
 url: /java/aspose-ocr-for-java-17-11-release-notes/
+feedback: OCRJAVA
 ---
 
 {{% alert color="primary" %}} 

@@ -4,6 +4,7 @@ date: "2022-12-09"
 author: "Vladimir Lapin"
 type: docs
 url: /cpp/recognition/
+feedback: OCRCPP
 title: Recognition
 description: Extracting text from images , web links, or archives.
 keywords:

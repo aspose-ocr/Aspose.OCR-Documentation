@@ -4,6 +4,7 @@ date: "2022-08-26"
 author: "Vladimir Lapin"
 type: docs
 url: /net/invert/
+feedback: OCRNET
 title: Color inversion
 description: How to swap colors in an image to improve recognition accuracy.
 keywords:

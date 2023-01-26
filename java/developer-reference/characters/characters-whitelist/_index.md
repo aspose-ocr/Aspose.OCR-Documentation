@@ -4,6 +4,7 @@ date: "2022-09-23"
 author: "Vladimir Lapin"
 type: docs
 url: /java/characters-whitelist/
+feedback: OCRJAVA
 aliases:
 - /java/provide-allowed-characters-during-ocr-operation/
 title: Defining the whitelist of characters

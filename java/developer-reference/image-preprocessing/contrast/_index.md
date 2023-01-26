@@ -4,6 +4,7 @@ date: "2022-09-24"
 author: "Vladimir Lapin"
 type: docs
 url: /java/contrast/
+feedback: OCRJAVA
 title: Contrast correction
 description: How to automatically increase image contrast to improve recognition accuracy.
 keywords:

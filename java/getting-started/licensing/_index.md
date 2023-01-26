@@ -4,6 +4,7 @@ date: "2022-09-16"
 author: "Vladimir Lapin"
 type: docs
 url: /java/licensing/
+feedback: OCRJAVA
 aliases:
 - /java/evaluate-aspose-ocr/
 title: Licensing

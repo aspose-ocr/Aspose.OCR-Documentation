@@ -4,6 +4,7 @@ date: "2022-09-23"
 author: "Vladimir Lapin"
 type: docs
 url: /java/characters-blacklist/
+feedback: OCRJAVA
 aliases:
 - /java/provide-ignored-characters-during-ocr-operation/
 title: Defining the blacklist of characters

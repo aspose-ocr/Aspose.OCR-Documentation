@@ -4,6 +4,7 @@ date: "2022-09-08"
 author: "Vladimir Lapin"
 type: docs
 url: /net/fast-recognition/
+feedback: OCRNET
 title: Fast recognition
 description: How to read text from high-quality scans using as few resources as possible.
 keywords:

@@ -4,6 +4,7 @@ date: "2022-09-16"
 author: "Vladimir Lapin"
 type: docs
 url: /java/getting-started/
+feedback: OCRJAVA
 title: Getting started
 description: Learn how to install and license Aspose.OCR for Java and how to write simple OCR applications.
 keywords:

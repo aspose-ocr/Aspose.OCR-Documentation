@@ -4,6 +4,7 @@ date: "2022-12-09"
 author: "Vladimir Lapin"
 type: docs
 url: /cpp/image-regions-paragraph-find/
+feedback: OCRCPP
 title: Finding paragraph bounding boxes
 description: Automatic detection of paragraph bounding boxes inside an image.
 keywords:

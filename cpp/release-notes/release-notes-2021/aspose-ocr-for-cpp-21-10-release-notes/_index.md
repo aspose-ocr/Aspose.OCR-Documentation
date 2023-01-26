@@ -3,6 +3,7 @@ title: Aspose.OCR for CPP 21.10 Release Notes
 type: docs
 weight: 30
 url: /cpp/aspose-ocr-for-cpp-21.10-release-notes/
+feedback: OCRCPP
 ---
 
 {{% alert color="primary" %}}

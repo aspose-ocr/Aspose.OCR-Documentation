@@ -4,6 +4,7 @@ date: "2022-11-08"
 author: "Vladimir Lapin"
 type: docs
 url: /java/recognition/pdf/
+feedback: OCRJAVA
 aliases:
 - /java/recognize-scanned-pdf/
 title: Extracting text from PDF document

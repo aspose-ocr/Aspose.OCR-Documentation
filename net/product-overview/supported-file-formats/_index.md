@@ -4,6 +4,7 @@ date: "2023-01-12"
 author: "Vladimir Lapin"
 type: docs
 url: /net/supported-file-formats/
+feedback: OCRNET
 title: Supported file formats
 description: File formats for images and recognition results supported by Aspose.OCR.
 keywords:

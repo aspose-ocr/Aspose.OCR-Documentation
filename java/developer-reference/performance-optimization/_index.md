@@ -4,6 +4,7 @@ date: "2022-10-04"
 author: "Vladimir Lapin"
 type: docs
 url: /java/performance-optimization/
+feedback: OCRJAVA
 title: Performance optimization
 description: Increase recognition speed and optimize resource usage.
 keywords:

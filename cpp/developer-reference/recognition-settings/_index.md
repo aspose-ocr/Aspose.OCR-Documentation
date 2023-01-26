@@ -4,6 +4,7 @@ date: "2022-12-08"
 author: "Vladimir Lapin"
 type: docs
 url: /cpp/settings/
+feedback: OCRCPP
 title: Recognition settings
 description: How to improve recognition accuracy and tune up Aspose.OCR engine.
 keywords:

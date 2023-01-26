@@ -4,6 +4,7 @@ date: "2023-01-23"
 author: "Vladimir Lapin"
 type: docs
 url: /net/identify-problems/
+feedback: OCRNET
 title: Identifying recognition problems
 description: How to identify non-fatal errors that occurred during recognition.
 keywords:

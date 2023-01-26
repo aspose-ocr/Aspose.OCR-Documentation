@@ -4,6 +4,7 @@ date: "2022-08-26"
 author: "Vladimir Lapin"
 type: docs
 url: /net/contrast/
+feedback: OCRNET
 aliases:
 - /net/contrast-correction/
 title: Contrast correction

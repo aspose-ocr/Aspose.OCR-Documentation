@@ -4,6 +4,7 @@ date: "2022-08-26"
 author: "Vladimir Lapin"
 type: docs
 url: /net/binarization/
+feedback: OCRNET
 aliases:
 - /net/custom-image-correction-with-threshold-setting/
 - /net/binarization-threshold/

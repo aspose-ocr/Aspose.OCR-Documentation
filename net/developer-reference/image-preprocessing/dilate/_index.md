@@ -4,6 +4,7 @@ date: "2022-08-26"
 author: "Vladimir Lapin"
 type: docs
 url: /net/dilate/
+feedback: OCRNET
 title: Dilation
 description: How to make characters in an image thicker to improve recognition accuracy.
 keywords:

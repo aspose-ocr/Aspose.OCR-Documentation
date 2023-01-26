@@ -4,6 +4,7 @@ date: "2022-09-30"
 author: "Vladimir Lapin"
 type: docs
 url: /java/image-regions-word-find/
+feedback: OCRJAVA
 aliases:
 - /java/get-words-coordinates/
 title: Finding word bounding boxes

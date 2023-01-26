@@ -4,6 +4,7 @@ date: "2022-06-22"
 author: "Vladimir Lapin"
 type: docs
 url: /net/how-to-run-the-examples/
+feedback: OCRNET
 title: How to run examples
 description: Explore our sample applications to learn about the features and capabilities of Aspose.OCR for .NET.
 keywords:

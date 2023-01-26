@@ -4,6 +4,7 @@ date: "2022-12-08"
 author: "Vladimir Lapin"
 type: docs
 url: /cpp/characters/
+feedback: OCRCPP
 title: Defining recognized characters
 description: Defining allow- and denylist of characters that Aspose.OCR looks for.
 keywords:

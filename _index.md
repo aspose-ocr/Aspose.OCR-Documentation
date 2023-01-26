@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2022-06-09"
+date: "2023-01-16"
 author: "Vladimir Lapin"
 type: docs
 url: /
@@ -51,7 +51,7 @@ Find more information, download Aspose.OCR for .NET packages and get professiona
 
 [**Aspose.OCR for Java**](/ocr/java/) is an optical character recognition (OCR) library that allows you to add OCR functionality to your Java applications. Extremely complex mathematical and software algorithms are encapsulated in an easy-to-use API, saving you the time and effort required to develop an OCR solution from scratch.
 
-The library supports 26 languages based on Latin and Cyrillic scrips as well as Chinese. You can leave the language detection to Aspose.OCR for Java or set it yourself to increase the recognition performance and reliability. All popular typefaces such as Arial, Times New Roman, Courier New, Tahoma, Calibri and more in regular, bold and italic styles are detected and recognized.
+The library supports Latin, Cyrillic and Asian scrips, including Chinese. You can leave the language detection to Aspose.OCR for Java or set it yourself to increase the recognition performance and reliability. All popular typefaces such as Arial, Times New Roman, Courier New, Tahoma, Calibri and more in regular, bold and italic styles are detected and recognized.
 
 Aspose.OCR for Java comes with a number of plugins that allow you to use it in Ruby and PHP, and create Maven projects with IntelliJ IDEA.
 

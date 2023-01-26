@@ -4,6 +4,7 @@ date: "2022-09-08"
 author: "Vladimir Lapin"
 type: docs
 url: /net/recognize-single-line/
+feedback: OCRNET
 title: Recognize single line
 description: How to read text from images containing a single line of text.
 keywords:

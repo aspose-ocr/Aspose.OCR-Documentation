@@ -4,6 +4,7 @@ date: "2022-12-10"
 author: "Vladimir Lapin"
 type: docs
 url: /cpp/recognize-single-line/
+feedback: OCRCPP
 title: Recognize single line
 description: How to read text from images containing a single line of text.
 keywords:

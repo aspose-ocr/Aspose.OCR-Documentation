@@ -4,6 +4,7 @@ date: "2023-01-17"
 author: "Vladimir Lapin"
 type: docs
 url: /net/recognition/car-plate/
+feedback: OCRNET
 title: Extracting text from vehicle license plate images
 description: How to automatically extract text from scanned or photographed vehicle license plates.
 keywords:

@@ -3,6 +3,7 @@ title: Aspose.OCR for Java 20.10 - Release Notes
 type: docs
 weight: 6
 url: /java/aspose-ocr-for-java-20-10-release-notes/
+feedback: OCRJAVA
 ---
 
 {{% alert color="primary" %}}

@@ -4,6 +4,7 @@ date: "2022-08-31"
 author: "Vladimir Lapin"
 type: docs
 url: /net/image-regions-line-find/
+feedback: OCRNET
 title: Finding line bounding boxes
 description: Automatic detection of line bounding boxes inside an image.
 keywords:
