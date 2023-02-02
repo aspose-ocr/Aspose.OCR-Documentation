@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2022-10-20"
+date: "2023-02-02"
 author: "Vladimir Lapin"
 type: docs
 url: /cpp/product-overview/
@@ -26,14 +26,13 @@ Aspose.OCR can be combined with other Aspose products, such as [Aspose C++ PDF P
 
 - State-of-art optical character recognition engine with superior recognition speed and accuracy designed by Aspose engineering team.
 - Can be used to build cross-platform applications for Windows, Linux and web.
-- Supports [26 languages](/ocr/cpp/recognition-languages/) based on Latin and Cyrillic scrips as well as Chinese.
+- Supports [27 languages](/ocr/cpp/recognition-languages/) based on Latin, Cyrillic, Chinese, and Indic scripts.
 - Detects and recognizes all popular typefaces such as Arial, Times New Roman, Courier New, Tahoma, Calibri and more in regular, bold and italic styles.
 - Process rotated, skewed and noisy images. Various built-in filters for image pre-processing.
 - Supports all [image formats](/ocr/cpp/supported-file-formats/) you can get from a scanner or camera as well as web links.
 - Batch recognition of all images in a folder or archive.
 - Recognizes the whole image or selected areas only; identifies words, lines or paragraphs.
-- Recognition results are returned in the most popular document and data exchange formats: plain text, PDF, Word, Excel, JSON, XML.
-- Spell checking of recognition results.
+- Recognition results are returned in the most popular document and data exchange formats: plain text, PDF, Word, RTF, Excel, JSON, XML.
 - Full compatibility with other [Aspose products](https://products.aspose.com/) - build solutions of any complexity using familiar concepts with minimal code.
 
 ## Capabilities

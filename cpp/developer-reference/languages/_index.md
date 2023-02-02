@@ -1,6 +1,6 @@
 ---
 weight: 20
-date: "2022-12-08"
+date: "2023-02-02"
 author: "Vladimir Lapin"
 type: docs
 url: /cpp/languages/
@@ -34,6 +34,7 @@ Value | Language
 `language::est` | Estonian
 `language::fin` | Finnish
 `language::fra` | French
+`language::hin` | Hindi
 `language::ita` | Italian
 `language::kaz` | Kazakh
 `language::lav` | Latvian

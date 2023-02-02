@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2022-11-08"
+date: "2023-02-02"
 author: "Vladimir Lapin"
 type: docs
 url: /cpp/recognition-languages/
@@ -106,3 +106,4 @@ Aspose.OCR for C++ can recognize a large number of languages and all popular wri
 ## Asian languages
 
 - Chinese (more than 6,000 characters)
+- Hindi

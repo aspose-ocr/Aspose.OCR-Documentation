@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2022-12-10"
+date: "2023-02-02"
 author: "Vladimir Lapin"
 type: docs
 url: /cpp/save-file/
@@ -34,6 +34,7 @@ Format | Description
 `file_format::txt` | Plain text with line breaks.
 `file_format::pdf` | Portable Document Format.
 `file_format::docx` | Microsoft Word document (version 2007 or later).
+`file_format::format_rtf` | RTF, a universal format for exchanging rich text documents between different word processing programs.
 `file_format::xlsx` | Microsoft Excel spreadsheet (version 2007 or later).
 `file_format::format_json` | JSON is a popular format widely used in software development and data exchange. The de facto standard for websites and REST APIs.
 `file_format::format_xml` | Extensible Markup Language (XML), a universal data exchange and storage format for most systems.

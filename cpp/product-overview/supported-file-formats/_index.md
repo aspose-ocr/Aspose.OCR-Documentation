@@ -1,6 +1,6 @@
 ---
 weight: 20
-date: "2022-11-08"
+date: "2023-02-02"
 author: "Vladimir Lapin"
 type: docs
 url: /cpp/supported-file-formats/
@@ -40,6 +40,7 @@ Format    | Details
 --------- | -------
 **.TXT**  | Plain text
 **.DOCX** | Microsoft Word document
+**.RTF**  | A universal format for exchanging rich text documents between different word processing programs
 **.XLSX** | Microsoft Excel spreadsheet
 **.PDF**  | Portable Document Format
 **JSON**  | A popular open-standard format, widely used in software development and data exchange
