@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2022-08-26"
+date: "2023-02-13"
 author: "Vladimir Lapin"
 type: docs
 url: /net/image-preprocessing/
@@ -40,7 +40,7 @@ Filter | Action | Performance impact | Usage scenarios
 ------ | ------ | ------------------ | ---------------
 [Skew correction](/ocr/net/deskew/#automatic-skew-correction) | Automatically straighten images aligned at a slight angle to the horizontal. | 12% | Skewed images
 [Rotation](/ocr/net/deskew/#manual-skew-correction) | Manually rotate severely skewed images. | 7.5% | Rotated images
-[Noise removal](/ocr/net/denoise/) | Automatically remove dirt, spots, scratches, glare, unwanted gradients, and other noise from photos and scans. | 175% extra time<br />38% more memory <sup>(1)</sup> | Photos<br />Old books<br />Newspapers<br />Postcards<br />Documents with stains and dirt
+[Noise removal](/ocr/net/denoise/) | Automatically remove dirt, spots, scratches, glare, unwanted gradients, and other noise from photos and scans. | 175% extra time;<br />38% more memory <sup>(1)</sup> | Photos<br />Old books<br />Newspapers<br />Postcards<br />Documents with stains and dirt
 [Contrast correction](/ocr/net/contrast/) | Automatically adjust the image contrast. | 7.5% | Photos<br />Old papers<br />Text on a background
 [Resizing](/ocr/net/resize/) | Proportionally scale images up / down, or manually define the width and height of the image. | up to 100% <sup>(2)</sup> | Medication guides<br />Food labels<br />Full-sized photos from modern cameras and smartphones<br />Scanned images at very high DPI
 [Binarization](/ocr/net/binarization/) | Convert images to black and white automatically or manually adjust the criteria that determines whether a pixel is considered black or white. | 0.9% |  Always used for text detection and most automatic image corrections
@@ -48,12 +48,14 @@ Filter | Action | Performance impact | Usage scenarios
 [Color inversion](/ocr/net/invert/) | Swap image colors so that light areas appear dark and dark areas appear light. | 0.25% | White text on black background<br />Advertisements<br />Business cards<br />Screenshots
 [Dilation](/ocr/net/dilate/) | Increase the thickness of characters in an image by adding pixels to the edges of high-contrast objects, such as letters. | 3.1% | Receipts<br />Printouts with very thin font
 [Median filter](/ocr/net/median/) | Blur noisy images while preserving the edges of high-contrast objects like letters. | 6.25% | Photos taken in low light conditions<br />Poor quality printouts<br />Highly compressed JPEG’s
+[Dewarping](/ocr/net/dewarp/) | Straighten page curvature and fix camera lens distortion for page photos.<br />**This method requires a lot of resources and time!** For now, we recommend using it only for evaluation and experimentation. | **Several minutes**;<br />**4 times more memory**&nbsp;<sup>(3)</sup> | Photos of curved pages<br />Ultra wide-angle and fisheye photos<br />Photos from entry-level smartphones
 
 {{% alert color="primary" %}}
 **Notes**
 
 1. Automatic noise removal uses a powerful artificial intelligence algorithm that consumes significant computing resources and RAM. Use it with care, especially when developing public websites and mobile apps.
 2. Resizing takes between 6% and 100% more time than the minimum processing pipeline, depending on the original image size.
+3. Due to the high complexity of the underlying neural network, dewarping is extremely resource- and time-intensive. Actual numbers may vary greatly depending on the performance of the computer and the characteristics of the original image.
 {{% /alert %}}
 
 ## Chaining preprocessing filters
