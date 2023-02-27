@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2023-02-13"
+date: "2023-02-27"
 author: "Vladimir Lapin"
 type: docs
 url: /net/image-preprocessing/
@@ -48,7 +48,7 @@ Filter | Action | Performance impact | Usage scenarios
 [Color inversion](/ocr/net/invert/) | Swap image colors so that light areas appear dark and dark areas appear light. | 0.25% | White text on black background<br />Advertisements<br />Business cards<br />Screenshots
 [Dilation](/ocr/net/dilate/) | Increase the thickness of characters in an image by adding pixels to the edges of high-contrast objects, such as letters. | 3.1% | Receipts<br />Printouts with very thin font
 [Median filter](/ocr/net/median/) | Blur noisy images while preserving the edges of high-contrast objects like letters. | 6.25% | Photos taken in low light conditions<br />Poor quality printouts<br />Highly compressed JPEG’s
-[Dewarping](/ocr/net/dewarp/) | Straighten page curvature and fix camera lens distortion for page photos.<br />**This method requires a lot of resources and time!** For now, we recommend using it only for evaluation and experimentation. | **Several minutes**;<br />**4 times more memory**&nbsp;<sup>(3)</sup> | Photos of curved pages<br />Ultra wide-angle and fisheye photos<br />Photos from entry-level smartphones
+[Dewarping](/ocr/net/dewarp/) | Straighten page curvature and fix camera lens distortion for page photos.<br />**This method requires a lot of resources and time!** For now, we do not recommend using it for bulk image processing. | **More than a minute**;<br />**4 times more memory**&nbsp;<sup>(3)</sup> | Photos of curved pages<br />Ultra wide-angle and fisheye photos<br />Photos from entry-level smartphones
 
 {{% alert color="primary" %}}
 **Notes**

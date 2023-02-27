@@ -3,8 +3,8 @@ weight: 100
 date: "2023-02-27"
 author: "Vladimir Lapin"
 type: docs
-url: /net/dewarp/
-feedback: OCRNET
+url: /java/dewarp/
+feedback: OCRJAVA
 title: Dewarping
 description: How to straighten curved and distorted images before recognition.
 keywords:
@@ -53,45 +53,39 @@ Geometric distortions is a very common case when dealing with photos of books, m
 Warped images are very hard to be processed by most OCR algorithms. Thus, image straightening and distortion removal is critical to the recognition process as it directly affects the reliability and efficiency of segmentation and text extraction. Aspose.OCR implements a preprocessing filter for automated correction of geometric distortions  before proceeding to recognition.
 
 {{% alert color="primary" %}}
-The dewarping filter automatically converts the image to [grayscale](/ocr/net/grayscale/).
+The dewarping filter automatically converts the image to [grayscale](/ocr/java/grayscale/).
 {{% /alert %}}
 
 ## Important considerations
 
 {{% alert color="caution" %}}
-At the moment, the dewarping filter is not intended for mass processing. It takes a significant amount of time and has some limitations.  
+At the moment, the dewarping filter is not intended for bulk processing. It takes a significant amount of time and has some limitations.  
 We recommend using it for pinpoint processing of individual images that cannot be recognized otherwise.
 {{% /alert %}}
 
 - Dewarping one image may take **more than a minute**.
 - Due to the high complexity of the underlying neural network, dewarping is extremely resource-intensive (CPU and RAM).
-- After removing the image curvature, text lines will have some wave-like distortion. Thus, it is highly recommended to use [`DetectAreasMode.CURVED_TEXT`](/ocr/net/areas-detection/curved_text/) areas detection mode to extract text from the dewarped image. Other area detection modes may produce inaccurate results.
-- Dewarping also corrects image tilt. We recommend disabling [automatic skew correction](/ocr/net/deskew/) - it will have no effect and may even result in severe image distortion.
+- After removing the image curvature, text lines will have some wave-like distortion. Thus, it is highly recommended to use [`DetectAreasMode.CURVED_TEXT`](/ocr/java/areas-detection/curved_text/) areas detection mode to extract text from the dewarped image. Other area detection modes may produce inaccurate results.
+- Dewarping also corrects image tilt. We recommend disabling [automatic skew correction](/ocr/java/deskew/) - it will have no effect and may even result in severe image distortion.
 
 ## Dewarping
 
-To straighten the curved image, run it through [`AutoDewarping`](https://reference.aspose.com/ocr/net/aspose.ocr.models.preprocessingfilters/preprocessingfilter/autodewarping/) preprocessing filter.
+To straighten the curved image, run it through [`AutoDewarping()`](https://reference.aspose.com/ocr/java/com.aspose.ocr/preprocessingfilter/#autodewarping--) preprocessing filter.
 
-```csharp
-Aspose.OCR.AsposeOcr recognitionEngine = new Aspose.OCR.AsposeOcr();
-// Apply dewarping filter
-Aspose.OCR.Models.PreprocessingFilters.PreprocessingFilter filters = new Aspose.OCR.Models.PreprocessingFilters.PreprocessingFilter();
-filters.Add(Aspose.OCR.Models.PreprocessingFilters.PreprocessingFilter.AutoDewarping());
-// Save preprocessed image to file for debugging purposes
-using(MemoryStream ms = recognitionEngine.PreprocessImage("source.png", filters))
-{
-	using(FileStream fs = new FileStream("result.png", FileMode.Create, FileAccess.Write))
-	{
-		ms.WriteTo(fs);
-	}
-}
-// Append preprocessing filters to recognition settings
-Aspose.OCR.RecognitionSettings recognitionSettings = new Aspose.OCR.RecognitionSettings();
-recognitionSettings.DetectAreasMode = Aspose.OCR.DetectAreasMode.CURVED_TEXT;
-recognitionSettings.PreprocessingFilters = filters;
-// Recognize image
-Aspose.OCR.RecognitionResult result = recognitionEngine.RecognizeImage("source.png", recognitionSettings);
-Console.WriteLine(result.RecognitionText);
+```java
+AsposeOCR api = new AsposeOCR();	
+RecognitionSettings settings = new RecognitionSettings();
+// Apply dewarping filter 
+PreprocessingFilter filters = new PreprocessingFilter();
+filters.add(PreprocessingFilter.AutoDewarping());
+settings.setPreprocessingFilters(filters);
+// Save dewarped image to file
+BufferedImage image =  api.PreprocessImage(file, filters);
+File outputSource = new File("result.png");
+ImageIO.write(image, "png", outputSource);
+// Extract text from image
+RecognitionResult result = api.RecognizePage(file, settings);
+System.out.println(result);
 ```
 
 <div class="duo">

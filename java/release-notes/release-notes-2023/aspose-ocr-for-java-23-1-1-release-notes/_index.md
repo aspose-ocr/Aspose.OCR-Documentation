@@ -3,7 +3,7 @@ weight: 120
 date: "2023-01-26"
 author: "Vladimir Lapin"
 type: docs
-url: /java/aspose-ocr-for-net-23-1-1-release-notes/
+url: /java/aspose-ocr-for-java-23-1-1-release-notes/
 feedback: OCRJAVA
 title: Aspose.OCR for Java 23.1.1 - Release Notes
 description: A summary of recent changes, enhancements and bug fixes in Aspose.OCR for Java 23.1.1 (January 2023) release.
@@ -16,7 +16,7 @@ keywords:
 ---
 
 {{% alert color="primary" %}}
-This article contains a summary of recent changes, enhancements and bug fixes in [**Aspose.OCR for Java 23.1.1 (January 2023)**](https://www.nuget.org/packages/Aspose.OCR/23.1.1) release.
+This article contains a summary of recent changes, enhancements and bug fixes in **Aspose.OCR for Java 23.1.1 (January 2023)** release.
 
 GPU version: **21.6.0**
 {{% /alert %}}
