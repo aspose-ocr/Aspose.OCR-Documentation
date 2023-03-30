@@ -1,15 +1,15 @@
 ---
-weight: 1
+weight: 101
 date: "2023-03-29"
 author: "Vladimir Lapin"
 type: docs
-url: /java/release-notes/latest/
+url: /java/aspose-ocr-for-java-23-3-0-release-notes/
 feedback: OCRJAVA
-title: Latest release (March 2023)
+title: Aspose.OCR for Java 23.3.0 - Release Notes
 description: A summary of recent changes, enhancements and bug fixes in Aspose.OCR for Java 23.3.0 (March 2023) release.
 keywords:
-- latest
-- patch
+- 2023
+- March
 - new
 - release
 - changelog
