@@ -1,6 +1,6 @@
 ---
 weight: 20
-date: "2023-02-02"
+date: "2023-03-31"
 author: "Vladimir Lapin"
 type: docs
 url: /cpp/supported-file-formats/
@@ -27,6 +27,7 @@ Extension             | Details
 **.PNG**              | Portable Network Graphics, 24-bit with transparency
 **.TIFF** or **.TIF** | Single-page and multi-page images, commonly used for high quality scanning
 **.BMP**              | Bitmap image file
+**.PDF**              | Scanned pages in Portable Document Format
 
 {{% alert color="primary" %}}
 The API can also read the above-mentioned files from ZIP archives.
