@@ -1,6 +1,6 @@
 ---
 weight: 20
-date: "2022-09-02"
+date: "2023-04-07"
 author: "Vladimir Lapin"
 type: docs
 url: /net/misspelled-words-list/
@@ -44,9 +44,13 @@ Found errors and suggested substitutions are provided as a list of [`SpellCheckE
 
 ```csharp
 Aspose.OCR.AsposeOcr recognitionEngine = new Aspose.OCR.AsposeOcr();
-Aspose.OCR.RecognitionSettings recognitionSettings = new Aspose.OCR.RecognitionSettings();
-Aspose.OCR.RecognitionResult result = recognitionEngine.RecognizeImage("source.png", recognitionSettings);
-foreach(var correction in result.GetSpellCheckErrorList(Aspose.OCR.SpellChecker.SpellCheckLanguage.Eng))
+// Add an image to OcrInput object
+Aspose.OCR.OcrInput input = new Aspose.OCR.OcrInput(Aspose.OCR.InputType.SingleImage);
+input.Add("source.png");
+// Recognize image
+List<Aspose.OCR.RecognitionResult> results = recognitionEngine.Recognize(input);
+// Output misspelled words
+foreach(var correction in results[0].GetSpellCheckErrorList(Aspose.OCR.SpellChecker.SpellCheckLanguage.Eng))
 {
 	Console.WriteLine($@"Found misspelled word ""{correction.Word}"" at position {correction.StartPosition}.");
 	if(correction.SuggestedWords.Count>0) Console.WriteLine($@"Most likely replacement: ""{correction.SuggestedWords[0].Word}""");

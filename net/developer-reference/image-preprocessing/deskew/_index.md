@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2022-08-26"
+date: "2023-04-07"
 author: "Vladimir Lapin"
 type: docs
 url: /net/deskew/
@@ -74,46 +74,37 @@ When a page is fed to a flatbed scanner (mechanically or manually) or photograph
 
 Skew angle detection and image straightening is critical to the OCR process as it directly affects the reliability and efficiency of segmentation and text extraction. Aspose.OCR offers automated processing algorithms to correct image tilt (deskew) before proceeding to recognition.
 
-## Detecting skew angle
+## Detecting skew angles
 
-To find out the skew angle, use [`CalculateSkew`](https://reference.aspose.com/ocr/net/aspose.ocr/asposeocr/calculateskew/) or [`CalculateSkewFromUri`](https://reference.aspose.com/ocr/net/aspose.ocr/asposeocr/calculateskewfromuri/) methods of [`Aspose.OCR.AsposeOcr`](https://reference.aspose.com/ocr/net/aspose.ocr/asposeocr/) class.
+To find out skew angles for all images in a [batch](/ocr/net/ocrinput/), use [`Aspose.OCR.AsposeOcr.CalculateSkew`](https://reference.aspose.com/ocr/net/aspose.ocr/asposeocr/calculateskew/) method. It returns a list of [`Aspose.OCR.SkewOutput`](https://reference.aspose.com/ocr/net/aspose.ocr/skewoutput/) objects, one per image.
 
-{{< tabs tabID="1" tabTotal="3" tabName1="From file" tabName2="From stream" tabName3="From URL" >}}
-{{< tab tabNum="1" >}}
+Property | Type | Description
+-------- | ---- | -----------
+`Angle` | `float` | Skew angle in degrees.
+`ImageIndex` | `int` | Sequence number of the image on the page. When working with single-page images, this value is always 0.
+`Page` | `int` | Page number. When working with single-page images, this value is always 0.
+`Source` | `string` | The full path or URL of the source file. If the file is provided as a `MemoryStream` object, an array of pixels, or a Base64 string, this value will be empty.
+
+{{% alert color="primary" %}}
+- Skew angles are calculated for all images in the batch, including those without text.
+- PDF documents can contain more than one image per page. Therefore, the resulting list can contain more `Aspose.OCR.SkewOutput` objects than the number of pages in the document.
+{{% /alert %}}
+
 ```csharp
 Aspose.OCR.AsposeOcr recognitionEngine = new Aspose.OCR.AsposeOcr();
-float skew = recognitionEngine.CalculateSkew("source.png");
-Console.WriteLine($"Skew angle: {skew:N1}°");
+// Add PDF documents to OcrInput object
+Aspose.OCR.OcrInput input = new Aspose.OCR.OcrInput(InputType.PDF);
+input.Add("source.pdf");
+// Detect skew angles
+List<Aspose.OCR.SkewOutput> angles = recognitionEngine.CalculateSkew(input);
+foreach(Aspose.OCR.SkewOutput angle in angles) Console.WriteLine($"File: {angle.Source} | Page: {angle.Page} | Image: {angle.ImageIndex} | Angle: {angle.Angle}°");
 ```
-{{< /tab >}}
-{{< tab tabNum="2" >}}
-```csharp
-Aspose.OCR.AsposeOcr recognitionEngine = new Aspose.OCR.AsposeOcr();
-using(MemoryStream ms = new MemoryStream())
-{
-	using(FileStream fs = new FileStream("source.png",FileMode.Open,FileAccess.Read))
-	{
-		fs.CopyTo(ms);
-		float skew = recognitionEngine.CalculateSkew(ms);
-		Console.WriteLine($"Skew angle: {skew:N1}°");
-	}
-}
-```
-{{< /tab >}}
-{{< tab tabNum="3" >}}
-```csharp
-Aspose.OCR.AsposeOcr recognitionEngine = new Aspose.OCR.AsposeOcr();
-float skew = recognitionEngine.CalculateSkewFromUri("https://www.aspose.com/sample-ocr-page.png");
-Console.WriteLine($"Skew angle: {skew:N1}°");
-```
-{{< /tab >}}
-{{< /tabs >}}
 
 ![Skewed image](skew-origin.png)
 
 <div id="skew-angle" class="code-sample">
 	<button onclick="calculateSkewAngle(this)">Calculate skew angle</button>
-	<div class="unseen"><code>&gt; Skew angle: 5.9°</code></div>
+	<div class="unseen"><code>&gt; File: "C:\source.pdf" | Page: 0 | Image: 0 | Angle: 5.9°</code></div>
 </div>
 <script>
 	function calculateSkewAngle(obj)
@@ -124,43 +115,25 @@ Console.WriteLine($"Skew angle: {skew:N1}°");
 
 ## Automatic skew correction
 
-To automatically straighten skewed image before recognition, run the image through [`AutoSkew`](https://reference.aspose.com/ocr/net/aspose.ocr.models.preprocessingfilters/preprocessingfilter/autoskew/) preprocessing filter or enable [`AutoSkew`](https://reference.aspose.com/ocr/net/aspose.ocr/recognitionsettings/autoskew/) property in recognition settings.
+To automatically straighten skewed image before recognition, run the image through [`AutoSkew`](https://reference.aspose.com/ocr/net/aspose.ocr.models.preprocessingfilters/preprocessingfilter/autoskew/) processing filter.
 
-{{< tabs tabID="2" tabTotal="2" tabName1="Preprocessing filter" tabName2="Recognition settings" >}}
-{{< tab tabNum="1" >}}
 ```csharp
 Aspose.OCR.AsposeOcr recognitionEngine = new Aspose.OCR.AsposeOcr();
-// Add deskew filter
+// Enable automatic skew correction
 Aspose.OCR.Models.PreprocessingFilters.PreprocessingFilter filters = new Aspose.OCR.Models.PreprocessingFilters.PreprocessingFilter();
 filters.Add(Aspose.OCR.Models.PreprocessingFilters.PreprocessingFilter.AutoSkew());
-// Save preprocessed image to file for debugging purposes
-using(MemoryStream ms = recognitionEngine.PreprocessImage("source.png", filters))
+// Add an image to OcrInput object and apply processing filters
+Aspose.OCR.OcrInput input = new Aspose.OCR.OcrInput(Aspose.OCR.InputType.SingleImage, filters);
+input.Add("source.png");
+// Save processed image to the folder
+Aspose.OCR.ImageProcessing.Save(input, @"C:\result");
+// Recognize image
+List<Aspose.OCR.RecognitionResult> results = recognitionEngine.Recognize(input);
+foreach(Aspose.OCR.RecognitionResult result in results)
 {
-	using(FileStream fs = new FileStream("result.png", FileMode.Create, FileAccess.Write))
-	{
-		ms.WriteTo(fs);
-	}
+	Console.WriteLine(result.RecognitionText);
 }
-// Append preprocessing filters to recognition settings
-Aspose.OCR.RecognitionSettings recognitionSettings = new Aspose.OCR.RecognitionSettings();
-recognitionSettings.PreprocessingFilters = filters;
-// Recognize image
-Aspose.OCR.RecognitionResult result = recognitionEngine.RecognizeImage("source.png", recognitionSettings);
-Console.WriteLine(result.RecognitionText);
 ```
-{{< /tab >}}
-{{< tab tabNum="2" >}}
-```csharp
-Aspose.OCR.AsposeOcr recognitionEngine = new Aspose.OCR.AsposeOcr();
-// Enable automatic deskew in recognition settings
-Aspose.OCR.RecognitionSettings recognitionSettings = new Aspose.OCR.RecognitionSettings();
-recognitionSettings.AutoSkew = true;
-// Recognize image
-Aspose.OCR.RecognitionResult result = recognitionEngine.RecognizeImage("source.png", recognitionSettings);
-Console.WriteLine(result.RecognitionText);
-```
-{{< /tab >}}
-{{< /tabs >}}
 
 <div class="duo">
 	<img src="skew-origin.png" alt="Skewed image" />
@@ -189,50 +162,32 @@ Console.WriteLine(result.RecognitionText);
 
 ## Manual skew correction
 
-In rare cases, automatic skew correction may incorrectly determine the angle of the image. This can happen to poor quality photos with significant perspective distortions.
+In some edge cases, automatic skew correction may not detect the angle of the image. This can happen with poor quality photographs with significant perspective distortion.
 
-To deal with such situations, you can rotate the image by the specified degree using [`Rotate`](https://reference.aspose.com/ocr/net/aspose.ocr.models.preprocessingfilters/preprocessingfilter/rotate/) preprocessing filter or manually define the skew angle for such images using the [`SkewAngle`](https://reference.aspose.com/ocr/net/aspose.ocr/recognitionsettings/skewangle/) property of recognition settings. The rotation angle is passed in degrees:
+To deal with such situations, you can rotate the image by the specified degree using [`Rotate`](https://reference.aspose.com/ocr/net/aspose.ocr.models.preprocessingfilters/preprocessingfilter/rotate/) image processing filter. The rotation angle is passed in degrees:
 
 - `-360` to `0`: rotate counterclockwise;
 - `0` to `360`: rotate clockwise.
 
-{{< tabs tabID="3" tabTotal="2" tabName1="Preprocessing filter" tabName2="Recognition settings" >}}
-{{< tab tabNum="1" >}}
 ```csharp
 Aspose.OCR.AsposeOcr recognitionEngine = new Aspose.OCR.AsposeOcr();
 // Rotate the image 90 degrees counterclockwise
 Aspose.OCR.Models.PreprocessingFilters.PreprocessingFilter filters = new Aspose.OCR.Models.PreprocessingFilters.PreprocessingFilter();
 filters.Add(Aspose.OCR.Models.PreprocessingFilters.PreprocessingFilter.Rotate(-90));
-// Save preprocessed image to file for debugging purposes
-using(MemoryStream ms = recognitionEngine.PreprocessImage("source.png", filters))
+// Add an image to OcrInput object and apply processing filters
+Aspose.OCR.OcrInput input = new Aspose.OCR.OcrInput(Aspose.OCR.InputType.SingleImage, filters);
+input.Add("source.png");
+// Save processed image to the folder
+Aspose.OCR.ImageProcessing.Save(input, @"C:\result");
+// Recognize image
+List<Aspose.OCR.RecognitionResult> results = recognitionEngine.Recognize(input);
+foreach(Aspose.OCR.RecognitionResult result in results)
 {
-	using(FileStream fs = new FileStream("result.png", FileMode.Create, FileAccess.Write))
-	{
-		ms.WriteTo(fs);
-	}
+	Console.WriteLine(result.RecognitionText);
 }
-// Append preprocessing filters to recognition settings
-Aspose.OCR.RecognitionSettings recognitionSettings = new Aspose.OCR.RecognitionSettings();
-recognitionSettings.PreprocessingFilters = filters;
-// Recognize image
-Aspose.OCR.RecognitionResult result = recognitionEngine.RecognizeImage("source.png", recognitionSettings);
-Console.WriteLine(result.RecognitionText);
 ```
-{{< /tab >}}
-{{< tab tabNum="2" >}}
-```csharp
-Aspose.OCR.AsposeOcr recognitionEngine = new Aspose.OCR.AsposeOcr();
-// Manually set the skew angle
-Aspose.OCR.RecognitionSettings recognitionSettings = new Aspose.OCR.RecognitionSettings();
-recognitionSettings.SkewAngle = 6;
-// Recognize image
-Aspose.OCR.RecognitionResult result = recognitionEngine.RecognizeImage("source.png", recognitionSettings);
-Console.WriteLine(result.RecognitionText);
-```
-{{< /tab >}}
-{{< /tabs >}}
 
-## Image regions preprocessing
+## Image regions processing
 
 Automatic skew correction and manual rotation filters can be applied to specific regions of an image. For example, you can straighten an illustration on a page while leaving the rest of the content unchanged.
 

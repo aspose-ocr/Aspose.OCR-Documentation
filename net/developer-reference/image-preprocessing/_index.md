@@ -1,14 +1,15 @@
 ---
-weight: 10
-date: "2023-02-27"
+weight: 30
+date: "2023-04-07"
 author: "Vladimir Lapin"
 type: docs
-url: /net/image-preprocessing/
-feedback: OCRNET
-title: Image preprocessing
-description: Automatic or manual actions for formatting an image before sending it for recognition.
+url: /net/image-processing/
 aliases:
+- /net/image-preprocessing/
 - /net/custom-image-correction-with-preprocessing-filters/
+feedback: OCRNET
+title: Image processing
+description: Automatic or manual actions for formatting an image before sending it for recognition.
 keywords:
 - preprocess
 - correct
@@ -34,7 +35,7 @@ keywords:
 
 The accuracy and reliability of text recognition is highly dependent on the quality of the original image. Aspose.OCR offers a large number of fully automated and manual image processing filters that enhance an image before it is sent to the OCR engine.
 
-Each preprocessing filter increases the image processing time. The approximate amount of additional time required for pre-processing (as a percentage of the minimum image processing pipeline) is listed in the **Performance Impact** column.
+Each filter increases recognition time. The approximate amount of additional time required for preprocessing (as a percentage of the minimum OCR pipeline) is listed in the **Performance Impact** column.
 
 Filter | Action | Performance impact | Usage scenarios
 ------ | ------ | ------------------ | ---------------
@@ -48,7 +49,7 @@ Filter | Action | Performance impact | Usage scenarios
 [Color inversion](/ocr/net/invert/) | Swap image colors so that light areas appear dark and dark areas appear light. | 0.25% | White text on black background<br />Advertisements<br />Business cards<br />Screenshots
 [Dilation](/ocr/net/dilate/) | Increase the thickness of characters in an image by adding pixels to the edges of high-contrast objects, such as letters. | 3.1% | Receipts<br />Printouts with very thin font
 [Median filter](/ocr/net/median/) | Blur noisy images while preserving the edges of high-contrast objects like letters. | 6.25% | Photos taken in low light conditions<br />Poor quality printouts<br />Highly compressed JPEG’s
-[Dewarping](/ocr/net/dewarp/) | Straighten page curvature and fix camera lens distortion for page photos.<br />**This method requires a lot of resources and time!** For now, we do not recommend using it for bulk image processing. | **More than a minute**;<br />**4 times more memory**&nbsp;<sup>(3)</sup> | Photos of curved pages<br />Ultra wide-angle and fisheye photos<br />Photos from entry-level smartphones
+[Dewarping](/ocr/net/dewarp/) | Straighten page curvature and fix camera lens distortion for page photos.<br />**This method requires a lot of resources and time!** For now, we do not recommend using it for bulk image processing and in online apps. | **More than a minute**;<br />**4 times more memory**&nbsp;<sup>(3)</sup> | Photos of curved pages<br />Ultra wide-angle and fisheye photos<br />Photos from entry-level smartphones
 
 {{% alert color="primary" %}}
 **Notes**
@@ -58,9 +59,9 @@ Filter | Action | Performance impact | Usage scenarios
 3. Due to the high complexity of the underlying neural network, dewarping is extremely resource- and time-intensive. Actual numbers may vary greatly depending on the performance of the computer and the characteristics of the original image.
 {{% /alert %}}
 
-## Chaining preprocessing filters
+## Chaining processing filters
 
-Multiple preprocessing filters can be applied to the same image to further improve the recognition quality. The filters are applied one by one in the order they are added to [`PreprocessingFilter`](https://reference.aspose.com/ocr/net/aspose.ocr.models.preprocessingfilters/preprocessingfilter/) object.
+Multiple processing filters can be applied to the same image to further improve the recognition quality. The filters are applied one by one in the order they are added to [`PreprocessingFilter`](https://reference.aspose.com/ocr/net/aspose.ocr.models.preprocessingfilters/preprocessingfilter/) object.
 
 Note that each filter requires additional time and resources on the computer running the application. Do not add extra filters if you are satisfied with the recognition accuracy, especially when developing web applications.
 
@@ -127,13 +128,13 @@ Note that each filter requires additional time and resources on the computer run
 
 **Approximate increase of processing time: <span id="impact-time">0</span>%**
 
-## Image regions preprocessing
+## Image regions processing
 
-Most preprocessing filters can be applied to specific regions of an image. For example, you can invert a newspaper headline written in white on black, leaving the rest of the article unchanged.
+Most processing filters can be applied to specific regions of an image. For example, you can invert a newspaper headline written in white on black, leaving the rest of the article unchanged.
 
-Multiple preprocessing filters can be applied to different regions of the same image. If the regions intersect each other, filters are applied to the intersection in their [chaining](#chaining-preprocessing-filters) order in [`PreprocessingFilter`](https://reference.aspose.com/ocr/net/aspose.ocr.models.preprocessingfilters/preprocessingfilter/) object.
+Multiple processing filters can be applied to different regions of the same image. If the regions intersect each other, filters are applied to the intersection in their [chaining](#chaining-processing-filters) order in [`PreprocessingFilter`](https://reference.aspose.com/ocr/net/aspose.ocr.models.preprocessingfilters/preprocessingfilter/) object.
 
-![Applying preprocessing to intersecting regions](filter-region.png)
+![Applying image processing to intersecting regions](filter-region.png)
 
 To apply a filter to an area, specify its top left corner along with width and height as [`Aspose.Drawing.Rectangle`](https://reference.aspose.com/drawing/net/system.drawing/rectangle/) object. If the region is omitted, the filter is applied to the entire image.
 
@@ -144,46 +145,51 @@ Aspose.OCR.Models.PreprocessingFilters.PreprocessingFilter filters = new Aspose.
 filters.Add(Aspose.OCR.Models.PreprocessingFilters.PreprocessingFilter.Invert(blackRectangle));
 // (2) Denoise entire image
 filters.Add(Aspose.OCR.Models.PreprocessingFilters.PreprocessingFilter.AutoDenoising());
-// Save preprocessed image to file
-using(MemoryStream ms = recognitionEngine.PreprocessImage("source.png", filters))
-{
-	using(FileStream fs = new FileStream($"result.png", FileMode.Create, FileAccess.Write))
-	{
-		ms.WriteTo(fs);
-	}
-}
 ```
 
 The following filters can be applied to regions:
 
-- [Skew correction](/ocr/net/deskew/#image-regions-preprocessing)
-- [Noise removal](/ocr/net/denoise/#image-regions-preprocessing)
-- [Contrast correction](/ocr/net/contrast/#image-regions-preprocessing)
-- [Binarization](/ocr/net/binarization/#image-regions-preprocessing)
-- [Color inversion](/ocr/net/invert/#image-regions-preprocessing)
-- [Dilation](/ocr/net/dilate/#image-regions-preprocessing)
-- [Median filter](/ocr/net/median/#image-regions-preprocessing)
+- [Skew correction](/ocr/net/deskew/#image-regions-processing)
+- [Noise removal](/ocr/net/denoise/#image-regions-processing)
+- [Contrast correction](/ocr/net/contrast/#image-regions-processing)
+- [Binarization](/ocr/net/binarization/#image-regions-processing)
+- [Color inversion](/ocr/net/invert/#image-regions-processing)
+- [Dilation](/ocr/net/dilate/#image-regions-processing)
+- [Median filter](/ocr/net/median/#image-regions-processing)
 
-## Viewing preprocessed images
+## Previewing and saving processed images
 
-Aspose.OCR offers an easy way to access or save preprocessed images using [`PreprocessImage`](https://reference.aspose.com/ocr/net/aspose.ocr/asposeocr/preprocessimage/) method of `Aspose.OCR.AsposeOcr` class. This method returns a memory stream that can be sent for recognition or saved to a file.
+Aspose.OCR for .NET offers an easy way to access or save processed images using the methods of the static [`Aspose.OCR.ImageProcessing`](https://reference.aspose.com/ocr/net/aspose.ocr/imageprocessing/) class:
 
-You can use this file to analyze the effectiveness of preprocessing filters, exclude unnecessary filters that consume resources without affecting the result, or show the result of preprocessing in the user interface.
+Method | Return value | Description
+------ | ------------ | -----------
+[`Render`](https://reference.aspose.com/ocr/net/aspose.ocr/imageprocessing/render) | [`OcrInput`](https://reference.aspose.com/ocr/net/aspose.ocr/ocrinput/) | Applies processing filters to all images in a [batch](/ocr/net/ocrinput/) and returns a new batch with processed images. This batch can later be submitted for recognition or used for optimization.
+[`Save`](https://reference.aspose.com/ocr/net/aspose.ocr/imageprocessing/save/) | [`OcrInput`](https://reference.aspose.com/ocr/net/aspose.ocr/ocrinput/) | Applies processing filters to all images in [batch](/ocr/net/ocrinput/) and saves the resulting images in the specified folder. That method also returns a new batch with processed images, that can be later submitted for the recognition.
+
+You can use these methods to analyze the effectiveness of processing filters, exclude unnecessary filters that consume resources without affecting the result, or show the result of image processing in the user interface.
+
+{{% alert color="primary" %}}
+- Processing filters are applied to all images in the batch, including those without text.
+- PDF documents can contain more than one image per page. Therefore, the resulting `OcrInput` object can contain more images than the number of pages in the document.
+{{% /alert %}}
 
 ```csharp
-Aspose.OCR.AsposeOcr recognitionEngine = new Aspose.OCR.AsposeOcr();
-// Add noise removal filter
+// Set processing filters
 Aspose.OCR.Models.PreprocessingFilters.PreprocessingFilter filters = new Aspose.OCR.Models.PreprocessingFilters.PreprocessingFilter();
-filters.Add(Aspose.OCR.Models.PreprocessingFilters.PreprocessingFilter.AutoDenoising());
-// Save preprocessed image to file
-using(MemoryStream ms = recognitionEngine.PreprocessImage("source.png", filters))
-{
-	using(FileStream fs = new FileStream("result.png", FileMode.Create, FileAccess.Write))
-	{
-		ms.WriteTo(fs);
-	}
-}
+filters.Add(Aspose.OCR.Models.PreprocessingFilters.PreprocessingFilter.AutoDewarping());
+filters.Add(Aspose.OCR.Models.PreprocessingFilters.PreprocessingFilter.ContrastCorrectionFilter());
+// Add all pages from a scanned PDF to OcrInput object and apply processing filters
+Aspose.OCR.OcrInput input = new Aspose.OCR.OcrInput(Aspose.OCR.InputType.PDF, filters);
+input.Add("source.pdf");
+// Save processed images from the provided PDF to the folder
+Aspose.OCR.ImageProcessing.Save(input, @"C:\images");
 ```
+
+{{% alert color="caution" %}}
+**Upgrading from previous versions**
+
+Starting with Aspose.OCR for .NET 23.3.1, the above-mentioned methods replace the deprecated `PreprocessImage` method of `Aspose.OCR.AsposeOcr` class.
+{{% /alert %}}
 
 <script>
 window.addEventListener("load", function(){

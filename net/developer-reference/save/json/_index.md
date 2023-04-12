@@ -1,6 +1,6 @@
 ---
 weight: 30
-date: "2022-09-06"
+date: "2023-04-07"
 author: "Vladimir Lapin"
 type: docs
 url: /net/save-json/
@@ -22,8 +22,12 @@ Set `isReadable` parameter of the method to `true` to get a JSON string in a hum
 
 ```csharp
 Aspose.OCR.AsposeOcr recognitionEngine = new Aspose.OCR.AsposeOcr();
-Aspose.OCR.RecognitionSettings recognitionSettings = new Aspose.OCR.RecognitionSettings();
-Aspose.OCR.RecognitionResult result = recognitionEngine.RecognizeImage("source.png", recognitionSettings);
-string json = result.GetJson(true);
+// Add an image to OcrInput object
+Aspose.OCR.OcrInput input = new Aspose.OCR.OcrInput(Aspose.OCR.InputType.SingleImage);
+input.Add("source.png");
+// Recognize image
+List<Aspose.OCR.RecognitionResult> results = recognitionEngine.Recognize(input);
+// Show JSON
+string json = results[0].GetJson(true);
 Console.WriteLine(json);
 ```

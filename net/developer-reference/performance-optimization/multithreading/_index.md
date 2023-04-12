@@ -1,6 +1,6 @@
 ---
 weight: 30
-date: "2022-09-08"
+date: "2023-04-08"
 author: "Vladimir Lapin"
 type: docs
 url: /net/multithreading/
@@ -24,9 +24,17 @@ To set the number of threads, use [`ThreadsCount`](https://reference.aspose.com/
 
 ```csharp
 Aspose.OCR.AsposeOcr recognitionEngine = new Aspose.OCR.AsposeOcr();
-Aspose.OCR.RecognitionSettings recognitionSettings = new Aspose.OCR.RecognitionSettings();
+// Add images to OcrInput object
+Aspose.OCR.OcrInput input = new Aspose.OCR.OcrInput(Aspose.OCR.InputType.SingleImage);
+input.Add("source1.png");
+input.Add("source2.jpg");
 // Limit resource usage to 2 threads
+Aspose.OCR.RecognitionSettings recognitionSettings = new Aspose.OCR.RecognitionSettings();
 recognitionSettings.ThreadsCount = 2;
-Aspose.OCR.RecognitionResult result = recognitionEngine.RecognizeImage("source.png", recognitionSettings);
-Console.WriteLine(result.RecognitionText);
+// Recognize image
+List<Aspose.OCR.RecognitionResult> results = recognitionEngine.Recognize(input, recognitionSettings);
+foreach(Aspose.OCR.RecognitionResult result in results)
+{
+	Console.WriteLine(result.RecognitionText);
+}
 ```

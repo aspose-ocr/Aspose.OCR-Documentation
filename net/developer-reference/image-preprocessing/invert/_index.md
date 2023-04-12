@@ -1,6 +1,6 @@
 ---
 weight: 70
-date: "2022-08-26"
+date: "2023-04-07"
 author: "Vladimir Lapin"
 type: docs
 url: /net/invert/
@@ -51,31 +51,28 @@ keywords:
 
 When working with white (or light) text on a black (or other dark) background, recognition accuracy may suffer. It can be greatly improved by reversing the colors of the image so that light areas appear dark and dark areas appear light. In addition, other colors are also swapped: red becomes cyan, green becomes magenta, blue becomes yellow, and so on.
 
-Aspose.OCR provides the automated preprocessing filter that inverts colors in the image before proceeding to recognition.
+Aspose.OCR provides the automated processing filter that inverts colors in the image before proceeding to recognition.
 
 ## Inverting image colors
 
-To automatically invert colors in an image before recognition, run the image through [`Invert`](https://reference.aspose.com/ocr/net/aspose.ocr.models.preprocessingfilters/preprocessingfilter/invert/) preprocessing filter.
+To automatically invert colors in an image before recognition, run the image through [`Invert`](https://reference.aspose.com/ocr/net/aspose.ocr.models.preprocessingfilters/preprocessingfilter/invert/) processing filter.
 
 ```csharp
 Aspose.OCR.AsposeOcr recognitionEngine = new Aspose.OCR.AsposeOcr();
 // Invert colors
 Aspose.OCR.Models.PreprocessingFilters.PreprocessingFilter filters = new Aspose.OCR.Models.PreprocessingFilters.PreprocessingFilter();
 filters.Add(Aspose.OCR.Models.PreprocessingFilters.PreprocessingFilter.Invert());
-// Save preprocessed image to file for debugging purposes
-using(MemoryStream ms = recognitionEngine.PreprocessImage("source.png", filters))
-{
-	using(FileStream fs = new FileStream("result.png", FileMode.Create, FileAccess.Write))
-	{
-		ms.WriteTo(fs);
-	}
-}
-// Append preprocessing filters to recognition settings
-Aspose.OCR.RecognitionSettings recognitionSettings = new Aspose.OCR.RecognitionSettings();
-recognitionSettings.PreprocessingFilters = filters;
+// Add an image to OcrInput object and apply processing filters
+Aspose.OCR.OcrInput input = new Aspose.OCR.OcrInput(Aspose.OCR.InputType.SingleImage, filters);
+input.Add("source.png");
+// Save processed image to the folder
+Aspose.OCR.ImageProcessing.Save(input, @"C:\result");
 // Recognize image
-Aspose.OCR.RecognitionResult result = recognitionEngine.RecognizeImage("source.png", recognitionSettings);
-Console.WriteLine(result.RecognitionText);
+List<Aspose.OCR.RecognitionResult> results = recognitionEngine.Recognize(input);
+foreach(Aspose.OCR.RecognitionResult result in results)
+{
+	Console.WriteLine(result.RecognitionText);
+}
 ```
 
 <div class="duo">
@@ -103,7 +100,7 @@ Console.WriteLine(result.RecognitionText);
 	}
 </script>
 
-## Image regions preprocessing
+## Image regions processing
 
 You can invert certain areas of the image, such as black on a white headers, while leaving the rest of the content unchanged.
 

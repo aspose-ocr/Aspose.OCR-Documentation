@@ -1,6 +1,6 @@
 ---
-weight: 70
-date: "2022-08-31"
+weight: 120
+date: "2023-04-07"
 author: "Vladimir Lapin"
 type: docs
 url: /net/image-regions/
@@ -25,3 +25,4 @@ Aspose.OCR allows you to find and read only certain areas of an image, not all t
 - [Automatic search for line bounding boxes](/ocr/net/image-regions-line-find/)
 - [Automatic search for word bounding boxes](/ocr/net/image-regions-word-find/)
 - [Extracting text inside an image rectangle](/ocr/net/image-regions-extract/)
+- [Extracting lines with coordinates](/ocr/net/image-line-extract/)

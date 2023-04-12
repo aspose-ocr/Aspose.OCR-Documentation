@@ -1,11 +1,11 @@
 ---
-weight: 120
+weight: 40
 date: "2023-01-17"
 author: "Vladimir Lapin"
 type: docs
 url: /net/recognition/invoice/
 feedback: OCRNET
-title: Extracting text from invoice
+title: Extracting text from invoices
 description: How to digitize scanned invoices by automatically extracting text from them.
 keywords:
 - read

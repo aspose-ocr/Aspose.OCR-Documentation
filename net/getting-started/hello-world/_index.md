@@ -1,6 +1,6 @@
 ---
 weight: 50
-date: "2022-08-23"
+date: "2023-04-03"
 author: "Vladimir Lapin"
 type: docs
 url: /net/hello-world/
@@ -41,21 +41,28 @@ We assume that you already have a basic knowledge of **Microsoft Visual Studio**
    ```csharp
    Aspose.OCR.AsposeOcr recognitionEngine = new Aspose.OCR.AsposeOcr();
    ```
-2. Extract text from the image:
+2. Add the image to `OcrInput` object:
    ```csharp
-   string result = recognitionEngine.RecognizeImage("source.png");
+   Aspose.OCR.OcrInput source = new Aspose.OCR.OcrInput(Aspose.OCR.InputType.SingleImage);
+   source.Add("source.png");
+   ```
+3. Extract text from the image:
+   ```csharp
+   List<Aspose.OCR.RecognitionResult> results = recognitionEngine.Recognize(source);
    ```
 3. Output the recognized text:
    ```csharp
-   Console.WriteLine(result);
+   Console.WriteLine(results[0].RecognitionText);
    ```
 
 Full code:
 
 ```csharp
 Aspose.OCR.AsposeOcr recognitionEngine = new Aspose.OCR.AsposeOcr();
-string result = recognitionEngine.RecognizeImage("source.png");
-Console.WriteLine(result);
+Aspose.OCR.OcrInput source = new Aspose.OCR.OcrInput(Aspose.OCR.InputType.SingleImage);
+source.Add("source.png");
+List<Aspose.OCR.RecognitionResult> results = recognitionEngine.Recognize(source);
+Console.WriteLine(results[0].RecognitionText);
 ```
 
 ## Running

@@ -1,6 +1,6 @@
 ---
-weight: 30
-date: "2022-08-22"
+weight: 40
+date: "2023-04-06"
 author: "Vladimir Lapin"
 type: docs
 url: /net/characters/
@@ -18,7 +18,7 @@ keywords:
 - deny
 ---
 
-Aspose.OCR supports a [large list](/ocr/net/recognition-languages/) of extended Latin, Cyrillic, and Chinese characters. However, a typical image contains no more than half of these characters. You can greatly improve the accuracy and performance of recognition by specifying which characters the OCR engine will look for.
+Aspose.OCR supports a [large list](/ocr/net/recognition-languages/) of extended Latin, Cyrillic and Asian characters. However, a typical image contains no more than half of these characters. You can greatly improve the accuracy and performance of recognition by specifying which characters the OCR engine will look for.
 
 The full workflow is as follows:
 

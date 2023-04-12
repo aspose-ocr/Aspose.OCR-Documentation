@@ -1,11 +1,11 @@
 ---
-weight: 80
-date: "2022-09-23"
+weight: 50
+date: "2023-04-07"
 author: "Vladimir Lapin"
 type: docs
 url: /net/recognition/receipt/
 feedback: OCRNET
-title: Extracting text from receipt
+title: Extracting text from receipts
 description: How to digitize scanned receipts by automatically extracting text from them.
 keywords:
 - read

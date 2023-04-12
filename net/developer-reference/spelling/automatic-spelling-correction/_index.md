@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2022-09-02"
+date: "2023-04-07"
 author: "Vladimir Lapin"
 type: docs
 url: /net/automatic-spelling-correction/
@@ -48,18 +48,26 @@ Spell checking is done on the fly, either on [output](https://reference.aspose.c
 {{< tab tabNum="1" >}}
 ```csharp
 Aspose.OCR.AsposeOcr recognitionEngine = new Aspose.OCR.AsposeOcr();
-Aspose.OCR.RecognitionSettings recognitionSettings = new Aspose.OCR.RecognitionSettings();
-Aspose.OCR.RecognitionResult result = recognitionEngine.RecognizeImage("source.png", recognitionSettings);
-string correctedResult = result.GetSpellCheckCorrectedText(Aspose.OCR.SpellChecker.SpellCheckLanguage.Eng);
+// Add an image to OcrInput object
+Aspose.OCR.OcrInput input = new Aspose.OCR.OcrInput(Aspose.OCR.InputType.SingleImage);
+input.Add("source.png");
+// Recognize image
+List<Aspose.OCR.RecognitionResult> results = recognitionEngine.Recognize(input);
+// Output corrected result
+string correctedResult = results[0].GetSpellCheckCorrectedText(Aspose.OCR.SpellChecker.SpellCheckLanguage.Eng);
 Console.WriteLine(correctedResult);
 ```
 {{< /tab >}}
 {{< tab tabNum="2" >}}
 ```csharp
 Aspose.OCR.AsposeOcr recognitionEngine = new Aspose.OCR.AsposeOcr();
-Aspose.OCR.RecognitionSettings recognitionSettings = new Aspose.OCR.RecognitionSettings();
-Aspose.OCR.RecognitionResult result = recognitionEngine.RecognizeImage("source.png", recognitionSettings);
-result.Save("result.txt", Aspose.OCR.SaveFormat.Text, true, Aspose.OCR.SpellChecker.SpellCheckLanguage.Deu);
+// Add an image to OcrInput object
+Aspose.OCR.OcrInput input = new Aspose.OCR.OcrInput(Aspose.OCR.InputType.SingleImage);
+input.Add("source.png");
+// Recognize image
+List<Aspose.OCR.RecognitionResult> results = recognitionEngine.Recognize(input);
+// Save corrected result
+results[0].Save("result.txt", Aspose.OCR.SaveFormat.Text, true, Aspose.OCR.SpellChecker.SpellCheckLanguage.Deu);
 ```
 {{< /tab >}}
 {{< /tabs >}}
@@ -73,8 +81,7 @@ Automatic spelling correction requires additional processing resources and is di
 You can also correct misspelled words in any text string using [`CorrectSpelling`](https://reference.aspose.com/ocr/net/aspose.ocr/asposeocr/correctspelling/) method of [`Aspose.OCR.AsposeOcr`](https://reference.aspose.com/ocr/net/aspose.ocr/asposeocr/) class:
 
 ```csharp
-Aspose.OCR.AsposeOcr recognitionEngine = new Aspose.OCR.AsposeOcr();
-string result = recognitionEngine.RecognizeImage("source.png");
-string correctedResult = recognitionEngine.CorrectSpelling(result, Aspose.OCR.SpellChecker.SpellCheckLanguage.Deu);
+string text = "Die schönste Jungfrau sitzet dort oben wunderbar";
+string correctedText = recognitionEngine.CorrectSpelling(text, Aspose.OCR.SpellChecker.SpellCheckLanguage.Deu);
 Console.WriteLine(correctedResult);
 ```

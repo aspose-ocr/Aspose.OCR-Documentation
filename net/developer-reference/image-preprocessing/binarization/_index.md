@@ -1,6 +1,6 @@
 ---
 weight: 50
-date: "2022-08-26"
+date: "2023-04-07"
 author: "Vladimir Lapin"
 type: docs
 url: /net/binarization/
@@ -100,7 +100,7 @@ While you can extract text from color or grayscale scans or photographs, Aspose.
 
 ## Automatically converting the image to black and white
 
-By default, Aspose.OCR automatically calculates the optimal binarization parameters. To convert the image to black and white before performing the recognition, apply [`Binarize`](https://reference.aspose.com/ocr/net/aspose.ocr.models.preprocessingfilters/preprocessingfilter/binarize/) preprocessing filter:
+By default, Aspose.OCR automatically calculates the optimal binarization parameters. To convert the image to black and white before performing the recognition, apply [`Binarize`](https://reference.aspose.com/ocr/net/aspose.ocr.models.preprocessingfilters/preprocessingfilter/binarize/) processing filter:
 
 {{% alert color="primary" %}}
 The image is automatically converted to black and white when applying the following filters:
@@ -112,23 +112,20 @@ The image is automatically converted to black and white when applying the follow
 
 ```csharp
 Aspose.OCR.AsposeOcr recognitionEngine = new Aspose.OCR.AsposeOcr();
-// Use automatic binarization
+// Enable automatic conversion to black-and-white
 Aspose.OCR.Models.PreprocessingFilters.PreprocessingFilter filters = new Aspose.OCR.Models.PreprocessingFilters.PreprocessingFilter();
 filters.Add(Aspose.OCR.Models.PreprocessingFilters.PreprocessingFilter.Binarize());
-// Save preprocessed image to file for debugging purposes
-using(MemoryStream ms = recognitionEngine.PreprocessImage("source.png", filters))
-{
-	using(FileStream fs = new FileStream("result.png", FileMode.Create, FileAccess.Write))
-	{
-		ms.WriteTo(fs);
-	}
-}
-// Append preprocessing filters to recognition settings
-Aspose.OCR.RecognitionSettings recognitionSettings = new Aspose.OCR.RecognitionSettings();
-recognitionSettings.PreprocessingFilters = filters;
+// Add an image to OcrInput object and apply processing filters
+Aspose.OCR.OcrInput input = new Aspose.OCR.OcrInput(Aspose.OCR.InputType.SingleImage, filters);
+input.Add("source.png");
+// Save processed image to the folder
+Aspose.OCR.ImageProcessing.Save(input, @"C:\result");
 // Recognize image
-Aspose.OCR.RecognitionResult result = recognitionEngine.RecognizeImage("source.png", recognitionSettings);
-Console.WriteLine(result.RecognitionText);
+List<Aspose.OCR.RecognitionResult> results = recognitionEngine.Recognize(input);
+foreach(Aspose.OCR.RecognitionResult result in results)
+{
+	Console.WriteLine(result.RecognitionText);
+}
 ```
 
 ## Using binarization threshold
@@ -141,43 +138,25 @@ In some rare cases, you may need to override the automatic binarization settings
 
 If you notice that part of the text disappears from the recognition results, try manually specifying the **threshold** criteria that determine whether a pixel is considered black or white. If a pixel is lighter than the threshold, it is considered a white pixel, otherwise it is considered a black pixel. In other words, the higher the threshold value, the more content will be sent for recognition, including words printed in very light colors. If the threshold set to `0`, the black and white are assigned automatically based on the content of the image.
 
-To specify binarization threshold, provide it in [`Threshold`](https://reference.aspose.com/ocr/net/aspose.ocr.models.preprocessingfilters/preprocessingfilter/threshold/) preprocessing filter or set [`ThresholdValue`](https://reference.aspose.com/ocr/net/aspose.ocr/recognitionsettings/thresholdvalue/) property in recognition settings. To rely on automatic processing, do not add a filter and do not set the `ThresholdValue`.
+To specify binarization threshold, provide it in [`Threshold`](https://reference.aspose.com/ocr/net/aspose.ocr.models.preprocessingfilters/preprocessingfilter/threshold/) processing filter. To rely on automatic processing, do not add a filter.
 
-{{< tabs tabID="1" tabTotal="2" tabName1="Preprocessing filter" tabName2="Recognition settings" >}}
-{{< tab tabNum="1" >}}
 ```csharp
 Aspose.OCR.AsposeOcr recognitionEngine = new Aspose.OCR.AsposeOcr();
-// Manually specify binarization threshold
+// Manually specify black-and-white conversion threshold
 Aspose.OCR.Models.PreprocessingFilters.PreprocessingFilter filters = new Aspose.OCR.Models.PreprocessingFilters.PreprocessingFilter();
 filters.Add(Aspose.OCR.Models.PreprocessingFilters.PreprocessingFilter.Threshold(150));
-// Save preprocessed image to file for debugging purposes
-using(MemoryStream ms = recognitionEngine.PreprocessImage("source.png", filters))
+// Add an image to OcrInput object and apply processing filters
+Aspose.OCR.OcrInput input = new Aspose.OCR.OcrInput(Aspose.OCR.InputType.SingleImage, filters);
+input.Add("source.png");
+// Save processed image to the folder
+Aspose.OCR.ImageProcessing.Save(input, @"C:\result");
+// Recognize image
+List<Aspose.OCR.RecognitionResult> results = recognitionEngine.Recognize(input);
+foreach(Aspose.OCR.RecognitionResult result in results)
 {
-	using(FileStream fs = new FileStream("result.png", FileMode.Create, FileAccess.Write))
-	{
-		ms.WriteTo(fs);
-	}
+	Console.WriteLine(result.RecognitionText);
 }
-// Append preprocessing filters to recognition settings
-Aspose.OCR.RecognitionSettings recognitionSettings = new Aspose.OCR.RecognitionSettings();
-recognitionSettings.PreprocessingFilters = filters;
-// Recognize image
-Aspose.OCR.RecognitionResult result = recognitionEngine.RecognizeImage("source.png", recognitionSettings);
-Console.WriteLine(result.RecognitionText);
 ```
-{{< /tab >}}
-{{< tab tabNum="2" >}}
-```csharp
-Aspose.OCR.AsposeOcr recognitionEngine = new Aspose.OCR.AsposeOcr();
-// Manually specify binarization threshold
-Aspose.OCR.RecognitionSettings recognitionSettings = new Aspose.OCR.RecognitionSettings();
-recognitionSettings.ThresholdValue = 150;
-// Recognize image
-Aspose.OCR.RecognitionResult result = recognitionEngine.RecognizeImage("source.png", recognitionSettings);
-Console.WriteLine(result.RecognitionText);
-```
-{{< /tab >}}
-{{< /tabs >}}
 
 ### Live demo
 
@@ -286,7 +265,7 @@ superimposed on an image.
 
 </div>
 
-## Image regions preprocessing
+## Image regions processing
 
 `Binarize` and `Threshold` filters can be applied to specific regions of an image. For example, you can manually binarize a diagram in the article, leaving the rest of the content unchanged.
 
@@ -300,4 +279,4 @@ filters.Add(Aspose.OCR.Models.PreprocessingFilters.PreprocessingFilter.Threshold
 
 ## Usage scenarios
 
-Binarization is always used for text detection and automatic image corrections.
+Binarization is always used for text detection and automatic image corrections. Also, monochrome images take up significantly less disk space than full color images.

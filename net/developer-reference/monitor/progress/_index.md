@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2023-01-23"
+date: "2023-03-09"
 author: "Vladimir Lapin"
 type: docs
 url: /net/track-progress/
@@ -21,12 +21,16 @@ The library exposes the [`Aspose.OCR.AsposeOcr.OcrProgress`](https://reference.a
 
 ```csharp
 Aspose.OCR.AsposeOcr recognitionEngine = new Aspose.OCR.AsposeOcr();
-Aspose.OCR.DocumentRecognitionSettings recognitionSettings = new Aspose.OCR.DocumentRecognitionSettings();
-recognitionSettings.Language = Aspose.OCR.Language.Ukr;
+// Add images to OcrInput object
+Aspose.OCR.OcrInput input = new Aspose.OCR.OcrInput(Aspose.OCR.InputType.SingleImage);
+input.Add("page1.png");
+input.Add("page2.png");
+// Event handler
 recognitionEngine.OcrProgress += (Aspose.OCR.Models.Events.OcrPageRecognizeEventsArgs e) => {
 	Console.WriteLine($"Read page: {e.CurrentPage} | image: {e.CurrentImage} | time taken: {e.Duration.TotalSeconds} sec");
 };
-List<Aspose.OCR.RecognitionResult> results = recognitionEngine.RecognizePdf("source.pdf", recognitionSettings);
+// Recognize images
+List<Aspose.OCR.RecognitionResult> results = recognitionEngine.Recognize(input);
 Aspose.OCR.AsposeOcr.SaveMultipageDocument("result.json", Aspose.OCR.SaveFormat.Json, results);
 ```
 
@@ -35,5 +39,5 @@ For each page or file, the following information is reported:
 Property | Type | Description
 -------- | ---- | -----------
 `CurrentImage` | `int` | The ordinal number of the image.
-`CurrentPage` | `int` | The ordinal number of the page in a multi-page image or document: [TIFF](/ocr/net/recognition/tiff/), [DjVu](/ocr/net/recognition/djvu/) or [PDF](/ocr/net/recognition/pdf/).
+`CurrentPage` | `int` | The ordinal number of the page in a batch or a multi-page image/document.
 `Duration` | `TimeSpan` | The time interval from the start of image or page recognition until it is fully recognized.

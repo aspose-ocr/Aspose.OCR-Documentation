@@ -1,6 +1,6 @@
 ---
 weight: 30
-date: "2022-08-31"
+date: "2023-04-07"
 author: "Vladimir Lapin"
 type: docs
 url: /net/image-regions-word-find/
@@ -17,42 +17,43 @@ keywords:
 - coordinates
 ---
 
-Aspose.OCR allows you to automatically find the coordinates of image rectangles containing individual words in text. This can be useful for highlighting detected words when previewing an image.
+Aspose.OCR for .NET can automatically find the coordinates of image regions containing words. This can be useful for highlighting detected areas when previewing an image or [extracting](/ocr/net/image-regions-extract/) individual blocks of text.
 
-To get bounding boxes of all words of the image, use [`GetRectangles`](https://reference.aspose.com/ocr/net/aspose.ocr/asposeocr/getrectangles/) method of [`Aspose.OCR.AsposeOcr`](https://reference.aspose.com/ocr/net/aspose.ocr/asposeocr/) class. Specify `Aspose.OCR.AreasType.WORDS` as the **areaType** parameter of the method. `detectAreas` parameter of the method is ignored.
+To get bounding boxes of all words in images, provided in [`OcrInput` object](/ocr/net/ocrinput/), use [`Aspose.OCR.AsposeOcr.DetectRectangles`](https://reference.aspose.com/ocr/net/aspose.ocr/asposeocr/detectrectangles/) method. Specify `Aspose.OCR.AreasType.WORDS` as the **areasType** parameter of the method. `detectAreas` parameter of the method is ignored.
+
+The method returns a list of [`Aspose.OCR.RectangleOutput`](https://reference.aspose.com/ocr/net/aspose.ocr/rectangleoutput/) objects containing coordinates of each word in each image.
 
 {{% alert color="primary" %}}
-This method works for images in the following formats: GIF, PNG, JPEG, BMP, TIFF.
+PDF documents can contain more than one image per page. Therefore, the resulting list can contain more `Aspose.OCR.RectangleOutput` objects than the number of pages in the document.
 {{% /alert %}}
 
-{{< tabs tabID="1" tabTotal="2" tabName1="From file" tabName2="From stream" >}}
-{{< tab tabNum="1" >}}
-```csharp
-Aspose.OCR.AsposeOcr recognitionEngine = new Aspose.OCR.AsposeOcr();
-List<Aspose.Drawing.Rectangle> rectangleList = recognitionEngine.GetRectangles("source.png", Aspose.OCR.AreasType.WORDS);
-foreach(Aspose.Drawing.Rectangle rectangle in rectangleList)
-{
-	Console.WriteLine(rectangle.ToString());
-}
-```
-{{< /tab >}}
-{{< tab tabNum="2" >}}
-```csharp
-Aspose.OCR.AsposeOcr recognitionEngine = new Aspose.OCR.AsposeOcr();
-using(MemoryStream ms = new MemoryStream())
-{
-	using(FileStream fs = new FileStream("source.png", FileMode.Open, FileAccess.Read))
-	{
-		fs.CopyTo(ms);
-		List<Aspose.Drawing.Rectangle> rectangleList = recognitionEngine.GetRectangles(ms, Aspose.OCR.AreasType.WORDS);
-		foreach(Aspose.Drawing.Rectangle rectangle in rectangleList)
-		{
-			Console.WriteLine(rectangle.ToString());
-		}
-	}
-}
-```
-{{< /tab >}}
-{{< /tabs >}}
+Property | Type | Description
+-------- | ---- | -----------
+`Rectangles` | `List<Rectangle>` | Coordinates of each word of an image (top-left corner, width and height), returned as a list of `Rectangle` objects.
+`ImageIndex` | `int` | Sequence number of the image on the page. When working with single-page images, this value is always 0.
+`Page` | `int` | Page number. When working with single-page images, this value is always 0.
+`Source` | `string` | The full path or URL of the source file. If the file is provided as a `MemoryStream` object, an array of pixels, or a Base64 string, this value will be empty.
 
-Coordinates of each word (top-left corner, width and height) are returned as a list of [`Aspose.Drawing.Rectangle`](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle/) objects.
+{{% alert color="caution" %}}
+**Upgrading from previous versions**
+
+Starting with Aspose.OCR for .NET 23.3.1, this method replaces `GetRectangles` method.
+{{% /alert %}}
+
+## Example
+
+The following code example shows how to detect words in multiple images:
+
+```csharp
+Aspose.OCR.AsposeOcr recognitionEngine = new Aspose.OCR.AsposeOcr();
+// Add images to OcrInput object
+Aspose.OCR.OcrInput input = new Aspose.OCR.OcrInput(Aspose.OCR.InputType.SingleImage);
+input.Add("source1.png");
+input.Add("source2.jpg");
+// Detect words
+List<Aspose.OCR.RectangleOutput> results = recognitionEngine.DetectRectangles(input, Aspose.OCR.AreasType.WORDS);
+foreach(Aspose.OCR.RecognitionResult result in results)
+{
+	foreach(Rectangle region in result.Rectangles) Console.WriteLine($"File: {result.Source} | {region.Top}, {region.Left}, {region.Width}, {region.Height}");
+}
+```

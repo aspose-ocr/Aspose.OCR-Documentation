@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2022-08-22"
+date: "2023-04-07"
 author: "Vladimir Lapin"
 type: docs
 url: /net/characters-identify/
@@ -26,7 +26,12 @@ Aspose.OCR can automatically build a list of characters found in an image and pr
 {{< tab tabNum="1" >}}
 ```csharp
 Aspose.OCR.AsposeOcr recognitionEngine = new Aspose.OCR.AsposeOcr();
-Aspose.OCR.RecognitionResult result = recognitionEngine.RecognizeImage("source.png", new Aspose.OCR.RecognitionSettings());
+// Add an image to OcrInput object
+Aspose.OCR.OcrInput input = new Aspose.OCR.OcrInput(Aspose.OCR.InputType.SingleImage);
+input.Add("source.png");
+// Recognize image
+List<Aspose.OCR.RecognitionResult> results = recognitionEngine.Recognize(input);
+Aspose.OCR.RecognitionResult result = results[0];
 // Output recognition result
 Console.WriteLine($"Result: {result.RecognitionText}");
 // Get list of characters

@@ -1,6 +1,6 @@
 ---
 weight: 20
-date: "2022-08-26"
+date: "2023-04-07"
 author: "Vladimir Lapin"
 type: docs
 url: /net/denoise/
@@ -60,43 +60,25 @@ Noise removal automatically converts the image to [black and white](/ocr/net/bin
 
 ## Automatic noise removal
 
-To automatically remove the noise from the image before recognition, run the image through [`AutoDenoising`](https://reference.aspose.com/ocr/net/aspose.ocr.models.preprocessingfilters/preprocessingfilter/autodenoising/) preprocessing filter or enable [`AutoDenoising`](https://reference.aspose.com/ocr/net/aspose.ocr/recognitionsettings/autodenoising/) property in recognition settings.
+To automatically remove the noise from the image before recognition, run the image through [`AutoDenoising`](https://reference.aspose.com/ocr/net/aspose.ocr.models.preprocessingfilters/preprocessingfilter/autodenoising/) processing filter.
 
-{{< tabs tabID="1" tabTotal="2" tabName1="Preprocessing filter" tabName2="Recognition settings" >}}
-{{< tab tabNum="1" >}}
 ```csharp
 Aspose.OCR.AsposeOcr recognitionEngine = new Aspose.OCR.AsposeOcr();
-// Add noise removal filter
+// Enable automatic noise removal
 Aspose.OCR.Models.PreprocessingFilters.PreprocessingFilter filters = new Aspose.OCR.Models.PreprocessingFilters.PreprocessingFilter();
 filters.Add(Aspose.OCR.Models.PreprocessingFilters.PreprocessingFilter.AutoDenoising());
-// Save preprocessed image to file for debugging purposes
-using(MemoryStream ms = recognitionEngine.PreprocessImage("source.png", filters))
+// Add an image to OcrInput object and apply processing filters
+Aspose.OCR.OcrInput input = new Aspose.OCR.OcrInput(Aspose.OCR.InputType.SingleImage, filters);
+input.Add("source.png");
+// Save processed image to the folder
+Aspose.OCR.ImageProcessing.Save(input, @"C:\result");
+// Recognize image
+List<Aspose.OCR.RecognitionResult> results = recognitionEngine.Recognize(input);
+foreach(Aspose.OCR.RecognitionResult result in results)
 {
-	using(FileStream fs = new FileStream("result.png", FileMode.Create, FileAccess.Write))
-	{
-		ms.WriteTo(fs);
-	}
+	Console.WriteLine(result.RecognitionText);
 }
-// Append preprocessing filters to recognition settings
-Aspose.OCR.RecognitionSettings recognitionSettings = new Aspose.OCR.RecognitionSettings();
-recognitionSettings.PreprocessingFilters = filters;
-// Recognize image
-Aspose.OCR.RecognitionResult result = recognitionEngine.RecognizeImage("source.png", recognitionSettings);
-Console.WriteLine(result.RecognitionText);
 ```
-{{< /tab >}}
-{{< tab tabNum="2" >}}
-```csharp
-Aspose.OCR.AsposeOcr recognitionEngine = new Aspose.OCR.AsposeOcr();
-// Enable automatic noise removal in recognition settings
-Aspose.OCR.RecognitionSettings recognitionSettings = new Aspose.OCR.RecognitionSettings();
-recognitionSettings.AutoDenoising = true;
-// Recognize image
-Aspose.OCR.RecognitionResult result = recognitionEngine.RecognizeImage("source.png", recognitionSettings);
-Console.WriteLine(result.RecognitionText);
-```
-{{< /tab >}}
-{{< /tabs >}}
 
 <div class="duo">
 	<img src="origin.png" alt="Noisy image" />
@@ -123,7 +105,7 @@ Console.WriteLine(result.RecognitionText);
 	}
 </script>
 
-## Image regions preprocessing
+## Image regions processing
 
 You can automatically remove noise from certain areas of the image. For example, remove compression artifacts from the text of an article, leaving the headings unchanged.
 

@@ -1,12 +1,21 @@
 ---
-weight: 60
-date: "2023-01-23"
+weight: 70
+date: "2023-04-07"
 author: "Vladimir Lapin"
 type: docs
 url: /net/recognition/
+aliases:
+- /net/recognition/image/
+- /net/recognition/pdf/
+- /net/recognition/tiff/
+- /net/recognition/djvu/
+- /net/recognition/url/
+- /net/batch-recognition/
+- /net/recognition/pixel/
+- /net/recognition/base64/
 feedback: OCRNET
 title: Recognition
-description: Extracting text from images, web links, PDF documents, and DjVu files.
+description: Extracting text from images, web links, scanned PDFs, DjVu files, folders, archives and other content.
 keywords:
 - read
 - extract
@@ -14,44 +23,35 @@ keywords:
 - recognize
 ---
 
-Aspose.OCR for .NET can extract text from a wide variety of file formats and media sources.
+Reading text from any content in Aspose.OCR for .NET is as easy as calling a universal [`Aspose.OCR.AsposeOcr.Recognize`](https://reference.aspose.com/ocr/net/aspose.ocr/asposeocr/recognize/) method.
 
-## Extracting text from images
+This method takes [`OcrInput` object](/ocr/net/ocrinput/) and optional [recognition settings](/ocr/net/recognition-settings-common/).
 
-- [Extracting text from an image](/ocr/net/recognition/image/)  
-  Reading text from raster images in JPEG, PNG, single-page TIFF, BMP, and GIF formats.
-- [Extracting text from multi-page TIFF](/ocr/net/recognition/tiff/)  
-  Reading text from multi-page TIFF images.
-- [Extracting text from pixel array](/ocr/net/recognition/pixel/)  
-  Reading text from images, provided as byte array or an array of Aspose.Drawing.Color objects.
-- [Fast recognition](/ocr/net/fast-recognition/)  
-  Reading images in fastest recognition mode that consumes minimum possible resources.
-- [Recognizing single line](/ocr/net/recognize-single-line/)  
-  Reading text from images containing a single line of text.
-- [Extracting text from receipts](/ocr/net/recognition/receipt/)  
-  Digitizing scanned receipts without manual retyping.
-- [Extracting text from ID cards](/ocr/net/recognition/id-card/)  
-  Automatically read text from scanned or photographed ID cards.
-- [Extracting text from passports](/ocr/net/recognition/passport/)  
-  Digitize scans or photos of passports.
-- [Extracting text from vehicle license plates](/ocr/net/recognition/car-plate/)  
-  Reading vehicle license plates without manual retyping.
-- [Extracting text from invoices](/ocr/net/recognition/invoice/)  
-  Digitizing scanned invoices without manual retyping.
+Recognition results are returned as a list of [`Aspose.OCR.RecognitionResult`](https://reference.aspose.com/ocr/net/aspose.ocr/recognitionresult/) objects, that allow you to perform advanced manipulations with recognition results: [automatically correct spelling](/ocr/net/spelling/), [get image regions](/ocr/net/image-regions-extract/) and [save](/ocr/net/save/) results in various formats.
 
-## Extracting text from documents
+{{% alert color="caution" %}}
+**Upgrading from previous versions**
 
-- [Extracting text from PDF document](/ocr/net/recognition/pdf/)  
-  Reading text from a PDF document that consists of scanned images without searchable text.
+Starting with Aspose.OCR for .NET 23.3.1, this method replaces `RecognizeImage`, `RecognizePdf`, `RecognizeTiff`, `RecognizeDjvu`, `RecognizeImageFromUri`, `RecognizeMultipleImages`, and `RecognizeImageFromBase64` recognition methods.
+{{% /alert %}}
 
-## Extracting text from other file formats
+## Example
 
-- [Extracting text from DjVu file](/ocr/net/recognition/djvu/)  
-  Reading text from multi-page DjVu files.
+The following code example shows how to extract text from multiple images:
 
-## Extracting text from alternative media
-
-- [Batch recognition](/ocr/net/batch-recognition/)  
-  Reading text from a list of raster images, folder, or ZIP archive.
-- [Extracting text from URL](/ocr/net/recognition/url/)  
-  Reading text from raster images hosted on web sites.
+```csharp
+Aspose.OCR.AsposeOcr recognitionEngine = new Aspose.OCR.AsposeOcr();
+// Add images to OcrInput object
+Aspose.OCR.OcrInput input = new Aspose.OCR.OcrInput(Aspose.OCR.InputType.SingleImage);
+input.Add("source1.png");
+input.Add("source2.jpg");
+// Set recognition language
+Aspose.OCR.RecognitionSettings recognitionSettings = new Aspose.OCR.RecognitionSettings();
+recognitionSettings.Language = Aspose.OCR.Language.Ukr;
+// Recognize image
+List<Aspose.OCR.RecognitionResult> results = recognitionEngine.Recognize(input, recognitionSettings);
+foreach(Aspose.OCR.RecognitionResult result in results)
+{
+	Console.WriteLine(result.RecognitionText);
+}
+```

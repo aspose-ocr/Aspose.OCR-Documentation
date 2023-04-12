@@ -1,6 +1,6 @@
 ---
 weight: 30
-date: "2022-08-22"
+date: "2023-04-07"
 author: "Vladimir Lapin"
 type: docs
 url: /net/characters-blacklist/
@@ -19,12 +19,26 @@ keywords:
 
 Image defects such as dirt and scratches may cause recognition errors. For example, dots or other print defects next to letters can be incorrectly recognized as punctuation or diacritical marks.
 
-To ignore certain characters during recognition, provide them in [`IgnoredCharacters`](https://reference.aspose.com/ocr/net/aspose.ocr/recognitionsettings/ignoredcharacters/) property of [recognition settings](https://reference.aspose.com/ocr/net/aspose.ocr/recognitionsettings/) as a case-sensitive string:
+To ignore certain characters during recognition, provide them in `IgnoredSymbols` property of [recognition settings](https://reference.aspose.com/ocr/net/aspose.ocr/recognitionsettings/) as a case-sensitive string:
 
 ```csharp
 Aspose.OCR.AsposeOcr recognitionEngine = new Aspose.OCR.AsposeOcr();
+// Add an image to OcrInput object
+Aspose.OCR.OcrInput input = new Aspose.OCR.OcrInput(Aspose.OCR.InputType.SingleImage);
+input.Add("source.png");
+// Limit a subset of recognized characters
 Aspose.OCR.RecognitionSettings recognitionSettings = new Aspose.OCR.RecognitionSettings();
-recognitionSettings.IgnoredCharacters = "Áá";
-Aspose.OCR.RecognitionResult result = recognitionEngine.RecognizeImage("source.png", recognitionSettings);
-Console.WriteLine(result.RecognitionText);
+recognitionSettings.IgnoredSymbols = "Áá";
+// Recognize image
+List<Aspose.OCR.RecognitionResult> results = recognitionEngine.Recognize(input, recognitionSettings);
+foreach(Aspose.OCR.RecognitionResult result in results)
+{
+	Console.WriteLine(result.RecognitionText);
+}
 ```
+
+{{% alert color="caution" %}}
+**Upgrading from previous versions**
+
+Starting with Aspose.OCR for .NET 23.3.1, this recognition setting replaces the `IgnoredCharacters` recognition setting.
+{{% /alert %}}

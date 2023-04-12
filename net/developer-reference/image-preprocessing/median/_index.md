@@ -1,12 +1,12 @@
 ---
 weight: 90
-date: "2022-08-26"
+date: "2023-04-07"
 author: "Vladimir Lapin"
 type: docs
 url: /net/median/
 feedback: OCRNET
 title: Median filter
-description: How to smooth out noise in an image before applying other preprocessing filters or performing OCR.
+description: How to smooth out noise in an image before applying other processing filters or performing OCR.
 keywords:
 - gaussian
 - blur
@@ -45,9 +45,9 @@ keywords:
 	}
 </style>
 
-Photos taken in low light conditions can have a lot of digital noise. Noise can also show up in highly compressed JPEG images in form of compression artifacts. This noise can mislead OCR algorithms and prevent other preprocessing filters from working properly.
+Photos taken in low light conditions can have a lot of digital noise. Noise can also show up in highly compressed JPEG images in form of compression artifacts. This noise can mislead OCR algorithms and prevent other processing filters from working properly.
 
-Aspose.OCR provides an alternative method for [removing noise](/ocr/net/denoise/) from an image at the cost of some detail, called the _median filter_. This makes the image a little blurry while preserving the edges of high-contrast objects such as letters. The results can be further improved with the [auto-contrast](/ocr/net/contrast/) or [binarization](/ocr/net/binarization/) preprocessing filters.
+Aspose.OCR provides an alternative method for [removing noise](/ocr/net/denoise/) from an image at the cost of some detail, called the _median filter_. This makes the image a little blurry while preserving the edges of high-contrast objects such as letters. The results can be further improved with the [auto-contrast](/ocr/net/contrast/) or [binarization](/ocr/net/binarization/) processing filters.
 
 {{% alert color="primary" %}} 
 The median filter automatically converts the image to [grayscale](/ocr/net/grayscale/).
@@ -55,27 +55,24 @@ The median filter automatically converts the image to [grayscale](/ocr/net/grays
 
 ## Applying the median filter
 
-To smooth out noise in an image, run the image through [`Median`](https://reference.aspose.com/ocr/net/aspose.ocr.models.preprocessingfilters/preprocessingfilter/median/) preprocessing filter.
+To smooth out noise in an image, run the image through [`Median`](https://reference.aspose.com/ocr/net/aspose.ocr.models.preprocessingfilters/preprocessingfilter/median/) processing filter.
 
 ```csharp
 Aspose.OCR.AsposeOcr recognitionEngine = new Aspose.OCR.AsposeOcr();
 // Smooth out noise in an image
 Aspose.OCR.Models.PreprocessingFilters.PreprocessingFilter filters = new Aspose.OCR.Models.PreprocessingFilters.PreprocessingFilter();
 filters.Add(Aspose.OCR.Models.PreprocessingFilters.PreprocessingFilter.Median());
-// Save preprocessed image to file for debugging purposes
-using(MemoryStream ms = recognitionEngine.PreprocessImage("source.png", filters))
-{
-	using(FileStream fs = new FileStream("result.png", FileMode.Create, FileAccess.Write))
-	{
-		ms.WriteTo(fs);
-	}
-}
-// Append preprocessing filters to recognition settings
-Aspose.OCR.RecognitionSettings recognitionSettings = new Aspose.OCR.RecognitionSettings();
-recognitionSettings.PreprocessingFilters = filters;
+// Add an image to OcrInput object and apply processing filters
+Aspose.OCR.OcrInput input = new Aspose.OCR.OcrInput(Aspose.OCR.InputType.SingleImage, filters);
+input.Add("source.png");
+// Save processed image to the folder
+Aspose.OCR.ImageProcessing.Save(input, @"C:\result");
 // Recognize image
-Aspose.OCR.RecognitionResult result = recognitionEngine.RecognizeImage("source.png", recognitionSettings);
-Console.WriteLine(result.RecognitionText);
+List<Aspose.OCR.RecognitionResult> results = recognitionEngine.Recognize(input);
+foreach(Aspose.OCR.RecognitionResult result in results)
+{
+	Console.WriteLine(result.RecognitionText);
+}
 ```
 
 <div class="duo">
@@ -103,7 +100,7 @@ Console.WriteLine(result.RecognitionText);
 	}
 </script>
 
-## Image regions preprocessing
+## Image regions processing
 
 The median filter can be applied to specific areas of an image. For example, you can smooth an illustration in the newspaper article while leaving the rest of the content unchanged.
 

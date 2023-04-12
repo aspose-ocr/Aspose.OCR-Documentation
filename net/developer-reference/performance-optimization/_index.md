@@ -1,6 +1,6 @@
 ---
-weight: 100
-date: "2022-09-08"
+weight: 90
+date: "2023-04-08"
 author: "Vladimir Lapin"
 type: docs
 url: /net/performance-optimization/

@@ -1,6 +1,6 @@
 ---
 weight: 80
-date: "2022-08-26"
+date: "2023-04-07"
 author: "Vladimir Lapin"
 type: docs
 url: /net/dilate/
@@ -49,7 +49,7 @@ keywords:
 
 Some images, such as store receipts, have very thin characters that may be damaged by [automatic contrast corrections](/ocr/net/contrast/) or [binarization](/ocr/net/binarization/). 
 
-Aspose.OCR provides a special preprocessing filter called _dilation_ that can increase the thickness of characters in an image by adding pixels to the edges of high-contrast objects, such as letters.
+Aspose.OCR provides a special processing filter called _dilation_ that can increase the thickness of characters in an image by adding pixels to the edges of high-contrast objects, such as letters.
 
 {{% alert color="primary" %}} 
 Dilation automatically converts the image to [black and white](/ocr/net/binarization/#automatically-converting-the-image-to-black-and-white).
@@ -57,27 +57,24 @@ Dilation automatically converts the image to [black and white](/ocr/net/binariza
 
 ## Dilation
 
-To increase the thickness of characters in an image, run the image through [`Dilate`](https://reference.aspose.com/ocr/net/aspose.ocr.models.preprocessingfilters/preprocessingfilter/dilate/) preprocessing filter.
+To increase the thickness of characters in an image, run the image through [`Dilate`](https://reference.aspose.com/ocr/net/aspose.ocr.models.preprocessingfilters/preprocessingfilter/dilate/) processing filter.
 
 ```csharp
 Aspose.OCR.AsposeOcr recognitionEngine = new Aspose.OCR.AsposeOcr();
-// Apply dilate filter
+// Increase the thickness of characters
 Aspose.OCR.Models.PreprocessingFilters.PreprocessingFilter filters = new Aspose.OCR.Models.PreprocessingFilters.PreprocessingFilter();
 filters.Add(Aspose.OCR.Models.PreprocessingFilters.PreprocessingFilter.Dilate());
-// Save preprocessed image to file for debugging purposes
-using(MemoryStream ms = recognitionEngine.PreprocessImage("source.png", filters))
-{
-	using(FileStream fs = new FileStream("result.png", FileMode.Create, FileAccess.Write))
-	{
-		ms.WriteTo(fs);
-	}
-}
-// Append preprocessing filters to recognition settings
-Aspose.OCR.RecognitionSettings recognitionSettings = new Aspose.OCR.RecognitionSettings();
-recognitionSettings.PreprocessingFilters = filters;
+// Add an image to OcrInput object and apply processing filters
+Aspose.OCR.OcrInput input = new Aspose.OCR.OcrInput(Aspose.OCR.InputType.SingleImage, filters);
+input.Add("source.png");
+// Save processed image to the folder
+Aspose.OCR.ImageProcessing.Save(input, @"C:\result");
 // Recognize image
-Aspose.OCR.RecognitionResult result = recognitionEngine.RecognizeImage("source.png", recognitionSettings);
-Console.WriteLine(result.RecognitionText);
+List<Aspose.OCR.RecognitionResult> results = recognitionEngine.Recognize(input);
+foreach(Aspose.OCR.RecognitionResult result in results)
+{
+	Console.WriteLine(result.RecognitionText);
+}
 ```
 
 <div class="duo">
@@ -105,7 +102,7 @@ Console.WriteLine(result.RecognitionText);
 	}
 </script>
 
-## Image regions preprocessing
+## Image regions processing
 
 `Dilate` filter can be applied to specific regions of an image. For example, you can make the article body text thicker while leaving the headers unchanged.
 

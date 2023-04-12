@@ -1,6 +1,6 @@
 ---
 weight: 20
-date: "2023-01-23"
+date: "2023-03-09"
 author: "Vladimir Lapin"
 type: docs
 url: /net/identify-problems/
@@ -18,9 +18,13 @@ Non-fatal recognition errors are stored as a list of strings in the `Warnings` p
 
 ```csharp
 Aspose.OCR.AsposeOcr recognitionEngine = new Aspose.OCR.AsposeOcr();
-Aspose.OCR.RecognitionSettings recognitionSettings = new Aspose.OCR.RecognitionSettings();
-Aspose.OCR.RecognitionResult result = recognitionEngine.RecognizeImage("source.png",recognitionSettings);
-foreach(string warning in result.Warnings)
+// Add an image to OcrInput object
+Aspose.OCR.OcrInput input = new Aspose.OCR.OcrInput(Aspose.OCR.InputType.SingleImage);
+input.Add("source.png");
+// Recognize image
+List<Aspose.OCR.RecognitionResult> results = recognitionEngine.Recognize(input);
+// Output warnings
+foreach(string warning in result[0].Warnings)
 {
 	Console.WriteLine(warning);
 }

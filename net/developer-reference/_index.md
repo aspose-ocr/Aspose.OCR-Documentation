@@ -1,6 +1,6 @@
 ---
 weight: 30
-date: "2022-06-09"
+date: "2023-04-05"
 author: "Vladimir Lapin"
 type: docs
 url: /net/developer-reference/
@@ -26,27 +26,33 @@ Aspose.OCR for .NET handles all aspects of recognition - from preprocessing the 
 
 ![Stages of Aspose.OCR image processing](ocr-stages.png)
 
-1. [**Pre-processing**](/ocr/net/image-preprocessing/): enhance an image before it is sent to the OCR engine to enhance recognition accuracy.
+1. **Preparing content for recognition**:
+
+    - [Prepare a batch of images, scanned PDFs, URLs and other content for recognition](/ocr/net/ocrinput/)
+    - [Apply image processing filters](/ocr/net/image-processing/)
+
 2. **Configuring recognition parameters**:
 
-    - [Specify a language for recognition](/ocr/net/languages/)
+    - [Specify a recognition language](/ocr/net/languages/)
     - [Limit the subset of characters the OCR module will look for](/ocr/net/characters/)
     - [Customize recognition parameters](/ocr/net/settings/)
     - [Select document areas detection algorithm](/ocr/net/areas-detection/)
 
 3. **Recognizing**:
 
-    - [Extracting text from an image, document, or other media](/ocr/net/recognition/)
-    - [Balancing recognition speed, quality, and resource usage](/ocr/net/performance-optimization/)
+    - [Extract text](/ocr/net/recognition/)
+    - [Recognize unified document types](/ocr/net/specialized-recognition-methods/)
+    - [Balance recognition speed, quality, and resource usage](/ocr/net/performance-optimization/)
 
 4. **Post-processing**:
 
-    - [Working with image regions](/ocr/net/image-regions/)
-    - [Automatic spelling corrections](/ocr/net/spelling/)
+    - [Detect and manipulate image regions](/ocr/net/image-regions/)
+    - [Automatically correct misspelled words](/ocr/net/spelling/)
 
-5. **Saving recognition results**:
+5. **Fetching recognition results**:
 
-    - [Saving recognition results as a file](/ocr/net/save-file/)
-    - [Getting recognition results as text](/ocr/net/save-text/)
-    - [Getting recognition results as JSON](/ocr/net/save-json/)
-    - [Getting recognition results as XML](/ocr/net/save-xml/)
+    - [Save recognition results as a file](/ocr/net/save-file/)
+    - [Save recognition results as a searchable PDF](/ocr/net/save-searchable-pdf/)
+    - [Get recognition results as text](/ocr/net/save-text/)
+    - [Get recognition results as JSON](/ocr/net/save-json/)
+    - [Get recognition results as XML](/ocr/net/save-xml/)

@@ -1,6 +1,6 @@
 ---
 weight: 40
-date: "2022-09-06"
+date: "2023-04-07"
 author: "Vladimir Lapin"
 type: docs
 url: /net/save-xml/
@@ -18,8 +18,12 @@ Aspose.OCR for .NET can return recognition results as XML - a universal data exc
 
 ```csharp
 Aspose.OCR.AsposeOcr recognitionEngine = new Aspose.OCR.AsposeOcr();
-Aspose.OCR.RecognitionSettings recognitionSettings = new Aspose.OCR.RecognitionSettings();
-Aspose.OCR.RecognitionResult result = recognitionEngine.RecognizeImage("source.png", recognitionSettings);
-string xml = result.GetXml();
+// Add an image to OcrInput object
+Aspose.OCR.OcrInput input = new Aspose.OCR.OcrInput(Aspose.OCR.InputType.SingleImage);
+input.Add("source.png");
+// Recognize image
+List<Aspose.OCR.RecognitionResult> results = recognitionEngine.Recognize(input);
+// Show XML
+string xml = results[0].GetXml();
 Console.WriteLine(xml);
 ```

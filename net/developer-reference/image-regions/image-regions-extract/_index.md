@@ -1,6 +1,6 @@
 ---
 weight: 40
-date: "2022-08-31"
+date: "2023-04-07"
 author: "Vladimir Lapin"
 type: docs
 url: /net/image-regions-extract/
@@ -71,25 +71,29 @@ keywords:
 	}
 </style>
 
-Aspose.OCR allows you to extract names, dates, numbers, and other blocks from certain areas of uniform images, such as ID cards, visas, driver's licenses, applications, and so on. Regions can be provided manually or automatically detected using the [`GetRectangles`](https://reference.aspose.com/ocr/net/aspose.ocr/asposeocr/getrectangles/) method of [`Aspose.OCR.AsposeOcr`](https://reference.aspose.com/ocr/net/aspose.ocr/asposeocr/) class.
+Aspose.OCR allows you to extract names, dates, numbers, and other blocks from certain areas of uniform images, such as ID cards, visas, driver's licenses, applications, and so on. Regions can be provided manually or automatically detected using the [`Aspose.OCR.AsposeOcr.DetectRectangles`](https://reference.aspose.com/ocr/net/aspose.ocr/asposeocr/detectrectangles/) method.
 
 To extract text from one or more areas of an image, provide a list of [`Aspose.Drawing.Rectangle`](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle/) objects specifying the upper left corner and the width and height of the image area in [`RecognitionAreas`](https://reference.aspose.com/ocr/net/aspose.ocr/recognitionsettings/recognitionareas/) field of [`RecognitionSettings`](https://reference.aspose.com/ocr/net/aspose.ocr/recognitionsettings/).
 
 ```csharp
 Aspose.OCR.AsposeOcr recognitionEngine = new Aspose.OCR.AsposeOcr();
+// Manually specify recognition areas
 List<Aspose.Drawing.Rectangle> rectangles = new List<Aspose.Drawing.Rectangle>(){
 	new Aspose.Drawing.Rectangle(231,101,430,42),
 	new Aspose.Drawing.Rectangle(546,224,123,26)
 };
 Aspose.OCR.RecognitionSettings recognitionSettings = new Aspose.OCR.RecognitionSettings();
-recognitionSettings.AutoDenoising = true;
 recognitionSettings.RecognitionAreas = rectangles;
-Aspose.OCR.RecognitionResult result = recognitionEngine.RecognizeImage("dl.png", recognitionSettings);
-Console.WriteLine("Name: "+result.RecognitionAreasText[0]);
-Console.WriteLine("Expiry: "+result.RecognitionAreasText[1]);
+// Recognize image
+Aspose.OCR.OcrInput input = new Aspose.OCR.OcrInput(Aspose.OCR.InputType.SingleImage);
+input.Add("source.png");
+List<Aspose.OCR.RecognitionResult> results = recognitionEngine.Recognize(input, recognitionSettings);
+// Output recognition results for each area
+Console.WriteLine("Name: "+results[0].RecognitionAreasText[0]);
+Console.WriteLine("Expiry: "+results[0].RecognitionAreasText[1]);
 ```
 
-The text from each rectangle is returned in the [`RecognitionAreasText`](https://reference.aspose.com/ocr/net/aspose.ocr/recognitionresult/recognitionareastext/) property of the recognition results.
+The text from each rectangle is returned in the [`RecognitionAreasText`](https://reference.aspose.com/ocr/net/aspose.ocr/recognitionresult/recognitionareastext/) property of the recognition result.
 
 ## Live demo
 

@@ -1,12 +1,11 @@
 ---
 weight: 10
-date: "2023-01-12"
+date: "2023-04-07"
 author: "Vladimir Lapin"
 type: docs
 url: /net/save-file/
 feedback: OCRNET
 aliases:
-- /net/save-ocr-result-as-multipage-document/
 - /net/get-ocr-result-as-file/
 - /net/get-ocr-result-as-stream/
 title: Saving recognition results as a file
@@ -15,7 +14,6 @@ keywords:
 - save
 - result
 - file
-- PDF
 - Office
 - Word
 - Excel
@@ -48,19 +46,27 @@ You can optionally enable [automatic spelling corrections](/ocr/net/automatic-sp
 {{< tab tabNum="1" >}}
 ```csharp
 Aspose.OCR.AsposeOcr recognitionEngine = new Aspose.OCR.AsposeOcr();
-Aspose.OCR.RecognitionSettings recognitionSettings = new Aspose.OCR.RecognitionSettings();
-Aspose.OCR.RecognitionResult result = recognitionEngine.RecognizeImage("source.png", recognitionSettings);
-result.Save("result.pdf", Aspose.OCR.SaveFormat.Pdf, true, Aspose.OCR.SpellChecker.SpellCheckLanguage.Eng, "user-dictionary.txt");
+// Add an image to OcrInput object
+Aspose.OCR.OcrInput input = new Aspose.OCR.OcrInput(Aspose.OCR.InputType.SingleImage);
+input.Add("source.png");
+// Recognize image
+List<Aspose.OCR.RecognitionResult> results = recognitionEngine.Recognize(input);
+// Save result
+results[0].Save("result.txt", Aspose.OCR.SaveFormat.Text);
 ```
 {{< /tab >}}
 {{< tab tabNum="2" >}}
 ```csharp
 Aspose.OCR.AsposeOcr recognitionEngine = new Aspose.OCR.AsposeOcr();
-Aspose.OCR.RecognitionSettings recognitionSettings = new Aspose.OCR.RecognitionSettings();
-Aspose.OCR.RecognitionResult result = recognitionEngine.RecognizeImage("source.png", recognitionSettings);
+// Add an image to OcrInput object
+Aspose.OCR.OcrInput input = new Aspose.OCR.OcrInput(Aspose.OCR.InputType.SingleImage);
+input.Add("source.png");
+// Recognize image
+List<Aspose.OCR.RecognitionResult> results = recognitionEngine.Recognize(input);
+// Save result
 using(MemoryStream ms = new MemoryStream())
 {
-	result.Save(ms, Aspose.OCR.SaveFormat.Pdf, true, Aspose.OCR.SpellChecker.SpellCheckLanguage.Eng, "user-dictionary.txt");
+	results[0].Save(ms, Aspose.OCR.SaveFormat.Text);
 }
 ```
 {{< /tab >}}
@@ -74,23 +80,29 @@ You can merge several recognition results into one document using [`SaveMultipag
 {{< tab tabNum="1" >}}
 ```csharp
 Aspose.OCR.AsposeOcr recognitionEngine = new Aspose.OCR.AsposeOcr();
-Aspose.OCR.RecognitionSettings recognitionSettings = new Aspose.OCR.RecognitionSettings();
-List<Aspose.OCR.RecognitionResult> results = new List<Aspose.OCR.RecognitionResult>();
-results.Add(recognitionEngine.RecognizeImage("page-1.png", recognitionSettings));
-results.Add(recognitionEngine.RecognizeImage("page-2.png", recognitionSettings));
-Aspose.OCR.AsposeOcr.SaveMultipageDocument("result.pdf", Aspose.OCR.SaveFormat.Pdf, results);
+// Add images to OcrInput object
+Aspose.OCR.OcrInput input = new Aspose.OCR.OcrInput(Aspose.OCR.InputType.SingleImage);
+input.Add("page1.png");
+input.Add("page2.png");
+// Recognize image
+List<Aspose.OCR.RecognitionResult> results = recognitionEngine.Recognize(input);
+// Save results
+Aspose.OCR.AsposeOcr.SaveMultipageDocument("result.docx", Aspose.OCR.SaveFormat.Docx, results);
 ```
 {{< /tab >}}
 {{< tab tabNum="2" >}}
 ```csharp
 Aspose.OCR.AsposeOcr recognitionEngine = new Aspose.OCR.AsposeOcr();
-Aspose.OCR.RecognitionSettings recognitionSettings = new Aspose.OCR.RecognitionSettings();
-List<Aspose.OCR.RecognitionResult> results = new List<Aspose.OCR.RecognitionResult>();
-results.Add(recognitionEngine.RecognizeImage("page-1.png", recognitionSettings));
-results.Add(recognitionEngine.RecognizeImage("page-2.png", recognitionSettings));
+// Add images to OcrInput object
+Aspose.OCR.OcrInput input = new Aspose.OCR.OcrInput(Aspose.OCR.InputType.SingleImage);
+input.Add("page1.png");
+input.Add("page2.png");
+// Recognize image
+List<Aspose.OCR.RecognitionResult> results = recognitionEngine.Recognize(input);
+// Save results
 using(MemoryStream ms = new MemoryStream())
 {
-	Aspose.OCR.AsposeOcr.SaveMultipageDocument(ms, Aspose.OCR.SaveFormat.Pdf, results);
+	Aspose.OCR.AsposeOcr.SaveMultipageDocument(ms, Aspose.OCR.SaveFormat.Docx, results);
 }
 ```
 {{< /tab >}}

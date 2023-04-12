@@ -1,6 +1,6 @@
 ---
 weight: 40
-date: "2022-11-15"
+date: "2023-04-09"
 author: "Vladimir Lapin"
 type: docs
 url: /net/areas-detection/table/
@@ -26,9 +26,16 @@ The following code sample demonstrates how to use this document areas detection 
 
 ```csharp
 Aspose.OCR.AsposeOcr recognitionEngine = new Aspose.OCR.AsposeOcr();
+// Add an image to OcrInput object
+Aspose.OCR.OcrInput input = new Aspose.OCR.OcrInput(Aspose.OCR.InputType.SingleImage);
+input.Add("source.png");
+// Set document areas detection mode
 Aspose.OCR.RecognitionSettings recognitionSettings = new Aspose.OCR.RecognitionSettings();
 recognitionSettings.DetectAreasMode = Aspose.OCR.DetectAreasMode.TABLE;
 // Recognize image
-Aspose.OCR.RecognitionResult result = recognitionEngine.RecognizeImage("source.png", recognitionSettings);
-Console.WriteLine(result.RecognitionText);
+List<Aspose.OCR.RecognitionResult> results = recognitionEngine.Recognize(input, recognitionSettings);
+foreach(Aspose.OCR.RecognitionResult result in results)
+{
+	Console.WriteLine(result.RecognitionText);
+}
 ```

@@ -1,6 +1,6 @@
 ---
 weight: 50
-date: "2022-09-01"
+date: "2023-04-07"
 author: "Vladimir Lapin"
 type: docs
 url: /net/image-line-extract/
@@ -65,8 +65,10 @@ Field | Type | Description
 
 ```csharp
 Aspose.OCR.AsposeOcr recognitionEngine = new Aspose.OCR.AsposeOcr();
-Aspose.OCR.RecognitionResult result = recognitionEngine.RecognizeImage("source.png", new Aspose.OCR.RecognitionSettings());
-foreach(Aspose.OCR.RecognitionResult.LinesResult line in result.RecognitionLinesResult)
+Aspose.OCR.OcrInput input = new Aspose.OCR.OcrInput(Aspose.OCR.InputType.SingleImage);
+input.Add("source.png");
+List<Aspose.OCR.RecognitionResult> results = recognitionEngine.Recognize(input);
+foreach(Aspose.OCR.RecognitionResult.LinesResult line in results[0].RecognitionLinesResult)
 {
 	Console.WriteLine($"{line.Line}: {line.TextInLine}");
 }

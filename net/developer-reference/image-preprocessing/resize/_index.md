@@ -1,6 +1,6 @@
 ---
 weight: 40
-date: "2022-08-11"
+date: "2023-04-07"
 author: "Vladimir Lapin"
 type: docs
 url: /net/resize/
@@ -21,11 +21,11 @@ The Aspose.OCR recognition engine can handle images of any size. However, very s
 - _Small images_ may lose some detail due to noise removal, binarization, and automatic contrast correction.
 - Recognizing _very large images_ can take much more time and resources.
 
-Aspose.OCR offers flexible preprocessing filters that allow you to upscale small images, shrink large images, or resize an image to predefined width and height.
+Aspose.OCR offers flexible processing filters that allow you to upscale small images, shrink large images, or resize an image to predefined width and height.
 
 ## Proportional image scaling
 
-To scale images up or down proportionally, use the [`Scale`](https://reference.aspose.com/ocr/net/aspose.ocr.models.preprocessingfilters/preprocessingfilter/scale/) preprocessing filter. The filter takes a scaling ratio (floating point number) as a parameter:
+To scale images up or down proportionally, use the [`Scale`](https://reference.aspose.com/ocr/net/aspose.ocr.models.preprocessingfilters/preprocessingfilter/scale/) processing filter. The filter takes a scaling ratio (floating point number) as a parameter:
 
 Scaling ratio | Result | Example
 ------------- | ------ | -------
@@ -40,25 +40,22 @@ Aspose.OCR.AsposeOcr recognitionEngine = new Aspose.OCR.AsposeOcr();
 // Scale the image to twice its original size using bilinear interpolation
 Aspose.OCR.Models.PreprocessingFilters.PreprocessingFilter filters = new Aspose.OCR.Models.PreprocessingFilters.PreprocessingFilter();
 filters.Add(Aspose.OCR.Models.PreprocessingFilters.PreprocessingFilter.Scale(2, Aspose.OCR.Filters.InterpolationFilterType.Triangle));
-// Save resized image to file for debugging purposes
-using(MemoryStream ms = recognitionEngine.PreprocessImage("source.png", filters))
-{
-	using(FileStream fs = new FileStream("result.png", FileMode.Create, FileAccess.Write))
-	{
-		ms.WriteTo(fs);
-	}
-}
-// Append preprocessing filters to recognition settings
-Aspose.OCR.RecognitionSettings recognitionSettings = new Aspose.OCR.RecognitionSettings();
-recognitionSettings.PreprocessingFilters = filters;
+// Add an image to OcrInput object and apply processing filters
+Aspose.OCR.OcrInput input = new Aspose.OCR.OcrInput(Aspose.OCR.InputType.SingleImage, filters);
+input.Add("source.png");
+// Save processed image to the folder
+Aspose.OCR.ImageProcessing.Save(input, @"C:\result");
 // Recognize image
-Aspose.OCR.RecognitionResult result = recognitionEngine.RecognizeImage("source.png", recognitionSettings);
-Console.WriteLine(result.RecognitionText);
+List<Aspose.OCR.RecognitionResult> results = recognitionEngine.Recognize(input);
+foreach(Aspose.OCR.RecognitionResult result in results)
+{
+	Console.WriteLine(result.RecognitionText);
+}
 ```
 
 ## Manual image resizing
 
-You can manually define the width and height of the target image (in pixels) using the [`Resize`](https://reference.aspose.com/ocr/net/aspose.ocr.models.preprocessingfilters/preprocessingfilter/resize/) preprocessing filter. It also allows you to select an [interpolation algorithm](https://reference.aspose.com/ocr/net/aspose.ocr.filters/interpolationfiltertype/) as an optional parameter.
+You can manually define the width and height of the target image (in pixels) using the [`Resize`](https://reference.aspose.com/ocr/net/aspose.ocr.models.preprocessingfilters/preprocessingfilter/resize/) processing filter. It also allows you to select an [interpolation algorithm](https://reference.aspose.com/ocr/net/aspose.ocr.filters/interpolationfiltertype/) as an optional parameter.
 
 {{% alert color="primary" %}}
 Applying this filter may cause the image to get out of proportion.
@@ -69,20 +66,17 @@ Aspose.OCR.AsposeOcr recognitionEngine = new Aspose.OCR.AsposeOcr();
 // Resize the image to 1000x1000 pixels with bilinear interpolation
 Aspose.OCR.Models.PreprocessingFilters.PreprocessingFilter filters = new Aspose.OCR.Models.PreprocessingFilters.PreprocessingFilter();
 filters.Add(Aspose.OCR.Models.PreprocessingFilters.PreprocessingFilter.Resize(1000, 1000, Aspose.OCR.Filters.InterpolationFilterType.Triangle));
-// Save resized image to file for debugging purposes
-using(MemoryStream ms = recognitionEngine.PreprocessImage("source.png", filters))
-{
-	using(FileStream fs = new FileStream("result.png", FileMode.Create, FileAccess.Write))
-	{
-		ms.WriteTo(fs);
-	}
-}
-// Append preprocessing filters to recognition settings
-Aspose.OCR.RecognitionSettings recognitionSettings = new Aspose.OCR.RecognitionSettings();
-recognitionSettings.PreprocessingFilters = filters;
+// Add an image to OcrInput object and apply processing filters
+Aspose.OCR.OcrInput input = new Aspose.OCR.OcrInput(Aspose.OCR.InputType.SingleImage, filters);
+input.Add("source.png");
+// Save processed image to the folder
+Aspose.OCR.ImageProcessing.Save(input, @"C:\result");
 // Recognize image
-Aspose.OCR.RecognitionResult result = recognitionEngine.RecognizeImage("source.png", recognitionSettings);
-Console.WriteLine(result.RecognitionText);
+List<Aspose.OCR.RecognitionResult> results = recognitionEngine.Recognize(input);
+foreach(Aspose.OCR.RecognitionResult result in results)
+{
+	Console.WriteLine(result.RecognitionText);
+}
 ```
 
 ## Usage scenarios 

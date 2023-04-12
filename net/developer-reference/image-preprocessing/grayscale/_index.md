@@ -1,6 +1,6 @@
 ---
 weight: 60
-date: "2022-08-15"
+date: "2023-04-07"
 author: "Vladimir Lapin"
 type: docs
 url: /net/grayscale/
@@ -48,9 +48,9 @@ keywords:
 	}
 </style>
 
-In most cases, color is not needed for recognition and can even mislead OCR algorithms. Grayscale allows images to be processed more efficiently, resulting in less specks, cleaner backgrounds, and crisper text than color images. Converting to grayscale can also improve the results of other preprocessing filters, such as automatic [deskewing](/ocr/net/deskew/).
+In most cases, color is not needed for recognition and can even mislead OCR algorithms. Grayscale allows images to be processed more efficiently, resulting in less specks, cleaner backgrounds, and crisper text than color images. Converting to grayscale can also improve the results of other processing filters, such as automatic [deskewing](/ocr/net/deskew/).
 
-Aspose.OCR provides a method for converting an image to grayscale before proceeding with preprocessing or OCR.
+Aspose.OCR provides a method for converting an image to grayscale before proceeding with image processing or OCR.
 
 {{% alert color="primary" %}}
 Grayscale conversion is automatically performed when applying the [median filter](/ocr/net/median/).
@@ -58,27 +58,24 @@ Grayscale conversion is automatically performed when applying the [median filter
 
 ## Grayscale conversion
 
-To convert the image to grayscale, run the image through [`ToGrayscale`](https://reference.aspose.com/ocr/net/aspose.ocr.models.preprocessingfilters/preprocessingfilter/tograyscale/) preprocessing filter.
+To convert the image to grayscale, run the image through [`ToGrayscale`](https://reference.aspose.com/ocr/net/aspose.ocr.models.preprocessingfilters/preprocessingfilter/tograyscale/) processing filter.
 
 ```csharp
 Aspose.OCR.AsposeOcr recognitionEngine = new Aspose.OCR.AsposeOcr();
-// Apply grayscale conversion filter
+// Convert image to grayscale
 Aspose.OCR.Models.PreprocessingFilters.PreprocessingFilter filters = new Aspose.OCR.Models.PreprocessingFilters.PreprocessingFilter();
 filters.Add(Aspose.OCR.Models.PreprocessingFilters.PreprocessingFilter.ToGrayscale());
-// Save preprocessed image to file for debugging purposes
-using(MemoryStream ms = recognitionEngine.PreprocessImage("source.png", filters))
-{
-	using(FileStream fs = new FileStream("result.png", FileMode.Create, FileAccess.Write))
-	{
-		ms.WriteTo(fs);
-	}
-}
-// Append preprocessing filters to recognition settings
-Aspose.OCR.RecognitionSettings recognitionSettings = new Aspose.OCR.RecognitionSettings();
-recognitionSettings.PreprocessingFilters = filters;
+// Add an image to OcrInput object and apply processing filters
+Aspose.OCR.OcrInput input = new Aspose.OCR.OcrInput(Aspose.OCR.InputType.SingleImage, filters);
+input.Add("source.png");
+// Save processed image to the folder
+Aspose.OCR.ImageProcessing.Save(input, @"C:\result");
 // Recognize image
-Aspose.OCR.RecognitionResult result = recognitionEngine.RecognizeImage("source.png", recognitionSettings);
-Console.WriteLine(result.RecognitionText);
+List<Aspose.OCR.RecognitionResult> results = recognitionEngine.Recognize(input);
+foreach(Aspose.OCR.RecognitionResult result in results)
+{
+	Console.WriteLine(result.RecognitionText);
+}
 ```
 
 <div class="duo">
@@ -114,6 +111,8 @@ Grayscale conversion is recommended for the following images:
 - Scanned ID cards and other personal documents.
 - Full-color scans.
 
+In addition, grayscale conversion may decrease the original image size.
+
 {{% alert color="primary" %}}
-Improvements in recognition accuracy and preprocessing enhancements will be highly dependent on the original image and should be empirically tested.
+Improvements in recognition accuracy and quality enhancements will be highly dependent on the original image and should be empirically tested.
 {{% /alert %}}
