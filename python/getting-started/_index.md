@@ -1,6 +1,6 @@
 ---
 weight: 20
-date: "2023-04-18"
+date: "2023-04-19"
 author: "Vladimir Lapin"
 type: docs
 url: /python-net/getting-started/
@@ -21,6 +21,8 @@ Get started with Aspose.OCR for Python via .NET in a few steps:
 - [System requirements](/ocr/python-net/system-requirements/)  
   Check out the minimum requirements to get started with Aspose.OCR for Python via .NET
 - [Installation](/ocr/python-net/installation/)  
-  Install Aspose.OCR for Python via .NET library using package installer for Python (pip) or from a downloadable file.
+  Install Aspose.OCR for Python via .NET library using package installer for Python (pip).
 - [Licensing](/ocr/python-net/licensing/)  
   Learn how to obtain and apply the Aspose.OCR for Python via .NET license.
+- [Hello, world!](/ocr/python-net/hello-world/)  
+  Get started with Aspose.OCR for Python via .NET by creating and running a bare minimum example.

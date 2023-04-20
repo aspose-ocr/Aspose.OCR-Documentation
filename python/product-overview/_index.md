@@ -22,7 +22,7 @@ Aspose.OCR for Python via .NET can help you get the best results with the least 
 ## Why Aspose.OCR?
 
 - Optical character recognition engine with superior recognition speed and accuracy designed and trained by Aspose engineering team.
-- Supports 27 [languages](/ocr/python-net/recognition-languages/) based on Latin, Cyrillic and Asian scrips.
+- Supports 28 [languages](/ocr/python-net/recognition-languages/) based on Latin, Cyrillic and Asian scrips.
 - Detects and recognizes all popular typefaces and font styles, including handwritten text.
 - Process rotated, skewed and noisy images with the help of built-in filters for automatic image processing.
 - Supports all [image formats](/ocr/python-net/supported-file-formats/) you can get from a scanner or camera as well as web links.

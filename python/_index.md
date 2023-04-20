@@ -23,7 +23,7 @@ keywords:
 
 **Aspose.OCR for Python via .NET** adds optical character recognition (OCR) functionality to your Python notebooks and applications. With it, you can extract text from scans, screenshots, pictures from the web, or even photos from your smartphone, returning results that can be analyzed or saved to disk.
 
-Our OCR module supports 27 languages based on Latin, Cyrillic and Asian scripts, including more than 6000 Chinese characters, and can recognize files in the most popular formats: PDF, JPG, TIFF, PNG, BMP, GIF or DjVu. Various processing filters allow you to recognize rotated, skewed and noisy images. The recognition results are returned in the most popular document and data exchange formats. Automatic spelling correction will further improve the accuracy without manual intervention.
+Our OCR module supports 28 languages based on Latin, Cyrillic and Asian scripts, including more than 6000 Chinese characters, and can recognize files in the most popular formats: PDF, JPG, TIFF, PNG, BMP, GIF or DjVu. Various processing filters allow you to recognize rotated, skewed and noisy images. The recognition results are returned in the most popular document and data exchange formats. Automatic spelling correction will further improve the accuracy without manual intervention.
 
 ## Product overview
 
