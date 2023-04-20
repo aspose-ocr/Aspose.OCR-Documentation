@@ -1,6 +1,6 @@
 ---
 weight: 30
-date: "2023-02-02"
+date: "2023-04-20"
 author: "Vladimir Lapin"
 type: docs
 url: /cpp/
@@ -24,7 +24,7 @@ keywords:
 
 **Aspose.OCR for C++** is a powerful cross-platform API for converting images to text. It allows you to add optical character recognition (OCR) functionality to your C and C++ applications in less than 10 lines of code without diving deep into machine learning, complex calculations, and other low-level technical details. Recognition speed, accuracy and performance can be further improved by distributing computation across multiple CPU cores and offloading resource-intensive tasks to the GPU.
 
-Aspose experience with machine learning technologies and years of development resulted in an OCR engine with superior speed and accuracy that supports [27 languages](/ocr/cpp/recognition-languages/) based on Latin, Cyrillic and Asian scrips, including more than 6,000 Chinese characters. Aspose.OCR for C++ can also read texts in mixed languages.
+Aspose experience with machine learning technologies and years of development resulted in an OCR engine with superior speed and accuracy that supports [28 languages](/ocr/cpp/recognition-languages/) based on Latin, Cyrillic and Asian scrips, including more than 6,000 Chinese characters. Aspose.OCR for C++ can also read texts in mixed languages.
 
 OCR API processes scanned images, smartphone photos, screenshots, areas of an image, and scanned PDFs and returns results in the most popular [document formats](/ocr/cpp/supported-file-formats/). Various preprocessing filters allow you to recognize rotated, skewed and noisy images.
 
@@ -46,6 +46,7 @@ Get familiar with Aspose.OCR for C++ library in a few simple steps.
 - [Installation](/ocr/cpp/installation/)
 - [Licensing](/ocr/cpp/licensing/)
 - [How to run examples](/ocr/cpp/how-to-run-the-examples/)
+- [Create and run a simple example](/ocr/cpp/hello-world/)  
 
 ## Developer's reference
 

@@ -1,6 +1,6 @@
 ---
 weight: 20
-date: "2022-06-22"
+date: "2023-04-20"
 author: "Vladimir Lapin"
 type: docs
 url: /net/getting-started/
@@ -31,3 +31,5 @@ Get started with Aspose.OCR for .NET in a few steps:
   Learn how to obtain and apply the Aspose.OCR for .NET license.
 - [How to run examples](/ocr/net/how-to-run-the-examples/)  
   Explore our sample applications to learn about the features and capabilities of Aspose.OCR for .NET.
+- [Hello, world!](/ocr/net/hello-world/)  
+  build a bare minimum console application for extracting text from an image with with Aspose.OCR for .NET.

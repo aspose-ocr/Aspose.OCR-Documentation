@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2023-01-12"
+date: "2023-04-20"
 author: "Vladimir Lapin"
 type: docs
 url: /net/product-overview/
@@ -26,7 +26,7 @@ Aspose.OCR can be combined with other Aspose products, such as [Aspose.OMR for .
 
 - State-of-art optical character recognition engine with superior recognition speed and accuracy designed by Aspose engineering team.
 - Can be used to build both desktop and web .NET applications for a number of platforms.
-- Supports 27 [languages](/ocr/net/recognition-languages/) based on Latin, Cyrillic and Asian scrips.
+- Supports 28 [languages](/ocr/net/recognition-languages/) based on Latin, Cyrillic and Asian scrips.
 - Detects and recognizes all popular typefaces such as Arial, Times New Roman, Courier New, Tahoma, Calibri and more in regular, bold and italic styles.
 - Process rotated, skewed and noisy images. Various built-in filters for image preprocessing.
 - Supports all [image formats](/ocr/net/supported-file-formats/) you can get from a scanner or camera as well as web links.

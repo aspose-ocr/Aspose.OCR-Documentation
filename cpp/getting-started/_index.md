@@ -1,6 +1,6 @@
 ---
 weight: 20
-date: "2022-12-07"
+date: "2023-04-20"
 author: "Vladimir Lapin"
 type: docs
 url: /cpp/getting-started/
@@ -29,3 +29,5 @@ Get started with Aspose.OCR for C++ in a few steps:
   Learn how to obtain and apply the Aspose.OCR for C++ license.
 - [How to run examples](/ocr/cpp/how-to-run-the-examples/)  
   Explore our sample applications to learn about the features and capabilities of Aspose.OCR for C++.
+- [Hello, world!](/ocr/cpp/hello-world/)  
+  build a bare minimum console application for extracting text from an image with with Aspose.OCR for C++.

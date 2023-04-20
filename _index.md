@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2023-01-16"
+date: "2023-04-20"
 author: "Vladimir Lapin"
 type: docs
 url: /
@@ -86,9 +86,31 @@ We provide comprehensive documentation to get you up to speed on OCR technology 
 
 Find more information, download Aspose.OCR for C++ packages and get professional help:
 
-- [Aspose.OCR for Java online documentation](/ocr/cpp/)
-- [Aspose.OCR for Java Release Notes](/ocr/cpp/release-notes/)
-- [Developer's guide](/ocr/cpp/developer-guide/)
+- [Aspose.OCR for C++ online documentation](/ocr/cpp/)
+- [Aspose.OCR for C++ Release Notes](/ocr/cpp/release-notes/)
+- [C++ Developer's guide](/ocr/cpp/developer-guide/)
+- [Blog](https://blog.aspose.com/category/ocr/)
+- [Free Support Forum](https://forum.aspose.com/c/ocr/16)
+- [Paid Support Helpdesk](https://helpdesk.aspose.com/)
+
+## Aspose.OCR for Python via .NET
+
+{{% alert color="primary" %}}
+
+[![Aspose.OCR for Python via .NET](aspose-ocr-python.png)](/ocr/python-net/)
+
+[**Aspose.OCR for Python via .NET**](/ocr/python-net/) adds optical character recognition (OCR) functionality to your Python notebooks and applications. With it, you can extract text from scans, screenshots, pictures from the web, or even photos from your smartphone, returning results that can be analyzed or saved to disk.
+
+We provide comprehensive documentation to get you up to speed on OCR technology and start building powerful business applications in a couple of days.
+
+{{% /alert %}}
+
+### Resources
+
+Find more information, download Aspose.OCR for Python via .NET Wheel packages and get professional help:
+
+- [Aspose.OCR for Python via .NET online documentation](/ocr/python-net/)
+- [Aspose.OCR for Python via .NET Release Notes](/ocr/python-net/release-notes/)
 - [Blog](https://blog.aspose.com/category/ocr/)
 - [Free Support Forum](https://forum.aspose.com/c/ocr/16)
 - [Paid Support Helpdesk](https://helpdesk.aspose.com/)

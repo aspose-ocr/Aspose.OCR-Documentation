@@ -1,6 +1,6 @@
 ---
 weight: 40
-date: "2023-04-18"
+date: "2023-04-20"
 author: "Vladimir Lapin"
 type: docs
 url: /python-net/
@@ -37,8 +37,10 @@ Learn more about OCR technology and discover the features and benefits of Aspose
 
 Get familiar with Aspose.OCR for Python via .NET API in a few simple steps.
 
-- [System requirements](/ocr/python-net/system-requirements/)
-- [Licensing](/ocr/python-net/licensing/)
+- [Check out the minimum system requirements](/ocr/python-net/system-requirements/)  
+- [Install Aspose.OCR for Python via .NET](/ocr/python-net/installation/)  
+- [Obtain and apply the Aspose.OCR for Python via .NET license](/ocr/python-net/licensing/)  
+- [Create and run a simple example](/ocr/python-net/hello-world/)  
 
 ## Release Notes
 
