@@ -1,6 +1,6 @@
 ---
 weight: 70
-date: "2022-09-30"
+date: "2023-04-26"
 author: "Vladimir Lapin"
 type: docs
 url: /java/image-regions/
@@ -26,4 +26,6 @@ Aspose.OCR allows you to find and read only certain areas of an image, not all t
 - [Automatic search for paragraph bounding boxes](/ocr/java/image-regions-paragraph-find/)
 - [Automatic search for line bounding boxes](/ocr/java/image-regions-line-find/)
 - [Automatic search for word bounding boxes](/ocr/java/image-regions-word-find/)
+- [Recognizing characters and automatically detecting their bounding boxes](/ocr/java/image-regions-character-find/)
 - [Extracting text inside an image rectangle](/ocr/java/image-regions-extract/)
+- [Extracting lines with coordinates](/ocr/java/image-line-extract/)
