@@ -4,7 +4,7 @@ date: "2023-02-02"
 author: "Vladimir Lapin"
 type: docs
 url: /cpp/aspose-ocr-for-cpp-23-2-0-release-notes/
-feedback: OCRNET
+feedback: OCRCPP
 title: Aspose.OCR for C++ 23.2.0 - Release Notes
 description: A summary of recent changes, enhancements and bug fixes in Aspose.OCR for C++ 23.2.0 (February 2023) release.
 keywords:
@@ -42,7 +42,7 @@ Extract text in Hindi language by providing `language::hin` value in `language_a
 
 #### Saving recognition results as RTF
 
-Added the ability to [save](/ocr/net/save-file/) recognition results in an RTF document - a universal format for exchanging rich-text documents between different word processing programs.
+Added the ability to [save](/ocr/cpp/save-file/) recognition results in an RTF document - a universal format for exchanging rich-text documents between different word processing programs.
 
 Provide `file_format::format_rtf` value in `save_format` property of [recognition settings](/ocr/cpp/settings/).
 

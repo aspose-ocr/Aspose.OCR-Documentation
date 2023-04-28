@@ -52,7 +52,7 @@ The collection of all characters detected by `Aspose.OCR.AsposeOcr.RecognizeChar
 
 #### `Aspose.OCR.Character` class
 
-The recognized character and the coordinated of its bounding box.
+The recognized character and the coordinates of its bounding box.
 
 ### Updated public APIs:
 
