@@ -1,13 +1,14 @@
 ---
-weight: 1
+weight: 81
 date: "2023-05-18"
 author: "Vladimir Lapin"
 type: docs
-url: /python-net/release-notes/latest/
-title: Latest release (May 2023)
+url: /python-net/aspose-ocr-python-23-5-0-release-notes/
+title: Aspose.OCR for Python via .NET 23.5.0 - Release Notes
 description: A summary of recent changes, enhancements and bug fixes in Aspose.OCR for Python via .NET 23.5.0 (May 2023) release.
 keywords:
-- latest
+- 2023
+- May
 - new
 - release
 - changelog

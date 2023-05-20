@@ -1,11 +1,11 @@
 ---
-weight: 80
-date: "2022-11-08"
+weight: 50
+date: "2023-05-18"
 author: "Vladimir Lapin"
 type: docs
 url: /java/recognition/receipt/
 feedback: OCRJAVA
-title: Extracting text from receipt
+title: Extracting text from receipts
 description: How to digitize scanned receipts by automatically extracting text from them.
 keywords:
 - read
@@ -25,32 +25,20 @@ To extract text from a receipt, use `RecognizeReceipt` method of [`AsposeOCR`](h
 
 This method allows you to customize recognition accuracy, performance, and other [settings](/ocr/java/recognition-settings-receipt/).
 
-The method returns a [`RecognitionResult`](https://reference.aspose.com/ocr/java/com.aspose.ocr/RecognitionResult) object containing the receipt data.
+The method takes [`OcrInput` object](/ocr/java/ocrinput/) and returns a list of recognition results containing the identity data.
 
-{{< tabs tabID="1" tabTotal="2" tabName1="Read TIFF from path" tabName2="Read TIFF from memory" >}}
-{{< tab tabNum="1" >}}
 ```java
 AsposeOCR api = new AsposeOCR();
-// Customize recognition
+// Add images to the recognition batch
+OcrInput input  = new OcrInput(InputType.SingleImage);
+input.add(os.path.join(self.dataDir, "receipt1.png"));
+input.add(os.path.join(self.dataDir, "receipt2.png"));
+// Recognition settings
 ReceiptRecognitionSettings recognitionSettings = new ReceiptRecognitionSettings();
 recognitionSettings.setLanguage(Language.Ukr);
-// Extract text from receipt
-RecognitionResult result = api.RecognizeReceipt("receipt.png", recognitionSettings);
-// Get recognition results as JSON
-String resultJson = result.GetJson();
+// Recognize license plates
+results = api.RecognizeReceipt(input, recognitionSettings);
+results.forEach((result) -> {
+	System.out.println(result.recognition_text);
+});
 ```
-{{< /tab >}}
-{{< tab tabNum="2" >}}
-```java
-AsposeOCR api = new AsposeOCR();
-BufferedImage source = ImageIO.read(new File("receipt.png"));
-// Customize recognition
-ReceiptRecognitionSettings recognitionSettings = new ReceiptRecognitionSettings();
-recognitionSettings.setLanguage(Language.Ukr);
-// Extract text from receipt
-RecognitionResult result = api.RecognizeReceipt(source, recognitionSettings);
-// Get recognition results as JSON
-String resultJson = result.GetJson();
-```
-{{< /tab >}}
-{{< /tabs >}}

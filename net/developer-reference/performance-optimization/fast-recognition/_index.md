@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2023-04-08"
+date: "2023-05-18"
 author: "Vladimir Lapin"
 type: docs
 url: /net/fast-recognition/
@@ -13,33 +13,23 @@ keywords:
 - quick
 ---
 
-Aspose.OCR can work in the fastest recognition mode that consumes minimum possible resources using [`RecognizeImageFast`](https://reference.aspose.com/ocr/net/aspose.ocr/asposeocr/recognizeimagefast/) method of [`Aspose.OCR.AsposeOcr`](https://reference.aspose.com/ocr/net/aspose.ocr/asposeocr/) class.
+Aspose.OCR can work in the fastest recognition mode that consumes minimum possible resources using [`RecognizeFast`](https://reference.aspose.com/ocr/net/aspose.ocr/asposeocr/recognizefast/) method of [`Aspose.OCR.AsposeOcr`](https://reference.aspose.com/ocr/net/aspose.ocr/asposeocr/) class.
 
-Unlike [regular recognition methods](/ocr/net/recognition/), this method can only read a single image and returns a string with extracted text.
+This method takes [`OcrInput` object](/ocr/net/ocrinput/) and returns a list of strings, one string per image.
 
-{{< tabs tabID="1" tabTotal="2" tabName1="Recognize image from path" tabName2="Recognize image from memory" >}}
-{{< tab tabNum="1" >}}
 ```csharp
 Aspose.OCR.AsposeOcr recognitionEngine = new Aspose.OCR.AsposeOcr();
-string result = recognitionEngine.RecognizeImageFast("source.png");
-Console.WriteLine(result);
-```
-{{< /tab >}}
-{{< tab tabNum="2" >}}
-```csharp
-Aspose.OCR.AsposeOcr recognitionEngine = new Aspose.OCR.AsposeOcr();
-using(MemoryStream ms = new MemoryStream())
+// Add images to OcrInput object
+Aspose.OCR.OcrInput images = new Aspose.OCR.OcrInput(Aspose.OCR.InputType.SingleImage);
+images.Add("source1.png");
+images.Add("source2.png");
+// Fast recognize images
+List<string> results = recognitionEngine.RecognizeFast(images);
+foreach(string result in results)
 {
-	using(FileStream fs = new FileStream("source.png", FileMode.Open, FileAccess.Read))
-	{
-		fs.CopyTo(ms);
-		string result = recognitionEngine.RecognizeImageFast(ms);
-		Console.WriteLine(result);
-	}
+	Console.WriteLine(result);
 }
 ```
-{{< /tab >}}
-{{< /tabs >}}
 
 ## Performance impact
 

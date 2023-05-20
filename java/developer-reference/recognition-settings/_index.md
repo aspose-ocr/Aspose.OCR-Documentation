@@ -1,6 +1,6 @@
 ---
 weight: 40
-date: "2022-09-27"
+date: "2023-05-19"
 author: "Vladimir Lapin"
 type: docs
 url: /java/settings/
@@ -24,6 +24,10 @@ To configure Aspose.OCR recognition settings, specify an optional parameter for 
 
 Parameter type | Applicable to
 -------------- | -------------
-[`RecognitionSettings`](/ocr/java/recognition-settings-image/) | <ul><li>[Extracting text from a raster image](/ocr/java/recognition/image/)</li><li>[Extracting text from pixel array](/ocr/java/recognition/pixel/)</li><li>[Extracting text from URL](/ocr/java/recognition/url/)</li></ul>
+[`RecognitionSettings`](/ocr/java/recognition-settings-common/) | [Extracting](/ocr/java/recognition/) text from images, scanned PDFs, DjVu files and other content provided as [`OcrInput` object](/ocr/java/ocrinput/).
 [`DocumentRecognitionSettings`](/ocr/java/recognition-settings-document/) | <ul><li>[Extracting text from PDF document](/ocr/java/recognition/pdf/)</li><li>[Extracting text from multi-page TIFF](/ocr/java/recognition/tiff/)</li><li>[Extracting text from multi-page DjVu](/ocr/java/recognition/djvu/)</li></ul>
-[`ReceiptRecognitionSettings`](/ocr/java/recognition-settings-receipt/) | <ul><li>[Extracting text from receipts](/ocr/java/recognition/receipt/)</li></ul>
+[`ReceiptRecognitionSettings`](/ocr/java/recognition-settings-receipt/) | Extracting text from [receipts](/ocr/java/recognition/receipt/).
+[`IDCardRecognitionSettings`](/ocr/java/recognition-settings-id-card/) | Extracting text from [ID cards](/ocr/java/recognition/id-card/).
+[`PassportRecognitionSettings`](/ocr/java/recognition-settings-passport/) | Extracting text from [passports](/ocr/java/recognition/passport/).
+[`CarPlateRecognitionSettings`](/ocr/java/recognition-settings-car-plate/) | Extracting text from [vehicle license plates](/ocr/java/recognition/car-plate/).
+[`InvoiceRecognitionSettings`](/ocr/java/recognition-settings-invoice/) | Extracting text from [invoices](/ocr/java/recognition/invoice/).

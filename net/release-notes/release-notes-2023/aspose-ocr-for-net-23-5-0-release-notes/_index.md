@@ -1,22 +1,22 @@
 ---
-weight: 1
-date: "2023-05-19"
+weight: 81
+date: "2023-05-18"
 author: "Vladimir Lapin"
 type: docs
-url: /java/release-notes/latest/
-feedback: OCRJAVA
-title: Latest release (May 2023)
-description: A summary of recent changes, enhancements and bug fixes in Aspose.OCR for Java 23.5.0 (May 2023) release.
+url: /net/aspose-ocr-for-net-23-5-0-release-notes/
+feedback: OCRNET
+title: Aspose.OCR for .NET 23.5.0 - Release Notes
+description: A summary of recent changes, enhancements and bug fixes in Aspose.OCR for .NET 23.5.0 (May 2023) release.
 keywords:
-- latest
-- patch
+- 2023
+- May
 - new
 - release
 - changelog
 ---
 
 {{% alert color="primary" %}}
-This article contains a summary of recent changes, enhancements and bug fixes in **Aspose.OCR for Java 23.5.0 (May 2023)** release.
+This article contains a summary of recent changes, enhancements and bug fixes in [**Aspose.OCR for .NET 23.5.0 (May 2023)**](https://www.nuget.org/packages/Aspose.OCR/23.5.0) release.
 
 GPU version: **21.6.0**
 {{% /alert %}}
@@ -24,11 +24,11 @@ GPU version: **21.6.0**
 ## Deprecation warning
 
 {{% alert color="caution" %}}
-- The [release 23.3.0](/ocr/java/aspose-ocr-for-java-23-3-0-release-notes/) introduced a slimmer, faster and more straightforward API. All of your existing code will continue to work and you can even make minor updates to it, but be aware that all deprecated elements are scheduled to be removed in release **23.11.0 (November 2023)** in favor of the new API.
+- The [release 23.3.1](/ocr/net/aspose-ocr-for-net-23-3-1-release-notes/) introduced a slimmer, faster and more straightforward API. All of your existing code will continue to work and you can even make minor updates to it, but be aware that all deprecated elements are scheduled to be removed in release **23.11.0 (November 2023)** in favor of the new API.
 
    **Time to deprecation: 4 months left.**
 
-- Several methods have been revised in release 23.5.0 to align them with the new (23.3.0 and later) API and significantly simplify your code. To make it easier to upgrade your code, we have kept the previous versions of these methods fully functional, but marked them as deprecated. 
+- Several methods have been revised in release 23.5.0 to align them with the new (23.3.1 and later) API and significantly simplify your code. To make it easier to upgrade your code, we have kept the previous versions of these methods fully functional, but marked them as deprecated. 
   
   All of your existing code will continue to work and you can even make minor updates to it, but be aware that all deprecated elements are scheduled to be removed in release **23.11.0 (November 2023)** in favor of the new API.
 {{% /alert %}}
@@ -37,9 +37,9 @@ GPU version: **21.6.0**
 
 Key | Summary | Category
 --- | ------- | --------
-OCRJAVA&#8209;320 | Added fast recognition method that works with [`OcrInput`](/ocr/java/ocrinput/) object. | Enhancement
-OCRJAVA&#8209;320 | Specialized recognition methods have been aligned with the new API: `RecognizeReceipt`, `RecognizeInvoice`, `RecognizeIDCard`, `RecognizePassport`, `RecognizeCarPlate`. See [Updated public APIs](#updated-public-apis) for details. | Enhancement
-OCRJAVA&#8209;320 | The existing API methods have been marked as deprecated to remind you to update your existing code. They remain functional but will be removed in release **23.11.0 (November 2023)** in favor of the new API introduced in this release. See [Deprecated APIs](#deprecated-apis) for details. | Enhancement
+OCRNET&#8209;667 | Added [fast recognition](/ocr/net/fast-recognition/) method that works with [`OcrInput`](/ocr/net/ocrinput/) object. | Enhancement
+OCRNET&#8209;667 | [Specialized recognition methods](/ocr/net/specialized-recognition-methods/) have been aligned with the new API. See [Updated public APIs](#updated-public-apis) for details. | Enhancement
+OCRNET&#8209;667 | The existing API methods have been marked as deprecated to remind you to update your existing code. They remain functional but will be removed in release **23.11.0 (November 2023)** in favor of the new API introduced in this release. See [Deprecated APIs](#deprecated-apis) for details. | Enhancement
 
 ## Public API changes and backwards compatibility
 
@@ -57,7 +57,7 @@ This method reads a single image in the fastest possible mode and returns a stri
 Fast recognition only works with high-quality scans without skew or distortion. However, you can [preprocess](/ocr/net/image-processing/) an image before sending it to the OCR engine.
 {{% /alert %}}
 
-This method provides an extended replacement for `RecognizePageFast` method.
+This method provides an extended replacement for `RecognizeImageFast` method.
 
 ### Updated public APIs:
 
@@ -111,47 +111,51 @@ _No changes._
 
 The following public APIs have been marked as deprecated and will be removed in **23.11.0 (November 2023)** release:
 
-#### `RecognizePageFast(String fullPath)` method
+#### `RecognizeImageFast(string fullPath)` method
 
 Replaced with [`RecognizeFast(OcrInput input)`](#recognizefastocrinput-input-method) method
 
-#### `RecognizeReceipt(String fullPath, ReceiptRecognitionSettings settings)` method
+#### `RecognizeImageFast(MemoryStream stream)` method
+
+Replaced with [`RecognizeFast(OcrInput input)`](#recognizefastocrinput-input-method) method
+
+#### `RecognizeReceipt(string fullPath, ReceiptRecognitionSettings settings)` method
 
 Replaced with [`RecognizeReceipt(OcrInput input, ReceiptRecognitionSettings settings)`](#recognizereceiptocrinput-input-receiptrecognitionsettings-settings-method) method.
 
-#### `RecognizeReceipt(BufferedImage image_, ReceiptRecognitionSettings settings)` method
+#### `RecognizeReceipt(MemoryStream stream, ReceiptRecognitionSettings settings)` method
 
 Replaced with [`RecognizeReceipt(OcrInput input, ReceiptRecognitionSettings settings)`](#recognizereceiptocrinput-input-receiptrecognitionsettings-settings-method) method.
 
-#### `RecognizeInvoice(String fullPath, InvoiceRecognitionSettings settings)` method
+#### `RecognizeInvoice(string fullPath, InvoiceRecognitionSettings settings)` method
 
 Replaced with [`RecognizeInvoice(OcrInput input, InvoiceRecognitionSettings settings)`](#recognizeinvoiceocrinput-input-invoicerecognitionsettings-settings-method) method.
 
-#### `RecognizeInvoice(BufferedImage image_, InvoiceRecognitionSettings settings)` method
+#### `RecognizeInvoice(MemoryStream stream, InvoiceRecognitionSettings settings)` method
 
 Replaced with [`RecognizeInvoice(OcrInput input, InvoiceRecognitionSettings settings)`](#recognizeinvoiceocrinput-input-invoicerecognitionsettings-settings-method) method.
 
-#### `RecognizeIDCard(String fullPath, IDCardRecognitionSettings settings)` method
+#### `RecognizeIDCard(string fullPath, IDCardRecognitionSettings settings)` method
 
 Replaced with [`RecognizeIDCard(OcrImage images, IDCardRecognitionSettings settings)`](#recognizeidcardocrinput-input-idcardrecognitionsettings-settings-method) method.
 
-#### `RecognizeIDCard(BufferedImage image_, IDCardRecognitionSettings settings)` method
+#### `RecognizeIDCard(MemoryStream stream, IDCardRecognitionSettings settings)` method
 
 Replaced with [`RecognizeIDCard(OcrImage images, IDCardRecognitionSettings settings)`](#recognizeidcardocrinput-input-idcardrecognitionsettings-settings-method) method.
 
-#### `RecognizePassport(String fullPath, PassportRecognitionSettings settings)` method
+#### `RecognizePassport(string fullPath, PassportRecognitionSettings settings)` method
 
 Replaced with [`RecognizePassport(OcrImage images, PassportRecognitionSettings settings)`](#recognizepassportocrinput-input-passportrecognitionsettings-settings-method) method.
 
-#### `RecognizePassport(BufferedImage image_, PassportRecognitionSettings settings)` method
+#### `RecognizePassport(MemoryStream stream, PassportRecognitionSettings settings)` method
 
 Replaced with [`RecognizePassport(OcrImage images, PassportRecognitionSettings settings)`](#recognizepassportocrinput-input-passportrecognitionsettings-settings-method) method.
 
-#### `RecognizeCarPlate(String fullPath, CarPlateRecognitionSettings settings)` method
+#### `RecognizeCarPlate(string fullPath, CarPlateRecognitionSettings settings)` method
 
 Replaced with [`RecognizeCarPlate(OcrImage images, CarPlateRecognitionSettings settings)`](#recognizecarplateocrinput-input-carplaterecognitionsettings-settings-method) method.
 
-#### `RecognizeCarPlate(BufferedImage image_, CarPlateRecognitionSettings settings)` method
+#### `RecognizeCarPlate(MemoryStream stream, CarPlateRecognitionSettings settings)` method
 
 Replaced with [`RecognizeCarPlate(OcrImage images, CarPlateRecognitionSettings settings)`](#recognizecarplateocrinput-input-carplaterecognitionsettings-settings-method) method.
 
@@ -161,33 +165,35 @@ The examples below illustrates the changes introduced in this release:
 
 ### Fast recognition
 
-```java
-AsposeOCR api = new AsposeOCR();
-// Add images to the recognition batch
-OcrInput images  = new OcrInput(InputType.SingleImage);
-images.add(os.path.join(self.dataDir, "source1.png"));
-images.add(os.path.join(self.dataDir, "source2.png"));
+```csharp
+Aspose.OCR.AsposeOcr recognitionEngine = new Aspose.OCR.AsposeOcr();
+// Add images to OcrInput object
+Aspose.OCR.OcrInput images = new Aspose.OCR.OcrInput(Aspose.OCR.InputType.SingleImage);
+images.Add("source1.png");
+images.Add("source2.png");
 // Fast recognize images
-results = api.RecognizeFast(images);
-results.forEach((result) -> {
-	System.out.println(result);
-});
+List<string> results = recognitionEngine.RecognizeFast(images);
+foreach(string result in results)
+{
+	Console.WriteLine(result);
+}
 ```
 
 ### Vehicle license plate recognition
 
-```java
-AsposeOCR api = new AsposeOCR();
-// Add images to the recognition batch
-OcrInput input  = new OcrInput(InputType.SingleImage);
-input.add(os.path.join(self.dataDir, "car1.png"));
-input.add(os.path.join(self.dataDir, "car2.png"));
+```csharp
+Aspose.OCR.AsposeOcr recognitionEngine = new Aspose.OCR.AsposeOcr();
+// Add images to OcrInput object
+Aspose.OCR.OcrInput input = new Aspose.OCR.OcrInput(Aspose.OCR.InputType.SingleImage);
+input.Add("car1.png");
+input.Add("car2.png");
 // Recognition settings
-CarPlateRecognitionSettings recognitionSettings = new CarPlateRecognitionSettings();
-recognitionSettings.setIgnoredCharacters("Ää");
+Aspose.OCR.CarPlateRecognitionSettings recognitionSettings = new Aspose.OCR.CarPlateRecognitionSettings();
+recognitionSettings.Language = Aspose.OCR.Language.Latin;
 // Recognize license plates
-results = api.RecognizeCarPlate(input, recognitionSettings);
-results.forEach((result) -> {
-	System.out.println(result.recognition_text);
-});
+List<Aspose.OCR.RecognitionResult> results = recognitionEngine.RecognizeCarPlate(input, recognitionSettings);
+foreach(Aspose.OCR.RecognitionResult result in results)
+{
+	Console.WriteLine(result.RecognitionText);
+}
 ```

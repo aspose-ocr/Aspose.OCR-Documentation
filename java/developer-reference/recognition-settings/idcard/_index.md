@@ -1,24 +1,25 @@
 ---
-weight: 30
-date: "2023-05-18"
+weight: 40
+date: "2023-05-19"
 author: "Vladimir Lapin"
 type: docs
-url: /java/recognition-settings-receipt/
+url: /java/recognition-settings-id-card/
 feedback: OCRJAVA
-title: Receipt recognition settings
-description: Configuring Aspose.OCR for Java recognition engine for extracting text from scanned receipts.
+title: ID card recognition settings
+description: Configuring Aspose.OCR for Java recognition engine for extracting text from ID cards.
 keywords:
 - setting
 - config
 - parameter
-- receipt
-- check
-- scan
+- image
+- photo
+- ID
+- card
 ---
 
-Aspose.OCR for Java allows for very flexible customization of recognition accuracy, performance, and other settings by configuring the properties of the `ReceiptRecognitionSettings` object.
+Aspose.OCR for Java allows for very flexible customization of ID card recognition accuracy, performance, and other settings using `IDCardRecognitionSettings` object.
 
-These settings are applicable when extracting text from scanned receipts in JPEG, PNG, TIFF, BMP, and GIF formats.
+These settings are specifically tailored for processing scanned or photographed ID cards.
 
 Method | Parameter | Default state | Description
 ------ | --------- | ------------- | -----------
@@ -26,27 +27,26 @@ Method | Parameter | Default state | Description
 `setIgnoredCharacters` | Case-sensitive string of characters | All characters are recognized | A [blacklist](/ocr/java/characters-blacklist/) of characters that are ignored during recognition.
 `setLanguage` | [Recognition language](/ocr/java/languages/) | Extended Latin characters, including diacritics | Specify a [language](/ocr/java/languages/) for recognition.
 `setThreadsCount` | Number of threads, `int` | Automatic | The number of [CPU threads](/ocr/java/multithreading/) used for recognition.
-`setUpscaleSmallFont` | <ul><li>`true` - enable</li><li>`false` - disable</li></ul> | Disabled | Improve small font recognition and detection of dense lines.
 
 ## Applicable to
 
-- [Extracting text from receipts](/ocr/java/recognition/receipt/)
+- [Extracting text from an ID card](/ocr/java/recognition/id-card/)
 
 ## Example
 
-The following code example shows how to fine-tune receipt recognition:
+The following code example shows how to fine-tune ID card recognition:
 
 ```java
 AsposeOCR api = new AsposeOCR();
 // Add images to the recognition batch
-OcrInput input  = new OcrInput(InputType.SingleImage);
-input.add(os.path.join(self.dataDir, "receipt1.png"));
-input.add(os.path.join(self.dataDir, "receipt2.png"));
+OcrInput images  = new OcrInput(InputType.SingleImage);
+images.add(os.path.join(self.dataDir, "ID1.png"));
+images.add(os.path.join(self.dataDir, "ID2.png"));
 // Recognition settings
-ReceiptRecognitionSettings recognitionSettings = new ReceiptRecognitionSettings();
+IDCardRecognitionSettings recognitionSettings = new IDCardRecognitionSettings();
 recognitionSettings.setLanguage(Language.Ukr);
 // Recognize license plates
-results = api.RecognizeReceipt(input, recognitionSettings);
+results = api.RecognizeIDCard(input, recognitionSettings);
 results.forEach((result) -> {
 	System.out.println(result.recognition_text);
 });
