@@ -1,6 +1,6 @@
 ---
 weight: 1
-date: "2023-05-18"
+date: "2023-05-30"
 author: "Vladimir Lapin"
 type: docs
 url: /net/release-notes/latest/
@@ -17,7 +17,7 @@ keywords:
 {{% alert color="primary" %}}
 This article contains a summary of recent changes, enhancements and bug fixes in [**Aspose.OCR for .NET 23.5.0 (May 2023)**](https://www.nuget.org/packages/Aspose.OCR/23.5.0) release.
 
-GPU version: **21.6.0**
+GPU version: **23.5.0**
 {{% /alert %}}
 
 ## Deprecation warning

@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2023-01-12"
+date: "2023-05-30"
 author: "Vladimir Lapin"
 type: docs
 url: /net/system-requirements/
@@ -17,7 +17,11 @@ keywords:
 
 ## Supported operating systems
 
-Both x86 (where applicable) and x64 versions of the following operating systems are supported:
+Aspose.OCR for .NET has been tested with the following operating systems:
+
+{{% alert color="primary" %}}
+Read [GPU support](#gpu-support) for additional system requirements of the GPU-accelerated package.
+{{% /alert %}}
 
 ### Desktop
 
@@ -79,6 +83,8 @@ You will only need to add these packages if you install Aspose.OCR for .NET usin
 
 ## GPU support
 
-To use **Aspose.OCR-GPU** you will need a [CUDA capable GPU](https://developer.nvidia.com/cuda-gpus) and [NVIDIA CUDA Toolkit](https://developer.nvidia.com/cuda-downloads).
+GPU-accelerated Aspose.OCR for .NET (**Aspose.OCR-GPU**) has additional system requirements compared to the generic (CPU-based) version of the library:
 
-Read [Installation Guides](https://docs.nvidia.com/cuda/index.html#installation-guides) to learn how to install and check for correct operation of the **CUDA Development Tools** on your system.
+- The library can only be used on 64-bit operating systems.
+- You will need a [CUDA capable GPU](https://developer.nvidia.com/cuda-gpus) and [NVIDIA CUDA Toolkit](https://developer.nvidia.com/cuda-downloads).  
+  Read [Installation Guides](https://docs.nvidia.com/cuda/index.html#installation-guides) to learn how to install and check for correct operation of the **CUDA Development Tools** on your system.

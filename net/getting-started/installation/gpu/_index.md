@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2022-10-21"
+date: "2023-05-30"
 author: "Vladimir Lapin"
 type: docs
 url: /net/installation/gpu/
@@ -18,7 +18,7 @@ keywords:
 - download
 ---
 
-GPU-accelerated OCR engine requires a [CUDA capable GPU] and [NVIDIA CUDA Toolkit](https://developer.nvidia.com/cuda-downloads). To use the package, make sure your system meets the following prerequisites:
+GPU-accelerated OCR engine requires a **CUDA capable GPU** and [NVIDIA CUDA Toolkit](https://developer.nvidia.com/cuda-downloads). To use the package, make sure your system meets the following prerequisites:
 
 1. Check whether your GPU [supports](https://developer.nvidia.com/cuda-gpus) NVIDIA® CUDA®.
 2. [Install](https://docs.nvidia.com/cuda/cuda-installation-guide-microsoft-windows/index.html) the CUDA Toolkit.
