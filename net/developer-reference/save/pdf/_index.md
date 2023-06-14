@@ -1,6 +1,6 @@
 ---
 weight: 11
-date: "2023-04-07"
+date: "2023-06-12"
 author: "Vladimir Lapin"
 type: docs
 url: /net/save-searchable-pdf/
@@ -18,7 +18,12 @@ keywords:
 
 To convert recognition results into a searchable and indexable PDF document, use `SaveMultipageDocument` method of [`Aspose.OCR.AsposeOcr`](https://reference.aspose.com/ocr/net/aspose.ocr/asposeocr/) class. This can be useful for recognizing books, contracts, articles, and other printouts consisting of multiple pages, as well as for batch recognition. Provide `Aspose.OCR.SaveFormat.Pdf` as `saveFormat` parameter.
 
-The resulting PDF will have original images in the background and a transparent text overlay that can be searched, selected and copied.
+In addition to the recognized text, you can save the resulting PDF may have original images in the background and a transparent text overlay that can be searched, selected and copied. The type of the PDF document is controlled by the selected result type option:
+
+Format | Description
+------ | -----------
+`Aspose.OCR.SaveFormat.Pdf` | The original images are placed in the background; the recognized text is placed as an invisible but searchable and selectable overlay on top of the images. Can be useful if you need to keep all notes, images, marks and other data along with the text.
+`Aspose.OCR.SaveFormat.PdfNoImg` | The PDF document containing only the recognized text. The original images are not saved along with the recognition results. This can be useful when digitizing large amounts of high-quality text (such as books) so that the resulting file takes up much less space than using the `Aspose.OCR.SaveFormat.Pdf` parameter.
 
 You can optionally enable [automatic spelling corrections](/ocr/net/automatic-spelling-correction/) for recognition results and provide a [custom dictionary](/ocr/net/dictionaries/).
 

@@ -15,9 +15,10 @@ keywords:
 - event
 ---
 
-Aspose.OCR for .NET allows you to [batch process](/ocr/net/batch-recognition/) multiple images, process all images from archives and folders, and extract texts from [multi-page documents](/ocr/net/recognition/). These operations can take a significant amount of time and may cause the end user to think that recognition is stuck due to some error.
+Aspose.OCR for .NET exposes the [`Aspose.OCR.AsposeOcr.OcrProgress`](https://reference.aspose.com/ocr/net/aspose.ocr/asposeocr/ocrprogress/) event, which is raised when a page or file from a batch is processed. You can implement an event listener and report progress even in case of [multi-threaded](/ocr/net/multithreading/) recognition.
 
-The library exposes the [`Aspose.OCR.AsposeOcr.OcrProgress`](https://reference.aspose.com/ocr/net/aspose.ocr/asposeocr/ocrprogress/) event, which is raised when a page or file from a batch is processed. You can implement an event listener and report progress even in case of [multi-threaded](/ocr/net/multithreading/) recognition.
+The event handler not only reports information about the processed file during [batch processing](/ocr/net/batch-recognition/) of multiple images, but also reports information about the stage of recognition/processing of each individual image.
+
 
 ```csharp
 Aspose.OCR.AsposeOcr recognitionEngine = new Aspose.OCR.AsposeOcr();
@@ -38,6 +39,8 @@ For each page or file, the following information is reported:
 
 Property | Type | Description
 -------- | ---- | -----------
+`FileName` | `string` | The name of the file that is currently being recognized.
 `CurrentImage` | `int` | The ordinal number of the image.
 `CurrentPage` | `int` | The ordinal number of the page in a batch or a multi-page image/document.
 `Duration` | `TimeSpan` | The time interval from the start of image or page recognition until it is fully recognized.
+`OperationName` | `string` | Progress stage of a single image recognition.

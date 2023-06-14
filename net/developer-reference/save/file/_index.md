@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2023-04-07"
+date: "2023-06-12"
 author: "Vladimir Lapin"
 type: docs
 url: /net/save-file/
@@ -31,7 +31,8 @@ The following file formats are supported:
 Format | Description
 ------ | -----------
 `Aspose.OCR.SaveFormat.Text` | Plain text with line breaks.
-`Aspose.OCR.SaveFormat.Pdf` | Portable Document Format.
+`Aspose.OCR.SaveFormat.Pdf` | Portable Document Format. The original images are placed in the background; the recognized text is placed as an invisible but searchable and selectable overlay on top of the images.
+`Aspose.OCR.SaveFormat.PdfNoImg` | Portable Document Format containing only text. The original images are not saved along with the recognition results.
 `Aspose.OCR.SaveFormat.Docx` | Microsoft Word document (version 2007 or later).
 `Aspose.OCR.SaveFormat.Xlsx` | Microsoft Excel spreadsheet (version 2007 or later).
 `Aspose.OCR.SaveFormat.Json` | JSON is a popular format widely used in software development and data exchange. The de facto standard for websites and REST APIs.
