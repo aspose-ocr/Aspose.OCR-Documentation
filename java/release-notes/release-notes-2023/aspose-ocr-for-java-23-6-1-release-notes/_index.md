@@ -1,6 +1,6 @@
 ---
 weight: 70
-date: "2023-06-29"
+date: "2023-06-30"
 author: "Vladimir Lapin"
 type: docs
 url: /java/aspose-ocr-for-java-23-6-1-release-notes/

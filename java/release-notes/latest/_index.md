@@ -1,6 +1,6 @@
 ---
 weight: 1
-date: "2023-06-29"
+date: "2023-06-30"
 author: "Vladimir Lapin"
 type: docs
 url: /java/release-notes/latest/
@@ -18,7 +18,7 @@ keywords:
 {{% alert color="primary" %}}
 This article contains a summary of recent changes, enhancements and bug fixes in **Aspose.OCR for Java 23.6.1 (June 2023)** release.
 
-GPU version: **21.6.0**
+GPU version: **23.6.1**
 {{% /alert %}}
 
 ## Deprecation warning
@@ -33,6 +33,7 @@ The [release 23.3.0](/ocr/java/aspose-ocr-for-java-23-3-0-release-notes/) introd
 
 Key | Summary | Category
 --- | ------- | --------
+OCRJAVA&#8209;327 | A [GPU-accelerated](/ocr/java/system-requirements/#gpu-support) package of Aspose.OCR for Java is released. It supports all the features of Aspose.OCR for Java 23.6.1. | New feature
 OCRJAVA&#8209;322 | Improved license validation. | Enhancement
 OCRJAVA&#8209;325 | Fixed an exception that occurred when processing a scanned PDF. | Fix
 
