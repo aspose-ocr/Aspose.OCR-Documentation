@@ -22,7 +22,7 @@ This article contains a summary of recent changes, enhancements and bug fixes in
 
 Key | Summary | Category
 --- | ------- | --------
-n/a | Added the ability to save recognition results to searchable PDF files without keeping an original image in the background. | New feature
+OCRPY&#8209;29<br />OCRPY&#8209;30 | Added the ability to save recognition results to searchable PDF files without keeping an original image in the background. | New feature
 
 ## Public API changes and backwards compatibility
 
