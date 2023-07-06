@@ -1,6 +1,6 @@
 ---
 weight: 30
-date: "2023-04-18"
+date: "2023-07-05"
 author: "Vladimir Lapin"
 type: docs
 url: /python-net/licensing/
@@ -48,3 +48,18 @@ Do not modify the contents of the license file. Even an extra line break or spac
 {{% /alert %}} 
 
 The license must be applied once per application or process lifecycle before recognition starts.
+
+```python
+# Instantiate the licensing engine
+license = ocr.License()
+# Load the license from file
+license.set_license("Aspose-OCR-Python-via-NET.lic")
+```
+
+If only the name of the license file (without path) is specified, `set_license` method will look for the license file in the application's working directory.
+
+Alternatively, you can store the license file in any directory on your computer and specify an absolute path in `set_license` method.
+
+## Licensing multiple Aspose products
+
+Even if you have a single license for all Aspose products (such as Aspose.Total), you still need to apply the license separately to each Aspose library you are using in your application.

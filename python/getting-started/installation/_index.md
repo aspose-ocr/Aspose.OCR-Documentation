@@ -60,6 +60,18 @@ Aspose.OCR for Python via .NET is distributed as a Python Wheel (whl). The packa
 
 ## Installing the package
 
+The Aspose.OCR for Python via .NET package can either be installed from [PyPi](https://pypi.org/project/aspose-ocr-python-net/) or downloaded from [releases.aspose.com](https://releases.aspose.com/ocr/python-net/).
+
+### Installing from PyPi
+
+[pip](https://packaging.python.org/en/latest/key_projects/#pip) is the recommended installer. To install the package, run the following command:
+
+```bash
+pip install aspose-ocr-python-net
+```
+
+### Installing from downloaded package
+
 1. Download Aspose.OCR for Python via .NET package for your platform from [releases.aspose.com](https://releases.aspose.com/ocr/python-net/).
 2. Install the downloaded package using pip:
 
@@ -68,6 +80,22 @@ Aspose.OCR for Python via .NET is distributed as a Python Wheel (whl). The packa
    ```
 
 ## Updating
+
+The update procedure depends on how you originally installed the Aspose.OCR for Python via .NET package.
+
+{{% alert color="primary" %}}
+Refer to [Aspose.OCR for Python via .NET Release Notes](/ocr/python-net/release-notes/) to check if the update might alter the application behavior or require changes to existing code.
+{{% /alert %}}
+
+### Getting an update from PyPi
+
+To update the package, run the following command:
+
+```bash
+pip install --upgrade aspose-ocr-python-net
+```
+
+### Updating with downloaded file
 
 1. Download the new version of Aspose.OCR for Python via .NET package for your platform from [releases.aspose.com](https://releases.aspose.com/ocr/python-net/).
 2. Update your current package version to the one you downloaded with pip:
