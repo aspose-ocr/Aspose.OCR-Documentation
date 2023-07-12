@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2023-06-12"
+date: "2023-07-11"
 author: "Vladimir Lapin"
 type: docs
 url: /net/save-file/
@@ -76,6 +76,8 @@ using(MemoryStream ms = new MemoryStream())
 ## Saving recognition results as a multi-page document
 
 You can merge several recognition results into one document using [`SaveMultipageDocument`](https://reference.aspose.com/ocr/net/aspose.ocr/asposeocr/savemultipagedocument/) method of [`Aspose.OCR.AsposeOcr`](https://reference.aspose.com/ocr/net/aspose.ocr/asposeocr/) class. This can be useful for recognizing books, contracts, articles, and other printouts consisting of multiple pages, as well as for batch recognition.
+
+You can optionally enable [automatic spelling corrections](/ocr/net/automatic-spelling-correction/) for recognition results and provide a [custom dictionary](/ocr/net/dictionaries/).
 
 {{< tabs tabID="2" tabTotal="2" tabName1="Save to file" tabName2="Write to memory" >}}
 {{< tab tabNum="1" >}}

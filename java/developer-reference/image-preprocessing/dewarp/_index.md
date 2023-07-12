@@ -1,6 +1,6 @@
 ---
 weight: 100
-date: "2023-02-27"
+date: "2023-07-11"
 author: "Vladimir Lapin"
 type: docs
 url: /java/dewarp/
@@ -59,12 +59,13 @@ The dewarping filter automatically converts the image to [grayscale](/ocr/java/g
 ## Important considerations
 
 {{% alert color="caution" %}}
-At the moment, the dewarping filter is not intended for bulk processing. It takes a significant amount of time and has some limitations.  
-We recommend using it for pinpoint processing of individual images that cannot be recognized otherwise.
+Due to the high complexity of the underlying neural network, dewarping requires a lot of resources and time. We recommend using it for pinpoint processing of individual images that are otherwise unrecognizable.
+
+This processing filter is not recommended for high load web applications that recognize images close to real time.
 {{% /alert %}}
 
-- Dewarping one image may take **more than a minute**.
-- Due to the high complexity of the underlying neural network, dewarping is extremely resource-intensive (CPU and RAM).
+- Dewarping one image may take **up to 45 seconds**.
+- Dewarping is very resource-intensive (CPU and RAM).
 - After removing the image curvature, text lines will have some wave-like distortion. Thus, it is highly recommended to use [`DetectAreasMode.CURVED_TEXT`](/ocr/java/areas-detection/curved_text/) areas detection mode to extract text from the dewarped image. Other area detection modes may produce inaccurate results.
 - Dewarping also corrects image tilt. We recommend disabling [automatic skew correction](/ocr/java/deskew/) - it will have no effect and may even result in severe image distortion.
 

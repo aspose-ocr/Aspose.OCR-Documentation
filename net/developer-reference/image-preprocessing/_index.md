@@ -1,6 +1,6 @@
 ---
 weight: 30
-date: "2023-04-07"
+date: "2023-07-11"
 author: "Vladimir Lapin"
 type: docs
 url: /net/image-processing/
@@ -49,14 +49,14 @@ Filter | Action | Performance impact | Usage scenarios
 [Color inversion](/ocr/net/invert/) | Swap image colors so that light areas appear dark and dark areas appear light. | 0.25% | White text on black background<br />Advertisements<br />Business cards<br />Screenshots
 [Dilation](/ocr/net/dilate/) | Increase the thickness of characters in an image by adding pixels to the edges of high-contrast objects, such as letters. | 3.1% | Receipts<br />Printouts with very thin font
 [Median filter](/ocr/net/median/) | Blur noisy images while preserving the edges of high-contrast objects like letters. | 6.25% | Photos taken in low light conditions<br />Poor quality printouts<br />Highly compressed JPEG’s
-[Dewarping](/ocr/net/dewarp/) | Straighten page curvature and fix camera lens distortion for page photos.<br />**This method requires a lot of resources and time!** For now, we do not recommend using it for bulk image processing and in online apps. | **More than a minute**;<br />**4 times more memory**&nbsp;<sup>(3)</sup> | Photos of curved pages<br />Ultra wide-angle and fisheye photos<br />Photos from entry-level smartphones
+[Dewarping](/ocr/net/dewarp/) | Straighten page curvature and fix camera lens distortion for page photos.<br />**This method requires significant resources and time!** Consider using it only if the image has geometric distortions preventing accurate recognition. | **30-40 seconds**;<br />**Up to 4 times more memory**&nbsp;<sup>(3)</sup> | Photos of curved pages<br />Ultra wide-angle and fisheye photos<br />Photos from entry-level smartphones
 
 {{% alert color="primary" %}}
 **Notes**
 
 1. Automatic noise removal uses a powerful artificial intelligence algorithm that consumes significant computing resources and RAM. Use it with care, especially when developing public websites and mobile apps.
 2. Resizing takes between 6% and 100% more time than the minimum processing pipeline, depending on the original image size.
-3. Due to the high complexity of the underlying neural network, dewarping is extremely resource- and time-intensive. Actual numbers may vary greatly depending on the performance of the computer and the characteristics of the original image.
+3. Due to the high complexity of the underlying neural network, dewarping is resource- and time-intensive. Actual numbers may vary greatly depending on the performance of the computer and the characteristics of the original image.
 {{% /alert %}}
 
 ## Chaining processing filters
