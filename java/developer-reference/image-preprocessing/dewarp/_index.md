@@ -1,6 +1,6 @@
 ---
 weight: 100
-date: "2023-07-11"
+date: "2023-07-14"
 author: "Vladimir Lapin"
 type: docs
 url: /java/dewarp/
@@ -74,19 +74,15 @@ This processing filter is not recommended for high load web applications that re
 To straighten the curved image, run it through [`AutoDewarping()`](https://reference.aspose.com/ocr/java/com.aspose.ocr/preprocessingfilter/#autodewarping--) preprocessing filter.
 
 ```java
-AsposeOCR api = new AsposeOCR();	
-RecognitionSettings settings = new RecognitionSettings();
-// Apply dewarping filter 
+AsposeOCR api = new AsposeOCR();
+// Apply median filter
 PreprocessingFilter filters = new PreprocessingFilter();
 filters.add(PreprocessingFilter.AutoDewarping());
-settings.setPreprocessingFilters(filters);
-// Save dewarped image to file
-BufferedImage image =  api.PreprocessImage(file, filters);
-File outputSource = new File("result.png");
-ImageIO.write(image, "png", outputSource);
-// Extract text from image
-RecognitionResult result = api.RecognizePage(file, settings);
-System.out.println(result);
+// Prepare batch
+OcrInput images = new OcrInput(InputType.SingleImage, filters);
+images.add("image.png");
+// Save processed images to the folder
+ImageProcessing.Save(images, "C:\\images");
 ```
 
 <div class="duo">

@@ -1,6 +1,6 @@
 ---
 weight: 20
-date: "2022-09-24"
+date: "2023-07-14"
 author: "Vladimir Lapin"
 type: docs
 url: /java/denoise/
@@ -50,7 +50,7 @@ keywords:
 	}
 </style>
 
-Dirt, spots, scratches, glare, unwanted gradients, and other noise are a common problem when scanning low-quality sources such as newspapers or old books, or when taking photographs. These image defects can interfere with recognition, significantly reduce the accuracy of OCR, and may cause spots to be misrecognised as characters.
+Dirt, spots, scratches, glare, unwanted gradients, and other noise are a common problem when scanning low-quality sources such as newspapers or old books, or when taking photographs. These image defects can interfere with recognition, significantly reduce the accuracy of OCR, and may cause spots to be misinterpreted as characters.
 
 Aspose.OCR provides automated processing algorithms that remove noise from images before proceeding to recognition.
 
@@ -60,38 +60,19 @@ Noise removal automatically converts the image to [black and white](/ocr/java/bi
 
 ## Automatic noise removal
 
-To automatically remove the noise from the image before recognition, run the image through [`AutoDenoising`](https://reference.aspose.com/ocr/java/com.aspose.ocr/PreprocessingFilter#AutoDenoising--) preprocessing filter or [enable automatic denoising](https://reference.aspose.com/ocr/java/com.aspose.ocr/RecognitionSettings#setAutoDenoising-boolean-) in recognition settings.
+To automatically remove the noise from the image before recognition, run the image through [`AutoDenoising`](https://reference.aspose.com/ocr/java/com.aspose.ocr/PreprocessingFilter#AutoDenoising--) preprocessing filter.
 
-{{< tabs tabID="1" tabTotal="2" tabName1="Preprocessing filter" tabName2="Recognition settings" >}}
-{{< tab tabNum="1" >}}
 ```java
 AsposeOCR api = new AsposeOCR();
+// Apply automatic noise removal
 PreprocessingFilter filters = new PreprocessingFilter();
 filters.add(PreprocessingFilter.AutoDenoising());
-// Save preprocessed image to file
-BufferedImage imageRes = api.PreprocessImage("source.png", filters);
-File outputSource = new File("result.png");
-ImageIO.write(imageRes, "png", outputSource);
-// Append preprocessing filters to recognition settings
-RecognitionSettings recognitionSettings = new RecognitionSettings();
-recognitionSettings.setPreprocessingFilters(filters);
-// Recognize image
-RecognitionResult result = api.RecognizePage("source.png", recognitionSettings);
-System.out.println("Recognition result:\n" + result.recognitionText + "\n\n");
+// Prepare batch
+OcrInput images = new OcrInput(InputType.SingleImage, filters);
+images.add("image.png");
+// Save processed images to the folder
+ImageProcessing.Save(images, "C:\\images");
 ```
-{{< /tab >}}
-{{< tab tabNum="2" >}}
-```java
-AsposeOCR api = new AsposeOCR();
-// Enable automatic deskew in recognition settings
-RecognitionSettings recognitionSettings = new RecognitionSettings();
-recognitionSettings.setAutoDenoising(true);
-// Recognize image
-RecognitionResult result = api.RecognizePage("source.png", recognitionSettings);
-System.out.println("Recognition result:\n" + result.recognitionText + "\n\n");
-```
-{{< /tab >}}
-{{< /tabs >}}
 
 <div class="duo">
 	<img src="origin.png" alt="Noisy image" />

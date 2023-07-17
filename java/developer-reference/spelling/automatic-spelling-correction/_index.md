@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2022-09-30"
+date: "2023-07-17"
 author: "Vladimir Lapin"
 type: docs
 url: /java/automatic-spelling-correction/
@@ -48,20 +48,26 @@ Spell checking is done on the fly, either upon [displaying](https://reference.as
 {{< tab tabNum="1" >}}
 ```java
 AsposeOCR api = new AsposeOCR();
-// Extract text from image
-RecognitionResult result = api.RecognizePage("source.png", new RecognitionSettings());
+// Add an image to OcrInput object
+OcrInput input = new OcrInput(InputType.SingleImage);
+input.Add("source.png");
+// Recognize image
+ArrayList<RecognitionResult> results = api.Recognize(input);
 // Output corrected text
-String correctedResult = result.getSpellCheckCorrectedText(com.aspose.ocr.SpellCheck.SpellCheckLanguage.Eng);
+String correctedResult = results[0].getSpellCheckCorrectedText(SpellCheckLanguage.Eng);
 System.out.println("Recognition result:\n" + correctedResult + "\n\n");
 ```
 {{< /tab >}}
 {{< tab tabNum="2" >}}
 ```java
 AsposeOCR api = new AsposeOCR();
-// Extract text from image
-RecognitionResult result = api.RecognizePage("source.png", new RecognitionSettings());
-// Save corrected text
-result.saveSpellCheckCorrectedText("result.txt", Format.Json, com.aspose.ocr.SpellCheck.SpellCheckLanguage.Eng);
+// Add an image to OcrInput object
+OcrInput input = new OcrInput(InputType.SingleImage);
+input.Add("source.png");
+// Recognize image
+ArrayList<RecognitionResult> results = api.Recognize(input);
+// Save corrected result
+results[0].Save("result.txt", SaveFormat.Text, true, SpellCheckLanguage.Deu);
 ```
 {{< /tab >}}
 {{< /tabs >}}
@@ -72,13 +78,11 @@ Automatic spelling correction requires additional processing resources and is di
 
 ## Spelling correction of any text
 
-You can also correct misspelled words in any text string using `CorrectSpelling` method of [`AsposeOCR`](https://reference.aspose.com/ocr/java/com.aspose.ocr/AsposeOCR) class:
+You can also correct misspelled words in any text string using `CorrectSpelling` method of [`AsposeOCR`](https://reference.aspose.com/ocr/java/com.aspose.ocr/asposeocr/) class:
 
 ```java
 AsposeOCR api = new AsposeOCR();
-// Extract text from image
-String result = api.RecognizePage("source.png");
-// Correct spelling
-String correctedResult = api.CorrectSpelling(result, com.aspose.ocr.SpellCheck.SpellCheckLanguage.Eng);
-System.out.println("Recognition result:\n" + correctedResult + "\n\n");
+String text = "Die schönste Jungfrau sitzet dort oben wunderbar";
+String correctedText = api.CorrectSpelling(text, SpellCheckLanguage.Deu);
+System.out.println(correctedResult);
 ```

@@ -168,7 +168,7 @@ OcrInput images  = new OcrInput(InputType.SingleImage);
 images.add(os.path.join(self.dataDir, "source1.png"));
 images.add(os.path.join(self.dataDir, "source2.png"));
 // Fast recognize images
-results = api.RecognizeFast(images);
+ArrayList<RecognitionResult> results = api.RecognizeFast(images);
 results.forEach((result) -> {
 	System.out.println(result);
 });
@@ -186,7 +186,7 @@ input.add(os.path.join(self.dataDir, "car2.png"));
 CarPlateRecognitionSettings recognitionSettings = new CarPlateRecognitionSettings();
 recognitionSettings.setIgnoredCharacters("Ää");
 // Recognize license plates
-results = api.RecognizeCarPlate(input, recognitionSettings);
+ArrayList<RecognitionResult> results = api.RecognizeCarPlate(input, recognitionSettings);
 results.forEach((result) -> {
 	System.out.println(result.recognition_text);
 });

@@ -1,6 +1,6 @@
 ---
 weight: 50
-date: "2022-09-24"
+date: "2023-07-14"
 author: "Vladimir Lapin"
 type: docs
 url: /java/binarization/
@@ -109,19 +109,14 @@ The image is automatically converted to black and white when applying the follow
 
 ```java
 AsposeOCR api = new AsposeOCR();
-// Scale the image to twice its original size using bilinear interpolation
+// Use automatic binarization
 PreprocessingFilter filters = new PreprocessingFilter();
 filters.add(PreprocessingFilter.Binarize());
-// Save preprocessed image to file
-BufferedImage imageRes = api.PreprocessImage("source.png", filters);
-File outputSource = new File("result.png");
-ImageIO.write(imageRes, "png", outputSource);
-// Append preprocessing filters to recognition settings
-RecognitionSettings recognitionSettings = new RecognitionSettings();
-recognitionSettings.setPreprocessingFilters(filters);
-// Recognize image
-RecognitionResult result = api.RecognizePage("source.png", recognitionSettings);
-System.out.println("Recognition result:\n" + result.recognitionText + "\n\n");
+// Prepare batch
+OcrInput images = new OcrInput(InputType.SingleImage, filters);
+images.add("image.png");
+// Save processed images to the folder
+ImageProcessing.Save(images, "C:\\images");
 ```
 
 ## Using binarization threshold
@@ -134,38 +129,19 @@ In some rare cases, you may need to override the automatic binarization settings
 
 If you notice that part of the text disappears from the recognition results, try manually specifying the **threshold** criteria that determine whether a pixel is considered black or white. If a pixel is lighter than the threshold, it is considered a white pixel, otherwise it is considered a black pixel. In other words, the higher the threshold value, the more content will be sent for recognition, including words printed in very light colors. If the threshold set to `0`, the black and white are assigned automatically based on the content of the image.
 
-To specify binarization threshold, provide it in [`Threshold`](https://reference.aspose.com/ocr/java/com.aspose.ocr/PreprocessingFilter#Threshold-int-) preprocessing filter or [set](https://reference.aspose.com/ocr/java/com.aspose.ocr/RecognitionSettings#setThresholdValue-int-) it in recognition settings. To rely on automatic processing, do not provide a threshold.
+To specify binarization threshold, provide it in [`Threshold`](https://reference.aspose.com/ocr/java/com.aspose.ocr/PreprocessingFilter#Threshold-int-) preprocessing filter. To rely on automatic processing, use `0` or do not provide a threshold.
 
-{{< tabs tabID="1" tabTotal="2" tabName1="Preprocessing filter" tabName2="Recognition settings" >}}
-{{< tab tabNum="1" >}}
 ```java
 AsposeOCR api = new AsposeOCR();
+// Use binarization threshold equals to 150
 PreprocessingFilter filters = new PreprocessingFilter();
 filters.add(PreprocessingFilter.Threshold(150));
-// Save preprocessed image to file
-BufferedImage imageRes = api.PreprocessImage("source.png", filters);
-File outputSource = new File("result.png");
-ImageIO.write(imageRes, "png", outputSource);
-// Append preprocessing filters to recognition settings
-RecognitionSettings recognitionSettings = new RecognitionSettings();
-recognitionSettings.setPreprocessingFilters(filters);
-// Recognize image
-RecognitionResult result = api.RecognizePage("source.png", recognitionSettings);
-System.out.println("Recognition result:\n" + result.recognitionText + "\n\n");
+// Prepare batch
+OcrInput images = new OcrInput(InputType.SingleImage, filters);
+images.add("image.png");
+// Save processed images to the folder
+ImageProcessing.Save(images, "C:\\images");
 ```
-{{< /tab >}}
-{{< tab tabNum="2" >}}
-```java
-AsposeOCR api = new AsposeOCR();
-// Enable automatic deskew in recognition settings
-RecognitionSettings recognitionSettings = new RecognitionSettings();
-recognitionSettings.setThresholdValue(150);
-// Recognize image
-RecognitionResult result = api.RecognizePage("source.png", recognitionSettings);
-System.out.println("Recognition result:\n" + result.recognitionText + "\n\n");
-```
-{{< /tab >}}
-{{< /tabs >}}
 
 ### Live demo
 
@@ -209,11 +185,16 @@ System.out.println("Recognition result:\n" + result.recognitionText + "\n\n");
 
 #### Code snippet
 
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#000">AsposeOCR</span> <span style="color:#000">api</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">AsposeOCR</span><span style="color:#ce5c00;font-weight:bold">();</span>
-</span></span><span style="display:flex;"><span><span style="color:#000">RecognitionSettings</span> <span style="color:#000">recognitionSettings</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">RecognitionSettings</span><span style="color:#ce5c00;font-weight:bold">();</span>
-</span></span><span style="display:flex;"><span><span style="color:#000">recognitionSettings</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">setThresholdValue</span><span style="color:#ce5c00;font-weight:bold">(</span><span id="thresholdvalue" style="color:#000">0</span><span style="color:#ce5c00;font-weight:bold">);</span>
-</span></span><span style="display:flex;"><span><span style="color:#000">RecognitionResult</span> <span style="color:#000">result</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">api</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">RecognizePage</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#4e9a06">"source.png"</span><span style="color:#ce5c00;font-weight:bold">,</span> <span style="color:#000">recognitionSettings</span><span style="color:#ce5c00;font-weight:bold">);</span>
-</span></span><span style="display:flex;"><span><span style="color:#000">System</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">out</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">println</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">result</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">recognitionText</span><span style="color:#ce5c00;font-weight:bold">);</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><button class="btn btn-dark float-right" type="button" style="font-size: 1em !important;">Copy</button><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">AsposeOCR</span> <span class="n">api</span> <span class="o">=</span> <span class="k">new</span> <span class="n">AsposeOCR</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// Set binarization threshold
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">PreprocessingFilter</span> <span class="n">filters</span> <span class="o">=</span> <span class="k">new</span> <span class="n">PreprocessingFilter</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl"><span class="n">filters</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">PreprocessingFilter</span><span class="o">.</span><span class="na">Threshold</span><span class="o">(</span><span class="n" id="thresholdvalue">0</span><span class="o">));</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// Prepare batch
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">OcrInput</span> <span class="n">images</span> <span class="o">=</span> <span class="k">new</span> <span class="n">OcrInput</span><span class="o">(</span><span class="n">InputType</span><span class="o">.</span><span class="na">SingleImage</span><span class="o">,</span> <span class="n">filters</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl"><span class="n">images</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="s">"image.png"</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// Recognize images
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">RecognitionResult</span><span class="o">&gt;</span> <span class="n">results</span> <span class="o">=</span> <span class="n">api</span><span class="o">.</span><span class="na">Recognize</span><span class="o">(</span><span class="n">input</span><span class="o">,</span> <span class="n">recognitionSettings</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl"><span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">results</span><span class="o">[</span><span class="n">0</span><span class="o">].</span><span class="na">recognitionText</span><span class="o">);</span>
 </span></span></code></pre></div>
 
 #### Recognition result

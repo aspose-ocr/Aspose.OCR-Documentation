@@ -1,6 +1,6 @@
 ---
 weight: 40
-date: "2022-09-24"
+date: "2023-07-14"
 author: "Vladimir Lapin"
 type: docs
 url: /java/resize/
@@ -39,17 +39,12 @@ Above `1`     | Upscale the image proportionally to the specified percentage. | 
 AsposeOCR api = new AsposeOCR();
 // Scale the image to twice its original size using bilinear interpolation
 PreprocessingFilter filters = new PreprocessingFilter();
-filters.add(PreprocessingFilter.Scale(2, Aspose.OCR.Filters.InterpolationFilterType.Triangle));
-// Save preprocessed image to file
-BufferedImage imageRes = api.PreprocessImage("source.png", filters);
-File outputSource = new File("result.png");
-ImageIO.write(imageRes, "png", outputSource);
-// Append preprocessing filters to recognition settings
-RecognitionSettings recognitionSettings = new RecognitionSettings();
-recognitionSettings.setPreprocessingFilters(filters);
-// Recognize image
-RecognitionResult result = api.RecognizePage("source.png", recognitionSettings);
-System.out.println("Recognition result:\n" + result.recognitionText + "\n\n");
+filters.add(PreprocessingFilter.Scale(2, InterpolationFilterType.Triangle));
+// Prepare batch
+OcrInput images = new OcrInput(InputType.SingleImage, filters);
+images.add("image.png");
+// Save processed images to the folder
+ImageProcessing.Save(images, "C:\\images");
 ```
 
 ## Manual image resizing
@@ -65,16 +60,11 @@ AsposeOCR api = new AsposeOCR();
 // Resize the image to 1000x1000 pixels with bilinear interpolation
 PreprocessingFilter filters = new PreprocessingFilter();
 filters.add(PreprocessingFilter.Resize(1000, 1000, InterpolationFilterType.Triangle));
-// Save preprocessed image to file
-BufferedImage imageRes = api.PreprocessImage("source.png", filters);
-File outputSource = new File("result.png");
-ImageIO.write(imageRes, "png", outputSource);
-// Append preprocessing filters to recognition settings
-RecognitionSettings recognitionSettings = new RecognitionSettings();
-recognitionSettings.setPreprocessingFilters(filters);
-// Recognize image
-RecognitionResult result = api.RecognizePage("source.png", recognitionSettings);
-System.out.println("Recognition result:\n" + result.recognitionText + "\n\n");
+// Prepare batch
+OcrInput images = new OcrInput(InputType.SingleImage, filters);
+images.add("image.png");
+// Save processed images to the folder
+ImageProcessing.Save(images, "C:\\images");
 ```
 
 ## Usage scenarios 

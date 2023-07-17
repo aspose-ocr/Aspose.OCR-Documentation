@@ -1,6 +1,6 @@
 ---
 weight: 20
-date: "2022-09-30"
+date: "2023-07-17"
 author: "Vladimir Lapin"
 type: docs
 url: /java/misspelled-words-list/
@@ -44,10 +44,13 @@ Found errors and suggested substitutions are provided as a list of [`SpellCheckE
 
 ```java
 AsposeOCR api = new AsposeOCR();
-// Extract text from image
-RecognitionResult result = api.RecognizePage("source.png", new RecognitionSettings());
+// Add an image to OcrInput object
+OcrInput input = new OcrInput(InputType.SingleImage);
+input.Add("source.png");
+// Recognize image
+ArrayList<RecognitionResult> results = api.Recognize(input);
 // Spelling suggestions
-result.getSpellCheckErrorList(com.aspose.ocr.SpellCheck.SpellCheckLanguage.Eng).forEach((correction) -> {
+results[0].getSpellCheckErrorList(SpellCheckLanguage.Eng).forEach((correction) -> {
 	System.out.println("Found misspelled word \"" + correction.word + "\" at position " + correction.startPosition);
 	if(correction.suggestedWords.size() > 0) System.out.println("Most likely replacement: " + correction.get(0).word);
 });

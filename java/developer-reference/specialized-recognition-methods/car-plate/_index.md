@@ -1,6 +1,6 @@
 ---
 weight: 30
-date: "2023-05-19"
+date: "2023-07-14"
 author: "Vladimir Lapin"
 type: docs
 url: /java/recognition/car-plate/
@@ -38,8 +38,8 @@ input.add(os.path.join(self.dataDir, "car2.png"));
 // Recognition settings
 CarPlateRecognitionSettings recognitionSettings = new CarPlateRecognitionSettings();
 recognitionSettings.setIgnoredCharacters("Ää");
-// Recognize license plates
-results = api.RecognizeCarPlate(input, recognitionSettings);
+// Recognize vehicle license plates
+ArrayList<RecognitionResult> results = api.RecognizeCarPlate(input, recognitionSettings);
 results.forEach((result) -> {
 	System.out.println(result.recognition_text);
 });

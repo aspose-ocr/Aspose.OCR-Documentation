@@ -1,6 +1,6 @@
 ---
 weight: 30
-date: "2022-10-04"
+date: "2023-07-14"
 author: "Vladimir Lapin"
 type: docs
 url: /java/multithreading/
@@ -24,11 +24,16 @@ To set the number of threads, use [`setThreadsCount`](https://reference.aspose.c
 
 ```java
 AsposeOCR api = new AsposeOCR();
+// Add images to the recognition batch
+OcrInput images  = new OcrInput(InputType.SingleImage);
+images.add("image1.png");
+images.add("image2.png");
 // Limit recognition load to 2 threads
 RecognitionSettings recognitionSettings = new RecognitionSettings();
 recognitionSettings.setThreadsCount(2);
-// Extract text from image
-RecognitionResult result = api.RecognizePage("source.png", recognitionSettings);
-// Show recognition result
-System.out.println("Recognition result:\n" + result.recognitionText + "\n\n");
+// Recognize images
+ArrayList<RecognitionResult> results = api.Recognize(images, recognitionSettings);
+results.forEach((result) -> {
+	System.out.println("Recognition result:\n" + result.recognitionText + "\n\n");
+});
 ```

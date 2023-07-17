@@ -24,7 +24,7 @@ OcrInput images  = new OcrInput(InputType.SingleImage);
 images.add(os.path.join(self.dataDir, "source1.png"));
 images.add(os.path.join(self.dataDir, "source2.png"));
 // Fast recognize images
-results = api.RecognizeFast(images);
+ArrayList<RecognitionResult> results = api.RecognizeFast(images);
 results.forEach((result) -> {
 	System.out.println(result);
 });
@@ -36,6 +36,5 @@ This method is about **twice as fast** as [regular recognition](/ocr/java/recogn
 
 ## Drawbacks
 
-- This method only supports PNG, JPEG, BMP, GIF, and single-page TIFF images.
 - This recognition method only works with high-quality scans without skew or distortion. However, you can [preprocess](/ocr/java/image-preprocessing/) an image before sending it to the OCR engine.
 - Fast recognition cannot be customized with [recognition settings](/ocr/java/settings/).

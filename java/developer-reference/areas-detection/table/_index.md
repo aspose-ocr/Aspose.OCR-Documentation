@@ -1,6 +1,6 @@
 ---
 weight: 40
-date: "2022-11-15"
+date: "2023-07-14"
 author: "Vladimir Lapin"
 type: docs
 url: /java/areas-detection/table/
@@ -28,7 +28,10 @@ The following code sample demonstrates how to use this document areas detection 
 AsposeOCR api = new AsposeOCR();
 RecognitionSettings recognitionSettings = new RecognitionSettings();
 recognitionSettings.setDetectAreasMode(DetectAreasMode.TABLE);
-// Convert image to table
-RecognitionResult result = api.RecognizePage("source.png", recognitionSettings);
-System.out.println("Recognition result:\n" + result.recognitionText + "\n\n");
+// Prepare batch
+OcrInput images = new OcrInput(InputType.SingleImage);
+images.add("image.png");
+// Recognize images
+ArrayList<RecognitionResult> results = api.Recognize(images, recognitionSettings);
+System.out.println("Recognition result:\n" + results[0].recognitionText + "\n\n");
 ```

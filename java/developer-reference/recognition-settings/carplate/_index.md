@@ -1,6 +1,6 @@
 ---
 weight: 60
-date: "2023-05-19"
+date: "2023-07-14"
 author: "Vladimir Lapin"
 type: docs
 url: /java/recognition-settings-car-plate/
@@ -20,7 +20,7 @@ keywords:
 
 Aspose.OCR for Java allows for very flexible customization of vehicle license plate recognition accuracy, performance, and other settings by configuring the properties of the `CarPlateRecognitionSettings` object.
 
-These settings are specifically tailored for processing scanned or photographed vehicle license plates (car plates).
+These settings are specifically tailored for processing scanned or photographed vehicle license plates.
 
 Setting | Type | Default value | Description
 ------- | ---- | ------------- | -----------
@@ -46,7 +46,7 @@ input.add(os.path.join(self.dataDir, "car2.png"));
 CarPlateRecognitionSettings recognitionSettings = new CarPlateRecognitionSettings();
 recognitionSettings.setIgnoredCharacters("Ää");
 // Recognize license plates
-results = api.RecognizeCarPlate(input, recognitionSettings);
+ArrayList<RecognitionResult> results = api.RecognizeCarPlate(input, recognitionSettings);
 results.forEach((result) -> {
 	System.out.println(result.recognition_text);
 });

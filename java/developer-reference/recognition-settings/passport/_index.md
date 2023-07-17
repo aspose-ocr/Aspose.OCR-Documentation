@@ -1,6 +1,6 @@
 ---
 weight: 50
-date: "2023-05-19"
+date: "2023-07-14"
 author: "Vladimir Lapin"
 type: docs
 url: /java/recognition-settings-passport/
@@ -44,8 +44,8 @@ input.add(os.path.join(self.dataDir, "passport2.png"));
 // Recognition settings
 PassportRecognitionSettings recognitionSettings = new PassportRecognitionSettings();
 recognitionSettings.setLanguage(Language.Ukr);
-// Recognize license plates
-results = api.RecognizePassport(input, recognitionSettings);
+// Recognize passports
+ArrayList<RecognitionResult> results = api.RecognizePassport(input, recognitionSettings);
 results.forEach((result) -> {
 	System.out.println(result.recognition_text);
 });

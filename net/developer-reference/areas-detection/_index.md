@@ -48,7 +48,7 @@ foreach(Aspose.OCR.RecognitionResult result in results)
 }
 ```
 
-Aspose.OCR for .NET supports the following [document structure analysis](/ocr/structure-analysis/) methods provided in [`DetectAreasMode`] enumeration:
+Aspose.OCR for .NET supports the following document structure analysis methods provided in `DetectAreasMode` enumeration:
 
 Name              | Value | Description | Use cases
 ----------------- | :---: | ----------- | ---------

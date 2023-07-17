@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2023-05-19"
+date: "2023-07-14"
 author: "Vladimir Lapin"
 type: docs
 url: /java/recognition/id-card
@@ -38,8 +38,8 @@ input.add(os.path.join(self.dataDir, "ID2.png"));
 // Recognition settings
 IDCardRecognitionSettings recognitionSettings = new IDCardRecognitionSettings();
 recognitionSettings.setAllowedCharacters(CharactersAllowedType.LATIN_ALPHABET);
-// Recognize license plates
-results = api.RecognizeIDCard(input, recognitionSettings);
+// Recognize ID cards
+ArrayList<RecognitionResult> results = api.RecognizeIDCard(input, recognitionSettings);
 results.forEach((result) -> {
 	System.out.println(result.recognition_text);
 });

@@ -1,6 +1,6 @@
 ---
 weight: 30
-date: "2022-09-24"
+date: "2023-07-14"
 author: "Vladimir Lapin"
 type: docs
 url: /java/contrast/
@@ -58,38 +58,19 @@ Contrast correction automatically converts the image to [black and white](/ocr/j
 
 ## Automatic contrast adjustments
 
-To automatically increase the image contrast before recognition, run the image through [`ContrastCorrection`](https://reference.aspose.com/ocr/java/com.aspose.ocr/PreprocessingFilter#ContrastCorrection--) preprocessing filter or [enable automatic contrast adjustments](https://reference.aspose.com/ocr/java/com.aspose.ocr/RecognitionSettings#setAutoContrast-boolean-) in recognition settings.
+To automatically increase the image contrast before recognition, run the image through [`ContrastCorrection`](https://reference.aspose.com/ocr/java/com.aspose.ocr/PreprocessingFilter#ContrastCorrection--) preprocessing filter.
 
-{{< tabs tabID="1" tabTotal="2" tabName1="Preprocessing filter" tabName2="Recognition settings" >}}
-{{< tab tabNum="1" >}}
 ```java
 AsposeOCR api = new AsposeOCR();
+// Apply automatic contrast correction
 PreprocessingFilter filters = new PreprocessingFilter();
 filters.add(PreprocessingFilter.ContrastCorrection());
-// Save preprocessed image to file
-BufferedImage imageRes = api.PreprocessImage("source.png", filters);
-File outputSource = new File("result.png");
-ImageIO.write(imageRes, "png", outputSource);
-// Append preprocessing filters to recognition settings
-RecognitionSettings recognitionSettings = new RecognitionSettings();
-recognitionSettings.setPreprocessingFilters(filters);
-// Recognize image
-RecognitionResult result = api.RecognizePage("source.png", recognitionSettings);
-System.out.println("Recognition result:\n" + result.recognitionText + "\n\n");
+// Prepare batch
+OcrInput images = new OcrInput(InputType.SingleImage, filters);
+images.add("image.png");
+// Save processed images to the folder
+ImageProcessing.Save(images, "C:\\images");
 ```
-{{< /tab >}}
-{{< tab tabNum="2" >}}
-```java
-AsposeOCR api = new AsposeOCR();
-// Enable automatic deskew in recognition settings
-RecognitionSettings recognitionSettings = new RecognitionSettings();
-recognitionSettings.setAutoContrast(true);
-// Recognize image
-RecognitionResult result = api.RecognizePage("source.png", recognitionSettings);
-System.out.println("Recognition result:\n" + result.recognitionText + "\n\n");
-```
-{{< /tab >}}
-{{< /tabs >}}
 
 <div class="duo">
 	<img src="origin.png" alt="Low-contrast image" />

@@ -1,6 +1,6 @@
 ---
-weight: 100
-date: "2022-10-04"
+weight: 80
+date: "2023-07-14"
 author: "Vladimir Lapin"
 type: docs
 url: /java/performance-optimization/

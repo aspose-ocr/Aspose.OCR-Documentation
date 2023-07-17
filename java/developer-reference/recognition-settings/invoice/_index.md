@@ -1,6 +1,6 @@
 ---
 weight: 70
-date: "2023-05-19"
+date: "2023-07-14"
 author: "Vladimir Lapin"
 type: docs
 url: /java/recognition-settings-invoice/
@@ -45,8 +45,8 @@ input.add(os.path.join(self.dataDir, "invoice2.png"));
 // Recognition settings
 InvoiceRecognitionSettings recognitionSettings = new InvoiceRecognitionSettings();
 recognitionSettings.setLanguage(Language.Ukr);
-// Recognize license plates
-results = api.RecognizeInvoice(input, recognitionSettings);
+// Recognize invoices
+ArrayList<RecognitionResult> results = api.RecognizeInvoice(input, recognitionSettings);
 results.forEach((result) -> {
 	System.out.println(result.recognition_text);
 });

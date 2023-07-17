@@ -37,6 +37,5 @@ This method is about **twice as fast** as [regular recognition](/ocr/net/recogni
 
 ## Drawbacks
 
-- This method only supports PNG, JPEG, BMP, GIF, and single-page TIFF images.
 - This recognition method only works with high-quality scans without skew or distortion. However, you can [preprocess](/ocr/net/image-processing/#previewing-and-saving-processed-images) an image before sending it to the OCR engine.
 - Fast recognition cannot be customized with [recognition settings](/ocr/net/recognition-settings/).

@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2022-09-24"
+date: "2023-07-14"
 author: "Vladimir Lapin"
 type: docs
 url: /java/deskew/
@@ -73,40 +73,39 @@ When a page is fed to a flatbed scanner (mechanically or manually) or photograph
 
 Skew angle detection and image straightening is critical to the OCR process as it directly affects the reliability and efficiency of segmentation and text extraction. Aspose.OCR offers automated processing algorithms to correct image tilt (deskew) before proceeding to recognition.
 
-## Detecting skew angle
+## Detecting skew angles
 
-To find out the skew angle, use `CalcSkewImage` or `CalcSkewImageFromUri` methods of [`AsposeOCR`](https://reference.aspose.com/ocr/java/com.aspose.ocr/AsposeOCR) class.
+To find out skew angles for all images in a [batch](/ocr/net/ocrinput/), use [`CalculateSkew`](https://reference.aspose.com/ocr/java/com.aspose.ocr/asposeocr/#CalculateSkew-com.aspose.ocr.OcrInput-) method. It returns a list of `SkewOutput` objects, one per image, with the following properties:
 
-{{< tabs tabID="1" tabTotal="3" tabName1="From file" tabName2="From BufferedImage" tabName3="From URL" >}}
-{{< tab tabNum="1" >}}
+Property | Type | Description
+-------- | ---- | -----------
+`Angle` | `double` | Skew angle in degrees.
+`ImageIndex` | `int` | Sequence number of the image on the page. When working with single-page images, this value is always 0.
+`Page` | `int` | Page number. When working with single-page images, this value is always 0.
+`Source` | `String` | The full path or URL of the source file. If the file is provided as a `BufferedImage` object, an array of pixels, or a Base64 string, this value will be empty.
+
+{{% alert color="primary" %}}
+- Skew angles are calculated for all images in the batch, including those without text.
+- PDF documents can contain more than one image per page. Therefore, the resulting list can contain more `SkewOutput` objects than the number of pages in the document.
+{{% /alert %}}
+
 ```java
-AsposeOCR api = new AsposeOCR();
-double skew = api.CalcSkewImage("source.png");
-System.out.println("Skew angle: " + skew + "°.");
+AsposeOcr recognitionEngine = new AsposeOcr();
+// Add PDF documents to OcrInput object
+OcrInput input = new OcrInput(InputType.PDF);
+input.Add("source.pdf");
+// Detect skew angles
+ArrayList<SkewOutput> angles = recognitionEngine.CalculateSkew(input);
+angles.forEach((angle) -> {
+	System.out.println("File: " + angle.Source + " | Page: " + angle.Page + " | Image: "+ angle.ImageIndex + " | Angle: " + angle.Angle +"°");
+});
 ```
-{{< /tab >}}
-{{< tab tabNum="2" >}}
-```java
-AsposeOCR api = new AsposeOCR();
-BufferedImage image = ImageIO.read(new File("source.png"));
-double skew = api.CalcSkewImage(image);
-System.out.println("Skew angle: " + skew + "°.");
-```
-{{< /tab >}}
-{{< tab tabNum="3" >}}
-```java
-AsposeOCR api = new AsposeOCR();
-double skew = api.CalcSkewImageFromUri("https://www.aspose.com/sample-ocr-page.png");
-System.out.println("Skew angle: " + skew + "°.");
-```
-{{< /tab >}}
-{{< /tabs >}}
 
 ![Skewed image](skew-origin.png)
 
 <div id="skew-angle" class="code-sample">
 	<button onclick="calculateSkewAngle(this)">Calculate skew angle</button>
-	<div class="unseen"><code>&gt; Skew angle: 5.9°</code></div>
+	<div class="unseen"><code>&gt; File: "C:\source.pdf" | Page: 0 | Image: 0 | Angle: 5.9°</code></div>
 </div>
 <script>
 	function calculateSkewAngle(obj)
@@ -117,38 +116,19 @@ System.out.println("Skew angle: " + skew + "°.");
 
 ## Automatic skew correction
 
-To automatically straighten skewed image before recognition, run the image through [`AutoSkew`](https://reference.aspose.com/ocr/java/com.aspose.ocr/PreprocessingFilter#AutoSkew--) preprocessing filter or [enable skew correction](https://reference.aspose.com/ocr/java/com.aspose.ocr/RecognitionSettings#setAutoSkew-boolean-) in recognition settings.
+To automatically straighten skewed image before recognition, run the image through [`AutoSkew`](https://reference.aspose.com/ocr/java/com.aspose.ocr/PreprocessingFilter#AutoSkew--) preprocessing filter.
 
-{{< tabs tabID="2" tabTotal="2" tabName1="Preprocessing filter" tabName2="Recognition settings" >}}
-{{< tab tabNum="1" >}}
 ```java
 AsposeOCR api = new AsposeOCR();
+// Apply automatic skew correction
 PreprocessingFilter filters = new PreprocessingFilter();
 filters.add(PreprocessingFilter.AutoSkew());
-// Save preprocessed image to file
-BufferedImage imageRes = api.PreprocessImage("source.png", filters);
-File outputSource = new File("result.png");
-ImageIO.write(imageRes, "png", outputSource);
-// Append preprocessing filters to recognition settings
-RecognitionSettings recognitionSettings = new RecognitionSettings();
-recognitionSettings.setPreprocessingFilters(filters);
-// Recognize image
-RecognitionResult result = api.RecognizePage("source.png", recognitionSettings);
-System.out.println("Recognition result:\n" + result.recognitionText + "\n\n");
+// Prepare batch
+OcrInput images = new OcrInput(InputType.SingleImage, filters);
+images.add("image.png");
+// Save processed images to the folder
+ImageProcessing.Save(images, "C:\\images");
 ```
-{{< /tab >}}
-{{< tab tabNum="2" >}}
-```java
-AsposeOCR api = new AsposeOCR();
-// Enable automatic deskew in recognition settings
-RecognitionSettings recognitionSettings = new RecognitionSettings();
-recognitionSettings.setAutoSkew(true);
-// Recognize image
-RecognitionResult result = api.RecognizePage("source.png", recognitionSettings);
-System.out.println("Recognition result:\n" + result.recognitionText + "\n\n");
-```
-{{< /tab >}}
-{{< /tabs >}}
 
 <div class="duo">
 	<img src="skew-origin.png" alt="Skewed image" />
@@ -177,43 +157,24 @@ System.out.println("Recognition result:\n" + result.recognitionText + "\n\n");
 
 ## Manual skew correction
 
-In rare cases, automatic skew correction may incorrectly determine the angle of the image. This can happen to poor quality photos with significant perspective distortions.
+In some cases, automatic skew correction may incorrectly determine the angle of the image. This can happen to significantly rotated images (more than 20% inclination) or poor quality photos with significant perspective distortions.
 
-To deal with such situations, you can rotate the image by the specified degree using [`Rotate`](https://reference.aspose.com/ocr/java/com.aspose.ocr/PreprocessingFilter#Rotate-float-) preprocessing filter or manually define the skew angle for such images using the [`setSkew`](https://reference.aspose.com/ocr/java/com.aspose.ocr/RecognitionSettings#setSkew-double-) method of recognition settings. The rotation angle is passed in degrees:
+To deal with such situations, you can rotate the image by the specified degree using [`Rotate`](https://reference.aspose.com/ocr/java/com.aspose.ocr/PreprocessingFilter#Rotate-float-) preprocessing filter. The rotation angle is passed in degrees:
 
-- `-360` to `0`: rotate counterclockwise;
-- `0` to `360`: rotate clockwise.
+- Negative angle (`-360` to `0`): rotate counterclockwise;
+- Positive angle (`0` to `360`): rotate clockwise.
 
-{{< tabs tabID="3" tabTotal="2" tabName1="Preprocessing filter" tabName2="Recognition settings" >}}
-{{< tab tabNum="1" >}}
 ```java
 AsposeOCR api = new AsposeOCR();
+// Apply manual rotation
 PreprocessingFilter filters = new PreprocessingFilter();
 filters.add(PreprocessingFilter.Rotate(-90));
-// Save preprocessed image to file
-BufferedImage imageRes = api.PreprocessImage("source.png", filters);
-File outputSource = new File("result.png");
-ImageIO.write(imageRes, "png", outputSource);
-// Append preprocessing filters to recognition settings
-RecognitionSettings recognitionSettings = new RecognitionSettings();
-recognitionSettings.setPreprocessingFilters(filters);
-// Recognize image
-RecognitionResult result = api.RecognizePage("source.png", recognitionSettings);
-System.out.println("Recognition result:\n" + result.recognitionText + "\n\n");
+// Prepare batch
+OcrInput images = new OcrInput(InputType.SingleImage, filters);
+images.add("image.png");
+// Save processed images to the folder
+ImageProcessing.Save(images, "C:\\images");
 ```
-{{< /tab >}}
-{{< tab tabNum="2" >}}
-```java
-AsposeOCR api = new AsposeOCR();
-// Enable automatic deskew in recognition settings
-RecognitionSettings recognitionSettings = new RecognitionSettings();
-recognitionSettings.setSkew(-90);
-// Recognize image
-RecognitionResult result = api.RecognizePage("source.png", recognitionSettings);
-System.out.println("Recognition result:\n" + result.recognitionText + "\n\n");
-```
-{{< /tab >}}
-{{< /tabs >}}
 
 ## Image regions preprocessing
 

@@ -1,12 +1,10 @@
 ---
 weight: 30
-date: "2022-09-30"
+date: "2023-07-17"
 author: "Vladimir Lapin"
 type: docs
 url: /java/image-regions-word-find/
 feedback: OCRJAVA
-aliases:
-- /java/get-words-coordinates/
 title: Finding word bounding boxes
 description: Automatic detection of word bounding boxes inside an image.
 keywords:
@@ -19,34 +17,38 @@ keywords:
 - coordinates
 ---
 
-Aspose.OCR allows you to automatically find the coordinates of image rectangles containing individual words in text. This can be useful for highlighting detected words when previewing an image.
+Aspose.OCR for Java can automatically find the coordinates of image regions containing words. This can be useful for highlighting detected areas when previewing an image or [extracting](/ocr/java/image-regions-extract/) individual blocks of text.
 
-To get bounding boxes of all words of the image, use `getTextAreas` method of [`AsposeOCR`](https://reference.aspose.com/ocr/java/com.aspose.ocr/AsposeOCR) class. Specify [`AreasType.WORDS`](https://reference.aspose.com/ocr/java/com.aspose.ocr/AreasType) as the **areaType** parameter of the method. `isDetectAreas` parameter of the method is ignored.
+To get bounding boxes of all words in images, provided in [`OcrInput` object](/ocr/java/ocrinput/), use [`DetectRectangles`](https://reference.aspose.com/ocr/java/com.aspose.ocr/asposeocr/#DetectRectangles-com.aspose.ocr.OcrInput-com.aspose.ocr.AreasType-boolean-) method. Specify `AreasType.WORDS` as the **areasType** parameter of the method. `isDetectAreas` parameter of the method is ignored.
+
+The method returns a list of [`RectangleOutput`](https://reference.aspose.com/ocr/java/com.aspose.ocr/rectangleoutput/) objects containing coordinates of each word in each image.
 
 {{% alert color="primary" %}}
-This method works for images in the following formats: GIF, PNG, JPEG, BMP, WBMP.
+PDF documents can contain more than one image per page. Therefore, the resulting list can contain more `RectangleOutput` objects than the number of pages in the document.
 {{% /alert %}}
 
-{{< tabs tabID="1" tabTotal="2" tabName1="From file" tabName2="From stream" >}}
-{{< tab tabNum="1" >}}
-```java
-AsposeOCR api = new AsposeOCR();
-ArrayList<Rectangle> paragraphs = api.getTextAreas("source.png", AreasType.WORDS);
-paragraphs.forEach((region) -> {
-	System.out.println(region.recognitionText);
-});
-```
-{{< /tab >}}
-{{< tab tabNum="2" >}}
-```java
-AsposeOCR api = new AsposeOCR();
-BufferedImage source = ImageIO.read(new File("source.png"));
-ArrayList<Rectangle> paragraphs = api.getTextAreas(source, AreasType.WORDS);
-paragraphs.forEach((region) -> {
-	System.out.println(region.recognitionText);
-});
-```
-{{< /tab >}}
-{{< /tabs >}}
+Property | Type | Description
+-------- | ---- | -----------
+`Rectangles` | `ArrayList<Rectangle>` | Coordinates of each word of an image (top-left corner, width and height), returned as a list of `Rectangle` objects.
+`ImageIndex` | `int` | Sequence number of the image on the page. When working with single-page images, this value is always 0.
+`Page` | `int` | Page number. When working with single-page images, this value is always 0.
+`Source` | `String` | The full path or URL of the source file. If the file is provided as a `BufferedImage` object, an array of pixels, or a Base64 string, this value will be empty.
 
-Coordinates of each word (top-left corner, width and height) are returned as a list of [`Rectangle`](https://docs.oracle.com/javase/8/docs/api/java/awt/Rectangle.html) objects.
+## Example
+
+The following code example shows how to detect words in multiple images:
+
+```java
+AsposeOcr api = new AsposeOcr();
+// Add images to detection batch
+OcrInput images = new OcrInput(InputType.SingleImage);
+images.Add("source1.png");
+images.Add("source2.jpg");
+// Get word coordinates
+ArrayList<RectangleOutput> areas = api.DetectRectangles(images, AreasType.WORDS);
+areas.forEach((area) -> {
+	area.Rectangles.forEach((rectangle) -> {
+		System.out.println("File: " + area.Source + " | " + rectangle.x + ", " + rectangle.y + ", " + rectangle.width + ", " + rectangle.height);
+	});
+});
+```

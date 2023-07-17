@@ -1,6 +1,6 @@
 ---
-weight: 35
-date: "2023-04-26"
+weight: 40
+date: "2023-07-17"
 author: "Vladimir Lapin"
 type: docs
 url: /java/image-regions-character-find/
@@ -27,22 +27,21 @@ Property | Type | Description
 `Characters` | `ArrayList<Character>` | A list of recognized characters and their coordinates (top-left corner, width and height).
 `ImageIndex` | `int` | Sequence number of the image on the page. When working with single-page images, this value is always 0.
 `Page` | `int` | Page number. When working with single-page images, this value is always 0.
-`Source` | `string` | The full path or URL of the source file. If the file is [provided](/ocr/java/ocrinput/) as a `BufferedImage` object, `InputStream`, an array of pixels, or a Base64 string, this value will be empty.
+`Source` | `string` | The full path or URL of the source file. If the file is provided as a `BufferedImage` object, an array of pixels, or a Base64 string, this value will be empty.
 
 ## Example
 
 The following code example shows how to detect characters in an image:
 
 ```java
-AsposeOCR api = new AsposeOCR();
-// Add an image to the recognition batch
-OcrInput input  = new OcrInput(InputType.SingleImage, filters);
-input.add("source.png");
+AsposeOcr api = new AsposeOcr();
+// Add an image to the detection batch
+OcrInput source = new OcrInput(InputType.SingleImage);
+source.Add("image.png");
 // Detect and recognize characters
-ArrayList<CharacterRecognitionResult> result =  api.RecognizeCharacters(input, DetectAreasMode.DOCUMENT, Language.None);
+ArrayList<CharacterRecognitionResult> result = api.RecognizeCharacters(source, DetectAreasMode.COMBINE)
 // Output recognized characters
-for(Character c : result[0].Characters)
-{
-	System.out.println("Found character \"" + c.Value + "\" by coordinates: left - " + c.Coordinates.X + " | top - " + c.Coordinates.Y + " | width - " + c.Coordinates.Width + " | height - " + c.Coordinates.Height);
-}
+result[0].Characters.forEach((c) -> {
+	System.out.println("Found character \"" + c.Value + "\" by coordinates: left - " + c.Coordinates.x + " | top - " + c.Coordinates.y + " | width - " + c.Coordinates.width + " | height - " + c.Coordinates.Height);
+});
 ```

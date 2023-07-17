@@ -1,14 +1,16 @@
 ---
 weight: 11
-date: "2023-07-11"
+date: "2023-07-14"
 author: "Vladimir Lapin"
 type: docs
-url: /java/image-preprocessing/
-feedback: OCRJAVA
-title: Image preprocessing
-description: Automatic or manual actions for formatting an image before sending it for recognition.
+url: 
+url: /java/image-processing/
 aliases:
+- /java/image-preprocessing/
 - /java/custom-image-correction-with-preprocessing-filters/
+feedback: OCRJAVA
+title: Image processing
+description: Automatic or manual actions for formatting an image before sending it for recognition.
 keywords:
 - preprocess
 - correct
@@ -138,7 +140,6 @@ Multiple preprocessing filters can be applied to different regions of the same i
 To apply a filter to an area, specify its top left corner along with width and height as [`Rectangle`](https://docs.oracle.com/javase/8/docs/api/java/awt/Rectangle.html) object. If the region is omitted, the filter is applied to the entire image.
 
 ```java
-AsposeOCR api = new AsposeOCR();
 // Define image regions
 Rectangle blackRectangle = new Rectangle(5, 161, 340, 113);
 PreprocessingFilter filters = new PreprocessingFilter();
@@ -146,10 +147,6 @@ PreprocessingFilter filters = new PreprocessingFilter();
 filters.add(PreprocessingFilter.Invert(blackRectangle));
 // (2) Denoise entire image
 filters.add(PreprocessingFilter.AutoDenoising());
-// Save preprocessed image to file
-BufferedImage imageRes = api.PreprocessImage("source.png", filters);
-File outputSource = new File("result.png");
-ImageIO.write(imageRes, "png", outputSource);
 ```
 
 The following filters can be applied to regions:
@@ -162,22 +159,40 @@ The following filters can be applied to regions:
 - [Dilation](/ocr/java/dilate/#image-regions-preprocessing)
 - [Median filter](/ocr/java/median/#image-regions-preprocessing)
 
-## Viewing preprocessed images
+## Previewing and saving processed images
 
-Aspose.OCR offers an easy way to access or save preprocessed images using `PreprocessImage` method of [`AsposeOCR`](https://reference.aspose.com/ocr/java/com.aspose.ocr/AsposeOCR) class. This method returns a [`BufferedImage`](https://docs.oracle.com/javase/8/docs/api/java/awt/image/BufferedImage.html) object that can be sent for recognition or saved to a file.
+Aspose.OCR for Java offers an easy way to access or save processed images using the methods of the static [`ImageProcessing`](https://reference.aspose.com/ocr/java/com.aspose.ocr/imageprocessing/) class:
 
-You can use this file to analyze the effectiveness of preprocessing filters, exclude unnecessary filters that consume resources without affecting the result, or show the result of preprocessing in the user interface.
+Method | Return value | Description
+------ | ------------ | -----------
+[`Render`](https://reference.aspose.com/ocr/java/com.aspose.ocr/imageprocessing/#Render-com.aspose.ocr.OcrInput-) | [`OcrInput`](https://reference.aspose.com/ocr/java/com.aspose.ocr/ocrinput/) | Applies processing filters to all images in a [batch](/ocr/java/ocrinput/) and returns a new batch with processed images. This batch can later be submitted for recognition or used for optimization.
+[`Save`](https://reference.aspose.com/ocr/java/com.aspose.ocr/imageprocessing/#Save-com.aspose.ocr.OcrInput-java.lang.String-) | [`OcrInput`](https://reference.aspose.com/ocr/java/com.aspose.ocr/ocrinput/) | Applies processing filters to all images in [batch](/ocr/java/ocrinput/) and saves the resulting images in the specified folder. That method also returns a new batch with processed images, that can be later submitted for the recognition.
+
+You can use these methods to analyze the effectiveness of processing filters, exclude unnecessary filters that consume resources without affecting the result, or show the result of image processing in the user interface.
+
+{{% alert color="primary" %}}
+- Processing filters are applied to all images in the batch, including those without text.
+- PDF documents can contain more than one image per page. Therefore, the resulting `OcrInput` object can contain more images than the number of pages in the document.
+{{% /alert %}}
 
 ```java
-AsposeOCR api = new AsposeOCR();
-// Add noise removal filter
+// Set processing filters
 PreprocessingFilter filters = new PreprocessingFilter();
 filters.add(PreprocessingFilter.AutoDenoising());
-// Save preprocessed image to file
-BufferedImage imageRes = api.PreprocessImage("source.png", filters);
-File outputSource = new File("result.png");
-ImageIO.write(imageRes, "png", outputSource);
+filters.add(PreprocessingFilter.Median());
+// Prepare batch
+OcrInput images = new OcrInput(InputType.SingleImage, filters);
+images.add("image1.png");
+images.add("image2.jpg");
+// Save processed images from the provided PDF to the folder
+ImageProcessing.Save(images, "C:\\images");
 ```
+
+{{% alert color="caution" %}}
+**Upgrading from previous versions**
+
+Starting with Aspose.OCR for Java 23.3.0, the above-mentioned methods replace the deprecated `PreprocessImage` method of `AsposeOcr` class.
+{{% /alert %}}
 
 <script>
 window.addEventListener("load", function(){

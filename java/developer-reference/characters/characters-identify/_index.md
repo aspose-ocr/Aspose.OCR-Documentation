@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2022-09-23"
+date: "2023-07-14"
 author: "Vladimir Lapin"
 type: docs
 url: /java/characters-identify/
@@ -26,7 +26,12 @@ Aspose.OCR can automatically build a list of characters found in an image and pr
 {{< tab tabNum="1" >}}
 ```java
 AsposeOCR api = new AsposeOCR();
-RecognitionResult result = api.RecognizePage("source.png", new RecognitionSettings());
+// Add an image to OcrInput object
+OcrInput input = new OcrInput(InputType.SingleImage);
+input.Add("source.png");
+// Recognize image
+ArrayList<RecognitionResult> results = recognitionEngine.Recognize(input);
+RecognitionResult result = results[0];
 // Output recognition result
 System.out.println("Result: "+result.RecognitionText);
 // Get list of characters

@@ -1,6 +1,6 @@
 ---
 weight: 50
-date: "2023-05-18"
+date: "2023-07-14"
 author: "Vladimir Lapin"
 type: docs
 url: /java/recognition/receipt/
@@ -36,8 +36,8 @@ input.add(os.path.join(self.dataDir, "receipt2.png"));
 // Recognition settings
 ReceiptRecognitionSettings recognitionSettings = new ReceiptRecognitionSettings();
 recognitionSettings.setLanguage(Language.Ukr);
-// Recognize license plates
-results = api.RecognizeReceipt(input, recognitionSettings);
+// Recognize receipts
+ArrayList<RecognitionResult> results = api.RecognizeReceipt(input, recognitionSettings);
 results.forEach((result) -> {
 	System.out.println(result.recognition_text);
 });

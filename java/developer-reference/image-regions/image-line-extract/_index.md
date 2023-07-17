@@ -1,10 +1,12 @@
 ---
-weight: 50
-date: "2022-09-30"
+weight: 60
+date: "2023-07-17"
 author: "Vladimir Lapin"
 type: docs
 url: /java/image-line-extract/
 feedback: OCRJAVA
+aliases:
+- /java/result-get-lines/
 title: Extracting lines with coordinates
 description: Automatic detection of line bounding boxes during recognition.
 keywords:
@@ -52,25 +54,23 @@ keywords:
 	}
 </style>
 
-Aspose.OCR returns coordinates of each extracted line in recognition results. This can be useful for highlighting detected lines when previewing an image.
+Aspose.OCR for Java returns coordinates of each extracted line in recognition results. This can be useful for highlighting detected lines when previewing an image.
 
-The lines are returned as a list of [`LinesResult`](https://reference.aspose.com/ocr/java/com.aspose.ocr/RecognitionResult.LinesResult) objects with the following fields:
+The lines are returned as a list of [`RecognitionResult.LinesResult`](https://reference.aspose.com/ocr/java/com.aspose.ocr/recognitionresult.linesresult/) objects with the following fields:
 
 Field | Type | Description
 ----- | ---- | -----------
-`line` | [`Rectangle`](https://docs.oracle.com/javase/8/docs/api/java/awt/Rectangle.html) | Line bounding box
+`line` | `Rectangle` | Line bounding box
 `textInLine` | `String` | Extracted text
 
 ```java
-AsposeOCR api = new AsposeOCR();
-// Customize recognition
-RecognitionSettings recognitionSettings = new RecognitionSettings();
-recognitionSettings.setLanguage(Language.Ukr);
-// Extract text from image
-RecognitionResult result = api.RecognizePage("source.png", recognitionSettings);
-// Output results line by line
-result.recognitionLinesResult.forEach((line) -> {
-	System.out.println(line.line + ": " + line.textInLine);
+AsposeOcr api = new AsposeOcr();
+OcrInput images = new OcrInput(InputType.SingleImage);
+images.Add("source.png");
+ArrayList<RecognitionResult.LinesResult> results = api.Recognize(images);
+// Output recognized lines
+result[0].recognitionLinesResult.forEach((line) -> {
+	System.out.println(line.textInLine);
 });
 ```
 

@@ -1,6 +1,6 @@
 ---
-weight: 40
-date: "2022-09-30"
+weight: 50
+date: "2023-07-17"
 author: "Vladimir Lapin"
 type: docs
 url: /java/image-regions-extract/
@@ -71,9 +71,9 @@ keywords:
 	}
 </style>
 
-Aspose.OCR allows you to extract names, dates, numbers, and other blocks from certain areas of uniform images, such as ID cards, visas, driver's licenses, applications, and so on. Regions can be provided manually or automatically detected using the `getTextAreas` method of [`AsposeOCR`](https://reference.aspose.com/ocr/java/com.aspose.ocr/AsposeOCR).
+Aspose.OCR allows you to extract names, dates, numbers, and other blocks from certain areas of uniform images, such as ID cards, visas, driver's licenses, applications, and so on. Regions can be provided manually or automatically detected using the [`DetectRectangles`](https://reference.aspose.com/ocr/java/com.aspose.ocr/asposeocr/#DetectRectangles-com.aspose.ocr.OcrInput-com.aspose.ocr.AreasType-boolean-) method.
 
-To extract text from one or more areas of an image, provide a list of [`Rectangle`](https://docs.oracle.com/javase/8/docs/api/java/awt/Rectangle.html) objects specifying the upper left corner and the width and height of the image area through [`setRecognitionAreas`](https://reference.aspose.com/ocr/java/com.aspose.ocr/RecognitionSettings#setRecognitionAreas-java.util.ArrayList-) method of [`RecognitionSettings`](https://reference.aspose.com/ocr/java/com.aspose.ocr/RecognitionSettings) class.
+To extract text from one or more areas of an image, provide a list of `Rectangle` objects specifying the upper left corner and the width and height of the image area to `setRecognitionAreas` method of [recognition settings](/ocr/java/settings/).
 
 ```java
 AsposeOCR api = new AsposeOCR();
@@ -83,10 +83,12 @@ regions.add(new Rectangle(231,101,430,42));
 regions.add(new Rectangle(546,224,123,26));
 // Specify recognition settings
 RecognitionSettings recognitionSettings = new RecognitionSettings();
-recognitionSettings.setAutoDenoising(true);
 recognitionSettings.setRecognitionAreas(regions);
+// Recognize image
+OcrInput input = new OcrInput(InputType.SingleImage);
+input.Add("source.png");
+List<RecognitionResult> results = api.Recognize(input, recognitionSettings);
 // Extract text from selected regions
-RecognitionResult result = api.RecognizePage("source.png", recognitionSettings);
 System.out.println("Name: " + result.recognitionAreasText.get(0));
 System.out.println("Expiry: " + result.recognitionAreasText.get(1));
 ```

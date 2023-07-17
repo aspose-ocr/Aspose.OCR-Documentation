@@ -1,6 +1,6 @@
 ---
 weight: 30
-date: "2022-09-30"
+date: "2023-07-17"
 author: "Vladimir Lapin"
 type: docs
 url: /java/dictionaries/
@@ -31,11 +31,14 @@ The path to the custom dictionary file can be provided with [`useUserDictionary`
 
 ```java
 AsposeOCR api = new AsposeOCR();
-// Extract text from image
-RecognitionResult result = api.RecognizePage("source.png", new RecognitionSettings());
+// Add an image to OcrInput object
+OcrInput input = new OcrInput(InputType.SingleImage);
+input.Add("source.png");
+// Recognize image
+ArrayList<RecognitionResult> results = api.Recognize(input);
 // Use custom dictionary
-result.useUserDictionary("dictionary.txt");
+results[0].useUserDictionary("dictionary.txt");
 // Output corrected results
-String correctedResult = result.getSpellCheckCorrectedText(com.aspose.ocr.SpellCheck.SpellCheckLanguage.Eng);
+String correctedResult = results[0].getSpellCheckCorrectedText(SpellCheckLanguage.Eng);
 System.out.println("Recognition result:\n" + correctedResult + "\n\n");
 ```

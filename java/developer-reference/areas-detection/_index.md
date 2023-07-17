@@ -1,6 +1,6 @@
 ---
 weight: 50
-date: "2022-09-28"
+date: "2023-07-14"
 author: "Vladimir Lapin"
 type: docs
 url: /java/areas-detection/
@@ -25,28 +25,6 @@ A scanned image or photograph of a text document may contain a large number of b
 
 Aspose.OCR offers several document areas detection algorithms, allowing you to choose the one that works best for your specific content.
 
-## Automatic areas detection
-
-If you call [`setDetectAreas(true)`](https://reference.aspose.com/ocr/java/com.aspose.ocr/RecognitionSettings#setDetectAreas-boolean-) method of [recognition settings](https://reference.aspose.com/ocr/java/com.aspose.ocr/RecognitionSettings), Aspose.OCR automatically selects the optimal areas detection algorithm that suits the most common use cases.
-
-Document areas detection uses a neural network, which requires additional time and resources on the computer running the application. You can disable it (call `setDetectAreas(false)`) when extracting single-line texts, or working with very simple documents without formatting and pictures. This can improve the performance of your application, especially when integrating OCR functionality into web sites and public APIs with minimal impact on the quality of recognition results.
-
-```java
-// Create instance of OCR API
-AsposeOCR api = new AsposeOCR();
-// Enable automatic document areas detection
-RecognitionSettings recognitionSettings = new RecognitionSettings();
-recognitionSettings.setAllowedCharacters(CharactersAllowedType.LATIN_ALPHABET);
-recognitionSettings.setDetectAreas(true);
-// Extract text from image
-RecognitionResult result = api.RecognizePage("source.png", recognitionSettings);
-System.out.println("Recognition result:\n" + result.recognitionText + "\n\n");
-```
-
-{{% alert color="primary" %}} 
-Never disable automatic document areas detection when working with multi-paragraph and multi-column documents, tables, or photos. This can significantly reduce recognition accuracy.
-{{% /alert %}}
-
 ## Area detection modes
 
 You can manually override the default document areas detection method if you are unhappy with the results or get unwanted artifacts.
@@ -59,12 +37,15 @@ AsposeOCR api = new AsposeOCR();
 // Enable automatic document areas detection
 RecognitionSettings recognitionSettings = new RecognitionSettings();
 recognitionSettings.setDetectAreasMode(DetectAreasMode.DOCUMENT);
-// Extract text from image
-RecognitionResult result = api.RecognizePage("source.png", recognitionSettings);
-System.out.println("Recognition result:\n" + result.recognitionText + "\n\n");
+// Prepare batch
+OcrInput images = new OcrInput(InputType.SingleImage);
+images.add("image.png");
+// Recognize images
+ArrayList<RecognitionResult> results = api.Recognize(images, recognitionSettings);
+System.out.println("Recognition result:\n" + results[0].recognitionText + "\n\n");
 ```
 
-Aspose.OCR for Java supports the following [document structure analysis](/ocr/structure-analysis/) methods provided in [`DetectAreasMode`] enumeration:
+Aspose.OCR for Java supports the following document structure analysis methods provided in `DetectAreasMode` enumeration:
 
 Name              | Value | Description | Use cases
 ----------------- | :---: | ----------- | ---------
