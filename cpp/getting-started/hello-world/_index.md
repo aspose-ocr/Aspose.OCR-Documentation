@@ -47,23 +47,32 @@ We assume that you already have a basic knowledge of **Microsoft Visual Studio**
    #include <io.h>
    #include <aspose_ocr.h>
    ```
-2. Provide the path to the recognized image:
+2. Provide the recognized image by file path:
    ```cpp
-   std::string image_path = "source.png";
+   string file = "source.png";
+   AsposeOCRInput source;
+   source.url = file.c_str();
+   std::vector<AsposeOCRInput> content = { source };
    ```
-3. Prepare the buffer for recognition results (in characters):
+3. Specify the recognition language
    ```cpp
-   const size_t len = 4096;
-   wchar_t buffer[len] = { 0 };
+   RecognitionSettings settings;
+   settings.language_alphabet = language::eng;
    ```
 4. Extract text from the image:
    ```cpp
-   size_t size = aspose::ocr::page(image_path.c_str(), buffer, len);
+   auto result = asposeocr_recognize(content.data(), content.size(), settings);
    ```
 5. Output the recognized text:
    ```cpp
-   std::wcout << buffer << L"\n";
+   wchar_t* buffer = asposeocr_serialize_result(result, buffer_size, export_format::text);
+   std::cout << std::wstring(buffer) << std::endl;
    ```
+6. Release the resources
+   ```cpp
+   asposeocr_free_result(result);
+   ```
+
 
 ## Full code
 
@@ -78,17 +87,21 @@ int main()
 {
 	// Set output console mode
 	_setmode(_fileno(stdout), _O_U16TEXT);
-	// Provide the path to the recognized image
-	std::string image_path = "source.png";
-	// Prepare the buffer for recognition results
-	const size_t len = 4096;
-	wchar_t buffer[len] = { 0 };
+	// Provide the image
+	string file = "source.png";
+	AsposeOCRInput source;
+	source.url = file.c_str();
+	std::vector<AsposeOCRInput> content = { source };
+	// Set recognition language
+	RecognitionSettings settings;
+	settings.language_alphabet = language::eng;
 	// Extract text from the image
-	size_t size = aspose::ocr::page(image_path.c_str(), buffer, len);
-	// Print result
-	std::wcout << buffer << L"\n";
-	// Exit the program
-	std::wcout << "\nRecognition complete. Press any key to exit...";
+	auto result = asposeocr_recognize(content.data(), content.size(), settings);
+	// Output the recognized text
+	wchar_t* buffer = asposeocr_serialize_result(result, buffer_size, export_format::text);
+	std::cout << std::wstring(buffer) << std::endl;
+	// Release the resources
+	asposeocr_free_result(result);
 }
 ```
 

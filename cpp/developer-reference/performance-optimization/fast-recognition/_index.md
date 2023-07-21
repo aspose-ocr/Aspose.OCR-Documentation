@@ -15,14 +15,14 @@ keywords:
 
 Very simple and clear images, such as high-quality scans, do not require [automated corrections](/ocr/cpp/image-preprocessing/) and [areas detection](/ocr/cpp/areas-detection/).
 
-Aspose.OCR for C++ can work in the fastest recognition mode that consumes minimum possible resources using `asposeocr_fast_recognize` function. This method takes one or more [`OcrInput`](/ocr/net/ocrinput/) objects and returns a list of recognition results, one result per image.
+Aspose.OCR for C++ can work in the fastest recognition mode that consumes minimum possible resources using `asposeocr_fast_recognize` function. This function takes one or more [`OcrInput`](/ocr/net/ocrinput/) objects and returns a list of recognition results, one result per image.
 
 ```cpp
 // Provide the image
 string file = current_dir + "/source.png";
 AsposeOCRInput source;
 source.url = file.c_str();
-std::vector<AsposeOCRInput> content{ source };
+std::vector<AsposeOCRInput> content = { source };
 // Extract text from the image
 auto result = asposeocr_fast_recognize(content.data(), content.size());
 // Output the recognized text
@@ -32,7 +32,7 @@ std::cout << std::wstring(buffer) << std::endl;
 
 ## Performance impact
 
-This method is about **twice as fast** as regular recognition and is recommended for public web applications and mobile devices.
+This function is about **twice as fast** as regular recognition and is recommended for public web applications and mobile devices.
 
 ## Drawbacks
 

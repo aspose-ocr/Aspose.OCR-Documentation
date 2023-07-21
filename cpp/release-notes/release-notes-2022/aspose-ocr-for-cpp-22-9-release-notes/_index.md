@@ -38,7 +38,7 @@ The following public APIs have been introduced in this release:
 
 #### Receipt recognition.
 
-Added a method `asposeocr_recognize_receipt` that is specifically tailored for extracting text from printed receipts.
+Added a function `asposeocr_recognize_receipt` that is specifically tailored for extracting text from printed receipts.
 
 #### Recognition of small fonts
 

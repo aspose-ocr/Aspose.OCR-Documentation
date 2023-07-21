@@ -23,11 +23,11 @@ This page contains release notes for Aspose.OCR for C++ 21.7.
 |Key|Summary|Category|
 |---|---|---|
 |OCRCPP-182| Import new models (DSR, Chinese OCR)|Enhancement|
-|OCRCPP-183| Add method CalcSkewImage(uri)|Enhancement|
+|OCRCPP-183| Add function CalcSkewImage(uri)|Enhancement|
 
 ## Enhancements
 
-- added new Api method CalculateSkewFromUri(uri)
+- added new Api function CalculateSkewFromUri(uri)
 - new ML model with improved regions recognition
 - added Chinese language support
 
@@ -36,7 +36,7 @@ This page contains release notes for Aspose.OCR for C++ 21.7.
 
 ### New API
 
-- added method: double asposeocr_get_skew_from_uri(const char uri)
+- added function: double asposeocr_get_skew_from_uri(const char uri)
 
 
 

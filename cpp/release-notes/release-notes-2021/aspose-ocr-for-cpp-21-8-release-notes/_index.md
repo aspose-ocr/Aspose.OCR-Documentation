@@ -23,8 +23,8 @@ This page contains release notes for Aspose.OCR for C++ 21.8.
 |Key|Summary|Category|
 |---|---|---|
 |OCRCPP-192| Confidence rating of potential match|Enhancement|
-|OCRCPP-190| Add a method that returns a list of rectangles of all lines in the text|Enhancement|
-|OCRCPP-189| Add new method (or parameter) that indicates the table exists on the image|Enhancement|
+|OCRCPP-190| Add a function that returns a list of rectangles of all lines in the text|Enhancement|
+|OCRCPP-189| Add new function (or parameter) that indicates the table exists on the image|Enhancement|
 
 ## Enhancements
 
@@ -37,11 +37,11 @@ This page contains release notes for Aspose.OCR for C++ 21.8.
 
 ### New API
 
-- added new Api method asposeocr_get_rectangles(const char* image_path, areas_type type, bool all_image, rect* buffer, size_t buffer_size);
-- added new Api method asposeocr_get_rectangles_from_uri(const char* uri, areas_type type, bool all_image, rect* buffer, size_t buffer_size);
-- added new Api method asposeocr_get_rectangles_number(const char* image_path, areas_type type, bool all_image);
-- added new Api method asposeocr_get_rectangles_number_from_uri(const char* uri, areas_type type, bool all_image);
-- added new Api method size_t page_characters_choices(const char* image_path, wchar_t buffer[][6], size_t buffer_size, RecognitionSettings settings);
+- added new Api function asposeocr_get_rectangles(const char* image_path, areas_type type, bool all_image, rect* buffer, size_t buffer_size);
+- added new Api function asposeocr_get_rectangles_from_uri(const char* uri, areas_type type, bool all_image, rect* buffer, size_t buffer_size);
+- added new Api function asposeocr_get_rectangles_number(const char* image_path, areas_type type, bool all_image);
+- added new Api function asposeocr_get_rectangles_number_from_uri(const char* uri, areas_type type, bool all_image);
+- added new Api function size_t page_characters_choices(const char* image_path, wchar_t buffer[][6], size_t buffer_size, RecognitionSettings settings);
 - added new option for RecognitionSettings structure: lines_filtration
 
 

@@ -42,9 +42,9 @@ Aspose.OCR for C (C++) is a cross-platform C and C++ library for optical charact
 
 ## Aspose OCR API
 
-Note: C++ API have alias for all methods. Replace "asposeocr_FUNCTION_NAME" to aspose::ocr::FUNCTION_NAME *
+Note: C++ API have alias for all functions. Replace "asposeocr_FUNCTION_NAME" to aspose::ocr::FUNCTION_NAME *
 
-|**Method**|**Description**|
+|**Function**|**Description**|
 | :- | :- |
 |void asposeocr_set_license(const char* licenseFullPath)|licenseFullPath - path to xml license file.|
 |bool asposeocr_get_state()|Return license status.|

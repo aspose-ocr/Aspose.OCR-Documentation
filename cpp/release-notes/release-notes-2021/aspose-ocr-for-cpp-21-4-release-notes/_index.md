@@ -35,7 +35,7 @@ This page contains release notes for Aspose.OCR for C++ 21.4.
 
 ### New API
 
-|Method|Description|
+|Function|Description|
 |---|---|
 |void asposeocr_page_save(<br>const char* image_path,<br>const char* save_path,<br>RecognitionSettings settings);|<div><p>Optical character recognition image from file and saving result as a document&nbsp;</p><p>Parameters:</p><p>image_path - path to image<br>save_path - path to the result file with filename.</p><p>RecognitionSettings settings&nbsp; - allow to set:&nbsp;<br>- all_image (true/false) - turning on means recognizing the image as a single area<br>- correct_skew - detects orientation and auto-rotate image if needed<br>- alphabet - set of allowed characters in the alphabet (symbols for recognition).&nbsp;L"" by default (all alphabet allowed)<br>- format - export_format. Allowed options - text or JSON. In JSON format for rectangles, you will get the extended result with areas coordinates and text in these areas<br>- rectangles - an array of rect structure to set areas for recognition<br>- rectangles_size - the size of rectangles array</p><div class="wikimodel-emptyline"></div><p>new options:<br>&nbsp;- the ability to set file format (txt or docx), the ability to set threshold value</p></div>|
 

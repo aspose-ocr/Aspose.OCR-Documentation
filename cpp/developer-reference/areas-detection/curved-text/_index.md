@@ -1,6 +1,6 @@
 ---
 weight: 50
-date: "2022-12-09"
+date: "2022-07-19"
 author: "Vladimir Lapin"
 type: docs
 url: /cpp/areas-detection/curved_text/
@@ -29,11 +29,19 @@ However, this algorithm is less efficient and consumes more resources when deali
 The following code sample demonstrates how to use this document areas detection algorithm:
 
 ```cpp
-std::string image_path = "source.png";
-const size_t len = 4096;
-wchar_t buffer[len] = { 0 };
+// Provide the image
+string file = "source.png";
+AsposeOCRInput source;
+source.url = file.c_str();
+std::vector<AsposeOCRInput> content = { source };
+// Fine-tune recognition
 RecognitionSettings settings;
 settings.detect_areas_mode = detect_areas_mode_enum::CURVED_TEXT;
-size_t res_len = aspose::ocr::page_settings(image_path.c_str(), buffer, len, settings);
-std::wcout << buffer;
+// Extract text from the image
+auto result = asposeocr_recognize(content.data(), content.size(), settings);
+// Output the recognized text
+wchar_t* buffer = asposeocr_serialize_result(result, buffer_size, export_format::text);
+std::cout << std::wstring(buffer) << std::endl;
+// Release the resources
+asposeocr_free_result(result);
 ```

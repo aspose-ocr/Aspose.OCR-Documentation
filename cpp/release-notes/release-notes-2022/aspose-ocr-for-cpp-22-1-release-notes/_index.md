@@ -33,7 +33,7 @@ This page contains release notes for Aspose.OCR for C++ 22.1.
 
 ### New API
 
-|Method|Description|
+|Function|Description|
 |---|---|
 |size_t asposeocr_page_tiff(const char* image_path,	wchar_t* result, size_t buffer_size, RecognitionSettings settings)|
 	<div><p>settings - Settings for the image recognition.&nbsp;Contains elements that allow customizing the recognition process.&nbsp;

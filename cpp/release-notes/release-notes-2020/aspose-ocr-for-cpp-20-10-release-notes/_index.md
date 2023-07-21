@@ -29,7 +29,7 @@ This page contains release notes for Aspose.OCR for C++ 20.10.
 
 ### New API
 
-|Method|Description|
+|Function|Description|
 |---|---|
 |size_t asposeocr_page_settings(const char* image_path,wchar_t* buffer,size_t buffer_size,RecognitionSettings settings);|Optical character recognition image from file with next options: automatic text areas detection, customer text areas detection or recognize the image as one area,  automatic detecting and correction skew of the text or without correction skew.<br><br>Parameters:<br><br>image_path - full path to the image,<br>result - pointer to buffer with recognized string in text or JSON format.<br>buffer_size - the size of buffer reserved for the result.<br><br>RecognitionSettings settings  - allow to set:<br> - all_image (true/false) - turning on means recognizing the image as a single area<br> - correct_skew - detects orientation and auto-rotate image if needed<br> - alphabet - set of allowed characters in the alphabet (symbols for recognition). L"" by default (all alphabet allowed)<br> - format - export_format. Allowed options - text or JSON. In JSON format for rectangles, you will get the extended result with areas coordinates and text in these areas<br> - rectangles - an array of rect structure to set areas for recognition<br> - rectangles_size - the size of rectangles array<br><br>new options:<br> - skew (default 0) - allows setting skew correction<br> - language_alphabet (default language::all) - allows to set language. Supported languages: English, German, Portuguese, Spanish, French, Italian.<br><br>Return size of result string in wchar_t symbols in text or json format.|
 

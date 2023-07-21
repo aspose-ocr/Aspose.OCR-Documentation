@@ -23,13 +23,13 @@ This page contains release notes for Aspose.OCR for C++ 22.5.
 |Key|Summary|Category|
 |---|---|---|
 |OCRCPP-267| Integrate the Cyrillic model |Enhancement|
-|OCRCPP-266| Fast recognition method |Enhancement|
+|OCRCPP-266| Fast recognition function |Enhancement|
 
 ## Enhancements
 
 - added new ML model for Cyrillic alphabets
 - added support for next languages: belorussian, bulgarian, ukrainian, kazakh, russian, serbian
-- added new API method for fast recognition
+- added new API function for fast recognition
 
 
 ## Public API and Backwards Incompatible Changes
@@ -48,7 +48,7 @@ This page contains release notes for Aspose.OCR for C++ 22.5.
     kaz</p></div>
 	|
 	
-|API method|Description|
+|API function|Description|
 |---|---|
 |aspose::ocr::page_fast|
 	<div><p>in parameters tooks path to the image, buffer for result, size of buffer</p></div>

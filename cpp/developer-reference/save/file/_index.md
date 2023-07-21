@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2023-02-02"
+date: "2023-07-20"
 author: "Vladimir Lapin"
 type: docs
 url: /cpp/save-file/
@@ -25,7 +25,7 @@ keywords:
 - text
 ---
 
-To save recognition results to a file or write them to the memory stream, use [`page_save()`](https://reference.aspose.com/ocr/cpp/groupAspose#ga248e71b77ac6dbaf0c80630b2181cf29) method.
+To save recognition results to a file or write them to the memory stream, use [`asposeocr_page_save()`](https://reference.aspose.com/ocr/cpp/groupAspose#ga471631a25e3e645880b07975b4478d9d) function.
 
 The file format is defined by `save_format` property of [recognition settings](/ocr/cpp/settings/). The following formats are supported:
 
@@ -47,12 +47,12 @@ const size_t len = 6000;
 wchar_t buffer[len] = { 0 };
 RecognitionSettings settings;
 settings.save_format = file_format::docx;
-aspose::ocr::page_save(image.c_str(), "result.docx", settings);
+asposeocr_page_save(image.c_str(), "result.docx", settings);
 ```
 
 ## Saving recognition results as a multi-page document
 
-You can merge several recognition results into one document. Simply provide several images as a semicolon-separated string to [`page_save()`](https://reference.aspose.com/ocr/cpp/groupAspose#ga248e71b77ac6dbaf0c80630b2181cf29) method. This can be useful for recognizing books, contracts, articles, and other printouts consisting of multiple pages, as well as for batch recognition.
+You can merge several recognition results into one document. Simply provide several images as a semicolon-separated string to [`asposeocr_page_save()`](https://reference.aspose.com/ocr/cpp/groupAspose#ga471631a25e3e645880b07975b4478d9d) function. This can be useful for recognizing books, contracts, articles, and other printouts consisting of multiple pages, as well as for batch recognition.
 
 ```cpp
 const size_t len = 4096;

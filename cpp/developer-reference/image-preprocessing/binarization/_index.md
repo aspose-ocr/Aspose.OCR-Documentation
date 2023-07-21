@@ -1,6 +1,6 @@
 ---
 weight: 50
-date: "2022-12-06"
+date: "2023-07-18"
 author: "Vladimir Lapin"
 type: docs
 url: /cpp/binarization/

@@ -33,7 +33,7 @@ This page contains release notes for Aspose.OCR for C++ 20.11.
 
 ### New API
 
-|Method|Description|
+|Function|Description|
 |---|---|
 |size_t asposeocr_pages_multi(<br>size_t asposeocr_pages_multi(<br>const char* path_to_recognize,<br>wchar_t* result,<br>size_t buffer_size,<br>RecognitionSettings settings);|<div><p>Optical character recognition image from file with next options: automatic text areas detection,&nbsp;customer text areas detection or recognize the image as one area,&nbsp;&nbsp;automatic detecting and correction skew of the text or without correction skew.&nbsp;</p><p>Parameters:</p><p>path - path to the zip archive (include extension) or path to the folder<br>result - pointer to buffer with recognized strings in text or JSON format.<br>buffer_size - the size of buffer reserved for the result.</p><p>RecognitionSettings settings&nbsp; - allow to set:&nbsp;<br>- all_image (true/false) - turning on means recognizing the image as a single area<br>- correct_skew - detects orientation and auto-rotate image if needed<br>- alphabet - set of allowed characters in the alphabet (symbols for recognition).&nbsp;L"" by default (all alphabet allowed)<br>- format - export_format. Allowed options - text or JSON. In JSON format for rectangles, you will get the extended result with areas coordinates and text in these areas<br>- rectangles - an array of rect structure to set areas for recognition<br>- rectangles_size - the size of rectangles array</p><div class="wikimodel-emptyline"></div><p>new options:<br>&nbsp;- the ability to pass folder or zip archive and get the result from all images</p><p>Return size of result string in wchar_t symbols in text or json format.</p></div>|
 

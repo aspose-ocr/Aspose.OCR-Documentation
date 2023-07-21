@@ -33,7 +33,7 @@ The [release 23.3.0](/ocr/cpp/aspose-ocr-for-cpp-23-3-0-release-notes/) introduc
 
 Key | Summary | Category
 --- | ------- | --------
-OCRCPP&#8209;464 | [Fast recognition](/ocr/cpp/fast-recognition/) method has been aligned with the new API. | Enhancement
+OCRCPP&#8209;464 | [Fast recognition](/ocr/cpp/fast-recognition/) function has been aligned with the new API. | Enhancement
 
 ## Public API changes and backwards compatibility
 
@@ -45,7 +45,7 @@ The following public APIs have been introduced in this release:
 
 #### `asposeocr_fast_recognize` function
 
-Recognize provided [images](/ocr/cpp/content-for-ocr/) in the fastest mode that consumes minimum possible resources. This method is about twice as fast as regular recognition, but does not work with rotated images and does not support recognition settings.
+Recognize provided [images](/ocr/cpp/content-for-ocr/) in the fastest mode that consumes minimum possible resources. This function is about twice as fast as regular recognition, but does not work with rotated images and does not support recognition settings.
 
 It is a replacement for the following recognition functions:
 
@@ -85,7 +85,7 @@ The examples below illustrates the changes introduced in this release:
 string file = current_dir + "/source.png";
 AsposeOCRInput source;
 source.url = file.c_str();
-std::vector<AsposeOCRInput> content{ source };
+std::vector<AsposeOCRInput> content = { source };
 // Extract text from the image
 auto result = asposeocr_fast_recognize(content.data(), content.size());
 // Output the recognized text

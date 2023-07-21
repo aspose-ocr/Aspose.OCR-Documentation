@@ -53,9 +53,9 @@ The library caches the recognition parameters and the result. This allows for mu
 Recognizing another image or changing the recognition settings resets the cache.
 {{% /alert %}}
 
-This behavior applies to the following methods:
+This behavior applies to the following functions:
 
-##### C methods
+##### C functions
 
 - `asposeocr_page`
 - `asposeocr_page_from_raw_bytes`
@@ -71,7 +71,7 @@ This behavior applies to the following methods:
 - `asposeocr_page_abc_all`
 - `asposeocr_page_abc_all_from_raw_bytes`
 
-##### C++ methods
+##### C++ functions
 
 - `aspose::ocr::page`
 - `aspose::ocr::page_from_raw_bytes`

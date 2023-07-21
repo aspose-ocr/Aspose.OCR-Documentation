@@ -31,7 +31,7 @@ This page contains release notes for Aspose.OCR for C++ 22.4.
 
 - improved algorithm for XLSX files creation
 - improved algorithm for text files creation
-- added areas_type::words for parameters in asposeocr_get_rectangles and asposeocr_get_rectangles_from_uri methods
+- added areas_type::words for parameters in asposeocr_get_rectangles and asposeocr_get_rectangles_from_uri functions
 - update ONNX runtime to 1.11 version
 
 

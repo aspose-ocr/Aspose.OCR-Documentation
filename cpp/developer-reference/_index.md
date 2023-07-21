@@ -14,7 +14,7 @@ keywords:
 - reference
 - instruction
 - documentation
-- method
+- function
 - property
 - class
 - code

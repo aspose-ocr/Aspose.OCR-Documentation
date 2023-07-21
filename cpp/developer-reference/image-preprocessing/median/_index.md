@@ -47,7 +47,7 @@ keywords:
 
 Photos taken in low light conditions can have a lot of digital noise. Noise can also show up in highly compressed JPEG images in form of compression artifacts. This noise can mislead OCR algorithms and prevent other preprocessing filters from working properly.
 
-Aspose.OCR provides an alternative method for [removing noise](/ocr/cpp/denoise/) from an image at the cost of some detail, called the _median filter_. This makes the image a little blurry while preserving the edges of high-contrast objects such as letters. The results can be further improved with the [auto-contrast](/ocr/cpp/contrast/) or [binarization](/ocr/cpp/binarization/) preprocessing filters.
+Aspose.OCR provides an alternative function for [removing noise](/ocr/cpp/denoise/) from an image at the cost of some detail, called the _median filter_. This makes the image a little blurry while preserving the edges of high-contrast objects such as letters. The results can be further improved with the [auto-contrast](/ocr/cpp/contrast/) or [binarization](/ocr/cpp/binarization/) preprocessing filters.
 
 {{% alert color="primary" %}} 
 The median filter automatically converts the image to [grayscale](/ocr/cpp/grayscale/).

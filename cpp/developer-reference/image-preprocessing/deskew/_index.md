@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2022-12-06"
+date: "2023-07-18"
 author: "Vladimir Lapin"
 type: docs
 url: /cpp/deskew/
@@ -75,13 +75,13 @@ Skew angle detection and image straightening is critical to the OCR process as i
 
 ## Detecting skew angle
 
-To find out the skew angle, use [`get_skew()`](https://reference.aspose.com/ocr/cpp/groupAspose#gac4f58f27fb59cd89c3edb72d56cb4a18), [`get_skew_from_raw_bytes()`](https://reference.aspose.com/ocr/cpp/groupAspose#gab7313e1b045dd3db696de4033b7f340b), or [`get_skew_from_uri()`](https://reference.aspose.com/ocr/cpp/groupAspose#gad5c47a02a13a75d7c06ebb81ce3dd5e8) methods.
+To find out the skew angle, use [`asposeocr_get_skew()`](https://reference.aspose.com/ocr/cpp/groupAspose#gade7ffa77a033f6bc4417922cf5c8f1ee), [`asposeocr_get_skew_from_raw_bytes()`](https://reference.aspose.com/ocr/cpp/groupAspose#gaf1caee6797fb2d24017b3a1d69aa0a62), or [`asposeocr_get_skew_from_uri()`](https://reference.aspose.com/ocr/cpp/groupAspose#ga94544c4f33ca79caa95658f3b3acbab6) functions.
 
 {{< tabs tabID="1" tabTotal="3" tabName1="From file" tabName2="From bytes" tabName3="From URL" >}}
 {{< tab tabNum="1" >}}
 ```cpp
 std::string image_path = "source.png";
-std::double_t result = aspose::ocr::get_skew(image_path.c_str());
+std::double_t result = asposeocr_get_skew(image_path.c_str());
 std::wcout << "Skew angle: " << result << L'\n';
 ```
 {{< /tab >}}
@@ -93,14 +93,14 @@ descriptor.image_from_raw_bytes = img_raw;
 descriptor.height = 2000;
 descriptor.width = 800;
 descriptor.channels_size = 3;
-std::double_t result = aspose::ocr::get_skew_from_raw_bytes(descriptor);
+std::double_t result = asposeocr_get_skew_from_raw_bytes(descriptor);
 std::wcout << "Skew angle: " << result << L'\n';
 ```
 {{< /tab >}}
 {{< tab tabNum="3" >}}
 ```cpp
 std::string url = "https://www.aspose.com/sample-ocr-page.png";
-std::double_t result = aspose::ocr::get_skew_from_uri(url.c_str());
+std::double_t result = asposeocr_get_skew_from_uri(url.c_str());
 std::wcout << "Skew angle: " << result << L'\n';
 ```
 {{< /tab >}}
@@ -125,29 +125,14 @@ Calculating a skew angle from URI is not supported in the Linux version of Aspos
 
 ## Automatic skew correction
 
-To automatically straighten skewed image before recognition, run the image through `OCR_IMG_PREPROCESS_AUTOSKEW` preprocessing filter or enable `correct_skew` property in [recognition settings](https://reference.aspose.com/ocr/cpp/struct/recognition_settings).
+To automatically straighten skewed image before recognition, run the image through `OCR_IMG_PREPROCESS_AUTOSKEW` preprocessing filter.
 
-{{< tabs tabID="2" tabTotal="2" tabName1="Preprocessing filter" tabName2="Recognition settings" >}}
-{{< tab tabNum="1" >}}
 ```cpp
 std::string image_path = "source.png";
 custom_preprocessing_filters filters_;
 filters_.filter_1 = OCR_IMG_PREPROCESS_AUTOSKEW;
 asposeocr_preprocess_page_and_save(image_path.c_str(), "result.png", filters_);
 ```
-{{< /tab >}}
-{{< tab tabNum="2" >}}
-```cpp
-std::string image_path = "source.png";
-const size_t len = 4096;
-wchar_t buffer[len] = { 0 };
-RecognitionSettings settings;
-settings.correct_skew = true;
-size_t res_len = aspose::ocr::page_settings(image_path.c_str(), buffer, len, settings);
-std::wcout << buffer;
-```
-{{< /tab >}}
-{{< /tabs >}}
 
 <div class="duo">
 	<img src="skew-origin.png" alt="Skewed image" />

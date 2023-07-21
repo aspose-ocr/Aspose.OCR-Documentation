@@ -33,7 +33,7 @@ All Aspose.OCR for C++ examples are hosted on [GitHub](https://github.com/aspose
 1. Extract the contents of the downloaded ZIP archive to the local machine (if necessary).
 2. _Data_ folder contains all the source files required to run examples.
 3. Open _Aspose.OCR-for-C.vcxproj_ solution file from _Aspose.OCR-for-C_ folder with Microsoft Visual Studio.
-4. Open `main.cpp` file from _Aspose.OCR-for-C_ folder and uncomment the examples you want to run in the `main` method.
+4. Open `main.cpp` file from _Aspose.OCR-for-C_ folder and uncomment the examples you want to run in the `main` function.
 5. Build the project. On the first run, all required dependencies will be automatically downloaded via NuGet.
 
 Feel free to contact us through our [Free Support Forum] (https://forum.aspose.com/c/ocr/16) if you have any problems running the examples.

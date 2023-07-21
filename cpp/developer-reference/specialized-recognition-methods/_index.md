@@ -1,5 +1,5 @@
 ---
-weight: 65
+weight: 80
 date: "2023-04-28"
 author: "Vladimir Lapin"
 type: docs
@@ -22,3 +22,5 @@ Aspose.OCR for C++ offers specifically tuned OCR functions for extracting text f
   Digitize scans or photos of passports.
 - [Extracting text from vehicle license plates](/ocr/cpp/vehicle-id-recognition/)  
   Read vehicle identification number from a photographed license plate without manual retyping.
+- [Extracting text from receipts](/ocr/cpp/receipt-recognition/)  
+  Digitizing scanned receipts without manual retyping.

@@ -24,7 +24,7 @@ Aspose OCR library required onnxruntime.dll in the system path.
 ## **Aspose OCR API**
 Note: all function in the 'aspose::ocr' namespace.
 
-|**Method**|**Description**|
+|**Function**|**Description**|
 | :- | :- |
 |void set_license(const char* licenseFullPath)|licenseFullPath - path to xml license file.|
 |bool get_state()|Return license status.|

@@ -53,7 +53,7 @@ This page contains release notes for Aspose.OCR for C++ 21.10.
 - added new field to the RecognitionSettings structure:
 		- custom_preprocessing_filters filters;
 
-- added new API methods:
+- added new API functions:
         -  size_t pages_multi_array(
             const char ** files,
             size_t files_number,

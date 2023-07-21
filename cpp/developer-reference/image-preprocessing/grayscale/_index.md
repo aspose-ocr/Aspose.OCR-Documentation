@@ -50,7 +50,7 @@ keywords:
 
 In most cases, color is not needed for recognition and can even mislead OCR algorithms. Grayscale allows images to be processed more efficiently, resulting in less specks, cleaner backgrounds, and crisper text than color images. Converting to grayscale can also improve the results of other preprocessing filters, such as automatic [deskewing](/ocr/cpp/deskew/).
 
-Aspose.OCR provides a method for converting an image to grayscale before proceeding with preprocessing or OCR.
+Aspose.OCR provides a function for converting an image to grayscale before proceeding with preprocessing or OCR.
 
 {{% alert color="primary" %}}
 Grayscale conversion is automatically performed when applying the [median filter](/ocr/cpp/median/).

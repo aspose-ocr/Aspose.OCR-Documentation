@@ -15,9 +15,9 @@ keywords:
 
 If an image contains a single line of text, it can be recognized in the fastest possible mode, without [automated corrections](/ocr/cpp/image-preprocessing/), [areas detection](/ocr/cpp/areas-detection/), and other resource-consuming steps.
 
-To extract text from such images, use the following methods:
+To extract text from such images, use the following functions:
 
-Method | Description
+Function | Description
 ------ | -----------
 [`line()`](https://reference.aspose.com/ocr/cpp/groupAspose#ga00aec23aeebdb45943cfc6db33539540) | Read a single-line image.
 [`line_from_raw_bytes()`](https://reference.aspose.com/ocr/cpp/groupAspose#ga0776785aa5217a161e154bf499b3b824) | Read a single-line image provided as an array of pixels.
@@ -33,16 +33,16 @@ std::wcout << buffer;
 ```
 
 {{% alert color="primary" %}}
-Please note that this method only works for images containing a single line of text! Using it on multi-line images will lead to incorrect recognition results.
+Please note that this function only works for images containing a single line of text! Using it on multi-line images will lead to incorrect recognition results.
 {{% /alert %}}
 
 ## Performance impact
 
-This method is about **7 times faster** than normal OCR and is highly recommended for batch processing large numbers of very simple images.
+This function is about **7 times faster** than normal OCR and is highly recommended for batch processing large numbers of very simple images.
 
 ## Drawbacks
 
-This recognition method only supports images in the following formats:
+This recognition function only supports images in the following formats:
 
 - 24-bit PNG,
 - JPEG,

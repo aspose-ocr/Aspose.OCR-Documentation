@@ -71,7 +71,7 @@ The examples below illustrates the changes introduced in this release:
 string file = current_dir + "/john_doe.png";
 AsposeOCRInput source;
 source.url = file.c_str();
-std::vector<AsposeOCRInput> content{ source };
+std::vector<AsposeOCRInput> content = { source };
 // Set recognition language
 RecognitionSettings settings;
 settings.language_alphabet = language::eng;
@@ -91,7 +91,7 @@ asposeocr_free_result(result);
 string file = current_dir + "/black_mercedes.png";
 AsposeOCRInput source;
 source.url = file.c_str();
-std::vector<AsposeOCRInput> content{ source };
+std::vector<AsposeOCRInput> content = { source };
 // Set recognition language
 RecognitionSettings settings;
 settings.language_alphabet = language::eng;

@@ -24,7 +24,7 @@ This page contains release notes for Aspose.OCR for C++ 20.7.
 
 ### New API
 
-|Method|Description|
+|Function|Description|
 |---|---|
 |size_t asposeocr_page_all(const char* image_path, wchar_t* buffer, size_t buffer_size, bool correct_skew)|Recognition image without automatic detection of text areas. Get all images as text area. Correct skew of the text according to the parameter. image_path - full path to the image, result - pointer to buffer with recognized string, buffer_size - the size of buffer reserved for the result. correct_skew - autoskew image. Return size of result string in wchar_t symbols.|
 |size_t asposeocr_page_abc_all(const char* image_path, wchar_t* buffer, size_t buffer_size, const wchar_t* const alphabet, bool correct_skew)|Recognition image without automatic detection of text areas. Get all images as text area. Correct skew of the text according to the parameter. image_path - full path to the image, result - pointer to buffer with recognized string, buffer_size - the size of buffer reserved for the result. alphabet - string with allowed symbols. correct_skew - autoskew image. Return size of result string in wchar_t symbols.|

@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2022-12-08"
+date: "2023-0-08"
 author: "Vladimir Lapin"
 type: docs
 url: /cpp/characters-identify/
@@ -19,7 +19,7 @@ keywords:
 - detect
 ---
 
-Aspose.OCR can automatically build a list of characters found in an image and provide less likely alternatives of each character (in descending order of probability). To get the list of characters, use [`page_characters_choices`](https://reference.aspose.com/ocr/cpp/groupAspose#gac04c5da2d710bf27e85358d7691a1ee6) or [`page_characters_choices_from_raw_bytes`](https://reference.aspose.com/ocr/cpp/groupAspose#ga013a846f2c70aa4295555f9e1a6a4dd8) methods.
+Aspose.OCR can automatically build a list of characters found in an image and provide less likely alternatives of each character (in descending order of probability). To get the list of characters, use [`asposeocr_page_characters_choices()`](https://reference.aspose.com/ocr/cpp/groupAspose#gabcfa78f3bd39ad8aaca88e8c5429e5f6) or [`asposeocr_page_characters_choices_from_raw_bytes()`](https://reference.aspose.com/ocr/cpp/groupAspose#ga1de63dc740d47c0f0ce4aa433da81606) functions.
 
 {{< tabs tabID="1" tabTotal="2" tabName1="From image" tabName2="From bytes" >}}
 {{< tab tabNum="1" >}}
@@ -29,7 +29,7 @@ std::string image_path = "source.png";
 const size_t len = 4096;
 wchar_t buffer[len][6] = { 0 };
 RecognitionSettings settings;
-size_t res_len = aspose::ocr::page_characters_choices(image_path.c_str(), buffer, len, settings);
+size_t res_len = asposeocr_page_characters_choices(image_path.c_str(), buffer, len, settings);
 for (size_t i = 0; i < res_len; i++)
 {
 	// output recognized character
@@ -56,7 +56,7 @@ descriptor.channels_size = 3;
 const size_t len = 4096;
 wchar_t buffer[len][6] = { 0 };
 RecognitionSettings settings;
-size_t res_len = aspose::ocr::page_characters_choices_from_raw_bytes(descriptor, buffer, len, settings);
+size_t res_len = asposeocr_page_characters_choices_from_raw_bytes(descriptor, buffer, len, settings);
 for (size_t i = 0; i < res_len; i++)
 {
 	// output recognized character

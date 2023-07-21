@@ -263,7 +263,7 @@ New code (Aspose.OCR for C++ 23.3.0 and above):
 string file = current_dir + "/source.png";
 AsposeOCRInput source;
 source.url = file.c_str();
-std::vector<AsposeOCRInput> content{ source };
+std::vector<AsposeOCRInput> content = { source };
 // Set recognition language
 RecognitionSettings settings;
 settings.language_alphabet = language::eng;

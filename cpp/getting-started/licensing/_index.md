@@ -48,22 +48,22 @@ After purchasing a license or obtaining a temporary license, you will receive a 
 Do not modify the contents of the license file. Even an extra line break or space will invalidate the license.
 {{% /alert %}} 
 
-The license must be applied once per application or process lifecycle before recognition starts. For _desktop applications_, it is recommended to load the license in the `Initialize` method of the main form. For _web applications_, load it in the `Session_Start()` method of **global.asax** file.
+The license must be applied once per application or process lifecycle before recognition starts. For _desktop applications_, it is recommended to load the license in the `Initialize` function of the main form. For _web applications_, load it in the `Session_Start()` function of **global.asax** file.
 
 ### Loading a license from file
 
-Put the license file to a folder on your computer and insert the following code in your startup method:
+Put the license file to a folder on your computer and insert the following code in your startup function:
 
 ```cpp
 const std::string lic = "Aspose_OCR_License_File.lic";
 aspose::ocr::set_license(lic.c_str());
 ```
-If only the name of the license file (without path) is specified, `set_license` method will look for the license file in the following locations:
+If only the name of the license file (without path) is specified, `set_license` function will look for the license file in the following locations:
 
 - the folder that contains Aspose.OCR for C++ component (_Aspose.OCR.dll_);
 - the folder that contains the application's executable file.
 
-Alternatively, you can store the license file in any folder on your computer and specify an absolute or relative path. If you prefer to load the license from the explicit path, provide the full path in `set_license` method.
+Alternatively, you can store the license file in any folder on your computer and specify an absolute or relative path. If you prefer to load the license from the explicit path, provide the full path in `set_license` function.
 
 ### Checking the license state
 

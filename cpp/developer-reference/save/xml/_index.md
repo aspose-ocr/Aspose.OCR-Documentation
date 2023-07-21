@@ -1,6 +1,6 @@
 ---
 weight: 40
-date: "2022-12-10"
+date: "2023-07-20"
 author: "Vladimir Lapin"
 type: docs
 url: /cpp/save-xml/
@@ -14,14 +14,29 @@ keywords:
 - output
 ---
 
-Aspose.OCR for C++ can return recognition results as XML - a universal data exchange and storage format. To get the results as XML, set `format` property of [recognition settings](/ocr/cpp/settings/) to `export_format::xml` and call any [recognition method](/ocr/cpp/recognition/).
+Aspose.OCR for C++ can return recognition results as XML - a universal data exchange and storage format. To get recognition results in XML format, call [`asposeocr_serialize_result()`](https://reference.aspose.com/ocr/cpp/groupAspose#ga2ef1778bf26fdb773c29b988d3323160) function. You must provide the recognition result returned from [recognition function](/ocr/cpp/recognition/) in `recognition_result` parameter and `export_format::xml` value in `format` parameter.
 
 ```cpp
-std::string image_path = "source.png";
-const size_t len = 4096;
-wchar_t buffer[len] = { 0 };
+// Provide images
+string file = "page1.png";
+AsposeOCRInput source1;
+source1.url = file.c_str();
+string file = "page2.png";
+AsposeOCRInput source2;
+source2.url = file.c_str();
+std::vector<AsposeOCRInput> content = { source1, source2 };
+// Fine-tune recognition
 RecognitionSettings settings;
-settings.format = export_format::xml;
-size_t res_len = aspose::ocr::page_settings(image_path.c_str(), buffer, len, settings);
-std::wcout << buffer;
+settings.language_alphabet = language::ukr;
+// Extract text from the image
+auto result = asposeocr_recognize(content.data(), content.size(), settings);
+// Output the recognized text
+wchar_t* buffer = asposeocr_serialize_result(result, buffer_size, export_format::xml);
+std::cout << std::wstring(buffer) << std::endl;
+// Release the resources
+asposeocr_free_result(result);
 ```
+
+{{% alert color="primary" %}}
+Do not forget to release the allocated memory by calling `asposeocr_free_result()` function.
+{{% /alert %}}

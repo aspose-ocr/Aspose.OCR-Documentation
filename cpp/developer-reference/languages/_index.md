@@ -1,6 +1,6 @@
 ---
 weight: 20
-date: "2023-02-02"
+date: "2023-07-18"
 author: "Vladimir Lapin"
 type: docs
 url: /cpp/languages/
@@ -63,11 +63,17 @@ Make sure you specify the correct language for the image. If you try to recogniz
 The following code sample demonstrates how to specify the recognition language:
 
 ```cpp
-std::string image_path = "source.png";
-const size_t len = 4096;
-wchar_t buffer[len] = { 0 };
+// Provide the image
+string file = "source.png";
+AsposeOCRInput source;
+source.url = file.c_str();
+std::vector<AsposeOCRInput> content = { source };
+// Set recognition language
 RecognitionSettings settings;
 settings.language_alphabet = language::ukr;
-size_t res_len = aspose::ocr::page_settings(image_path.c_str(), buffer, len, settings);
-std::wcout << buffer;
+// Extract text from the image
+auto result = asposeocr_recognize(content.data(), content.size(), settings);
+// Output the recognized text
+wchar_t* buffer = asposeocr_serialize_result(result, buffer_size, export_format::text);
+std::cout << std::wstring(buffer) << std::endl;
 ```

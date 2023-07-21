@@ -1,6 +1,6 @@
 ---
 weight: 15
-date: "2022-12-06"
+date: "2023-07-18"
 author: "Vladimir Lapin"
 type: docs
 url: /cpp/image-preprocessing/
@@ -58,7 +58,7 @@ Filter | Action | Performance impact | Usage scenarios
 
 ## Chaining preprocessing filters
 
-Multiple preprocessing filters can be applied to the same image to further improve the recognition quality. The filters are applied one by one in the order they are added to `custom_preprocessing_filters` structure.
+Multiple preprocessing filters can be applied to the same image to further improve the recognition quality. The filters are applied one by one in the order they are added to `custom_preprocessing_filters` structure (up to 12 filters are allowed).
 
 Note that each filter requires additional time and resources on the computer running the application. Do not add extra filters if you are satisfied with the recognition accuracy, especially when developing web applications.
 
@@ -127,7 +127,7 @@ Note that each filter requires additional time and resources on the computer run
 
 ## Viewing preprocessed images
 
-Aspose.OCR for C++ offers an easy way to save preprocessed images using [`preprocess_page_and_save()`](https://reference.aspose.com/ocr/cpp/groupAspose#ga69cc8aa64a4cd77628f3b273c3d41645) or [`preprocess_page_and_save_from_raw_bytes()`](https://reference.aspose.com/ocr/cpp/groupAspose#ga08dd0476f72f50bd13fc1445191b8057) methods. These methods apply preprocessing filters to the image and save the resulting image to a file.
+Aspose.OCR for C++ offers an easy way to save preprocessed images using [`asposeocr_preprocess_page_and_save()`](https://reference.aspose.com/ocr/cpp/groupAspose#ga69cc8aa64a4cd77628f3b273c3d41645) or [`preprocess_page_and_save_from_raw_bytes()`](https://reference.aspose.com/ocr/cpp/groupAspose#ga08dd0476f72f50bd13fc1445191b8057) functions. These functions apply preprocessing filters to the image and save the resulting image to a file.
 
 You can use this file to analyze the effectiveness of preprocessing filters, exclude unnecessary filters that consume resources without affecting the result, or show the result of preprocessing in the user interface.
 
