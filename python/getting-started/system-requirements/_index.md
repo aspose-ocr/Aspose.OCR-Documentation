@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2023-04-18"
+date: "2023-07-26"
 author: "Vladimir Lapin"
 type: docs
 url: /python-net/system-requirements/
@@ -17,7 +17,7 @@ keywords:
 
 Aspose.OCR for Python via .NET works under Python version 3.6 or later.
 
-## Supported operating systems
+## Microsoft Windows
 
 Both x86 (where applicable) and x64 versions of the following operating systems are supported:
 
@@ -35,6 +35,18 @@ Both x86 (where applicable) and x64 versions of the following operating systems 
 - Microsoft Windows Server 2016
 - Microsoft Windows Server 2012
 - Microsoft Windows Server 2008 R2 SP1
+
+## macOS
+
+macOS Mojave version 10.14 or later, x64
+
+## Linux
+
+Any Linux x64, including:
+
+- Ubuntu
+- OpenSUSE
+- CentOS
 
 ## External dependencies
 
