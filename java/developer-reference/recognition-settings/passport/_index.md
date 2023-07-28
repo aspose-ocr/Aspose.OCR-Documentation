@@ -1,6 +1,6 @@
 ---
 weight: 50
-date: "2023-07-14"
+date: "2023-07-27"
 author: "Vladimir Lapin"
 type: docs
 url: /java/recognition-settings-passport/
@@ -26,6 +26,7 @@ Setting | Type | Default value | Description
 `setIgnoredCharacters` | Case-sensitive string of characters | All characters are recognized | A [blacklist](/ocr/java/characters-blacklist/) of characters that are ignored during recognition.
 `setLanguage` | [Recognition language](/ocr/java/languages/) | Extended Latin characters, including diacritics | Specify a [language](/ocr/java/languages/) for recognition.
 `setThreadsCount` | Number of threads, `int` | Automatic | The number of [CPU threads](/ocr/java/multithreading/) used for recognition.
+`setAutomaticColorInversion` | boolean | `true` | Set the method parameter to `true` automatically detect white text on a dark/black background and use a special OCR algorithm to improve passport recognition accuracy. Call this method with the parameter set to “false” to explicitly disable inverted text detection to save resources.
 
 ## Applicable to
 

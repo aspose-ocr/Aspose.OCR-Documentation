@@ -26,7 +26,7 @@ OCRPY&#8209;34 | Added new recognition settings for automatic handling of white 
 
 ## Public API changes and backwards compatibility
 
-This section lists all public API changes introduced in **Aspose.OCR for Python via .NET 23.5.0** that may affect the code of existing applications.
+This section lists all public API changes introduced in **Aspose.OCR for Python via .NET 23.7.1** that may affect the code of existing applications.
 
 ### Added public APIs:
 
@@ -34,7 +34,7 @@ The following public APIs have been introduced in this release:
 
 #### `RecognitionSettings.automatic_color_inversion`
 
-When set to `true`, Aspose.OCR for Python via .NET uses an special OCR algorithm for automatic detection and accurate recognition of of white text on a dark/black background.
+When set to `true`, Aspose.OCR for Python via .NET uses a special OCR algorithm for automatic detection and accurate recognition of of white text on a dark/black background.
 
 {{% alert color="primary" %}}
 Unless you are optimizing every aspect of recognition (for example, for online applications or entry-level devices), do not disable this setting.
@@ -49,7 +49,7 @@ This setting is applicable when using one of the following document area detecti
 
 #### `Aspose.OCR.ReceiptRecognitionSettings.automatic_color_inversion`
 
-When set to `true`, Aspose.OCR for Python via .NET uses an special OCR algorithm for automatic detection and accurate recognition of of white text on a dark/black background in scanned or photographed receipts.
+When set to `true`, Aspose.OCR for Python via .NET uses a special OCR algorithm for automatic detection and accurate recognition of of white text on a dark/black background in scanned or photographed receipts.
 
 {{% alert color="primary" %}}
 Unless you are optimizing every aspect of recognition (for example, for online applications or entry-level devices), do not disable this setting.
@@ -57,7 +57,7 @@ Unless you are optimizing every aspect of recognition (for example, for online a
 
 #### `IDCardRecognitionSettings.automatic_color_inversion`
 
-When set to `true`, Aspose.OCR for Python via .NET uses an special OCR algorithm for automatic detection and accurate recognition of of white text on a dark/black background in scanned or photographed ID cards.
+When set to `true`, Aspose.OCR for Python via .NET uses a special OCR algorithm for automatic detection and accurate recognition of of white text on a dark/black background in scanned or photographed ID cards.
 
 {{% alert color="primary" %}}
 Unless you are optimizing every aspect of recognition (for example, for online applications or entry-level devices), do not disable this setting.
@@ -65,7 +65,7 @@ Unless you are optimizing every aspect of recognition (for example, for online a
 
 #### `PassportRecognitionSettings.automatic_color_inversion`
 
-When set to `true`, Aspose.OCR for Python via .NET uses an special OCR algorithm for automatic detection and accurate recognition of of white text on a dark/black background in scanned or photographed passports.
+When set to `true`, Aspose.OCR for Python via .NET uses a special OCR algorithm for automatic detection and accurate recognition of of white text on a dark/black background in scanned or photographed passports.
 
 {{% alert color="primary" %}}
 Unless you are optimizing every aspect of recognition (for example, for online applications or entry-level devices), do not disable this setting.
@@ -73,7 +73,7 @@ Unless you are optimizing every aspect of recognition (for example, for online a
 
 #### `CarPlateRecognitionSettings.automatic_color_inversion`
 
-When set to `true`, Aspose.OCR for Python via .NET uses an special OCR algorithm for automatic detection and accurate recognition of of white text on a dark/black background in photographed vehicle license plates.
+When set to `true`, Aspose.OCR for Python via .NET uses a special OCR algorithm for automatic detection and accurate recognition of of white text on a dark/black background in photographed vehicle license plates.
 
 {{% alert color="primary" %}}
 Unless you are optimizing every aspect of recognition (for example, for online applications or entry-level devices), do not disable this setting.
@@ -81,7 +81,7 @@ Unless you are optimizing every aspect of recognition (for example, for online a
 
 #### `InvoiceRecognitionSettings.automatic_color_inversion`
 
-When set to `true`, Aspose.OCR for Python via .NET uses an special OCR algorithm for automatic detection and accurate recognition of of white text on a dark/black background in scanned or photographed invoices.
+When set to `true`, Aspose.OCR for Python via .NET uses a special OCR algorithm for automatic detection and accurate recognition of of white text on a dark/black background in scanned or photographed invoices.
 
 {{% alert color="primary" %}}
 Unless you are optimizing every aspect of recognition (for example, for online applications or entry-level devices), do not disable this setting.

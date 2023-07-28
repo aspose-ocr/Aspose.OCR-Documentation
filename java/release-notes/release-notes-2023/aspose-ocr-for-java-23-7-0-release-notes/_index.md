@@ -1,5 +1,5 @@
 ---
-weight: 70
+weight: 61
 date: "2023-07-11"
 author: "Vladimir Lapin"
 type: docs
@@ -38,7 +38,7 @@ OCRJAVA&#8209;329 | Significantly improved the performance of geometric distorti
 
 ## Public API changes and backwards compatibility
 
-This section lists all public API changes introduced in **Aspose.OCR for .NET 23.7.0** that may affect the code of existing applications.
+This section lists all public API changes introduced in **Aspose.OCR for Java 23.7.0** that may affect the code of existing applications.
 
 ### Added public APIs:
 

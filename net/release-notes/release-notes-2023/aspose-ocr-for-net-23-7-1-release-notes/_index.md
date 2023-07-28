@@ -45,7 +45,7 @@ The following public APIs have been introduced in **Aspose.OCR for .NET 23.7.1**
 
 #### `Aspose.OCR.RecognitionSettings.AutomaticColorInversion`
 
-When set to `true`, Aspose.OCR for .NET uses an special OCR algorithm for automatic detection and accurate recognition of of white text on a dark/black background.
+When set to `true`, Aspose.OCR for .NET uses a special OCR algorithm for automatic detection and accurate recognition of of white text on a dark/black background.
 
 {{% alert color="primary" %}}
 Unless you are optimizing every aspect of recognition (for example, for online applications or entry-level devices), do not disable this setting.
@@ -60,7 +60,7 @@ This setting is applicable when using one of the following [document area detect
 
 #### `Aspose.OCR.ReceiptRecognitionSettings.AutomaticColorInversion`
 
-When set to `true`, Aspose.OCR for .NET uses an special OCR algorithm for automatic detection and accurate recognition of of white text on a dark/black background in scanned or photographed receipts.
+When set to `true`, Aspose.OCR for .NET uses a special OCR algorithm for automatic detection and accurate recognition of of white text on a dark/black background in scanned or photographed receipts.
 
 {{% alert color="primary" %}}
 Unless you are optimizing every aspect of recognition (for example, for online applications or entry-level devices), do not disable this setting.
@@ -68,7 +68,7 @@ Unless you are optimizing every aspect of recognition (for example, for online a
 
 #### `Aspose.OCR.IDCardRecognitionSettings.AutomaticColorInversion`
 
-When set to `true`, Aspose.OCR for .NET uses an special OCR algorithm for automatic detection and accurate recognition of of white text on a dark/black background in scanned or photographed ID cards.
+When set to `true`, Aspose.OCR for .NET uses a special OCR algorithm for automatic detection and accurate recognition of of white text on a dark/black background in scanned or photographed ID cards.
 
 {{% alert color="primary" %}}
 Unless you are optimizing every aspect of recognition (for example, for online applications or entry-level devices), do not disable this setting.
@@ -76,7 +76,7 @@ Unless you are optimizing every aspect of recognition (for example, for online a
 
 #### `Aspose.OCR.PassportRecognitionSettings.AutomaticColorInversion`
 
-When set to `true`, Aspose.OCR for .NET uses an special OCR algorithm for automatic detection and accurate recognition of of white text on a dark/black background in scanned or photographed passports.
+When set to `true`, Aspose.OCR for .NET uses a special OCR algorithm for automatic detection and accurate recognition of of white text on a dark/black background in scanned or photographed passports.
 
 {{% alert color="primary" %}}
 Unless you are optimizing every aspect of recognition (for example, for online applications or entry-level devices), do not disable this setting.
@@ -84,7 +84,7 @@ Unless you are optimizing every aspect of recognition (for example, for online a
 
 #### `Aspose.OCR.CarPlateRecognitionSettings.AutomaticColorInversion`
 
-When set to `true`, Aspose.OCR for .NET uses an special OCR algorithm for automatic detection and accurate recognition of of white text on a dark/black background in photographed vehicle license plates.
+When set to `true`, Aspose.OCR for .NET uses a special OCR algorithm for automatic detection and accurate recognition of of white text on a dark/black background in photographed vehicle license plates.
 
 {{% alert color="primary" %}}
 Unless you are optimizing every aspect of recognition (for example, for online applications or entry-level devices), do not disable this setting.
@@ -92,7 +92,7 @@ Unless you are optimizing every aspect of recognition (for example, for online a
 
 #### `Aspose.OCR.InvoiceRecognitionSettings.AutomaticColorInversion`
 
-When set to `true`, Aspose.OCR for .NET uses an special OCR algorithm for automatic detection and accurate recognition of of white text on a dark/black background in scanned or photographed invoices.
+When set to `true`, Aspose.OCR for .NET uses a special OCR algorithm for automatic detection and accurate recognition of of white text on a dark/black background in scanned or photographed invoices.
 
 {{% alert color="primary" %}}
 Unless you are optimizing every aspect of recognition (for example, for online applications or entry-level devices), do not disable this setting.

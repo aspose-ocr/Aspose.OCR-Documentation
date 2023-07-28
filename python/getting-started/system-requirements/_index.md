@@ -19,7 +19,7 @@ Aspose.OCR for Python via .NET works under Python version 3.6 or later.
 
 ## Microsoft Windows
 
-Both x86 (where applicable) and x64 versions of the following operating systems are supported:
+x64 versions of the following operating systems:
 
 ### Desktop
 

@@ -26,7 +26,7 @@ OCRPY&#8209;29<br />OCRPY&#8209;30 | Added the ability to save recognition resul
 
 ## Public API changes and backwards compatibility
 
-This section lists all public API changes introduced in **Aspose.OCR for Python via .NET 23.5.0** that may affect the code of existing applications.
+This section lists all public API changes introduced in **Aspose.OCR for Python via .NET 23.7.0** that may affect the code of existing applications.
 
 ### Added public APIs:
 
