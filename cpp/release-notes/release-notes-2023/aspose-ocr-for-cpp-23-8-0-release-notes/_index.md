@@ -1,14 +1,15 @@
 ---
-weight: 1
+weight: 51
 date: "2023-08-17"
 author: "Vladimir Lapin"
 type: docs
-url: /cpp/release-notes/latest/
+url: /cpp/aspose-ocr-for-cpp-23-8-0-release-notes/
 feedback: OCRCPP
-title: Latest release (August 2023)
-description: A summary of recent changes, enhancements and bug fixes in the latest release of Aspose.OCR for C++.
+title: Aspose.OCR for C++ 23.8.0 - Release Notes
+description: A summary of recent changes, enhancements and bug fixes in Aspose.OCR for C++ 23.8.0 (August 2023) release.
 keywords:
-- latest
+- 2023
+- August
 - new
 - release
 - changelog

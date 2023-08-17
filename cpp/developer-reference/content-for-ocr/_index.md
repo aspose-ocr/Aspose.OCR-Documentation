@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2023-04-28"
+date: "2023-08-17"
 author: "Vladimir Lapin"
 type: docs
 url: /cpp/content-for-ocr/
@@ -27,7 +27,7 @@ Content type | Required structure members
 File (of any [supported format](/ocr/cpp/supported-file-formats/)) | <ul><li>`url` - provide an absolute or relative path to the source file.</li></ul>
 Directory | <ul><li>`url` - provide an absolute or relative path to the directory with images and PDF documents. Sub-directories will be ignored.</li></ul>
 URL | <ul><li>`url` - provide a public URL to an image or PDF document.</li></ul>
-Raw image data | <ul><li>`raw_data` - provide an image as a [raw pixel data](/ocr/cpp/content-for-ocr/image-by-pixel/).</li><li>`width` - image width, in pixels.</li><li>`height` - image height, in pixels.</li><li>`raw_data_size` - size of the `raw_data` member.</li><li>`raw_data_type` - image color model.</li></ul>
+Raw image data | <ul><li>`raw_data` - provide an image as [raw bytes or pixels](/ocr/cpp/content-for-ocr/image-by-bytes/).</li><li>`width` - image width, in pixels (only required when providing an image as pixel array).</li><li>`height` - image height, in pixels (only required when providing an image as pixel array).</li><li>`raw_data_size` - size of the `raw_data` member.</li><li>`raw_data_type` - image color model (when providing an image as pixel array) or file format (when providing an image file as byte array).</li></ul>
 
 {{% alert color="caution" %}}
 You must choose whether to provide content as a path/URL or as raw pixel data. For other elements of the structure, you must leave the default values.
