@@ -27,7 +27,7 @@ std::vector<AsposeOCRInput> content = { source };
 auto result = asposeocr_fast_recognize(content.data(), content.size());
 // Output the recognized text
 wchar_t* buffer = asposeocr_serialize_result(result, buffer_size, export_format::text);
-std::cout << std::wstring(buffer) << std::endl;
+std::wcout << std::wstring(buffer) << std::endl;
 ```
 
 ## Performance impact

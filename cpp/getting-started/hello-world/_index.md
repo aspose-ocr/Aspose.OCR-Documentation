@@ -1,6 +1,6 @@
 ---
 weight: 50
-date: "2022-12-07"
+date: "2023-08-29"
 author: "Vladimir Lapin"
 type: docs
 url: /cpp/hello-world/
@@ -31,44 +31,71 @@ We assume that you already have a basic knowledge of **Microsoft Visual Studio**
 ## Preparing
 
 1. Create a new C++ project in Visual Studio. You can use a very basic project template, such as **Console App**.
-2. [Install](/ocr/cpp/installation/) **Aspose.OCR.Cpp** (CPU-based) NuGet package to the project.
-3. Save this image to **x64\\Debug** directory of the project under the name `source.png`:  
+2. [Install](/ocr/cpp/installation/) **Aspose.OCR.Cpp** (CPU-based) NuGet package to the project. This may take up to several minutes depending on your internet connection.
+3. Download this sample image somewhere to your computer under the name `source.png`:  
    <img src="source.png" alt="Source image" style="box-shadow: 1px 1px 4px 2px rgba(0,0,0,0.2);margin-top:8px;" />  
 
-   If this folder does not exist, run the application.
+   {{% alert color="info" %}} 
+   For simplicity, this example assumes that the recognized image is located in the application's working directory. It depends on how you run the application:
+
+   - **Project directory**, if you run the application directly from Visual Studio (Local Windows Debugger). 
+   - **x64\\Debug** subfolder in the project directory if you plan to run the compiled application. If this folder does not exist, run the application first.
+   {{% /alert %}} 
 
 ## Coding
 
 1. Include the required header files to the project:
    ```cpp
    #include <iostream>
-   #include <stdio.h>
-   #include <fcntl.h>
-   #include <io.h>
+   #include <string>
+   #include <vector>
    #include <aspose_ocr.h>
    ```
-2. Provide the recognized image by file path:
+
+2. Declare the following statement to use names for objects and variables from the standard library without mentioning `std::` every time:
+   ```cpp
+   using namespace std;
+   ```
+
+   {{% alert color="info" %}} 
+   The statement `using namespace std` is generally considered bad practice. In this basic example, it is only used to improve the readability of the code.
+
+   When developing production applications, specify the namespace to which the identifier belongs using the scope operator(::) each time you declare a type. 
+   {{% /alert %}} 
+
+3. Provide the recognized image by file path:
    ```cpp
    string file = "source.png";
    AsposeOCRInput source;
    source.url = file.c_str();
-   std::vector<AsposeOCRInput> content = { source };
+   vector<AsposeOCRInput> content = {source};
    ```
-3. Specify the recognition language
+
+   {{% alert color="info" %}} 
+   The image file will be searched in the application's working directory (see the note in [Preparing](#preparing) section).
+
+   Alternatively, you can specify the full image path (for example, `string file = "C:\\source.png";`) or calculate it in the runtime.
+   {{% /alert %}} 
+
+4. Specify the recognition language
    ```cpp
    RecognitionSettings settings;
    settings.language_alphabet = language::eng;
    ```
-4. Extract text from the image:
+
+5. Extract text from the image:
    ```cpp
-   auto result = asposeocr_recognize(content.data(), content.size(), settings);
+   AsposeOCRRecognitionResult result = asposeocr_recognize(content.data(), content.size(), settings);
    ```
-5. Output the recognized text:
+
+6. Output the recognized text:
    ```cpp
-   wchar_t* buffer = asposeocr_serialize_result(result, buffer_size, export_format::text);
-   std::cout << std::wstring(buffer) << std::endl;
+   size_t size = 0;
+   wchar_t* buffer = asposeocr_serialize_result(result, size);
+   wcout << wstring(buffer) << endl;
    ```
-6. Release the resources
+
+7. Release the resources
    ```cpp
    asposeocr_free_result(result);
    ```
@@ -78,28 +105,28 @@ We assume that you already have a basic knowledge of **Microsoft Visual Studio**
 
 ```cpp
 #include <iostream>
-#include <stdio.h>
-#include <fcntl.h>
-#include <io.h>
+#include <string>
+#include <vector>
 #include <aspose_ocr.h>
+
+using namespace std;
 
 int main()
 {
-	// Set output console mode
-	_setmode(_fileno(stdout), _O_U16TEXT);
-	// Provide the image
+	// Provide the image  for recognition
 	string file = "source.png";
 	AsposeOCRInput source;
 	source.url = file.c_str();
-	std::vector<AsposeOCRInput> content = { source };
+	vector<AsposeOCRInput> content = {source};
 	// Set recognition language
 	RecognitionSettings settings;
 	settings.language_alphabet = language::eng;
 	// Extract text from the image
-	auto result = asposeocr_recognize(content.data(), content.size(), settings);
+	AsposeOCRRecognitionResult result = asposeocr_recognize(content.data(), content.size(), settings);
 	// Output the recognized text
-	wchar_t* buffer = asposeocr_serialize_result(result, buffer_size, export_format::text);
-	std::cout << std::wstring(buffer) << std::endl;
+	size_t size = 0;
+	wchar_t* buffer = asposeocr_serialize_result(result, size);
+	wcout << wstring(buffer) << endl;
 	// Release the resources
 	asposeocr_free_result(result);
 }
@@ -110,7 +137,7 @@ int main()
 Run the program. You will see extracted text in the console output:
 
 ```
-Hello, World! I can read this text.
+Hello. World! I can read this text
 ```
 
 {{% alert color="primary" %}} 
@@ -119,4 +146,4 @@ If you use your own image, consider the [trial restrictions](/ocr/cpp/licensing/
 
 ## What's next
 
-Congratulations! You have extracted the text from the image. Read the [Developer reference](/ocr/cpp/developer-reference/) and [API reference](https://reference.aspose.com/ocr/cpp/) for details on developing advanced applications with Aspose.OCR for C++.
+Congratulations! You have performed OCR on an image and extracted the machine-readable text from it. Read the [Developer reference](/ocr/cpp/developer-reference/) and [API reference](https://reference.aspose.com/ocr/cpp/) for details on developing advanced applications with Aspose.OCR for C++.

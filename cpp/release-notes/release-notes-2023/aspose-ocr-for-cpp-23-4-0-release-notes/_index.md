@@ -79,7 +79,7 @@ settings.language_alphabet = language::eng;
 auto result = asposeocr_recognize_passport(content.data(), content.size(), settings);
 // Output the recognized text
 wchar_t* buffer = asposeocr_serialize_result(result, buffer_size, export_format::text);
-std::cout << std::wstring(buffer) << std::endl;
+std::wcout << std::wstring(buffer) << std::endl;
 // Release the resources
 asposeocr_free_result(result);
 ```
@@ -99,7 +99,7 @@ settings.language_alphabet = language::eng;
 auto result = asposeocr_recognize_vehicle_license_plate(content.data(), content.size(), settings);
 // Output the recognized text
 wchar_t* buffer = asposeocr_serialize_result(result, buffer_size, export_format::text);
-std::cout << std::wstring(buffer) << std::endl;
+std::wcout << std::wstring(buffer) << std::endl;
 // Release the resources
 asposeocr_free_result(result);
 ```

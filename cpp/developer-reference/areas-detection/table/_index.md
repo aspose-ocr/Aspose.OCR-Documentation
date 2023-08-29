@@ -37,7 +37,7 @@ settings.detect_areas_mode = detect_areas_mode_enum::TABLE;
 auto result = asposeocr_recognize(content.data(), content.size(), settings);
 // Output the recognized text
 wchar_t* buffer = asposeocr_serialize_result(result, buffer_size, export_format::text);
-std::cout << std::wstring(buffer) << std::endl;
+std::wcout << std::wstring(buffer) << std::endl;
 // Release the resources
 asposeocr_free_result(result);
 ```
