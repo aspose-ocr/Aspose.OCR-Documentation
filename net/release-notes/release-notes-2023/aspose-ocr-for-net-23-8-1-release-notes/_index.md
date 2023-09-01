@@ -1,12 +1,14 @@
 ---
-weight: 61
-date: "2023-08-16"
+weight: 60
+date: "2023-08-30"
 author: "Vladimir Lapin"
 type: docs
-url: /net/aspose-ocr-for-net-23-8-0-release-notes/
+url: /net/aspose-ocr-for-net-23-8-1-release-notes/
+aliases:
+- /net/aspose-ocr-for-net-23-8-0-release-notes/
 feedback: OCRNET
-title: Aspose.OCR for .NET 23.8.0 - Release Notes
-description: A summary of recent changes, enhancements and bug fixes in Aspose.OCR for .NET 23.8.0 (August 2023) release.
+title: Aspose.OCR for .NET 23.8.1 - Release Notes
+description: A summary of recent changes, enhancements and bug fixes in Aspose.OCR for .NET 23.8.1 (August 2023) release.
 keywords:
 - 2023
 - August
@@ -16,7 +18,7 @@ keywords:
 ---
 
 {{% alert color="primary" %}}
-This article contains a summary of recent changes, enhancements and bug fixes in [**Aspose.OCR for .NET 23.8.0 (August 2023)**](https://www.nuget.org/packages/Aspose.OCR/23.8.0) release.
+This article contains a summary of recent changes, enhancements and bug fixes in [**Aspose.OCR for .NET 23.8.1 (August 2023)**](https://www.nuget.org/packages/Aspose.OCR/23.8.1) release.
 
 GPU version: **23.5.0**
 {{% /alert %}}
@@ -33,12 +35,13 @@ The [release 23.3.1](/ocr/net/aspose-ocr-for-net-23-3-1-release-notes/) introduc
 
 Key | Summary | Category
 --- | ------- | --------
+OCRNET&#8209;707 | Improved [recognition](/ocr/net/recognize-single-line/) of images containing a single line of text. | Enhancement
 OCRNET&#8209;711 | Improved product licensing module. | Enhancement
 OCRNET&#8209;682 | Fixed image distortion that occurred when [automatically correcting image skew](/ocr/net/deskew/#automatic-skew-correction) in PDF documents. | Fix
 
 ## Public API changes and backwards compatibility
 
-This section lists all public API changes introduced in **Aspose.OCR for .NET 23.8.0** that may affect the code of existing applications.
+This section lists all public API changes introduced in **Aspose.OCR for .NET 23.8.1** that may affect the code of existing applications.
 
 ### Added public APIs:
 
