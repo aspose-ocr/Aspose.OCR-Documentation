@@ -4,6 +4,7 @@ date: "2023-07-05"
 author: "Vladimir Lapin"
 type: docs
 url: /python-net/licensing/
+feedback: OCRPYNET
 title: Licensing
 description: Learn how to obtain and apply Aspose.OCR for Python via .NET license and discover limitations of the trial version.
 keywords:

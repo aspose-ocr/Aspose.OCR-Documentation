@@ -4,6 +4,7 @@ date: "2023-04-19"
 author: "Vladimir Lapin"
 type: docs
 url: /python-net/hello-world/
+feedback: OCRPYNET
 title: Hello, world!
 description: Get started with Aspose.OCR for Python via .NET by creating and running a bare minimum example.
 keywords:

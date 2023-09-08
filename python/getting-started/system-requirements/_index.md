@@ -1,9 +1,10 @@
 ---
 weight: 10
-date: "2023-07-26"
+date: "2023-08-26"
 author: "Vladimir Lapin"
 type: docs
 url: /python-net/system-requirements/
+feedback: OCRPYNET
 title: System requirements
 description: Minimum requirements and prerequisites for developing applications with Aspose.OCR for Python via .NET.
 keywords:
@@ -13,13 +14,15 @@ keywords:
 - environment
 - Python
 - .NET
+- Windows
+- macOS
+- Linux
+- Unix
 ---
 
-Aspose.OCR for Python via .NET works under Python version 3.6 or later.
+Aspose.OCR for Python via .NET works under Python version **3.6** or later. The library is cross-platform - you can run your code unchanged on any of the following **64-bit** operating systems:
 
 ## Microsoft Windows
-
-x64 versions of the following operating systems:
 
 ### Desktop
 
@@ -47,23 +50,3 @@ Any Linux x64, including:
 - Ubuntu
 - OpenSUSE
 - CentOS
-
-## External dependencies
-
-Aspose.OCR for Python via .NET requires the following third-party components to be installed:
-
-### .NET framework
-
-[.NET Standard 2.0](https://docs.microsoft.com/en-us/dotnet/standard/net-standard?tabs=net-standard-2-0):
-
-.NET implementation	| Supported versions
-------------------- | ------------------
-.NET | 5.0, 6.0
-.NET Core | 2.0, 2.1, 2.2, 3.0, 3.1
-.NET Framework | 4.6.1, 4.6.2, 4.7, 4.7.1, 4.7.2, 4.8
-
-### Other libraries
-
-- [**GNU Compiler Collection (GCC)**](https://gcc.gnu.org/) runtime, version 6 or later.
-- **PyMalloc** memory allocator (for Python 3.6 and 3.7).
-- **libpython** shared library

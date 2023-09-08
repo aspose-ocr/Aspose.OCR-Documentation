@@ -4,6 +4,7 @@ date: "2023-04-20"
 author: "Vladimir Lapin"
 type: docs
 url: /python-net/installation/
+feedback: OCRPYNET
 title: Installation
 description: Adding or updating Aspose.OCR for Python via .NET package in your project.
 keywords:

@@ -4,6 +4,7 @@ date: "2023-04-18"
 author: "Vladimir Lapin"
 type: docs
 url: /python-net/supported-file-formats/
+feedback: OCRPYNET
 title: Supported file formats
 description: File formats for images and recognition results supported by Aspose.OCR for Python via .NET.
 keywords:

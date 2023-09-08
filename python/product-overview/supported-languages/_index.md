@@ -4,6 +4,7 @@ date: "2023-04-18"
 author: "Vladimir Lapin"
 type: docs
 url: /python-net/recognition-languages/
+feedback: OCRPYNET
 title: Recognition languages
 description: A list of languages and characters recognized by Aspose.OCR for Python via .NET.
 keywords:

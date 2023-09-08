@@ -4,6 +4,7 @@ date: "2023-04-19"
 author: "Vladimir Lapin"
 type: docs
 url: /python-net/getting-started/
+feedback: OCRPYNET
 title: Getting started
 description: Learn how to install and license Aspose.OCR for Python via .NET and how to write simple OCR applications in Python.
 keywords:

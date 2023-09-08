@@ -1,9 +1,10 @@
 ---
 weight: 40
-date: "2023-04-20"
+date: "2023-08-20"
 author: "Vladimir Lapin"
 type: docs
 url: /python-net/
+feedback: OCRPYNET
 is_root: true
 title: Aspose.OCR for Python via .NET
 description: Aspose.OCR for Python via .NET is an easy-to-use Python library for extracting text from scans, photos and PDFs.
@@ -21,9 +22,11 @@ keywords:
 
 ![Aspose.OCR for Python via .NET](aspose-ocr-python.png)
 
-**Aspose.OCR for Python via .NET** adds optical character recognition (OCR) functionality to your Python notebooks and applications. With it, you can extract text from scans, screenshots, pictures from the web, or even photos from your smartphone, returning results that can be analyzed or saved to disk.
+**Aspose.OCR for Python via .NET** adds optical character recognition (OCR) functionality to your cross-platform Python notebooks and applications. With it, you can extract text from scans, screenshots, pictures from the web, or even photos from your smartphone, returning results that can be aggregated, analyzed or saved to disk.
 
-Our OCR module supports 28 languages based on Latin, Cyrillic and Asian scripts, including more than 6000 Chinese characters, and can recognize files in the most popular formats: PDF, JPG, TIFF, PNG, BMP, GIF or DjVu. Various processing filters allow you to recognize rotated, skewed and noisy images. The recognition results are returned in the most popular document and data exchange formats. Automatic spelling correction will further improve the accuracy without manual intervention.
+Like Python itself, our library runs on most popular operating systems: Microsoft Windows, Linux, Unix, and macOS. You can develop an application on one platform and run it on another without changing a single line of code.
+
+Aspose.OCR supports 28 languages based on Latin, Cyrillic and Asian scripts, including Hindi and Chinese, and can recognize files in the most popular formats: PDF, JPG, TIFF, PNG, BMP, GIF or DjVu. Various processing filters allow you to recognize rotated, distorted and noisy images. The recognition results are returned in the most popular document and data exchange formats. Automatic spelling correction will further improve the accuracy without manual intervention.
 
 ## Product overview
 
@@ -53,6 +56,7 @@ Read a summary of recent changes, enhancements and bug fixes in Aspose.OCR for P
 
 Find more information, download Aspose.OCR for Python via .NET package and get professional help.
 
+- [API Reference](https://reference.aspose.com/ocr/python-net/)
 - [Downloads](https://releases.aspose.com/ocr/python-net/)
 - [Blog](https://blog.aspose.com/category/ocr/)
 - [Free Support Forum](https://forum.aspose.com/c/ocr/16)
