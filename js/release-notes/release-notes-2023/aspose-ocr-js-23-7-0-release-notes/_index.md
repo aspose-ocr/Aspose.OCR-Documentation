@@ -1,14 +1,14 @@
 ---
-weight: 1
+weight: 61
 date: "2023-09-11"
 author: "Vladimir Lapin"
 type: docs
-url: /javascript-cpp/release-notes/latest/
-title: Latest release
-description: A summary of changes, enhancements and bug fixes in the latest release of Aspose.OCR for JavaScript via C++.
+url: /javascript-cpp/aspose-ocr-javascript-cpp-23-7-0-release-notes/
+title: Aspose.OCR for JavaScript via C++ 23.7.0 - Release Notes
+description: A summary of recent changes, enhancements and bug fixes in Aspose.OCR for JavaScript via C++ 23.7.0 (July 2023) release.
 keywords:
-- latest
-- recent
+- 2023
+- July
 - new
 - release
 - changelog
