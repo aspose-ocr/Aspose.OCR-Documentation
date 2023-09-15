@@ -1,14 +1,15 @@
 ---
-weight: 1
+weight: 50
 date: "2023-09-13"
 author: "Vladimir Lapin"
 type: docs
-url: /net/release-notes/latest/
+url: /net/aspose-ocr-for-net-23-9-0-release-notes/
 feedback: OCRNET
-title: Latest release (September 2023)
+title: Aspose.OCR for .NET 23.9.0 - Release Notes
 description: A summary of recent changes, enhancements and bug fixes in Aspose.OCR for .NET 23.9.0 (September 2023) release.
 keywords:
-- latest
+- 2023
+- September
 - new
 - release
 - changelog
