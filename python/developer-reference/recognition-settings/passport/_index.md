@@ -1,6 +1,6 @@
 ---
 weight: 30
-date: "2023-08-30"
+date: "2023-09-15"
 author: "Vladimir Lapin"
 type: docs
 url: /python-net/recognition-settings-passport/
@@ -26,6 +26,7 @@ Setting | Type | Default value | Description
 `ignored_symbols` | string | _none_ | A [blacklist](/ocr/python-net/characters-blacklist/) of characters that are ignored during recognition.
 `language` | [Language](https://reference.aspose.com/ocr/python-net/aspose.ocr/language/) | `Language.NONE` | Specify a [language](/ocr/python-net/languages/) for recognition.
 `automatic_color_inversion` | boolean | `true` | Improve recognition accuracy of white text on a dark/black background. If you are not optimizing every aspect of recognition (for example, for online applications or entry-level devices), leave this setting set to true.
+`threads_count` | integer | _auto_ | The number of [CPU threads](/ocr/python-net/multithreading/) used for recognition.
 
 ## Applicable to
 

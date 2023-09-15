@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2023-08-30"
+date: "2023-09-15"
 author: "Vladimir Lapin"
 type: docs
 url: /python-net/recognition-settings-common/
@@ -34,6 +34,7 @@ Setting | Type | Default value | Description
 `recognize_single_line` | boolean | `false` | Recognize a [single-line](/ocr/python-net/recognize-single-line/) image. Disables automatic document region detection.<br />Improves the recognition performance of simple images.
 `upscale_small_font` | boolean | `false` | Improve small font recognition and detection of dense lines.
 `automatic_color_inversion` | boolean | `true` | Improve recognition accuracy of white text on a dark/black background. If you are not optimizing every aspect of recognition (for example, for online applications or entry-level devices), leave this setting set to true.<br />This setting is only applicable when using one of the following [document area detection modes](/ocr/python-net/areas-detection/):<ul><li>[`DetectAreasMode.PHOTO`](/ocr/python-net/areas-detection/photo/)</li><li>[`DetectAreasMode.COMBINE`](/ocr/python-net/areas-detection/combine/)</li><li>[`DetectAreasMode.TABLE`](/ocr/python-net/areas-detection/table/)</li><li>[`DetectAreasMode.CURVED_TEXT`](/ocr/python-net/areas-detection/curved_text/)</li></ul>
+`threads_count` | integer | _auto_ | The number of [CPU threads](/ocr/python-net/multithreading/) used for recognition.
 
 ## Applicable to
 
