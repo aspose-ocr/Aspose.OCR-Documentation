@@ -1,6 +1,6 @@
 ---
 weight: 40
-date: "2023-07-19"
+date: "2023-09-21"
 author: "Vladimir Lapin"
 type: docs
 url: /cpp/settings/
@@ -38,6 +38,18 @@ Setting | Type | Default value | Description
 `skew` | `double` | `0` | Manually [rotate](/ocr/cpp/deskew/#manual-skew-correction) the image by the specified degree. Does not work if recognition areas are specified.
 `threshold_value` | `int` | `0` | [Override](/ocr/cpp/binarization/#using-binarization-threshold) the automatic binarization settings.
 `upscale_small_font` | bool | `false` | Improve small font recognition and detection of dense lines.
+`defect_type` | `int` | `-1` | The type of [image defects](#detected-image-defects) that the OCR engine will look for.
+
+## Detected image defects
+
+The following types of image defects can be detected:
+
+Enum | Value | Behavior
+---- | ----- | --------
+`ASPOSE_OCR_ALL` | -1 | Do not detect image defects (default).
+`ASPOSE_OCR_SALT_PEPPER_NOISE` | 1 | Detect [salt-and-pepper noise](https://en.wikipedia.org/wiki/Salt-and-pepper_noise) (impulse noise) that often occurs in digital photographs taken in low light conditions. It appears as random white and black pixels.<br />This type of noise can cause certain characters to be misidentified or non-existent characters such as dots or commas to appear in recognition results.
+`ASPOSE_OCR_DARK_IMAGES` | 2 | Detect low contrast between text and background.<br />Such areas may not be recognized accurately, and their content may even disappear in the recognition results.
+`ASPOSE_OCR_ALL` | 9999 | Detect all supported image defects.
 
 ## Example
 
