@@ -47,10 +47,10 @@ Get familiar with Aspose.OCR for Python via .NET API in a few simple steps.
 
 ## Release Notes
 
-Read a summary of recent changes, enhancements and bug fixes in Aspose.OCR for Python via .NET releases.
+Read a summary of recent changes, enhancements and bug fixes in [Aspose.OCR for Python via .NET releases](https://releases.aspose.com/ocr/python-net/release-notes/).
 
-- [Latest release](/ocr/python-net/release-notes/latest/)
-- [2023 releases](/ocr/python-net/release-notes-2023/)
+- [Latest release](https://releases.aspose.com/ocr/python-net/release-notes/latest/)
+- [2023 releases](https://releases.aspose.com/ocr/python-net/release-notes/2023/)
 
 ## Resources
 
