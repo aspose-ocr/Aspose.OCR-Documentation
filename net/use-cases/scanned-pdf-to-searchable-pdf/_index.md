@@ -72,7 +72,7 @@ Use your own document or [download the sample delivery agreement](Delivery-Agree
 
 ### Full code
 
-```cpp
+```csharp
 using Aspose.OCR;
 
 namespace ConvertScannedPDF
@@ -83,7 +83,7 @@ namespace ConvertScannedPDF
 		{
 			// Apply license
 			License license = new License();
-			license.SetLicense("Aspose.Total.Product.Family.lic");
+			license.SetLicense("Aspose.OCR.lic");
 			// Load the scanned PDF
 			OcrInput pdf = new OcrInput(InputType.PDF);
 			pdf.Add("Delivery-Agreement.pdf");
