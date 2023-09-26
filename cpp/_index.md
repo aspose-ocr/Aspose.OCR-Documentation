@@ -62,13 +62,13 @@ Explore free online apps build with Aspose.OCR for C++. Get ideas for your own p
 
 ## Release Notes
 
-Read a summary of recent changes, enhancements and bug fixes in Aspose.OCR for C++ releases.
+Read a summary of recent changes, enhancements and bug fixes in [Aspose.OCR for C++ releases](https://releases.aspose.com/ocr/cpp/release-notes/).
 
-- [Latest release](/ocr/cpp/release-notes/latest/)
-- [2023 releases](/ocr/cpp/release-notes-2023/)
-- [2022 releases](/ocr/cpp/release-notes-2022/)
-- [2021 releases](/ocr/cpp/release-notes-2021/)
-- [2020 releases](/ocr/cpp/release-notes-2020/)
+- [Latest release](https://releases.aspose.com/ocr/cpp/release-notes/latest/)
+- [2023 releases](https://releases.aspose.com/ocr/cpp/release-notes/2023/)
+- [2022 releases](https://releases.aspose.com/ocr/cpp/release-notes/2022/)
+- [2021 releases](https://releases.aspose.com/ocr/cpp/release-notes/2021/)
+- [2020 releases](https://releases.aspose.com/ocr/cpp/release-notes/2020/)
 
 ## Resources
 

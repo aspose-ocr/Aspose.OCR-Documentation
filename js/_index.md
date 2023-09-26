@@ -33,3 +33,7 @@ Learn more about OCR technology and discover the features and benefits of Aspose
 - [Introduction](/ocr/javascript-cpp/product-overview/)
 - [Supported file formats](/ocr/javascript-cpp/supported-file-formats/)
 - [Recognition languages](/ocr/javascript-cpp/recognition-languages/)
+
+## Release Notes
+
+Read a summary of recent changes, enhancements and bug fixes in [Aspose.OCR for JavaScript via C++ releases](https://releases.aspose.com/ocr/javascript-cpp/release-notes/).

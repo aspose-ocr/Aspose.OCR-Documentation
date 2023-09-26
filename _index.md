@@ -35,7 +35,7 @@ Implemented using Managed C#, Aspose.OCR for .NET can be used with any .NET fram
 Find more information, download Aspose.OCR for .NET packages and get professional help:
 
 - [Aspose.OCR for .NET online documentation](/ocr/net/)
-- [Aspose.OCR for .NET Release Notes](/ocr/net/release-notes/)
+- [Aspose.OCR for .NET Release Notes](https://releases.aspose.com/ocr/net/release-notes/)
 - [Aspose.OCR for .NET NuGet packages and downloads](https://downloads.aspose.com/ocr/net)
 - [Aspose.OCR for .NET API reference](https://reference.aspose.com/ocr/net/)
 - [Examples](https://github.com/aspose-ocr/Aspose.OCR-for-.NET)
@@ -59,8 +59,9 @@ The library supports Latin, Cyrillic and Asian scrips, including Chinese. You ca
 Find more information, download Aspose.OCR for Java packages and get professional help:
 
 - [Aspose.OCR for Java online documentation](/ocr/java/)
-- [Aspose.OCR for Java Release Notes](/ocr/java/release-notes/)
-- [Install Aspose.OCR for Java from Maven Repository](https://downloads.aspose.com/ocr/java)
+- [Aspose.OCR for Java Release Notes](https://releases.aspose.com/ocr/java/release-notes/)
+- [Aspose.OCR for Java Maven repository](https://releases.aspose.com/java/repo/com/aspose/aspose-ocr/)
+- [Download Aspose.OMR for Java package](https://releases.aspose.com/ocr/java/)
 - [Aspose.OCR for Java API reference](https://reference.aspose.com/ocr/java/)
 - [Examples](https://github.com/aspose-ocr/Aspose.OCR-for-Java)
 - [Blog](https://blog.aspose.com/category/ocr/)
@@ -84,7 +85,7 @@ We provide comprehensive documentation to get you up to speed on OCR technology 
 Find more information, download Aspose.OCR for C++ packages and get professional help:
 
 - [Aspose.OCR for C++ online documentation](/ocr/cpp/)
-- [Aspose.OCR for C++ Release Notes](/ocr/cpp/release-notes/)
+- [Aspose.OCR for C++ Release Notes](https://releases.aspose.com/ocr/cpp/release-notes/)
 - [C++ Developer's guide](/ocr/cpp/developer-guide/)
 - [Blog](https://blog.aspose.com/category/ocr/)
 - [Free Support Forum](https://forum.aspose.com/c/ocr/16)
@@ -108,7 +109,7 @@ Find more information, download Aspose.OCR for Python via .NET Wheel packages an
 
 - [Aspose.OCR for Python via .NET online documentation](/ocr/python-net/)
 - [Aspose.OCR for Python via .NET Developer Reference](/ocr/python-net/developer-reference/)
-- [Aspose.OCR for Python via .NET Release Notes](/ocr/python-net/release-notes/)
+- [Aspose.OCR for Python via .NET Release Notes](https://releases.aspose.com/ocr/python-net/release-notes/)
 - [Blog](https://blog.aspose.com/category/ocr/)
 - [Free Support Forum](https://forum.aspose.com/c/ocr/16)
 - [Paid Support Helpdesk](https://helpdesk.aspose.com/)

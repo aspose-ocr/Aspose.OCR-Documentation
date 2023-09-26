@@ -6,7 +6,7 @@ type: docs
 url: /java/
 feedback: OCRJAVA
 is_root: true
-aliases: 
+aliases:
 - /display/OCRJAVA/
 - /java/setting-mark-threshold-in-ruby/
 - /java/setting-the-ocrengine-to-automatically-detect-the-text-blocks-in-ruby/
@@ -65,23 +65,23 @@ Explore free online apps build with Aspose.OCR for Java. Get ideas for your own 
 
 ## Release Notes
 
-Read a summary of recent changes, enhancements and bug fixes in Aspose.OCR for Java releases.
+Read a summary of recent changes, enhancements and bug fixes in [Aspose.OCR for Java releases](https://releases.aspose.com/ocr/java/release-notes/).
 
-- [Latest release](/ocr/java/release-notes/latest/)
-- [2023 releases](/ocr/java/release-notes-2023/)
-- [2022 releases](/ocr/java/release-notes-2022/)
-- [2021 releases](/ocr/java/release-notes-2021/)
-- [2020 releases](/ocr/java/release-notes-2020/)
-- [2017 releases](/ocr/java/release-notes-2017/)
-- [2016 releases](/ocr/java/release-notes-2016/)
-- [2015 releases](/ocr/java/release-notes-2015/)
+- [Latest release](https://releases.aspose.com/ocr/java/release-notes/latest/)
+- [2023 releases](https://releases.aspose.com/ocr/java/release-notes/2023/)
+- [2022 releases](https://releases.aspose.com/ocr/java/release-notes/2022/)
+- [2021 releases](https://releases.aspose.com/ocr/java/release-notes/2021/)
+- [2020 releases](https://releases.aspose.com/ocr/java/release-notes/2020/)
+- [2017 releases](https://releases.aspose.com/ocr/java/release-notes/2017/)
+- [2016 releases](https://releases.aspose.com/ocr/java/release-notes/2016/)
+- [2015 releases](https://releases.aspose.com/ocr/java/release-notes/2015/)
 
 ## Resources
 
 Find more information, download Aspose.OCR for Java packages and get professional help.
 
-- [Maven repository](https://repository.aspose.com/webapp/#/artifacts/browse/tree/General/repo/com/aspose)
-- [Local package](https://downloads.aspose.com/ocr/java)
+- [Aspose.OCR for Java Maven repository](https://releases.aspose.com/java/repo/com/aspose/aspose-ocr/)
+- [Download Aspose.OMR for Java package](https://releases.aspose.com/ocr/java/)
 - [GitHub repository](https://github.com/aspose-ocr/Aspose.OCR-for-Java)
 - [Aspose.OCR for Java API reference](https://reference.aspose.com/ocr/java)
 - [Examples](https://github.com/aspose-ocr/Aspose.OCR-for-Java/tree/master/Examples)

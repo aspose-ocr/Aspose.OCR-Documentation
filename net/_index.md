@@ -60,17 +60,17 @@ Explore free online apps build with Aspose.OCR for .NET. Get ideas for your own 
 
 ## Release Notes
 
-Read a summary of recent changes, enhancements and bug fixes in Aspose.OCR for .NET releases.
+Read a summary of recent changes, enhancements and bug fixes in [Aspose.OCR for .NET releases](https://releases.aspose.com/ocr/net/release-notes/).
 
-- [Latest release](/ocr/net/release-notes/latest/)
-- [2023 releases](/ocr/net/release-notes-2023/)
-- [2022 releases](/ocr/net/release-notes-2022/)
-- [2021 releases](/ocr/net/release-notes-2021/)
-- [2020 releases](/ocr/net/release-notes-2020/)
-- [2019 releases](/ocr/net/release-notes-2019/)
-- [2017 releases](/ocr/net/release-notes-2017/)
-- [2016 releases](/ocr/net/release-notes-2016/)
-- [2015 releases](/ocr/net/release-notes-2015/)
+- [Latest release](https://releases.aspose.com/ocr/net/release-notes/latest/)
+- [2023 releases](https://releases.aspose.com/ocr/net/release-notes/2023/)
+- [2022 releases](https://releases.aspose.com/ocr/net/release-notes/2022/)
+- [2021 releases](https://releases.aspose.com/ocr/net/release-notes/2021/)
+- [2020 releases](https://releases.aspose.com/ocr/net/release-notes/2020/)
+- [2019 releases](https://releases.aspose.com/ocr/net/release-notes/2019/)
+- [2017 releases](https://releases.aspose.com/ocr/net/release-notes/2017/)
+- [2016 releases](https://releases.aspose.com/ocr/net/release-notes/2016/)
+- [2015 releases](https://releases.aspose.com/ocr/net/release-notes/2015/)
 
 ## Resources
 
