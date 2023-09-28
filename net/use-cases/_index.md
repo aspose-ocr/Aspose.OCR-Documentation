@@ -1,6 +1,6 @@
 ---
 weight: 60
-date: "2023-09-26"
+date: "2023-09-27"
 author: "Vladimir Lapin"
 type: docs
 url: /net/use-cases/
@@ -34,3 +34,5 @@ We also recommend to familiarize the basic building blocks of Aspose.OCR for the
   Take a photo of the page using your smartphone and extract text from it using Aspose.OCR for .NET. No scanner required.
 - [Converting a scan to editable document](/ocr/net/scan-to-word/)  
   Create an editable document in Microsoft Word format from a scanned image, PDF or even a photo.
+- [Searching for text in images](/ocr/net/search-text-in-images/)  
+  Search for text or a regular expression in an image or scanned PDF and automate workflows based on the result.
