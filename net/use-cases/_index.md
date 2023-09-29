@@ -1,6 +1,6 @@
 ---
 weight: 60
-date: "2023-09-27"
+date: "2023-09-28"
 author: "Vladimir Lapin"
 type: docs
 url: /net/use-cases/
@@ -36,3 +36,5 @@ We also recommend to familiarize the basic building blocks of Aspose.OCR for the
   Create an editable document in Microsoft Word format from a scanned image, PDF or even a photo.
 - [Searching for text in images](/ocr/net/search-text-in-images/)  
   Search for text or a regular expression in an image or scanned PDF and automate workflows based on the result.
+- [Archival scanning and OCR](/ocr/net/archival-scanning/)  
+  Automatically tag images based on their content and organize them into archives.
