@@ -9,11 +9,11 @@ title: Archival scanning and OCR
 description: Automatically tag images based on their content, organize them into archives, and reduce file size to save disk space.
 keywords:
 - scan
-- PDF
-- edit
-- Word
-- modify
-- change
+- archive
+- metadata
+- search
+- index
+- sort
 ---
 
 <style>

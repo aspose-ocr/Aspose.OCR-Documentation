@@ -9,11 +9,11 @@ title: Searching for text in images
 description: Search for text or a regular expression in an image or scanned PDF and automate workflows based on the result.
 keywords:
 - scan
-- PDF
-- edit
-- Word
-- modify
-- change
+- search
+- find
+- photo
+- scan
+- tag
 ---
 
 <style>

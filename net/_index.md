@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2023-04-20"
+date: "2023-10-02"
 author: "Vladimir Lapin"
 type: docs
 url: /net/
@@ -49,6 +49,10 @@ Get familiar with Aspose.OCR for .NET library in a few simple steps.
 ## Developer's reference
 
 [Dive deep](/ocr/net/developer-reference/) into Aspose OCR technology and applications development with Aspose.OCR for .NET.
+
+## Use cases
+
+Learn how to create [full-featured business applications](/ocr/net/use-cases/) with Aspose.OCR for .NET with just a few lines of code.
 
 ## Aspose.OCR online apps
 

@@ -1,6 +1,6 @@
 ---
 weight: 60
-date: "2023-09-28"
+date: "2023-10-02"
 author: "Vladimir Lapin"
 type: docs
 url: /net/use-cases/
@@ -38,3 +38,5 @@ We also recommend to familiarize the basic building blocks of Aspose.OCR for the
   Search for text or a regular expression in an image or scanned PDF and automate workflows based on the result.
 - [Archival scanning and OCR](/ocr/net/archival-scanning/)  
   Automatically tag images based on their content and organize them into archives.
+- [Extracting data from scanned invoices using AI](/ocr/net/ocr-and-parse-with-ai/)  
+  Combine Aspose.OCR for .NET with ChatGPT to extract information from scanned invoices.
