@@ -1,6 +1,6 @@
 ---
 weight: 80
-date: "2023-08-30"
+date: "2023-10-13"
 author: "Vladimir Lapin"
 type: docs
 url: /python-net/specialized-recognition-methods/
@@ -28,3 +28,5 @@ Aspose.OCR for Python via .NET offers fine-tuned OCR methods for extracting text
   Digitizing scanned invoices without manual retyping.
 - [Extracting text from receipts](/ocr/python-net/recognition/receipt/)  
   Digitizing scanned receipts without manual retyping.
+- [Extracting text from street photos](/ocr/python-net/recognition/read-text-in-wild/)  
+  Extracting text from street photos, price tags, menus, catalogs and other images with sparse text and noisy/colored backgrounds.
