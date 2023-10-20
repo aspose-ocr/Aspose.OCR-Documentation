@@ -1,6 +1,6 @@
 ---
 weight: 70
-date: "2023-05-19"
+date: "2023-10-18"
 author: "Vladimir Lapin"
 type: docs
 url: /java/specialized-recognition-methods/
@@ -28,3 +28,5 @@ Aspose.OCR for Java offers fine-tuned OCR methods for extracting text from certa
   Digitizing scanned invoices without manual retyping.
 - [Extracting text from receipts](/ocr/java/recognition/receipt/)  
   Digitizing scanned receipts without manual retyping.
+- [Extracting text from street photos](/ocr/java/recognition/read-text-in-wild/)  
+  Extracting text from street photos, price tags, menus, catalogs and other images with sparse text and noisy/colored backgrounds.
