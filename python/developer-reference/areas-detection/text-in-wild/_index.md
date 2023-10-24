@@ -1,6 +1,6 @@
 ---
 weight: 60
-date: "2023-10-13"
+date: "2023-10-24"
 author: "Vladimir Lapin"
 type: docs
 url: /python-net/areas-detection/text-in-wild/
@@ -52,4 +52,5 @@ print(result[0].recognition_text)
 
 ## Limitations
 
-The algorithm only works with Latin letters and numbers. You cannot specify the [recognition language](/ocr/python-net/languages/) and provide [whitelisted/blacklisted characters](/ocr/python-net/recognition-settings-common/). 
+- [Install](/ocr/python-net/installation/) Text-in-wild OCR model in order to use this document areas detection algorithm.
+- The algorithm only works with Latin letters and numbers. You cannot specify the [recognition language](/ocr/python-net/languages/) and provide [whitelisted/blacklisted characters](/ocr/python-net/recognition-settings-common/). 

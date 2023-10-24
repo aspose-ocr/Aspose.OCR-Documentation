@@ -1,6 +1,6 @@
 ---
 weight: 60
-date: "2023-10-13"
+date: "2023-10-24"
 author: "Vladimir Lapin"
 type: docs
 url: /python-net/recognition/read-text-in-wild/
@@ -117,5 +117,6 @@ only
 
 ## Limitations
 
+- [Install](/ocr/python-net/installation/) Text-in-wild OCR model in order to use this method.
 - The method only supports Latin letters and numbers.
 - This method does not support recognition settings.

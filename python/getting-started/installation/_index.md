@@ -1,6 +1,6 @@
 ---
 weight: 20
-date: "2023-04-20"
+date: "2023-10-24"
 author: "Vladimir Lapin"
 type: docs
 url: /python-net/installation/
@@ -71,14 +71,30 @@ The Aspose.OCR for Python via .NET package can either be installed from [PyPi](h
 pip install aspose-ocr-python-net
 ```
 
+In order to use [street photo recognition](/ocr/python-net/recognition/read-text-in-wild/) and [text-in-wild](/ocr/python-net/areas-detection/text-in-wild/) document areas detection method, you must also install the Text-in-wild recognition model, which is distributed as a separate Python package:
+
+```bash
+pip install aspose-ocr-models-textinwild-python-net
+```
+
+{{% alert color="primary" %}}
+You can use Aspose.OCR for Python via .NET without this package, however you will not be able to use the methods and properties that depend on Text-in-wild OCR model.
+{{% /alert %}}
+
 ### Installing from downloaded package
 
 1. Download Aspose.OCR for Python via .NET package for your platform from [releases.aspose.com](https://releases.aspose.com/ocr/python-net/).
-2. Install the downloaded package using pip:
+2. Extract the downloaded archive.
+3. Install the downloaded package by running **install.sh** or **install.cmd** depending on your platform, or using pip:
 
    ```bash
-   pip install <path to the downloaded Wheel file (.whl)>
+   pip install aspose-ocr-python-net.whl
+   pip install aspose-ocr-models-textinwild-python-net.whl
    ```
+
+{{% alert color="primary" %}}
+You may skip installing **aspose-ocr-models-textinwild-python-net.whl** package if you are not going to use [street photo recognition](/ocr/python-net/recognition/read-text-in-wild/) and [text-in-wild](/ocr/python-net/areas-detection/text-in-wild/) document areas detection method.
+{{% /alert %}}
 
 ## Updating
 
