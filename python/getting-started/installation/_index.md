@@ -1,6 +1,6 @@
 ---
 weight: 20
-date: "2023-10-24"
+date: "2023-10-25"
 author: "Vladimir Lapin"
 type: docs
 url: /python-net/installation/
@@ -88,8 +88,8 @@ You can use Aspose.OCR for Python via .NET without this package, however you wil
 3. Install the downloaded package by running **install.sh** or **install.cmd** depending on your platform, or using pip:
 
    ```bash
-   pip install aspose-ocr-python-net.whl
-   pip install aspose-ocr-models-textinwild-python-net.whl
+   pip install aspose_ocr_python_net-{version and platform}.whl
+   pip install aspose_ocr_models_textinwild_python_net-{version and platform}.whl
    ```
 
 {{% alert color="primary" %}}
@@ -106,17 +106,25 @@ Refer to [Aspose.OCR for Python via .NET Release Notes](/ocr/python-net/release-
 
 ### Getting an update from PyPi
 
-To update the package, run the following command:
+To update the main package, run the following command:
 
 ```bash
 pip install --upgrade aspose-ocr-python-net
 ```
 
+To update Text-in-wild OCR model, run the following command:
+
+```bash
+pip install --upgrade aspose-ocr-models-textinwild-python-net
+```
+
 ### Updating with downloaded file
 
 1. Download the new version of Aspose.OCR for Python via .NET package for your platform from [releases.aspose.com](https://releases.aspose.com/ocr/python-net/).
-2. Update your current package version to the one you downloaded with pip:
+2. Extract the downloaded archive.
+3. Update the downloaded package by running **update.sh** or **update.cmd** depending on your platform, or using pip:
 
    ```bash
-   pip install --upgrade <path to the downloaded Wheel file (.whl)>
+   pip install --upgrade aspose_ocr_python_net-{version and platform}.whl
+   pip install --upgrade aspose_ocr_models_textinwild_python_net-{version and platform}.whl
    ```
