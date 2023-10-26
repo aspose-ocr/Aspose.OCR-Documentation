@@ -1,6 +1,6 @@
 ---
 weight: 75
-date: "2023-09-21"
+date: "2023-10-26"
 author: "Vladimir Lapin"
 type: docs
 url: /cpp/detecting-image-defects/
@@ -76,6 +76,8 @@ Defect | Enumeration | Description | Impact | How to mitigate
 ------ | ----------- | ----------- | ------ | ---------------
 [Salt-and-pepper noise](https://en.wikipedia.org/wiki/Salt-and-pepper_noise) | `AsposeOCRDefectType.ASPOSE_OCR_SALT_PEPPER_NOISE` | Appears as random white and black pixels scattered across the area. Often occurs in digital photographs. | <ul><li>Some characters are misidentified</li><li>Unnecessary dots or commas appear in recognition results</li></ul> | <ul><li>Apply [median filter](/ocr/cpp/median/)</li><li>Use [automatic noise removal](/ocr/cpp/denoise/)</li></ul>
 Low contrast between text and background | `AsposeOCRDefectType.ASPOSE_OCR_DARK_IMAGES` | Highlights and shadows typically appear on curved pages. | <ul><li>Low recognition accuracy</li><li>Text not recognized (ignored by OCR engine)</li></ul> | <ul><li>[Automatically adjust contrast](/ocr/cpp/contrast/)</li><li>[Convert to grayscale](/ocr/cpp/grayscale/)</li><li>[Binarize with high threshold](/ocr/cpp/binarization/#using-binarization-threshold)</li></ul>
+Curved text | `AsposeOCRDefectType.ASPOSE_OCR_CURVED_TEXT` | Cylindrical curvature of the page that often appear when photographing pages of books and magazine articles. | <ul><li>Some characters are misidentified</li><li>Text not recognized</li></ul> | <ul><li>Use [detect_areas_mode_enum::CURVED_TEXT](/ocr/cpp/areas-detection/curved_text/) areas detection mode</li></ul>
+Blur | `AsposeOCRDefectType.ASPOSE_OCR_BLURED_IMAGE` | The entire image or some of its areas are out of focus.<br />**Important:** This detection algorithm can only identify the entire image as blurry. Specific areas cannot be detected. | <ul><li>Characters are not recognized correctly</li><li>Text not recognized (ignored by OCR engine)</li></ul> | <ul><li>Use [automatic contrast correction](/ocr/cpp/contrast/)</li><li>[Convert image to grayscale](/ocr/cpp/grayscale/)</li></ul>
 
 {{% alert color="primary" %}}
 If the value of the `defect_type` member in [recognition settings](/ocr/cpp/settings/) is not specified, the image will not be analyzed for problems. This can speed up the OCR speed and lower resource usage.
@@ -85,8 +87,8 @@ The number of areas with problems are returned in `defects_count` property of [`
 
 Member | Type | Description
 ------ | ---- | -----------
-`type` | `AsposeOCRDefectType` | Identified defect type:<ul><li>`AsposeOCRDefectType.ASPOSE_OCR_SALT_PEPPER_NOISE` - [salt-and-pepper noise](https://en.wikipedia.org/wiki/Salt-and-pepper_noise).</li><li>`AsposeOCRDefectType.ASPOSE_OCR_DARK_IMAGES` - low contrast between text and background.</li></ul>
-`area` | [`rect`](https://reference.aspose.com/ocr/cpp/structrect) | Coordinates of the image are with defect (top/left corner, width and height).
+`type` | `AsposeOCRDefectType` | Identified defect type:<ul><li>`AsposeOCRDefectType.ASPOSE_OCR_SALT_PEPPER_NOISE` - [salt-and-pepper noise](https://en.wikipedia.org/wiki/Salt-and-pepper_noise).</li><li>`AsposeOCRDefectType.ASPOSE_OCR_DARK_IMAGES` - low contrast between text and background.</li><li>`AsposeOCRDefectType.ASPOSE_OCR_CURVED_TEXT` - curved lines.</li><li>`AsposeOCRDefectType.ASPOSE_OCR_BLURED_IMAGE` - blur.</li></ul>
+`area` | [`rect`](https://reference.aspose.com/ocr/cpp/structrect) | Coordinates of the image are with defect (top/left corner, width and height).<br />**Important:** When using `AsposeOCRDefectType.ASPOSE_OCR_BLURED_IMAGE` detection algorithm, the entire image area is returned.
 
 You can highlight problem areas when previewing an image and even OCR them using alternative recognition settings to get a better result.
 

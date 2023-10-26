@@ -1,6 +1,6 @@
 ---
 weight: 40
-date: "2023-09-21"
+date: "2023-10-26"
 author: "Vladimir Lapin"
 type: docs
 url: /cpp/settings/
@@ -49,6 +49,8 @@ Enum | Value | Behavior
 `ASPOSE_OCR_ALL` | -1 | Do not detect image defects (default).
 `ASPOSE_OCR_SALT_PEPPER_NOISE` | 1 | Detect [salt-and-pepper noise](https://en.wikipedia.org/wiki/Salt-and-pepper_noise) (impulse noise) that often occurs in digital photographs taken in low light conditions. It appears as random white and black pixels.<br />This type of noise can cause certain characters to be misidentified or non-existent characters such as dots or commas to appear in recognition results.
 `ASPOSE_OCR_DARK_IMAGES` | 2 | Detect low contrast between text and background.<br />Such areas may not be recognized accurately, and their content may even disappear in the recognition results.
+`ASPOSE_OCR_CURVED_TEXT` | 4 | Detect image areas containing cylindrical curvature distortions.<br />Such areas may not be recognized accurately or not recognized at all.
+`ASPOSE_OCR_BLURED_IMAGE` | 8 | Detect blurry images, the recognition accuracy of which may be insufficient without preprocessing.<br />Unlike other defect detection algorithms, this one cannot detect individual areas of the image. If it detects blurry text, the entire image area is returned.
 `ASPOSE_OCR_ALL` | 9999 | Detect all supported image defects.
 
 ## Example
