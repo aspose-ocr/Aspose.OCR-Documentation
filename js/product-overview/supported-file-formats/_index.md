@@ -1,6 +1,6 @@
 ---
 weight: 20
-date: "2023-05-25"
+date: "2023-11-24"
 author: "Vladimir Lapin"
 type: docs
 url: /javascript-cpp/supported-file-formats/
@@ -22,17 +22,14 @@ Aspose.OCR for JavaScript via C++ can recognize any file you get from a scanner 
 
 Extension             | Details
 --------------------- | -------
-**.PDF**              | Portable Document Format
-**.JPG**              | JPEG, the most popular format for smartphone photos
-**.PNG**              | Portable Network Graphics, 24-bit with transparency
-**.TIFF** or **.TIF** | Tag Image File Format, commonly used for high quality scanning
-**.GIF**              | Graphics Interchange Format, limited to 256 colors
-**.BMP**              | Bitmap image file
-**.DJVU**             | DjVu, primarily designed for scanned documents, containing a combination of text, line drawings, indexed color images, and photographs
+**.JPG** or **.JPEG** | JPEG, the most popular format for smartphone photos.
+**.PNG**              | Portable Network Graphics. Supports 24-bit images with transparency.
+**.TIFF** or **.TIF** | Tag Image File Format, commonly used for high quality scanning. Multi-page TIFF images are fully supported.
+**.BMP**              | Bitmap image file.
+**.ZIP**              | All JPEG, PNG, TIFF and BMP images inside the archive.
 
-{{% alert color="primary" %}}
-- You can recognize the above-mentioned file formats from ZIP archives.
-- Multi-page PDF documents, TIFF and DjVu images are fully supported.
+{{% alert color="caution" %}}
+Aspose.OCR for JavaScript via C++ engine can only read images that are placed directly in the root of the ZIP archive. Nested archives and sub-folders inside the archive are not processed.
 {{% /alert %}}
 
 

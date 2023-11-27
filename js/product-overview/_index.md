@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2023-05-25"
+date: "2023-11-24"
 author: "Vladimir Lapin"
 type: docs
 url: /javascript-cpp/product-overview/
@@ -15,7 +15,7 @@ keywords:
 - format
 ---
 
-Optical character recognition (OCR) technology saves time, money and other resources by automatically digitizing text data from images. It uses advanced machine learning and neural networks to recognize text in a scan, photo or other images instead of manually retyping printed or handwritten documents.
+Optical character recognition (OCR) technology saves time, money and other resources by automatically digitizing text data from images. It uses advanced machine learning and neural networks to recognize text in a scan, photo or other images instead of manually retyping.
 
 Aspose.OCR for JavaScript via C++ can help you get the best results with the least cost and effort, directly from your web browser. With just a few lines of code, you can create full-featured web applications that convert images to text without having to worry about complicated technical details.
 
@@ -23,7 +23,7 @@ Aspose.OCR for JavaScript via C++ can help you get the best results with the lea
 
 - Optical character recognition engine with superior recognition speed and accuracy designed and trained by Aspose engineering team.
 - Supports 28 [languages](/ocr/javascript-cpp/recognition-languages/) based on Latin, Cyrillic and Asian scrips.
-- Detects and recognizes all popular typefaces and font styles, including handwritten text.
+- Detects and recognizes all popular typefaces and font styles.
 - Reads rotated, noisy and distorted images with the help of automatic processing filters.
 - Supports all [image formats](/ocr/javascript-cpp/supported-file-formats/) you can get from a scanner or camera.
 - Bulk recognition of multiple images.
