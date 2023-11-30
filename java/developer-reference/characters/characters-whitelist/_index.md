@@ -42,9 +42,3 @@ images.add("image.png");
 ArrayList<RecognitionResult> results = api.Recognize(input, recognitionSettings);
 System.out.println(results[0].recognitionText);
 ```
-
-{{% alert color="caution" %}}
-**Upgrading from previous versions**
-
-Starting with Aspose.OCR for Java 23.3.0, this recognition setting replaces the `alphabet` parameter of `AsposeOcr` class constructor.
-{{% /alert %}}

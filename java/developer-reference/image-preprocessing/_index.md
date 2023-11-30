@@ -188,12 +188,6 @@ images.add("image2.jpg");
 ImageProcessing.Save(images, "C:\\images");
 ```
 
-{{% alert color="caution" %}}
-**Upgrading from previous versions**
-
-Starting with Aspose.OCR for Java 23.3.0, the above-mentioned methods replace the deprecated `PreprocessImage` method of `AsposeOcr` class.
-{{% /alert %}}
-
 <script>
 window.addEventListener("load", function(){
 	$("#filters-chain input").change(applyFilter);

@@ -36,12 +36,6 @@ Method | Parameter | Default state | Description
 `setUpscaleSmallFont` | <ul><li>`true` - enable</li><li>`false` - disable</li></ul> | Disabled | Improve small font recognition and detection of dense lines.
 `setAutomaticColorInversion` | boolean | `true` | Set the method parameter to `true` automatically detect white text on a dark/black background and use a special OCR algorithm to improve image recognition accuracy. Call this method with the parameter set to “false” to explicitly disable inverted text detection to save resources.<br />This setting is only applicable when using one of the following [document area detection modes](/ocr/java/areas-detection/):<ul><li>[`DetectAreasMode.PHOTO`](/ocr/java/areas-detection/photo/)</li><li>[`DetectAreasMode.COMBINE`](/ocr/java/areas-detection/combine/)</li><li>[`DetectAreasMode.TABLE`](/ocr/java/areas-detection/table/)</li><li>[`DetectAreasMode.CURVED_TEXT`](/ocr/java/areas-detection/curved_text/)</li></ul>
 
-{{% alert color="caution" %}}
-**Upgrading from previous versions**
-
-Starting with Aspose.OCR for Java 23.3.0, these recognition settings are used as a universal replacement for image recognition settings (`RecognitionSettings`) and multi-page document recognition settings (`DocumentRecognitionSettings`).
-{{% /alert %}}
-
 ## Applicable to
 
 - [Extracting](/ocr/java/recognition/) text from images, scanned PDFs, DjVu files and other content provided as [`OcrInput` object](/ocr/java/ocrinput/).

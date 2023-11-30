@@ -26,12 +26,6 @@ This method takes [`OcrInput` object](/ocr/java/ocrinput/) and optional [recogni
 
 Recognition results are returned as a list of [`RecognitionResult`](https://reference.aspose.com/ocr/java/com.aspose.ocr/recognitionresult/) objects, that allow you to perform advanced manipulations with recognition results: [automatically correct spelling](/ocr/java/spelling/), [get image regions](/ocr/java/image-regions-extract/) and [save](/ocr/java/save/) results in various formats.
 
-{{% alert color="caution" %}}
-**Upgrading from previous versions**
-
-Starting with Aspose.OCR for Java 23.3.0, this method replaces `RecognizePage`, `RecognizePdf`, `RecognizeTiff`, `RecognizePageFromUri`, `RecognizeImageFromUri`, and `RecognizeMultiplePages` recognition methods.
-{{% /alert %}}
-
 ## Example
 
 The following code example shows how to extract text from multiple images:
