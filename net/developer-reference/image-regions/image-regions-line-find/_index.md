@@ -1,6 +1,6 @@
 ---
 weight: 20
-date: "2023-04-07"
+date: "2023-11-30"
 author: "Vladimir Lapin"
 type: docs
 url: /net/image-regions-line-find/
@@ -40,12 +40,6 @@ Property | Type | Description
 `ImageIndex` | `int` | Sequence number of the image on the page. When working with single-page images, this value is always 0.
 `Page` | `int` | Page number. When working with single-page images, this value is always 0.
 `Source` | `string` | The full path or URL of the source file. If the file is provided as a `MemoryStream` object, an array of pixels, or a Base64 string, this value will be empty.
-
-{{% alert color="caution" %}}
-**Upgrading from previous versions**
-
-Starting with Aspose.OCR for .NET 23.3.1, this method replaces `GetRectangles` method.
-{{% /alert %}}
 
 ## Example
 

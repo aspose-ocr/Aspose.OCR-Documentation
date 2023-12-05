@@ -1,6 +1,6 @@
 ---
 weight: 30
-date: "2023-07-11"
+date: "2023-11-30"
 author: "Vladimir Lapin"
 type: docs
 url: /net/image-processing/
@@ -184,12 +184,6 @@ input.Add("source.pdf");
 // Save processed images from the provided PDF to the folder
 Aspose.OCR.ImageProcessing.Save(input, @"C:\images");
 ```
-
-{{% alert color="caution" %}}
-**Upgrading from previous versions**
-
-Starting with Aspose.OCR for .NET 23.3.1, the above-mentioned methods replace the deprecated `PreprocessImage` method of `Aspose.OCR.AsposeOcr` class.
-{{% /alert %}}
 
 <script>
 window.addEventListener("load", function(){

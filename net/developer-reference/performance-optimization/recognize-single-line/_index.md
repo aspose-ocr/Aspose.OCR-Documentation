@@ -1,6 +1,6 @@
 ---
 weight: 20
-date: "2023-04-08"
+date: "2023-11-30"
 author: "Vladimir Lapin"
 type: docs
 url: /net/recognize-single-line/
@@ -18,12 +18,6 @@ If an image contains a single line of text, it can be recognized in the fastest 
 This method takes [`OcrInput` object](/ocr/net/ocrinput/) and optional [recognition settings](/ocr/net/recognition-settings-common/).
 
 Recognition results are returned as a list of [`Aspose.OCR.RecognitionResult`](https://reference.aspose.com/ocr/net/aspose.ocr/recognitionresult/) objects, that allow you to perform advanced manipulations with recognition results: [automatically correct spelling](/ocr/net/spelling/), [get image regions](/ocr/net/image-regions-extract/) and [save](/ocr/net/save/) results in various formats.
-
-{{% alert color="caution" %}}
-**Upgrading from previous versions**
-
-Starting with Aspose.OCR for .NET 23.3.1, this method replaces `Aspose.OCR.AsposeOcr.RecognizeLine` recognition method.
-{{% /alert %}}
 
 ## Example
 

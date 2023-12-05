@@ -1,6 +1,6 @@
 ---
 weight: 20
-date: "2023-04-07"
+date: "2023-11-30"
 author: "Vladimir Lapin"
 type: docs
 url: /net/characters-whitelist/
@@ -38,9 +38,3 @@ foreach(Aspose.OCR.RecognitionResult result in results)
 	Console.WriteLine(result.RecognitionText);
 }
 ```
-
-{{% alert color="caution" %}}
-**Upgrading from previous versions**
-
-Starting with Aspose.OCR for .NET 23.3.1, this recognition setting replaces the `alphabet` parameter of `Aspose.OCR.AsposeOcr` class constructor as well as `AllowedCharacters` recognition setting.
-{{% /alert %}}

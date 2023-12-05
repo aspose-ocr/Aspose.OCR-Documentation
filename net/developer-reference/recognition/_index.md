@@ -1,6 +1,6 @@
 ---
 weight: 70
-date: "2023-04-07"
+date: "2023-11-30"
 author: "Vladimir Lapin"
 type: docs
 url: /net/recognition/
@@ -28,12 +28,6 @@ Reading text from any content in Aspose.OCR for .NET is as easy as calling a uni
 This method takes [`OcrInput` object](/ocr/net/ocrinput/) and optional [recognition settings](/ocr/net/recognition-settings-common/).
 
 Recognition results are returned as a list of [`Aspose.OCR.RecognitionResult`](https://reference.aspose.com/ocr/net/aspose.ocr/recognitionresult/) objects, that allow you to perform advanced manipulations with recognition results: [automatically correct spelling](/ocr/net/spelling/), [get image regions](/ocr/net/image-regions-extract/) and [save](/ocr/net/save/) results in various formats.
-
-{{% alert color="caution" %}}
-**Upgrading from previous versions**
-
-Starting with Aspose.OCR for .NET 23.3.1, this method replaces `RecognizeImage`, `RecognizePdf`, `RecognizeTiff`, `RecognizeDjvu`, `RecognizeImageFromUri`, `RecognizeMultipleImages`, and `RecognizeImageFromBase64` recognition methods.
-{{% /alert %}}
 
 ## Example
 
