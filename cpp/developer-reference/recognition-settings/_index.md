@@ -14,7 +14,7 @@ keywords:
 - parameters
 ---
 
-Aspose.OCR for .NET provides good recognition accuracy and performance by default. However, there will inevitably be cases where the default settings cannot provide reliable recognition results.
+Aspose.OCR for C++ provides good recognition accuracy and performance by default. However, there will inevitably be cases where the default settings cannot provide reliable recognition results.
 
 To configure Aspose.OCR recognition settings, pass an optional [`RecognitionSettings`](https://reference.aspose.com/ocr/cpp/struct/recognition_settings/) structure to the recognition function.
 

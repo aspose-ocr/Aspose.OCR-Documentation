@@ -24,12 +24,11 @@ Aspose.OCR for JavaScript via C++ can help you get the best results with the lea
 - Optical character recognition engine with superior recognition speed and accuracy designed and trained by Aspose engineering team.
 - Supports 28 [languages](/ocr/javascript-cpp/recognition-languages/) based on Latin, Cyrillic and Asian scrips.
 - Detects and recognizes all popular typefaces and font styles.
-- Reads rotated, noisy and distorted images with the help of automatic processing filters.
+- Accurately reads rotated, noisy and distorted images with the help of automatic processing filters.
 - Supports all [image formats](/ocr/javascript-cpp/supported-file-formats/) you can get from a scanner or camera.
 - Bulk recognition of multiple images.
-- Recognizes the whole image or selected areas only; identifies words, lines or paragraphs.
-- Recognition results are returned in the most popular document and data exchange formats.
-- Automatically corrects misspelled words in recognition results to further improve accuracy.
+- Recognizes the whole image or selected areas only.
+- Recognition results are returned in the most popular data exchange formats.
 
 ## Capabilities
 

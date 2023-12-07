@@ -26,4 +26,4 @@ Get started with Aspose.OCR for JavaScript via C++ in a few steps:
 - [Licensing](/ocr/javascript-cpp/licensing/)  
   Learn how to obtain and apply the Aspose.OCR for JavaScript via C++ license.
 - [Hello, world!](/ocr/javascript-cpp/hello-world/)  
-  build a bare minimum console application for extracting text from an image with with Aspose.OCR for JavaScript via C++.
+  Build a simple web page that extracts text from an image with with Aspose.OCR for JavaScript via C++.

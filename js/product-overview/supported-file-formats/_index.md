@@ -20,18 +20,20 @@ keywords:
 
 Aspose.OCR for JavaScript via C++ can recognize any file you get from a scanner or camera:
 
-Extension             | Details
+File format             | Details
 --------------------- | -------
-**.JPG** or **.JPEG** | JPEG, the most popular format for smartphone photos.
-**.PNG**              | Portable Network Graphics. Supports 24-bit images with transparency.
-**.TIFF** or **.TIF** | Tag Image File Format, commonly used for high quality scanning. Multi-page TIFF images are fully supported.
-**.BMP**              | Bitmap image file.
-**.ZIP**              | All JPEG, PNG, TIFF and BMP images inside the archive.
+**JPEG** (_.JPG_ or _.JPEG_) | The most popular format for smartphone photos.
+**PNG** (_.PNG_)             | Portable Network Graphics. Supports 24-bit images with transparency.
+**TIFF** (_.TIF_ or _.TIFF_) | Tag Image File Format, commonly used for high quality scanning. Multi-page TIFF images are fully supported.
+**Bitmap** (_.BMP_)          | Bitmap image file.
+**Archive** (_.ZIP_)         | All JPEG, PNG, TIFF and BMP images inside the archive.<sup>(1)</sup>
+**Web link**                 | A public URL to JPEG, PNG, TIFF and BMP image.<sup>(2)</sup>
 
 {{% alert color="caution" %}}
-Aspose.OCR for JavaScript via C++ engine can only read images that are placed directly in the root of the ZIP archive. Nested archives and sub-folders inside the archive are not processed.
+1. Aspose.OCR for JavaScript via C++ engine can only read images that are placed directly in the root of the ZIP archive. Nested archives and sub-folders inside the archive are not processed.
+2. The URL must point directly to the image. Aspose.OCR for JavaScript via C++ cannot extract images from HTML pages.  
+   The library does not support authentication and can only work with public URLs.
 {{% /alert %}}
-
 
 ## Recognition results
 
@@ -39,12 +41,6 @@ Recognition results are returned in the most popular document and data exchange 
 
 Format    | Details
 --------- | -------
-**.TXT**  | Plain text
-**.HTML** | Web page
-**.RTF**  | A universal format for exchanging rich text documents between different word processing programs
-**.DOCX** | Microsoft Word document
-**.XLSX** | Microsoft Excel spreadsheet
-**.PDF**  | Portable Document Format
-**.EPUB** | Popular e-book file format
+**TEXT**  | Plain text
 **JSON**  | A popular open-standard format, widely used in software development and data exchange
 **XML**   | Extensible Markup Language, a universal format for most systems

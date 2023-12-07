@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2023-08-26"
+date: "2023-12-05"
 author: "Vladimir Lapin"
 type: docs
 url: /python-net/system-requirements/
@@ -42,6 +42,8 @@ Aspose.OCR for Python via .NET works under Python version **3.6** or later. The 
 ## macOS
 
 macOS Mojave version 10.14 or later, x64
+
+MacOS ARM (Apple Silicon) platform is fully supported.
 
 ## Linux
 

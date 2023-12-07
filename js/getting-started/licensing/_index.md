@@ -35,7 +35,7 @@ To request a temporary license, visit ["Get a Temporary License"](https://purcha
 
 ## Purchasing a license
 
-Aspose.OCR for JavaScript via C++ is licensed either by the number of developers and locations (sites) where the products will be used (_Developer_ and _Site_ licenses) or by pay-per-use (_Metered_ licenses).
+Aspose.OCR for JavaScript via C++ is licensed by the number of developers and locations (sites) where the products will be used (_Developer_ and _Site_ licenses).
 
 Read [License Types](https://purchase.aspose.com/policies/license-types) for details and [purchase a license](https://purchase.aspose.com/pricing/ocr/cpp) that best suits your needs.
 
@@ -47,31 +47,79 @@ After purchasing a license or obtaining a temporary license, you will receive a 
 Do not modify the contents of the license file. Even an extra line break or space will invalidate the license.
 {{% /alert %}} 
 
-The license must be applied once **before recognition starts**. You can put the file into a folder or load it in a real time from a file data:
+The license must be applied only once, **before recognition starts**. You can load the license from a file, Base64 encoded string, or request a user to provide it.
 
+Method | Usage
+------ | -----
+`Module.AsposeOCRSetLicenseFromData()` | Load a license from an array of bytes (`ArrayBuffer` object).
+`Module.AsposeOCRGetState()` | Checks the current licensing status:<ul><li>`true` - licensed</li><li>`false` - unlicensed</li></ul>
+
+### Examples
+
+{{< tabs tabID="1" tabTotal="3" tabName1="Load license from file" tabName2="Load license from Base64 code" tabName3="Get license from user" >}}
+{{< tab tabNum="1" >}}
 ```javascript
 var Module = {
 	onRuntimeInitialized: function()
 	{
-		// get the license from input field
-		const licenseInput = document.getElementById('license-selector');
-		licenseInput.addEventListener('change', handleLicenseUpload);
+		// Place the license file in the same directory as a web page
+		fetch("./Aspose.OCR.lic").then(bytes => bytes.arrayBuffer()).then(licenseData => {
+			// Load license
+			Module.AsposeOCRSetLicenseFromData(licenseData);
+			// Check license status
+			if(Module.AsposeOCRGetState()) console.log("Licensed");
+			else console.log("Unlicensed");
+		});
+	}
+};
+```
+{{< /tab >}}
+{{< tab tabNum="2" >}}
+```javascript
+var Module = {
+	onRuntimeInitialized: function()
+	{
+		// Base64 encoded license file
+		const license = "data:application/octet-stream;base64,PD94bWwgdm...TGljZW5zZT4=";
+		fetch(license).then(bytes => bytes.arrayBuffer()).then(licenseData => {
+			// Load license
+			Module.AsposeOCRSetLicenseFromData(licenseData);
+			// Check license status
+			if(Module.AsposeOCRGetState()) console.log("Licensed");
+			else console.log("Unlicensed");
+		});
+	}
+};
+```
+{{< /tab >}}
+{{< tab tabNum="3" >}}
+```javascript
+var Module = {
+	onRuntimeInitialized: function()
+	{
+		// Get the license from input field
+		const licenseInput = document.getElementById("license-file");
+		licenseInput.addEventListener("change", applyLicense);
 
-		function handleLicenseUpload(event)
+		function applyLicense(event)
 		{
-			// get the file
+			// Read the license file contents
 			const files = event.target.files;
-			const licenseFile = files[i];
-			// initialize file reader
+			const licenseFile = files[0];
 			const reader = new FileReader();
+			reader.readAsArrayBuffer(licenseFile);
+			// Apply the license
 			reader.onload = function(e) {
 				const fileData = new Uint8Array(e.target.result);
-				// load license
+				// Load license
 				Module.AsposeOCRSetLicenseFromData(fileData);
+				// Check license status
+				if(Module.AsposeOCRGetState()) console.log("Licensed");
+				else console.log("Unlicensed");
 			};
-			// read license file
-			reader.readAsArrayBuffer(licenseFile);
 		}
 	}
 };
 ```
+{{< /tab >}}
+{{< /tabs >}}

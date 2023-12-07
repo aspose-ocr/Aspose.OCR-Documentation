@@ -15,7 +15,7 @@ keywords:
 - code
 ---
 
-In this article, you will learn how to build a bare minimum console application for extracting text from an image with with Aspose.OCR for JavaScript via C++.
+In this article, you will learn how to build a basic web page that requests an image file from an user and extracts the text from it with with Aspose.OCR for JavaScript via C++.
 
 {{% alert color="primary" %}} 
 We assume that you already have a basic knowledge of **HTML** and **JavaScript**.
@@ -31,13 +31,14 @@ We assume that you already have a basic knowledge of **HTML** and **JavaScript**
 
 ## Preparing
 
-1. Create a folder somewhere on your system where the project files will be kept. For example, `C:\Aspose-JS-Example\`.
-2. [Download](https://releases.aspose.com/ocr/javascript-cpp/) Aspose.OCR for JavaScript via C++ and extract it.
-3. Copy the contents of `lib` folder of the downloaded Aspose.OCR for JavaScript via C++ package to the root of the project directory:
+1. Create a directory somewhere on your system where the project files will be kept. For example, `C:\Aspose-JS-Example\`.  
+   This directory will later be referred as _project directory_.
+2. [Download](https://releases.aspose.com/ocr/javascript-cpp/) Aspose.OCR for JavaScript via C++ and extract it somewhere on your system.
+3. Copy the files from `lib` directory of the extracted Aspose.OCR for JavaScript via C++ package to the the project directory:
 
-    - `asposeocr.js` - main JavaScript file;
-    - `asposeocr.wasm` - WebAssembly module;
-    - `asposeocr.data` - recognition models.
+    - `asposeocr.js`
+    - `asposeocr.wasm`
+    - `asposeocr.data`
 
 4. Download a sample image:
    
@@ -45,7 +46,7 @@ We assume that you already have a basic knowledge of **HTML** and **JavaScript**
 
 ## Coding
 
-1. Create a simple `index.html` file in the root of the project directory.
+1. Create a simple `index.html` file in the the project directory.
    ```html
    <!doctype html>
    <html>
@@ -70,7 +71,7 @@ We assume that you already have a basic knowledge of **HTML** and **JavaScript**
    <script src="asposeocr.js"></script>
    ```
 
-4. Add a custom script for image processing:
+4. Add a custom JavaScript for image processing:
    ```html
    <script>
    var Module = {
@@ -103,7 +104,7 @@ We assume that you already have a basic knowledge of **HTML** and **JavaScript**
                input.url = filename;
                inputs.push_back(input);
                var result = Module.AsposeOCRRecognize(inputs, settings);
-               // Get recognition results
+               // Get recognition results as text
                var result_str = Module.AsposeOCRSerializeResult(result, Module.ExportFormat.text);
                // Show recognition results
                log("Recognition result:");
@@ -123,7 +124,7 @@ We assume that you already have a basic knowledge of **HTML** and **JavaScript**
    </script>
    ```
 
-## Full code
+### Full listing
 
 ```html
 <!doctype html>
@@ -164,6 +165,7 @@ We assume that you already have a basic knowledge of **HTML** and **JavaScript**
                   input.url = filename;
                   inputs.push_back(input);
                   var result = Module.AsposeOCRRecognize(inputs, settings);
+                  // Get recognition results as text
                   var result_str = Module.AsposeOCRSerializeResult(result, Module.ExportFormat.text);
                   log("Recognition result:");
                   log(result_str);
@@ -187,15 +189,15 @@ We assume that you already have a basic knowledge of **HTML** and **JavaScript**
 
 ## Running
 
-1. Open the command prompt and navigate to the project folder.
-2. Run the web server using Python:
+1. Open the command prompt and navigate to the project directory.
+2. Run the [HTTP server](https://docs.python.org/3/library/http.server.html) using Python:
    `python -m http.server 8080`
 
-   If the port 8080 is already occupied, provide a different one.
+   If the port `8080` is already occupied, provide a different one.
 3. Open `http://localhost:8080/` with a web browser.
 4. Select an image and wait for recognition to complete.
 
-You will see extracted text in the `outputConsole` _DIV_ element:
+You will see extracted text inside the `outputConsole` _DIV_ element:
 
 ```
 Select an image to continue...
@@ -217,4 +219,4 @@ Ignore the message and wait for recognition to complete.
 
 ## What's next
 
-Congratulations! You have performed OCR on an image and extracted the machine-readable text from it.
+Congratulations! You have performed OCR on an image and extracted the machine-readable text from it directly from a web page. Read the [Developer reference](/ocr/javascript-cpp/developer-reference/) for details on developing advanced applications with Aspose.OCR for JavaScript C++.

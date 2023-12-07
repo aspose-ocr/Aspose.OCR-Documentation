@@ -6,7 +6,7 @@ type: docs
 url: /cpp/installation/gpu/
 feedback: OCRCPP
 title: Installing GPU-accelearated package
-description: Adding GPU-accelerated package of Aspose.OCR for .NET to your project.
+description: Adding GPU-accelerated package of Aspose.OCR for C++ to your project.
 keywords:
 - install
 - update
