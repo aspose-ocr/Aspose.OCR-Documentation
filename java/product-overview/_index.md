@@ -16,7 +16,7 @@ keywords:
 - format
 ---
 
-Optical character recognition (OCR) technology is the key element of the digital transformation. It uses advanced artificial intelligence techniques to automatically recognize text in a photo or scanned image instead of manually retyping printed or handwritten documents.
+Optical character recognition (OCR) technology is the key element of the digital transformation. It uses advanced artificial intelligence techniques to automatically recognize text in a photo or scanned image instead of manually retyping documents.
 
 Aspose.OCR for Java can help you get the best results with the least cost and effort. With just a few lines of code, you can create full-featured on-premise and web-based applications that convert images to text without having to worry about complicated technical details.
 

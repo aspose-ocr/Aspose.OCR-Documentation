@@ -23,7 +23,7 @@ Set the recognition language.
 
 Setting | Value | Default value | Description
 ------- | ----- | ------------- | -----------
-`language_alphabet` | Object | `Module.Language.none` | Specify a [language](/ocr/javascript-cpp/languages/) for recognition. **It is highly recommended that you always provide this setting.**
+`language_alphabet` | Object | `Module.Language.NONE` | Specify a [language](/ocr/javascript-cpp/languages/) for recognition. **It is highly recommended that you always provide this setting.**
 `alphabet` | String | _All symbols_ | A [custom list of characters](/ocr/javascript-cpp/characters-whitelist/) to be recognized, provided as a case-sensitive string. Characters that do not match the provided list are ignored.
 `allowed_characters` | Object | `Module.CharactersAllowedType.ALL` | The [predefined whitelist](/ocr/javascript-cpp/characters-whitelist/) of characters Aspose.OCR engine will look for.
 `ignoredCharacters` | String | _none_ | A [blacklist](/ocr/javascript-cpp/characters-blacklist/) of characters that are ignored during recognition.
@@ -63,7 +63,7 @@ var content = new Module.WasmAsposeOCRInputs();
 content.push_back(source);
 // Recognize rotated photos of book pages in Ukrainian
 var settings = Module.WasmAsposeOCRRecognitionSettings();
-settings.language_alphabet = Module.Language.ukr;
+settings.language_alphabet = Module.Language.UKR;
 settings.skew = -90;
 settings.detect_areas_mode = Module.DetectAreasMode.CURVED_TEXT;
 // Recognize image

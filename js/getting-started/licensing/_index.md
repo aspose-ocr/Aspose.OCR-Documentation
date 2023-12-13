@@ -1,6 +1,6 @@
 ---
 weight: 30
-date: "2023-11-24"
+date: "2023-12-07"
 author: "Vladimir Lapin"
 type: docs
 url: /javascript-cpp/licensing/
@@ -18,18 +18,15 @@ Aspose.OCR for JavaScript via C++ is a commercially licensed product that can be
 
 ## Free trial
 
-You can start using Aspose.OCR for JavaScript via C++ right after the [installation](/ocr/javascript-cpp/installation/). In trial mode (without providing a license) you can recognize texts in any supported [languages](/ocr/javascript-cpp/recognition-languages/) and save recognition results in any of the supported [formats](/ocr/javascript-cpp/supported-file-formats/).
+You can start using Aspose.OCR for JavaScript via C++ right after the [installation](/ocr/javascript-cpp/installation/). In evaluation mode (without providing a license) you can recognize texts in any supported [languages](/ocr/javascript-cpp/recognition-languages/) and save recognition results in any of the supported [formats](/ocr/javascript-cpp/supported-file-formats/).
 
-However, the following restrictions apply:
-
-- If the number of characters in a recognized image exceeds 300, only the first **300** characters are recognized.
-- If the number of characters in a recognized image is less than 300, the first **60%** of characters are recognized.
+However, if you do not provide the license, only the first **300** characters from the image are recognized.
 
 Apply a license to remove the restriction.
 
 ## Getting a temporary license
 
-A temporary license removes a limitation of the trial version for **30 days**. Use it to start building a fully functional OCR application and make the final decision to [purchase](https://purchase.aspose.com/pricing/ocr/cpp) Aspose.OCR for JavaScript via C++ later.
+A temporary license removes a limitation of the trial version for **30 days**. Use it to start building a fully functional OCR application and make the final decision to [purchase](https://purchase.aspose.com/admin/pricing/ocr/javascript-cpp) Aspose.OCR for JavaScript via C++ later.
 
 To request a temporary license, visit ["Get a Temporary License"](https://purchase.aspose.com/temporary-license) page.
 
@@ -37,7 +34,7 @@ To request a temporary license, visit ["Get a Temporary License"](https://purcha
 
 Aspose.OCR for JavaScript via C++ is licensed by the number of developers and locations (sites) where the products will be used (_Developer_ and _Site_ licenses).
 
-Read [License Types](https://purchase.aspose.com/policies/license-types) for details and [purchase a license](https://purchase.aspose.com/pricing/ocr/cpp) that best suits your needs.
+Read [License Types](https://purchase.aspose.com/policies/license-types) for details and [purchase a license](https://purchase.aspose.com/admin/pricing/ocr/javascript-cpp) that best suits your needs.
 
 ## Applying a license
 

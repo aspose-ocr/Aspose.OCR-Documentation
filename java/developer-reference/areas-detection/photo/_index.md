@@ -21,7 +21,7 @@ This algorithm works best with sparse irregular text and low-quality photos. It 
 
 ![DetectAreasMode.PHOTO algorithm](taa.png)
 
-It is optimal for invoices, screenshots, driver's licenses, social security cards, government and work IDs, visas, math formulas, code snippets, and more. It can also detect small texts such as handwritten notes, signatures or stamps. In addition, it is well suited for reading smartphone photos and low-quality scans.
+It is optimal for invoices, screenshots, driver's licenses, social security cards, government and work IDs, visas, math formulas, code snippets, and more. It can also detect small texts such as notes, signatures or stamps. In addition, it is well suited for reading smartphone photos and low-quality scans.
 
 However, this algorithm may be less efficient when dealing with large amounts of structured textual data, such as articles and books, and does not support multi-column layout. Try [**DetectAreasMode.DOCUMENT**](/ocr/java/areas-detection/document/) instead.
 

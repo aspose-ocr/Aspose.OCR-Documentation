@@ -1,11 +1,11 @@
 ---
 weight: 10
-date: "2023-12-07"
+date: "2023-12-11"
 author: "Vladimir Lapin"
 type: docs
-url: /javascript-cpp/recognition-languages/
+url: /nodejs-cpp/recognition-languages/
 title: Recognition languages
-description: A list of languages and characters recognized by Aspose.OCR for JavaScript via C++.
+description: A list of languages and characters recognized by Aspose.OCR for Node.js via C++.
 keywords:
 - recognition
 - OCR
@@ -14,7 +14,7 @@ keywords:
 - symbols
 ---
 
-Aspose.OCR for JavaScript via C++ can recognize a large number of languages and all popular writing scripts, including texts with mixed languages.
+Aspose.OCR for Node.js via C++ can recognize a large number of languages and all popular writing scripts, including texts with mixed languages.
 
 ## Extended Latin alphabet
 
@@ -38,6 +38,10 @@ Aspose.OCR for JavaScript via C++ can recognize a large number of languages and 
 - Slovenian
 - Spanish
 - Swedish
+
+{{% alert color="info" %}}
+In addition to above-mentioned languages, the library can read the majority of Extended Latin scripts, for example Turkish or Latin.
+{{% /alert %}}
 
 ### Supported characters
 

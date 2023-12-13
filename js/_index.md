@@ -6,7 +6,7 @@ type: docs
 url: /javascript-cpp/
 is_root: true
 title: Aspose.OCR for JavaScript via C++
-description: Aspose.OCR for JavaScript via C++ is an easy-to-use API for extracting text from scans, photos and PDFs directly in the web browser or Electron applications.
+description: Aspose.OCR for JavaScript via C++ is an easy-to-use API for extracting text from scans and photos directly in the web browser or Electron applications.
 keywords:
 - JS
 - JavaScript
@@ -43,11 +43,11 @@ Get started with Aspose.OCR for JavaScript via C++ in a few simple steps:
 
 ## Developer’s reference
 
-[Dive deep](/ocr/cpp/developer-reference/) into Aspose OCR technology and web page development with Aspose.OCR for JavaScript via C++.
+[Dive deep](/ocr/javascript-cpp/developer-reference/) into Aspose OCR technology and web page development with Aspose.OCR for JavaScript via C++.
 
 ## Aspose.OCR online apps
 
-Explore free online apps build with Aspose.OCR tecjnology. Get ideas for your own products and look at full capabilities of the library without writing a single line of code.
+Explore free online apps build with Aspose.OCR technology. Get ideas for your own products and look at full capabilities of the library without writing a single line of code.
 
 - [Convert image to text online](https://products.aspose.app/ocr/scan-image)
 - [Extract text from a screenshot](https://products.aspose.app/ocr/screenshot-ocr)
@@ -55,7 +55,7 @@ Explore free online apps build with Aspose.OCR tecjnology. Get ideas for your ow
 
 ## Release Notes
 
-Read a summary of recent changes, enhancements and bug fixes in [Aspose.OCR for JavaScript via C++](https://releases.aspose.com/ocr/cpp/release-notes/).
+Read a summary of recent changes, enhancements and bug fixes in [Aspose.OCR for JavaScript via C++](https://releases.aspose.com/ocr/javascript-cpp/release-notes/).
 
 - [Latest release](https://releases.aspose.com/ocr/javascript-cpp/release-notes/latest/)
 - [2023 releases](https://releases.aspose.com/ocr/javascript-cpp/release-notes/2023/)

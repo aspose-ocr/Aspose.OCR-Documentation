@@ -5,7 +5,7 @@ author: "Vladimir Lapin"
 type: docs
 url: /javascript-cpp/hello-world/
 title: Hello, world!
-description: Get started with Aspose.OCR for C++ by creating and running a bare minimum example.
+description: Get started with Aspose.OCR for JavaScript via C++ by creating and running a bare minimum example.
 keywords:
 - hello world
 - evaluation

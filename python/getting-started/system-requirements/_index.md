@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2023-12-05"
+date: "2023-12-13"
 author: "Vladimir Lapin"
 type: docs
 url: /python-net/system-requirements/
@@ -21,6 +21,10 @@ keywords:
 ---
 
 Aspose.OCR for Python via .NET works under Python version **3.6** or later. The library is cross-platform - you can run your code unchanged on any of the following **64-bit** operating systems:
+
+{{% alert color="info" %}} 
+Despite of _"via .NET"_ in the name, the library does not require .NET Runtime to be installed on the target host. All required dependencies are already built into the [distributive package](/ocr/python-net/installation/).
+{{% /alert %}} 
 
 ## Microsoft Windows
 

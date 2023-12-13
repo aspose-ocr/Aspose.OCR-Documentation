@@ -23,7 +23,7 @@ input.url = filename;
 inputs.push_back(input);
 // Recognize
 var settings = Module.WasmAsposeOCRRecognitionSettings();
-settings.language_alphabet = Module.Language.deu;
+settings.language_alphabet = Module.Language.DEU;
 var result = Module.AsposeOCRRecognize(inputs, settings);
 // Get recognition results as text
 var result_str = Module.AsposeOCRSerializeResult(result, Module.ExportFormat.text);

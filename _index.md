@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2023-12-06"
+date: "2023-12-11"
 author: "Vladimir Lapin"
 type: docs
 url: /
@@ -133,6 +133,29 @@ Find more information, download Aspose.OCR for JavaScript via C++ package and ge
 - [Aspose.OCR for JavaScript via C++ online documentation](/ocr/javascript-cpp/)
 - [Aspose.OCR for JavaScript via C++ API Reference](https://reference.aspose.com/ocr/javascript-cpp)
 - [What's new in Aspose.OCR for JavaScript via C++](https://releases.aspose.com/ocr/javascript-cpp/release-notes/)
+- [Blog](https://blog.aspose.com/category/ocr/)
+- [Free Support Forum](https://forum.aspose.com/c/ocr/16)
+- [Paid Support Helpdesk](https://helpdesk.aspose.com/)
+
+## Aspose.OCR for Node.js via C++
+
+{{% alert color="primary" %}}
+
+[![Aspose.OCR for Node.js via C++](aspose-ocr-nodejs-cpp.png)](/ocr/nodejs-cpp/)
+
+**Aspose.OCR for Node.js via C++** allows you to extract text from scanned pages, photos, screenshots, and other images on any platform where Node.js is installed. It can be used to build on-premise applications, web services, serverless solutions, AWS Lambda, Azure Functions, and other products.
+
+Our powerful and feature rich Optical Character Recognition (OCR) API supports 28 languages based on Latin, Cyrillic and Asian scripts, including Chinese and Hindi, and can recognize files in the most popular formats. Read the documentation and [start developing](/ocr/nodejs-cpp/hello-world/) web pages with built-in OCR functionality.
+
+{{% /alert %}}
+
+### Resources
+
+Find more information, download Aspose.OCR for Node.js via C++ package and get professional help:
+
+- [Aspose.OCR for Node.js via C++ online documentation](/ocr/nodejs-cpp/)
+- [Aspose.OCR for Node.js via C++ API Reference](https://reference.aspose.com/ocr/nodejs-cpp)
+- [What's new in Aspose.OCR for Node.js via C++](https://releases.aspose.com/ocr/nodejs-cpp/release-notes/)
 - [Blog](https://blog.aspose.com/category/ocr/)
 - [Free Support Forum](https://forum.aspose.com/c/ocr/16)
 - [Paid Support Helpdesk](https://helpdesk.aspose.com/)
