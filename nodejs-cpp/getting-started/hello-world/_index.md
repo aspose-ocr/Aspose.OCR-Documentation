@@ -106,7 +106,7 @@ We assume that you are already familiar with core concepts of **Node.js** develo
 ### Full listing (_index.js_)
 
 ```js
-const Module = require("./asposeocr");
+const Module = require("aspose-ocr/lib/asposeocr");
 const fs = require("fs");
 
 Module.onRuntimeInitialized = async _ => {
