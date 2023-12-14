@@ -16,3 +16,4 @@ Aspose.OCR for Python via Java requires the following third-party components to 
 
 - [**GNU Compiler Collection (GCC)**](https://gcc.gnu.org/) runtime, version 6 or later.
 - **libpython** shared library.
+- [JPype1](https://pypi.org/project/JPype1/) version 1.4.1
