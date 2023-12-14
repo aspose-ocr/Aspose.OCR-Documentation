@@ -1,6 +1,6 @@
 ---
 weight: 40
-date: "2023-12-12"
+date: "2023-12-14"
 author: "Vladimir Lapin"
 type: docs
 url: /nodejs-cpp/hello-world/
@@ -32,14 +32,10 @@ We assume that you are already familiar with core concepts of **Node.js** develo
 
 1. Create a directory somewhere on your system where the project files will be kept. For example, `C:\Aspose-OCR-Example\`.  
    This directory will later be referred as _project directory_.
-2. [Download](https://releases.aspose.com/ocr/nodejs-cpp/) Aspose.OCR for Node.js via C++ and extract it somewhere on your system.
-3. Copy the files from `lib` directory of the extracted Aspose.OCR for Node.js via C++ package to the the project directory:
-
-    - `asposeocr.js`
-    - `asposeocr.wasm`
-    - `asposeocr.data`
-
-4. Download a sample image to the project directory under the name `source.png`:
+2. Create **node_modules** directory in the project directory.
+3. [Download](https://releases.aspose.com/ocr/nodejs-cpp/) Aspose.OCR for Node.js via C++ distributive.
+4. Unpack the [downloaded package](/ocr/nodejs-cpp/installation/) to **aspose-ocr** directory inside **node_modules** directory.
+5. Download a sample image to the project directory under the name `source.png`:
    
    <img src="source.png" alt="Source image" style="box-shadow: 1px 1px 4px 2px rgba(0,0,0,0.2);margin-top:8px;" />
 
@@ -48,7 +44,7 @@ We assume that you are already familiar with core concepts of **Node.js** develo
 1. Create an `index.js` file in the the project directory which will be used as a main (startup) project script.
 2. Import Aspose.OCR and [File system](https://nodejs.org/api/fs.html) modules:
    ```js
-   const Module = require("./asposeocr");
+   const Module = require("aspose-ocr/lib/asposeocr");
    const fs = require("fs");
    ```
 
