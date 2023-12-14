@@ -36,7 +36,7 @@ To request a temporary license, visit ["Get a Temporary License"](https://purcha
 
 ## Purchasing a license
 
-Aspose.OCR for Python via .NET is licensed either by the number of developers and locations (sites) where the products will be used (_Developer_ and _Site_ licenses) or by pay-per-use (_Metered_ licenses).
+Aspose.OCR for Python via .NET is licensed either by the number of developers and locations (sites) where the products will be used (_Developer_ and _Site_ licenses).
 
 Read [License Types](https://purchase.aspose.com/policies/license-types) for details and [purchase a license](https://purchase.aspose.com/admin/pricing/ocr/family) that best suits your needs.
 
@@ -63,4 +63,4 @@ Alternatively, you can store the license file in any directory on your computer 
 
 ## Licensing multiple Aspose products
 
-Even if you have a single license for all Aspose products (such as Aspose.Total), you still need to apply the license separately to each Aspose library you are using in your application.
+Even if you have a single license for all Aspose products, you still need to apply the license separately to each Aspose module you are using in your application.

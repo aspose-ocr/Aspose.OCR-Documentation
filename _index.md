@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2023-12-11"
+date: "2023-12-14"
 author: "Vladimir Lapin"
 type: docs
 url: /
@@ -156,6 +156,29 @@ Find more information, download Aspose.OCR for Node.js via C++ package and get p
 - [Aspose.OCR for Node.js via C++ online documentation](/ocr/nodejs-cpp/)
 - [Aspose.OCR for Node.js via C++ API Reference](https://reference.aspose.com/ocr/nodejs-cpp)
 - [What's new in Aspose.OCR for Node.js via C++](https://releases.aspose.com/ocr/nodejs-cpp/release-notes/)
+- [Blog](https://blog.aspose.com/category/ocr/)
+- [Free Support Forum](https://forum.aspose.com/c/ocr/16)
+- [Paid Support Helpdesk](https://helpdesk.aspose.com/)
+
+## Aspose.OCR for Python via Java
+
+{{% alert color="primary" %}}
+
+[![Aspose.OCR for Python via Java](aspose-ocr-python-java.png)](/ocr/python-java/)
+
+Extract text from images, scanned PDF documents, screenshots, photographs, or web links across various operating systems such as Microsoft Windows, Linux, Unix, and macOS. Seamlessly build Python applications on one platform and execute them on another, without changing the existing code.
+
+Aspose.OCR for Python via Java supports 28 languages based on Latin, Cyrillic, and Asian scripts, including Hindi and Chinese. The recognition results can be analyzed or stored on disk. Explore the documentation and develop OCR applications in Python today.
+
+{{% /alert %}}
+
+### Resources
+
+Find more information, download Aspose.OCR for Python via Java Wheel packages and get professional help:
+
+- [Aspose.OCR for Python via Java online documentation](/ocr/python-java/)
+- [Download Aspose.OCR for Python via Java](https://releases.aspose.com/ocr/python-java/)
+- [Aspose.OCR for Python via Java Release Notes](https://releases.aspose.com/ocr/python-java/release-notes/)
 - [Blog](https://blog.aspose.com/category/ocr/)
 - [Free Support Forum](https://forum.aspose.com/c/ocr/16)
 - [Paid Support Helpdesk](https://helpdesk.aspose.com/)
