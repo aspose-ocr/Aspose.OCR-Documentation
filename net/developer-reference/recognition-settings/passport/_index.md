@@ -1,6 +1,6 @@
 ---
 weight: 30
-date: "2023-11-30"
+date: "2023-12-21"
 author: "Vladimir Lapin"
 type: docs
 url: /net/recognition-settings-passport/
@@ -27,16 +27,16 @@ Setting | Type | Default value | Description
 `Language` | [`Aspose.OCR.Language`](https://reference.aspose.com/ocr/net/aspose.ocr/language/) | `Aspose.OCR.Language.None` | Specify a [language](/ocr/net/languages/) for recognition.
 `ThreadsCount` | integer | _auto_ | The number of [CPU threads](/ocr/net/multithreading/) used for recognition.
 `AutomaticColorInversion` | boolean | `true` | Improve recognition accuracy of white text on a dark/black background. If you are not optimizing every aspect of recognition (for example, for online applications or entry-level devices), leave this setting set to true.
-`Country` | `Aspose.OCR.Country` | `UNIVERSAL` | A country for retrieving specific passport properties, such as a number, name, and so on.
+`Country` | `Aspose.OCR.Country` | `UNIVERSAL` | [Extract](/ocr/net/recognition/passport/#extracting-passport-details) key passport details (such as a number, name, date of birth, and so on) for the specific country in addition to the entire passport text.<br />See **Supported countries** section below.
 
 ## Supported countries
 
-A list of countries for retrieving specific passport properties:
+A list of countries for retrieving specific details (such as a number, name, date of birth, and so on) from passport images:
 
 Value | Country
 ----- | -------
-`Aspose.OCR.Country.UNIVERSAL` | Do not retrieve passport properties (only recognize passport text).
-`Aspose.OCR.Country.MADAGASCAR` | Parse Madagascar passports.
+`Aspose.OCR.Country.UNIVERSAL` | Do not parse passport details (only recognize passport text).
+`Aspose.OCR.Country.MADAGASCAR` | Parse Malagasy passports.
 
 ## Applicable to
 

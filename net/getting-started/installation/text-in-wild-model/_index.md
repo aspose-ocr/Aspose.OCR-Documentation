@@ -23,8 +23,8 @@ Since the NuGet package has a size limitation of 250MB, this recognition model i
 {{% alert color="caution" %}} 
 **Important considerations:**
 
-- Text-in-wild recognition model cannot be used separately from the core Aspose.OCR package for .NET [NuGet package](/ocr/net/text-in-wild-model/#nuget-package).
-- [Downloadable](/ocr/net/text-in-wild-model/#downloadable) Aspose.OCR for .NET already includes the Text-in-wild recognition model. There is no need to install an additional package.
+- Text-in-wild recognition model cannot be used separately from the core [Aspose.OCR for .NET package](/ocr/net/installation/).
+- [Downloadable](/ocr/net/installation/#downloadable) Aspose.OCR for .NET already includes the Text-in-wild recognition model. There is no need to install an additional package.
 {{% /alert %}}
 
 The package can be added to your project directly from Microsoft Visual Studio or using PowerShell commands.

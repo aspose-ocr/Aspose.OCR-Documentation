@@ -1,6 +1,6 @@
 ---
 weight: 75
-date: "2023-10-26"
+date: "2023-12-21"
 author: "Vladimir Lapin"
 type: docs
 url: /cpp/detecting-image-defects/
@@ -70,7 +70,9 @@ keywords:
 
 Image defects can significantly impact the accuracy of OCR. They can be caused by the quality of the image acquisition process, environmental conditions, and the hardware used to capture the image. To improve recognition accuracy, it is essential to [preprocess and enhance](/ocr/cpp/image-preprocessing/) images to mitigate these defects whenever possible.
 
-Aspose.OCR for C++ can automatically find potentially problematic areas of image during [recognition](/ocr/cpp/recognition/). In order to enable this functionality, specify the type of image defects to be detected in `defect_type` member of [recognition settings](/ocr/cpp/settings/). The following types of defects can be found:
+Aspose.OCR for C++ can automatically find potentially problematic areas of image during [recognition](/ocr/cpp/recognition/). In order to enable this functionality, specify the type of image defects to be detected in `defect_type` member of [recognition settings](/ocr/cpp/settings/) or use a specialized `asposeocr_detect_defects()` function. The latter approach only returns the information about defects without recognizing the image.
+
+The following types of defects can be found:
 
 Defect | Enumeration | Description | Impact | How to mitigate
 ------ | ----------- | ----------- | ------ | ---------------
@@ -117,6 +119,8 @@ You can highlight problem areas when previewing an image and even OCR them using
 
 The following code example shows how to detect problematic areas of an image:
 
+{{< tabs tabID="1" tabTotal="2" tabName1="With recognition settings" tabName2="With asposeocr_detect_defects() function" >}}
+{{< tab tabNum="1" >}}
 ```cpp
 int main()
 {
@@ -156,3 +160,22 @@ void print(const AsposeOCRRecognitionResult& input)
 	}
 }
 ```
+{{< /tab >}}
+{{< tab tabNum="2" >}}
+```cpp
+string f = current_dir + "path/to/file";
+// Provide the image
+AsposeOCRInput input;
+input.url = f.c_str();
+std::vector<AsposeOCRInput> inputs{ input };
+// Detect low contrast areas and glares
+auto result = asposeocr_detect_defects(inputs.data(), inputs.size(), defect_type::ASPOSE_OCR_DARK_IMAGES | defect_type::ASPOSE_OCR_GLARE);
+size_t out_buffer_size = 0;
+auto serilization = asposeocr_serialize_result(result, out_buffer_size, export_format::json);
+// Show problematic areas
+std::cout << std::wstring(serialization) << std::endl;
+asposeocr_free_result(result);
+delete[] buffer;
+```
+{{< /tab >}}
+{{< /tabs >}}

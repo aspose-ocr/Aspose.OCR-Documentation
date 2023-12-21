@@ -1,6 +1,6 @@
 ---
 weight: 20
-date: "2023-05-18"
+date: "2023-12-21"
 author: "Vladimir Lapin"
 type: docs
 url: /net/recognition/passport/
@@ -17,6 +17,10 @@ keywords:
 - photo
 - passport
 ---
+
+{{% alert color="caution" %}} 
+To use this method, [install](/ocr/net/text-in-wild-model/) Text-in-wild recognition model in your project.
+{{% /alert %}}
 
 Automatic passport recognition and verification is a very common task in many areas: border control, banking, security, and so on. However, manually re-typing text is an error-prone and time-consuming process, and mistakes can lead to security breaches and other undesirable consequences.
 
@@ -42,5 +46,34 @@ List<Aspose.OCR.RecognitionResult> results = recognitionEngine.RecognizePassport
 foreach(Aspose.OCR.RecognitionResult result in results)
 {
 	Console.WriteLine(result.RecognitionText);
+}
+```
+
+## Extracting passport details
+
+Besides recognizing passport text, this method is capable of extracting essential information from a passport image, like date of birth, names, and more. The specific details extracted depend on the passport's origin, which is specified in the `Country` parameter of the [recognition settings](/ocr/net/recognition-settings-passport/).
+
+To retrieve the passport details, use the `GetKeywords()` method of the recognition results object. The information is returned as a [dictionary](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.dictionary-2) with key-value pairs that are specific to each country.
+
+### Example
+
+The following code snippet shows how to extract details from a Malagasy passport:
+
+```csharp
+Aspose.OCR.AsposeOcr recognitionEngine = new Aspose.OCR.AsposeOcr();
+// Add scanned passport to recognition batch
+OcrInput passports = new OcrInput(InputType.SingleImage);
+passports.Add("malagasy_passport_sample.png");
+// Explicitly specify that you are processing Malagasy passport
+var recognitionSettings = new PassportRecognitionSettings();
+recognitionSettings.Country = Aspose.OCR.Country.MADAGASCAR;
+// Recognize passport
+List<Aspose.OCR.RecognitionResult> results = recognitionEngine.RecognizePassport(passports, recognitionSettings);
+// Parse passport data and output essential details along with image regions they were found in
+var details = results[0].GetKeywords();
+foreach (var item in details)
+{
+	Console.WriteLine($"{item.Key}: {item.Value.TextInLine}");
+	Console.WriteLine($"Left: {item.Value.Line.X}; top: {item.Value.Line.Y}; size: {item.Value.Line.Width} x {item.Value.Line.Height}");
 }
 ```
