@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2023-04-18"
+date: "2024-01-11"
 author: "Vladimir Lapin"
 type: docs
 url: /python-net/recognition-languages/
@@ -71,6 +71,20 @@ Aspose.OCR for Python via .NET can recognize a large number of languages and all
 |   ß   |   ś   |   ŝ   |   ş   |   ș   |   š   |   þ   |   ţ   |   ť   |   ù   |
 |   ú   |   û   |   ü   |   ū   |   ŭ   |   ů   |   ű   |   ų   |   ư   |   ŵ   |
 |   ý   |   ŷ   |   ÿ   |   ź   |   ż   |   ž   |   c   |
+
+### Supported handwritten characters
+
+With handwritten recognition model [installed](/ocr/python-net/installation/), Aspose.OCR for Python via .NET can [extract](/ocr/python-net/recognition/read-handwritten-text/) text from handwritten notes in a number of European languages based on Extended Lain alphabet:
+
+|       |       |       |       |       |       |       |       |       |       |
+| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
+|       |   '   |   ’   |   -   |   1   |   2   |   3   |   4   |   5   |   6   |
+|   7   |   8   |   9   |   0   |   A   |   Ä   |   B   |   C   |   D   |   E   |
+|   F   |   G   |   H   |   I   |   J   |   K   |   L   |   M   |   N   |   O   |
+|   Ö   |   P   |   Q   |   R   |   S   |   T   |   U   |   Ü   |   V   |   W   |
+|   X   |   Y   |   Z   |   a   |   ä   |   b   |   c   |   d   |   e   |   f   |
+|   h   |   i   |   j   |   k   |   l   |   m   |   n   |   o   |   ö   |   p   |
+|   q   |   r   |   s   |   t   |   u   |   ü   |   v   |   w   |       |       |
 
 ## Cyrillic alphabet
 

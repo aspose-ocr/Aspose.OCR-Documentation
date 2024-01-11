@@ -37,7 +37,7 @@ input.add("passport1.png")
 input.add("passport2.png")
 # Set recognition language
 recognitionSettings = PassportRecognitionSettings()
-recognitionSettings.Language = Aspose.OCR.Language.Latin;
+recognitionSettings.language = Language.Latin
 # Recognize passports
 results = api.recognize_passport(input, recognitionSettings)
 # Print recognition result
