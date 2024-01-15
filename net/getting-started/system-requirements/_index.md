@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2023-05-30"
+date: "2024-01-12"
 author: "Vladimir Lapin"
 type: docs
 url: /net/system-requirements/
@@ -57,13 +57,13 @@ Aspose.OCR for .NET supports [.NET Standard 2.0](https://docs.microsoft.com/en-u
 
 .NET implementation	| Supported versions
 ------------------- | ------------------
-.NET | 5.0, 6.0
-.NET Core | 2.0, 2.1, 2.2, 3.0, 3.1
-.NET Framework | 4.6.1, 4.6.2, 4.7, 4.7.1, 4.7.2, 4.8
-Mono | 5.4, 6.4
-Xamarin.iOS | 10.14, 12.16
-Xamarin.Mac | 3.8, 5.16
-Xamarin.Android | 8.0, 10.0
+.NET | 8.0, 7.0, 6.0, 5.0
+.NET Core | 3.1, 3.0, 2.2, 2.1, 2.0
+.NET Framework | 4.8, 4.7.2, 4.7.1, 4.7, 4.6.2, 4.6.1
+Mono | 6.4, 5.4 
+Xamarin.iOS | 12.16, 10.14
+Xamarin.Mac | 5.16, 3.8
+Xamarin.Android | 10.0, 8.0
 
 {{% alert color="primary" %}} 
 Microsoft Visual Studio 2022 [does not support](https://docs.microsoft.com/en-us/visualstudio/releases/2022/compatibility#-visual-studio-2022-support-for-net-development) .NET Core 2.0.
