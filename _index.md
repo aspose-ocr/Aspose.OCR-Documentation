@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2023-12-14"
+date: "2024-01-16"
 author: "Vladimir Lapin"
 type: docs
 url: /
@@ -172,16 +172,17 @@ Aspose.OCR for Python via Java supports 28 languages based on Latin, Cyrillic, a
 
 {{% /alert %}}
 
-### Resources
+## Aspose.OCR for Python via C++
 
-Find more information, download Aspose.OCR for Python via Java Wheel packages and get professional help:
+{{% alert color="primary" %}}
 
-- [Aspose.OCR for Python via Java online documentation](/ocr/python-java/)
-- [Download Aspose.OCR for Python via Java](https://releases.aspose.com/ocr/python-java/)
-- [Aspose.OCR for Python via Java Release Notes](https://releases.aspose.com/ocr/python-java/release-notes/)
-- [Blog](https://blog.aspose.com/category/ocr/)
-- [Free Support Forum](https://forum.aspose.com/c/ocr/16)
-- [Paid Support Helpdesk](https://helpdesk.aspose.com/)
+[![Aspose.OCR for Python via C++](aspose-ocr-python-cpp.png)](/ocr/python-cpp/)
+
+Extract text from scanned pages, photos, screenshots, and other images in your cross-platform analytical application written in Python. Add OCR functionality to Python notebooks, automation scripts, serverless applications that can run on any operation system: Microsoft Windows, Linux, Unix, and macOS.
+
+Aspose.OCR for Python via C++ supports 28 languages based on Latin, Cyrillic, and Asian scripts, including Hindi and Chinese. The recognition results can be analyzed or stored on disk. Explore the documentation and develop OCR applications in Python today.
+
+{{% /alert %}}
 
 ## Applications
 

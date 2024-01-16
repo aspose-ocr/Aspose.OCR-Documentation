@@ -67,6 +67,7 @@ Explore free online apps build with Aspose.OCR for .NET. Get ideas for your own 
 Read a summary of recent changes, enhancements and bug fixes in [Aspose.OCR for .NET releases](https://releases.aspose.com/ocr/net/release-notes/).
 
 - [Latest release](https://releases.aspose.com/ocr/net/release-notes/latest/)
+- [2024 releases](https://releases.aspose.com/ocr/net/release-notes/2024/)
 - [2023 releases](https://releases.aspose.com/ocr/net/release-notes/2023/)
 - [2022 releases](https://releases.aspose.com/ocr/net/release-notes/2022/)
 - [2021 releases](https://releases.aspose.com/ocr/net/release-notes/2021/)
