@@ -1,6 +1,6 @@
 ---
 weight: 70
-date: "2023-07-18"
+date: "2024-01-25"
 author: "Vladimir Lapin"
 type: docs
 url: /cpp/recognition/
@@ -30,12 +30,6 @@ Reading text from any content in Aspose.OCR for C++ is as easy as calling a univ
 This function takes a sequence of [`OcrInput` objects](/ocr/cpp/ocrinput/) and optional [recognition settings](/ocr/cpp/recognition-settings-common/).
 
 Recognition results are returned as a `AsposeOCRRecognitionResult` structure, that allow you to get image text and [save](/ocr/cpp/save/) results in various formats.
-
-{{% alert color="caution" %}}
-**Upgrading from previous versions**
-
-Starting with Aspose.OCR for C++ 23.3.0, this function replaces `asposeocr_page()`, `asposeocr_page_settings()`, `asposeocr_page_all()`, `asposeocr_page_abc()`, `asposeocr_page_abc_all()`, `asposeocr_page_tiff()`, `asposeocr_page_from_uri()`, `asposeocr_pages_multi()`, `asposeocr_pages_multi_array()`, `asposeocr_pages_multi_array_from_raw_bytes()`, `asposeocr_page_from_raw_bytes()`, `asposeocr_page_settings_from_raw_bytes()`, `asposeocr_page_all_from_raw_bytes()`, `asposeocr_page_abc_from_raw_bytes()`, `asposeocr_page_abc_all_from_raw_bytes()`, `asposeocr_page_rect()`, `asposeocr_page_rect_from_raw_bytes()`, `asposeocr_page_rect_abc()`, and `asposeocr_page_rect_abc_from_raw_bytes()` functions.
-{{% /alert %}}
 
 ## Releasing resources
 
