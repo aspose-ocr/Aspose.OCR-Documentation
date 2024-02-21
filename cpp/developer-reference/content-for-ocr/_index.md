@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2023-08-17"
+date: "2024-02-21"
 author: "Vladimir Lapin"
 type: docs
 url: /cpp/content-for-ocr/
@@ -28,6 +28,7 @@ File (of any [supported format](/ocr/cpp/supported-file-formats/)) | <ul><li>`ur
 Directory | <ul><li>`url` - provide an absolute or relative path to the directory with images and PDF documents. Sub-directories will be ignored.</li></ul>
 URL | <ul><li>`url` - provide a public URL to an image or PDF document.</li></ul>
 Raw image data | <ul><li>`raw_data` - provide an image as [raw bytes or pixels](/ocr/cpp/content-for-ocr/image-by-bytes/).</li><li>`width` - image width, in pixels (only required when providing an image as pixel array).</li><li>`height` - image height, in pixels (only required when providing an image as pixel array).</li><li>`raw_data_size` - size of the `raw_data` member.</li><li>`raw_data_type` - image color model (when providing an image as pixel array) or file format (when providing an image file as byte array).</li></ul>
+Recognition settings | <ul><li>`special_settings` - provide a pointer to [`RecognitionSettings`](/ocr/cpp/settings/) structure. If the pointer is not NULL, the content-specific recognition settings are used instead of recognition settings provided in the [`asposeocr_recognize()`](/ocr/cpp/recognition/) function.<br />This can be useful if you want to change the recognition language or adjust the processing options for one of the images from the set.</li></ul>
 
 {{% alert color="caution" %}}
 You must choose whether to provide content as a path/URL or as raw pixel data. For other elements of the structure, you must leave the default values.
