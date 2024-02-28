@@ -1,6 +1,6 @@
 ---
 weight: 20
-date: "2023-12-21"
+date: "2024-02-27"
 author: "Vladimir Lapin"
 type: docs
 url: /net/recognition/passport/
@@ -19,7 +19,7 @@ keywords:
 ---
 
 {{% alert color="caution" %}} 
-To use this method, [install](/ocr/net/text-in-wild-model/) Text-in-wild recognition model in your project.
+To use this recognition method, [install](/ocr/net/modules/) sparse text recognition model (**aspose-ocr-text-in-wild-v1**) in your project.
 {{% /alert %}}
 
 Automatic passport recognition and verification is a very common task in many areas: border control, banking, security, and so on. However, manually re-typing text is an error-prone and time-consuming process, and mistakes can lead to security breaches and other undesirable consequences.

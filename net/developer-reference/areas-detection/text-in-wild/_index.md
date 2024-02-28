@@ -1,6 +1,6 @@
 ---
 weight: 60
-date: "2023-10-12"
+date: "2024-02-27"
 author: "Vladimir Lapin"
 type: docs
 url: /net/areas-detection/text-in-wild/
@@ -16,7 +16,7 @@ keywords:
 ---
 
 {{% alert color="caution" %}} 
-To use this structure detection algorithm, [install](/ocr/net/text-in-wild-model/) Text-in-wild recognition model in your project.
+To use this structure detection algorithm, [install](/ocr/net/modules/) sparse text recognition model (**aspose-ocr-text-in-wild-v1**) in your project.
 {{% /alert %}}
 
 When this mode is enabled, Aspose.OCR engine finds individual words on images with sparse text. It is very effective when dealing with the following images:

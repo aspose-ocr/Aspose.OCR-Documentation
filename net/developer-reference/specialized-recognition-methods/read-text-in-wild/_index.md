@@ -1,6 +1,6 @@
 ---
 weight: 60
-date: "2023-10-12"
+date: "2024-02-27"
 author: "Vladimir Lapin"
 type: docs
 url: /net/recognition/read-text-in-wild/
@@ -56,7 +56,7 @@ keywords:
 </style>
 
 {{% alert color="caution" %}} 
-To use this method, [install](/ocr/net/text-in-wild-model/) Text-in-wild recognition model in your project.
+To use this recognition method, [install](/ocr/net/modules/) sparse text recognition model (**aspose-ocr-text-in-wild-v1**) in your project.
 {{% /alert %}}
 
 Aspose.OCR offers a special recognition algorithm for extracting content from images with sparse text and noisy/colored backgrounds. This method significantly improves OCR accuracy in the following business cases:

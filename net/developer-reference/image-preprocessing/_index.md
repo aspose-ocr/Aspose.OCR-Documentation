@@ -1,6 +1,6 @@
 ---
 weight: 30
-date: "2023-11-30"
+date: "2024-02-27"
 author: "Vladimir Lapin"
 type: docs
 url: /net/image-processing/
@@ -170,7 +170,7 @@ You can use these methods to analyze the effectiveness of processing filters, ex
 
 {{% alert color="primary" %}}
 - Processing filters are applied to all images in the batch, including those without text.
-- PDF documents can contain more than one image per page. Therefore, the resulting `OcrInput` object can contain more images than the number of pages in the document.
+- In case of multi-page images or PDF files, the resulting `OcrInput` object will contain several single-page images, one image per page.
 {{% /alert %}}
 
 ```csharp

@@ -1,6 +1,6 @@
 ---
 weight: 70
-date: "2023-12-21"
+date: "2024-02-27"
 author: "Vladimir Lapin"
 type: docs
 url: /net/recognition/read-handwritten-text/
@@ -59,7 +59,7 @@ keywords:
 </style>
 
 {{% alert color="caution" %}} 
-To use this method, [install handwriting recognition model](/ocr/net/handwriting-model/) in your project.
+To use this recognition method, [install](/ocr/net/modules/) handwritten text recognition (**aspose-ocr-handwriting-v1**) in your project.
 {{% /alert %}}
 
 Aspose.OCR offers a special recognition algorithm for extracting handwritten text from images. It supports a number of European languages based on [Extended Lain alphabet](/ocr/net/recognition-languages/#supported-handwritten-characters). Handwritten recognition has various business, government and personal applications:
