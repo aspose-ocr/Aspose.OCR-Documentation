@@ -1,6 +1,6 @@
 ---
 weight: 20
-date: "2023-07-14"
+date: "2024-03-04"
 author: "Vladimir Lapin"
 type: docs
 url: /java/recognition/passport/
@@ -17,6 +17,10 @@ keywords:
 - photo
 - passport
 ---
+
+{{% alert color="caution" %}} 
+To use this recognition method, [install](/ocr/java/modules/) sparse text recognition model (**aspose-ocr-text-in-wild-v1**) in your project.
+{{% /alert %}}
 
 Automatic passport recognition and verification is a very common task in many areas: border control, banking, security, and so on. However, manually re-typing text is an error-prone and time-consuming process, and mistakes can lead to security breaches and other undesirable consequences.
 

@@ -79,3 +79,28 @@ To prevent the resources from being automatically downloaded, use `Aspose.OCR.Re
 To get the list of Aspose.OCR resources stored in the local folder, use `Aspose.OCR.Resources.ListLocal()` method. The resource names are returned as a string array.
 
 To delete a locally stored resource, use `Aspose.OCR.Resources.RemoveLocal()` method or simply remove the corresponding file.
+
+## Example
+
+The code sample below illustrates how to manually install Cyrillic recognition model:
+
+```csharp
+// Download Cyrillic OCR model to "aspose/ocr" directory in the application working directory
+Aspose.OCR.Resources.SetLocalPath("aspose/ocr");
+Aspose.OCR.Resources.FetchResource("aspose-ocr-cyrillic-v1");
+// Initialize Aspose.OCR for .NET recognition API
+Aspose.OCR.AsposeOcr recognitionEngine = new Aspose.OCR.AsposeOcr();
+// Add images to OcrInput object
+Aspose.OCR.OcrInput input = new Aspose.OCR.OcrInput(Aspose.OCR.InputType.SingleImage);
+input.Add("source1.png");
+input.Add("source2.jpg");
+// Set recognition language
+Aspose.OCR.RecognitionSettings recognitionSettings = new Aspose.OCR.RecognitionSettings();
+recognitionSettings.Language = Aspose.OCR.Language.Ukr;
+// Recognize image
+List<Aspose.OCR.RecognitionResult> results = recognitionEngine.Recognize(input, recognitionSettings);
+foreach(Aspose.OCR.RecognitionResult result in results)
+{
+    Console.WriteLine(result.RecognitionText);
+}
+```

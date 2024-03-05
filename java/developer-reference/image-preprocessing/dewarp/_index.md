@@ -1,6 +1,6 @@
 ---
 weight: 100
-date: "2023-07-14"
+date: "2024-03-04"
 author: "Vladimir Lapin"
 type: docs
 url: /java/dewarp/
@@ -47,6 +47,10 @@ keywords:
 		position: absolute;
 	}
 </style>
+
+{{% alert color="caution" %}} 
+To use automatic page straightening and distortion removal, [install](/ocr/java/modules/) smart image processing (**aspose-ocr-advanced-preprocessing-v1**) in your project.
+{{% /alert %}}
 
 Geometric distortions is a very common case when dealing with photos of books, magazines, multi-page documents, and similar content. They can be caused by physical page curvature or camera lens distortion (ultra-wide and fisheye lenses, as well as entry-level smartphone lenses).
 

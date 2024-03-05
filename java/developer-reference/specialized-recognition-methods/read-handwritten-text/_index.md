@@ -1,6 +1,6 @@
 ---
 weight: 70
-date: "2024-01-25"
+date: "2024-03-04"
 author: "Vladimir Lapin"
 type: docs
 url: /java/recognition/read-handwritten-text/
@@ -57,6 +57,10 @@ keywords:
 		min-width: 300px;
 	}
 </style>
+
+{{% alert color="caution" %}} 
+To use this recognition method, [install](/ocr/java/modules/) handwritten text recognition (**aspose-ocr-handwriting-v1**) in your project.
+{{% /alert %}}
 
 Aspose.OCR for Java offers a special recognition algorithm for extracting handwritten text from images. It supports a number of European languages based on [Extended Lain alphabet](/ocr/java/recognition-languages/#supported-handwritten-characters). Handwritten recognition has various business, government and personal applications:
 

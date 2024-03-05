@@ -1,6 +1,6 @@
 ---
 weight: 40
-date: "2023-07-14"
+date: "2024-03-04"
 author: "Vladimir Lapin"
 type: docs
 url: /java/areas-detection/table/
@@ -15,6 +15,10 @@ keywords:
 - cell
 - row
 ---
+
+{{% alert color="caution" %}} 
+To use this structure detection algorithm, [install](/ocr/java/modules/) advanced OCR models (**aspose-ocr-advanced-recognition-v1**) in your project.
+{{% /alert %}}
 
 When this mode is enabled, OCR engine detects tabular structures on an image and extracts text from cells. This areas detection mode is recommended when working with scanned spreadsheets, financial and accounting reports, invoices, and other tables.
 

@@ -34,3 +34,13 @@ To make the application work in the offline mode:
 5. Do not forget to include a directory with downloaded resources in your distributive, otherwise the related functionality will fail.
 
 You also have a flexibility to combine online and offline modes. For example, provide the most used resources with your app and download rarely used resources in the runtime.
+
+## Example
+
+```csharp
+Resources.SetLocalPath("aspose/ocr");
+Resources.AllowAutomaticDownloads(false);
+// Set recognition language
+Aspose.OCR.RecognitionSettings recognitionSettings = new Aspose.OCR.RecognitionSettings();
+recognitionSettings.Language = Aspose.OCR.Language.Ukr;
+```

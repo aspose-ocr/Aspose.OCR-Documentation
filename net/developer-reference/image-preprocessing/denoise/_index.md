@@ -1,6 +1,6 @@
 ---
 weight: 20
-date: "2023-04-07"
+date: "2024-03-01"
 author: "Vladimir Lapin"
 type: docs
 url: /net/denoise/
@@ -49,6 +49,10 @@ keywords:
 		position: absolute;
 	}
 </style>
+
+{{% alert color="caution" %}} 
+To use automatic noise removal, [install](/ocr/net/modules/) smart image processing (**aspose-ocr-advanced-preprocessing-v1**) in your project.
+{{% /alert %}}
 
 Dirt, spots, scratches, glare, unwanted gradients, and other noise are a common problem when scanning low-quality sources such as newspapers or old books, or when taking photographs. These image defects can interfere with recognition, significantly reduce the accuracy of OCR, and may cause spots to be misrecognised as characters.
 

@@ -1,6 +1,6 @@
 ---
 weight: 50
-date: "2023-04-09"
+date: "2024-03-01"
 author: "Vladimir Lapin"
 type: docs
 url: /net/areas-detection/curved_text/
@@ -15,6 +15,10 @@ keywords:
 - distort
 - curve
 ---
+
+{{% alert color="caution" %}} 
+To use this structure detection algorithm, [install](/ocr/net/modules/) advanced OCR models (**aspose-ocr-advanced-recognition-v1**) in your project.
+{{% /alert %}}
 
 When photographing pages of books and magazine articles, the cylindrical curvature of the page results in distortion of the image, causing the lines of text to curl. This 3D geometric distortion negatively affects recognition.
 

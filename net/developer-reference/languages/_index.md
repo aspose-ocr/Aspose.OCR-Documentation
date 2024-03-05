@@ -1,6 +1,6 @@
 ---
 weight: 30
-date: "2023-04-07"
+date: "2024-03-01"
 author: "Vladimir Lapin"
 type: docs
 url: /net/languages/
@@ -15,6 +15,14 @@ keywords:
 - characters
 - country
 ---
+
+{{% alert color="caution" %}} 
+To recognize text in certain languages, you must [install](/ocr/net/modules/) additional recognition models:
+
+- Cyrillic text recognition: **aspose-ocr-cyrillic-v1**
+- Chinese text recognition: **aspose-ocr-chinese-v1**
+- Hindi text recognition: **aspose-ocr-hindi-v1**
+{{% /alert %}}
 
 Aspose.OCR for .NET can recognize a text in a large number of languages and all popular writing scripts, including texts with mixed languages.
 

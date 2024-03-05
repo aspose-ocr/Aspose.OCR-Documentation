@@ -1,6 +1,6 @@
 ---
 weight: 60
-date: "2023-10-18"
+date: "2024-03-04"
 author: "Vladimir Lapin"
 type: docs
 url: /java/areas-detection/text-in-wild/
@@ -14,6 +14,10 @@ keywords:
 - photo
 - street
 ---
+
+{{% alert color="caution" %}} 
+To use this structure detection algorithm, [install](/ocr/java/modules/) sparse text recognition model (**aspose-ocr-text-in-wild-v1**) in your project.
+{{% /alert %}}
 
 When this mode is enabled, Aspose.OCR engine finds individual words on images with sparse text. It is very effective when dealing with the following images:
 

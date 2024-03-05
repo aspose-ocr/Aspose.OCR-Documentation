@@ -1,6 +1,6 @@
 ---
 weight: 100
-date: "2023-07-11"
+date: "2024-03-01"
 author: "Vladimir Lapin"
 type: docs
 url: /net/dewarp/
@@ -48,6 +48,10 @@ keywords:
 	}
 </style>
 
+{{% alert color="caution" %}} 
+To use automatic page straightening and distortion removal, [install](/ocr/net/modules/) smart image processing (**aspose-ocr-advanced-preprocessing-v1**) in your project.
+{{% /alert %}}
+
 Geometric distortions is a very common case when dealing with photos of books, magazines, multi-page documents, and similar content. They can be caused by physical page curvature or camera lens distortion (ultra-wide and fisheye lenses, as well as entry-level smartphone lenses).
 
 Warped images are very hard to be processed by most OCR algorithms. Thus, image straightening and distortion removal is critical to the recognition process as it directly affects the reliability and efficiency of segmentation and text extraction. Aspose.OCR implements a processing filter for automated correction of geometric distortions  before proceeding to recognition.
@@ -58,11 +62,7 @@ The dewarping filter automatically converts the image to [grayscale](/ocr/net/gr
 
 ## Important considerations
 
-{{% alert color="caution" %}}
-Due to the high complexity of the underlying neural network, dewarping requires a lot of resources and time. We recommend using it for pinpoint processing of individual images that are otherwise unrecognizable.
-
-This processing filter is not recommended for high load web applications that recognize images close to real time.
-{{% /alert %}}
+Due to the high complexity of the underlying neural network, dewarping requires a lot of resources and time. We recommend using it for pinpoint processing of individual images that are otherwise unrecognizable. This processing filter is not recommended for high load web applications that recognize images close to real time.
 
 - Dewarping one image may take **up to 45 seconds**.
 - Dewarping is very resource-intensive (CPU and RAM).
