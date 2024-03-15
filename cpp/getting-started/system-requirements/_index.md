@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2022-12-07"
+date: "2024-03-15"
 author: "Vladimir Lapin"
 type: docs
 url: /cpp/system-requirements/
@@ -52,7 +52,6 @@ Aspose.OCR for C++ requires the following third-party packages:
 ### Ubuntu
 
 - [libstdc++6](https://packages.ubuntu.com/focal/libstdc++6)
-- [ONNX Runtime](https://onnxruntime.ai/docs/install/) 1.11.0 or later
 - [GNU C Library (glibc)](https://www.gnu.org/software/libc/) 2.29 or later
 
 ## GPU support

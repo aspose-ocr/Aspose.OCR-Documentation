@@ -1,6 +1,6 @@
 ---
 weight: 40
-date: "2023-08-20"
+date: "2024-03-15"
 author: "Vladimir Lapin"
 type: docs
 url: /python-net/
@@ -26,7 +26,7 @@ keywords:
 
 Like Python itself, our library runs on most popular operating systems: Microsoft Windows, Linux, Unix, and macOS. You can develop an application on one platform and run it on another without changing a single line of code.
 
-Aspose.OCR supports 28 languages based on Latin, Cyrillic and Asian scripts, including Hindi and Chinese, and can recognize files in the most popular formats: PDF, JPG, TIFF, PNG, BMP, GIF or DjVu. Various processing filters allow you to recognize rotated, distorted and noisy images. The recognition results are returned in the most popular document and data exchange formats. Automatic spelling correction will further improve the accuracy without manual intervention.
+Aspose.OCR supports [over 130 languages](/ocr/python-net/recognition-languages/) based on Latin, Cyrillic, Chinese and Indic scrips, and can recognize files in the most popular formats: PDF, JPG, TIFF, PNG, BMP, GIF or DjVu. Various processing filters allow you to recognize rotated, distorted and noisy images. The recognition results are returned in the most popular document and data exchange formats. Automatic spelling correction will further improve the accuracy without manual intervention.
 
 ## Product overview
 

@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2024-01-16"
+date: "2024-03-15"
 author: "Vladimir Lapin"
 type: docs
 url: /
@@ -51,7 +51,7 @@ Find more information, download Aspose.OCR for .NET packages and get professiona
 
 [**Aspose.OCR for Java**](/ocr/java/) is an optical character recognition (OCR) library that allows you to add OCR functionality to your Java applications. Extremely complex mathematical and software algorithms are encapsulated in an easy-to-use API, saving you the time and effort required to develop an OCR solution from scratch.
 
-The library supports Latin, Cyrillic and Asian scrips, including Chinese. You can leave the language detection to Aspose.OCR for Java or set it yourself to increase the recognition performance and reliability. All popular typefaces such as Arial, Times New Roman, Courier New, Tahoma, Calibri and more in regular, bold and italic styles are detected and recognized.
+The library supports more than 130 Latin, Cyrillic, Chinese, and Indic scripts. You can leave the language detection to Aspose.OCR for Java or set it yourself to increase the recognition performance and reliability. All popular typefaces such as Arial, Times New Roman, Courier New, Tahoma, Calibri and more in regular, bold and italic styles are detected and recognized.
 {{% /alert %}}
 
 ### Resources
@@ -76,7 +76,7 @@ Find more information, download Aspose.OCR for Java packages and get professiona
 
 [**Aspose.OCR for C++**](/ocr/cpp/) is a native C++ library that adds image-to-text conversion functionality to your applications. The library is extremely easy to use - complex OCR tasks are done in a few lines of code. This allows you to focus on high-level tasks rather than programming algorithms and low-level coding.
 
-We provide comprehensive documentation to get you up to speed on OCR technology and start building powerful business applications in a couple of days.
+We provide comprehensive documentation to get you up to speed on OCR technology and start building powerful business applications.
 
 {{% /alert %}}
 
@@ -99,7 +99,7 @@ Find more information, download Aspose.OCR for C++ packages and get professional
 
 Extract text from images, scanned PDF documents screenshots, pictures from the web, or even photos on most popular operating systems: Microsoft Windows, Linux, Unix, and macOS. [**Aspose.OCR for Python via .NET**](/ocr/python-net/) allows you to develop an application on one platform and run it on another without changing a single line of code.
 
-We support 28 languages based on Latin, Cyrillic and Asian scripts, including Hindi and Chinese. Results can be analyzed or saved to disk. Read the documentation and [start developing](/ocr/python-net/hello-world/) OCR apps in Python now.
+We support more than 130 languages based on Latin, Cyrillic, Chinese and Indic scripts. Results can be analyzed or saved to disk. Read the documentation and [start developing](/ocr/python-net/hello-world/) OCR apps in Python now.
 
 {{% /alert %}}
 
@@ -172,6 +172,14 @@ Aspose.OCR for Python via Java supports 28 languages based on Latin, Cyrillic, a
 
 {{% /alert %}}
 
+### Resources
+
+Find more information, download Aspose.OCR for Python via Java package and get professional help:
+
+- [Code samples](https://github.com/aspose-ocr/Aspose.OCR-for-Python-via-Java)
+- [Blog](https://blog.aspose.com/category/ocr/)
+- [Free Support Forum](https://forum.aspose.com/c/ocr/16)
+
 ## Aspose.OCR for Python via C++
 
 {{% alert color="primary" %}}
@@ -183,6 +191,14 @@ Extract text from scanned pages, photos, screenshots, and other images in your c
 Aspose.OCR for Python via C++ supports 28 languages based on Latin, Cyrillic, and Asian scripts, including Hindi and Chinese. The recognition results can be analyzed or stored on disk. Explore the documentation and develop OCR applications in Python today.
 
 {{% /alert %}}
+
+### Resources
+
+Find more information, download Aspose.OCR for Python via C++ package and get professional help:
+
+- [API Reference](https://reference.aspose.com/ocr/python-cpp)
+- [Blog](https://blog.aspose.com/category/ocr/)
+- [Free Support Forum](https://forum.aspose.com/c/ocr/16)
 
 ## Applications
 

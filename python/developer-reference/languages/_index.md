@@ -1,6 +1,6 @@
 ---
 weight: 30
-date: "2023-08-27"
+date: "2024-03-15"
 author: "Vladimir Lapin"
 type: docs
 url: /python-net/languages/
@@ -18,39 +18,143 @@ Aspose.OCR for Python via .NET can recognize a text in a large number of languag
 
 To specify a language for recognition, provide one of the following values in `language` property of recognition settings:
 
-Value | Language
+Value | Alphabet
 ----- | --------
-`Language.NONE` | [Extended Latin](/ocr/python-net/recognition-languages/#supported-characters) characters, including diacritics
-`Language.LATIN` | [Extended Latin](/ocr/python-net/recognition-languages/#supported-characters) characters, including diacritics
-`Language.CYRILLIC` | [Cyrillic](/ocr/python-net/recognition-languages/#supported-characters-1) characters
-`Language.BEL` | Belorussian
+`Language.EXT_LATIN` | Auto-detect [all supported Latin characters](/ocr/python-net/supported-characters/#extended-latin) and diacritics
+`Language.CYRILLIC` | Auto-detect [all supported Cyrillic characters](/ocr/python-net/supported-characters/#cyrillic)
+`Language.AFR` | Afrikaans
+`Language.ALN` | Albanian
+`Language.AWA` | Awadhi
+`Language.AZB` | Azerbaijani (Azeri)
+`Language.BCL` | Bikol
+`Language.BEL` | Belarusan (Belorussian)
+`Language.BEM` | Bemba (Chibemba)
+`Language.BEW` | Betawi
+`Language.BGC` | Haryanvi
+`Language.BHO` | Bhojpuri
+`Language.BHR` | Malagasy
+`Language.BJJ` | Kanauji
+`Language.BOS` | Bosnian
 `Language.BUL` | Bulgarian
-`Language.CHI` | Chinese (more than 6,000 characters)
-`Language.CZE` | Czech
+`Language.CAT` | Catalan
+`Language.CCX` | Zhuang
+`Language.CDO` | Min Dong
+`Language.CEB` | Cebuano
+`Language.CES` | Czech
+`Language.CHE` | Chechen
+`Language.CMN` | Mandarin (Chinese)
+`Language.CPX` | Pu-Xian
 `Language.DAN` | Danish
 `Language.DEU` | German
-`Language.DUM` | Dutch
+`Language.DHD` | Dhundari
+`Language.DIQ` | Dimli
+`Language.DOC` | Dong
 `Language.ENG` | English
 `Language.EST` | Estonian
 `Language.FIN` | Finnish
 `Language.FRA` | French
+`Language.GAN` | Gan
+`Language.GAX` | Oromo
+`Language.GBM` | Garhwali
+`Language.GLG` | Galician
+`Language.GLK` | Gilaki
+`Language.GUZ` | Gusii
+`Language.HAK` | Hakka
+`Language.HAU` | Hausa
+`Language.HBS` | Serbo-Croatian (Latin)
+`Language.HIL` | Hiligaynon
 `Language.HIN` | Hindi
+`Language.HMN` | Hmong
+`Language.HNE` | Chattisgarhi (Laria, Khaltahi)
+`Language.HRV` | Croatian
+`Language.HSN` | Xiang
+`Language.HUN` | Hungarian (Magyar)
+`Language.ILO` | Ilocano
+`Language.IND` | Indonesian
 `Language.ITA` | Italian
 `Language.KAZ` | Kazakh
+`Language.KBD` | Kabardian
+`Language.KFY` | Kumauni
+`Language.KIN` | Rwanda
+`Language.KLN` | Nandi
+`Language.KMR` | Kurdish (Kurmanji)
+`Language.KNC` | Kanuri
+`Language.KNN` | Konkani
+`Language.KON` | Kikongo
+`Language.LATIN` | Latin
 `Language.LAV` | Latvian
 `Language.LIT` | Lithuanian
+`Language.LMN` | Lamani (Lambadi)
+`Language.LNC` | Occitan
+`Language.LUO` | Luo
+`Language.MAG` | Magahi
+`Language.MAI` | Maithili
+`Language.MAK` | Makassar (Makasar)
+`Language.MAR` | Marathi
+`Language.MER` | Meru
+`Language.MIN` | Minangkabau
+`Language.MLY` | Malay (Melayu)
+`Language.MNP` | Min Bei
+`Language.MTQ` | Muong
+`Language.MTR` | Mewari
+`Language.MUI` | Musi
+`Language.MUP` | Malvi
+`Language.NAN` | Min Nan
+`Language.NBL` | Ndebele
+`Language.NDS` | Low German
+`Language.NEP` | Nepali
+`Language.NLD` | Dutch
 `Language.NOR` | Norwegian
+`Language.NSO` | Sotho (Northern)
+`Language.NYA` | Chichewa (Chewa, Nyanja)
+`Language.PAG` | Pangasinan
+`Language.PAM` | Kapampangan
+`Language.PCC` | Bouyei (Buyi, Giáy)
+`Language.PLM` | Palembang
 `Language.POL` | Polish
 `Language.POR` | Portuguese
-`Language.RUM` | Romanian
+`Language.QUC` | K'iche'
+`Language.QXA` | Quechua
+`Language.RJB` | Rajbanshi
+`Language.RON` | Romanian
+`Language.RUF` | Luguru
 `Language.RUS` | Russian
+`Language.RWR` | Marwari
+`Language.SAS` | Sasak
 `Language.SLK` | Slovak
-`Language.SLV` | Slovene
+`Language.SLV` | Slovene (Slovenian)
+`Language.SNA` | Shona (Karanga)
+`Language.SOM` | Somali
+`Language.SOT` | Sotho (Southern)
 `Language.SPA` | Spanish
-`Language.SRP` | Serbian
-`Language.SRP_HRV` | Serbo-Croatian
+`Language.SRP` | Serbian (Cyrillic)
+`Language.SRR` | Serer-Sine
+`Language.SSW` | Swati (Swazi)
+`Language.SUK` | Sukuma
+`Language.SUN` | Sundanese (Sunda)
 `Language.SWE` | Swedish
+`Language.SWH` | Swahili
+`Language.TGL` | Tagalog (Pilipino)
+`Language.TOI` | Tonga
+`Language.TSN` | Tswana
+`Language.TSO` | Tsonga
+`Language.TUK` | Turkmen
+`Language.TUM` | Tumbuka
+`Language.TUR` | Turkish
 `Language.UKR` | Ukrainian
+`Language.UMB` | Umbundu
+`Language.VIE` | Vietnamese
+`Language.VMW` | Makua (Makhuwa)
+`Language.WAL` | Wolaytta
+`Language.WAR` | Waray-Waray
+`Language.WBR` | Wagdi
+`Language.WTM` | Mewati
+`Language.WUU` | Wu (Changzhou)
+`Language.XHO` | Xhosa
+`Language.YAO` | Yao
+`Language.YOR` | Yoruba
+`Language.YUE` | Cantonese
+`Language.ZUL` | Zulu
 
 If this parameter is omitted, the OCR engine will assume that the text is written in [extended Latin](/ocr/python-net/recognition-languages/#supported-characters).
 

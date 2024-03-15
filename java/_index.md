@@ -1,6 +1,6 @@
 ---
 weight: 20
-date: "2023-04-20"
+date: "2024-03-15"
 author: "Vladimir Lapin"
 type: docs
 url: /java/
@@ -28,7 +28,7 @@ keywords:
 
 **Aspose.OCR for Java** is a powerful yet easy-to-use and cost-effective API for converting images to text. It allows you to add optical character recognition (OCR) functionality to your cross-platform Java applications in less than 10 lines of code without worrying about machine learning, complex calculations, and other low-level technical details. Recognition speed, accuracy and performance can be further improved by distributing computation across multiple CPU cores and offloading resource-intensive tasks to the GPU.
 
-Aspose experience with machine learning technologies and years of development resulted in an OCR engine with superior speed and accuracy that supports [28 languages](/ocr/java/recognition-languages/) based on Latin, Cyrillic and Asian scrips, including texts with mixed languages.
+Aspose experience with machine learning technologies and years of development resulted in an OCR engine with superior speed and accuracy that supports [over 130 languages](/ocr/java/recognition-languages/) based on Latin, Cyrillic, Chinese and Indic scrips, including texts with mixed languages.
 
 OCR API processes scanned images, smartphone photos, screenshots, areas of an image, and scanned PDFs and returns results in the most popular [document formats](/ocr/java/supported-file-formats/). Various preprocessing filters allow you to recognize rotated, skewed and noisy images. To further improve the result, built-in spell corrector automatically replaces misspelled words and saves you the trouble of manually proofreading recognition results.
 
