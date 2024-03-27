@@ -1,6 +1,6 @@
 ---
 weight: 45
-date: "2023-12-14"
+date: "2024-03-27"
 author: "Vladimir Lapin"
 type: docs
 url: /python-java/
@@ -26,7 +26,7 @@ keywords:
 
 As any Python module, our library is compatible with major operating systems, including Microsoft Windows, Linux and macOS. This allows you to develop an application on one platform and run it on another without the need to modify a single line of code.
 
-Aspose.OCR provides support for 28 languages based on Latin, Cyrillic, and Asian scripts, including of Hindi and Chinese. It has the capability to recognize files in widely used formats such as PDF, JPG, TIFF, PNG, BMP, GIF, or DjVu. The API has a number of processing filters, enabling the accurate recognition of rotated, distorted, and noisy images. Recognition results are returned in popular document and data exchange formats. Automatic spelling correction enhances accuracy without the need for manual intervention.
+Aspose.OCR for Python via Java supports [over 130 languages](/ocr/python-net/recognition-languages/) based on Latin, Cyrillic, Chinese and Indic scrips. It has the capability to recognize files in widely used formats such as PDF, JPG, TIFF, PNG, BMP, GIF, or DjVu. The API has a number of processing filters, enabling the accurate recognition of rotated, distorted, and noisy images. Recognition results are returned in popular document and data exchange formats. Automatic spelling correction enhances accuracy without the need for manual intervention.
 
 ## Product overview
 
@@ -50,6 +50,7 @@ Read a summary of recent changes, enhancements and bug fixes in [Aspose.OCR for 
 
 - [Latest release](https://releases.aspose.com/ocr/python-java/release-notes/latest/)
 - [2023 releases](https://releases.aspose.com/ocr/python-java/release-notes/2023/)
+- [2024 releases](https://releases.aspose.com/ocr/python-java/release-notes/2024/)
 
 ## Resources
 
