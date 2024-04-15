@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2024-03-15"
+date: "2024-04-12"
 author: "Vladimir Lapin"
 type: docs
 url: /net/recognition-languages/
@@ -131,6 +131,7 @@ Aspose.OCR can recognize more than 130 languages and all popular writing scripts
 
 ## Middle East and North Africa
 
+- Arabic (mixed texts in Arabic and English are also supported)
 - Dimli
 - Gilaki
 - Kurdish (Kurmanji)

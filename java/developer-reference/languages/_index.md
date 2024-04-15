@@ -1,6 +1,6 @@
 ---
 weight: 20
-date: "2024-03-15"
+date: "2024-04-11"
 author: "Vladimir Lapin"
 type: docs
 url: /java/languages/
@@ -22,6 +22,7 @@ To recognize text in certain languages, you must [install](/ocr/java/modules/) a
 - Cyrillic text recognition: **aspose-ocr-cyrillic-v1**
 - Chinese text recognition: **aspose-ocr-chinese-v1**
 - Hindi text recognition: **aspose-ocr-hindi-v1**
+- Arabic text recognition: **aspose-ocr-arabic-v1**
 {{% /alert %}}
 
 Aspose.OCR for Java can recognize a text in a large number of languages and all popular writing scripts, including texts with mixed languages.
@@ -34,6 +35,7 @@ Value | Alphabet
 `Language.Cyrillic` | All supported Cyrillic characters (auto-detect)
 `Language.Afr` | Afrikaans
 `Language.Aln` | Albanian
+`Language.Ara` | Arabic (mixed texts in Arabic and English are also supported)
 `Language.Awa` | Awadhi
 `Language.Azb` | Azerbaijani (Azeri)
 `Language.Bcl` | Bikol

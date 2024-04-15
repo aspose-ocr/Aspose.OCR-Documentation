@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2024-03-15"
+date: "2024-04-11"
 author: "Vladimir Lapin"
 type: docs
 url: /java/recognition-languages/
@@ -131,6 +131,7 @@ Aspose.OCR for Java can recognize a large number of languages and all popular wr
 
 ## Middle East and North Africa
 
+- Arabic (mixed texts in Arabic and English are also supported)
 - Dimli
 - Gilaki
 - Kurdish (Kurmanji)

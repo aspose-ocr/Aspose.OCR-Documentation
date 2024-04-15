@@ -1,6 +1,6 @@
 ---
 weight: 70
-date: "2023-11-30"
+date: "2024-04-12"
 author: "Vladimir Lapin"
 type: docs
 url: /net/recognition/
@@ -29,10 +29,6 @@ This method takes [`OcrInput` object](/ocr/net/ocrinput/) and optional [recognit
 
 Recognition results are returned as a list of [`Aspose.OCR.RecognitionResult`](https://reference.aspose.com/ocr/net/aspose.ocr/recognitionresult/) objects, that allow you to perform advanced manipulations with recognition results: [automatically correct spelling](/ocr/net/spelling/), [get image regions](/ocr/net/image-regions-extract/) and [save](/ocr/net/save/) results in various formats.
 
-## Example
-
-The following code example shows how to extract text from multiple images:
-
 ```csharp
 Aspose.OCR.AsposeOcr recognitionEngine = new Aspose.OCR.AsposeOcr();
 // Add images to OcrInput object
@@ -48,4 +44,27 @@ foreach(Aspose.OCR.RecognitionResult result in results)
 {
 	Console.WriteLine(result.RecognitionText);
 }
+```
+
+## Cancelling recognition
+
+Aspose.OCR for .NET allows you to forcibly cancel the recognition process either manually or automatically after the specified number of milliseconds. The cancellation process is based on the standardized [`System.Threading.CancellationTokenSource`](https://learn.microsoft.com/en-us/dotnet/api/system.threading.cancellationtokensource.cancel) object and flows.
+
+The recognition is immediately cancelled regardless of the number of [threads](/ocr/net/multithreading/).
+
+{{% alert color="caution" %}}
+Cancelling the recognition means that all recognition results are lost, even the ones which are already available at the moment of cancellation.
+{{% /alert %}}
+
+```csharp
+// Set automatic cancellation after 20 seconds (20,000ms)
+CancellationTokenSource cancellationTokenSource  = new CancellationTokenSource();
+cancellationTokenSource.CancelAfter(20000);
+// Initialize Aspose.OCR for .NET recognition API
+Aspose.OCR.AsposeOcr recognitionEngine = new Aspose.OCR.AsposeOcr();
+// Add scanned PDF to recognition batch
+Aspose.OCR.OcrInput input = new Aspose.OCR.OcrInput(Aspose.OCR.InputType.PDF);
+input.Add("large.pdf");
+// Recognize image
+List<Aspose.OCR.RecognitionResult> results = recognitionEngine.Recognize(input, null, cancellationTokenSource.Token);
 ```
