@@ -20,7 +20,7 @@ keywords:
 - extensions
 ---
 
-Starting with Aspose.OCR for .NET version **23.2.0**, the distributive offers basic recognition capabilities only. Additional features can be added via downloadable resources, freely available in our [online repository](https://github.com/aspose-ocr/resources).
+Starting with Aspose.OCR for .NET version **24.2.0**, the distributive offers basic recognition capabilities only. Additional features can be added via downloadable resources, freely available in our [online repository](https://github.com/aspose-ocr/resources).
 
 This approach allows you to selectively choose which features you need for your project, keeping your application lean and modular. For example, if you only need Cyrillic characters recognition, you may omit Chinese, Hindi and other OCR models, saving significant amounts of disk space.
 

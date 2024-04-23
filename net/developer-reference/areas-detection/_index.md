@@ -59,3 +59,11 @@ Name              | Value | Description | Use cases
 `DetectAreasMode.TABLE` | 4 | Detects cells in tabular structures.<br />See [**DetectAreasMode.TABLE**](/ocr/net/areas-detection/table/) for additional details. | Tables<br />Invoices
 `DetectAreasMode.CURVED_TEXT` | 5 | Auto-straightens curved lines and finds text blocks inside the resulting image.<br />See [**DetectAreasMode.CURVED_TEXT**](/ocr/net/areas-detection/curved_text/) for additional details. | Photos of books, magazine articles, and other curved pages.
 `DetectAreasMode.TEXT_IN_WILD` | 6 | Finds individual words on images with sparse text and colored backgrounds.<br />See [**DetectAreasMode.TEXT_IN_WILD**](/ocr/net/areas-detection/text-in-wild/) for additional details. | Street photos<br />Price tags<br />Food labels<br />Menus<br />Catalogs<br />Ads
+
+## Performance impact
+
+Pipeline | Time
+-------- | ----
+<ul><li>`DetectAreasMode.PHOTO`</li><ul> | 9 seconds
+<ul><li>`DetectAreasMode.PHOTO`</li><li>[Recognition](/ocr/net/recognition/)</li><ul> | 9.3 seconds
+<ul><li>`DetectAreasMode.CURVED_TEXT`</li><li>[Recognition](/ocr/net/recognition/)</li><ul> | 32.2 seconds

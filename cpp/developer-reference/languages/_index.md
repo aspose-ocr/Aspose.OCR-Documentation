@@ -16,6 +16,14 @@ keywords:
 - country
 ---
 
+{{% alert color="caution" %}} 
+To recognize text in certain languages, you must [install](/ocr/cpp/modules/) additional recognition models:
+
+- Cyrillic text recognition: **aspose-ocr-cyrillic-v1**
+- Chinese text recognition: **aspose-ocr-chinese-v1**
+- Hindi text recognition: **aspose-ocr-hindi-v1**
+{{% /alert %}}
+
 Aspose.OCR for C++ can recognize a text in a large number of languages and all popular writing scripts, including texts with mixed languages.
 
 To specify a language for recognition, provide one of the following values in `language_alphabet` property in [recognition settings](https://reference.aspose.com/ocr/cpp/struct/recognition_settings):

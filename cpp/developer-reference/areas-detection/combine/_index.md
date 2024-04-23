@@ -16,6 +16,10 @@ keywords:
 - universal
 ---
 
+{{% alert color="caution" %}} 
+To use this structure detection algorithm, [install](/ocr/cpp/modules/) **aspose-ocr-document-structure-detection-v1** recognition model in your project.
+{{% /alert %}}
+
 The combination of [**detect_areas_mode_enum::DOCUMENT**](/ocr/cpp/areas-detection/document/) and [**detect_areas_mode_enum::PHOTO**](/ocr/cpp/areas-detection/photo/), which can extract as much text from an image as possible. The OCR engine detects large blocks of text (such as paragraphs and columns), while the remaining content is analyzed by **detect_areas_mode_enum::PHOTO** algorithm.
 
 This allows you to handle even the most complex cases like posters, billboards, or random photos. However, it can take a little longer and may be less efficient than the specialized algorithms. Try one of the [dedicated area detection functions](/ocr/cpp/areas-detection/#area-detection-modes) if you are sure of the content type.

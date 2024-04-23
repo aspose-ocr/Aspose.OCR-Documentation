@@ -16,6 +16,10 @@ keywords:
 - curve
 ---
 
+{{% alert color="caution" %}} 
+To use this structure detection algorithm, [install](/ocr/cpp/modules/) **aspose-ocr-advanced-recognition-v1** and **aspose-ocr-advanced-preprocessing-v1** recognition model in your project.
+{{% /alert %}}
+
 When photographing pages of books and magazine articles, the cylindrical curvature of the page results in distortion of the image, causing the lines of text to curl. This 3D geometric distortion negatively affects recognition.
 
 **detect_areas_mode_enum::CURVED_TEXT** areas detection mode uses a specialized neural network that automatically tracks and rectifies curved lines of text. This greatly improves recognition accuracy and allows much more text to be recovered and extracted.

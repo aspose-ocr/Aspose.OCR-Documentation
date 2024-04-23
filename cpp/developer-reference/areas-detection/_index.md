@@ -56,3 +56,11 @@ Name              | Value | Description | Use cases
 `detect_areas_mode_enum::COMBINE` | 3 | The combination of _detect_areas_mode_enum::DOCUMENT_ and _detect_areas_mode_enum::PHOTO_.<br />See [**detect_areas_mode_enum::COMBINE**](/ocr/cpp/areas-detection/combine/) for additional details. | Posters<br />Billboards<br />Datasheets<br />Random photos<br />Batch recognition
 `detect_areas_mode_enum::TABLE` | 4 | Detects cells in tabular structures.<br />See [**detect_areas_mode_enum::TABLE**](/ocr/cpp/areas-detection/table/) for additional details. | Tables<br />Invoices
 `detect_areas_mode_enum::CURVED_TEXT` | 5 | Auto-straightens curved lines and finds text blocks inside the resulting image.<br />See [**detect_areas_mode_enum::CURVED_TEXT**](/ocr/cpp/areas-detection/curved_text/) for additional details. | Photos of books, magazine articles, and other curved pages.
+
+## Performance impact
+
+Pipeline | Time
+-------- | ----
+<ul><li>`detect_areas_mode_enum::PHOTO`</li><ul> | 2.9 seconds
+<ul><li>`detect_areas_mode_enum::PHOTO`</li><li>[Recognition](/ocr/cpp/recognition/)</li><ul> | 4.7 seconds
+<ul><li>`detect_areas_mode_enum::CURVED_TEXT`</li><li>[Recognition](/ocr/cpp/recognition/)</li><ul> | 8.5 seconds

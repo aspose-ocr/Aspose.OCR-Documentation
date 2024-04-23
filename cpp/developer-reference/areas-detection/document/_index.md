@@ -17,6 +17,10 @@ keywords:
 - document
 ---
 
+{{% alert color="caution" %}} 
+To use this structure detection algorithm, [install](/ocr/cpp/modules/) **aspose-ocr-document-structure-detection-v1** recognition model in your project.
+{{% /alert %}}
+
 This algorithm works best with large amounts of structured text such as scanned contracts, book pages, articles, newspapers, and the like. It breaks content into larger blocks, such as paragraphs and columns. These blocks are then analyzed, read and combined into recognition results.
 
 ![detect_areas_mode_enum::DOCUMENT algorithm](dsr.png)
