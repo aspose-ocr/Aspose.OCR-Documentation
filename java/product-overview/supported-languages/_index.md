@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2024-04-11"
+date: "2024-04-26"
 author: "Vladimir Lapin"
 type: docs
 url: /java/recognition-languages/
@@ -65,6 +65,7 @@ Aspose.OCR for Java can recognize a large number of languages and all popular wr
 - Azerbaijani (Azeri)
 - Kazakh
 - Turkmen
+- Uyghur
 
 ## East Asia
 
@@ -104,6 +105,7 @@ Aspose.OCR for Java can recognize a large number of languages and all popular wr
 - Mewati
 - Nepali
 - Rajbanshi
+- Urdu
 - Wagdi
 
 ## Southeast Asia
@@ -135,6 +137,7 @@ Aspose.OCR for Java can recognize a large number of languages and all popular wr
 - Dimli
 - Gilaki
 - Kurdish (Kurmanji)
+- Persian (Farsi)
 
 ## Africa
 

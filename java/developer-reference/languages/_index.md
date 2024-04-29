@@ -1,6 +1,6 @@
 ---
 weight: 20
-date: "2024-04-11"
+date: "2024-04-26"
 author: "Vladimir Lapin"
 type: docs
 url: /java/languages/
@@ -23,6 +23,9 @@ To recognize text in certain languages, you must [install](/ocr/java/modules/) a
 - Chinese text recognition: **aspose-ocr-chinese-v1**
 - Hindi text recognition: **aspose-ocr-hindi-v1**
 - Arabic text recognition: **aspose-ocr-arabic-v1**
+- Persian (Farsi) text recognition: **aspose-ocr-arabic-v1**
+- Uyghur text recognition: **aspose-ocr-arabic-v1**
+- Urdu text recognition: **aspose-ocr-arabic-v1**
 {{% /alert %}}
 
 Aspose.OCR for Java can recognize a text in a large number of languages and all popular writing scripts, including texts with mixed languages.
@@ -122,6 +125,7 @@ Value | Alphabet
 `Language.Pag` | Pangasinan
 `Language.Pam` | Kapampangan
 `Language.Pcc` | Bouyei (Buyi, Giáy)
+`Language.Pes` | Persian (Farsi); mixed texts in Persian and English are also supported
 `Language.Plm` | Palembang
 `Language.Pol` | Polish
 `Language.Por` | Portuguese
@@ -153,8 +157,10 @@ Value | Alphabet
 `Language.Tuk` | Turkmen
 `Language.Tum` | Tumbuka
 `Language.Tur` | Turkish
+`Language.Uig` | Uyghur; mixed texts in Uyghur and English are also supported
 `Language.Ukr` | Ukrainian
 `Language.Umb` | Umbundu
+`Language.Urd` | Urdu; mixed texts in Urdu and English are also supported
 `Language.Vie` | Vietnamese
 `Language.Vmw` | Makua (Makhuwa)
 `Language.Wal` | Wolaytta

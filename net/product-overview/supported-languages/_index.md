@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2024-04-12"
+date: "2024-04-26"
 author: "Vladimir Lapin"
 type: docs
 url: /net/recognition-languages/
@@ -65,6 +65,7 @@ Aspose.OCR can recognize more than 130 languages and all popular writing scripts
 - Azerbaijani (Azeri)
 - Kazakh
 - Turkmen
+- Uyghur
 
 ## East Asia
 
@@ -104,6 +105,7 @@ Aspose.OCR can recognize more than 130 languages and all popular writing scripts
 - Mewati
 - Nepali
 - Rajbanshi
+- Urdu
 - Wagdi
 
 ## Southeast Asia
@@ -135,6 +137,7 @@ Aspose.OCR can recognize more than 130 languages and all popular writing scripts
 - Dimli
 - Gilaki
 - Kurdish (Kurmanji)
+- Persian (Farsi)
 
 ## Africa
 

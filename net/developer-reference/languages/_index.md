@@ -1,6 +1,6 @@
 ---
 weight: 30
-date: "2024-04-12"
+date: "2024-04-26"
 author: "Vladimir Lapin"
 type: docs
 url: /net/languages/
@@ -23,6 +23,9 @@ To recognize text in certain languages, you must [install](/ocr/net/modules/) ad
 - Chinese text recognition: **aspose-ocr-chinese-v1**
 - Hindi text recognition: **aspose-ocr-hindi-v1**
 - Arabic text recognition: **aspose-ocr-arabic-v1**
+- Persian (Farsi) text recognition: **aspose-ocr-arabic-v1**
+- Uyghur text recognition: **aspose-ocr-arabic-v1**
+- Urdu text recognition: **aspose-ocr-arabic-v1**
 {{% /alert %}}
 
 Aspose.OCR for .NET can recognize a text in a large number of languages and all popular writing scripts, including texts with mixed languages.
@@ -122,6 +125,7 @@ Value | Alphabet
 `Aspose.OCR.Language.Pag` | Pangasinan
 `Aspose.OCR.Language.Pam` | Kapampangan
 `Aspose.OCR.Language.Pcc` | Bouyei (Buyi, Giáy)
+`Aspose.OCR.Language.Pes` | Persian (Farsi); mixed texts in Persian and English are also supported
 `Aspose.OCR.Language.Plm` | Palembang
 `Aspose.OCR.Language.Pol` | Polish
 `Aspose.OCR.Language.Por` | Portuguese
@@ -153,8 +157,10 @@ Value | Alphabet
 `Aspose.OCR.Language.Tuk` | Turkmen
 `Aspose.OCR.Language.Tum` | Tumbuka
 `Aspose.OCR.Language.Tur` | Turkish
+`Aspose.OCR.Language.Uig` | Uyghur; mixed texts in Uyghur and English are also supported
 `Aspose.OCR.Language.Ukr` | Ukrainian
 `Aspose.OCR.Language.Umb` | Umbundu
+`Aspose.OCR.Language.Urd` | Urdu; mixed texts in Urdu and English are also supported
 `Aspose.OCR.Language.Vie` | Vietnamese
 `Aspose.OCR.Language.Vmw` | Makua (Makhuwa)
 `Aspose.OCR.Language.Wal` | Wolaytta
