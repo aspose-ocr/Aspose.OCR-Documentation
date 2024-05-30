@@ -1,6 +1,6 @@
 ---
 weight: 20
-date: "2024-01-11"
+date: "2024-05-30"
 author: "Vladimir Lapin"
 type: docs
 url: /python-net/installation/
@@ -71,47 +71,6 @@ The Aspose.OCR for Python via .NET package can either be installed from [PyPi](h
 pip install aspose-ocr-python-net
 ```
 
-#### Installing text-in-wild recognition model
-
-In order to use [street photo recognition](/ocr/python-net/recognition/read-text-in-wild/) and [text-in-wild](/ocr/python-net/areas-detection/text-in-wild/) document areas detection method, you must also install the Text-in-wild recognition model, which is distributed as a separate Python package:
-
-```bash
-pip install aspose-ocr-models-textinwild-python-net
-```
-
-{{% alert color="primary" %}}
-You can use Aspose.OCR for Python via .NET without this package, however you will not be able to use the methods and properties that depend on Text-in-wild OCR model.
-{{% /alert %}}
-
-#### Installing handwriting OCR model
-
-In order to [extract handwritten text](/ocr/python-net/recognition/read-handwritten-text/) from images, you must also install the handwriting recognition model, which is distributed as a separate Python package:
-
-```bash
-pip install aspose-ocr-models-handwritten-python-net
-```
-
-{{% alert color="primary" %}}
-You can use Aspose.OCR for .NET without this package, however you will not be able to use handwritten text recognition and related features.
-{{% /alert %}}
-
-### Installing from downloaded file
-
-1. Download Aspose.OCR for Python via .NET package for your platform from [releases.aspose.com](https://releases.aspose.com/ocr/python-net/).
-2. Extract the downloaded archive.
-3. Install the downloaded package by running **install.sh** or **install.cmd** depending on your platform, or using pip:
-
-   ```bash
-   pip install aspose_ocr_python_net-{version and platform}.whl
-   pip install aspose_ocr_models_textinwild_python_net-{version and platform}.whl
-   pip install aspose_ocr_models_handwritten_python_net-{version and platform}.whl
-   ```
-
-{{% alert color="primary" %}}
-- You may skip installing **aspose_ocr_models_handwritten_python_net-\*\*\*.whl** package if you are not going to use [handwritten text recognition](/ocr/python-net/recognition/read-handwritten-text/).
-- You may skip installing **aspose_ocr_models_textinwild_python_net-\*\*\*.whl** package if you are not going to use [street photo recognition](/ocr/python-net/recognition/read-text-in-wild/) and [text-in-wild](/ocr/python-net/areas-detection/text-in-wild/) document areas detection method.
-{{% /alert %}}
-
 ## Updating
 
 The update procedure depends on how you originally installed the Aspose.OCR for Python via .NET package.
@@ -128,22 +87,6 @@ To update the main package, run the following command:
 pip install --upgrade aspose-ocr-python-net
 ```
 
-#### Updating text-in-wild recognition model
-
-To update Text-in-wild OCR model, run the following command:
-
-```bash
-pip install --upgrade aspose-ocr-models-textinwild-python-net
-```
-
-#### Updating handwriting OCR model
-
-To update handwriting OCR model, run the following command:
-
-```bash
-pip install --upgrade aspose-ocr-models-handwritten-python-net
-```
-
 ### Updating with downloaded file
 
 1. Download the new version of Aspose.OCR for Python via .NET package for your platform from [releases.aspose.com](https://releases.aspose.com/ocr/python-net/).
@@ -152,6 +95,4 @@ pip install --upgrade aspose-ocr-models-handwritten-python-net
 
    ```bash
    pip install --upgrade aspose_ocr_python_net-{version and platform}.whl
-   pip install --upgrade aspose_ocr_models_textinwild_python_net-{version and platform}.whl
-   pip install --upgrade aspose_ocr_models_handwritten_python_net-{version and platform}.whl
    ```

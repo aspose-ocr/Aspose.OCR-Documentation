@@ -1,6 +1,6 @@
 ---
 weight: 30
-date: "2022-12-07"
+date: "2024-05-30"
 author: "Vladimir Lapin"
 type: docs
 url: /cpp/licensing/
@@ -23,8 +23,8 @@ You can start using Aspose.OCR for C++ right after the [installation](/ocr/cpp/i
 
 However, the following restrictions apply:
 
-- If the number of characters in a recognized image exceeds 300, only the first **300** characters are recognized.
-- If the number of characters in a recognized image is less than 300, the first **60%** of characters are recognized.
+- If the number of characters in a recognized image exceeds 100, only the **first 100 characters** are recognized.
+- You cannot recognize more than 500 characters per application launch, even when processing text from multiple images or regions within a single image.
 
 Apply a license to remove the restriction.
 

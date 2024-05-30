@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2024-03-15"
+date: "2024-05-30"
 author: "Vladimir Lapin"
 type: docs
 url: /python-net/recognition-languages/
@@ -65,6 +65,7 @@ Aspose.OCR for Python via .NET can recognize a large number of languages and all
 - Azerbaijani (Azeri)
 - Kazakh
 - Turkmen
+- Uyghur
 
 ## East Asia
 
@@ -104,6 +105,7 @@ Aspose.OCR for Python via .NET can recognize a large number of languages and all
 - Mewati
 - Nepali
 - Rajbanshi
+- Urdu
 - Wagdi
 
 ## Southeast Asia
@@ -131,9 +133,11 @@ Aspose.OCR for Python via .NET can recognize a large number of languages and all
 
 ## Middle East and North Africa
 
+- Arabic (mixed texts in Arabic and English are also supported)
 - Dimli
 - Gilaki
 - Kurdish (Kurmanji)
+- Persian (Farsi)
 
 ## Africa
 

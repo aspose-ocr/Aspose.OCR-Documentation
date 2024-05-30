@@ -1,6 +1,6 @@
 ---
 weight: 30
-date: "2024-03-15"
+date: "2024-05-30"
 author: "Vladimir Lapin"
 type: docs
 url: /python-net/languages/
@@ -14,6 +14,18 @@ keywords:
 - country
 ---
 
+{{% alert color="caution" %}} 
+To recognize text in certain languages, you must [install](/ocr/python-net/modules/) additional recognition models:
+
+- Cyrillic text recognition: **aspose-ocr-cyrillic-v1**
+- Chinese text recognition: **aspose-ocr-chinese-v1**
+- Hindi text recognition: **aspose-ocr-hindi-v1**
+- Arabic text recognition: **aspose-ocr-arabic-v1**
+- Persian (Farsi) text recognition: **aspose-ocr-arabic-v1**
+- Uyghur text recognition: **aspose-ocr-arabic-v1**
+- Urdu text recognition: **aspose-ocr-arabic-v1**
+{{% /alert %}}
+
 Aspose.OCR for Python via .NET can recognize a text in a large number of languages and all popular writing scripts, including texts with mixed languages.
 
 To specify a language for recognition, provide one of the following values in `language` property of recognition settings:
@@ -24,6 +36,7 @@ Value | Alphabet
 `Language.CYRILLIC` | Auto-detect [all supported Cyrillic characters](/ocr/python-net/supported-characters/#cyrillic)
 `Language.AFR` | Afrikaans
 `Language.ALN` | Albanian
+`Language.ARA` | Arabic, including texts in mixed Arabic/English
 `Language.AWA` | Awadhi
 `Language.AZB` | Azerbaijani (Azeri)
 `Language.BCL` | Bikol
@@ -110,6 +123,7 @@ Value | Alphabet
 `Language.PAG` | Pangasinan
 `Language.PAM` | Kapampangan
 `Language.PCC` | Bouyei (Buyi, Giáy)
+`Language.PES` | Persian (Farsi), including texts in mixed Persian/English
 `Language.PLM` | Palembang
 `Language.POL` | Polish
 `Language.POR` | Portuguese
@@ -141,8 +155,10 @@ Value | Alphabet
 `Language.TUK` | Turkmen
 `Language.TUM` | Tumbuka
 `Language.TUR` | Turkish
+`Language.UIG` | Uyghur, including texts in mixed Uyghur/English
 `Language.UKR` | Ukrainian
 `Language.UMB` | Umbundu
+`Language.URD` | Urdu, including texts in mixed Urdu/English
 `Language.VIE` | Vietnamese
 `Language.VMW` | Makua (Makhuwa)
 `Language.WAL` | Wolaytta
