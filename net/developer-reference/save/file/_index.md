@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2023-07-11"
+date: "2024-06-13"
 author: "Vladimir Lapin"
 type: docs
 url: /net/save-file/
@@ -41,7 +41,7 @@ Format | Description
 `Aspose.OCR.SaveFormat.EPUB` | ePub, a popular e-book file format.
 `Aspose.OCR.SaveFormat.RTF` | RTF, a universal format for exchanging text documents between different word processing programs.
 
-You can optionally enable [automatic spelling corrections](/ocr/net/automatic-spelling-correction/) for recognition results and provide a [custom dictionary](/ocr/net/dictionaries/).
+You can optionally enable [automatic spelling corrections](/ocr/net/automatic-spelling-correction/) for recognition results, provide a [custom dictionary](/ocr/net/dictionaries/), or specify the font to be embedded into a PDF document. The latter is only applicable when saving recognition results into text-only PDF (`Aspose.OCR.SaveFormat.PdfNoImg`).
 
 {{< tabs tabID="1" tabTotal="2" tabName1="Save to file" tabName2="Write to memory" >}}
 {{< tab tabNum="1" >}}

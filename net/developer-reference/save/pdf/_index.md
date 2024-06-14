@@ -1,6 +1,6 @@
 ---
 weight: 11
-date: "2023-06-12"
+date: "2024-06-13"
 author: "Vladimir Lapin"
 type: docs
 url: /net/save-searchable-pdf/
@@ -25,7 +25,7 @@ Format | Description
 `Aspose.OCR.SaveFormat.Pdf` | The original images are placed in the background; the recognized text is placed as an invisible but searchable and selectable overlay on top of the images. Can be useful if you need to keep all notes, images, marks and other data along with the text.
 `Aspose.OCR.SaveFormat.PdfNoImg` | The PDF document containing only the recognized text. The original images are not saved along with the recognition results. This can be useful when digitizing large amounts of high-quality text (such as books) so that the resulting file takes up much less space than using the `Aspose.OCR.SaveFormat.Pdf` parameter.
 
-You can optionally enable [automatic spelling corrections](/ocr/net/automatic-spelling-correction/) for recognition results and provide a [custom dictionary](/ocr/net/dictionaries/).
+You can optionally enable [automatic spelling corrections](/ocr/net/automatic-spelling-correction/) for recognition results, provide a [custom dictionary](/ocr/net/dictionaries/), or specify the font to be embedded into a PDF document. The latter is only applicable when saving recognition results into text-only PDF (`Aspose.OCR.SaveFormat.PdfNoImg`).
 
 {{< tabs tabID="1" tabTotal="2" tabName1="Save PDF to file" tabName2="Write PDF to memory" >}}
 {{< tab tabNum="1" >}}

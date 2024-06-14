@@ -1,6 +1,6 @@
 ---
 weight: 20
-date: "2024-02-27"
+date: "2024-06-13"
 author: "Vladimir Lapin"
 type: docs
 url: /net/recognition/passport/
@@ -38,11 +38,8 @@ Aspose.OCR.AsposeOcr recognitionEngine = new Aspose.OCR.AsposeOcr();
 Aspose.OCR.OcrInput input = new Aspose.OCR.OcrInput(Aspose.OCR.InputType.SingleImage);
 input.Add("passport1.png");
 input.Add("passport2.png");
-// Recognition settings
-Aspose.OCR.PassportRecognitionSettings recognitionSettings = new Aspose.OCR.PassportRecognitionSettings();
-recognitionSettings.Language = Aspose.OCR.Language.Latin;
 // Recognize passports
-List<Aspose.OCR.RecognitionResult> results = recognitionEngine.RecognizePassport(input, recognitionSettings);
+List<Aspose.OCR.RecognitionResult> results = recognitionEngine.RecognizePassport(input);
 foreach(Aspose.OCR.RecognitionResult result in results)
 {
 	Console.WriteLine(result.RecognitionText);
@@ -57,16 +54,16 @@ To retrieve the passport details, use the `GetKeywords()` method of the recognit
 
 ### Example
 
-The following code snippet shows how to extract details from a Malagasy passport:
+The following code snippet shows how to extract key details from US passport:
 
 ```csharp
 Aspose.OCR.AsposeOcr recognitionEngine = new Aspose.OCR.AsposeOcr();
 // Add scanned passport to recognition batch
 OcrInput passports = new OcrInput(InputType.SingleImage);
-passports.Add("malagasy_passport_sample.png");
-// Explicitly specify that you are processing Malagasy passport
+passports.Add("us_passport_sample.png");
+// Explicitly specify that you are processing US passport
 var recognitionSettings = new PassportRecognitionSettings();
-recognitionSettings.Country = Aspose.OCR.Country.MADAGASCAR;
+recognitionSettings.Country = Aspose.OCR.Country.USA;
 // Recognize passport
 List<Aspose.OCR.RecognitionResult> results = recognitionEngine.RecognizePassport(passports, recognitionSettings);
 // Parse passport data and output essential details along with image regions they were found in
