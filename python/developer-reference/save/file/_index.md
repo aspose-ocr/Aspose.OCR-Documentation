@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2023-09-01"
+date: "2024-06-19"
 author: "Vladimir Lapin"
 type: docs
 url: /python-net/save-file/
@@ -38,7 +38,7 @@ Format | Description
 `SaveFormat.EPUB` | ePub, a popular e-book file format.
 `SaveFormat.RTF` | RTF, a universal format for exchanging text documents between different word processing programs.
 
-You can optionally enable [automatic spelling corrections](/ocr/python-net/automatic-spelling-correction/) for recognition results and provide a [custom dictionary](/ocr/python-net/dictionaries/).
+You can optionally enable [automatic spelling corrections](/ocr/python-net/automatic-spelling-correction/) for recognition results, provide a [custom dictionary](/ocr/python-net/dictionaries/), or specify the font to be embedded into a PDF document. The latter is only applicable when saving recognition results into text-only PDF (`SaveFormat.PDF_NO_IMG`).
 
 ```python
 # Instantiate Aspose.OCR API

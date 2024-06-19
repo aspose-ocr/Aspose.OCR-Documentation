@@ -1,6 +1,6 @@
 ---
 weight: 20
-date: "2023-08-30"
+date: "2024-06-19"
 author: "Vladimir Lapin"
 type: docs
 url: /python-net/recognition/passport/
@@ -43,4 +43,34 @@ results = api.recognize_passport(input, recognitionSettings)
 # Print recognition result
 for result in results:
     print(result.recognition_text)
+```
+
+## Extracting passport details
+
+Besides recognizing passport text, this method is capable of extracting essential information from a passport image, like date of birth, names, and more. The specific details extracted depend on the passport's origin, which is specified in the `country` parameter of the [recognition settings](/ocr/python-net/recognition-settings-passport/).
+
+To retrieve the passport details, use the `get_keywords()` method of the recognition results object. The information is returned as a collection of `Keyword` objects, representing a single passport detail as a name-value pair:
+
+- `key` - passport detail ID, for example `DATE_OF_BIRTH`;
+- `value` - specific passport detail, for example `1 Sep 2000`
+
+### Example
+
+The following code snippet shows how to extract key details from US passport:
+
+```python
+# Instantiate Aspose.OCR API
+api = ocr.AsposeOcr()
+# Add image to the recognition batch
+input = OcrInput(InputType.SINGLE_IMAGE)
+input.add("us_passport.png")
+# Enable US passport recognition
+settings = ocr.PassportRecognitionSettings()
+settings.country = ocr.Country.USA
+# Extract passport details
+result = api.recognize_passport(input, settings)
+details = result[0].get_keywords()
+for detail in details:
+    print(detail.key)
+    print(detail.value.text_in_line)
 ```

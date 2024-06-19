@@ -1,6 +1,6 @@
 ---
 weight: 20
-date: "2023-09-01"
+date: "2024-06-19"
 author: "Vladimir Lapin"
 type: docs
 url: /python-net/save-searchable-pdf/
@@ -23,7 +23,7 @@ Format | Description
 `SaveFormat.PDF` | The original images are placed in the background; the recognized text is placed as an invisible but searchable and selectable overlay on top of the images. Can be useful if you need to keep all notes, images, marks and other data along with the text.
 `SaveFormat.PDF_NO_IMG` | The PDF document containing only the recognized text. The original images are not saved along with the recognition results. This can be useful when digitizing large amounts of high-quality text (such as books) so that the resulting file takes up much less space than using the `SaveFormat.PDF` parameter.
 
-You can optionally enable [automatic spelling corrections](/ocr/python-net/automatic-spelling-correction/) for recognition results and provide a [custom dictionary](/ocr/python-net/dictionaries/).
+You can optionally enable [automatic spelling corrections](/ocr/python-net/automatic-spelling-correction/) for recognition results, provide a [custom dictionary](/ocr/python-net/dictionaries/), or specify the font to be embedded into a PDF document. The latter is only applicable when saving recognition results into text-only PDF (`SaveFormat.PDF_NO_IMG`).
 
 ```python
 # Instantiate Aspose.OCR API

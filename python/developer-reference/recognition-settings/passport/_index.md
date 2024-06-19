@@ -1,6 +1,6 @@
 ---
 weight: 30
-date: "2023-09-15"
+date: "2024-06-19"
 author: "Vladimir Lapin"
 type: docs
 url: /python-net/recognition-settings-passport/
@@ -26,7 +26,7 @@ Setting | Type | Default value | Description
 `ignored_symbols` | string | _none_ | A [blacklist](/ocr/python-net/characters-blacklist/) of characters that are ignored during recognition.
 `language` | [`Language`](https://reference.aspose.com/ocr/python-net/aspose.ocr/language/) | `Language.NONE` | Specify a [language](/ocr/python-net/languages/) for recognition.
 `automatic_color_inversion` | boolean | `true` | Improve recognition accuracy of white text on a dark/black background. If you are not optimizing every aspect of recognition (for example, for online applications or entry-level devices), leave this setting set to true.
-`country` | [`Country`](https://reference.aspose.com/ocr/python-net/aspose.ocr/country/) | `Country.UNIVERSAL` | Extract key passport details (such as a number, name, date of birth, and so on) for the specific country in addition to the entire passport text.<br />See **Supported countries** section below.
+`country` | [`Country`](https://reference.aspose.com/ocr/python-net/aspose.ocr/country/) | `Country.NONE` | Extract key passport details (such as a number, name, date of birth, and so on) for the specific country in addition to the entire passport text.<br />See **Supported countries** section below.
 
 ## Supported countries
 
@@ -34,8 +34,9 @@ A list of countries for retrieving specific details (such as a number, name, dat
 
 Value | Country
 ----- | -------
-`Country.UNIVERSAL` | Do not parse passport details (only recognize passport text).
+`Country.NONE` | Do not parse passport details (only recognize passport text).
 `Country.MADAGASCAR` | Parse Malagasy passports.
+`Country.USA` | Parse US passports.
 
 ## Applicable to
 
