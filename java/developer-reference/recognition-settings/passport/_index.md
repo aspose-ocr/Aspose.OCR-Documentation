@@ -1,6 +1,6 @@
 ---
 weight: 50
-date: "2023-07-27"
+date: "2024-06-18"
 author: "Vladimir Lapin"
 type: docs
 url: /java/recognition-settings-passport/
@@ -27,6 +27,17 @@ Setting | Type | Default value | Description
 `setLanguage` | [Recognition language](/ocr/java/languages/) | Extended Latin characters, including diacritics | Specify a [language](/ocr/java/languages/) for recognition.
 `setThreadsCount` | Number of threads, `int` | Automatic | The number of [CPU threads](/ocr/java/multithreading/) used for recognition.
 `setAutomaticColorInversion` | boolean | `true` | Set the method parameter to `true` automatically detect white text on a dark/black background and use a special OCR algorithm to improve passport recognition accuracy. Call this method with the parameter set to “false” to explicitly disable inverted text detection to save resources.
+`setCountry` | `Country` | `NONE` | [Extract](/ocr/java/recognition/passport/#extracting-passport-details) key passport details (such as a number, name, date of birth, and so on) for the specific country in addition to the entire passport text.<br />See **Supported countries** section below.
+
+## Supported countries
+
+A list of countries for retrieving specific details (such as a number, name, date of birth, and so on) from passport images:
+
+Value | Country
+----- | -------
+`Country.NONE` | Do not parse passport details (only recognize passport text).
+`Country.MADAGASCAR` | Parse Malagasy passports.
+`Country.USA` | Parse US passports.
 
 ## Applicable to
 
