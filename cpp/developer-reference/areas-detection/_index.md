@@ -53,14 +53,15 @@ Name              | Value | Description | Use cases
 `detect_areas_mode_enum::NONE` | 0 | Do not analyze document structure. Never disable automatic document areas detection when working with multi-paragraph and multi-column documents, tables, or photos. This can significantly reduce recognition accuracy. | Simple images containing a few lines of text without illustrations or formatting.<br />Applications requiring maximum recognition speed<br />Web applications
 `detect_areas_mode_enum::DOCUMENT` | 1 | Detect large blocks of text, such as paragraphs and columns. Optimal for multi-column documents with illustrations.<br />See [**detect_areas_mode_enum::DOCUMENT**](/ocr/cpp/areas-detection/document/) for additional details. | Contracts<br />Books<br />Articles<br />Newspapers<br />High-quality scans
 `detect_areas_mode_enum::PHOTO` | 2 | Finds small text blocks inside complex images.<br />See [**detect_areas_mode_enum::PHOTO**](/ocr/cpp/areas-detection/photo/) for additional details. | Driver’s licenses<br />Social security cards<br />Government and work IDs<br />Visas<br />Photos<br />Screenshots<br />Advertisements
-`detect_areas_mode_enum::COMBINE` | 3 | The combination of _detect_areas_mode_enum::DOCUMENT_ and _detect_areas_mode_enum::PHOTO_.<br />See [**detect_areas_mode_enum::COMBINE**](/ocr/cpp/areas-detection/combine/) for additional details. | Posters<br />Billboards<br />Datasheets<br />Random photos<br />Batch recognition
+`detect_areas_mode_enum::MIXED_TEXT` | 3 | The combination of _detect_areas_mode_enum::DOCUMENT_ and _detect_areas_mode_enum::PHOTO_.<br />See [**detect_areas_mode_enum::MIXED_TEXT**](/ocr/cpp/areas-detection/mixed_text/) for additional details. | Posters<br />Billboards<br />Datasheets<br />Random photos<br />Batch recognition
 `detect_areas_mode_enum::TABLE` | 4 | Detects cells in tabular structures.<br />See [**detect_areas_mode_enum::TABLE**](/ocr/cpp/areas-detection/table/) for additional details. | Tables<br />Invoices
 `detect_areas_mode_enum::CURVED_TEXT` | 5 | Auto-straightens curved lines and finds text blocks inside the resulting image.<br />See [**detect_areas_mode_enum::CURVED_TEXT**](/ocr/cpp/areas-detection/curved_text/) for additional details. | Photos of books, magazine articles, and other curved pages.
+`detect_areas_mode_enum::UNIVERSAL` | 6 | Optimal choice for general image processing. However, specialized algorithms can provide faster or more accurate results for their intended use cases.<br />See [**detect_areas_mode_enum::UNIVERSAL**](/ocr/cpp/areas-detection/universal/) for additional details. | On average, this algorithm achieves good results with most image types.
 
 ## Performance impact
 
 Pipeline | Time
 -------- | ----
-<ul><li>`detect_areas_mode_enum::PHOTO`</li><ul> | 2.9 seconds
-<ul><li>`detect_areas_mode_enum::PHOTO`</li><li>[Recognition](/ocr/cpp/recognition/)</li><ul> | 4.7 seconds
-<ul><li>`detect_areas_mode_enum::CURVED_TEXT`</li><li>[Recognition](/ocr/cpp/recognition/)</li><ul> | 8.5 seconds
+`detect_areas_mode_enum::PHOTO` | 2.9 seconds
+`detect_areas_mode_enum::PHOTO`<br />[Recognition](/ocr/cpp/recognition/) | 4.7 seconds
+`detect_areas_mode_enum::CURVED_TEXT`<br />[Recognition](/ocr/cpp/recognition/) | 8.5 seconds
