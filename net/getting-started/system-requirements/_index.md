@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2024-01-12"
+date: "2024-07-29"
 author: "Vladimir Lapin"
 type: docs
 url: /net/system-requirements/
@@ -67,6 +67,16 @@ Xamarin.Android | 10.0, 8.0
 
 {{% alert color="primary" %}} 
 Microsoft Visual Studio 2022 [does not support](https://docs.microsoft.com/en-us/visualstudio/releases/2022/compatibility#-visual-studio-2022-support-for-net-development) .NET Core 2.0.
+{{% /alert %}} 
+
+## x86 platform support
+
+Aspose.OCR library can work on both x86 and x64 platforms. However, for maximum stability and performance, it is highly recommended to build OCR apps for x64 platforms only.
+
+OCR on x86 platforms is always run in a single thread, even you [explicitly specify](/ocr/net/multithreading/) multiple threads.
+
+{{% alert color="primary" %}} 
+Microsoft Visual Studio may not handle upgrades from x86 to x64 versions of the library correctly. To ensure a smooth transition to x64, we recommend creating a new project from scratch or removing and re-adding the Aspose.OCR NuGet package.
 {{% /alert %}} 
 
 ## External dependencies
