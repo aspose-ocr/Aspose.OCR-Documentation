@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2024-07-29"
+date: "2024-08-05"
 author: "Vladimir Lapin"
 type: docs
 url: /net/system-requirements/
@@ -77,18 +77,6 @@ OCR on x86 platforms is always run in a single thread, even you [explicitly spec
 
 {{% alert color="primary" %}} 
 Microsoft Visual Studio may not handle upgrades from x86 to x64 versions of the library correctly. To ensure a smooth transition to x64, we recommend creating a new project from scratch or removing and re-adding the Aspose.OCR NuGet package.
-{{% /alert %}} 
-
-## External dependencies
-
-- [Microsoft.ML.OnnxRuntime](https://www.nuget.org/packages/Microsoft.ML.OnnxRuntime/) version 1.13.1 or later (for **Aspose.OCR** package only)
-- [Microsoft.ML.OnnxRuntime.Gpu](https://www.nuget.org/packages/Microsoft.ML.OnnxRuntime.Gpu/) version 1.7.1 or later (for **Aspose.OCR-GPU** only)
-- [System.Drawing.Common](https://www.nuget.org/packages/System.Drawing.Common/) version 4.7.0 or later
-
-{{% alert color="primary" %}} 
-These packages are automatically installed when you [install](/ocr/net/installation/) Aspose.OCR / Aspose.OCR-GPU for .NET NuGet package.
-
-You will only need to add these packages if you install Aspose.OCR for .NET using the MSI installer or by manually adding _Aspose.Ocr.dll_ library to the project.
 {{% /alert %}} 
 
 ## GPU support

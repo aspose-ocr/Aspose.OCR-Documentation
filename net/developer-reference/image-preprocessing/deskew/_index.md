@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2023-04-07"
+date: "2024-08-05"
 author: "Vladimir Lapin"
 type: docs
 url: /net/deskew/
@@ -115,7 +115,7 @@ foreach(Aspose.OCR.SkewOutput angle in angles) Console.WriteLine($"File: {angle.
 
 ## Automatic skew correction
 
-To automatically straighten skewed image before recognition, run the image through [`AutoSkew`](https://reference.aspose.com/ocr/net/aspose.ocr.models.preprocessingfilters/preprocessingfilter/autoskew/) processing filter.
+To automatically straighten skewed image or rotate upside-down images before recognition, run the image through [`AutoSkew`](https://reference.aspose.com/ocr/net/aspose.ocr.models.preprocessingfilters/preprocessingfilter/autoskew/) processing filter.
 
 ```csharp
 Aspose.OCR.AsposeOcr recognitionEngine = new Aspose.OCR.AsposeOcr();
