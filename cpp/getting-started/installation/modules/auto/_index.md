@@ -1,6 +1,6 @@
 ---
 weight: 20
-date: "2024-04-19"
+date: "2024-09-04"
 author: "Vladimir Lapin"
 type: docs
 url: /cpp/modules/auto/
@@ -18,7 +18,7 @@ keywords:
 - offline
 ---
 
-Aspose.OCR for C++ can automatically fetch the necessary resources as needed when you call the method that depends on them. This mode is turned off by default. Check [Important considerations](#important-considerations) before deciding to enable this mode.
+Aspose.OCR for C++ can automatically fetch the necessary resources as needed when you call the method that depends on them. This mode is enabled by default.
 
 1. Create a directory to which resources will be downloaded.
 2. Specify the path to that directory in `resource_root_path` property of `AsposeOCRResourceLoadSettings` structure.
