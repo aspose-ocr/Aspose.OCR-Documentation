@@ -1,6 +1,6 @@
 ---
 weight: 60
-date: "2024-02-27"
+date: "2024-09-27"
 author: "Vladimir Lapin"
 type: docs
 url: /net/recognition/read-text-in-wild/
@@ -54,10 +54,6 @@ keywords:
 		min-width: 222px;
 	}
 </style>
-
-{{% alert color="caution" %}} 
-To use this recognition method, [install](/ocr/net/modules/) sparse text recognition model (**aspose-ocr-text-in-wild-v1**) in your project.
-{{% /alert %}}
 
 Aspose.OCR offers a special recognition algorithm for extracting content from images with sparse text and noisy/colored backgrounds. This method significantly improves OCR accuracy in the following business cases:
 
@@ -120,8 +116,3 @@ only
 		}
 	}
 </script>
-
-## Limitations
-
-- The method only supports Latin letters and numbers.
-- This method does not support recognition settings.

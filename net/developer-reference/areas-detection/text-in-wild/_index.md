@@ -1,6 +1,6 @@
 ---
 weight: 60
-date: "2024-02-27"
+date: "2024-09-27"
 author: "Vladimir Lapin"
 type: docs
 url: /net/areas-detection/text-in-wild/
@@ -14,10 +14,6 @@ keywords:
 - photo
 - street
 ---
-
-{{% alert color="caution" %}} 
-To use this structure detection algorithm, [install](/ocr/net/modules/) sparse text recognition model (**aspose-ocr-text-in-wild-v1**) in your project.
-{{% /alert %}}
 
 When this mode is enabled, Aspose.OCR engine finds individual words on images with sparse text. It is very effective when dealing with the following images:
 
@@ -51,7 +47,3 @@ recognitionSettings.DetectAreasMode = Aspose.OCR.DetectAreasMode.TEXT_IN_WILD;
 List<Aspose.OCR.RecognitionResult> results = recognitionEngine.Recognize(input, recognitionSettings);
 Console.WriteLine(result[0].RecognitionText);
 ```
-
-## Limitations
-
-The algorithm only works with Latin letters and numbers. You cannot specify the [recognition language](/ocr/net/languages/) and provide [whitelisted/blacklisted characters](/ocr/net/recognition-settings-common/). 
