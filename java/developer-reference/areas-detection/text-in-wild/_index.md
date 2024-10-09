@@ -1,6 +1,6 @@
 ---
 weight: 60
-date: "2024-03-04"
+date: "2024-10-09"
 author: "Vladimir Lapin"
 type: docs
 url: /java/areas-detection/text-in-wild/
@@ -50,7 +50,3 @@ images.add("source.png");
 ArrayList<RecognitionResult> results = api.Recognize(images, recognitionSettings);
 System.out.println("Recognition result:\n" + results[0].recognitionText + "\n\n");
 ```
-
-## Limitations
-
-The algorithm only works with Latin letters and numbers. You cannot specify the [recognition language](/ocr/java/languages/) and provide [whitelisted/blacklisted characters](/ocr/java/recognition-settings-common/). 

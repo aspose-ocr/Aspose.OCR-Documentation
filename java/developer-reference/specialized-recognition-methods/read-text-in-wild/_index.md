@@ -1,6 +1,6 @@
 ---
 weight: 60
-date: "2024-03-04"
+date: "2024-10-09"
 author: "Vladimir Lapin"
 type: docs
 url: /java/recognition/read-text-in-wild/
@@ -119,8 +119,3 @@ only
 		}
 	}
 </script>
-
-## Limitations
-
-- The method only supports Latin letters and numbers.
-- This method does not support recognition settings.

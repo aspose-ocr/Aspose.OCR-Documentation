@@ -1,6 +1,6 @@
 ---
 weight: 11
-date: "2024-06-18"
+date: "2024-10-09"
 author: "Vladimir Lapin"
 type: docs
 url: /java/save-searchable-pdf/
@@ -24,6 +24,20 @@ Format | Description
 ------ | -----------
 `Format.Pdf` | The original images are placed in the background; the recognized text is placed as an invisible but searchable and selectable overlay on top of the images. Can be useful if you need to keep all notes, images, marks and other data along with the text.
 `Format.PdfNoImg` | The PDF document containing only the recognized text. The original images are not saved along with the recognition results. This can be useful when digitizing large amounts of high-quality text (such as books) so that the resulting file takes up much less space than using the `SaveFormat.Pdf` parameter.
+
+To balance between file size and image quality of saved PDFs, use the optional `optimizePdf` parameter, which accepts the value of `Aspose.OCR.PdfOptimizationMode` enumeration.
+
+Name              | Value | Description
+----------------- | ----- | -----------
+`NONE`            | 0     | Do not optimize PDF size.
+`MAXIMUM_QUALITY` | 1     | **Default.** Optimize file size while preserving the highest image quality.
+`HIGH_QUALITY`    | 2     | Smaller PDF file size at the expense of sight image downsampling.
+`BALANCED`        | 3     | Downsample images to balance file size and image quality.
+`AGGRESSIVE`      | 4     | Significantly reduce the PDF file size at the expense of lower image quality.
+
+{{% alert color="primary" %}}
+The resulting PDF file size depends on the size and complexity of the original image.
+{{% /alert %}}
 
 You can optionally enable [automatic spelling corrections](/ocr/java/automatic-spelling-correction/) for recognition results, provide a [custom dictionary](/ocr/java/dictionaries/), or specify the font to be embedded into a PDF document. The latter is only applicable when saving recognition results into text-only PDF (`Format.PdfNoImg`).
 
