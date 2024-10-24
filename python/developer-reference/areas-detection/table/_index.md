@@ -1,12 +1,12 @@
 ---
 weight: 40
-date: "2023-08-27"
+date: "2024-03-01"
 author: "Vladimir Lapin"
 type: docs
 url: /python-net/areas-detection/table/
 feedback: OCRPYNET
-title: DetectAreasMode.TABLE
-description: How Aspose.OCR for Python via .NET determines the structure of a document using the DetectAreasMode.TABLE algorithm.
+title:  DetectAreasMode.TABLE
+description: How Aspose.OCR determines the structure of a document using the DetectAreasMode.TABLE algorithm.
 keywords:
 - structure
 - region
@@ -16,7 +16,11 @@ keywords:
 - row
 ---
 
-When this mode is enabled, Aspose.OCR for Python via .NET engine detects tabular structures on an image and extracts text from cells. This areas detection mode is recommended when working with scanned spreadsheets, financial and accounting reports, invoices, and other tables.
+{{% alert color="caution" %}} 
+To use this structure detection algorithm, [install](/ocr/python-net/modules/) advanced OCR models (**aspose-ocr-advanced-recognition-v1**) in your project.
+{{% /alert %}}
+
+When this mode is enabled, OCR engine detects tabular structures on an image and extracts text from cells. This areas detection mode is recommended when working with scanned spreadsheets, financial and accounting reports, invoices, and other tables.
 
 However, this algorithm is inefficient when dealing with large amounts of text, such as pages from books and newspaper articles. Try [**DetectAreasMode.DOCUMENT**](/ocr/python-net/areas-detection/document/) instead.
 

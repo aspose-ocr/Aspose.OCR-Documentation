@@ -1,12 +1,12 @@
 ---
 weight: 50
-date: "2023-08-27"
+date: "2024-03-01"
 author: "Vladimir Lapin"
 type: docs
 url: /python-net/areas-detection/curved_text/
 feedback: OCRPYNET
-title: DetectAreasMode.CURVED_TEXT
-description: How Aspose.OCR for Python via .NET determines the structure of a document using the DetectAreasMode.CURVED_TEXT algorithm.
+title:  DetectAreasMode.CURVED_TEXT
+description: How Aspose.OCR determines the structure of a document using the DetectAreasMode.CURVED_TEXT algorithm.
 keywords:
 - structure
 - region
@@ -15,6 +15,10 @@ keywords:
 - distort
 - curve
 ---
+
+{{% alert color="caution" %}} 
+To use this structure detection algorithm, [install](/ocr/python-net/modules/) advanced OCR models (**aspose-ocr-advanced-recognition-v1**) in your project.
+{{% /alert %}}
 
 When photographing pages of books and magazine articles, the cylindrical curvature of the page results in distortion of the image, causing the lines of text to curl. This 3D geometric distortion negatively affects recognition.
 
@@ -26,7 +30,7 @@ However, this algorithm is less efficient and consumes more resources when deali
 
 ## Example
 
-The following code sample demonstrates how to use this document areas detection algorithm in Aspose.OCR for Python via .NET:
+The following code sample demonstrates how to use this document areas detection algorithm:
 
 ```python
 # Instantiate Aspose.OCR API
