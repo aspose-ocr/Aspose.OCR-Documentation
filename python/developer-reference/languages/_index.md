@@ -1,6 +1,6 @@
 ---
 weight: 30
-date: "2024-05-30"
+date: "2024-11-07"
 author: "Vladimir Lapin"
 type: docs
 url: /python-net/languages/
@@ -24,6 +24,8 @@ To recognize text in certain languages, you must [install](/ocr/python-net/modul
 - Persian (Farsi) text recognition: **aspose-ocr-arabic-v1**
 - Uyghur text recognition: **aspose-ocr-arabic-v1**
 - Urdu text recognition: **aspose-ocr-arabic-v1**
+- Japanese text recognition: **aspose-ocr-japanese-v1**
+- Korean text recognition: **aspose-ocr-korean-v1**
 {{% /alert %}}
 
 Aspose.OCR for Python via .NET can recognize a text in a large number of languages and all popular writing scripts, including texts with mixed languages.
@@ -85,6 +87,7 @@ Value | Alphabet
 `Language.ILO` | Ilocano
 `Language.IND` | Indonesian
 `Language.ITA` | Italian
+`Language.JPN` | Japanese (mixed texts in Japanese and English are also supported)
 `Language.KAZ` | Kazakh
 `Language.KBD` | Kabardian
 `Language.KFY` | Kumauni
@@ -94,6 +97,7 @@ Value | Alphabet
 `Language.KNC` | Kanuri
 `Language.KNN` | Konkani
 `Language.KON` | Kikongo
+`Language.KOR` | Korean (mixed texts in Korean and English are also supported)
 `Language.LATIN` | Latin
 `Language.LAV` | Latvian
 `Language.LIT` | Lithuanian

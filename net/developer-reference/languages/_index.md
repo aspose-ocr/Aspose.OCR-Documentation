@@ -1,6 +1,6 @@
 ---
 weight: 30
-date: "2024-04-26"
+date: "2024-11-07"
 author: "Vladimir Lapin"
 type: docs
 url: /net/languages/
@@ -26,6 +26,8 @@ To recognize text in certain languages, you must [install](/ocr/net/modules/) ad
 - Persian (Farsi) text recognition: **aspose-ocr-arabic-v1**
 - Uyghur text recognition: **aspose-ocr-arabic-v1**
 - Urdu text recognition: **aspose-ocr-arabic-v1**
+- Japanese text recognition: **aspose-ocr-japanese-v1**
+- Korean text recognition: **aspose-ocr-korean-v1**
 {{% /alert %}}
 
 Aspose.OCR for .NET can recognize a text in a large number of languages and all popular writing scripts, including texts with mixed languages.
@@ -87,6 +89,7 @@ Value | Alphabet
 `Aspose.OCR.Language.Ilo` | Ilocano
 `Aspose.OCR.Language.Ind` | Indonesian
 `Aspose.OCR.Language.Ita` | Italian
+`Aspose.OCR.Language.Jpn` | Japanese (mixed texts in Japanese and English are also supported)
 `Aspose.OCR.Language.Kaz` | Kazakh
 `Aspose.OCR.Language.Kbd` | Kabardian
 `Aspose.OCR.Language.Kfy` | Kumauni
@@ -96,6 +99,7 @@ Value | Alphabet
 `Aspose.OCR.Language.Knc` | Kanuri
 `Aspose.OCR.Language.Knn` | Konkani
 `Aspose.OCR.Language.Kon` | Kikongo
+`Aspose.OCR.Language.Kor` | Korean (mixed texts in Korean and English are also supported)
 `Aspose.OCR.Language.Latin` | Latin
 `Aspose.OCR.Language.Lav` | Latvian
 `Aspose.OCR.Language.Lit` | Lithuanian

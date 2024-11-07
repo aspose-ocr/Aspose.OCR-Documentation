@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2024-04-26"
+date: "2024-11-07"
 author: "Vladimir Lapin"
 type: docs
 url: /net/recognition-languages/
@@ -74,6 +74,8 @@ Aspose.OCR can recognize more than 130 languages and all popular writing scripts
 - Gan
 - Hakka
 - Hmong
+- Japanese
+- Korean
 - Mandarin (Chinese)
 - Min Bei
 - Min Dong

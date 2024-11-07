@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2024-05-30"
+date: "2024-11-07"
 author: "Vladimir Lapin"
 type: docs
 url: /python-net/recognition-languages/
@@ -74,6 +74,8 @@ Aspose.OCR for Python via .NET can recognize a large number of languages and all
 - Gan
 - Hakka
 - Hmong
+- Japanese
+- Korean
 - Mandarin (Chinese)
 - Min Bei
 - Min Dong
