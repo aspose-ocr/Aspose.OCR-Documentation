@@ -1,6 +1,6 @@
 ---
 weight: 20
-date: "2024-04-26"
+date: "2024-11-13"
 author: "Vladimir Lapin"
 type: docs
 url: /java/languages/
@@ -26,6 +26,8 @@ To recognize text in certain languages, you must [install](/ocr/java/modules/) a
 - Persian (Farsi) text recognition: **aspose-ocr-arabic-v1**
 - Uyghur text recognition: **aspose-ocr-arabic-v1**
 - Urdu text recognition: **aspose-ocr-arabic-v1**
+- Japanese text recognition: **aspose-ocr-japanese-v1**
+- Korean text recognition: **aspose-ocr-korean-v1**
 {{% /alert %}}
 
 Aspose.OCR for Java can recognize a text in a large number of languages and all popular writing scripts, including texts with mixed languages.
@@ -87,6 +89,7 @@ Value | Alphabet
 `Language.Ilo` | Ilocano
 `Language.Ind` | Indonesian
 `Language.Ita` | Italian
+`Language.Jpn` | Japanese (mixed texts in Japanese and English are also supported)
 `Language.Kaz` | Kazakh
 `Language.Kbd` | Kabardian
 `Language.Kfy` | Kumauni
@@ -96,6 +99,7 @@ Value | Alphabet
 `Language.Knc` | Kanuri
 `Language.Knn` | Konkani
 `Language.Kon` | Kikongo
+`Language.Kor` | Korean (mixed texts in Korean and English are also supported)
 `Language.Latin` | Latin
 `Language.Lav` | Latvian
 `Language.Lit` | Lithuanian

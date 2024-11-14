@@ -1,6 +1,6 @@
 ---
 weight: 60
-date: "2023-07-14"
+date: "2024-11-13"
 author: "Vladimir Lapin"
 type: docs
 url: /java/recognition/
@@ -10,6 +10,7 @@ aliases:
 - /ocr/java/recognition/tiff/
 - /ocr/java/recognition/url/
 - /ocr/java/batch-recognition/
+- /java/recognition/read-text-in-wild/
 feedback: OCRJAVA
 title: Recognition
 description: Extracting text from images, web links, scanned PDFs, DjVu files, folders, archives and other content.

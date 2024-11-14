@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2024-04-26"
+date: "2024-11-13"
 author: "Vladimir Lapin"
 type: docs
 url: /java/recognition-languages/
@@ -74,6 +74,8 @@ Aspose.OCR for Java can recognize a large number of languages and all popular wr
 - Gan
 - Hakka
 - Hmong
+- Japanese
+- Korean
 - Mandarin (Chinese)
 - Min Bei
 - Min Dong

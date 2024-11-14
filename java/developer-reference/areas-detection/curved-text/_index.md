@@ -1,6 +1,6 @@
 ---
 weight: 50
-date: "2024-03-04"
+date: "2024-11-13"
 author: "Vladimir Lapin"
 type: docs
 url: /java/areas-detection/curved_text/
@@ -26,7 +26,7 @@ When photographing pages of books and magazine articles, the cylindrical curvatu
 
 ![Detecting and rectifying curved lines of text](curved_text.png)
 
-However, this algorithm is less efficient and consumes more resources when dealing with perfectly straight images, such as a single scanned sheet of paper. Try [**DetectAreasMode.DOCUMENT**](/ocr/java/areas-detection/document/) or [**DetectAreasMode.PHOTO**](/ocr/java/areas-detection/photo/) instead.
+However, this algorithm is less efficient and consumes more resources when dealing with perfectly straight images, such as a single scanned sheet of paper. Try [**DetectAreasMode.MULTICOLUMN**](/ocr/java/areas-detection/multicolumn/) or [**DetectAreasMode.UNIVERSAL**](/ocr/java/areas-detection/universal/) instead.
 
 ## Example
 

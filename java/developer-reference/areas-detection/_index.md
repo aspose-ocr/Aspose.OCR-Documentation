@@ -1,6 +1,6 @@
 ---
 weight: 50
-date: "2023-10-18"
+date: "2024-11-13"
 author: "Vladimir Lapin"
 type: docs
 url: /java/areas-detection/
@@ -36,7 +36,7 @@ Document structure analysis algorithm is specified using [`setDetectAreasMode`](
 AsposeOCR api = new AsposeOCR();
 // Enable automatic document areas detection
 RecognitionSettings recognitionSettings = new RecognitionSettings();
-recognitionSettings.setDetectAreasMode(DetectAreasMode.DOCUMENT);
+recognitionSettings.setDetectAreasMode(DetectAreasMode.UNIVERSAL);
 // Prepare batch
 OcrInput images = new OcrInput(InputType.SingleImage);
 images.add("image.png");
@@ -47,12 +47,10 @@ System.out.println("Recognition result:\n" + results[0].recognitionText + "\n\n"
 
 Aspose.OCR for Java supports the following document structure analysis methods provided in `DetectAreasMode` enumeration:
 
-Name              | Value | Description | Use cases
------------------ | :---: | ----------- | ---------
-`DetectAreasMode.NONE` | 0 | Do not analyze document structure. Similar to calling [`setDetectAreas(false)`](https://reference.aspose.com/ocr/java/com.aspose.ocr/RecognitionSettings#setDetectAreas-boolean-) method of [recognition settings](https://reference.aspose.com/ocr/java/com.aspose.ocr/RecognitionSettings). | Simple images containing a few lines of text without illustrations or formatting.<br />Applications requiring maximum recognition speed<br />Web applications
-`DetectAreasMode.DOCUMENT` | 1 | Detect large blocks of text, such as paragraphs and columns. Optimal for multi-column documents with illustrations.<br />See [**DetectAreasMode.DOCUMENT**](/ocr/java/areas-detection/document/) for additional details. | Contracts<br />Books<br />Articles<br />Newspapers<br />High-quality scans
-`DetectAreasMode.PHOTO` | 2 | Finds small text blocks inside complex images.<br />See [**DetectAreasMode.PHOTO**](/ocr/java/areas-detection/photo/) for additional details. | Driver’s licenses<br />Social security cards<br />Government and work IDs<br />Visas<br />Photos<br />Screenshots<br />Advertisements
-`DetectAreasMode.COMBINE` | 3 | The combination of _DetectAreasMode.DOCUMENT_ and _DetectAreasMode.PHOTO_.<br />See [**DetectAreasMode.COMBINE**](/ocr/java/areas-detection/combine/) for additional details. | Posters<br />Billboards<br />Datasheets<br />Random photos<br />Batch recognition
-`DetectAreasMode.TABLE` | 4 | Detects cells in tabular structures.<br />See [**DetectAreasMode.TABLE**](/ocr/java/areas-detection/table/) for additional details. | Tables<br />Invoices
-`DetectAreasMode.CURVED_TEXT` | 5 | Auto-straightens curved lines and finds text blocks inside the resulting image.<br />See [**DetectAreasMode.CURVED_TEXT**](/ocr/java/areas-detection/curved_text/) for additional details. | Photos of books, magazine articles, and other curved pages.
-`DetectAreasMode.TEXT_IN_WILD` | 6 | Finds individual words on images with sparse text and colored backgrounds.<br />See [**DetectAreasMode.TEXT_IN_WILD**](/ocr/java/areas-detection/text-in-wild/) for additional details. | Street photos<br />Price tags<br />Food labels<br />Menus<br />Catalogs<br />Ads
+Name              | Description | Use cases
+----------------- | ----------- | ---------
+`DetectAreasMode.UNIVERSAL` | Finds small text blocks inside complex images.<br />See [**DetectAreasMode.UNIVERSAL**](/ocr/java/areas-detection/universal/) for additional details. | Driver’s licenses<br />Social security cards<br />Government and work IDs<br />Visas<br />Photos<br />Screenshots<br />Advertisements<br />Street photos
+`DetectAreasMode.MULTICOLUMN` | Detects large blocks of text formatted in columns. Optimal for multi-column documents with illustrations.<br />See [**DetectAreasMode.MULTICOLUMN**](/ocr/java/areas-detection/multicolumn/) for additional details. | Contracts<br />Books<br />Articles<br />Newspapers<br />High-quality scans
+`DetectAreasMode.TABLE` | Detects cells in tabular structures.<br />See [**DetectAreasMode.TABLE**](/ocr/java/areas-detection/table/) for additional details. | Tables<br />Invoices
+`DetectAreasMode.CURVED_TEXT` | Auto-straightens curved lines and finds text blocks inside the resulting image.<br />See [**DetectAreasMode.CURVED_TEXT**](/ocr/java/areas-detection/curved_text/) for additional details. | Photos of books, magazine articles, and other curved pages.
+`DetectAreasMode.NONE` | Prioritizes speed and reduces resource consumption by omitting support for complex layouts. | Simple images containing a few lines of text without illustrations or formatting.<br />Applications requiring maximum recognition speed<br />Web applications

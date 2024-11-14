@@ -1,6 +1,6 @@
 ---
 weight: 40
-date: "2024-03-04"
+date: "2024-11-13"
 author: "Vladimir Lapin"
 type: docs
 url: /java/areas-detection/table/
@@ -22,7 +22,7 @@ To use this structure detection algorithm, [install](/ocr/java/modules/) advance
 
 When this mode is enabled, OCR engine detects tabular structures on an image and extracts text from cells. This areas detection mode is recommended when working with scanned spreadsheets, financial and accounting reports, invoices, and other tables.
 
-However, this algorithm is inefficient when dealing with large amounts of text, such as pages from books and newspaper articles. Try [**DetectAreasMode.DOCUMENT**](/ocr/java/areas-detection/document/) instead.
+However, this algorithm is inefficient when dealing with large amounts of text, such as pages from books and newspaper articles. Try [**DetectAreasMode.DOCUMENT**](/ocr/java/areas-detection/multicolumn/) instead.
 
 ## Example
 
