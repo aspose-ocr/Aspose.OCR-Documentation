@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2024-11-07"
+date: "2024-11-11"
 author: "Vladimir Lapin"
 type: docs
 url: /python-net/recognition-languages/
@@ -16,6 +16,14 @@ keywords:
 ---
 
 Aspose.OCR for Python via .NET can recognize a large number of languages and all popular writing scripts, including texts with mixed languages.
+
+## Universal (mixed language) OCR models
+
+- Extended Latin
+- Cyrillic
+- Cyrillic/English
+- Chinese
+- Devanagari
 
 ## Worldwide
 
@@ -120,6 +128,7 @@ Aspose.OCR for Python via .NET can recognize a large number of languages and all
 - Ilocano
 - Indonesian
 - Kapampangan
+- Kannada
 - Makassar (Makasar)
 - Malay (Melayu)
 - Minangkabau
@@ -130,7 +139,10 @@ Aspose.OCR for Python via .NET can recognize a large number of languages and all
 - Sasak
 - Sundanese (Sunda)
 - Tagalog (Pilipino)
+- Tamil
+- Telugu
 - Vietnamese
+- Waray-Waray
 - Waray-Waray
 
 ## Middle East and North Africa

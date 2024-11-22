@@ -1,6 +1,6 @@
 ---
 weight: 30
-date: "2024-11-07"
+date: "2024-11-21"
 author: "Vladimir Lapin"
 type: docs
 url: /net/languages/
@@ -19,25 +19,37 @@ keywords:
 {{% alert color="caution" %}} 
 To recognize text in certain languages, you must [install](/ocr/net/modules/) additional recognition models:
 
+
 - Cyrillic text recognition: **aspose-ocr-cyrillic-v1**
-- Chinese text recognition: **aspose-ocr-chinese-v1**
-- Hindi text recognition: **aspose-ocr-hindi-v1**
+- Chinese text recognition: **aspose-ocr-chinese-v2**
+- Indic (Devanagari) text recognition: **aspose-ocr-hindi-v2**
 - Arabic text recognition: **aspose-ocr-arabic-v1**
 - Persian (Farsi) text recognition: **aspose-ocr-arabic-v1**
 - Uyghur text recognition: **aspose-ocr-arabic-v1**
 - Urdu text recognition: **aspose-ocr-arabic-v1**
 - Japanese text recognition: **aspose-ocr-japanese-v1**
 - Korean text recognition: **aspose-ocr-korean-v1**
+- Kannada text recognition: **aspose-ocr-kannada-v1**
+- Tamil text recognition: **aspose-ocr-tamil-v1**
+- Telugu text recognition: **aspose-ocr-telugu-v1**
+- Mixed-language Cyrillic/English recognition: **aaspose-ocr-cyrillic-v2**
 {{% /alert %}}
 
 Aspose.OCR for .NET can recognize a text in a large number of languages and all popular writing scripts, including texts with mixed languages.
 
 To specify a language for recognition, provide one of the following values in [`Language`](https://reference.aspose.com/ocr/net/aspose.ocr/recognitionsettings/language/) property of [recognition settings](https://reference.aspose.com/ocr/net/aspose.ocr/recognitionsettings/):
 
+{{% alert color="primary" %}}
+Mixed-language Cyrillic/English text recognition is experimental. If you are absolutely sure about the text language (for example, Ukrainian), it is recommended to specify the language directly.
+{{% /alert %}}
+
 Value | Alphabet
 ----- | --------
 `Aspose.OCR.Language.ExtLatin` | Auto-detect [all supported Latin characters](/ocr/net/supported-characters/#extended-latin) and diacritics
 `Aspose.OCR.Language.Cyrillic` | Auto-detect [all supported Cyrillic characters](/ocr/net/supported-characters/#cyrillic)
+`Aspose.OCR.Language.Chinese` | All Chinese languages. Mixed-language Chinese/English texts also supported.
+`Aspose.OCR.Language.Devanagari`<br />`Aspose.OCR.Language.Indic` | Indic texts based on Devanagari script, including mixed Devanagari/English texts.
+`Aspose.OCR.Language.European` | Mixed-language Cyrillic/English texts (_experimental_).
 `Aspose.OCR.Language.Afr` | Afrikaans
 `Aspose.OCR.Language.Aln` | Albanian
 `Aspose.OCR.Language.Ara` | Arabic (mixed texts in Arabic and English are also supported)
@@ -90,6 +102,7 @@ Value | Alphabet
 `Aspose.OCR.Language.Ind` | Indonesian
 `Aspose.OCR.Language.Ita` | Italian
 `Aspose.OCR.Language.Jpn` | Japanese (mixed texts in Japanese and English are also supported)
+`Aspose.OCR.Language.Kan` | Mixed-language Kannada/English texts.
 `Aspose.OCR.Language.Kaz` | Kazakh
 `Aspose.OCR.Language.Kbd` | Kabardian
 `Aspose.OCR.Language.Kfy` | Kumauni
@@ -154,6 +167,8 @@ Value | Alphabet
 `Aspose.OCR.Language.Sun` | Sundanese (Sunda)
 `Aspose.OCR.Language.Swe` | Swedish
 `Aspose.OCR.Language.Swh` | Swahili
+`Aspose.OCR.Language.Tam` | Mixed-language Tamil/English texts.
+`Aspose.OCR.Language.Tel` | Mixed-language Telugu/English texts.
 `Aspose.OCR.Language.Tgl` | Tagalog (Pilipino)
 `Aspose.OCR.Language.Toi` | Tonga
 `Aspose.OCR.Language.Tsn` | Tswana

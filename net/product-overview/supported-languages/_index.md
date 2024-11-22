@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2024-11-07"
+date: "2024-11-21"
 author: "Vladimir Lapin"
 type: docs
 url: /net/recognition-languages/
@@ -16,6 +16,14 @@ keywords:
 ---
 
 Aspose.OCR can recognize more than 130 languages and all popular writing scripts, including texts with mixed languages.
+
+## Universal (mixed language) OCR models
+
+- Extended Latin
+- Cyrillic
+- Cyrillic/English
+- Chinese
+- Devanagari
 
 ## Worldwide
 
@@ -120,6 +128,7 @@ Aspose.OCR can recognize more than 130 languages and all popular writing scripts
 - Ilocano
 - Indonesian
 - Kapampangan
+- Kannada
 - Makassar (Makasar)
 - Malay (Melayu)
 - Minangkabau
@@ -130,6 +139,8 @@ Aspose.OCR can recognize more than 130 languages and all popular writing scripts
 - Sasak
 - Sundanese (Sunda)
 - Tagalog (Pilipino)
+- Tamil
+- Telugu
 - Vietnamese
 - Waray-Waray
 

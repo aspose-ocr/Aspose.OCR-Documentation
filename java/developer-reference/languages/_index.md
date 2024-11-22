@@ -20,24 +20,35 @@ keywords:
 To recognize text in certain languages, you must [install](/ocr/java/modules/) additional recognition models:
 
 - Cyrillic text recognition: **aspose-ocr-cyrillic-v1**
-- Chinese text recognition: **aspose-ocr-chinese-v1**
-- Hindi text recognition: **aspose-ocr-hindi-v1**
+- Chinese text recognition: **aspose-ocr-chinese-v2**
+- Indic (Devanagari) text recognition: **aspose-ocr-hindi-v2**
 - Arabic text recognition: **aspose-ocr-arabic-v1**
 - Persian (Farsi) text recognition: **aspose-ocr-arabic-v1**
 - Uyghur text recognition: **aspose-ocr-arabic-v1**
 - Urdu text recognition: **aspose-ocr-arabic-v1**
 - Japanese text recognition: **aspose-ocr-japanese-v1**
 - Korean text recognition: **aspose-ocr-korean-v1**
+- Kannada text recognition: **aspose-ocr-kannada-v1**
+- Tamil text recognition: **aspose-ocr-tamil-v1**
+- Telugu text recognition: **aspose-ocr-telugu-v1**
+- Mixed-language Cyrillic/English recognition: **aaspose-ocr-cyrillic-v2**
 {{% /alert %}}
 
 Aspose.OCR for Java can recognize a text in a large number of languages and all popular writing scripts, including texts with mixed languages.
 
 To specify a language for recognition, provide one of the following values in [`setLanguage`](https://reference.aspose.com/ocr/java/com.aspose.ocr/RecognitionSettings#setLanguage-com.Language-) method of [RecognitionSettings](https://reference.aspose.com/ocr/java/com.aspose.ocr/RecognitionSettings) class:
 
+{{% alert color="primary" %}}
+Mixed-language Cyrillic/English text recognition is experimental. If you are absolutely sure about the text language (for example, Ukrainian), it is recommended to specify the language directly.
+{{% /alert %}}
+
 Value | Alphabet
 ----- | --------
 `Language.ExtLatin` | Auto-detect [all supported Latin characters](/ocr/net/supported-characters/#extended-latin) and diacritics
 `Language.Cyrillic` | All supported Cyrillic characters (auto-detect)
+`Language.Chinese` | All Chinese languages. Mixed-language Chinese/English texts also supported.
+`Language.Devanagari`<br />`Language.Indic` | Indic texts based on Devanagari script, including mixed Devanagari/English texts.
+`Language.European` | Mixed-language Cyrillic/English texts (_experimental_).
 `Language.Afr` | Afrikaans
 `Language.Aln` | Albanian
 `Language.Ara` | Arabic (mixed texts in Arabic and English are also supported)
@@ -90,6 +101,7 @@ Value | Alphabet
 `Language.Ind` | Indonesian
 `Language.Ita` | Italian
 `Language.Jpn` | Japanese (mixed texts in Japanese and English are also supported)
+`Language.Kan` | Mixed-language Kannada/English texts.
 `Language.Kaz` | Kazakh
 `Language.Kbd` | Kabardian
 `Language.Kfy` | Kumauni
@@ -154,6 +166,8 @@ Value | Alphabet
 `Language.Sun` | Sundanese (Sunda)
 `Language.Swe` | Swedish
 `Language.Swh` | Swahili
+`Language.Tam` | Mixed-language Tamil/English texts.
+`Language.Tel` | Mixed-language Telugu/English texts.
 `Language.Tgl` | Tagalog (Pilipino)
 `Language.Toi` | Tonga
 `Language.Tsn` | Tswana

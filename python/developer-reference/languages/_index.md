@@ -1,6 +1,6 @@
 ---
 weight: 30
-date: "2024-11-07"
+date: "2024-11-21"
 author: "Vladimir Lapin"
 type: docs
 url: /python-net/languages/
@@ -18,24 +18,35 @@ keywords:
 To recognize text in certain languages, you must [install](/ocr/python-net/modules/) additional recognition models:
 
 - Cyrillic text recognition: **aspose-ocr-cyrillic-v1**
-- Chinese text recognition: **aspose-ocr-chinese-v1**
-- Hindi text recognition: **aspose-ocr-hindi-v1**
+- Chinese text recognition: **aspose-ocr-chinese-v2**
+- Indic (Devanagari) text recognition: **aspose-ocr-hindi-v2**
 - Arabic text recognition: **aspose-ocr-arabic-v1**
 - Persian (Farsi) text recognition: **aspose-ocr-arabic-v1**
 - Uyghur text recognition: **aspose-ocr-arabic-v1**
 - Urdu text recognition: **aspose-ocr-arabic-v1**
 - Japanese text recognition: **aspose-ocr-japanese-v1**
 - Korean text recognition: **aspose-ocr-korean-v1**
+- Kannada text recognition: **aspose-ocr-kannada-v1**
+- Tamil text recognition: **aspose-ocr-tamil-v1**
+- Telugu text recognition: **aspose-ocr-telugu-v1**
+- Mixed-language Cyrillic/English recognition: **aaspose-ocr-cyrillic-v2**
 {{% /alert %}}
 
 Aspose.OCR for Python via .NET can recognize a text in a large number of languages and all popular writing scripts, including texts with mixed languages.
 
 To specify a language for recognition, provide one of the following values in `language` property of recognition settings:
 
+{{% alert color="primary" %}}
+Mixed-language Cyrillic/English text recognition is experimental. If you are absolutely sure about the text language (for example, Ukrainian), it is recommended to specify the language directly.
+{{% /alert %}}
+
 Value | Alphabet
 ----- | --------
 `Language.EXT_LATIN` | Auto-detect [all supported Latin characters](/ocr/python-net/supported-characters/#extended-latin) and diacritics
 `Language.CYRILLIC` | Auto-detect [all supported Cyrillic characters](/ocr/python-net/supported-characters/#cyrillic)
+`Language.CHINESE` | All Chinese languages. Mixed-language Chinese/English texts also supported.
+`Language.DEVANAGARI`<br />`Language.INDIC` | Indic texts based on Devanagari script, including mixed Devanagari/English texts.
+`Language.EUROPEAN` | Mixed-language Cyrillic/English texts (_experimental_).
 `Language.AFR` | Afrikaans
 `Language.ALN` | Albanian
 `Language.ARA` | Arabic, including texts in mixed Arabic/English
@@ -88,6 +99,7 @@ Value | Alphabet
 `Language.IND` | Indonesian
 `Language.ITA` | Italian
 `Language.JPN` | Japanese (mixed texts in Japanese and English are also supported)
+`Language.KAN` | Mixed-language Kannada/English texts.
 `Language.KAZ` | Kazakh
 `Language.KBD` | Kabardian
 `Language.KFY` | Kumauni
@@ -152,6 +164,8 @@ Value | Alphabet
 `Language.SUN` | Sundanese (Sunda)
 `Language.SWE` | Swedish
 `Language.SWH` | Swahili
+`Language.TAM` | Mixed-language Tamil/English texts.
+`Language.TEL` | Mixed-language Telugu/English texts.
 `Language.TGL` | Tagalog (Pilipino)
 `Language.TOI` | Tonga
 `Language.TSN` | Tswana
