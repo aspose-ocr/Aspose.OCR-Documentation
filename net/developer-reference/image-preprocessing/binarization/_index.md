@@ -121,7 +121,7 @@ input.Add("source.png");
 // Save processed image to the folder
 Aspose.OCR.ImageProcessing.Save(input, @"C:\result");
 // Recognize image
-List<Aspose.OCR.RecognitionResult> results = recognitionEngine.Recognize(input);
+Aspose.OCR.OcrOutput results = recognitionEngine.Recognize(input);
 foreach(Aspose.OCR.RecognitionResult result in results)
 {
 	Console.WriteLine(result.RecognitionText);
@@ -151,7 +151,7 @@ input.Add("source.png");
 // Save processed image to the folder
 Aspose.OCR.ImageProcessing.Save(input, @"C:\result");
 // Recognize image
-List<Aspose.OCR.RecognitionResult> results = recognitionEngine.Recognize(input);
+Aspose.OCR.OcrOutput results = recognitionEngine.Recognize(input);
 foreach(Aspose.OCR.RecognitionResult result in results)
 {
 	Console.WriteLine(result.RecognitionText);

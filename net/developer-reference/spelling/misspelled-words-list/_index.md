@@ -48,7 +48,7 @@ Aspose.OCR.AsposeOcr recognitionEngine = new Aspose.OCR.AsposeOcr();
 Aspose.OCR.OcrInput input = new Aspose.OCR.OcrInput(Aspose.OCR.InputType.SingleImage);
 input.Add("source.png");
 // Recognize image
-List<Aspose.OCR.RecognitionResult> results = recognitionEngine.Recognize(input);
+Aspose.OCR.OcrOutput results = recognitionEngine.Recognize(input);
 // Output misspelled words
 foreach(var correction in results[0].GetSpellCheckErrorList(Aspose.OCR.SpellChecker.SpellCheckLanguage.Eng))
 {

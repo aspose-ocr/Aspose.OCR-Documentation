@@ -48,7 +48,7 @@ We assume that you already have a basic knowledge of **Microsoft Visual Studio**
    ```
 3. Extract text from the image:
    ```csharp
-   List<Aspose.OCR.RecognitionResult> results = recognitionEngine.Recognize(source);
+   Aspose.OCR.OcrOutput results = recognitionEngine.Recognize(source);
    ```
 3. Output the recognized text:
    ```csharp
@@ -61,7 +61,7 @@ Full code:
 Aspose.OCR.AsposeOcr recognitionEngine = new Aspose.OCR.AsposeOcr();
 Aspose.OCR.OcrInput source = new Aspose.OCR.OcrInput(Aspose.OCR.InputType.SingleImage);
 source.Add("source.png");
-List<Aspose.OCR.RecognitionResult> results = recognitionEngine.Recognize(source);
+Aspose.OCR.OcrOutput results = recognitionEngine.Recognize(source);
 Console.WriteLine(results[0].RecognitionText);
 ```
 

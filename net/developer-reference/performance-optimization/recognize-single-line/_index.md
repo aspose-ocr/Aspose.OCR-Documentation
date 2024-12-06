@@ -32,7 +32,7 @@ input.Add("source.png");
 Aspose.OCR.RecognitionSettings recognitionSettings = new Aspose.OCR.RecognitionSettings();
 recognitionSettings.Language = Aspose.OCR.Language.Ukr;
 // Recognize image
-List<Aspose.OCR.RecognitionResult> results = recognitionEngine.RecognizeLines(input, recognitionSettings);
+Aspose.OCR.OcrOutput results = recognitionEngine.RecognizeLines(input, recognitionSettings);
 foreach(Aspose.OCR.RecognitionResult result in results)
 {
 	Console.WriteLine(result.RecognitionText);

@@ -39,7 +39,7 @@ Aspose.OCR.OcrInput input = new Aspose.OCR.OcrInput(Aspose.OCR.InputType.SingleI
 input.Add("passport1.png");
 input.Add("passport2.png");
 // Recognize passports
-List<Aspose.OCR.RecognitionResult> results = recognitionEngine.RecognizePassport(input);
+Aspose.OCR.OcrOutput results = recognitionEngine.RecognizePassport(input);
 foreach(Aspose.OCR.RecognitionResult result in results)
 {
 	Console.WriteLine(result.RecognitionText);
@@ -65,7 +65,7 @@ passports.Add("us_passport_sample.png");
 var recognitionSettings = new PassportRecognitionSettings();
 recognitionSettings.Country = Aspose.OCR.Country.USA;
 // Recognize passport
-List<Aspose.OCR.RecognitionResult> results = recognitionEngine.RecognizePassport(passports, recognitionSettings);
+Aspose.OCR.OcrOutput results = recognitionEngine.RecognizePassport(passports, recognitionSettings);
 // Parse passport data and output essential details along with image regions they were found in
 var details = results[0].GetKeywords();
 foreach (var item in details)

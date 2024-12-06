@@ -88,6 +88,7 @@ Aspose.OCR can recognize more than 130 languages and all popular writing scripts
 - Min Bei
 - Min Dong
 - Min Nan
+- Mongolian
 - Pu-Xian
 - Wu (Changzhou)
 - Xiang

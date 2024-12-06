@@ -57,7 +57,7 @@ input.Add("passport2.png");
 Aspose.OCR.PassportRecognitionSettings recognitionSettings = new Aspose.OCR.PassportRecognitionSettings();
 recognitionSettings.Language = Aspose.OCR.Language.ExtLatin;
 // Recognize passports
-List<Aspose.OCR.RecognitionResult> results = recognitionEngine.RecognizePassport(input, recognitionSettings);
+Aspose.OCR.OcrOutput results = recognitionEngine.RecognizePassport(input, recognitionSettings);
 foreach(Aspose.OCR.RecognitionResult result in results)
 {
 	Console.WriteLine(result.RecognitionText);

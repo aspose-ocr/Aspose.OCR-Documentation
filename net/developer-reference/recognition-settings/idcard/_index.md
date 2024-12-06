@@ -47,7 +47,7 @@ input.Add("ID2.png");
 Aspose.OCR.IDCardRecognitionSettings recognitionSettings = new Aspose.OCR.IDCardRecognitionSettings();
 recognitionSettings.Language = Aspose.OCR.Language.Latin;
 // Recognize ID cards
-List<Aspose.OCR.RecognitionResult> results = recognitionEngine.RecognizeIDCard(input, recognitionSettings);
+Aspose.OCR.OcrOutput results = recognitionEngine.RecognizeIDCard(input, recognitionSettings);
 foreach(Aspose.OCR.RecognitionResult result in results)
 {
 	Console.WriteLine(result.RecognitionText);

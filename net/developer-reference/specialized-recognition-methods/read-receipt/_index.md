@@ -37,7 +37,7 @@ input.Add("receipt2.png");
 Aspose.OCR.ReceiptRecognitionSettings recognitionSettings = new Aspose.OCR.ReceiptRecognitionSettings();
 recognitionSettings.Language = Aspose.OCR.Language.Latin;
 // Recognize receipts
-List<Aspose.OCR.RecognitionResult> results = recognitionEngine.RecognizeReceipt(input, recognitionSettings);
+Aspose.OCR.OcrOutput results = recognitionEngine.RecognizeReceipt(input, recognitionSettings);
 foreach(Aspose.OCR.RecognitionResult result in results)
 {
 	Console.WriteLine(result.RecognitionText);

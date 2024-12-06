@@ -32,7 +32,7 @@ input.Add("source.png");
 Aspose.OCR.RecognitionSettings recognitionSettings = new Aspose.OCR.RecognitionSettings();
 recognitionSettings.AllowedSymbols = "AÁBCDEÉFG12345";
 // Recognize image
-List<Aspose.OCR.RecognitionResult> results = recognitionEngine.Recognize(input, recognitionSettings);
+Aspose.OCR.OcrOutput results = recognitionEngine.Recognize(input, recognitionSettings);
 foreach(Aspose.OCR.RecognitionResult result in results)
 {
 	Console.WriteLine(result.RecognitionText);

@@ -75,7 +75,7 @@ Aspose.OCR.OcrInput input = new Aspose.OCR.OcrInput(Aspose.OCR.InputType.SingleI
 input.Add("photo1.png");
 input.Add("photo2.png");
 // Recognize images
-List<Aspose.OCR.RecognitionResult> results = recognitionEngine.RecognizeStreetPhoto(input);
+Aspose.OCR.OcrOutput results = recognitionEngine.RecognizeStreetPhoto(input);
 foreach(Aspose.OCR.RecognitionResult result in results)
 {
 	Console.WriteLine(result.RecognitionText);

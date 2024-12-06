@@ -67,7 +67,7 @@ Field | Type | Description
 Aspose.OCR.AsposeOcr recognitionEngine = new Aspose.OCR.AsposeOcr();
 Aspose.OCR.OcrInput input = new Aspose.OCR.OcrInput(Aspose.OCR.InputType.SingleImage);
 input.Add("source.png");
-List<Aspose.OCR.RecognitionResult> results = recognitionEngine.Recognize(input);
+Aspose.OCR.OcrOutput results = recognitionEngine.Recognize(input);
 foreach(Aspose.OCR.RecognitionResult.LinesResult line in results[0].RecognitionLinesResult)
 {
 	Console.WriteLine($"{line.Line}: {line.TextInLine}");

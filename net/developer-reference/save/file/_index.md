@@ -51,7 +51,7 @@ Aspose.OCR.AsposeOcr recognitionEngine = new Aspose.OCR.AsposeOcr();
 Aspose.OCR.OcrInput input = new Aspose.OCR.OcrInput(Aspose.OCR.InputType.SingleImage);
 input.Add("source.png");
 // Recognize image
-List<Aspose.OCR.RecognitionResult> results = recognitionEngine.Recognize(input);
+Aspose.OCR.OcrOutput results = recognitionEngine.Recognize(input);
 // Save result
 results[0].Save("result.txt", Aspose.OCR.SaveFormat.Text);
 ```
@@ -63,7 +63,7 @@ Aspose.OCR.AsposeOcr recognitionEngine = new Aspose.OCR.AsposeOcr();
 Aspose.OCR.OcrInput input = new Aspose.OCR.OcrInput(Aspose.OCR.InputType.SingleImage);
 input.Add("source.png");
 // Recognize image
-List<Aspose.OCR.RecognitionResult> results = recognitionEngine.Recognize(input);
+Aspose.OCR.OcrOutput results = recognitionEngine.Recognize(input);
 // Save result
 using(MemoryStream ms = new MemoryStream())
 {
@@ -88,7 +88,7 @@ Aspose.OCR.OcrInput input = new Aspose.OCR.OcrInput(Aspose.OCR.InputType.SingleI
 input.Add("page1.png");
 input.Add("page2.png");
 // Recognize image
-List<Aspose.OCR.RecognitionResult> results = recognitionEngine.Recognize(input);
+Aspose.OCR.OcrOutput results = recognitionEngine.Recognize(input);
 // Save results
 Aspose.OCR.AsposeOcr.SaveMultipageDocument("result.docx", Aspose.OCR.SaveFormat.Docx, results);
 ```
@@ -101,7 +101,7 @@ Aspose.OCR.OcrInput input = new Aspose.OCR.OcrInput(Aspose.OCR.InputType.SingleI
 input.Add("page1.png");
 input.Add("page2.png");
 // Recognize image
-List<Aspose.OCR.RecognitionResult> results = recognitionEngine.Recognize(input);
+Aspose.OCR.OcrOutput results = recognitionEngine.Recognize(input);
 // Save results
 using(MemoryStream ms = new MemoryStream())
 {

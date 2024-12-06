@@ -59,7 +59,7 @@ Aspose.OCR.RecognitionSettings recognitionSettings = new Aspose.OCR.RecognitionS
 recognitionSettings.Language = Aspose.OCR.Language.Ukr;
 recognitionSettings.DetectAreasMode = Aspose.OCR.DetectAreasMode.TABLE;
 // Recognize image
-List<Aspose.OCR.RecognitionResult> results = recognitionEngine.Recognize(input, recognitionSettings);
+Aspose.OCR.OcrOutput results = recognitionEngine.Recognize(input, recognitionSettings);
 foreach(Aspose.OCR.RecognitionResult result in results)
 {
 	Console.WriteLine(result.RecognitionText);

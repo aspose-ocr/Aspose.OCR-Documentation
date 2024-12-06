@@ -33,6 +33,7 @@ To recognize text in certain languages, you must [install](/ocr/net/modules/) ad
 - Tamil text recognition: **aspose-ocr-tamil-v1**
 - Telugu text recognition: **aspose-ocr-telugu-v1**
 - Mixed-language Cyrillic/English recognition: **aaspose-ocr-cyrillic-v2**
+- Mongolian text recognition: **aspose-ocr-cyrillic-v1**
 {{% /alert %}}
 
 Aspose.OCR for .NET can recognize a text in a large number of languages and all popular writing scripts, including texts with mixed languages.
@@ -127,6 +128,7 @@ Value | Alphabet
 `Aspose.OCR.Language.Min` | Minangkabau
 `Aspose.OCR.Language.Mly` | Malay (Melayu)
 `Aspose.OCR.Language.Mnp` | Min Bei
+`Aspose.OCR.Language.Mon` | Mongolian
 `Aspose.OCR.Language.Mtq` | Muong
 `Aspose.OCR.Language.Mtr` | Mewari
 `Aspose.OCR.Language.Mui` | Musi
@@ -212,7 +214,7 @@ input.Add("source.png");
 Aspose.OCR.RecognitionSettings recognitionSettings = new Aspose.OCR.RecognitionSettings();
 recognitionSettings.Language = Aspose.OCR.Language.Ukr;
 // Recognize image
-List<Aspose.OCR.RecognitionResult> results = recognitionEngine.Recognize(input, recognitionSettings);
+Aspose.OCR.OcrOutput results = recognitionEngine.Recognize(input, recognitionSettings);
 foreach(Aspose.OCR.RecognitionResult result in results)
 {
 	Console.WriteLine(result.RecognitionText);

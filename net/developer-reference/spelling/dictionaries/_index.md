@@ -35,7 +35,7 @@ Aspose.OCR.AsposeOcr recognitionEngine = new Aspose.OCR.AsposeOcr();
 Aspose.OCR.OcrInput input = new Aspose.OCR.OcrInput(Aspose.OCR.InputType.SingleImage);
 input.Add("source.png");
 // Recognize image
-List<Aspose.OCR.RecognitionResult> results = recognitionEngine.Recognize(input);
+Aspose.OCR.OcrOutput results = recognitionEngine.Recognize(input);
 // Check spelling with custom dictionary
 string correctedResult = results[0].GetSpellCheckCorrectedText(Aspose.OCR.SpellChecker.SpellCheckLanguage.Eng, "dictionary.txt");
 Console.WriteLine(correctedResult);

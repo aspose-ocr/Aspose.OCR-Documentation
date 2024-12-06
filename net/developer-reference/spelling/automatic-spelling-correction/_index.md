@@ -52,7 +52,7 @@ Aspose.OCR.AsposeOcr recognitionEngine = new Aspose.OCR.AsposeOcr();
 Aspose.OCR.OcrInput input = new Aspose.OCR.OcrInput(Aspose.OCR.InputType.SingleImage);
 input.Add("source.png");
 // Recognize image
-List<Aspose.OCR.RecognitionResult> results = recognitionEngine.Recognize(input);
+Aspose.OCR.OcrOutput results = recognitionEngine.Recognize(input);
 // Output corrected result
 string correctedResult = results[0].GetSpellCheckCorrectedText(Aspose.OCR.SpellChecker.SpellCheckLanguage.Eng);
 Console.WriteLine(correctedResult);
@@ -65,7 +65,7 @@ Aspose.OCR.AsposeOcr recognitionEngine = new Aspose.OCR.AsposeOcr();
 Aspose.OCR.OcrInput input = new Aspose.OCR.OcrInput(Aspose.OCR.InputType.SingleImage);
 input.Add("source.png");
 // Recognize image
-List<Aspose.OCR.RecognitionResult> results = recognitionEngine.Recognize(input);
+Aspose.OCR.OcrOutput results = recognitionEngine.Recognize(input);
 // Save corrected result
 results[0].Save("result.txt", Aspose.OCR.SaveFormat.Text, true, Aspose.OCR.SpellChecker.SpellCheckLanguage.Deu);
 ```

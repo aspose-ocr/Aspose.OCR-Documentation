@@ -39,7 +39,7 @@ input.Add("source2.jpg");
 Aspose.OCR.RecognitionSettings recognitionSettings = new Aspose.OCR.RecognitionSettings();
 recognitionSettings.Language = Aspose.OCR.Language.Ukr;
 // Recognize image
-List<Aspose.OCR.RecognitionResult> results = recognitionEngine.Recognize(input, recognitionSettings);
+Aspose.OCR.OcrOutput results = recognitionEngine.Recognize(input, recognitionSettings);
 foreach(Aspose.OCR.RecognitionResult result in results)
 {
 	Console.WriteLine(result.RecognitionText);
@@ -66,5 +66,5 @@ Aspose.OCR.AsposeOcr recognitionEngine = new Aspose.OCR.AsposeOcr();
 Aspose.OCR.OcrInput input = new Aspose.OCR.OcrInput(Aspose.OCR.InputType.PDF);
 input.Add("large.pdf");
 // Recognize image
-List<Aspose.OCR.RecognitionResult> results = recognitionEngine.Recognize(input, null, cancellationTokenSource.Token);
+Aspose.OCR.OcrOutput results = recognitionEngine.Recognize(input, null, cancellationTokenSource.Token);
 ```

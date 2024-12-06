@@ -82,7 +82,7 @@ Aspose.OCR.OcrInput input = new Aspose.OCR.OcrInput(Aspose.OCR.InputType.SingleI
 input.Add("memo1.png");
 input.Add("memo2.png");
 // Recognize images
-List<Aspose.OCR.RecognitionResult> results = recognitionEngine.RecognizeHandwrittenText(input);
+Aspose.OCR.OcrOutput results = recognitionEngine.RecognizeHandwrittenText(input);
 foreach(Aspose.OCR.RecognitionResult result in results)
 {
 	Console.WriteLine(result.RecognitionText);

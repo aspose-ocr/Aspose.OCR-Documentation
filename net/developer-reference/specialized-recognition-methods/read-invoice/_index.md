@@ -37,7 +37,7 @@ input.Add("invoice2.png");
 Aspose.OCR.InvoiceRecognitionSettings recognitionSettings = new Aspose.OCR.InvoiceRecognitionSettings();
 recognitionSettings.Language = Aspose.OCR.Language.Latin;
 // Recognize invoices
-List<Aspose.OCR.RecognitionResult> results = recognitionEngine.RecognizeInvoice(input, recognitionSettings);
+Aspose.OCR.OcrOutput results = recognitionEngine.RecognizeInvoice(input, recognitionSettings);
 foreach(Aspose.OCR.RecognitionResult result in results)
 {
 	Console.WriteLine(result.RecognitionText);

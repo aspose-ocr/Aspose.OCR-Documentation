@@ -47,7 +47,7 @@ input.Add("car2.png");
 Aspose.OCR.CarPlateRecognitionSettings recognitionSettings = new Aspose.OCR.CarPlateRecognitionSettings();
 recognitionSettings.Language = Aspose.OCR.Language.Latin;
 // Recognize license plates
-List<Aspose.OCR.RecognitionResult> results = recognitionEngine.RecognizeCarPlate(input, recognitionSettings);
+Aspose.OCR.OcrOutput results = recognitionEngine.RecognizeCarPlate(input, recognitionSettings);
 foreach(Aspose.OCR.RecognitionResult result in results)
 {
 	Console.WriteLine(result.RecognitionText);

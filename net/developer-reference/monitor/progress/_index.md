@@ -31,7 +31,7 @@ recognitionEngine.OcrProgress += (Aspose.OCR.Models.Events.OcrPageRecognizeEvent
 	Console.WriteLine($"Read page: {e.CurrentPage} | image: {e.CurrentImage} | time taken: {e.Duration.TotalSeconds} sec");
 };
 // Recognize images
-List<Aspose.OCR.RecognitionResult> results = recognitionEngine.Recognize(input);
+Aspose.OCR.OcrOutput results = recognitionEngine.Recognize(input);
 Aspose.OCR.AsposeOcr.SaveMultipageDocument("result.json", Aspose.OCR.SaveFormat.Json, results);
 ```
 

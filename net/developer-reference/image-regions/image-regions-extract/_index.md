@@ -87,7 +87,7 @@ recognitionSettings.RecognitionAreas = rectangles;
 // Recognize image
 Aspose.OCR.OcrInput input = new Aspose.OCR.OcrInput(Aspose.OCR.InputType.SingleImage);
 input.Add("source.png");
-List<Aspose.OCR.RecognitionResult> results = recognitionEngine.Recognize(input, recognitionSettings);
+Aspose.OCR.OcrOutput results = recognitionEngine.Recognize(input, recognitionSettings);
 // Output recognition results for each area
 Console.WriteLine("Name: "+results[0].RecognitionAreasText[0]);
 Console.WriteLine("Expiry: "+results[0].RecognitionAreasText[1]);
