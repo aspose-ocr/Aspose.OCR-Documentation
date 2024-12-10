@@ -30,6 +30,7 @@ To recognize text in certain languages, you must [install](/ocr/python-net/modul
 - Tamil text recognition: **aspose-ocr-tamil-v1**
 - Telugu text recognition: **aspose-ocr-telugu-v1**
 - Mixed-language Cyrillic/English recognition: **aaspose-ocr-cyrillic-v2**
+- Mongolian text recognition: **aspose-ocr-cyrillic-v1**
 {{% /alert %}}
 
 Aspose.OCR for Python via .NET can recognize a text in a large number of languages and all popular writing scripts, including texts with mixed languages.
@@ -124,6 +125,7 @@ Value | Alphabet
 `Language.MIN` | Minangkabau
 `Language.MLY` | Malay (Melayu)
 `Language.MNP` | Min Bei
+`Language.MON` | Mongolian
 `Language.MTQ` | Muong
 `Language.MTR` | Mewari
 `Language.MUI` | Musi

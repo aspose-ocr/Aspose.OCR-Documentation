@@ -25,7 +25,7 @@ To extract text from an invoice, use `recognize_invoice()` method of [`AsposeOcr
 
 This method allows you to customize recognition accuracy, performance, and other [settings](/ocr/python-net/recognition-settings-invoice/).
 
-The method takes [`OcrInput` object](/ocr/python-net/ocrinput/) and returns a [`RecognitionResult`](https://reference.aspose.com/ocr/python-net/aspose.ocr/recognitionresult/) object containing the invoice data.
+The method takes [`OcrInput` object](/ocr/python-net/ocrinput/) and returns `OcrOutput` object containing the invoice data.
 
 ```python
 # Instantiate Aspose.OCR API

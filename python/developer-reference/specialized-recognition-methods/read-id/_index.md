@@ -25,7 +25,7 @@ Aspose.OCR for Python via .NET offers a special recognition algorithm that extra
 
 This method allows you to customize recognition accuracy, performance, and other [settings](/ocr/python-net/recognition-settings-id-card/).
 
-The method takes [`OcrInput` object](/ocr/python-net/ocrinput/) and returns a [`RecognitionResult`](https://reference.aspose.com/ocr/python-net/aspose.ocr/recognitionresult/) object containing the identity data.
+The method takes [`OcrInput` object](/ocr/python-net/ocrinput/) and returns `OcrOutput` object containing the identity data.
 
 ```python
 # Instantiate Aspose.OCR API

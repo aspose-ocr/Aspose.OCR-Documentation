@@ -66,7 +66,7 @@ Aspose.OCR offers a special recognition algorithm for extracting content from im
 
 To extract text from such images, use `recognize_street_photo()` method of [`AsposeOcr`](https://reference.aspose.com/ocr/python-net/aspose.ocr/asposeocr/) class.
 
-The method takes [`OcrInput` object](/ocr/python-net/ocrinput/) and returns a [`RecognitionResult`](https://reference.aspose.com/ocr/python-net/aspose.ocr/recognitionresult/) object containing the text from images.
+The method takes [`OcrInput` object](/ocr/python-net/ocrinput/) and returns `OcrOutput` object containing the text from images.
 
 ```python
 # Instantiate Aspose.OCR API

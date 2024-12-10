@@ -88,6 +88,7 @@ Aspose.OCR for Python via .NET can recognize a large number of languages and all
 - Min Bei
 - Min Dong
 - Min Nan
+- Mongolian
 - Pu-Xian
 - Wu (Changzhou)
 - Xiang

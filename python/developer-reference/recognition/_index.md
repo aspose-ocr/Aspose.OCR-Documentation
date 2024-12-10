@@ -18,7 +18,7 @@ Reading text from any content in Aspose.OCR for Python via .NET is as easy as ca
 
 This method takes [`OcrInput` object](/ocr/python-net/ocrinput/) and optional [recognition settings](/ocr/python-net/recognition-settings-common/).
 
-Recognition results are returned as a list of [`RecognitionResult`](https://reference.aspose.com/ocr/python-net/aspose.ocr/recognitionresult/) objects, that allow you to perform advanced manipulations with recognition results, including [automatic spelling correction](/ocr/python-net/spelling/) and [saving](/ocr/python-net/save/) results in various formats.
+Recognition results are returned as a `OcrOutput` object, that allow you to perform advanced manipulations with recognition results, including [automatic spelling correction](/ocr/python-net/spelling/) and [saving](/ocr/python-net/save/) results in various formats.
 
 ## Example
 

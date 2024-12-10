@@ -73,7 +73,7 @@ Aspose.OCR offers a special recognition algorithm for extracting handwritten tex
 
 To extract handwritten text from images, use `recognize_handwritten_text()` method of [`AsposeOcr`](https://reference.aspose.com/ocr/python-net/aspose.ocr/asposeocr/) class.
 
-The method takes [`OcrInput` object](/ocr/python-net/ocrinput/) and returns a [`RecognitionResult`](https://reference.aspose.com/ocr/python-net/aspose.ocr/recognitionresult/) object containing the text from images.
+The method takes [`OcrInput` object](/ocr/python-net/ocrinput/) and returns `OcrOutput` object containing the text from images.
 
 ```python
 import aspose.ocr as ocr
