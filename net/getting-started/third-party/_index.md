@@ -4,6 +4,8 @@ date: "2024-08-05"
 author: "Vladimir Lapin"
 type: docs
 url: /net/third-party/
+ai_search_scope: ocr_net
+ai_search_endpoint: "https://api.aspose.cloud/v5.0/ocr/docsearch/ask"
 feedback: OCRNET
 title: External dependencies
 description: Third-party components used by Aspose.OCR for .NET.

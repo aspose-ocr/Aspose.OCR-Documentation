@@ -4,6 +4,8 @@ date: "2023-01-20"
 author: "Vladimir Lapin"
 type: docs
 url: /net/find-text/
+ai_search_scope: ocr_net
+ai_search_endpoint: "https://api.aspose.cloud/v5.0/ocr/docsearch/ask"
 feedback: OCRNET
 title: Finding text in an image
 description: How to determine if an image contains provided text.

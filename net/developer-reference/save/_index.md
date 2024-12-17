@@ -4,6 +4,8 @@ date: "2022-09-06"
 author: "Vladimir Lapin"
 type: docs
 url: /net/save/
+ai_search_scope: ocr_net
+ai_search_endpoint: "https://api.aspose.cloud/v5.0/ocr/docsearch/ask"
 feedback: OCRNET
 title: Saving recognition results
 description: Aspose.OCR for .NET can save OCR results to a text file or return them as text, XML, or JSON.

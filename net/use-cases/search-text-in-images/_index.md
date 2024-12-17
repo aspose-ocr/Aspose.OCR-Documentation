@@ -4,6 +4,8 @@ date: "2023-09-27"
 author: "Vladimir Lapin"
 type: docs
 url: /net/search-text-in-images/
+ai_search_scope: ocr_net
+ai_search_endpoint: "https://api.aspose.cloud/v5.0/ocr/docsearch/ask"
 feedback: OCRNET
 title: Searching for text in images
 description: Search for text or a regular expression in an image or scanned PDF and automate workflows based on the result.

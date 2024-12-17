@@ -4,6 +4,8 @@ date: "2024-02-27"
 author: "Vladimir Lapin"
 type: docs
 url: /net/image-processing/
+ai_search_scope: ocr_net
+ai_search_endpoint: "https://api.aspose.cloud/v5.0/ocr/docsearch/ask"
 aliases:
 - /net/image-preprocessing/
 - /net/custom-image-correction-with-preprocessing-filters/

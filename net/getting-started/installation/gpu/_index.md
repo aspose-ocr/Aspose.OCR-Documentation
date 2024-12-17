@@ -4,6 +4,8 @@ date: "2023-05-30"
 author: "Vladimir Lapin"
 type: docs
 url: /net/installation/gpu/
+ai_search_scope: ocr_net
+ai_search_endpoint: "https://api.aspose.cloud/v5.0/ocr/docsearch/ask"
 feedback: OCRNET
 title: Installing GPU-accelearated package
 description: Adding GPU-accelerated package of Aspose.OCR for .NET to your project.

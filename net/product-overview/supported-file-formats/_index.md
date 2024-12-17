@@ -4,6 +4,8 @@ date: "2023-01-12"
 author: "Vladimir Lapin"
 type: docs
 url: /net/supported-file-formats/
+ai_search_scope: ocr_net
+ai_search_endpoint: "https://api.aspose.cloud/v5.0/ocr/docsearch/ask"
 feedback: OCRNET
 title: Supported file formats
 description: File formats for images and recognition results supported by Aspose.OCR.

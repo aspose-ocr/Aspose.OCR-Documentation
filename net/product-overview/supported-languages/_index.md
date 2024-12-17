@@ -4,6 +4,8 @@ date: "2024-11-21"
 author: "Vladimir Lapin"
 type: docs
 url: /net/recognition-languages/
+ai_search_scope: ocr_net
+ai_search_endpoint: "https://api.aspose.cloud/v5.0/ocr/docsearch/ask"
 feedback: OCRNET
 title: Recognition languages
 description: A list of languages recognized by Aspose.OCR.

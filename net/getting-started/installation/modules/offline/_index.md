@@ -4,6 +4,8 @@ date: "2024-02-27"
 author: "Vladimir Lapin"
 type: docs
 url: /net/modules/offline/
+ai_search_scope: ocr_net
+ai_search_endpoint: "https://api.aspose.cloud/v5.0/ocr/docsearch/ask"
 feedback: OCRNET
 title: Using offline resources
 description: How to use Aspose.OCR for .NET resources in offline mode.

@@ -4,6 +4,8 @@ date: "2023-10-02"
 author: "Vladimir Lapin"
 type: docs
 url: /net/use-cases/
+ai_search_scope: ocr_net
+ai_search_endpoint: "https://api.aspose.cloud/v5.0/ocr/docsearch/ask"
 feedback: OCRNET
 title: Use cases
 description: Learn how to apply Aspose.OCR technology to your business and how to solve real-world problems with just a few lines of code.

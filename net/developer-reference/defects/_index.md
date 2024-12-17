@@ -4,6 +4,8 @@ date: "2024-05-23"
 author: "Vladimir Lapin"
 type: docs
 url: /net/defect-detection/
+ai_search_scope: ocr_net
+ai_search_endpoint: "https://api.aspose.cloud/v5.0/ocr/docsearch/ask"
 feedback: OCRNET
 title: Defect detection
 description: How to automatically find problem areas in an image that may be recognized inaccurately.

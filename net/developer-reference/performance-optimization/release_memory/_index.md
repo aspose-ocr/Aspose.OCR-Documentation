@@ -4,6 +4,8 @@ date: "2024-12-06"
 author: "Vladimir Lapin"
 type: docs
 url: /net/release_memory/
+ai_search_scope: ocr_net
+ai_search_endpoint: "https://api.aspose.cloud/v5.0/ocr/docsearch/ask"
 feedback: OCRNET
 title: Unloading OCR modules from memory
 description: Release memory occupied by Aspose.OCR for .NET recognition engine by unloading unneeded OCR modules.

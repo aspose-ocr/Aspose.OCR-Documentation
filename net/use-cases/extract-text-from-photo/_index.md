@@ -4,6 +4,8 @@ date: "2023-09-25"
 author: "Vladimir Lapin"
 type: docs
 url: /net/extract-text-from-photo/
+ai_search_scope: ocr_net
+ai_search_endpoint: "https://api.aspose.cloud/v5.0/ocr/docsearch/ask"
 feedback: OCRNET
 title: Extracting text from a photo
 description: Take a photo of the page using your smartphone and extract text from it using Aspose.OCR for .NET. No scanner required.

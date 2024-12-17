@@ -4,6 +4,8 @@ date: "2024-03-01"
 author: "Vladimir Lapin"
 type: docs
 url: /net/dewarp/
+ai_search_scope: ocr_net
+ai_search_endpoint: "https://api.aspose.cloud/v5.0/ocr/docsearch/ask"
 feedback: OCRNET
 title: Dewarping
 description: How to straighten curved and distorted images before recognition.

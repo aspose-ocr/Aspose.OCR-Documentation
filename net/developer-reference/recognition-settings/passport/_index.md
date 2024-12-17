@@ -4,6 +4,8 @@ date: "2024-06-13"
 author: "Vladimir Lapin"
 type: docs
 url: /net/recognition-settings-passport/
+ai_search_scope: ocr_net
+ai_search_endpoint: "https://api.aspose.cloud/v5.0/ocr/docsearch/ask"
 feedback: OCRNET
 title: Passport recognition settings
 description: Configuring Aspose.OCR for .NET recognition engine for extracting text from passport images.

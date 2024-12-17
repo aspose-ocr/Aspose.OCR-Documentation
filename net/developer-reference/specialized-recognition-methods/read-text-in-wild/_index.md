@@ -4,6 +4,8 @@ date: "2024-09-27"
 author: "Vladimir Lapin"
 type: docs
 url: /net/recognition/read-text-in-wild/
+ai_search_scope: ocr_net
+ai_search_endpoint: "https://api.aspose.cloud/v5.0/ocr/docsearch/ask"
 feedback: OCRNET
 title: Extracting text from street photos
 description: How to extract text from street photos, price tags, menus, catalogs and other images with sparse text and noisy/colored backgrounds.

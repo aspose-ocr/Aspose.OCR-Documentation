@@ -4,6 +4,8 @@ date: "2023-11-30"
 author: "Vladimir Lapin"
 type: docs
 url: /net/image-regions-word-find/
+ai_search_scope: ocr_net
+ai_search_endpoint: "https://api.aspose.cloud/v5.0/ocr/docsearch/ask"
 feedback: OCRNET
 title: Finding word bounding boxes
 description: Automatic detection of word bounding boxes inside an image.

@@ -4,6 +4,8 @@ date: "2022-09-02"
 author: "Vladimir Lapin"
 type: docs
 url: /net/dictionaries/
+ai_search_scope: ocr_net
+ai_search_endpoint: "https://api.aspose.cloud/v5.0/ocr/docsearch/ask"
 feedback: OCRNET
 title: Working with custom dictionaries
 description: How to create and apply custom dictionaries for Aspose.OCR spell checker.

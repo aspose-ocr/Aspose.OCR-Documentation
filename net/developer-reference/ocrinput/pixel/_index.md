@@ -4,6 +4,8 @@ date: "2023-04-07"
 author: "Vladimir Lapin"
 type: docs
 url: /net/ocrinput/image-by-pixel/
+ai_search_scope: ocr_net
+ai_search_endpoint: "https://api.aspose.cloud/v5.0/ocr/docsearch/ask"
 aliases:
 - /net/recognition/pixel/
 feedback: OCRNET

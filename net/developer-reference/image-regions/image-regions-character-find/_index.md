@@ -4,6 +4,8 @@ date: "2023-04-24"
 author: "Vladimir Lapin"
 type: docs
 url: /net/image-regions-character-find/
+ai_search_scope: ocr_net
+ai_search_endpoint: "https://api.aspose.cloud/v5.0/ocr/docsearch/ask"
 feedback: OCRNET
 title: Finding character bounding boxes
 description: Character-by-character recognition and automatic detection of character bounding boxes inside images.

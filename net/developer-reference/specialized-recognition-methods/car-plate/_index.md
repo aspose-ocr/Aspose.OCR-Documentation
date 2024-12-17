@@ -4,6 +4,8 @@ date: "2023-05-18"
 author: "Vladimir Lapin"
 type: docs
 url: /net/recognition/car-plate/
+ai_search_scope: ocr_net
+ai_search_endpoint: "https://api.aspose.cloud/v5.0/ocr/docsearch/ask"
 feedback: OCRNET
 title: Extracting text from vehicle license plate images
 description: How to automatically extract text from scanned or photographed vehicle license plates.

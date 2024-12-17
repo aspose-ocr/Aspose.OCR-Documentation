@@ -1,6 +1,6 @@
 ---
 weight: 20
-date: "2024-11-13"
+date: "2024-12-16"
 author: "Vladimir Lapin"
 type: docs
 url: /java/languages/
@@ -32,6 +32,7 @@ To recognize text in certain languages, you must [install](/ocr/java/modules/) a
 - Tamil text recognition: **aspose-ocr-tamil-v1**
 - Telugu text recognition: **aspose-ocr-telugu-v1**
 - Mixed-language Cyrillic/English recognition: **aaspose-ocr-cyrillic-v2**
+- Mongolian text recognition: **aspose-ocr-cyrillic-v1**
 {{% /alert %}}
 
 Aspose.OCR for Java can recognize a text in a large number of languages and all popular writing scripts, including texts with mixed languages.
@@ -126,6 +127,7 @@ Value | Alphabet
 `Language.Min` | Minangkabau
 `Language.Mly` | Malay (Melayu)
 `Language.Mnp` | Min Bei
+`Language.Mon` | Mongolian
 `Language.Mtq` | Muong
 `Language.Mtr` | Mewari
 `Language.Mui` | Musi

@@ -4,6 +4,8 @@ date: "2024-03-01"
 author: "Vladimir Lapin"
 type: docs
 url: /net/denoise/
+ai_search_scope: ocr_net
+ai_search_endpoint: "https://api.aspose.cloud/v5.0/ocr/docsearch/ask"
 feedback: OCRNET
 title: Noise removal
 description: How to remove dirt, spots, scratches, glare, and other image defects to improve recognition accuracy.

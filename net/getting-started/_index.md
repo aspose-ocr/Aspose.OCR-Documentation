@@ -4,6 +4,8 @@ date: "2023-04-20"
 author: "Vladimir Lapin"
 type: docs
 url: /net/getting-started/
+ai_search_scope: ocr_net
+ai_search_endpoint: "https://api.aspose.cloud/v5.0/ocr/docsearch/ask"
 feedback: OCRNET
 title: Getting started
 description: Learn how to install and license Aspose.OCR for .NET and how to write simple OCR applications.

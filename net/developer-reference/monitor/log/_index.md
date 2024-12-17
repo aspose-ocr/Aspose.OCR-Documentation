@@ -4,6 +4,8 @@ date: "2023-01-23"
 author: "Vladimir Lapin"
 type: docs
 url: /net/logging/
+ai_search_scope: ocr_net
+ai_search_endpoint: "https://api.aspose.cloud/v5.0/ocr/docsearch/ask"
 feedback: OCRNET
 title: Logging recognition events
 description: How to output recognition events to the console or write them to a file.

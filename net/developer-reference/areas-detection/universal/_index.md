@@ -4,6 +4,8 @@ date: "2024-10-18"
 author: "Vladimir Lapin"
 type: docs
 url: /net/areas-detection/universal/
+ai_search_scope: ocr_net
+ai_search_endpoint: "https://api.aspose.cloud/v5.0/ocr/docsearch/ask"
 aliases:
 - /net/areas-detection/photo/
 - /net/areas-detection/combine/

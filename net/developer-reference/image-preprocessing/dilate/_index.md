@@ -4,6 +4,8 @@ date: "2023-04-07"
 author: "Vladimir Lapin"
 type: docs
 url: /net/dilate/
+ai_search_scope: ocr_net
+ai_search_endpoint: "https://api.aspose.cloud/v5.0/ocr/docsearch/ask"
 feedback: OCRNET
 title: Dilation
 description: How to make characters in an image thicker to improve recognition accuracy.

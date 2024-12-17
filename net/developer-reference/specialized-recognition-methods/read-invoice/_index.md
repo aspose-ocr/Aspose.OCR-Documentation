@@ -4,6 +4,8 @@ date: "2023-05-18"
 author: "Vladimir Lapin"
 type: docs
 url: /net/recognition/invoice/
+ai_search_scope: ocr_net
+ai_search_endpoint: "https://api.aspose.cloud/v5.0/ocr/docsearch/ask"
 feedback: OCRNET
 title: Extracting text from invoices
 description: How to digitize scanned invoices by automatically extracting text from them.

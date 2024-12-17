@@ -4,6 +4,8 @@ date: "2023-09-26"
 author: "Vladimir Lapin"
 type: docs
 url: /net/scan-to-word/
+ai_search_scope: ocr_net
+ai_search_endpoint: "https://api.aspose.cloud/v5.0/ocr/docsearch/ask"
 feedback: OCRNET
 title: Converting a scan to editable document
 description: Create an editable document in Microsoft Word format from a scanned image, PDF or even a photo.

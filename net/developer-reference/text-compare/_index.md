@@ -4,6 +4,8 @@ date: "2023-01-20"
 author: "Vladimir Lapin"
 type: docs
 url: /net/image-text-compare/
+ai_search_scope: ocr_net
+ai_search_endpoint: "https://api.aspose.cloud/v5.0/ocr/docsearch/ask"
 feedback: OCRNET
 title: Comparing text in images
 description: How to compare texts on two images.

@@ -4,6 +4,8 @@ date: "2023-03-09"
 author: "Vladimir Lapin"
 type: docs
 url: /net/identify-problems/
+ai_search_scope: ocr_net
+ai_search_endpoint: "https://api.aspose.cloud/v5.0/ocr/docsearch/ask"
 feedback: OCRNET
 title: Identifying recognition problems
 description: How to identify non-fatal errors that occurred during recognition.

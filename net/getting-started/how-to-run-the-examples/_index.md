@@ -4,6 +4,8 @@ date: "2022-06-22"
 author: "Vladimir Lapin"
 type: docs
 url: /net/how-to-run-the-examples/
+ai_search_scope: ocr_net
+ai_search_endpoint: "https://api.aspose.cloud/v5.0/ocr/docsearch/ask"
 feedback: OCRNET
 title: How to run examples
 description: Explore our sample applications to learn about the features and capabilities of Aspose.OCR for .NET.

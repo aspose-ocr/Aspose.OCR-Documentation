@@ -4,6 +4,8 @@ date: "2023-09-22"
 author: "Vladimir Lapin"
 type: docs
 url: /net/scanned-pdf-to-searchable-pdf/
+ai_search_scope: ocr_net
+ai_search_endpoint: "https://api.aspose.cloud/v5.0/ocr/docsearch/ask"
 feedback: OCRNET
 title: Creating a searchable PDF from the scan
 description: Convert a scanned PDF into a searchable, indexable document from which you can select and copy text.

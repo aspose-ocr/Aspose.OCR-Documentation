@@ -4,6 +4,8 @@ date: "2024-03-15"
 author: "Vladimir Lapin"
 type: docs
 url: /net/supported-characters/
+ai_search_scope: ocr_net
+ai_search_endpoint: "https://api.aspose.cloud/v5.0/ocr/docsearch/ask"
 feedback: OCRNET
 title: Supported characters
 description: A full list of characters recognized by Aspose.OCR.

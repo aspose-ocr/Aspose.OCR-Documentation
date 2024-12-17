@@ -4,6 +4,8 @@ date: "2023-05-18"
 author: "Vladimir Lapin"
 type: docs
 url: /net/fast-recognition/
+ai_search_scope: ocr_net
+ai_search_endpoint: "https://api.aspose.cloud/v5.0/ocr/docsearch/ask"
 feedback: OCRNET
 title: Fast recognition
 description: How to read text from high-quality images using as few resources as possible.

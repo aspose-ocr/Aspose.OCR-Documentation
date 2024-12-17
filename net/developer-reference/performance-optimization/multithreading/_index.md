@@ -4,6 +4,8 @@ date: "2023-09-13"
 author: "Vladimir Lapin"
 type: docs
 url: /net/multithreading/
+ai_search_scope: ocr_net
+ai_search_endpoint: "https://api.aspose.cloud/v5.0/ocr/docsearch/ask"
 feedback: OCRNET
 aliases:
 - /net/multithreading-support-in-recognition/

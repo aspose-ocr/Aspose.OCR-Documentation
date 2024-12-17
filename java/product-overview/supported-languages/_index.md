@@ -88,6 +88,7 @@ Aspose.OCR for Java can recognize a large number of languages and all popular wr
 - Min Bei
 - Min Dong
 - Min Nan
+- Mongolian
 - Pu-Xian
 - Wu (Changzhou)
 - Xiang

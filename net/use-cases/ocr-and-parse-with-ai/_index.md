@@ -4,6 +4,8 @@ date: "2023-10-02"
 author: "Vladimir Lapin"
 type: docs
 url: /net/ocr-and-parse-with-ai/
+ai_search_scope: ocr_net
+ai_search_endpoint: "https://api.aspose.cloud/v5.0/ocr/docsearch/ask"
 feedback: OCRNET
 title: Extracting data from scanned invoices using AI
 description: Combine Aspose.OCR for .NET with ChatGPT to extract information such as numbers, dates, line items, and totals from scanned invoices.

@@ -4,6 +4,8 @@ date: "2023-04-03"
 author: "Vladimir Lapin"
 type: docs
 url: /net/hello-world/
+ai_search_scope: ocr_net
+ai_search_endpoint: "https://api.aspose.cloud/v5.0/ocr/docsearch/ask"
 feedback: OCRNET
 title: Hello, world!
 description: Get started with Aspose.OCR for .NET by creating and running a bare minimum example.

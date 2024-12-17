@@ -4,6 +4,8 @@ date: "2023-04-05"
 author: "Vladimir Lapin"
 type: docs
 url: /net/developer-reference/
+ai_search_scope: ocr_net
+ai_search_endpoint: "https://api.aspose.cloud/v5.0/ocr/docsearch/ask"
 feedback: OCRNET
 aliases:
 - /net/developer-guide/
