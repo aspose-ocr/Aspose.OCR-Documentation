@@ -1,6 +1,6 @@
 ---
 weight: 50
-date: "2023-09-28"
+date: "2024-12-18"
 author: "Vladimir Lapin"
 type: docs
 url: /net/archival-scanning/

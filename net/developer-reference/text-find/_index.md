@@ -1,6 +1,6 @@
 ---
 weight: 110
-date: "2023-01-20"
+date: "2024-12-18"
 author: "Vladimir Lapin"
 type: docs
 url: /net/find-text/

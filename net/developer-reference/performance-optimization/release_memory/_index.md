@@ -1,6 +1,6 @@
 ---
 weight: 40
-date: "2024-12-06"
+date: "2024-12-18"
 author: "Vladimir Lapin"
 type: docs
 url: /net/release_memory/

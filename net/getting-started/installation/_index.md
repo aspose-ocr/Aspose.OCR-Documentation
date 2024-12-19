@@ -1,6 +1,6 @@
 ---
 weight: 20
-date: "2022-06-09"
+date: "2024-12-18"
 author: "Vladimir Lapin"
 type: docs
 url: /net/installation/

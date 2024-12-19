@@ -1,6 +1,6 @@
 ---
 weight: 35
-date: "2023-04-24"
+date: "2024-12-18"
 author: "Vladimir Lapin"
 type: docs
 url: /net/image-regions-character-find/

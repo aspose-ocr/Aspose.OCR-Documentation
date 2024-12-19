@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2023-09-22"
+date: "2024-12-18"
 author: "Vladimir Lapin"
 type: docs
 url: /net/scanned-pdf-to-searchable-pdf/

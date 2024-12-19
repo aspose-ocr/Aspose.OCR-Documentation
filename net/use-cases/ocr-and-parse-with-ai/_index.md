@@ -1,6 +1,6 @@
 ---
 weight: 60
-date: "2023-10-02"
+date: "2024-12-18"
 author: "Vladimir Lapin"
 type: docs
 url: /net/ocr-and-parse-with-ai/

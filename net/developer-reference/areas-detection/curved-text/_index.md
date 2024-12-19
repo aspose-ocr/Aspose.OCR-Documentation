@@ -1,6 +1,6 @@
 ---
 weight: 50
-date: "2024-03-01"
+date: "2024-12-18"
 author: "Vladimir Lapin"
 type: docs
 url: /net/areas-detection/curved_text/

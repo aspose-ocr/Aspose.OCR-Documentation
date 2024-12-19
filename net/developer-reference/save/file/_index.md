@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2024-06-13"
+date: "2024-12-18"
 author: "Vladimir Lapin"
 type: docs
 url: /net/save-file/

@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2024-11-21"
+date: "2024-12-18"
 author: "Vladimir Lapin"
 type: docs
 url: /net/recognition-languages/

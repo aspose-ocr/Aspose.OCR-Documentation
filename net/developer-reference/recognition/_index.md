@@ -1,6 +1,6 @@
 ---
 weight: 70
-date: "2024-04-12"
+date: "2024-12-18"
 author: "Vladimir Lapin"
 type: docs
 url: /net/recognition/

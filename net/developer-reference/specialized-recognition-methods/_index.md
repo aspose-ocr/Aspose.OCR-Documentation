@@ -1,6 +1,6 @@
 ---
 weight: 80
-date: "2023-10-12"
+date: "2024-12-18"
 author: "Vladimir Lapin"
 type: docs
 url: /net/specialized-recognition-methods/

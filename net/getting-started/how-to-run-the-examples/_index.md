@@ -1,6 +1,6 @@
 ---
 weight: 40
-date: "2022-06-22"
+date: "2024-12-18"
 author: "Vladimir Lapin"
 type: docs
 url: /net/how-to-run-the-examples/

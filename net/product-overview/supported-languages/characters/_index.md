@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2024-03-15"
+date: "2024-12-18"
 author: "Vladimir Lapin"
 type: docs
 url: /net/supported-characters/

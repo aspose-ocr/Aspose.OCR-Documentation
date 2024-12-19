@@ -1,6 +1,6 @@
 ---
 weight: 40
-date: "2023-07-25"
+date: "2024-12-18"
 author: "Vladimir Lapin"
 type: docs
 url: /net/recognition-settings-car-plate/

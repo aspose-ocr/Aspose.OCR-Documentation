@@ -1,6 +1,6 @@
 ---
 weight: 100
-date: "2023-01-20"
+date: "2024-12-18"
 author: "Vladimir Lapin"
 type: docs
 url: /net/image-text-compare/

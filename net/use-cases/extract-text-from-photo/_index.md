@@ -1,6 +1,6 @@
 ---
 weight: 20
-date: "2023-09-25"
+date: "2024-12-18"
 author: "Vladimir Lapin"
 type: docs
 url: /net/extract-text-from-photo/

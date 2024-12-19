@@ -1,6 +1,6 @@
 ---
 weight: 70
-date: "2024-05-23"
+date: "2024-12-18"
 author: "Vladimir Lapin"
 type: docs
 url: /net/defect-detection/

@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2023-05-18"
+date: "2024-12-18"
 author: "Vladimir Lapin"
 type: docs
 url: /net/fast-recognition/

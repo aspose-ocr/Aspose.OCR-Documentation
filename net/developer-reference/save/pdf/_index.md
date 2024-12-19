@@ -1,6 +1,6 @@
 ---
 weight: 11
-date: "2024-09-27"
+date: "2024-12-18"
 author: "Vladimir Lapin"
 type: docs
 url: /net/save-searchable-pdf/
