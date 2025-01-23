@@ -1,6 +1,6 @@
 ---
 weight: 70
-date: "2024-12-18"
+date: "2025-01-22"
 author: "Vladimir Lapin"
 type: docs
 url: /net/recognition/
@@ -15,6 +15,7 @@ aliases:
 - /net/batch-recognition/
 - /net/recognition/pixel/
 - /net/recognition/base64/
+- /net/recognition/read-text-in-wild/
 feedback: OCRNET
 title: Recognition
 description: Extracting text from images, web links, scanned PDFs, DjVu files, folders, archives and other content.

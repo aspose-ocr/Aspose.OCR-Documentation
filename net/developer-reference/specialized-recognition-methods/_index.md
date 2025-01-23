@@ -1,6 +1,6 @@
 ---
 weight: 80
-date: "2024-12-18"
+date: "2025-01-22"
 author: "Vladimir Lapin"
 type: docs
 url: /net/specialized-recognition-methods/
@@ -30,5 +30,3 @@ Aspose.OCR for .NET offers fine-tuned OCR methods for extracting text from certa
   Digitizing scanned invoices without manual retyping.
 - [Extracting text from receipts](/ocr/net/recognition/receipt/)  
   Digitizing scanned receipts without manual retyping.
-- [Extracting text from street photos](/ocr/net/recognition/read-text-in-wild/)  
-  Extracting text from street photos, price tags, menus, catalogs and other images with sparse text and noisy/colored backgrounds.

@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2024-12-18"
+date: "2025-01-22"
 author: "Vladimir Lapin"
 type: docs
 url: /net/save-file/
@@ -42,6 +42,7 @@ Format | Description
 `Aspose.OCR.SaveFormat.HTML` | HTML web page.
 `Aspose.OCR.SaveFormat.EPUB` | ePub, a popular e-book file format.
 `Aspose.OCR.SaveFormat.RTF` | RTF, a universal format for exchanging text documents between different word processing programs.
+`Aspose.OCR.SaveFormat.HOCR` | hOCR, an open standard of data representation for formatted text obtained from OCR. It includes extracted text, style, layout, and other information.
 
 You can optionally enable [automatic spelling corrections](/ocr/net/automatic-spelling-correction/) for recognition results, provide a [custom dictionary](/ocr/net/dictionaries/), or specify the font to be embedded into a PDF document. The latter is only applicable when saving recognition results into text-only PDF (`Aspose.OCR.SaveFormat.PdfNoImg`).
 

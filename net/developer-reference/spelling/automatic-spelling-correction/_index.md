@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2024-12-18"
+date: "2024-01-22"
 author: "Vladimir Lapin"
 type: docs
 url: /net/automatic-spelling-correction/
@@ -25,10 +25,10 @@ Aspose.OCR for .NET can automatically replace commonly misspelled words in recog
 
 Value | Language
 ----- | --------
-`Aspose.OCR.SpellChecker.SpellCheckLanguage.Cze` | Czech
+`Aspose.OCR.SpellChecker.SpellCheckLanguage.Ces` | Czech
 `Aspose.OCR.SpellChecker.SpellCheckLanguage.Dan` | Danish
 `Aspose.OCR.SpellChecker.SpellCheckLanguage.Deu` | German
-`Aspose.OCR.SpellChecker.SpellCheckLanguage.Dum` | Dutch
+`Aspose.OCR.SpellChecker.SpellCheckLanguage.Nld` | Dutch
 `Aspose.OCR.SpellChecker.SpellCheckLanguage.Eng` | English
 `Aspose.OCR.SpellChecker.SpellCheckLanguage.Est` | Estonian
 `Aspose.OCR.SpellChecker.SpellCheckLanguage.Fin` | Finnish
@@ -38,7 +38,7 @@ Value | Language
 `Aspose.OCR.SpellChecker.SpellCheckLanguage.Lit` | Lithuanian
 `Aspose.OCR.SpellChecker.SpellCheckLanguage.Pol` | Polish
 `Aspose.OCR.SpellChecker.SpellCheckLanguage.Por` | Portuguese
-`Aspose.OCR.SpellChecker.SpellCheckLanguage.Rum` | Romanian
+`Aspose.OCR.SpellChecker.SpellCheckLanguage.Ron` | Romanian
 `Aspose.OCR.SpellChecker.SpellCheckLanguage.Slk` | Slovak
 `Aspose.OCR.SpellChecker.SpellCheckLanguage.Slv` | Slovene
 `Aspose.OCR.SpellChecker.SpellCheckLanguage.Spa` | Spanish
