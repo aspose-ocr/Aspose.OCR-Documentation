@@ -1,6 +1,6 @@
 ---
 weight: 20
-date: "2023-04-18"
+date: "2025-01-27"
 author: "Vladimir Lapin"
 type: docs
 url: /python-net/supported-file-formats/
@@ -52,3 +52,4 @@ Format    | Details
 **.EPUB** | Popular e-book file format
 **JSON**  | A popular open-standard format, widely used in software development and data exchange
 **XML**   | Extensible Markup Language, a universal format for most systems
+**hOCR**  | Commonly used open standard format which includes extracted text and layout information for making searchable PDFs.

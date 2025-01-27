@@ -1,6 +1,6 @@
 ---
 weight: 20
-date: "2023-09-02"
+date: "2025-01-27"
 author: "Vladimir Lapin"
 type: docs
 url: /python-net/misspelled-words-list/
@@ -21,10 +21,10 @@ This functionality supports the following languages:
 
 Value | Language
 ----- | --------
-`SpellCheckLanguage.CZE` | Czech
+`SpellCheckLanguage.CES` | Czech
 `SpellCheckLanguage.DAN` | Danish
 `SpellCheckLanguage.DEU` | German
-`SpellCheckLanguage.DUM` | Dutch
+`SpellCheckLanguage.NLD` | Dutch
 `SpellCheckLanguage.ENG` | English
 `SpellCheckLanguage.EST` | Estonian
 `SpellCheckLanguage.FIN` | Finnish
@@ -34,7 +34,7 @@ Value | Language
 `SpellCheckLanguage.LIT` | Lithuanian
 `SpellCheckLanguage.POL` | Polish
 `SpellCheckLanguage.POR` | Portuguese
-`SpellCheckLanguage.RUM` | Romanian
+`SpellCheckLanguage.RON` | Romanian
 `SpellCheckLanguage.SLK` | Slovak
 `SpellCheckLanguage.SLV` | Slovene
 `SpellCheckLanguage.SPA` | Spanish

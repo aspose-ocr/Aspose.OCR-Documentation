@@ -1,9 +1,11 @@
 ---
 weight: 70
-date: "2023-08-30"
+date: "2025-01-27"
 author: "Vladimir Lapin"
 type: docs
 url: /python-net/recognition/
+aliases:
+- /python-net/recognition/read-text-in-wild/
 feedback: OCRPYNET
 title: Recognition
 description: Extracting text from images, web links, scanned PDFs, DjVu files, folders, archives and other content.

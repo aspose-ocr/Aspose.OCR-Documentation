@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2024-06-19"
+date: "2025-01-27"
 author: "Vladimir Lapin"
 type: docs
 url: /python-net/save-file/
@@ -37,6 +37,7 @@ Format | Description
 `SaveFormat.HTML` | HTML web page.
 `SaveFormat.EPUB` | ePub, a popular e-book file format.
 `SaveFormat.RTF` | RTF, a universal format for exchanging text documents between different word processing programs.
+`SaveFormat.HOCR` | hOCR, an open standard of data representation for formatted text obtained from OCR. It includes extracted text, style, layout, and other information.
 
 You can optionally enable [automatic spelling corrections](/ocr/python-net/automatic-spelling-correction/) for recognition results, provide a [custom dictionary](/ocr/python-net/dictionaries/), or specify the font to be embedded into a PDF document. The latter is only applicable when saving recognition results into text-only PDF (`SaveFormat.PDF_NO_IMG`).
 
