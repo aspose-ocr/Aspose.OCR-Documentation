@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2023-07-27"
+date: "2025-01-29"
 author: "Vladimir Lapin"
 type: docs
 url: /java/recognition-settings-common/
@@ -28,7 +28,7 @@ Method | Parameter | Default state | Description
 `setAllowedCharacters` | Case-sensitive string of characters or one of the predefined character sets:<ul><li>`CharactersAllowedType.ALL` - try to recognize all characters.</li><li>`CharactersAllowedType.LATIN_ALPHABET` - only recognize case-insensitive Latin / English text (`A` to `Z` and `a` to `z`), without accented characters.</li><li>`CharactersAllowedType.DIGITS` - recognize only binary, octal, decimal, or hexadecimal numbers (`0`-`9` and `A` to `F`).</li></ul> | All characters from the [selected recognition language](/ocr/java/languages/). | The [whitelist](/ocr/java/characters-whitelist/#predefined-character-sets) of characters Aspose.OCR engine will look for.
 `setDetectAreasMode` | [`DetectAreasMode`](https://reference.aspose.com/ocr/java/com.aspose.ocr/DetectAreasMode) | Automatic | Manually override the default [document areas detection method](/ocr/java/areas-detection/#area-detection-modes).
 `setIgnoredCharacters` | Case-sensitive string of characters | All characters are recognized | A [blacklist](/ocr/java/characters-blacklist/) of characters that are ignored during recognition.
-`setLanguage` | [Recognition language](/ocr/java/languages/) | Extended Latin characters, including diacritics | Specify a [language](/ocr/java/languages/) for recognition.
+`setLanguage` | [Recognition language](/ocr/java/languages/) | Latin characters without diacritics | Specify a [language](/ocr/java/languages/) for recognition.
 `setLinesFiltration` | <ul><li>`true` - enable</li><li>`false` - disable</li></ul> | Enabled | Set to `true` to recognize text in tables.<br />Set to `false` to improve performance by ignoring table structures and treating tables as plain text.
 `setRecognitionAreas` | `ArrayList<Rectangle>` | Entire image | List of [areas of the image](/ocr/java/image-regions-extract/) from which to extract text.
 `setRecognizeSingleLine` | <ul><li>`true` - enable</li><li>`false` - disable</li></ul> | Disabled | Recognize a [single-line](/ocr/java/recognize-single-line/) image. Disables automatic document region detection.<br />Improves the recognition performance of simple images.

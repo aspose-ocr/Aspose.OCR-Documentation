@@ -1,6 +1,6 @@
 ---
 weight: 50
-date: "2024-06-18"
+date: "2025-01-29"
 author: "Vladimir Lapin"
 type: docs
 url: /java/recognition-settings-passport/
@@ -24,7 +24,7 @@ Setting | Type | Default value | Description
 ------- | ---- | ------------- | -----------
 `setAllowedCharacters` | Case-sensitive string of characters or one of the predefined character sets:<ul><li>`CharactersAllowedType.ALL` - try to recognize all characters.</li><li>`CharactersAllowedType.LATIN_ALPHABET` - only recognize case-insensitive Latin / English text (`A` to `Z` and `a` to `z`), without accented characters.</li><li>`CharactersAllowedType.DIGITS` - recognize only binary, octal, decimal, or hexadecimal numbers (`0`-`9` and `A` to `F`).</li></ul> | All characters from the [selected recognition language](/ocr/java/languages/). | The [whitelist](/ocr/java/characters-whitelist/#predefined-character-sets) of characters Aspose.OCR engine will look for.
 `setIgnoredCharacters` | Case-sensitive string of characters | All characters are recognized | A [blacklist](/ocr/java/characters-blacklist/) of characters that are ignored during recognition.
-`setLanguage` | [Recognition language](/ocr/java/languages/) | Extended Latin characters, including diacritics | Specify a [language](/ocr/java/languages/) for recognition.
+`setLanguage` | [Recognition language](/ocr/java/languages/) | Latin characters without diacritics | Specify a [language](/ocr/java/languages/) for recognition.
 `setThreadsCount` | Number of threads, `int` | Automatic | The number of [CPU threads](/ocr/java/multithreading/) used for recognition.
 `setAutomaticColorInversion` | boolean | `true` | Set the method parameter to `true` automatically detect white text on a dark/black background and use a special OCR algorithm to improve passport recognition accuracy. Call this method with the parameter set to “false” to explicitly disable inverted text detection to save resources.
 `setCountry` | `Country` | `NONE` | [Extract](/ocr/java/recognition/passport/#extracting-passport-details) key passport details (such as a number, name, date of birth, and so on) for the specific country in addition to the entire passport text.<br />See **Supported countries** section below.

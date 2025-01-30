@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2023-07-17"
+date: "2025-01-29"
 author: "Vladimir Lapin"
 type: docs
 url: /java/automatic-spelling-correction/
@@ -23,10 +23,10 @@ Aspose.OCR for Java can automatically replace commonly misspelled words in recog
 
 Value | Language
 ----- | --------
-`SpellCheckLanguage.Cze` | Czech
+`SpellCheckLanguage.Ces` | Czech
 `SpellCheckLanguage.Dan` | Danish
 `SpellCheckLanguage.Deu` | German
-`SpellCheckLanguage.Dum` | Dutch
+`SpellCheckLanguage.Nld` | Dutch
 `SpellCheckLanguage.Eng` | English
 `SpellCheckLanguage.Est` | Estonian
 `SpellCheckLanguage.Fin` | Finnish
@@ -36,7 +36,7 @@ Value | Language
 `SpellCheckLanguage.Lit` | Lithuanian
 `SpellCheckLanguage.Pol` | Polish
 `SpellCheckLanguage.Por` | Portuguese
-`SpellCheckLanguage.Rum` | Romanian
+`SpellCheckLanguage.Ron` | Romanian
 `SpellCheckLanguage.Slk` | Slovak
 `SpellCheckLanguage.Slv` | Slovene
 `SpellCheckLanguage.Spa` | Spanish
