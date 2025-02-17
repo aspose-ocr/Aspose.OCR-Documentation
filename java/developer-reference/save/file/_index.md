@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2024-06-18"
+date: "2022-02-14"
 author: "Vladimir Lapin"
 type: docs
 url: /java/save-file/
@@ -40,6 +40,7 @@ Format | Description
 `Format.Html` | HTML web page.
 `Format.Epub` | ePub, a popular e-book file format.
 `Format.Rtf` | RTF, a universal format for exchanging text documents between different word processing programs.
+`Format.hOcr` | hOCR, an open standard of data representation for formatted text obtained from OCR. It includes extracted text, style, layout, and other information.
 
 You can optionally enable [automatic spelling corrections](/ocr/java/automatic-spelling-correction/) for recognition results, provide a [custom dictionary](/ocr/java/dictionaries/), or specify the font to be embedded into a PDF document. The latter is only applicable when saving recognition results into text-only PDF (`Format.PdfNoImg`).
 

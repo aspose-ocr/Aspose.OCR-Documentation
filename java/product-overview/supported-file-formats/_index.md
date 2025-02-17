@@ -1,6 +1,6 @@
 ---
 weight: 20
-date: "2023-01-16"
+date: "2025-02-14"
 author: "Vladimir Lapin"
 type: docs
 url: /java/supported-file-formats/
@@ -50,3 +50,4 @@ Format    | Details
 **.EPUB** | Popular e-book file format
 **JSON**  | A popular open-standard format, widely used in software development and data exchange
 **XML**   | Extensible Markup Language, a universal format for most systems
+**hOCR**  | Commonly used open standard format which includes extracted text and layout information for making searchable PDFs.
