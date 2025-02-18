@@ -1,6 +1,6 @@
 ---
 weight: 20
-date: "2023-12-14"
+date: "2025-02-17"
 author: "Vladimir Lapin"
 type: docs
 url: /python-java/supported-file-formats/
@@ -49,5 +49,6 @@ Format    | Details
 **.XLSX** | Microsoft Excel spreadsheet
 **.PDF**  | Portable Document Format
 **.EPUB** | Popular e-book file format
-**JSON**  | A popular open-standard format, widely used in software development and data exchange
-**XML**   | Extensible Markup Language, a universal format for most systems
+**.JSON**  | A popular open-standard format, widely used in software development and data exchange
+**.XML**   | Extensible Markup Language, a universal format for most systems
+**.HOCR**  | Commonly used open standard format which includes extracted text and layout information for making searchable PDFs.

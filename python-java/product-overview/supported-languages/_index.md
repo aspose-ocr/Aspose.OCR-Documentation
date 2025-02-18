@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2024-03-27"
+date: "2025-02-17"
 author: "Vladimir Lapin"
 type: docs
 url: /python-java/recognition-languages/
@@ -15,6 +15,14 @@ keywords:
 ---
 
 Aspose.OCR for Python via Java can recognize a large number of languages and all popular writing scripts, including texts with mixed languages.
+
+## Universal (mixed language) OCR models
+
+- Extended Latin
+- Cyrillic
+- Cyrillic/English
+- Chinese
+- Devanagari
 
 ## Worldwide
 
@@ -64,6 +72,7 @@ Aspose.OCR for Python via Java can recognize a large number of languages and all
 - Azerbaijani (Azeri)
 - Kazakh
 - Turkmen
+- Uyghur
 
 ## East Asia
 
@@ -72,10 +81,13 @@ Aspose.OCR for Python via Java can recognize a large number of languages and all
 - Gan
 - Hakka
 - Hmong
+- Japanese
+- Korean
 - Mandarin (Chinese)
 - Min Bei
 - Min Dong
 - Min Nan
+- Mongolian
 - Pu-Xian
 - Wu (Changzhou)
 - Xiang
@@ -103,6 +115,7 @@ Aspose.OCR for Python via Java can recognize a large number of languages and all
 - Mewati
 - Nepali
 - Rajbanshi
+- Urdu
 - Wagdi
 
 ## Southeast Asia
@@ -115,6 +128,7 @@ Aspose.OCR for Python via Java can recognize a large number of languages and all
 - Ilocano
 - Indonesian
 - Kapampangan
+- Kannada
 - Makassar (Makasar)
 - Malay (Melayu)
 - Minangkabau
@@ -125,14 +139,18 @@ Aspose.OCR for Python via Java can recognize a large number of languages and all
 - Sasak
 - Sundanese (Sunda)
 - Tagalog (Pilipino)
+- Tamil
+- Telugu
 - Vietnamese
 - Waray-Waray
 
 ## Middle East and North Africa
 
+- Arabic (mixed texts in Arabic and English are also supported)
 - Dimli
 - Gilaki
 - Kurdish (Kurmanji)
+- Persian (Farsi)
 
 ## Africa
 
@@ -175,3 +193,68 @@ Aspose.OCR for Python via Java can recognize a large number of languages and all
 
 - K'iche'
 - Quechua
+
+## Supported handwritten languages
+
+Aspose.OCR for Java can [extract](/ocr/java/recognition/read-handwritten-text/) text from handwritten notes in a number of languages based on [Extended Latin alphabet](/ocr/java/supported-characters/#handwritten-characters):
+
+- English
+- Indonesian
+- German
+- Italian
+- Malay (Melayu)
+- Hausa
+- Swahili
+- Yoruba
+- Oromo
+- Dutch
+- Malagasy
+- Zhuang
+- Somali
+- Chichewa (Chewa, Nyanja)
+- Rwanda
+- Min Bei
+- Zulu
+- Min Dong
+- Swedish
+- Hiligaynon
+- Hmong
+- Shona (Karanga)
+- Xhosa
+- Betawi
+- Afrikaans
+- Minangkabau
+- Sotho (Southern)
+- Bikol
+- Danish
+- Kanuri
+- Tswana
+- Luo
+- Sukuma
+- Tsonga
+- Bemba (Chibemba)
+- Nandi
+- Palembang
+- Umbundu
+- Sotho (Northern)
+- Waray-Waray
+- Lamani (Lambadi)
+- Low German
+- Musi
+- Pu-Xian
+- Bouyei (Buyi, Giáy)
+- Ndebele
+- Sasak
+- Swati (Swazi)
+- Gusii
+- Meru
+- Wolaytta
+- Dong
+- Pangasinan
+- Makassar (Makasar)
+- Tumbuka
+- Serer-Sine
+- Tonga
+- K'iche'
+- Luguru
+- Latin
