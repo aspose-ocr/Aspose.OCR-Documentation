@@ -1,6 +1,6 @@
 ---
 weight: 30
-date: "2024-12-18"
+date: "2025-03-30"
 author: "Vladimir Lapin"
 type: docs
 url: /net/languages/
@@ -34,7 +34,8 @@ To recognize text in certain languages, you must [install](/ocr/net/modules/) ad
 - Kannada text recognition: **aspose-ocr-kannada-v1**
 - Tamil text recognition: **aspose-ocr-tamil-v1**
 - Telugu text recognition: **aspose-ocr-telugu-v1**
-- Mixed-language Cyrillic/English recognition: **aaspose-ocr-cyrillic-v2**
+- Mixed-language Cyrillic/English recognition: **aspose-ocr-cyrillic-v2**
+- Mixed-language Arabic/Persian/English recognition: **aspose-ocr-arabic-v1**
 - Mongolian text recognition: **aspose-ocr-cyrillic-v1**
 {{% /alert %}}
 
@@ -53,6 +54,7 @@ Value | Alphabet
 `Aspose.OCR.Language.Chinese` | All Chinese languages. Mixed-language Chinese/English texts also supported.
 `Aspose.OCR.Language.Devanagari`<br />`Aspose.OCR.Language.Indic` | Indic texts based on Devanagari script, including mixed Devanagari/English texts.
 `Aspose.OCR.Language.European` | Mixed-language Cyrillic/English texts (_experimental_).
+`Aspose.OCR.Language.PersoArabic`<br />`Aspose.OCR.Language.Islamic` | Mixed-language texts with Arabic, Persian and English.
 `Aspose.OCR.Language.Afr` | Afrikaans
 `Aspose.OCR.Language.Aln` | Albanian
 `Aspose.OCR.Language.Ara` | Arabic (mixed texts in Arabic and English are also supported)
