@@ -49,6 +49,7 @@ Mixed-language Cyrillic/English text recognition is experimental. If you are abs
 
 Value | Alphabet
 ----- | --------
+`Aspose.OCR.Language.Multilanguage`<br />`Aspose.OCR.Language.Auto`<br />`Aspose.OCR.Language.Universal` | Automatically detects the language. Supports multiple language families, including Latin, Cyrillic, Arabic, Chinese and more.
 `Aspose.OCR.Language.ExtLatin` | Auto-detect [all supported Latin characters](/ocr/net/supported-characters/#extended-latin) and diacritics
 `Aspose.OCR.Language.Cyrillic` | Auto-detect [all supported Cyrillic characters](/ocr/net/supported-characters/#cyrillic)
 `Aspose.OCR.Language.Chinese` | All Chinese languages. Mixed-language Chinese/English texts also supported.

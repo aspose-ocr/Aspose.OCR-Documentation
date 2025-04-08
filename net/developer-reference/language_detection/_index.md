@@ -61,3 +61,22 @@ foreach (Aspose.OCR.LanguageDetectionOutput item in result)
 	}
 }
 ```
+
+
+The following code sample demonstrates how to recognize the image with auto detection languages:
+
+```csharp
+Aspose.OCR.AsposeOcr recognitionEngine = new Aspose.OCR.AsposeOcr();
+// Add an image to OcrInput object
+Aspose.OCR.OcrInput input = new Aspose.OCR.OcrInput(Aspose.OCR.InputType.SingleImage);
+input.Add("source.png");
+// Detect languages
+List<Aspose.OCR.RecognitionResult> result = recognitionEngine.Recognize(input, new RecognitionSettings { 
+                Language = Aspose.OCR.Language.Auto,
+                LanguageDetectionLevel = Aspose.OCR.LanguageDetectionLevel.ByParagraph
+                });
+foreach (Aspose.OCR.RecognitionResult item in result)
+{
+		Console.WriteLine($"Text: {item.RecognitionText}");
+}
+```

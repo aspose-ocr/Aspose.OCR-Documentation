@@ -3,14 +3,14 @@ weight: 33
 date: "2025-03-30"
 author: "Vladimir Lapin"
 type: docs
-url: /net/language_detection/
+url: /net/layout_detection/
 ai_search_scope: ocr_net
 ai_search_endpoint: "https://api.aspose.cloud/v5.0/ocr/docsearch/ask"
 feedback: OCRNET
-title: Language detecton
-description: How to detect the languages used on the provided image.
+title: Layout detecton
+description: How to detect the layout on the provided image.
 keywords:
-- language
+- layout
 - locale
 - detect
 - find
