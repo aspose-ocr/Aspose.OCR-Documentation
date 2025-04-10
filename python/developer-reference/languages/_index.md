@@ -43,11 +43,14 @@ Mixed-language Cyrillic/English text recognition is experimental. If you are abs
 
 Value | Alphabet
 ----- | --------
+`Language.MULTILANGUAGE`<br />`Aspose.OCR.Language.AUTO`<br />`Aspose.OCR.Language.UNIVERSAL` | Automatically detects the language. Supports multiple language families, including Latin, Cyrillic, Arabic, Chinese and more.
 `Language.EXT_LATIN` | Auto-detect [all supported Latin characters](/ocr/python-net/supported-characters/#extended-latin) and diacritics
 `Language.CYRILLIC` | Auto-detect [all supported Cyrillic characters](/ocr/python-net/supported-characters/#cyrillic)
 `Language.CHINESE` | All Chinese languages. Mixed-language Chinese/English texts also supported.
 `Language.DEVANAGARI`<br />`Language.INDIC` | Indic texts based on Devanagari script, including mixed Devanagari/English texts.
 `Language.EUROPEAN` | Mixed-language Cyrillic/English texts (_experimental_).
+`Language.PERSO_ARABIC`<br />`Language.ISLAMIC` | Mixed-language texts with Arabic, Persian and English.
+
 `Language.AFR` | Afrikaans
 `Language.ALN` | Albanian
 `Language.ARA` | Arabic, including texts in mixed Arabic/English
