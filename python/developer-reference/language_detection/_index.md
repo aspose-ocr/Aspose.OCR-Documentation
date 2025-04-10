@@ -64,3 +64,21 @@ for lang in result[0].languages:
     print(lang.language)
     print(lang.accuracy)
 ```
+
+The following code sample demonstrates how to detect the image languages and recognize multilanguage image:
+
+```python
+# Instantiate Aspose.OCR API
+api = AsposeOcr()
+# Add image to the recognition batch
+input = OcrInput(InputType.SINGLE_IMAGE)
+input.add("source.png")
+# Set language detection
+set = RecognitionSettings()
+set.language = Language.AUTO
+set.language_detection_level = LanguageDetectionLevel.BY_WORD
+# Detect languages and recognize image     
+results = api.recognize(input, set)
+for result in results:
+    print(result.recognition_text)
+```

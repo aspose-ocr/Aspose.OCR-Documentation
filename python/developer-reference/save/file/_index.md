@@ -19,6 +19,7 @@ keywords:
 - JSON,
 - XML,
 - text
+- markdown
 ---
 
 To save recognition results to a file or write them to the memory stream, use `save()` method of [`RecognitionResult`](https://reference.aspose.com/ocr/python-net/aspose.ocr/recognitionresult/) object.
@@ -38,6 +39,7 @@ Format | Description
 `SaveFormat.EPUB` | ePub, a popular e-book file format.
 `SaveFormat.RTF` | RTF, a universal format for exchanging text documents between different word processing programs.
 `SaveFormat.HOCR` | hOCR, an open standard of data representation for formatted text obtained from OCR. It includes extracted text, style, layout, and other information.
+`SaveFormat.MD` | Markdown.
 
 You can optionally enable [automatic spelling corrections](/ocr/python-net/automatic-spelling-correction/) for recognition results, provide a [custom dictionary](/ocr/python-net/dictionaries/), or specify the font to be embedded into a PDF document. The latter is only applicable when saving recognition results into text-only PDF (`SaveFormat.PDF_NO_IMG`).
 
