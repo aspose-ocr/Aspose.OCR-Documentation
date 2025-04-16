@@ -36,7 +36,7 @@ Format | Description
 `Aspose.OCR.SaveFormat.Text` | Plain text with line breaks.
 `Aspose.OCR.SaveFormat.Pdf` | Portable Document Format. The original images are placed in the background; the recognized text is placed as an invisible but searchable and selectable overlay on top of the images.
 `Aspose.OCR.SaveFormat.PdfNoImg` | Portable Document Format containing only text. The original images are not saved along with the recognition results.
-`Aspose.OCR.SaveFormat.Docx` | Microsoft Word document (version 2007 or later).
+`Aspose.OCR.SaveFormat.Docx` | Microsoft Word document (version 2007 or later). May include images if they are detected.
 `Aspose.OCR.SaveFormat.Xlsx` | Microsoft Excel spreadsheet (version 2007 or later).
 `Aspose.OCR.SaveFormat.Json` | JSON is a popular format widely used in software development and data exchange. The de facto standard for websites and REST APIs.
 `Aspose.OCR.SaveFormat.Xml` | Extensible Markup Language (XML), a universal data exchange and storage format for most systems.
@@ -44,7 +44,7 @@ Format | Description
 `Aspose.OCR.SaveFormat.EPUB` | ePub, a popular e-book file format.
 `Aspose.OCR.SaveFormat.RTF` | RTF, a universal format for exchanging text documents between different word processing programs.
 `Aspose.OCR.SaveFormat.HOCR` | hOCR, an open standard of data representation for formatted text obtained from OCR. It includes extracted text, style, layout, and other information.
-`Aspose.OCR.SaveFormat.Md` | Markdown. Can contain images.
+`Aspose.OCR.SaveFormat.Md` | Markdown. May include images if they are detected. If the recognition mode DetectAreasMode.MULTICOLUMN is selected, the output file will contain images, provided they are detected during processing.
 
 You can optionally enable [automatic spelling corrections](/ocr/net/automatic-spelling-correction/) for recognition results, provide a [custom dictionary](/ocr/net/dictionaries/), or specify the font to be embedded into a PDF document. The latter is only applicable when saving recognition results into text-only PDF (`Aspose.OCR.SaveFormat.PdfNoImg`).
 

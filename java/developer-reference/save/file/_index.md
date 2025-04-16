@@ -21,7 +21,8 @@ keywords:
 - spreadsheet,
 - JSON,
 - XML,
-- text
+- text,
+- markdown
 ---
 
 To save recognition results to a file or write them to the memory stream, use `save` method of [`RecognitionResult`](https://reference.aspose.com/ocr/java/com.aspose.ocr/recognitionresult/) object.
@@ -41,6 +42,7 @@ Format | Description
 `Format.Epub` | ePub, a popular e-book file format.
 `Format.Rtf` | RTF, a universal format for exchanging text documents between different word processing programs.
 `Format.hOcr` | hOCR, an open standard of data representation for formatted text obtained from OCR. It includes extracted text, style, layout, and other information.
+`Format.Md` | Markdown. May include images if they are detected. If the recognition mode DetectAreasMode.MULTICOLUMN is selected, the output file will contain images, provided they are detected during processing.
 
 You can optionally enable [automatic spelling corrections](/ocr/java/automatic-spelling-correction/) for recognition results, provide a [custom dictionary](/ocr/java/dictionaries/), or specify the font to be embedded into a PDF document. The latter is only applicable when saving recognition results into text-only PDF (`Format.PdfNoImg`).
 

@@ -45,11 +45,13 @@ Mixed-language Cyrillic/English text recognition is experimental. If you are abs
 
 Value | Alphabet
 ----- | --------
+`Language.MULTILANGUAGE`<br />`Language.AUTO`<br />`Language.UNIVERSAL` | Automatically detects the language. Supports multiple language families, including Latin, Cyrillic, Arabic, Chinese and more.
 `Language.ExtLatin` | Auto-detect [all supported Latin characters](/ocr/net/supported-characters/#extended-latin) and diacritics
 `Language.Cyrillic` | All supported Cyrillic characters (auto-detect)
 `Language.Chinese` | All Chinese languages. Mixed-language Chinese/English texts also supported.
 `Language.Devanagari`<br />`Language.Indic` | Indic texts based on Devanagari script, including mixed Devanagari/English texts.
 `Language.European` | Mixed-language Cyrillic/English texts (_experimental_).
+`Language.PersoArabic`<br />`Language.Islamic` | Mixed-language texts with Arabic, Persian and English.
 `Language.Afr` | Afrikaans
 `Language.Aln` | Albanian
 `Language.Ara` | Arabic (mixed texts in Arabic and English are also supported)

@@ -52,3 +52,24 @@ out.println("Page: " + result.page);
 for(Map.Entry<Language, Float> l : result.languages)
 out.println("Language: " + l.getKey()+ " : " + l.getValue());
 ```
+
+The following code sample demonstrates how to recognize the image with auto detection languages:
+
+```java
+
+AsposeOCR recognitionEngine = new AsposeOCR();
+// Add an image to OcrInput object
+OcrInput input = new OcrInput(InputType.SingleImage);
+input.add("source.png");
+// Set language detection and it is level.
+RecognitionSettings settings = new RecognitionSettings();
+settings.setLanguage(com.aspose.ocr.models.Language.Auto);
+settings.setLanguageDetectionLevel(LanguageDetectionLevel.BY_PARAGRAPH);
+		
+// Recognize with detect languages
+List<RecognitionResult> result = recognitionEngine.Recognize(input, );
+for (RecognitionResult item : result)
+{
+    System.out.println("Text: "+item.recognitionText);
+}
+```
