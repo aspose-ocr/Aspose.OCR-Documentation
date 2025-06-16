@@ -39,16 +39,15 @@ Debug mode is activated using two methods of the `AsposeOCR` class:
 {{< tab tabNum="1" >}}
 ```java
 
-from aspose.ocr import *
-    api = AsposeOcr()
-    api.set_debug_mode_save_directory("C:/output/debug")
-    api.set_debug_mode(True)
-    # // Recognize image
-    input = OcrInput(InputType.PDF)
-    input.add(file, 2, 3)
+api = AsposeOcr()
+api.set_debug_mode_save_directory("C:/output/debug")
+api.set_debug_mode(True)
+# // Recognize image
+input = OcrInput(InputType.PDF)
+input.add(file, 2, 3)
 
-    set = RecognitionSettings()
-    result = api.recognize(input, set)
+set = RecognitionSettings()
+result = api.recognize(input, set)
 ```
 {{< /tab >}}
 {{< /tabs >}}
