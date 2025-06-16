@@ -1,11 +1,11 @@
 ---
-weight: 141
+weight: 135
 date: "2025-06-15"
 author: "Anna Pylaieva"
 type: docs
 url: /python-net/debug/
 feedback: OCRPYNET
-title: Debug mode: Save processing results
+title: Debug mode - Save processing results
 description: How to enable debug mode and save preprocessed images and recognized text regions.
 keywords:
 - debug  
