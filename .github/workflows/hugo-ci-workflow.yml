@@ -27,8 +27,8 @@ jobs:
         uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.HOST }}
-          username: ${{ secrets.USERNAME }}
-          key: ${{ secrets.SSHKEY }}
+          username: ${{ secrets.USERNAME1 }}
+          key: ${{ secrets.SSHKEY1 }}
           port: ${{ secrets.SSHPORT }}
           script: |
             sudo rsync --recursive --delete --force --progress ${{ secrets.PUBLICCONTENTPATH }} ${{ secrets.DEPLOYPATH }}
