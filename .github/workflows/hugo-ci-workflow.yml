@@ -31,5 +31,6 @@ jobs:
           key: ${{ secrets.SSHKEY1 }}
           port: ${{ secrets.SSHPORT }}
           script: |
+            id
             sudo rsync --recursive --delete --force --progress ${{ secrets.PUBLICCONTENTPATH }} ${{ secrets.DEPLOYPATH }}
             sudo nginx -s reload
