@@ -3,9 +3,6 @@ on:
   workflow_dispatch:
     branches: [master]
     paths-ignore: ".github/**"
-  push:
-    branches: [master]
-    paths-ignore: ".github/**"
 
 jobs:
   job-one:
