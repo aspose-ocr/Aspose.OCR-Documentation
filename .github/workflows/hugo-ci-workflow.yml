@@ -26,9 +26,9 @@ jobs:
       - name: hugo deploy
         uses: appleboy/ssh-action@master
         with:
-          host: ${{ secrets.HOST1 }}
-          username: ${{ secrets.USERNAME1 }}
-          key: ${{ secrets.SSHKEY1 }}
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.SSHKEY }}
           port: ${{ secrets.SSHPORT }}
           script: |
             sudo rsync --recursive --delete --force --progress ${{ secrets.PUBLICCONTENTPATH }} ${{ secrets.DEPLOYPATH }}
