@@ -22,7 +22,7 @@ jobs:
           rsync --recursive --delete --force --progress ${{ secrets.PROJECTPATH }} content/
           rm -rf public
           hugo --minify --baseURL https://docs.aspose.com/ocr
-          rsync --recursive --delete --force -e "ssh" --progress public/ ${{ secrets.TRANSFERPATH }}
+          rsync --recursive --delete --force -e "ssh -o StrictHostKeyChecking=no" --progress public/ ${{ secrets.TRANSFERPATH }}
       - name: hugo deploy
         uses: appleboy/ssh-action@master
         with:
@@ -31,6 +31,5 @@ jobs:
           key: ${{ secrets.SSHKEY1 }}
           port: ${{ secrets.SSHPORT }}
           script: |
-            id
             sudo rsync --recursive --delete --force --progress ${{ secrets.PUBLICCONTENTPATH }} ${{ secrets.DEPLOYPATH }}
             sudo nginx -s reload
