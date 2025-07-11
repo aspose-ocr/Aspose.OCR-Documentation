@@ -44,3 +44,5 @@ Aspose.OCR can be combined with other Aspose products, such as [Aspose.OMR for .
   A full list of languages and characters recognized by Aspose.OCR.
 - [Supported file formats](/ocr/net/supported-file-formats/)  
   File formats for images and recognition results supported by Aspose.OCR.
+- [AI component](/ocr/net/ai-component-overview/)  
+  Overview of the AI component for OCR result enhancement using external LLM models.

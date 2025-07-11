@@ -1,7 +1,7 @@
 ---
 weight: 30
-date: "2024-12-18"
-author: "Vladimir Lapin"
+date: "2025-07-10"
+author: "Anna Pylaieva"
 type: docs
 url: /net/developer-reference/
 ai_search_scope: ocr_net
@@ -57,4 +57,9 @@ Aspose.OCR for .NET handles all aspects of recognition - from preprocessing the 
     - [Save recognition results as a searchable PDF](/ocr/net/save-searchable-pdf/)
     - [Get recognition results as text](/ocr/net/save-text/)
     - [Get recognition results as JSON](/ocr/net/save-json/)
-    - [Get recognition results as XML](/ocr/net/save-xml/)
+    - [Get recognition results as XML](/ocr/net/save-xml/) 
+
+## Additionally you can use the AI Component
+
+**Using Aspose AI**:
+    - [Automatically correct misspelled words](/ocr/net/ai/ai-spell-check/)
