@@ -125,8 +125,6 @@ THE"+"SIGN OF EACH BATTERY MUST
 SHOW UPRIGHT WHEN INSERTED
 </pre>
 </div>
-<button onclick="$('.duo > pre').slideDown(100)">Extract text</button>
-<button onclick="$('.duo > ai-result').slideDown(100)">AI spell-check</button>
 
 <button onclick="$('.rec-result').slideDown(100); $('.ai-result').slideUp(100);">Extract text</button>
 <button onclick="$('.ai-result').slideDown(100)">AI spell-check</button>
