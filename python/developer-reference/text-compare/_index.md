@@ -3,6 +3,8 @@ weight: 100
 date: "2023-08-31"
 author: "Vladimir Lapin"
 type: docs
+ai_search_scope: ocr_python
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 url: /python-net/image-text-compare/
 feedback: OCRPYNET
 title: Comparing text in images

@@ -3,6 +3,8 @@ weight: 50
 date: "2025-01-29"
 author: "Vladimir Lapin"
 type: docs
+ai_search_scope: ocr_java
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 url: /java/recognition-settings-passport/
 feedback: OCRJAVA
 title: Passport recognition settings

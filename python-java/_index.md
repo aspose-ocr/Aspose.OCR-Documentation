@@ -3,6 +3,8 @@ weight: 45
 date: "2024-03-27"
 author: "Vladimir Lapin"
 type: docs
+ai_search_scope: ocr_python-java
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 url: /python-java/
 is_root: true
 title: Aspose.OCR for Python via Java

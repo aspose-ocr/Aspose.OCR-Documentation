@@ -3,6 +3,8 @@ weight: 30
 date: "2023-12-04"
 author: "Vladimir Lapin"
 type: docs
+ai_search_scope: ocr_js
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 url: /javascript-cpp/developer-reference/
 title: Developer's reference
 description: For developers, by developers. Find answers in Aspose.OCR for JavaScript via C++ developer's reference and start building your OCR applications.

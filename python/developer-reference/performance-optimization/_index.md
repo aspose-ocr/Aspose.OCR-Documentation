@@ -3,6 +3,8 @@ weight: 90
 date: "2023-09-15"
 author: "Vladimir Lapin"
 type: docs
+ai_search_scope: ocr_python
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 url: /python-net/performance-optimization/
 feedback: OCRPYNET
 title: Performance optimization

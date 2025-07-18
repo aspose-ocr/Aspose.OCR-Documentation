@@ -3,6 +3,8 @@ weight: 75
 date: "2023-12-21"
 author: "Vladimir Lapin"
 type: docs
+ai_search_scope: ocr_cpp
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 url: /cpp/detecting-image-defects/
 feedback: OCRCPP
 title: Detecting image defects

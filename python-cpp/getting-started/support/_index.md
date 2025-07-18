@@ -3,6 +3,8 @@ weight: 50
 date: "2024-05-16"
 author: "Vladimir Lapin"
 type: docs
+ai_search_scope: ocr_python-cpp
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 url: /python-cpp/support/
 title: Get help
 description: Stuck? Join the community and get professional help from the Aspose team.

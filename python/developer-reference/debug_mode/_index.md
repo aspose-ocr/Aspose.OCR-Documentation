@@ -3,6 +3,8 @@ weight: 141
 date: "2025-06-15"
 author: "Anna Pylaieva"
 type: docs
+ai_search_scope: ocr_python
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 url: /python-net/debug/
 feedback: OCRPYNET
 title: Debug mode - Save processing results

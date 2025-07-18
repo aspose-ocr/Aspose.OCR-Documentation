@@ -3,6 +3,8 @@ weight: 20
 date: "2024-06-18"
 author: "Vladimir Lapin"
 type: docs
+ai_search_scope: ocr_java
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 url: /java/recognition/passport/
 feedback: OCRJAVA
 title: Extracting text from passport images

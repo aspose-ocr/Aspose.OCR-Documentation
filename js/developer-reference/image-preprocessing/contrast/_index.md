@@ -3,6 +3,8 @@ weight: 30
 date: "2022-12-06"
 author: "Vladimir Lapin"
 type: docs
+ai_search_scope: ocr_js
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 url: /javascript-cpp/contrast/
 title: Contrast correction
 description: How to automatically increase image contrast to improve recognition accuracy.

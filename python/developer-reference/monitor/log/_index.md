@@ -3,6 +3,8 @@ weight: 20
 date: "2023-09-02"
 author: "Vladimir Lapin"
 type: docs
+ai_search_scope: ocr_python
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 url: /python-net/logging/
 feedback: OCRPYNET
 title: Logging recognition events

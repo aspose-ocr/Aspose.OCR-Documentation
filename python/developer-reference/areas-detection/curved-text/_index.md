@@ -3,6 +3,8 @@ weight: 50
 date: "2024-03-01"
 author: "Vladimir Lapin"
 type: docs
+ai_search_scope: ocr_python
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 url: /python-net/areas-detection/curved_text/
 feedback: OCRPYNET
 title:  DetectAreasMode.CURVED_TEXT

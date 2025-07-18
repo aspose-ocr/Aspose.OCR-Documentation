@@ -3,6 +3,8 @@ weight: 50
 date: "2023-12-06"
 author: "Vladimir Lapin"
 type: docs
+ai_search_scope: ocr_js
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 url: /javascript-cpp/areas-detection/
 title:  Document areas detection
 description: How Aspose.OCR for JavaScript via C++ identifies and analyzes the structure and layout of the image during recognition.

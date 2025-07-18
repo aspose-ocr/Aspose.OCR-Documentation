@@ -3,6 +3,8 @@ weight: 15
 date: "2024-04-23"
 author: "Vladimir Lapin"
 type: docs
+ai_search_scope: ocr_java
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 url: /java/save-stream/
 feedback: OCRJAVA
 title: Saving recognition results into a stream

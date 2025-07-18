@@ -3,6 +3,8 @@ weight: 80
 date: "2023-10-13"
 author: "Vladimir Lapin"
 type: docs
+ai_search_scope: ocr_python
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 url: /python-net/specialized-recognition-methods/
 feedback: OCRPYNET
 title: Specialized recognition methods

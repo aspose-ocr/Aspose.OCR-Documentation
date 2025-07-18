@@ -3,6 +3,8 @@ weight: 70
 date: "2024-05-30"
 author: "Vladimir Lapin"
 type: docs
+ai_search_scope: ocr_python
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 url: /python-net/defect-detection/
 feedback: OCRPYNET
 title: Defect detection

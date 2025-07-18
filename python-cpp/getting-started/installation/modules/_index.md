@@ -3,6 +3,8 @@ weight: 20
 date: "2024-05-16"
 author: "Vladimir Lapin"
 type: docs
+ai_search_scope: ocr_python-cpp
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 url: /python-cpp/modules/
 title: Installing advanced OCR features
 description: How to extend Aspose.OCR for Python via C++ functionality by adding downloadable modules to the project.

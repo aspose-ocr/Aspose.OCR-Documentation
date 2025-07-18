@@ -3,6 +3,8 @@ weight: 40
 date: "2023-12-06"
 author: "Vladimir Lapin"
 type: docs
+ai_search_scope: ocr_js
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 url: /javascript-cpp/settings/
 title: Recognition settings
 description: How to improve recognition accuracy and tune up Aspose.OCR for JavaScript via C++ engine.

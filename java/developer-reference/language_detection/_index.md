@@ -3,6 +3,8 @@ weight: 32
 date: "2025-03-19"
 author: "Vladimir Lapin"
 type: docs
+ai_search_scope: ocr_java
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 url: /java/language_detection/
 feedback: OCRJAVA
 title: Language detecton

@@ -3,6 +3,8 @@ weight: 140
 date: "2023-01-26"
 author: "Vladimir Lapin"
 type: docs
+ai_search_scope: ocr_java
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 url: /java/logging/
 feedback: OCRJAVA
 title: Logging recognition events

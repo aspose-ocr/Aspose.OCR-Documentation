@@ -3,6 +3,8 @@ weight: 20
 date: "2024-09-04"
 author: "Vladimir Lapin"
 type: docs
+ai_search_scope: ocr_cpp
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 url: /cpp/modules/auto/
 feedback: OCRCPP
 title: Automatically download required resources

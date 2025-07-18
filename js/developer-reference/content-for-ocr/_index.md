@@ -3,6 +3,8 @@ weight: 10
 date: "2023-12-04"
 author: "Vladimir Lapin"
 type: docs
+ai_search_scope: ocr_js
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 url: /javascript-cpp/content-for-ocr/
 title: Preparing content for recognition
 description: How to prepare a batch of images, URLs and other content for recognition.

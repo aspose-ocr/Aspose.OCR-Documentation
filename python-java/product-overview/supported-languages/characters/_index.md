@@ -3,6 +3,8 @@ weight: 10
 date: "2024-03-27"
 author: "Vladimir Lapin"
 type: docs
+ai_search_scope: ocr_python-java
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 url: /python-java/supported-characters/
 title: Supported characters
 description: A full list of characters recognized by Aspose.OCR for Python via Java.

@@ -3,6 +3,8 @@ weight: 20
 date: "2024-06-19"
 author: "Vladimir Lapin"
 type: docs
+ai_search_scope: ocr_python
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 url: /python-net/recognition/passport/
 feedback: OCRPYNET
 title: Extracting text from passport images

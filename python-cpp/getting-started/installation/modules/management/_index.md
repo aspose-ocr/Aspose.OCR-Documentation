@@ -3,6 +3,8 @@ weight: 10
 date: "2024-05-16"
 author: "Vladimir Lapin"
 type: docs
+ai_search_scope: ocr_python-cpp
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 url: /python-cpp/modules/management/
 title: Managing downloadable resources
 description: How to manage Aspose.OCR for Python via C++ downloadable modules.

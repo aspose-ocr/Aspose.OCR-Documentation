@@ -3,6 +3,8 @@ weight: 40
 date: "2023-12-14"
 author: "Vladimir Lapin"
 type: docs
+ai_search_scope: ocr_nodejs-cpp
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 url: /nodejs-cpp/hello-world/
 title: Hello, world!
 description: Get started with Aspose.OCR for C++ by creating and running a bare minimum example.

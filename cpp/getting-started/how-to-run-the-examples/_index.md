@@ -3,6 +3,8 @@ weight: 40
 date: "2022-12-07"
 author: "Vladimir Lapin"
 type: docs
+ai_search_scope: ocr_cpp
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 url: /cpp/how-to-run-the-examples/
 feedback: OCRCPP
 title: How to run examples

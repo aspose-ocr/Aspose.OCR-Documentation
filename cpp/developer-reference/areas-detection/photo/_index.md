@@ -3,6 +3,8 @@ weight: 20
 date: "2022-07-19"
 author: "Vladimir Lapin"
 type: docs
+ai_search_scope: ocr_cpp
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 url: /cpp/areas-detection/photo/
 feedback: OCRCPP
 title:  detect_areas_mode_enum::PHOTO

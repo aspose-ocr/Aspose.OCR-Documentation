@@ -3,6 +3,8 @@ weight: 33
 date: "2025-04-15"
 author: "Anna Pylaieva"
 type: docs
+ai_search_scope: ocr_java
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 url: /java/layout_detection/
 feedback: OCRJAVA
 title: Layout detecton

@@ -3,6 +3,8 @@ weight: 10
 date: "2023-04-28"
 author: "Vladimir Lapin"
 type: docs
+ai_search_scope: ocr_cpp
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 url: /cpp/passport-recognition/
 feedback: OCRCPP
 title: Extracting text from passport images

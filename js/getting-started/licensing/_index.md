@@ -3,6 +3,8 @@ weight: 30
 date: "2023-12-07"
 author: "Vladimir Lapin"
 type: docs
+ai_search_scope: ocr_js
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 url: /javascript-cpp/licensing/
 title: Licensing
 description: Learn how to obtain and apply Aspose.OCR for JavaScript via C++ license and discover limitations of the trial version.

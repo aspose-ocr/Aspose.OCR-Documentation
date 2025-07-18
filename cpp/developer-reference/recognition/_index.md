@@ -3,6 +3,8 @@ weight: 70
 date: "2024-01-25"
 author: "Vladimir Lapin"
 type: docs
+ai_search_scope: ocr_cpp
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 url: /cpp/recognition/
 aliases:
 - /cpp/recognition/image/

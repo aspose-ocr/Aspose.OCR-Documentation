@@ -3,6 +3,8 @@ weight: 50
 date: "2023-11-24"
 author: "Vladimir Lapin"
 type: docs
+ai_search_scope: ocr_js
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 url: /javascript-cpp/hello-world/
 title: Hello, world!
 description: Get started with Aspose.OCR for JavaScript via C++ by creating and running a bare minimum example.

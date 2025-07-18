@@ -3,6 +3,8 @@ weight: 20
 date: "2023-03-31"
 author: "Vladimir Lapin"
 type: docs
+ai_search_scope: ocr_cpp
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 url: /cpp/supported-file-formats/
 feedback: OCRCPP
 title: Supported file formats

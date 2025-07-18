@@ -3,6 +3,8 @@ weight: 110
 date: "2023-08-31"
 author: "Vladimir Lapin"
 type: docs
+ai_search_scope: ocr_python
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 url: /python-net/find-text/
 feedback: OCRPYNET
 title: Finding text in an image

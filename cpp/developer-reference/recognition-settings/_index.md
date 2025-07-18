@@ -3,6 +3,8 @@ weight: 40
 date: "2023-10-26"
 author: "Vladimir Lapin"
 type: docs
+ai_search_scope: ocr_cpp
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 url: /cpp/settings/
 feedback: OCRCPP
 title: Recognition settings

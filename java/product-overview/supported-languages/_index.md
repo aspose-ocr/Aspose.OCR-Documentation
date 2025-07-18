@@ -3,6 +3,8 @@ weight: 10
 date: "2024-11-21"
 author: "Vladimir Lapin"
 type: docs
+ai_search_scope: ocr_java
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 url: /java/recognition-languages/
 feedback: OCRJAVA
 title: Recognition languages
