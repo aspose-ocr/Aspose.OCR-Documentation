@@ -64,7 +64,7 @@ The `AsposeAI` class integrates external AI models (e.g., from Hugging Face) int
 
 ```csharp
 public AsposeAI();
-public AsposeAI(AsposeAIModelConfig config, ILogger? logger = null);
+public AsposeAI(ILogger? logger);
 ```
 
 You can also pass optional logging and customization callbacks.
@@ -73,7 +73,7 @@ You can also pass optional logging and customization callbacks.
 
 - Implements: `IOcrAIPostProcessor`
 - Description: A built-in module that performs AI-powered spell-check correction.
-- Usage: Register using `AsposeAI.AddPostProcessor(new SpellCheckAIProcessor())`
+- Usage: Register using `AsposeAI.SetPostProcessor(new SpellCheckAIProcessor())`
 
 ## 🔗 API References
 
@@ -92,13 +92,13 @@ You can also pass optional logging and customization callbacks.
        DirectoryModelPath = "D://test",
    };
 
-   AsposeAI ai = new AsposeAI(modelConfig, logger);
-
-   ai.AddPostProcessor(new SpellCheckAIProcessor());
+   AsposeAI ai = new AsposeAI(logger);
+   SpellCheckAIProcessor processor = new SpellCheckAIProcessor()
+   ai.SetPostProcessor(processor, modelConfig);
    ai.RunPostprocessor(res);
 
    Console.WriteLine("CORRECTED RESULT\n");
-   Console.WriteLine(res[0].RecognitionText)
+   Console.WriteLine(processor.GetResult()[0].RecognitionText)
    ai.Dispose();
 ```
 
