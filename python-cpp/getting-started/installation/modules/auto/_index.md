@@ -3,6 +3,8 @@ weight: 20
 date: "2024-05-16"
 author: "Vladimir Lapin"
 type: docs
+ai_search_scope: ocr_python-cpp
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 url: /python-cpp/modules/auto/
 title: Automatically download required resources
 description: How to use Aspose.OCR for Python via C++ resources in offline mode.

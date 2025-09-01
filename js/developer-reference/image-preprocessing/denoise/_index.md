@@ -3,6 +3,8 @@ weight: 20
 date: "2022-12-06"
 author: "Vladimir Lapin"
 type: docs
+ai_search_scope: ocr_js
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 url: /javascript-cpp/denoise/
 title: Noise removal
 description: How to remove dirt, spots, scratches, glare, and other image defects to improve recognition accuracy.

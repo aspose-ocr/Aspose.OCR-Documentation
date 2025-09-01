@@ -3,6 +3,8 @@ weight: 60
 date: "2023-12-11"
 author: "Vladimir Lapin"
 type: docs
+ai_search_scope: ocr_nodejs-cpp
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 url: /nodejs-cpp/
 is_root: true
 title: Aspose.OCR for Node.js via C++

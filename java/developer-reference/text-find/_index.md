@@ -3,6 +3,8 @@ weight: 100
 date: "2023-07-14"
 author: "Vladimir Lapin"
 type: docs
+ai_search_scope: ocr_java
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 url: /java/find-text/
 feedback: OCRJAVA
 title: Finding text in an image

@@ -3,6 +3,8 @@ weight: 20
 date: "2023-12-04"
 author: "Vladimir Lapin"
 type: docs
+ai_search_scope: ocr_js
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 url: /javascript-cpp/characters-whitelist/
 title: Defining the whitelist of characters
 description: How to limit the set of characters Aspose.OCR engine will look for.

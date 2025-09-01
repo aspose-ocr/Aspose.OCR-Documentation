@@ -3,6 +3,8 @@ weight: 20
 date: "2024-01-16"
 author: "Vladimir Lapin"
 type: docs
+ai_search_scope: ocr_python-cpp
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 url: /python-cpp/supported-file-formats/
 title: Supported file formats
 description: File formats for images and recognition results supported by Aspose.OCR for Python via C++.

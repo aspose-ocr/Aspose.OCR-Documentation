@@ -3,6 +3,8 @@ weight: 10
 date: "2023-05-19"
 author: "Vladimir Lapin"
 type: docs
+ai_search_scope: ocr_java
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 url: /java/fast-recognition/
 feedback: OCRJAVA
 title: Fast recognition

@@ -3,6 +3,8 @@ weight: 20
 date: "2023-12-14"
 author: "Vladimir Lapin"
 type: docs
+ai_search_scope: ocr_python-java
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 url: /python-java/installation/
 title: Installation
 description: Adding or updating Aspose.OCR for Python via Java package in your project.

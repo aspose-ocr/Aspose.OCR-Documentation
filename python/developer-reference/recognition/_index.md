@@ -3,6 +3,8 @@ weight: 70
 date: "2025-01-27"
 author: "Vladimir Lapin"
 type: docs
+ai_search_scope: ocr_python
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 url: /python-net/recognition/
 aliases:
 - /python-net/recognition/read-text-in-wild/

@@ -3,6 +3,8 @@ weight: 80
 date: "2023-04-28"
 author: "Vladimir Lapin"
 type: docs
+ai_search_scope: ocr_cpp
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 url: /cpp/specialized-recognition-functions/
 feedback: OCRCPP
 title: Specialized recognition functions

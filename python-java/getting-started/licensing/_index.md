@@ -3,6 +3,8 @@ weight: 30
 date: "2023-12-14"
 author: "Vladimir Lapin"
 type: docs
+ai_search_scope: ocr_python-java
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 url: /python-java/licensing/
 title: Licensing
 description: Learn how to obtain and apply Aspose.OCR for Python via Java license and discover limitations of the trial version.

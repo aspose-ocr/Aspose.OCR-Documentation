@@ -3,6 +3,8 @@ weight: 50
 date: "2023-12-06"
 author: "Vladimir Lapin"
 type: docs
+ai_search_scope: ocr_js
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 url: /javascript-cpp/binarization/
 title: Binarization
 description: How to convert an image to black and white either automatically or by manually specifying a threshold.

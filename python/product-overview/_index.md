@@ -3,6 +3,8 @@ weight: 10
 date: "2024-03-15"
 author: "Vladimir Lapin"
 type: docs
+ai_search_scope: ocr_python
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 url: /python-net/product-overview/
 feedback: OCRPYNET
 title: Product overview

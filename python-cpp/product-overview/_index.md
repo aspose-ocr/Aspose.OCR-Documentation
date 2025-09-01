@@ -3,6 +3,8 @@ weight: 10
 date: "2024-01-16"
 author: "Vladimir Lapin"
 type: docs
+ai_search_scope: ocr_python-cpp
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 url: /python-cpp/product-overview/
 title: Product overview
 description: An introduction to OCR technology and how Aspose.OCR for Python via C++ can help you use it for your day-to-day business needs.

@@ -3,6 +3,8 @@ weight: 30
 date: "2023-08-25"
 author: "Vladimir Lapin"
 type: docs
+ai_search_scope: ocr_python
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 url: /python-net/developer-reference/
 feedback: OCRPYNET
 title: Developer's reference

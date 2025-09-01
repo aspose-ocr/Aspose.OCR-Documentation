@@ -3,6 +3,8 @@ weight: 80
 date: "2024-01-16"
 author: "Vladimir Lapin"
 type: docs
+ai_search_scope: ocr_python-cpp
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 url: /python-cpp/
 is_root: true
 title: Aspose.OCR for Python via C++

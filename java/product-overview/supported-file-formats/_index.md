@@ -3,6 +3,8 @@ weight: 20
 date: "2025-02-14"
 author: "Vladimir Lapin"
 type: docs
+ai_search_scope: ocr_java
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 url: /java/supported-file-formats/
 feedback: OCRJAVA
 title: Supported file formats

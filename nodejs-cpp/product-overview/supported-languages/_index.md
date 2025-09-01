@@ -3,6 +3,8 @@ weight: 10
 date: "2023-12-11"
 author: "Vladimir Lapin"
 type: docs
+ai_search_scope: ocr_nodejs-cpp
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 url: /nodejs-cpp/recognition-languages/
 title: Recognition languages
 description: A list of languages and characters recognized by Aspose.OCR for Node.js via C++.

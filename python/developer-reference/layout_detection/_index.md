@@ -3,6 +3,8 @@ weight: 32
 date: "2025-03-03"
 author: "Anna Pylaieva"
 type: docs
+ai_search_scope: ocr_python
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 url: /python-net/layout_detection/
 ai_search_scope: ocr_net
 ai_search_endpoint: "https://api.aspose.cloud/v5.0/ocr/docsearch/ask"

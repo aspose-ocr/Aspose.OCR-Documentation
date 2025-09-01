@@ -3,6 +3,8 @@ weight: 20
 date: "2025-01-29"
 author: "Vladimir Lapin"
 type: docs
+ai_search_scope: ocr_java
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 url: /java/misspelled-words-list/
 feedback: OCRJAVA
 title: Getting the list of misspelled words

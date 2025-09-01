@@ -3,6 +3,8 @@ weight: 20
 date: "2023-12-06"
 author: "Vladimir Lapin"
 type: docs
+ai_search_scope: ocr_js
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 url: /javascript-cpp/areas-detection/photo/
 title:  Module.DetectAreasMode.PHOTO
 description: How Aspose.OCR for JavaScript via C++ determines the structure of a document using the Module.DetectAreasMode.PHOTO model.

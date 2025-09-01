@@ -3,6 +3,8 @@ weight: 20
 date: "2024-05-30"
 author: "Vladimir Lapin"
 type: docs
+ai_search_scope: ocr_python
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 url: /python-net/modules/
 feedback: OCRPYNET
 title: Installing advanced OCR features

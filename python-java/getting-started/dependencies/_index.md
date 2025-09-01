@@ -3,6 +3,8 @@ weight: 11
 date: "2023-12-14"
 author: "Vladimir Lapin"
 type: docs
+ai_search_scope: ocr_python-java
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 url: /python-java/dependencies/
 title: External dependencies
 description: Third-party components required to run Aspose.OCR for Python via Java applications.

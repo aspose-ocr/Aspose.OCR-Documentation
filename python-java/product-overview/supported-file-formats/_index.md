@@ -3,6 +3,8 @@ weight: 20
 date: "2025-02-17"
 author: "Vladimir Lapin"
 type: docs
+ai_search_scope: ocr_python-java
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 url: /python-java/supported-file-formats/
 title: Supported file formats
 description: File formats for images and recognition results supported by Aspose.OCR for Python via Java.

@@ -3,6 +3,8 @@ weight: 10
 date: "2024-01-16"
 author: "Vladimir Lapin"
 type: docs
+ai_search_scope: ocr_python-cpp
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 url: /python-cpp/recognition-languages/
 title: Recognition languages
 description: A list of languages and characters recognized by Aspose.OCR for Python via C++.

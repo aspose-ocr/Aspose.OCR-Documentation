@@ -3,6 +3,8 @@ weight: 10
 date: "2025-02-17"
 author: "Vladimir Lapin"
 type: docs
+ai_search_scope: ocr_python-java
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 url: /python-java/recognition-languages/
 title: Recognition languages
 description: A list of languagess recognized by Aspose.OCR for Python via Java.

@@ -3,6 +3,8 @@ weight: 15
 date: "2023-12-06"
 author: "Vladimir Lapin"
 type: docs
+ai_search_scope: ocr_js
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 url: /javascript-cpp/image-preprocessing/
 title: Image preprocessing
 description: Automatic or manual actions for formatting an image before sending it for recognition.

@@ -3,6 +3,8 @@ weight: 20
 date: "2023-04-19"
 author: "Vladimir Lapin"
 type: docs
+ai_search_scope: ocr_python
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 url: /python-net/getting-started/
 feedback: OCRPYNET
 title: Getting started

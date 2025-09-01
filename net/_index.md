@@ -3,9 +3,9 @@ weight: 10
 date: "2024-12-18"
 author: "Vladimir Lapin"
 type: docs
-url: /net/
 ai_search_scope: ocr_net
-ai_search_endpoint: "https://api.aspose.cloud/v5.0/ocr/docsearch/ask"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
+url: /net/
 feedback: OCRNET
 is_root: true
 title: Aspose.OCR for .NET

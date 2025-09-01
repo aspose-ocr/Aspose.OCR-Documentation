@@ -3,6 +3,8 @@ weight: 20
 date: "2023-12-07"
 author: "Vladimir Lapin"
 type: docs
+ai_search_scope: ocr_js
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 url: /javascript-cpp/save-text/
 title: Getting recognition results as text
 description: Returning Aspose.OCR for JavaScript via C++ recognition results as formatted text.

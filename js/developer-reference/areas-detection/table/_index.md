@@ -3,6 +3,8 @@ weight: 40
 date: "2023-12-06"
 author: "Vladimir Lapin"
 type: docs
+ai_search_scope: ocr_js
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 url: /javascript-cpp/areas-detection/table/
 title:  Module.DetectAreasMode.TABLE
 description: How Aspose.OCR for JavaScript via C++ determines the structure of a document using the Module.DetectAreasMode.TABLE algorithm.

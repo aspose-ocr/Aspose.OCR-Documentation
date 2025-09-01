@@ -3,6 +3,8 @@ weight: 10
 date: "2023-11-24"
 author: "Vladimir Lapin"
 type: docs
+ai_search_scope: ocr_js
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 url: /javascript-cpp/system-requirements/
 title: System requirements
 description: Minimum requirements and prerequisites for web applications built with Aspose.OCR for JavaScript via C++.

@@ -3,6 +3,8 @@ weight: 10
 date: "2022-10-21"
 author: "Vladimir Lapin"
 type: docs
+ai_search_scope: ocr_java
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 url: /java/installation/gpu/
 feedback: OCRJAVA
 title: Installing GPU-accelearated package

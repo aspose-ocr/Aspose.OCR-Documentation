@@ -3,6 +3,8 @@ weight: 20
 date: "2023-11-24"
 author: "Vladimir Lapin"
 type: docs
+ai_search_scope: ocr_js
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 url: /javascript-cpp/supported-file-formats/
 title: Supported file formats
 description: File formats for images and recognition results supported by Aspose.OCR for JavaScript via C++.
