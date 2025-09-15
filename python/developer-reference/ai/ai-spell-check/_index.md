@@ -1,12 +1,10 @@
 ---
 weight: 70
-date: "2025-07-10"
+date: "2025-09-14"
 author: "Anna Pylaieva"
 type: docs
-url: /net/ai/ai-spell-check
-ai_search_scope: ocr_net
-ai_search_endpoint: "https://api.aspose.cloud/v5.0/ocr/docsearch/ask"
-feedback: OCRNET
+url: /python-net/ai/ai-spell-check
+feedback: OCRPYNET
 title: AsposeAI Spell-check correction
 description: Improve OCR accuracy by applying LLM‑powered spell‑check to raw output.
 keywords:
@@ -62,9 +60,9 @@ The `AsposeAI` class integrates external AI models (e.g., from Hugging Face) int
 
 ## Constructor
 
-```csharp
-public AsposeAI();
-public AsposeAI(ILogger? logger);
+```python
+aspose.ocr.ai.AsposeAI()
+aspose.ocr.ai.AsposeAI(logging)
 ```
 
 You can also pass optional logging and customization callbacks.
@@ -73,33 +71,30 @@ You can also pass optional logging and customization callbacks.
 
 - Implements: `IOcrAIPostProcessor`
 - Description: A built-in module that performs AI-powered spell-check correction.
-- Usage: Register using `AsposeAI.SetPostProcessor(new SpellCheckAIProcessor())`
+- Usage: Register using `aspose.ocr.ai.set_post_processor(processor, custom_settings)`
 
 ## 🔗 API References
 
-- [`AsposeAI`](https://reference.aspose.com/ocr/net/aspose.ocr.ai/asposeai/)  
+- [`AsposeAI`](https://reference.aspose.com/ocr/python-net/aspose.ocr.ai/asposeai/)  
   Core class to load, configure, and apply AI models (e.g., for spell correction) to OCR results.
 
-- [`SpellCheckAIProcessor`](https://reference.aspose.com/ocr/net/aspose.ocr.ai/spellcheckaiprocessor/)  
+- [`SpellCheckAIProcessor`](https://reference.aspose.com/ocr/python-net/aspose.ocr.ai/spellcheckaiprocessor/)  
   Built-in AI postprocessor that uses a language model to fix spelling mistakes in recognized text.
 
 
-```csharp
-   ILogger logger = new ConsoleLogger(); // can be null
-   AsposeAIModelConfig modelConfig = new AsposeAIModelConfig
-   {
-       AllowAutoDownload = true,
-       DirectoryModelPath = "D://test",
-   };
+```python 
+   	modelConfig = new AsposeAIModelConfig()
+	modelConfig.allow_auto_download = True
+    modelConfig.directory_model_path = "D://test"
 
-   AsposeAI ai = new AsposeAI(logger);
-   SpellCheckAIProcessor processor = new SpellCheckAIProcessor()
-   ai.SetPostProcessor(processor, modelConfig);
-   ai.RunPostprocessor(res);
+   ai = new AsposeAI(True)
+   processor = new SpellCheckAIProcessor()
+   ai.set_post_processor(processor, modelConfig)
+   ai.run_postprocessor(res)
 
-   Console.WriteLine("CORRECTED RESULT\n");
-   Console.WriteLine(processor.GetResult()[0].RecognitionText)
-   ai.Dispose();
+   print("CORRECTED RESULT\n");
+   print(processor.get_result()[0].recognition_text)
+   ai.free_resources()
 ```
 
 ## Live demo
@@ -130,4 +125,4 @@ SHOW UPRIGHT WHEN INSERTED
 <button onclick="$('.ai-result').slideDown(100)">AI spell-check</button>
 
 ### 🐞 Logging & error handling
-Pass `ILogger` to constructor to track loading and inference.
+Pass `True` to constructor to track loading and inference.

@@ -22,7 +22,7 @@ The `AsposeAI` class provides the bridge between LLM models and the OCR engine.
 
 ```csharp
 public AsposeAI();
-public AsposeAI(AsposeAIModelConfig config, ILogger? logger = null);
+public AsposeAI(ILogger logger);
 ```
 
 You can also pass optional logging and customization callbacks.
@@ -37,17 +37,17 @@ You can also pass optional logging and customization callbacks.
 | `FileModelPath`           | `string` | Local path to the folder containing the model files. If specified, this will be used instead of downloading. Default empty.                                    |
 | `HuggingFaceQuantization` | `string` | Optional quantization type to use when downloading from HuggingFace. Examples: “int8”, “fp16”, “none”. Default q4_k_m.                                         |
 | `HuggingFaceRepoId`       | `string` | ID of the model on HuggingFace (e.g., “openai/gpt2”). If specified, the model will be downloaded from HuggingFace. Default bartowski/Qwen2.5-3B-Instruct-GGUF. |
+| `ContextSize`             | `int` | 	Defines the maximum number of tokens the LLM can use as context during inference. If null, the default context size defined by the model will be used. Larger values allow the model to consider more text but may require more memory. |
+| `GpuLayers`               | `int` | Number of GPU layers to use for the model. If not specified, the default value (40) will be used. Set to 0 to run entirely on the CPU. |
 
 ### 🧠 AsposeAI Class – Core Methods
-| Method                                            | Description                                                         |
-| ------------------------------------------------- | ------------------------------------------------------------------- |
-| `AddPostProcessor(IOcrAIPostProcessor processor)` | Adds a custom AI postprocessor to enhance OCR results.              |
-| `CorrectResult(OcrOutput output)`                 | Applies AI-based spell correction to the full OCR result.           |
-| `CorrectResult(RecognitionResult result)`         | Applies spell correction to a single recognition result.            |
-| `RunPostprocessor(List<string> texts)`            | Enhances plain recognized text strings using registered AI modules. |
-| `RunPostprocessor(OcrOutput output)`              | Enhances structured OCR output using registered AI modules.         |
-| `Dispose()`                                       | Cleans up and releases resources used by the AI component.          |
-| `FreeResources()`                                 | Explicitly unloads AI models and clears memory.                     |
-| `ListLocal()`                                     | Lists all local AI models available in the configured folder.       |
-| `GetLocalPath()`                                  | Returns the directory path of the current model location.           |
-| `IsInitialized()`                                 | Checks if the AI engine and model are ready to use.                 |
+| Method                                                                        | Description                                                         |
+| ----------------------------------------------------------------------------- | ------------------------------------------------------------------- |
+| `SetPostProcessor(IOcrAIPostProcessor processor, AsposeAIModelConfig config)` | Adds a custom AI postprocessor to enhance OCR results.              |
+| `RunPostprocessor(List<string> texts)`                                        | Enhances plain recognized text strings using registered AI modules. |
+| `RunPostprocessor(OcrOutput output)`                                          | Enhances structured OCR output using registered AI modules.         |
+| `Dispose()`                                                                   | Cleans up and releases resources used by the AI component.          |
+| `FreeResources()`                                                             | Explicitly unloads AI models and clears memory.                     |
+| `ListLocal()`                                                                 | Lists all local AI models available in the configured folder.       |
+| `GetLocalPath()`                                                              | Returns the directory path of the current model location.           |
+| `IsInitialized()`                                                             | Checks if the AI engine and model are ready to use.                 |

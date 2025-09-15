@@ -1,12 +1,10 @@
 ---
 weight: 69
-date: "2025-08-30"
+date: "2025-09-14"
 author: "Anna Pylaieva"
 type: docs
-url: /net/ai/ai-table
-ai_search_scope: ocr_net
-ai_search_endpoint: "https://api.aspose.cloud/v5.0/ocr/docsearch/ask"
-feedback: OCRNET
+url: /python-net/ai/ai-table
+feedback: OCRPYNET
 title: AsposeAI Table correction
 description: Improve OCR accuracy by applying LLM‑powered table layout output.
 keywords:
@@ -62,9 +60,9 @@ The `AsposeAI` class integrates external AI models (e.g., from Hugging Face) int
 
 ## Constructor
 
-```csharp
-public AsposeAI();
-public AsposeAI(ILogger? logger);
+```python
+aspose.ocr.ai.AsposeAI()
+aspose.ocr.ai.AsposeAI(logging)
 ```
 
 You can also pass optional logging and customization callbacks.
@@ -73,33 +71,30 @@ You can also pass optional logging and customization callbacks.
 
 - Implements: `IOcrAIPostProcessor`
 - Description: A built-in module that performs AI-powered table detection and layout correction.
-- Usage: Register using `AsposeAI.SetPostProcessor(new TableAIProcessor())`
+- Usage: Register using `aspose.ocr.ai.set_post_processor(processor, custom_settings)`
 
 ## 🔗 API References
 
-- [`AsposeAI`](https://reference.aspose.com/ocr/net/aspose.ocr.ai/asposeai/)  
+- [`AsposeAI`](https://reference.aspose.com/ocr/python-net/aspose.ocr.ai/asposeai/)  
   Core class to load, configure, and apply AI models (e.g., for table correction) to OCR results.
 
-- [`TableAIProcessor`](https://reference.aspose.com/ocr/net/aspose.ocr.ai/tableaiprocessor/)  
+- [`TableAIProcessor`](https://reference.aspose.com/ocr/python-net/aspose.ocr.ai/tableaiprocessor/)  
   Built-in AI postprocessor that uses a language model to improve table layout detection and formatting.
 
 
-```csharp
-   ILogger logger = new ConsoleLogger(); // can be null
-   AsposeAIModelConfig modelConfig = new AsposeAIModelConfig
-   {
-       AllowAutoDownload = true,
-       DirectoryModelPath = "D://test",
-   };
+```python
+ modelConfig = new AsposeAIModelConfig()
+	modelConfig.allow_auto_download = True
+    modelConfig.directory_model_path = "D://test"
 
-   AsposeAI ai = new AsposeAI(logger);
-   TableAIProcessor processor = new TableAIProcessor(AITableDetectionMode.AUTO)
-   ai.SetPostProcessor(processor, modelConfig);
-   ai.RunPostprocessor(res);
+   ai = new AsposeAI(True)
+   processor = new TableAIProcessor(AITableDetectionMode.AUTO)
+   ai.set_post_processor(processor, modelConfig)
+   ai.run_postprocessor(res)
 
-   Console.WriteLine("CORRECTED RESULT\n");
-   Console.WriteLine(processor.GetResult()[0].RecognitionText)
-   ai.Dispose();
+   print("CORRECTED RESULT\n");
+   print(processor.get_result()[0].recognition_text)
+   ai.free_resources()
 ```
 
 ## Live demo
@@ -137,4 +132,4 @@ International Conference On Recent Advances In Computer Science, Engineering And
 <button onclick="$('.ai-result').slideDown(100)">AI table extract</button>
 
 ### 🐞 Logging & error handling
-Pass `ILogger` to constructor to track loading and inference.
+Pass `True` to constructor to track loading and inference.
