@@ -25,6 +25,7 @@ keywords:
 - XML,
 - text
 - Markdown
+- Csv
 ---
 
 To save recognition results to a file or write them to the memory stream, use [`Save`](https://reference.aspose.com/ocr/net/aspose.ocr/recognitionresult/save/) method of [`Aspose.OCR.RecognitionResult`](https://reference.aspose.com/ocr/net/aspose.ocr/recognitionresult/) object.
@@ -45,6 +46,7 @@ Format | Description
 `Aspose.OCR.SaveFormat.RTF` | RTF, a universal format for exchanging text documents between different word processing programs.
 `Aspose.OCR.SaveFormat.HOCR` | hOCR, an open standard of data representation for formatted text obtained from OCR. It includes extracted text, style, layout, and other information.
 `Aspose.OCR.SaveFormat.Md` | Markdown. May include images if they are detected. If the recognition mode DetectAreasMode.MULTICOLUMN is selected, the output file will contain images, provided they are detected during processing.
+`Aspose.OCR.SaveFormat.Csv` | Saves the document as a CSV (.csv) file.
 
 You can optionally enable [automatic spelling corrections](/ocr/net/automatic-spelling-correction/) for recognition results, provide a [custom dictionary](/ocr/net/dictionaries/), or specify the font to be embedded into a PDF document. The latter is only applicable when saving recognition results into text-only PDF (`Aspose.OCR.SaveFormat.PdfNoImg`).
 

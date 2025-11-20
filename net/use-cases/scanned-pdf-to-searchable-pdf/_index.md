@@ -65,10 +65,12 @@ Use your own document or [download the sample delivery agreement](Delivery-Agree
 4. [Recognize](/ocr/net/recognition/) the text from document:
    ```csharp
    AsposeOcr api = new AsposeOcr();
-   List<RecognitionResult> result = api.Recognize(pdf);
+   OcrOutput result = api.Recognize(pdf);
    ```
 5. Save the recognition result as a searchable PDF:
    ```csharp
+   result.SavePdf("Readable-Contract.pdf");
+   // Or the old approach
    AsposeOcr.SaveMultipageDocument("Readable-Contract.pdf", SaveFormat.Pdf, result);
    ```
 
@@ -93,7 +95,7 @@ namespace ConvertScannedPDF
 			AsposeOcr api = new AsposeOcr();
 			List<RecognitionResult> result = api.Recognize(pdf);
 			// Save searchable PDF
-			AsposeOcr.SaveMultipageDocument("Readable-Contract.pdf", SaveFormat.Pdf, result);
+			result.SavePdf("Readable-Contract.pdf");
 			// Report progress
 			Console.WriteLine($@"Recognition finished. See '{Directory.GetCurrentDirectory()}\Readable-Contract.pdf'.");
 		}
