@@ -116,7 +116,10 @@ foreach(Aspose.OCR.RecognitionResult result in results)
 ```
 
 
-## Live demo `recognitionEngine.RecognizeFormula(input, true)`
+## Live demo 
+```csharp
+recognitionEngine.RecognizeFormula(input, true)
+```
 
 <div class="duo">
 <img src="formula1.png" alt="Formula with text" />
@@ -129,9 +132,12 @@ x [ n ]=\\cos\left( {\\frac{\\pi} {4}} n \right) , \\qquad-\\infty< n < \\infty.
 </pre>
 </div>
 
-<button onclick="$('.rec-result').slideUp(100);">Extract formulas</button>
+<button onclick="$('.rec-result').slideDown(100);">Extract formulas</button>
 
-## Live demo `recognitionEngine.RecognizeFormula(input, false)`
+## Live demo 
+```csharp
+recognitionEngine.RecognizeFormula(input, false)
+```
 
 <div class="duo">
 <img src="formula2.png" alt="Formula without text" />
@@ -140,4 +146,4 @@ x [ n ]=\\cos\left( \\frac{\\pi} {4} n \right) . \\qquad-\\infty< n < \\infty.
 </pre>
 </div>
 
-<button onclick="$('.rec-result2').slideUp(100);">Extract formulas</button>
+<button onclick="$('.rec-result2').slideDown(100);">Extract formulas</button>
