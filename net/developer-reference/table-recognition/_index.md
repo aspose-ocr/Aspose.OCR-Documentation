@@ -15,7 +15,6 @@ aliases:
 - /net/batch-recognition/
 - /net/recognition/pixel/
 - /net/recognition/base64/
-- /net/recognition/table/
 feedback: OCRNET
 title: Table recognition
 description: Extracting and recognizing table cells from images, web links, scanned PDFs, DjVu files, folders, archives and other content.
@@ -27,14 +26,16 @@ keywords:
 ---
 
 Aspose.OCR for .NET now provides a dedicated API for detecting table layout and recognizing table data in images, scanned documents, screenshots, or photos.
-To extract formula text, simply call the universal [`Aspose.OCR.AsposeOcr.Recognize`](https://reference.aspose.com/ocr/net/aspose.ocr/asposeocr/recognize/) method with [`DetectAreasMode.TABLE`](https://reference.aspose.com/ocr/net/aspose.ocr/detectareasmode/) settings.
+To extract table text, simply call the universal [`Aspose.OCR.AsposeOcr.Recognize`](https://reference.aspose.com/ocr/net/aspose.ocr/asposeocr/recognize/) method with [`DetectAreasMode.TABLE`](https://reference.aspose.com/ocr/net/aspose.ocr/detectareasmode/) settings.
 
 This method accepts an `OcrInput` object and optional recognition settings.
 
 Recognition results are returned as a list of `Aspose.OCR.RecognitionResult` objects. Each result contains extracted table data, detected regions, and allows exporting to various formats.
-Additionally, you can retrieve the table's row and column structure using the [`GetTebleData()`](https://reference.aspose.com/ocr/net/aspose.ocr/ocroutput/gettabledata/) method.
+Additionally, you can retrieve the table's row and column structure using the [`GetTableData()`](https://reference.aspose.com/ocr/net/aspose.ocr/ocroutput/gettabledata/) method.
 
-## DetectAreasMode.TABLE
+## DetectAreasMode.TABLE and GetTableData
+
+The following code example shows how to extract text from table and get rows and columns structure:
 
 ```csharp
 Aspose.OCR.AsposeOcr recognitionEngine = new Aspose.OCR.AsposeOcr();
@@ -42,10 +43,10 @@ Aspose.OCR.AsposeOcr recognitionEngine = new Aspose.OCR.AsposeOcr();
 Aspose.OCR.OcrInput input = new Aspose.OCR.OcrInput(Aspose.OCR.InputType.SingleImage);
 input.Add("source1.png");
 input.Add("source2.jpg");
-// Configure recognition settings for formulas
+// Configure recognition settings for table
 Aspose.OCR.RecognitionSettings settings = new Aspose.OCR.RecognitionSettings();
 settings.DetectAreasMode = Aspose.OCR.DetectAreasMode.TABLE;
-// Recognize formulas on the image
+// Recognize tables on the image
 Aspose.OCR.OcrOutput results = recognitionEngine.Recognize(input, recognitionSettings);
 OCRTable table = results.GetTableData();
 foreach(Aspose.OCR.RecognitionResult result in results)
