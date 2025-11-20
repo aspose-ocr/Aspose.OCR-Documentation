@@ -42,6 +42,7 @@ Format | Description
 `SaveFormat.RTF` | RTF, a universal format for exchanging text documents between different word processing programs.
 `SaveFormat.HOCR` | hOCR, an open standard of data representation for formatted text obtained from OCR. It includes extracted text, style, layout, and other information.
 `SaveFormat.MD` | Markdown.
+`SaveFormat.CSV` | CSV.
 
 You can optionally enable [automatic spelling corrections](/ocr/python-net/automatic-spelling-correction/) for recognition results, provide a [custom dictionary](/ocr/python-net/dictionaries/), or specify the font to be embedded into a PDF document. The latter is only applicable when saving recognition results into text-only PDF (`SaveFormat.PDF_NO_IMG`).
 
@@ -75,4 +76,6 @@ input.add("page3.png")
 results = api.recognize(input)
 # Save recognition result
 save_multipage_document("result.docx", SaveFormat.DOCX, results)
+# or
+results.save("result.docx", SaveFormat.DOCX)
 ```

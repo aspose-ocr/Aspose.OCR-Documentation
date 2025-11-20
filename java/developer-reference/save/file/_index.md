@@ -45,6 +45,7 @@ Format | Description
 `Format.Rtf` | RTF, a universal format for exchanging text documents between different word processing programs.
 `Format.hOcr` | hOCR, an open standard of data representation for formatted text obtained from OCR. It includes extracted text, style, layout, and other information.
 `Format.Md` | Markdown. May include images if they are detected. If the recognition mode DetectAreasMode.MULTICOLUMN is selected, the output file will contain images, provided they are detected during processing.
+`Format.Csv` | Csv.
 
 You can optionally enable [automatic spelling corrections](/ocr/java/automatic-spelling-correction/) for recognition results, provide a [custom dictionary](/ocr/java/dictionaries/), or specify the font to be embedded into a PDF document. The latter is only applicable when saving recognition results into text-only PDF (`Format.PdfNoImg`).
 
@@ -72,7 +73,7 @@ OcrInput input = new OcrInput(InputType.SingleImage);
 input.Add("page1.png");
 input.Add("page2.png");
 // Recognize image
-ArrayList<RecognitionResult> results = api.Recognize(input);
+OcrOutput results = api.Recognize(input);
 // Save all pages to Microsoft Word document
-AsposeOcr.SaveMultipageDocument("result.docx", Format.Docx, results);
+results.Save("result.docx", Format.Docx);
 ```

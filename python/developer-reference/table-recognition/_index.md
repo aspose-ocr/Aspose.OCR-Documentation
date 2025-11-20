@@ -37,7 +37,7 @@ api = AsposeOcr()
 input = OcrInput(InputType.SINGLE_IMAGE)
 input.add("source1.png")
 
-# Set recognition language
+# Set areas detection mode
 recognitionSettings = RecognitionSettings()
 recognitionSettings.detect_areas_mode = DetectAreasMode.TABLE
 # Recognize the image
