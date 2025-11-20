@@ -14,7 +14,7 @@ aliases:
 - /ocr/java/batch-recognition/
 - /java/recognition/read-text-in-wild/
 feedback: OCRJAVA
-title: Foarmula recognition
+title: Formula recognition
 description: Extracting and recognizing formulas from images, web links, scanned PDFs, DjVu files, folders, archives and other content.
 keywords:
 - formula
