@@ -18,6 +18,49 @@ keywords:
 - recognize
 ---
 
+
+<style>
+	button {
+		cursor: pointer;
+		margin-right: 20px;
+		margin-bottom: 20px;
+		padding: 7px 15px;
+		border: none;
+		border-radius: 5px;
+		background-color: #1a89d0;
+		font-weight: 700;
+		font-size: 15px;
+		color: #ffffff;
+	}
+
+	button:hover {
+		background-color: #3071a9;
+	}
+
+	button:focus {
+		outline: none;
+	}
+
+	.duo {
+		display: flex;
+		flex-direction: row;
+		align-items: stretch;
+		margin-bottom: 20px;
+	}
+
+	.duo > * {
+		margin-bottom: 0 !important;
+	}
+
+	.duo > pre {
+		display: none;
+		margin-left: 15px;
+		min-width: 300px;
+	}
+	
+</style>
+
+
 Aspose.OCR for Python via .NET now provides a dedicated API for detecting and recognizing mathematical formulas in images, scanned documents, screenshots, or photos.
 To extract formula text, simply call the universal [`aspose.ocr.AsposeOcr.recognize_formula`](https://reference.aspose.com/ocr/python-net/aspose.ocr/asposeocr/) method.
 
@@ -64,3 +107,30 @@ results = api.recognize_formula(input, True)
 for result in results:
     print(result.recognition_text)
 ```
+
+
+## Live demo `api.recognize_formula(input, True)`
+
+<div class="duo">
+<img src="formula1.png" alt="Formula with text" />
+<pre class="rec-result">
+x_{c} ( t )=\\sin\left( 2 \\pi( 1 0 0 ) t \right)
+T=1 / 4 0 0
+x [ n ]
+x [ n ]
+x [ n ]=\\cos\left( {\\frac{\\pi} {4}} n \right) , \\qquad-\\infty< n < \\infty.
+</pre>
+</div>
+
+<button onclick="$('.rec-result').slideUp(100);">Extract formulas</button>
+
+## Live demo `api.recognize_formula(input, False)`
+
+<div class="duo">
+<img src="formula2.png" alt="Formula without text" />
+<pre class="rec-result2">
+x [ n ]=\\cos\left( \\frac{\\pi} {4} n \right) . \\qquad-\\infty< n < \\infty.
+</pre>
+</div>
+
+<button onclick="$('.rec-result2').slideUp(100);">Extract formulas</button>
