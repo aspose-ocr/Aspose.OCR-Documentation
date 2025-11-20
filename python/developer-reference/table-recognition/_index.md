@@ -42,9 +42,17 @@ recognitionSettings = RecognitionSettings()
 recognitionSettings.detect_areas_mode = DetectAreasMode.TABLE
 # Recognize the image
 results = api.recognize(input, recognitionSettings)
-table = results.get_table_data()
 
 # Print recognition result
 for result in results:
     print(result.recognition_text)
+
+# Print table rows cloumns
+ table =  results.get_table_data()
+        for page in table.pages:
+            print("page:" + str(page.page_index))
+            for row in page.rows:
+                print("row:" + str(row.row_index))
+                for cell in row.cells:
+                    print("cell:" + str(cell.column_index)+": "+cell.text)
 ```

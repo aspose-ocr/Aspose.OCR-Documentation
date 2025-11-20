@@ -51,5 +51,18 @@ com.aspose.ocr.models.OCRTable table = results.GetTableData();
 results.forEach((result) -> {
 	System.out.println(result.recognition_text);
 });
+
+
+// Print recognized table data in rows and cols
+for(OCRTablePage page : table.getPages()) {
+    System.out.println("page index: "+page.getPageIndex());
+    for(OCRTableRow row : page.getRows()) {
+        System.out.println("row index: "+row.getRowIndex());
+        for(OCRTableCell cell : row.getCells()) {
+            System.out.print("cell index: "+cell.getColumnIndex()+": ");
+            System.out.println(cell.getText());
+        }
+    }
+}
 ```
 
