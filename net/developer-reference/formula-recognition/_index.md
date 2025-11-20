@@ -143,15 +143,15 @@ x [ n ]=\\cos\left( {\\frac{\\pi} {4}} n \right) , \\qquad-\\infty< n < \\infty.
 		let skewed = images.eq(0).is(":visible");
 		if(skewed)
 		{
-			images.eq(1).show(200);
-			images.eq(0).hide(200);
+			images.eq(1).show(100);
+			images.eq(0).hide(100);
 			$(obj).text("Revert to original image");
 			$('.rec-result').slideDown(100);
 		}
 		else
 		{
-			images.eq(0).show(200);
-			images.eq(1).hide(200);
+			images.eq(0).show(100);
+			images.eq(1).hide(100);
 			$(obj).text("Extract formulas");
 			$('.rec-result').slideUp(100);
 		}

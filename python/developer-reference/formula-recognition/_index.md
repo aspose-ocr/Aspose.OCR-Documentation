@@ -109,10 +109,14 @@ for result in results:
 ```
 
 
-## Live demo `api.recognize_formula(input, True)`
+## Live demo 
+```csharp
+recognitionEngine.recognize_formula(input, True)
+```
 
 <div class="duo">
 <img src="formula1.png" alt="Formula with text" />
+<img src="formula1_rect.jpg" alt="Formulas regions" style="display: none;" />
 <pre class="rec-result">
 x_{c} ( t )=\\sin\left( 2 \\pi( 1 0 0 ) t \right)
 T=1 / 4 0 0
@@ -122,9 +126,35 @@ x [ n ]=\\cos\left( {\\frac{\\pi} {4}} n \right) , \\qquad-\\infty< n < \\infty.
 </pre>
 </div>
 
-<button onclick="$('.rec-result').slideUp(100);">Extract formulas</button>
 
-## Live demo `api.recognize_formula(input, False)`
+
+<button onclick="triggerRecogn(this)">Extract formulas</button>
+<script>
+	function triggerRecogn(obj)
+	{
+		let images = $(".duo > img");
+		let skewed = images.eq(0).is(":visible");
+		if(skewed)
+		{
+			images.eq(1).show(100);
+			images.eq(0).hide(100);
+			$(obj).text("Revert to original image");
+			$('.rec-result').slideDown(100);
+		}
+		else
+		{
+			images.eq(0).show(100);
+			images.eq(1).hide(100);
+			$(obj).text("Extract formulas");
+			$('.rec-result').slideUp(100);
+		}
+	}
+</script>
+
+## Live demo 
+```csharp
+recognitionEngine.recognize_formula(input, False)
+```
 
 <div class="duo">
 <img src="formula2.png" alt="Formula without text" />
@@ -133,4 +163,4 @@ x [ n ]=\\cos\left( \\frac{\\pi} {4} n \right) . \\qquad-\\infty< n < \\infty.
 </pre>
 </div>
 
-<button onclick="$('.rec-result2').slideUp(100);">Extract formulas</button>
+<button onclick="$('.rec-result2').slideDown(100);">Extract formulas</button>

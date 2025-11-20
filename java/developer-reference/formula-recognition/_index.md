@@ -115,3 +115,60 @@ results.forEach((result) -> {
 ```
 
 
+## Live demo 
+```java
+recognitionEngine.RecognizeFormula(input, true)
+```
+
+<div class="duo">
+<img src="formula1.png" alt="Formula with text" />
+<img src="formula1_rect.jpg" alt="Formulas regions" style="display: none;" />
+<pre class="rec-result">
+x_{c} ( t )=\\sin\ ( 2 \\pi( 1 0 0 ) t \ )
+T=1 / 4 0 0
+x [ n ]
+x [ n ]
+x [ n ]=\\cos\ ( {\\frac{\\pi} {4}} n \ ) \\qquad-\\infty< n < \\infty.
+</pre>
+</div>
+
+
+
+<button onclick="triggerRecogn(this)">Extract formulas</button>
+<script>
+	function triggerRecogn(obj)
+	{
+		let images = $(".duo > img");
+		let skewed = images.eq(0).is(":visible");
+		if(skewed)
+		{
+			images.eq(1).show(100);
+			images.eq(0).hide(100);
+			$(obj).text("Revert to original image");
+			$('.rec-result').slideDown(100);
+		}
+		else
+		{
+			images.eq(0).show(100);
+			images.eq(1).hide(100);
+			$(obj).text("Extract formulas");
+			$('.rec-result').slideUp(100);
+		}
+	}
+</script>
+
+## Live demo 
+```java
+recognitionEngine.RecognizeFormula(input, false)
+```
+
+<div class="duo">
+<img src="formula2.png" alt="Formula without text" />
+<pre class="rec-result2">
+x [ n ]=\\cos\ ( {\\frac{\\pi} {4}} n \ ) . \\qquad-\\infty< n < \\infty.
+</pre>
+</div>
+
+<button onclick="$('.rec-result2').slideDown(100);">Extract formulas</button>
+
+
