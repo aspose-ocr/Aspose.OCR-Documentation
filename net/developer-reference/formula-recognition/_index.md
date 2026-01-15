@@ -77,6 +77,18 @@ Internally, formula detection uses the [`DetectAreasMode.FORMULA`](https://refer
 
 Recognition results are returned as a list of `Aspose.OCR.RecognitionResult` objects. Each result contains extracted formula text, detected regions, and allows exporting to various formats.
 
+### AI-based formula recognition
+
+In addition to the classic approach, Aspose.OCR for .NET also provides an AI-powered method for recognizing mathematical formulas —
+`Aspose.OCR.AsposeOcr.RecognizeFormulaAI`.
+
+This method leverages deep learning models to improve recognition accuracy for complex, handwritten, or low-quality formulas. It will autodownload pretrained models from Hugging Face.
+
+⚠️ Important notes:
+
+- The AI-based method consumes significantly more CPU/GPU and memory resources compared to the standard RecognizeFormula API.
+- Initial model loading may increase application startup time.
+
 ## DetectAreasMode.FORMULA
 
 ```csharp
@@ -110,6 +122,24 @@ Aspose.OCR.OcrOutput results = recognitionEngine.RecognizeFormula(input, true);
 // Parameter bool detectAreas - if set to true, automatically detects and isolates formula regions before performing recognition. If false, processes the entire image as a formula.
 
 foreach(Aspose.OCR.RecognitionResult result in results)
+{
+	Console.WriteLine(result.RecognitionText);
+}
+```
+
+## RecognizeFormulaAI(OcrInput images)
+
+```csharp
+Aspose.OCR.AsposeOcr recognitionEngine = new Aspose.OCR.AsposeOcr();
+// Add images to OcrInput object
+Aspose.OCR.OcrInput input = new Aspose.OCR.OcrInput(Aspose.OCR.InputType.SingleImage);
+input.Add("source1.png");
+input.Add("source2.jpg");
+
+// Recognize formulas
+List<AIResult> results = recognitionEngine.RecognizeFormula(input);
+
+foreach(Aspose.OCR.AIResult result in results)
 {
 	Console.WriteLine(result.RecognitionText);
 }

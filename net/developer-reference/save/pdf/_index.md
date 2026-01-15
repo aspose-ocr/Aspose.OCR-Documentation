@@ -63,7 +63,7 @@ input.Add("page2.png");
 // Recognize image
 Aspose.OCR.OcrOutput results = recognitionEngine.Recognize(input);
 // Save results
-Aspose.OCR.AsposeOcr.SaveMultipageDocument("result.pdf", Aspose.OCR.SaveFormat.Pdf, results);
+results.Save("result.pdf", Aspose.OCR.SaveFormat.Pdf);
 ```
 {{< /tab >}}
 {{< tab tabNum="2" >}}

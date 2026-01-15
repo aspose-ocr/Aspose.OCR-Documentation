@@ -91,8 +91,7 @@ Aspose.OCR.OcrInput input = new Aspose.OCR.OcrInput(Aspose.OCR.InputType.SingleI
 input.Add("source.png");
 Aspose.OCR.OcrOutput results = recognitionEngine.Recognize(input, recognitionSettings);
 // Output recognition results for each area
-Console.WriteLine("Name: "+results[0].RecognitionAreasText[0]);
-Console.WriteLine("Expiry: "+results[0].RecognitionAreasText[1]);
+Console.WriteLine("Text: "+results[0].RecognitionText);
 ```
 
 The text from each rectangle is returned in the [`RecognitionAreasText`](https://reference.aspose.com/ocr/net/aspose.ocr/recognitionresult/recognitionareastext/) property of the recognition result.

@@ -35,7 +35,7 @@ You can also pass optional logging and customization callbacks.
 | `AllowAutoDownload`       | `string` | If true, the model will be automatically downloaded if not available locally.                                                                                  |
 | `DirectoryModelPath`      | `string` | Optional path where downloaded or processed models will be cached. If not set, a default system location will be used.                                         |
 | `FileModelPath`           | `string` | Local path to the folder containing the model files. If specified, this will be used instead of downloading. Default empty.                                    |
-| `HuggingFaceQuantization` | `string` | Optional quantization type to use when downloading from HuggingFace. Examples: “int8”, “fp16”, “none”. Default q4_k_m.                                         |
+| `HuggingFaceFileName`     | `string` | Optional model's name to use when downloading from HuggingFace. Examples: "TableGPT2-7B.Q4_K_S.gguf". Default for table AI - TableGPT2-7B.Q4_K_S.gguf.                                         |
 | `HuggingFaceRepoId`       | `string` | ID of the model on HuggingFace (e.g., “openai/gpt2”). If specified, the model will be downloaded from HuggingFace. Default bartowski/Qwen2.5-3B-Instruct-GGUF. |
 | `ContextSize`             | `int` | 	Defines the maximum number of tokens the LLM can use as context during inference. If null, the default context size defined by the model will be used. Larger values allow the model to consider more text but may require more memory. |
 | `GpuLayers`               | `int` | Number of GPU layers to use for the model. If not specified, the default value (40) will be used. Set to 0 to run entirely on the CPU. |
