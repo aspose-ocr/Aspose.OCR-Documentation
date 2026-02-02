@@ -140,8 +140,8 @@ Fr+ May 42018 11:32 AM
 </pre>
 </div>
 
-<button onclick="$('.rec-result').slideDown(100); $('.ai-result').slideUp(100);">Extract keywords</button>
-<button onclick="$('.ai-result').slideDown(100)">AI keywords</button>
+<button onclick="$('.rec-result').slideDown(100); $('.ai-result').slideUp(100);">Recognize</button>
+<button onclick="$('.ai-result').slideDown(100)">Extract keywords ("Total", "Subtotal")</button>
 
 ### 🐞 Logging & error handling
 Pass `ILogger` to constructor to track loading and inference.
