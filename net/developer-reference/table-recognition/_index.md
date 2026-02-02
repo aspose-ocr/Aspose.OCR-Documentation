@@ -48,19 +48,22 @@ Aspose.OCR.RecognitionSettings settings = new Aspose.OCR.RecognitionSettings();
 settings.DetectAreasMode = Aspose.OCR.DetectAreasMode.TABLE;
 // Recognize tables on the image
 Aspose.OCR.OcrOutput results = recognitionEngine.Recognize(input, recognitionSettings);
-OCRTable table = results.GetTableData();
-foreach (OCRTablePage p in table.Pages)
+List<OCRTablePage> pages = results.GetTableData();
+foreach (OCRTablePage page in pages)
 {
-      Console.WriteLine($"page {p.PageIndex}");
-      foreach (OCRTableRow r in p.Rows)
-      {
-          Console.Write($"row {r.RowIndex}\t");
-          foreach (OCRTableCell c in r.Cells)
-          {
-              Console.Write($"col {c.ColumnIndex}  {c.Text} \t");
-          }
+    foreach (OCRTable table in page.Tables)
+    {
+        Console.WriteLine($"table {table.TableIndex}");
+        foreach (OCRTableRow r in table.Rows)
+        {
+            Console.Write($"row {r.RowIndex}\t");
+            foreach (OCRTableCell c in r.Cells)
+            {
+                Console.Write($"col {c.ColumnIndex}  {c.Text} \t");
+            }
 
-          Console.WriteLine();
-      }
+            Console.WriteLine();
+        }
+    }
 }
 ```

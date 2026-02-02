@@ -98,7 +98,7 @@ You can also pass optional logging and customization callbacks.
    ai.RunPostprocessor(res);
 
    Console.WriteLine("CORRECTED RESULT\n");
-   Console.WriteLine(processor.GetResult()[0].RecognitionText)
+   Console.WriteLine(processor.GetResult()[0].Result)
    ai.Dispose();
 ```
 

@@ -46,7 +46,8 @@ com.aspose.ocr.RecognitionSettings settings = new com.aspose.ocr.RecognitionSett
 settings.setDetectAreasMode(DetectAreasMode.TABLE);
 // Recognize tables on the image
 com.aspose.ocr.OcrOutput results = recognitionEngine.Recognize(input, recognitionSettings);
-com.aspose.ocr.models.OCRTable table = results.GetTableData();
+ArrayList<com.aspose.ocr.models.OCRTablePage> allTables = results.GetTableData();
+com.aspose.ocr.models.OCRTablePage tablePage = allTables.get(0);
 
 results.forEach((result) -> {
 	System.out.println(result.recognition_text);
@@ -54,9 +55,9 @@ results.forEach((result) -> {
 
 
 // Print recognized table data in rows and cols
-for(OCRTablePage page : table.getPages()) {
-    System.out.println("page index: "+page.getPageIndex());
-    for(OCRTableRow row : page.getRows()) {
+for(OCRTable table : tablePage.getTables()) {
+    System.out.println("table index: "+table.getTableIndex());
+    for(OCRTableRow row : table.getRows()) {
         System.out.println("row index: "+row.getRowIndex());
         for(OCRTableCell cell : row.getCells()) {
             System.out.print("cell index: "+cell.getColumnIndex()+": ");
