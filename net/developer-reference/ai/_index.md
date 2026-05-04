@@ -8,15 +8,24 @@ ai_search_scope: ocr_net
 ai_search_endpoint: "https://api.aspose.cloud/v5.0/ocr/docsearch/ask"
 feedback: OCRNET
 title: AsposeAI class
-description: Reference guide for the AsposeAI class for enabling spell-check correction using LLM models.
+description: AI-powered OCR postprocessing with LLM/VLM models for smarter table output, text correction, and keyword extraction.
 keywords:
 - asposeai
 - llm
+- vlm
 - model
 - huggingface
+- postprocessing
 ---
 
-The `AsposeAI` class provides the bridge between LLM models and the OCR engine.
+The `AsposeAI` class is a powerful bridge between OCR and modern AI models. It connects LLM/VLM inference with recognition output, turning raw OCR text into cleaner, smarter, and more actionable results.
+
+### 🚀 Why this matters
+
+- Improve table reconstruction and layout quality with [AI table correction](/ocr/net/ai/ai-table/).
+- Fix OCR mistakes automatically with [AI spell-check correction](/ocr/net/ai/ai-spell-check/).
+- Extract key phrases and numeric values with [AI keyword detection](/ocr/net/ai/ai-keywords/).
+- Bring your own model from Hugging Face and tune runtime settings for your workload.
 
 ### 🛠 Constructors
 
@@ -35,10 +44,10 @@ You can also pass optional logging and customization callbacks.
 | `AllowAutoDownload`       | `string` | If true, the model will be automatically downloaded if not available locally.                                                                                  |
 | `DirectoryModelPath`      | `string` | Optional path where downloaded or processed models will be cached. If not set, a default system location will be used.                                         |
 | `FileModelPath`           | `string` | Local path to the folder containing the model files. If specified, this will be used instead of downloading. Default empty.                                    |
-| `HuggingFaceFileName`     | `string` | Optional model's name to use when downloading from HuggingFace. Examples: "TableGPT2-7B.Q4_K_S.gguf". Default for table AI - TableGPT2-7B.Q4_K_S.gguf.                                         |
-| `HuggingFaceRepoId`       | `string` | ID of the model on HuggingFace (e.g., “openai/gpt2”). If specified, the model will be downloaded from HuggingFace. Default bartowski/Qwen2.5-3B-Instruct-GGUF. |
-| `ContextSize`             | `int` | 	Defines the maximum number of tokens the LLM can use as context during inference. If null, the default context size defined by the model will be used. Larger values allow the model to consider more text but may require more memory. |
-| `GpuLayers`               | `int` | Number of GPU layers to use for the model. If not specified, the default value (40) will be used. Set to 0 to run entirely on the CPU. |
+| `HuggingFaceFileName`     | `string` | Optional model filename to download from Hugging Face (for example, `TableGPT2-7B.Q4_K_S.gguf`). Use it to pin an exact model artifact for reproducible results. |
+| `HuggingFaceRepoId`       | `string` | Hugging Face repository ID (for example, `bartowski/Qwen2.5-3B-Instruct-GGUF`). Set this to bring your own model and adapt AI behavior to your domain. |
+| `ContextSize`             | `int` | Maximum context window (tokens) for LLM/VLM inference. Increase it for harder documents and richer reasoning; reduce it to save memory. If null, the model default is used. |
+| `GpuLayers`               | `int` | Number of model layers to run on GPU. Increase for faster inference on supported hardware, or set to `0` for CPU-only execution. Default: `40`. |
 
 ### 🧠 AsposeAI Class – Core Methods
 | Method                                                                        | Description                                                         |
