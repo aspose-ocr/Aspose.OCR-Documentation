@@ -39,6 +39,7 @@ Aspose.OCR for Java handles all aspects of recognition - from preprocessing the 
 3. **Recognizing**:
 
     - [Extracting text from an image, document, or other media](/ocr/java/recognition/)
+    - [Detecting document type](/ocr/java/document-type-detection/)
     - [Balancing recognition speed, quality, and resource usage](/ocr/java/performance-optimization/)
 
 4. **Post-processing**:

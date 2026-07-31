@@ -39,10 +39,12 @@ Aspose.OCR for .NET handles all aspects of recognition - from preprocessing the 
     - [Limit the subset of characters the OCR module will look for](/ocr/net/characters/)
     - [Customize recognition parameters](/ocr/net/settings/)
     - [Select document areas detection algorithm](/ocr/net/areas-detection/)
+    - [Detect fonts in recognized text lines](/ocr/net/font-detection/)
 
 3. **Recognizing**:
 
     - [Extract text](/ocr/net/recognition/)
+    - [Detect document type](/ocr/net/document-type-detection/)
     - [Recognize unified document types](/ocr/net/specialized-recognition-methods/)
     - [Balance recognition speed, quality, and resource usage](/ocr/net/performance-optimization/)
 

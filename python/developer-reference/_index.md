@@ -37,10 +37,12 @@ Aspose.OCR for Python via .NET handles all aspects of recognition - from preproc
     - [Limit the subset of characters the OCR module will look for](/ocr/python-net/characters/)
     - [Customize recognition parameters](/ocr/python-net/settings/)
     - [Select document areas detection algorithm](/ocr/python-net/areas-detection/)
+    - [Detect fonts in recognized text lines](/ocr/python-net/font-detection/)
 
 3. **Recognizing**:
 
     - [Extract text](/ocr/python-net/recognition/)
+    - [Detect document type](/ocr/python-net/document-type-detection/)
     - [Recognize unified document types](/ocr/python-net/specialized-recognition-methods/)
     - [Balance recognition speed, quality, and resource usage](/ocr/python-net/performance-optimization/)
 
